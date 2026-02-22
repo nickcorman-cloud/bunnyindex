@@ -4003,6 +4003,28 @@ const products = [
   },
 ];
 
+
+const brandLogos = {
+  "e.l.f. Cosmetics": "https://logo.clearbit.com/elfcosmetics.com",
+  "Acure": "https://logo.clearbit.com/acure.com",
+  "Pacifica": "https://logo.clearbit.com/pacificabeauty.com",
+  "Supergoop": "https://logo.clearbit.com/supergoop.com",
+  "Physicians Formula": "https://logo.clearbit.com/physiciansformula.com",
+  "Olaplex": "https://logo.clearbit.com/olaplex.com",
+  "Mineral Fusion": "https://logo.clearbit.com/mineralfusion.com",
+  "Overtone": "https://logo.clearbit.com/overtone.co",
+  "ColourPop": "https://logo.clearbit.com/colourpop.com",
+  "Glossier": "https://logo.clearbit.com/glossier.com",
+  "Thrive Causemetics": "https://logo.clearbit.com/thrivecausemetics.com",
+  "Milk Makeup": "https://logo.clearbit.com/milkmakeup.com",
+  "Biossance": "https://logo.clearbit.com/biossance.com",
+  "Versed": "https://logo.clearbit.com/versed.com",
+  "Cocokind": "https://logo.clearbit.com/cocokind.com",
+  "Youth To The People": "https://logo.clearbit.com/youthtothepeople.com",
+  "Herbivore Botanicals": "https://logo.clearbit.com/herbivorebotanicals.com",
+  "Tower 28": "https://logo.clearbit.com/tower28beauty.com",
+  "Saie": "https://logo.clearbit.com/saiebeauty.com",
+};
 const allConcerns = [...new Set(products.flatMap((p) => p.concerns))].sort();
 const allTypes = [...new Set(products.map((p) => p.type))].sort();
 const allCerts = ["Leaping Bunny", "PETA", "Not sold in China"];
@@ -4396,7 +4418,15 @@ export default function App() {
                     <div style={{ width: 14, height: 14, borderRadius: "50%", background: p.color }} />
                   </div>
 
-                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4, fontWeight: 500 }}>{p.brand}</p>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                    {brandLogos[p.brand] && (
+                      <img src={brandLogos[p.brand]} alt={p.brand}
+                        style={{ width: 20, height: 20, objectFit: "contain", borderRadius: 4, background: "#f5f5f5", padding: 2 }}
+                        onError={e => e.target.style.display = 'none'}
+                      />
+                    )}
+                    <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", fontWeight: 500, margin: 0 }}>{p.brand}</p>
+                  </div>
                   <h3 className="display" style={{ fontSize: 19, fontWeight: 600, color: "var(--ink)", marginBottom: 12, lineHeight: 1.2, letterSpacing: "-0.01em" }}>{p.name}</h3>
 
                   {/* Concerns */}
@@ -4461,7 +4491,15 @@ export default function App() {
             <div style={{ padding: "32px" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
                 <div>
-                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4, fontWeight: 500 }}>{selectedProduct.brand} · {selectedProduct.type}</p>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                  {brandLogos[selectedProduct.brand] && (
+                    <img src={brandLogos[selectedProduct.brand]} alt={selectedProduct.brand}
+                      style={{ width: 24, height: 24, objectFit: "contain", borderRadius: 4, background: "#f5f5f5", padding: 2 }}
+                      onError={e => e.target.style.display = 'none'}
+                    />
+                  )}
+                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", fontWeight: 500, margin: 0 }}>{selectedProduct.brand} · {selectedProduct.type}</p>
+                </div>
                   <h2 className="display" style={{ fontSize: 28, fontWeight: 600, color: "var(--ink)", lineHeight: 1.15, letterSpacing: "-0.01em" }}>{selectedProduct.name}</h2>
                 </div>
                 <button onClick={() => setSelectedProduct(null)}
