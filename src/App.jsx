@@ -4430,8 +4430,11 @@ export default function App() {
                   </div>
 
                   {/* Color block accent */}
-                  <div style={{ width: 36, height: 36, borderRadius: "50%", background: p.color + "22", border: `2px solid ${p.color}40`, marginBottom: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <div style={{ width: 14, height: 14, borderRadius: "50%", background: p.color }} />
+                  <div style={{ width: 48, height: 48, borderRadius: 6, background: "#f8f8f8", border: "1px solid var(--border)", marginBottom: 14, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", padding: 4 }}>
+                    {brandLogos[p.brand]
+                      ? <img src={brandLogos[p.brand]} alt={p.brand} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+                      : <div style={{ width: 20, height: 20, borderRadius: "50%", background: p.color }} />
+                    }
                   </div>
 
                   <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4, fontWeight: 500 }}>{p.brand}</p>
