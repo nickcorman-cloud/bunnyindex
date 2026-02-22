@@ -4037,8 +4037,9 @@ const certMeta = {
 };
 
 const quickSearches = [
-  "Salicylic Acid", "Seborrheic Dermatitis", "Oil-free SPF",
-  "Ceramides", "Rosacea", "Eczema"
+  "Niacinamide", "Vitamin C", "Hyaluronic Acid", "Ceramides",
+  "Acne", "Sensitive Skin", "Sun Protection", "Fragrance-Free",
+  "Vegan", "Oil-Free"
 ];
 
 export default function App() {
@@ -4286,7 +4287,7 @@ export default function App() {
               <span style={{ position: "absolute", left: 18, top: "50%", transform: "translateY(-50%)", fontSize: 20, opacity: 0.4 }}>⌕</span>
               <input
                 className="search-input"
-                placeholder="Try 'salicylic acid', 'seborrheic dermatitis', 'oil-free SPF'…"
+                placeholder="Search by ingredient, concern, or brand…"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
