@@ -712,6 +712,7 @@ export default function App() {
   const [veganOnly, setVeganOnly] = useState(false);
   const [priceFilter, setPriceFilter] = useState("all");
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -906,7 +907,7 @@ export default function App() {
           </div>
           <nav style={{ display: "flex", gap: 32, alignItems: "center" }}>
             {["Directory", "About", "Submit a Brand"].map((item, i) => (
-              <a key={item} href="#" style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: i === 0 ? "#b85c38" : "#7a5c4a", textDecoration: "none", fontWeight: 500, letterSpacing: "0.04em", transition: "color 0.15s" }}
+              <a key={item} href="#" onClick={item === "About" ? (e) => { e.preventDefault(); setAboutOpen(true); } : undefined} style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: i === 0 ? "#b85c38" : "#7a5c4a", textDecoration: "none", fontWeight: 500, letterSpacing: "0.04em", transition: "color 0.15s" }}
                 onMouseEnter={e => e.target.style.color = "#b85c38"}
                 onMouseLeave={e => e.target.style.color = i === 0 ? "#b85c38" : "#7a5c4a"}>
                 {item}
@@ -971,7 +972,7 @@ export default function App() {
       {/* Stats bar */}
       <div style={{ background: "#fff", borderBottom: "1px solid var(--border)", padding: "12px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", gap: 32, alignItems: "center" }}>
-          {[["9", "Products"], ["3", "Certifications checked"], ["100%", "Cruelty-free verified"]].map(([num, label]) => (
+          {[[products.length.toString(), "Products"], ["5", "Brands"], ["100%", "Cruelty-free verified"]].map(([num, label]) => (
             <div key={label} style={{ display: "flex", align: "center", gap: 8 }}>
               <span className="display" style={{ fontSize: 18, fontWeight: 700, color: "#b85c38" }}>{num}</span>
               <span className="body" style={{ fontSize: 12, color: "var(--warm-grey)", alignSelf: "center", fontWeight: 400 }}>{label}</span>
@@ -1023,18 +1024,7 @@ export default function App() {
               ))}
             </div>
 
-            {/* Certifications */}
-            <div style={{ marginBottom: 24 }}>
-              <p className="section-title">Certification</p>
-              {allCerts.map(cert => (
-                <label key={cert} className="filter-check" onClick={() => toggle(selectedCerts, setSelectedCerts, cert)}>
-                  <div className={`custom-check ${selectedCerts.includes(cert) ? "active" : ""}`}>
-                    {selectedCerts.includes(cert) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
-                  </div>
-                  <span>{certMeta[cert].icon} {cert}</span>
-                </label>
-              ))}
-            </div>
+
 
             {/* Price */}
             <div style={{ marginBottom: 24 }}>
@@ -1081,13 +1071,7 @@ export default function App() {
 
                   {/* Top row */}
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-                      {p.certifications.map(c => (
-                        <span key={c} className="chip" style={{ background: certMeta[c].color + "14", color: certMeta[c].color }}>
-                          {certMeta[c].icon}
-                        </span>
-                      ))}
-                    </div>
+  <div></div>
                     <span className="body" style={{ fontSize: 11, color: "var(--warm-grey)", fontWeight: 400, textTransform: "uppercase", letterSpacing: "0.06em" }}>{p.type}</span>
                   </div>
 
@@ -1170,14 +1154,10 @@ export default function App() {
                 </button>
               </div>
 
-              {/* Certifications */}
+              {/* Properties */}
               <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 24 }}>
-                {selectedProduct.certifications.map(c => (
-                  <span key={c} className="chip" style={{ background: certMeta[c].color + "14", color: certMeta[c].color, fontSize: 12, padding: "5px 14px" }}>
-                    {certMeta[c].icon} {c}
-                  </span>
-                ))}
                 {selectedProduct.oilFree && <span className="chip" style={{ background: "#e8f2f8", color: "#4a7fa0", fontSize: 12, padding: "5px 14px" }}>Oil-free</span>}
+                {selectedProduct.fragranceFree && <span className="chip" style={{ background: "#f0f5e8", color: "#5a8a3a", fontSize: 12, padding: "5px 14px" }}>Fragrance-free</span>}
                 {selectedProduct.vegan && <span className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 12, padding: "5px 14px" }}>🌱 Vegan</span>}
               </div>
 
@@ -1222,6 +1202,44 @@ export default function App() {
                     Buy now →
                   </button>
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* About Modal */}
+      {aboutOpen && (
+        <div className="modal-bg" onClick={() => setAboutOpen(false)}>
+          <div className="modal" onClick={e => e.stopPropagation()} style={{ maxWidth: 640 }}>
+            <div style={{ height: 4, background: "var(--terra)", borderRadius: "4px 4px 0 0" }} />
+            <div style={{ padding: "40px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 28 }}>
+                <div>
+                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 8, fontWeight: 600 }}>About</p>
+                  <h2 className="display" style={{ fontSize: 32, fontWeight: 600, color: "var(--ink)", lineHeight: 1.1, letterSpacing: "-0.01em" }}>Hi, I'm Nick.</h2>
+                </div>
+                <button onClick={() => setAboutOpen(false)}
+                  style={{ background: "var(--terra-pale)", border: "none", borderRadius: "2px", width: 32, height: 32, cursor: "pointer", fontSize: 14, color: "var(--terra)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 700 }}>
+                  ✕
+                </button>
+              </div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+                <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
+                  I started BunnyIndex because I couldn't find what I was looking for — a beauty directory that let me search by ingredient and skin concern, not just browse a list of brands. When you have specific skin needs, "cruelty-free favorites" roundups don't cut it. I wanted to search for oil-free SPF with niacinamide, or fragrance-free moisturizers for sensitive skin, and actually get results.
+                </p>
+                <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
+                  The other thing that frustrated me was how murky "cruelty-free" had become. A lot of brands carry the label but are owned by parent companies that test on animals. That always felt like a loophole — and I didn't want to support it.
+                </p>
+                <div style={{ background: "var(--terra-pale)", borderLeft: "3px solid var(--terra)", padding: "16px 20px", borderRadius: "0 4px 4px 0" }}>
+                  <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
+                    So I built BunnyIndex to hold a higher standard. Every brand here is independently cruelty-free — not just at the product level but at the ownership level. No parent companies that test. No selling in markets that require animal testing. If a brand doesn't meet that bar, it doesn't make the index. No exceptions.
+                  </p>
+                </div>
+                <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
+                  My goal is simple: make it easier to find products that actually work for your skin, from brands that actually mean what they say.
+                </p>
+                <p className="display" style={{ fontSize: 20, color: "var(--terra)", fontStyle: "italic", marginTop: 8 }}>— Nick</p>
               </div>
             </div>
           </div>
