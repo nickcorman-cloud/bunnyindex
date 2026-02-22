@@ -4026,6 +4026,7 @@ const brandLogos = {
   "Saie": "https://www.google.com/s2/favicons?domain=saiebeauty.com&sz=128",
 };
 const allBrands = [...new Set(products.map((p) => p.brand))].sort();
+const allIngredients = [...new Set(products.flatMap((p) => p.ingredients))].sort();
 const allConcerns = [...new Set(products.flatMap((p) => p.concerns))].sort();
 const allTypes = [...new Set(products.map((p) => p.type))].sort();
 const allCerts = ["Leaping Bunny", "PETA", "Not sold in China"];
@@ -4037,14 +4038,21 @@ const certMeta = {
 };
 
 const quickSearches = [
-  "Niacinamide", "Vitamin C", "Hyaluronic Acid", "Ceramides",
-  "Acne", "Sensitive Skin", "Sun Protection", "Fragrance-Free",
-  "Vegan", "Oil-Free"
+  "Niacinamide", "Ceramides", "Hyaluronic Acid", "Vitamin C",
+  "Salicylic Acid", "Retinol", "Glycolic Acid", "Squalane",
+  "Peptides", "Bakuchiol", "Zinc Oxide", "Azelaic Acid"
+];
+
+const coreIngredients = [
+  "Niacinamide", "Ceramides", "Hyaluronic Acid", "Vitamin C",
+  "Salicylic Acid", "Retinol", "Glycolic Acid", "Squalane",
+  "Peptides", "Bakuchiol", "Zinc Oxide", "Azelaic Acid"
 ];
 
 export default function App() {
   const [search, setSearch] = useState("");
   const [selectedBrands, setSelectedBrands] = useState([]);
+  const [selectedIngredients, setSelectedIngredients] = useState([]);
   const [selectedConcerns, setSelectedConcerns] = useState([]);
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [selectedCerts, setSelectedCerts] = useState([]);
@@ -4062,7 +4070,7 @@ export default function App() {
   const toggle = (arr, setArr, val) =>
     setArr(arr.includes(val) ? arr.filter((v) => v !== val) : [...arr, val]);
 
-  const activeFilterCount = selectedBrands.length + selectedConcerns.length + selectedTypes.length + selectedCerts.length + (oilFreeOnly ? 1 : 0) + (fragranceFreeOnly ? 1 : 0) + (veganOnly ? 1 : 0) + (priceFilter !== "all" ? 1 : 0);
+  const activeFilterCount = selectedBrands.length + selectedIngredients.length + selectedConcerns.length + selectedTypes.length + selectedCerts.length + (oilFreeOnly ? 1 : 0) + (fragranceFreeOnly ? 1 : 0) + (veganOnly ? 1 : 0) + (priceFilter !== "all" ? 1 : 0);
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
@@ -4072,6 +4080,7 @@ export default function App() {
         !p.concerns.some(c => c.toLowerCase().includes(search.toLowerCase())) &&
         !p.type.toLowerCase().includes(search.toLowerCase())) return false;
       if (selectedBrands.length && !selectedBrands.includes(p.brand)) return false;
+      if (selectedIngredients.length && !selectedIngredients.every(i => p.ingredients.includes(i))) return false;
       if (selectedConcerns.length && !selectedConcerns.some(c => p.concerns.includes(c))) return false;
       if (selectedTypes.length && !selectedTypes.includes(p.type)) return false;
       if (selectedCerts.length && !selectedCerts.every(c => p.certifications.includes(c))) return false;
@@ -4082,10 +4091,10 @@ export default function App() {
       if (priceFilter === "$$" && p.priceRange !== "$$") return false;
       return true;
     });
-  }, [search, selectedBrands, selectedConcerns, selectedTypes, selectedCerts, oilFreeOnly, fragranceFreeOnly, veganOnly, priceFilter]);
+  }, [search, selectedBrands, selectedIngredients, selectedConcerns, selectedTypes, selectedCerts, oilFreeOnly, fragranceFreeOnly, veganOnly, priceFilter]);
 
   const clearAll = () => {
-    setSelectedBrands([]); setSelectedConcerns([]); setSelectedTypes([]); setSelectedCerts([]);
+    setSelectedBrands([]); setSelectedIngredients([]); setSelectedConcerns([]); setSelectedTypes([]); setSelectedCerts([]);
     setOilFreeOnly(false); setFragranceFreeOnly(false); setVeganOnly(false); setPriceFilter("all"); setSearch("");
   };
 
@@ -4349,6 +4358,19 @@ export default function App() {
                     {selectedBrands.includes(brand) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
                   </div>
                   {brand}
+                </label>
+              ))}
+            </div>
+
+            {/* Key Ingredient */}
+            <div style={{ marginBottom: 24 }}>
+              <p className="section-title">Key Ingredient</p>
+              {coreIngredients.map(ing => (
+                <label key={ing} className="filter-check" onClick={() => toggle(selectedIngredients, setSelectedIngredients, ing)}>
+                  <div className={`custom-check ${selectedIngredients.includes(ing) ? "active" : ""}`}>
+                    {selectedIngredients.includes(ing) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
+                  </div>
+                  {ing}
                 </label>
               ))}
             </div>
