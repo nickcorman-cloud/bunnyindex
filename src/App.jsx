@@ -4421,8 +4421,7 @@ export default function App() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))", gap: 16 }}>
               {filtered.map((p, i) => (
                 <div key={p.id} className={`card fade-in ${mounted ? "show" : ""}`}
-                  style={{ "--card-accent": p.color, transitionDelay: `${i * 0.05}s`, padding: "24px" }}
-                  onClick={() => setSelectedProduct(p)}>
+                  style={{ "--card-accent": p.color, transitionDelay: `${i * 0.05}s`, padding: "24px", cursor: "default" }}>
 
                   {/* Top row */}
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
@@ -4457,18 +4456,31 @@ export default function App() {
                   </p>
 
                   {/* Bottom */}
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 14, borderTop: "1px solid var(--border)" }}>
-                    <div>
-                      <span className="display" style={{ fontSize: 22, fontWeight: 700, color: "var(--terra)" }}>${p.price}</span>
-                      <div style={{ display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
-                        <span className="star" style={{ fontSize: 10 }}>★★★★★</span>
-                        <span className="body" style={{ fontSize: 10, color: "var(--warm-grey)" }}>{p.rating} · {(p.reviews / 1000).toFixed(1)}k</span>
+                  <div style={{ paddingTop: 14, borderTop: "1px solid var(--border)" }}>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+                      <div>
+                        <span className="display" style={{ fontSize: 22, fontWeight: 700, color: "var(--terra)" }}>${p.price}</span>
+                        <div style={{ display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
+                          <span className="star" style={{ fontSize: 10 }}>★★★★★</span>
+                          <span className="body" style={{ fontSize: 10, color: "var(--warm-grey)" }}>{p.rating} · {(p.reviews / 1000).toFixed(1)}k</span>
+                        </div>
+                      </div>
+                      <div style={{ display: "flex", gap: 4 }}>
+                        {p.oilFree && <span className="chip" style={{ background: "#e8f2f8", color: "#4a7fa0", fontSize: 10, fontWeight: 600 }}>Oil-free</span>}
+                        {p.vegan && <span className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 10, fontWeight: 600 }}>Vegan</span>}
                       </div>
                     </div>
-                    <div style={{ display: "flex", gap: 4 }}>
-                      {p.oilFree && <span className="chip" style={{ background: "#e8f2f8", color: "#4a7fa0", fontSize: 10, fontWeight: 600 }}>Oil-free</span>}
-                      {p.vegan && <span className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 10, fontWeight: 600 }}>Vegan</span>}
-                    </div>
+                    <a href={p.buyLink} target="_blank" rel="noopener noreferrer"
+                      onClick={e => e.stopPropagation()}
+                      style={{ display: "block", width: "100%", padding: "10px 0", background: "var(--terra)", color: "#fff", textAlign: "center", textDecoration: "none", borderRadius: 2, fontFamily: "'Outfit', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", transition: "background 0.15s" }}
+                      onMouseEnter={e => e.target.style.background = "#a04d2e"}
+                      onMouseLeave={e => e.target.style.background = "var(--terra)"}>
+                      {p.buyLink.includes("amazon.com") ? `Buy on Amazon · $${p.price}` :
+                       p.buyLink.includes("sephora.com") ? `Buy on Sephora · $${p.price}` :
+                       p.buyLink.includes("ulta.com") ? `Buy on Ulta · $${p.price}` :
+                       p.buyLink.includes("target.com") ? `Buy on Target · $${p.price}` :
+                       `Buy Direct · $${p.price}`}
+                    </a>
                   </div>
                 </div>
               ))}
