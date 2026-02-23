@@ -2,7 +2,6 @@ import { useState, useMemo, useEffect } from "react";
 
 const products = [
   {
-  {
     id: 1,
     name: "Holy Hydration! Face Cream",
     brand: "e.l.f. Cosmetics",
