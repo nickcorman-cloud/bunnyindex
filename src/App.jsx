@@ -2439,7 +2439,7 @@ export default function App() {
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative" }}>
           <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.1s" }}>
             <p className="body" style={{ fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: "#c9826b", marginBottom: 16, fontWeight: 500 }}>
-              ✦ Cruelty-Free · Ingredient-First Directory
+              ✦ Cruelty-Free Skincare · Ingredient-First
             </p>
           </div>
           <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.2s" }}>
@@ -2449,7 +2449,7 @@ export default function App() {
           </div>
           <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.3s" }}>
             <p className="body" style={{ fontSize: 16, color: "rgba(255,255,255,0.5)", maxWidth: 500, marginBottom: 36, lineHeight: 1.7, fontWeight: 300 }}>
-              Filter by ingredient, skin condition, or concern. Every product verified cruelty-free — no greenwashing, no guesswork.
+              Find skincare that works for your skin. Search by ingredient, skin type, or concern — every product verified cruelty-free.
             </p>
           </div>
           <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.4s", maxWidth: 580 }}>
@@ -2457,7 +2457,7 @@ export default function App() {
               <span style={{ position: "absolute", left: 18, top: "50%", transform: "translateY(-50%)", fontSize: 20, opacity: 0.4 }}>⌕</span>
               <input
                 className="search-input"
-                placeholder="Search by ingredient, concern, or brand…"
+                placeholder="Search by ingredient, skin type, or concern…"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
