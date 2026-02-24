@@ -1,3079 +1,1048 @@
 import { useState, useMemo, useEffect } from "react";
 
-const products = [
-  {
-    id: 1,
-    name: "Holy Hydration! Face Cream",
-    brand: "e.l.f. Cosmetics",
-    type: "Moisturizer",
-    ingredients: ['Hyaluronic Acid', 'Ceramides'],
-    concerns: [],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 12,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.7,
-    reviews: 15200,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B08127SC4G?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Rich yet lightweight moisturizer packed with hyaluronic acid, peptides, and ceramides to deeply nourish and plump skin. Fragrance-free and non-comedogenic, ideal for all skin types.",
-  },
-  {
-    id: 3,
-    name: "Suntouchable! Whoa Glow SPF 30",
-    brand: "e.l.f. Cosmetics",
-    type: "Sunscreen",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Sun Protection'],
-    features: [],
-    price: 14,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5800,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B0BSP3N82M?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Lightweight SPF 30 sunscreen that doubles as a glowy makeup primer, infused with hyaluronic acid for a radiant, skin-like finish. Broad-spectrum protection with zero white cast.",
-  },
-  {
-    id: 4,
-    name: "Halo Glow Liquid Filter",
-    brand: "e.l.f. Cosmetics",
-    type: "Serum",
-    ingredients: ['Vitamin C'],
-    concerns: ['Hyperpigmentation'],
-    features: [],
-    price: 14,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 21000,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B0B5MGBDHZ?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Complexion-boosting serum-meets-filter that blurs, brightens, and adds a luminous glow in seconds. Can be worn alone, mixed into foundation, or layered under or over makeup.",
-  },
-  {
-    id: 5,
-    name: "Keep Your Balance Toner",
-    brand: "e.l.f. Cosmetics",
-    type: "Toner",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 8400,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B07X2M2TXN?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gentle, refreshing toner formulated with hyaluronic acid, witch hazel, and aloe to remove residual impurities and rebalance skin after cleansing. Oil-free and fragrance-free.",
-  },
-  {
-    id: 6,
-    name: "Holy Hydration! Daily Cleanser",
-    brand: "e.l.f. Cosmetics",
-    type: "Cleanser",
-    ingredients: ['Hyaluronic Acid', 'Ceramides'],
-    concerns: [],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.6,
-    reviews: 11200,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B08T7DY96H?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gel-based foaming cleanser with hyaluronic acid and ceramides that washes away oil, impurities, and makeup without stripping skin. Leaves skin clean, hydrated, and balanced.",
-  },
-  {
-    id: 7,
-    name: "Holy Hydration! Cleansing Balm",
-    brand: "e.l.f. Cosmetics",
-    type: "Cleansing Balm",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 11,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.6,
-    reviews: 8100,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B08TQTT8LK?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Melt-away cleansing balm with hyaluronic acid that dissolves makeup, sunscreen, and impurities in seconds and rinses clean without residue. Leaves skin soft and hydrated.",
-  },
-  {
-    id: 8,
-    name: "Suntouchable! Invisible SPF 35",
-    brand: "e.l.f. Cosmetics",
-    type: "Sunscreen",
-    ingredients: [],
-    concerns: ['Sun Protection'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 14,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 4200,
-    color: "#c9826b",
-    buyLink: "https://www.amazon.com/dp/B0C7SFTTV3?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Lightweight gel-based SPF 35 sunscreen that disappears on contact and doubles as a smoothing makeup primer. Oil-free and fragrance-free, suited for oily and sensitive skin types.",
-  },
-  {
-    id: 10,
-    name: "Brightening Facial Scrub",
-    brand: "Acure",
-    type: "Exfoliant",
-    ingredients: ['Glycolic Acid'],
-    concerns: ['Hyperpigmentation'],
-    features: ['Oil-Free'],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 15100,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B003Z4OD24?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gentle daily exfoliating scrub with sea kelp, lemon peel, and French green clay that detoxifies pores and polishes skin to a radiant glow. 100% vegan and sulfate-free.",
-  },
-  {
-    id: 11,
-    name: "Brightening Cleansing Gel",
-    brand: "Acure",
-    type: "Cleanser",
-    ingredients: ['Vitamin C'],
-    concerns: [],
-    features: ['Oil-Free'],
-    price: 11,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 9800,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B00TXCGEQU?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Antioxidant-rich cleansing gel with pomegranate, blackberry, and acai that washes away dirt and makeup while infusing skin with brightening nutrients. Lathers into a luxurious foam.",
-  },
-  {
-    id: 12,
-    name: "Brilliantly Brightening Glowing Serum",
-    brand: "Acure",
-    type: "Serum",
-    ingredients: ['Vitamin C'],
-    concerns: ['Hyperpigmentation'],
-    features: [],
-    price: 14,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3200,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B0040ZHUH2?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Vitamin C–powered serum with argan oil and cranberry seed oil that revitalizes dull skin and delivers a visibly radiant, healthy-looking glow. Packed with super-nutrients for smoother skin.",
-  },
-  {
-    id: 13,
-    name: "Seriously Soothing Cleansing Cream",
-    brand: "Acure",
-    type: "Cleanser",
-    ingredients: [],
-    concerns: ['Sensitive Skin', 'Dry Skin', 'Rosacea'],
-    features: [],
-    price: 11,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5600,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B00B4C35IW?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gentle cream cleanser formulated with peony extract, chamomile, and argan oil to soothe, hydrate, and cleanse dry and sensitive skin without stripping its natural moisture.",
-  },
-  {
-    id: 14,
-    name: "Ultra Hydrating 12 Hour Facial Cream",
-    brand: "Acure",
-    type: "Moisturizer",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Dry Skin'],
-    features: [],
-    price: 20,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2800,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B082G1C4BZ?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Adaptogen-powered 12-hour moisturizer with ashwagandha, holy basil, and antioxidants that replenishes and tones dry skin for an all-day hydration boost. 100% vegan.",
-  },
-  {
-    id: 15,
-    name: "Radically Rejuvenating Eye Cream",
-    brand: "Acure",
-    type: "Eye Cream",
-    ingredients: [],
-    concerns: ['Hyperpigmentation', 'Dry Skin'],
-    features: [],
-    price: 20,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5200,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B003Z4MCJA?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Anti-aging eye cream with CoQ10, edelweiss extract, and blackberry that targets dark circles, puffiness, and fine lines for brighter, more youthful-looking eyes.",
-  },
-  {
-    id: 16,
-    name: "Radically Rejuvenating Whipped Night Cream",
-    brand: "Acure",
-    type: "Moisturizer",
-    ingredients: ['Vitamin C'],
-    concerns: ['Dry Skin'],
-    features: [],
-    price: 18,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3100,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B07NJ4H5S3?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Overnight recovery cream with vitamin C, peptides, and ashwagandha that renews and resurfaces skin while you sleep, visibly reducing fine lines and dark spots by morning.",
-  },
-  {
-    id: 17,
-    name: "Seriously Soothing Cloud Cream",
-    brand: "Acure",
-    type: "Moisturizer",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Sensitive Skin', 'Dry Skin', 'Rosacea'],
-    features: [],
-    price: 18,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 4100,
-    color: "#7ab87a",
-    buyLink: "https://www.amazon.com/dp/B077X5NFY9?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Whipped, cloud-light night moisturizer with argan extract and hyaluronic acid formulated for normal to dry, sensitive skin. Delivers intensive hydration overnight without heaviness.",
-  },
-  {
-    id: 18,
-    name: "Coconut Cream to Foam Face Wash",
-    brand: "Pacifica",
-    type: "Cleanser",
-    ingredients: [],
-    concerns: [],
-    features: ['Oil-Free'],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 8700,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B073Z33B3Z?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Sulfate-free cleansing gel with coconut water and vitamin E that transforms from cream to a luxurious foam, removing impurities while keeping skin soft and balanced.",
-  },
-  {
-    id: 19,
-    name: "Glow Baby Vitamin C Booster Serum",
-    brand: "Pacifica",
-    type: "Serum",
-    ingredients: ['Vitamin C'],
-    concerns: ['Hyperpigmentation'],
-    features: ['Oil-Free', 'Non-Comedogenic'],
-    price: 16,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 14600,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B07VRTP6SY?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Ultra-concentrated vitamin C serum with AHA complex and ferulic acid that visibly brightens dark spots, evens skin tone, and boosts natural radiance. Oil-free and non-comedogenic.",
-  },
-  {
-    id: 20,
-    name: "Vegan Collagen Complex Face Serum",
-    brand: "Pacifica",
-    type: "Serum",
-    ingredients: ['Niacinamide', 'Ceramides'],
-    concerns: ['Dry Skin'],
-    features: [],
-    price: 18,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 5200,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B095335RGC?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Plant-powered collagen-boosting serum with vegan collagen, ceramides, and niacinamide that plumps, firms, and hydrates for a visibly more youthful complexion.",
-  },
-  {
-    id: 21,
-    name: "Water Rehab Cream",
-    brand: "Pacifica",
-    type: "Moisturizer",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Sensitive Skin'],
-    features: ['Oil-Free'],
-    price: 14,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5900,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B01MTFE7LB?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Oil-free probiotic moisturizer with coconut water and plant extracts that restores and rebalances skin's moisture for a refreshed, healthy glow. Great for oily and combination skin.",
-  },
-  {
-    id: 22,
-    name: "Glow Baby Vitamin C Brightening Moisturizer",
-    brand: "Pacifica",
-    type: "Moisturizer",
-    ingredients: ['Vitamin C', 'Hyaluronic Acid'],
-    concerns: ['Hyperpigmentation'],
-    features: [],
-    price: 16,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3400,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B08TT1FTK8?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Daily vitamin C moisturizer with AHA blend and hyaluronic acid that brightens dull skin and boosts glow with every application. Lightweight texture absorbs quickly.",
-  },
-  {
-    id: 23,
-    name: "Glow Baby Resurfacing & Brightening Toner",
-    brand: "Pacifica",
-    type: "Toner",
-    ingredients: ['Glycolic Acid', 'Vitamin C'],
-    concerns: ['Hyperpigmentation'],
-    features: ['Oil-Free', 'Non-Comedogenic'],
-    price: 15,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3100,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B09RRXRFVH?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Exfoliating liquid toner with glycolic acid, vitamin C, and aloe vera that smooths, brightens, and preps skin for the rest of your routine. Visibly minimizes pores over time.",
-  },
-  {
-    id: 24,
-    name: "Coconut Whip Cream to Foam Face Wash",
-    brand: "Pacifica",
-    type: "Cleanser",
-    ingredients: [],
-    concerns: ['Dry Skin', 'Sensitive Skin'],
-    features: [],
-    price: 16,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 2300,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B0DC88HQW3?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Extra-large format cleansing foam with coconut milk, vegan squalane, and vitamin E that nourishes and moisturizes as it cleanses, ideal for dry and sensitive skin types.",
-  },
-  {
-    id: 25,
-    name: "Pore Warrior Niacinamide Serum",
-    brand: "Pacifica",
-    type: "Serum",
-    ingredients: ['Niacinamide', 'Salicylic Acid'],
-    concerns: ['Acne', 'Oily Skin'],
-    features: ['Oil-Free', 'Non-Comedogenic'],
-    price: 14,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.2,
-    reviews: 2800,
-    color: "#7a9eb5",
-    buyLink: "https://www.amazon.com/dp/B07VPS2K19?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Lightweight niacinamide serum with salicylic acid and hyaluronic acid that visibly tightens pores, controls oil, and clears blemishes for a smoother, more refined complexion.",
-  },
-  {
-    id: 26,
-    name: "Unseen Sunscreen SPF 40",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: [],
-    concerns: ['Sun Protection', 'Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 36,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.6,
-    reviews: 17200,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B08CFVM1TT?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Invisible, primer-finish SPF 40 that leaves absolutely no white cast and creates a velvety base for flawless makeup application. Broad-spectrum, oil-free, and fragrance-free.",
-  },
-  {
-    id: 27,
-    name: "Glowscreen SPF 40",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: ['Hyaluronic Acid', 'Niacinamide'],
-    concerns: ['Sun Protection', 'Hyperpigmentation'],
-    features: ['Fragrance-Free'],
-    price: 36,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.5,
-    reviews: 10800,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B088ZRZ668?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Hydrating SPF 40 sunscreen that delivers a luminous, lit-from-within glow with skincare benefits like hyaluronic acid and niacinamide. Wear alone or as a dewy primer under makeup.",
-  },
-  {
-    id: 28,
-    name: "PLAY Everyday Lotion SPF 50",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: [],
-    concerns: ['Sun Protection'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic', 'Pregnancy-Safe'],
-    price: 22,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.7,
-    reviews: 12400,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B087H8W6Y2?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Water- and sweat-resistant SPF 50 face and body lotion that absorbs fast and leaves no greasy residue. Broad-spectrum protection great for active outdoor use and daily wear.",
-  },
-  {
-    id: 29,
-    name: "PLAY 100% Mineral Lotion SPF 50",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide'],
-    concerns: ['Sun Protection', 'Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Reef-Safe', 'Mineral Sunscreen'],
-    price: 22,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.5,
-    reviews: 5100,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B09RNDPKQF?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Non-nano zinc oxide mineral SPF 50 lotion that's reef-safe and water-resistant for up to 80 minutes. Lightweight and fast-absorbing with no white cast, ideal for sensitive skin.",
-  },
-  {
-    id: 30,
-    name: "Superscreen Daily Moisturizer SPF 40",
-    brand: "Supergoop",
-    type: "Moisturizer",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free'],
-    price: 45,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.4,
-    reviews: 4800,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B07VR6BBY8?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Daily moisturizer and SPF 40 in one, powered by hyaluronic acid and sea silt extract for all-day hydration and plumping. A true skin-care-and-sun-protection multitasker.",
-  },
-  {
-    id: 31,
-    name: "(Re)setting 100% Mineral Powder SPF 35",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide'],
-    concerns: ['Sun Protection', 'Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Mineral Sunscreen'],
-    price: 35,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.4,
-    reviews: 6200,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B07VLNVB69?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Translucent mineral setting powder with SPF 35 that lets you reapply sun protection over makeup without disturbing it. Made with non-nano zinc oxide and free of chemical filters.",
-  },
-  {
-    id: 32,
-    name: "Mineral Mattescreen SPF 40",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide'],
-    concerns: ['Sun Protection', 'Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic', 'Mineral Sunscreen', 'Reef-Safe'],
-    price: 38,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.5,
-    reviews: 4600,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B09CJPRPFD?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "100% mineral SPF 40 with a true matte finish that controls oil and shine all day. Non-nano zinc oxide formula doubles as a pore-minimizing primer, fragrance-free and reef-safe.",
-  },
-  {
-    id: 33,
-    name: "PLAY Antioxidant Body Mist SPF 50",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: [],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free'],
-    price: 28,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: false,
-    rating: 4.5,
-    reviews: 3900,
-    color: "#e8a87c",
-    buyLink: "https://www.amazon.com/dp/B07VVQ4XPN?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Weightless SPF 50 mist with antioxidants including meadowfoam seed oil and rosemary extract for full-body protection that feels invisible on skin. Water-resistant up to 80 minutes.",
-  },
-  {
-    id: 43,
-    name: "Milky Jelly Cleanser",
-    brand: "Glossier",
-    type: "Cleanser",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 18,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.6,
-    reviews: 12400,
-    color: "#c8c87a",
-    buyLink: "https://www.glossier.com/products/milky-jelly-cleanser",
-    imageUrl: "",
-    description: "pH-balanced gel-cream cleanser that gently dissolves makeup and impurities without stripping skin. Leaves a soft, conditioned finish thanks to allantoin and rosewater.",
-  },
-  {
-    id: 44,
-    name: "Invisible Shield Daily Sunscreen SPF 35",
-    brand: "Glossier",
-    type: "Sunscreen",
-    ingredients: [],
-    concerns: ['Sun Protection', 'Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 34,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 4800,
-    color: "#c8c87a",
-    buyLink: "https://www.glossier.com/products/invisible-shield",
-    imageUrl: "",
-    description: "Water-gel daily sunscreen with broad-spectrum SPF 35 that disappears into skin. No white cast, no residue — just effortless UV protection for all skin tones.",
-  },
-  {
-    id: 45,
-    name: "Super Bounce Serum",
-    brand: "Glossier",
-    type: "Serum",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Dry Skin', 'Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 28,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 7200,
-    color: "#c8c87a",
-    buyLink: "https://www.glossier.com/products/super-bounce",
-    imageUrl: "",
-    description: "Hyaluronic acid + pro-vitamin B5 serum that delivers a concentrated hit of hydration. Boosts plumpness and suppleness for all skin types, especially dry and dehydrated.",
-  },
-  {
-    id: 46,
-    name: "Priming Moisturizer Balance",
-    brand: "Glossier",
-    type: "Moisturizer",
-    ingredients: ['Niacinamide'],
-    concerns: ['Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 34,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5100,
-    color: "#c8c87a",
-    buyLink: "https://www.glossier.com/products/priming-moisturizer-balance",
-    imageUrl: "",
-    description: "Lightweight gel moisturizer that controls shine and minimizes the appearance of pores. Formulated with niacinamide to balance oily and combination skin.",
-  },
-  {
-    id: 47,
-    name: "Futuredew",
-    brand: "Glossier",
-    type: "Face Oil",
-    ingredients: ['Antioxidants'],
-    concerns: ['Brightening'],
-    features: ['Fragrance-Free'],
-    price: 24,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 4300,
-    color: "#c8c87a",
-    buyLink: "https://www.glossier.com/products/futuredew",
-    imageUrl: "",
-    description: "Oil-serum hybrid that gives the dewy, lit-from-within glow of glass skin without looking greasy. Packed with plant oils and chia seed for lasting radiance.",
-  },
-  {
-    id: 52,
-    name: "Balm Dotcom",
-    brand: "Glossier",
-    type: "Lip Balm",
-    ingredients: [],
-    concerns: [],
-    features: ['Makeup'],
-    price: 14,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.7,
-    reviews: 14200,
-    color: "#c8c87a",
-    buyLink: "https://www.glossier.com/products/balm-dotcom",
-    imageUrl: "",
-    description: "Intensely moisturizing skin salve for lips and dry spots. Made with beeswax-free natural emollients, this cult-classic provides lasting hydration in delicious scented varieties.",
-  },
-  {
-    id: 57,
-    name: "Sunshine Skin Tint SPF 30",
-    brand: "Milk Makeup",
-    type: "Tinted Moisturizer",
-    ingredients: [],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 44,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 4900,
-    color: "#c87a7a",
-    buyLink: "https://www.milkmakeup.com/products/sunshine-skin-tint-spf-30",
-    imageUrl: "",
-    description: "Sheer tinted moisturizer with SPF 30 that evens skin tone while delivering sun protection and a natural, glowing finish. Buildable, skin-like coverage for everyday wear.",
-  },
-  {
-    id: 60,
-    name: "Bionic Treatment Oil",
-    brand: "Milk Makeup",
-    type: "Face Oil",
-    ingredients: ['Squalane', 'Bakuchiol', 'Antioxidants'],
-    concerns: ['Anti-Aging', 'Brightening', 'Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 52,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 2900,
-    color: "#c87a7a",
-    buyLink: "https://www.milkmakeup.com/products/bionic-treatment-oil",
-    imageUrl: "",
-    description: "Treatment face oil blended with bakuchiol, hemp-derived cannabis oil, and squalane to visibly smooth fine lines, boost radiance, and deeply nourish skin overnight.",
-  },
-  {
-    id: 63,
-    name: "Guards Up Daily Mineral Sunscreen SPF 35",
-    brand: "Versed",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide'],
-    concerns: ['Sun Protection', 'Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic', 'Reef-Safe', 'Mineral Sunscreen'],
-    price: 22,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.2,
-    reviews: 3600,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/guards-up-daily-mineral-sunscreen",
-    imageUrl: "",
-    description: "Lightweight daily mineral SPF 35 with zinc oxide that protects without white cast or heavy residue. Reef-safe formula suits sensitive skin and wears beautifully under makeup.",
-  },
-  {
-    id: 64,
-    name: "Dew Point Moisturizing Gel-Cream",
-    brand: "Versed",
-    type: "Moisturizer",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: [],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 16,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5100,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/dew-point-moisturizing-gel-cream",
-    imageUrl: "",
-    description: "Lightweight gel-cream moisturizer with hyaluronic acid and aloe vera that delivers lasting hydration without greasiness. Perfect for oily to normal skin types.",
-  },
-  {
-    id: 65,
-    name: "Day Dissolve Cleansing Balm",
-    brand: "Versed",
-    type: "Cleansing Balm",
-    ingredients: [],
-    concerns: [],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 18,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4700,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/day-dissolve-cleansing-balm",
-    imageUrl: "",
-    description: "Melt-away cleansing balm that effectively dissolves sunscreen, makeup, and impurities without stripping skin. Transforms to a milky texture on contact with water.",
-  },
-  {
-    id: 66,
-    name: "Skin Soak Rich Moisture Cream",
-    brand: "Versed",
-    type: "Moisturizer",
-    ingredients: ['Ceramides', 'Squalane'],
-    concerns: ['Dry Skin', 'Barrier Support'],
-    features: ['Fragrance-Free'],
-    price: 16,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3900,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/skin-soak-rich-moisture-cream",
-    imageUrl: "",
-    description: "Rich, nourishing moisturizer with ceramides and squalane for very dry, thirsty skin. Deeply replenishes the moisture barrier and provides lasting comfort throughout the day.",
-  },
-  {
-    id: 67,
-    name: "Press Restart Gentle Retinol Serum",
-    brand: "Versed",
-    type: "Serum",
-    ingredients: ['Retinol', 'Squalane', 'Peptides'],
-    concerns: ['Anti-Aging'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 26,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 4400,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/press-restart-gentle-retinol-serum",
-    imageUrl: "",
-    description: "Gentle retinol serum formulated with squalane and peptides to minimize fine lines and improve skin texture without irritation. Great for retinol beginners.",
-  },
-  {
-    id: 68,
-    name: "Weekend Glow Daily Brightening Solution",
-    brand: "Versed",
-    type: "Toner",
-    ingredients: ['Niacinamide', 'Glycolic Acid', 'Vitamin C'],
-    concerns: ['Hyperpigmentation', 'Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 19,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5300,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/weekend-glow-daily-brightening-solution",
-    imageUrl: "",
-    description: "Exfoliating toning solution with glycolic acid, niacinamide, and brightening botanicals that visibly improves skin tone and texture with regular use.",
-  },
-  {
-    id: 69,
-    name: "Calm Your Pores Pore Minimizing Serum",
-    brand: "Versed",
-    type: "Serum",
-    ingredients: ['Niacinamide'],
-    concerns: ['Oily Skin', 'Blackheads', 'Acne'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 20,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.2,
-    reviews: 3100,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/calm-your-pores-pore-minimizing-serum",
-    imageUrl: "",
-    description: "Niacinamide-powered serum that minimizes the appearance of pores and controls shine. Lightweight formula absorbs instantly and reduces excess oil production over time.",
-  },
-  {
-    id: 70,
-    name: "Just Breathe Clarifying Serum",
-    brand: "Versed",
-    type: "Serum",
-    ingredients: ['Salicylic Acid', 'Niacinamide'],
-    concerns: ['Acne', 'Blackheads', 'Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 20,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2800,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/just-breathe-clarifying-serum",
-    imageUrl: "",
-    description: "Salicylic acid + niacinamide serum that clears blemishes and prevents future breakouts while calming redness. Ideal for acne-prone and congested skin.",
-  },
-  {
-    id: 71,
-    name: "Barrier Restore Ceramide Moisturizer",
-    brand: "Versed",
-    type: "Moisturizer",
-    ingredients: ['Ceramides', 'Hyaluronic Acid'],
-    concerns: ['Eczema', 'Dry Skin', 'Sensitive Skin', 'Barrier Support'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 18,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4200,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/barrier-restore-ceramide-moisturizer",
-    imageUrl: "",
-    description: "Ceramide-rich moisturizer that repairs and fortifies the skin barrier for calmer, more resilient skin. Soothing formula is ideal for sensitive, dry, and eczema-prone skin types.",
-  },
-  {
-    id: 72,
-    name: "Good Habits Brightening Vitamin C Serum",
-    brand: "Versed",
-    type: "Serum",
-    ingredients: ['Vitamin C', 'Antioxidants'],
-    concerns: ['Hyperpigmentation', 'Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 26,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3400,
-    color: "#9eb5c8",
-    buyLink: "https://www.versed.com/products/good-habits-brightening-vitamin-c-serum",
-    imageUrl: "",
-    description: "Stable vitamin C + turmeric serum that fades dark spots, evens skin tone, and brightens the complexion over time. Antioxidant-rich formula protects against environmental damage.",
-  },
-  {
-    id: 73,
-    name: "Ceramide Barrier Serum",
-    brand: "Cocokind",
-    type: "Serum",
-    ingredients: ['Ceramides', 'Hyaluronic Acid'],
-    concerns: ['Eczema', 'Dry Skin', 'Sensitive Skin', 'Barrier Support'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 22,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.6,
-    reviews: 3800,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/ceramide-barrier-serum",
-    imageUrl: "",
-    description: "Ceramide + phytosterol serum that rebuilds the skin's moisture barrier for lasting hydration and resilience. Calms redness and soothes dry, compromised, or sensitive skin.",
-  },
-  {
-    id: 74,
-    name: "Texture Smoothing Cream",
-    brand: "Cocokind",
-    type: "Moisturizer",
-    ingredients: ['Squalane'],
-    concerns: ['Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 19,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4200,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/texture-smoothing-cream",
-    imageUrl: "",
-    description: "Rich moisturizer with oat kernel flour and squalane that visibly reduces texture and roughness. Comforting formula softens skin and improves overall smoothness over time.",
-  },
-  {
-    id: 75,
-    name: "Oil to Milk Cleanser",
-    brand: "Cocokind",
-    type: "Cleanser",
-    ingredients: [],
-    concerns: ['Sensitive Skin'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 14,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3100,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/oil-to-milk-cleanser",
-    imageUrl: "",
-    description: "Gentle oil-to-milk cleansing formula that dissolves makeup and impurities without stripping the skin. Transforms from a lightweight oil to a milky emulsion with water.",
-  },
-  {
-    id: 76,
-    name: "Redness Erasing Toner",
-    brand: "Cocokind",
-    type: "Toner",
-    ingredients: ['Azelaic Acid'],
-    concerns: ['Rosacea', 'Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 18,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2500,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/redness-erasing-toner",
-    imageUrl: "",
-    description: "Calming toner with azelaic acid and allantoin that reduces redness, evens skin tone, and soothes reactive or sensitive skin. Prepares skin to better absorb subsequent serums.",
-  },
-  {
-    id: 77,
-    name: "Daily SPF Facial Moisturizer SPF 32",
-    brand: "Cocokind",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide'],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free', 'Non-Comedogenic', 'Reef-Safe', 'Mineral Sunscreen'],
-    price: 20,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3700,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/daily-spf-moisturizer",
-    imageUrl: "",
-    description: "Tinted mineral SPF 32 moisturizer that hydrates, evens skin tone, and protects in one step. Zinc oxide-based formula with a natural tint that suits a range of skin tones.",
-  },
-  {
-    id: 78,
-    name: "Resurfacing Vitamin C Serum",
-    brand: "Cocokind",
-    type: "Serum",
-    ingredients: ['Vitamin C', 'Glycolic Acid'],
-    concerns: ['Hyperpigmentation', 'Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 22,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 2900,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/resurfacing-vitamin-c-serum",
-    imageUrl: "",
-    description: "Vitamin C + alpha arbutin serum that brightens dull skin, fades dark spots, and evens skin tone. Stable formula absorbs quickly for a radiant, more luminous complexion.",
-  },
-  {
-    id: 79,
-    name: "Eye Cream",
-    brand: "Cocokind",
-    type: "Eye Cream",
-    ingredients: ['Hyaluronic Acid', 'Peptides'],
-    concerns: ['Anti-Aging'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 16,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.2,
-    reviews: 2200,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/eye-cream",
-    imageUrl: "",
-    description: "Lightweight peptide eye cream with caffeine that depuffs, hydrates, and brightens the delicate under-eye area. Reduces the appearance of dark circles and fine lines.",
-  },
-  {
-    id: 80,
-    name: "Milky Micellar Water",
-    brand: "Cocokind",
-    type: "Cleanser",
-    ingredients: [],
-    concerns: ['Sensitive Skin'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 12,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 1900,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/milky-micellar-water",
-    imageUrl: "",
-    description: "Gentle micellar cleanser that lifts away makeup and impurities without rubbing or rinsing. Nourishing milk formula leaves skin clean and comfortable — no tightness or residue.",
-  },
-  {
-    id: 81,
-    name: "Facial Repair Serum",
-    brand: "Cocokind",
-    type: "Serum",
-    ingredients: ['Retinol', 'Squalane'],
-    concerns: ['Anti-Aging', 'Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 28,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 2700,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/facial-repair-serum",
-    imageUrl: "",
-    description: "Squalane + retinol serum that speeds cell turnover, smooths fine lines, and repairs uneven texture. Gentle enough for most skin types and formulated without fragrance.",
-  },
-  {
-    id: 82,
-    name: "Moisture Stick",
-    brand: "Cocokind",
-    type: "Moisturizer",
-    ingredients: [],
-    concerns: [],
-    features: ['Fragrance-Free'],
-    price: 12,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3100,
-    color: "#c8b47a",
-    buyLink: "https://www.cocokind.com/products/moisture-stick",
-    imageUrl: "",
-    description: "Solid moisturizing stick made with organic coconut oil and vitamin E. Portable and multi-use — hydrates dry elbows, cuticles, lips, and anywhere that needs extra moisture.",
-  },
-  {
-    id: 95,
-    name: "BeachPlease Luminous Tinted Balm",
-    brand: "Tower 28",
-    type: "Lip Balm",
-    ingredients: [],
-    concerns: ['Sensitive Skin'],
-    features: ['Fragrance-Free', 'Makeup'],
-    price: 22,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4900,
-    color: "#c8907a",
-    buyLink: "https://www.tower28beauty.com/products/beachplease-luminous-tinted-balm",
-    imageUrl: "",
-    description: "Multi-use tinted balm for lips and cheeks with a buttery, luminous finish. Buildable color and comfortable all-day wear in clean, EWG-verified formula for sensitive skin.",
-  },
-  {
-    id: 98,
-    name: "AO+ Rescue Spray",
-    brand: "Tower 28",
-    type: "Mist",
-    ingredients: [],
-    concerns: ['Rosacea', 'Eczema', 'Sensitive Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 32,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3800,
-    color: "#c8907a",
-    buyLink: "https://www.tower28beauty.com/products/ao-rescue-spray",
-    imageUrl: "",
-    description: "Balancing facial spray with a clinically studied, patented biotechnology that helps restore the skin's natural microbiome. Reduces redness and irritation with every mist.",
-  },
-  {
-    id: 103,
-    name: "Squalane + Vitamin C Rose Oil",
-    brand: "Biossance",
-    type: "Face Oil",
-    ingredients: ['Vitamin C', 'Squalane', 'Antioxidants'],
-    concerns: ['Hyperpigmentation', 'Brightening'],
-    features: ['Fragrance-Free'],
-    price: 72,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 3800,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-vitamin-c-rose-oil",
-    imageUrl: "",
-    description: "Brightening face oil with sustainably-sourced squalane and vitamin C that visibly reduces dark spots, firms skin, and delivers a radiant glow. Absorbs quickly without greasiness.",
-  },
-  {
-    id: 104,
-    name: "Squalane + Phyto-Retinol Serum",
-    brand: "Biossance",
-    type: "Serum",
-    ingredients: ['Squalane', 'Bakuchiol', 'Peptides'],
-    concerns: ['Anti-Aging'],
-    features: ['Fragrance-Free'],
-    price: 88,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3200,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-phyto-retinol-serum",
-    imageUrl: "",
-    description: "Phyto-retinol + bakuchiol serum in a squalane base that delivers retinol-like results without irritation. Reduces fine lines, improves texture, and firms skin overnight.",
-  },
-  {
-    id: 105,
-    name: "Squalane + Probiotic Gel Moisturizer",
-    brand: "Biossance",
-    type: "Moisturizer",
-    ingredients: ['Squalane'],
-    concerns: ['Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 52,
-    priceRange: "$$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3600,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-probiotic-gel-moisturizer",
-    imageUrl: "",
-    description: "Lightweight gel moisturizer with squalane, probiotics, and prebiotic inulin that balances the skin microbiome and provides 72-hour hydration. Great for oily and combination skin.",
-  },
-  {
-    id: 106,
-    name: "Squalane + Lactic Acid Resurfacing Night Serum",
-    brand: "Biossance",
-    type: "Serum",
-    ingredients: ['Squalane'],
-    concerns: ['Hyperpigmentation', 'Sensitive Skin', 'Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 72,
-    priceRange: "$$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4100,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-lactic-acid-resurfacing-night-serum",
-    imageUrl: "",
-    description: "Overnight resurfacing serum with lactic acid and squalane that smooths texture, fades dark spots, and plumps skin. Gentler than glycolic acid, ideal for sensitive skin types.",
-  },
-  {
-    id: 107,
-    name: "Squalane + Omega Repair Cream",
-    brand: "Biossance",
-    type: "Moisturizer",
-    ingredients: ['Ceramides', 'Squalane'],
-    concerns: ['Eczema', 'Dry Skin', 'Barrier Support'],
-    features: ['Fragrance-Free'],
-    price: 58,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.6,
-    reviews: 5500,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-omega-repair-cream",
-    imageUrl: "",
-    description: "Ultra-rich repair cream with squalane, omega fatty acids, and ceramides that deeply nourishes very dry skin and restores the moisture barrier. Best-seller for dry and eczema-prone skin.",
-  },
-  {
-    id: 108,
-    name: "Squalane + Antioxidant Cleansing Oil",
-    brand: "Biossance",
-    type: "Cleansing Oil",
-    ingredients: ['Vitamin C', 'Squalane', 'Antioxidants'],
-    concerns: [],
-    features: ['Fragrance-Free'],
-    price: 38,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4900,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-antioxidant-cleansing-oil",
-    imageUrl: "",
-    description: "Squalane-based cleansing oil enriched with antioxidant vitamin C and beta-carotene that melts away makeup and impurities while leaving skin nourished and radiant.",
-  },
-  {
-    id: 109,
-    name: "Squalane + Marine Algae Eye Cream",
-    brand: "Biossance",
-    type: "Eye Cream",
-    ingredients: ['Squalane', 'Peptides'],
-    concerns: ['Anti-Aging'],
-    features: ['Fragrance-Free'],
-    price: 58,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 2800,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-marine-algae-eye-cream",
-    imageUrl: "",
-    description: "Firming eye cream with squalane, marine algae, and peptides that reduces puffiness, firms the under-eye area, and visibly improves the look of fine lines and dark circles.",
-  },
-  {
-    id: 110,
-    name: "Squalane + Zinc Sheer Mineral Sunscreen SPF 30",
-    brand: "Biossance",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide', 'Squalane'],
-    concerns: ['Sun Protection'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic', 'Reef-Safe', 'Mineral Sunscreen'],
-    price: 34,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3300,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-zinc-sheer-mineral-sunscreen-spf-30",
-    imageUrl: "",
-    description: "Sheer mineral SPF 30 with non-nano zinc oxide and squalane that provides broad-spectrum protection with zero white cast. Reef-safe, non-comedogenic, and suitable for all skin tones.",
-  },
-  {
-    id: 111,
-    name: "Squalane + Glycolic Renewal Mask",
-    brand: "Biossance",
-    type: "Mask",
-    ingredients: ['Glycolic Acid', 'Squalane'],
-    concerns: ['Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 52,
-    priceRange: "$$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 2400,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-glycolic-renewal-mask",
-    imageUrl: "",
-    description: "Resurfacing overnight mask with glycolic acid and squalane that exfoliates dead skin cells, smooths texture, and reveals brighter skin by morning with zero irritation.",
-  },
-  {
-    id: 112,
-    name: "Squalane + Peptide Eye Gel",
-    brand: "Biossance",
-    type: "Eye Cream",
-    ingredients: ['Squalane', 'Peptides'],
-    concerns: [],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 52,
-    priceRange: "$$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2100,
-    color: "#7a9e7a",
-    buyLink: "https://www.biossance.com/products/squalane-peptide-eye-gel",
-    imageUrl: "",
-    description: "Lightweight eye gel with squalane, peptides, and caffeine that instantly depuffs, hydrates, and firms the under-eye area. Absorbs quickly for a smooth, awake-looking finish.",
-  },
-  {
-    id: 113,
-    name: "Lapis Facial Oil",
-    brand: "Herbivore Botanicals",
-    type: "Face Oil",
-    ingredients: ['Squalane'],
-    concerns: ['Acne', 'Rosacea', 'Oily Skin'],
-    features: [],
-    price: 72,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2900,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/lapis-blue-tansy-face-oil",
-    imageUrl: "",
-    description: "Balancing face oil with blue tansy and squalane that calms redness and reduces excess oil production. Luxurious blue color and herbaceous scent from pure botanicals — no synthetic fragrance.",
-  },
-  {
-    id: 114,
-    name: "Bakuchiol Retinol Alternative Serum",
-    brand: "Herbivore Botanicals",
-    type: "Serum",
-    ingredients: ['Bakuchiol', 'Hyaluronic Acid'],
-    concerns: ['Anti-Aging', 'Sensitive Skin'],
-    features: ['Pregnancy-Safe', 'Fragrance-Free'],
-    price: 54,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3400,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/bakuchiol-serum",
-    imageUrl: "",
-    description: "Plant-powered retinol alternative with bakuchiol that minimizes fine lines, improves skin tone, and increases cell turnover without the irritation of traditional retinol.",
-  },
-  {
-    id: 115,
-    name: "Prism 20% AHA + 5% BHA Exfoliating Glow Facial",
-    brand: "Herbivore Botanicals",
-    type: "Exfoliant",
-    ingredients: ['Salicylic Acid', 'Glycolic Acid'],
-    concerns: ['Acne', 'Hyperpigmentation', 'Blackheads', 'Brightening'],
-    features: ['Oil-Free'],
-    price: 62,
-    priceRange: "$$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 4700,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/prism-glow-facial",
-    imageUrl: "",
-    description: "At-home chemical peel with 20% AHA and 5% BHA that dramatically resurfaces skin, fades dark spots, and reveals a glowing, poreless complexion in 20 minutes.",
-  },
-  {
-    id: 116,
-    name: "Moon Fruit Superfruit Night Treatment",
-    brand: "Herbivore Botanicals",
-    type: "Serum",
-    ingredients: ['Bakuchiol', 'Peptides', 'Hyaluronic Acid'],
-    concerns: ['Anti-Aging', 'Brightening', 'Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 72,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2600,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/moon-fruit-superfruit-night-treatment",
-    imageUrl: "",
-    description: "Restorative overnight treatment with bakuchiol, peptides, and hyaluronic acid that visibly plumps, firms, and brightens skin while you sleep. Wake up to luminous, supple skin.",
-  },
-  {
-    id: 117,
-    name: "Emerald Hemp + Adaptogens Deep Moisture Glow Oil",
-    brand: "Herbivore Botanicals",
-    type: "Face Oil",
-    ingredients: ['Antioxidants'],
-    concerns: ['Rosacea', 'Eczema', 'Sensitive Skin', 'Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 88,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3100,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/emerald-hemp-oil",
-    imageUrl: "",
-    description: "Luxurious nourishing oil with hemp-derived cannabidiol, ashwagandha, and reishi that calms inflamed skin, reduces redness, and imparts a radiant, healthy glow.",
-  },
-  {
-    id: 118,
-    name: "Blue Tansy Resurfacing Clarity Mask",
-    brand: "Herbivore Botanicals",
-    type: "Mask",
-    ingredients: ['Salicylic Acid'],
-    concerns: ['Acne', 'Oily Skin', 'Blackheads'],
-    features: ['Oil-Free'],
-    price: 48,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.2,
-    reviews: 3800,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/blue-tansy-mask",
-    imageUrl: "",
-    description: "Resurfacing clay mask with blue tansy and white willow bark BHA that unclogs pores, smooths texture, and calms redness. Distinctive blue hue and spa-like aromatic scent.",
-  },
-  {
-    id: 119,
-    name: "Phoenix Facial Oil",
-    brand: "Herbivore Botanicals",
-    type: "Face Oil",
-    ingredients: ['Squalane', 'Antioxidants'],
-    concerns: ['Anti-Aging', 'Dry Skin'],
-    features: ['Fragrance-Free'],
-    price: 88,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3600,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/phoenix-facial-oil",
-    imageUrl: "",
-    description: "Rich facial oil with sea buckthorn, rosehip, and squalane that reverses the signs of aging and dramatically improves skin radiance. Ideal for dry and mature skin types.",
-  },
-  {
-    id: 120,
-    name: "Nova 15% Vitamin C + Turmeric Brightening Serum",
-    brand: "Herbivore Botanicals",
-    type: "Serum",
-    ingredients: ['Vitamin C', 'Antioxidants'],
-    concerns: ['Hyperpigmentation', 'Brightening'],
-    features: ['Oil-Free'],
-    price: 68,
-    priceRange: "$$$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 4200,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/nova-vitamin-c-brightening-serum",
-    imageUrl: "",
-    description: "Brightening vitamin C serum with 15% stable encapsulated vitamin C, turmeric, and ferulic acid. Visibly fades dark spots, evens tone, and delivers glass-skin radiance.",
-  },
-  {
-    id: 121,
-    name: "Jasmine Body Polish",
-    brand: "Herbivore Botanicals",
-    type: "Body Scrub",
-    ingredients: [],
-    concerns: [],
-    features: [],
-    price: 32,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4100,
-    color: "#b4c87a",
-    buyLink: "https://www.herbivorebotanicals.com/products/jasmine-body-polish",
-    imageUrl: "",
-    description: "Exfoliating body polish with fine sea salt, jasmine essential oil, and sweet almond oil that buffs away dead skin and leaves the body silky smooth and delicately scented.",
-  },
-  {
-    id: 127,
-    name: "Overnight Sensation Dark Circle Eye Cream",
-    brand: "Thrive Causemetics",
-    type: "Eye Cream",
-    ingredients: ['Ceramides', 'Hyaluronic Acid', 'Peptides'],
-    concerns: ['Anti-Aging'],
-    features: ['Fragrance-Free'],
-    price: 52,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 7600,
-    color: "#7ac8b4",
-    buyLink: "https://www.thrivecausemetics.com/products/overnight-sensation-dark-circle-eye-cream",
-    imageUrl: "",
-    description: "Intensive overnight eye cream with ceramides, peptides, and hyaluronic acid that visibly reduces dark circles and puffiness while firming the under-eye area. Wake up to brighter eyes.",
-  },
-  {
-    id: 128,
-    name: "Lip Serum Balm",
-    brand: "Thrive Causemetics",
-    type: "Lip Balm",
-    ingredients: ['Hyaluronic Acid', 'Peptides'],
-    concerns: [],
-    features: ['Fragrance-Free', 'Makeup'],
-    price: 28,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 5900,
-    color: "#7ac8b4",
-    buyLink: "https://www.thrivecausemetics.com/products/lip-serum-balm",
-    imageUrl: "",
-    description: "Hydrating lip treatment that combines the benefits of a serum and balm to smooth, plump, and deeply moisturize lips. Hyaluronic acid and peptides improve lip fullness over time.",
-  },
-  {
-    id: 133,
-    name: "Slip Tint Dewy Tinted Moisturizer SPF 35",
-    brand: "Saie",
-    type: "Tinted Moisturizer",
-    ingredients: ['Niacinamide', 'Hyaluronic Acid'],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free', 'Non-Comedogenic', 'Makeup'],
-    price: 38,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 5800,
-    color: "#7ac89e",
-    buyLink: "https://www.saiebeauty.com/products/slip-tint-dewy-tinted-moisturizer-spf-35",
-    imageUrl: "",
-    description: "Lightweight tinted moisturizer with SPF 35, hyaluronic acid, and 10% niacinamide that provides sheer coverage, sun protection, and skincare benefits in one step.",
-  },
-  {
-    id: 134,
-    name: "Sunvisor Radiant SPF 35 Moisturizer",
-    brand: "Saie",
-    type: "Sunscreen",
-    ingredients: ['Hyaluronic Acid'],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free', 'Non-Comedogenic'],
-    price: 44,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3900,
-    color: "#7ac89e",
-    buyLink: "https://www.saiebeauty.com/products/sunvisor-radiant-spf-35-moisturizer",
-    imageUrl: "",
-    description: "Radiance-boosting SPF 35 moisturizer with hyaluronic acid and vitamin E that hydrates, protects, and adds a luminous glow. Wears beautifully alone or under makeup.",
-  },
-  {
-    id: 141,
-    name: "Hydralight Healthy Glow Serum",
-    brand: "Saie",
-    type: "Serum",
-    ingredients: ['Niacinamide', 'Hyaluronic Acid', 'Vitamin C'],
-    concerns: ['Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 42,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 2700,
-    color: "#7ac89e",
-    buyLink: "https://www.saiebeauty.com/products/hydralight-healthy-glow-serum",
-    imageUrl: "",
-    description: "Brightening serum with vitamin C, niacinamide, and hyaluronic acid that hydrates, evens tone, and delivers a healthy glow. Lightweight formula absorbs quickly for daily use.",
-  },
-  {
-    id: 170,
-    name: "Pure Skin Cleanser",
-    brand: "e.l.f. Cosmetics",
-    type: "Cleanser",
-    ingredients: ['Salicylic Acid', 'Niacinamide'],
-    concerns: ['Acne'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 12,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 6800,
-    color: "#c9826b",
-    buyLink: "https://www.elfcosmetics.com/pure-skin-cleanser/83372.html",
-    imageUrl: "",
-    description: "Gentle foaming cleanser with niacinamide and salicylic acid that thoroughly cleanses pores, controls oil, and prevents breakouts without over-drying sensitive skin.",
-  },
-  {
-    id: 172,
-    name: "Acne Fighting Spot Gel",
-    brand: "e.l.f. Cosmetics",
-    type: "Spot Treatment",
-    ingredients: ['Salicylic Acid'],
-    concerns: ['Acne', 'Blackheads', 'Oily Skin'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.2,
-    reviews: 7400,
-    color: "#c9826b",
-    buyLink: "https://www.elfcosmetics.com/acne-fighting-spot-gel/83314.html",
-    imageUrl: "",
-    description: "Targeted blemish treatment with 2% salicylic acid and tea tree oil that visibly reduces pimples, whiteheads, and blackheads overnight. Clear gel formula works under makeup.",
-  },
-  {
-    id: 189,
-    name: "Radically Rejuvenating Anti-Aging Serum",
-    brand: "Acure",
-    type: "Serum",
-    ingredients: ['Peptides', 'Antioxidants'],
-    concerns: ['Anti-Aging'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 20,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3400,
-    color: "#7ab87a",
-    buyLink: "https://acure.com/products/radically-rejuvenating-anti-aging-serum",
-    imageUrl: "",
-    description: "Age-defying serum with CoQ10, ferulic acid, and chlorella growth factor that plumps fine lines, firms skin, and delivers a radiant, youthful complexion.",
-  },
-  {
-    id: 190,
-    name: "Seriously Soothing 24-Hour Moisture Lotion",
-    brand: "Acure",
-    type: "Moisturizer",
-    ingredients: [],
-    concerns: ['Dry Skin', 'Sensitive Skin'],
-    features: ['Fragrance-Free'],
-    price: 15,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2900,
-    color: "#7ab87a",
-    buyLink: "https://acure.com/products/seriously-soothing-24-hour-moisture-lotion",
-    imageUrl: "",
-    description: "24-hour hydrating lotion with argan oil and sunflower seed oil that deeply nourishes and soothes sensitive, dry skin. Lightweight formula absorbs quickly for all-day moisture.",
-  },
-  {
-    id: 191,
-    name: "Brightening Facial Mask",
-    brand: "Acure",
-    type: "Mask",
-    ingredients: ['Vitamin C'],
-    concerns: ['Hyperpigmentation', 'Brightening'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.2,
-    reviews: 2100,
-    color: "#7ab87a",
-    buyLink: "https://acure.com/products/brightening-facial-mask",
-    imageUrl: "",
-    description: "Brightening clay mask with vitamin C, CoQ10, and unicorn root extract that evens skin tone, reduces dullness, and leaves skin radiant in just 15 minutes.",
-  },
-  {
-    id: 192,
-    name: "Buildalicious Peptide Serum",
-    brand: "Acure",
-    type: "Serum",
-    ingredients: ['Hyaluronic Acid', 'Peptides'],
-    concerns: ['Anti-Aging'],
-    features: ['Oil-Free', 'Fragrance-Free'],
-    price: 22,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 1800,
-    color: "#7ab87a",
-    buyLink: "https://acure.com/products/buildalicious-peptide-serum",
-    imageUrl: "",
-    description: "Plumping peptide serum that firms skin and reduces the appearance of fine lines. Vegan collagen-building formula delivers a smoother, more youthful complexion with daily use.",
-  },
-  {
-    id: 194,
-    name: "Island Tinted SPF Balm",
-    brand: "Pacifica",
-    type: "Lip Balm",
-    ingredients: [],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free', 'Makeup'],
-    price: 10,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2400,
-    color: "#7a9eb5",
-    buyLink: "https://pacificabeauty.com/products/island-tinted-spf-balm",
-    imageUrl: "",
-    description: "Hydrating tinted lip balm with SPF protection. Nourishing coconut and avocado oil formula adds a sheer wash of color and sun protection in one effortless swipe.",
-  },
-  {
-    id: 196,
-    name: "Multi-Peptide + C Eye Cream",
-    brand: "Pacifica",
-    type: "Eye Cream",
-    ingredients: ['Vitamin C', 'Peptides', 'Hyaluronic Acid'],
-    concerns: ['Anti-Aging'],
-    features: ['Fragrance-Free'],
-    price: 22,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.2,
-    reviews: 2200,
-    color: "#7a9eb5",
-    buyLink: "https://pacificabeauty.com/products/multi-peptide-c-eye-cream",
-    imageUrl: "",
-    description: "Brightening eye cream with multi-peptides, vitamin C, and hyaluronic acid that reduces dark circles, puffiness, and fine lines around the delicate eye area.",
-  },
-  {
-    id: 197,
-    name: "Sea Foam Complete Face Wash",
-    brand: "Pacifica",
-    type: "Cleanser",
-    ingredients: [],
-    concerns: [],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic'],
-    price: 12,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3600,
-    color: "#7a9eb5",
-    buyLink: "https://pacificabeauty.com/products/sea-foam-complete-face-wash",
-    imageUrl: "",
-    description: "Sea mineral-powered foaming face wash that deep cleans pores and leaves skin refreshed, balanced, and soft. Gentle enough for daily use on all skin types.",
-  },
-  {
-    id: 198,
-    name: "Glow Oil SPF 50",
-    brand: "Supergoop",
-    type: "Face Oil",
-    ingredients: [],
-    concerns: ['Sun Protection'],
-    features: ['Fragrance-Free'],
-    price: 42,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5200,
-    color: "#e8a87c",
-    buyLink: "https://supergoop.com/products/glow-oil-spf-50",
-    imageUrl: "",
-    description: "Luxurious facial oil with SPF 50 that delivers golden, lit-from-within radiance while providing strong UV protection. A unique way to protect skin without sacrificing glow.",
-  },
-  {
-    id: 199,
-    name: "(Re)setting 100% Mineral Tinted Sunscreen SPF 40",
-    brand: "Supergoop",
-    type: "Sunscreen",
-    ingredients: ['Zinc Oxide'],
-    concerns: ['Sun Protection'],
-    features: ['Oil-Free', 'Fragrance-Free', 'Non-Comedogenic', 'Reef-Safe', 'Mineral Sunscreen', 'Makeup'],
-    price: 40,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 6100,
-    color: "#e8a87c",
-    buyLink: "https://supergoop.com/products/resetting-100-mineral-tinted-sunscreen",
-    imageUrl: "",
-    description: "Tinted mineral SPF 40 with a matte, pore-perfecting finish. Sets makeup, controls oil, and provides clean zinc oxide protection in one easy swipe. Available in universal-fit tints.",
-  },
-
-  // ─── GLOW RECIPE ───────────────────────────────────────────────
-  {
-    id: 227,
-    name: "Watermelon Glow Niacinamide Dew Drops",
-    brand: "Glow Recipe",
-    type: "Serum",
-    ingredients: ["Niacinamide", "Hyaluronic Acid"],
-    concerns: ["Hyperpigmentation", "Dullness"],
-    features: ["Vegan"],
-    price: 35,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 14200,
-    color: "#e8636e",
-    buyLink: "https://www.amazon.com/dp/B09TWPP3VN?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "TikTok-famous serum-makeup hybrid that gives skin a dewy, lit-from-within glow. Niacinamide reduces pores and brightens, while watermelon extract hydrates. Wear alone or under foundation.",
-  },
-  {
-    id: 228,
-    name: "Watermelon Glow PHA+BHA Pore-Tight Toner",
-    brand: "Glow Recipe",
-    type: "Toner",
-    ingredients: ["Hyaluronic Acid", "Salicylic Acid", "Glycolic Acid"],
-    concerns: ["Large Pores", "Oily Skin"],
-    features: ["Vegan"],
-    price: 34,
-    priceRange: "$$",
-    oilFree: true,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 8700,
-    color: "#e8636e",
-    buyLink: "https://www.amazon.com/dp/B07BQMH4WJ?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gentle exfoliating toner with BHA (salicylic acid) and PHA to minimize pores, smooth texture, and hydrate simultaneously. Infused with watermelon extract and hyaluronic acid. Suitable for sensitive skin.",
-  },
-  {
-    id: 229,
-    name: "Plum Plump Hyaluronic Acid Serum",
-    brand: "Glow Recipe",
-    type: "Serum",
-    ingredients: ["Hyaluronic Acid"],
-    concerns: ["Dryness", "Fine Lines"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 42,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.6,
-    reviews: 5100,
-    color: "#e8636e",
-    buyLink: "https://www.amazon.com/dp/B09JWL1Q6T?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Five weights of hyaluronic acid work together to deeply plump and hydrate at every level of the skin. Antioxidant-rich plum extract and vegan collagen support suppleness and smooth fine lines.",
-  },
-  {
-    id: 230,
-    name: "Avocado Melt Retinol Eye Sleeping Mask",
-    brand: "Glow Recipe",
-    type: "Eye Cream",
-    ingredients: ["Retinol"],
-    concerns: ["Fine Lines", "Dark Circles"],
-    features: ["Vegan"],
-    price: 38,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2900,
-    color: "#e8636e",
-    buyLink: "https://www.amazon.com/dp/B09JWL2R5F?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Overnight eye treatment with encapsulated retinol and avocado oil that melts into skin while you sleep. Visibly reduces fine lines, puffiness, and dark circles by morning.",
-  },
-  {
-    id: 231,
-    name: "Banana Soufflé Moisture Cream",
-    brand: "Glow Recipe",
-    type: "Moisturizer",
-    ingredients: ["Niacinamide", "Peptides"],
-    concerns: ["Dullness", "Hyperpigmentation"],
-    features: ["Vegan"],
-    price: 39,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3800,
-    color: "#e8636e",
-    buyLink: "https://www.amazon.com/dp/B0C8X2YNH3?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Whipped moisture cream with banana extract, niacinamide, and peptides that brightens skin tone and provides all-day hydration. The airy soufflé texture absorbs instantly without heaviness.",
-  },
-
-  // ─── KRAVE BEAUTY ───────────────────────────────────────────────
-  {
-    id: 232,
-    name: "Great Barrier Relief Serum",
-    brand: "Krave Beauty",
-    type: "Serum",
-    ingredients: ["Ceramides", "Niacinamide"],
-    concerns: ["Redness", "Sensitive Skin"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 28,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 6400,
-    color: "#7a9e7e",
-    buyLink: "https://www.amazon.com/dp/B07R1QZLZ2?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Cult-status barrier repair serum with niacinamide, tamanu oil, and ceramide-precursor ingredients that calm inflammation and rebuild the skin barrier. Fragrance-free and ideal for reactive skin.",
-  },
-  {
-    id: 233,
-    name: "Matcha Hemp Hydrating Cleanser",
-    brand: "Krave Beauty",
-    type: "Cleanser",
-    ingredients: ["Hyaluronic Acid"],
-    concerns: ["Dryness"],
-    features: ["Fragrance-Free", "Vegan", "Non-Comedogenic"],
-    price: 20,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 9200,
-    color: "#7a9e7e",
-    buyLink: "https://www.amazon.com/dp/B07GL5Y8H5?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gentle gel cleanser with green tea water, hemp seed oil, and glycerin that cleans thoroughly without stripping. Leaves skin clean, soft, and perfectly balanced—never tight or dry.",
-  },
-  {
-    id: 234,
-    name: "Oat So Simple Water Cream",
-    brand: "Krave Beauty",
-    type: "Moisturizer",
-    ingredients: ["Ceramides", "Hyaluronic Acid"],
-    concerns: ["Sensitive Skin", "Dryness"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 24,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 4300,
-    color: "#7a9e7e",
-    buyLink: "https://www.amazon.com/dp/B0DGKXBBFH?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Lightweight water cream with squalane, oat extract, and a minimalist ingredient list that respects even the most sensitive skin. Hydrates all day without greasiness or pore-clogging residue.",
-  },
-  {
-    id: 235,
-    name: "Kale-Lalu-yAHA Exfoliating Toner",
-    brand: "Krave Beauty",
-    type: "Toner",
-    ingredients: ["Glycolic Acid", "Hyaluronic Acid"],
-    concerns: ["Texture", "Dullness"],
-    features: ["Vegan"],
-    price: 22,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5800,
-    color: "#7a9e7e",
-    buyLink: "https://www.amazon.com/dp/B07KHTG86L?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "5.25% glycolic acid exfoliating toner buffered with hyaluronic acid for gentle but effective exfoliation. Smooths texture, unclogs pores, and improves radiance over time without over-drying.",
-  },
-  {
-    id: 236,
-    name: "Beet The Sun SPF 40 Sunscreen",
-    brand: "Krave Beauty",
-    type: "Sunscreen",
-    ingredients: [],
-    concerns: ["Sun Protection"],
-    features: ["Fragrance-Free", "Vegan", "Non-Comedogenic"],
-    price: 24,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2100,
-    color: "#7a9e7e",
-    buyLink: "https://www.amazon.com/dp/B09XQTQ5GM?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Chemical SPF 40 that applies like a serum—no white cast, no greasiness, and no pilling under makeup. Beet-derived antioxidants provide added environmental protection. K-beauty inspired formula.",
-  },
-
-  // ─── BYOMA ───────────────────────────────────────────────
-  {
-    id: 237,
-    name: "Moisturizing Rich Cream",
-    brand: "Byoma",
-    type: "Moisturizer",
-    ingredients: ["Ceramides", "Hyaluronic Acid"],
-    concerns: ["Dryness", "Sensitive Skin"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 15,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.5,
-    reviews: 7800,
-    color: "#b5cce0",
-    buyLink: "https://www.amazon.com/dp/B0BXGG8VWG?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Drugstore-priced barrier cream packed with ceramides, cholesterol, and fatty acids in the skin's ideal 3:1:1 ratio. Deeply moisturizes and repairs dry, compromised skin at a fraction of luxury prices.",
-  },
-  {
-    id: 238,
-    name: "Hydrating Serum",
-    brand: "Byoma",
-    type: "Serum",
-    ingredients: ["Ceramides", "Hyaluronic Acid"],
-    concerns: ["Dryness", "Sensitive Skin"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 14,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 5100,
-    color: "#b5cce0",
-    buyLink: "https://www.amazon.com/dp/B0BXGD5WJX?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Barrier-boosting serum with multi-weight hyaluronic acid and the TriKOMP complex (ceramides, cholesterol, fatty acids) to deeply hydrate and lock moisture in. Lightweight and fragrance-free.",
-  },
-  {
-    id: 239,
-    name: "Clarifying Gel Cleanser",
-    brand: "Byoma",
-    type: "Cleanser",
-    ingredients: ["Ceramides"],
-    concerns: ["Oily Skin", "Acne"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 13,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 3200,
-    color: "#b5cce0",
-    buyLink: "https://www.amazon.com/dp/B0BXGB3NQS?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "PHA-powered gel cleanser that removes excess oil and impurities without disrupting the moisture barrier. Gentle enough for daily use, with ceramides added to prevent post-cleanse tightness.",
-  },
-  {
-    id: 240,
-    name: "Brightening Toner",
-    brand: "Byoma",
-    type: "Toner",
-    ingredients: ["Ceramides", "Niacinamide"],
-    concerns: ["Hyperpigmentation", "Dullness"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 13,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 2700,
-    color: "#b5cce0",
-    buyLink: "https://www.amazon.com/dp/B0BXGF4ZKW?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Niacinamide and AHA toner that gently brightens and evens skin tone while reinforcing the barrier with ceramides. Affordable barrier-care with real results for uneven, dull complexions.",
-  },
-  {
-    id: 241,
-    name: "Clarifying Serum",
-    brand: "Byoma",
-    type: "Serum",
-    ingredients: ["Ceramides", "Salicylic Acid"],
-    concerns: ["Acne", "Large Pores"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 14,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 3400,
-    color: "#b5cce0",
-    buyLink: "https://www.amazon.com/dp/B0BXGGYYW4?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "PHA and ceramide serum that targets blemishes and pores without compromising barrier integrity. Blue tansy extract soothes redness while the TriKOMP complex keeps skin resilient and balanced.",
-  },
-
-  // ─── GOOD MOLECULES ───────────────────────────────────────────────
-  {
-    id: 242,
-    name: "Discoloration Correcting Serum",
-    brand: "Good Molecules",
-    type: "Serum",
-    ingredients: ["Niacinamide", "Vitamin C"],
-    concerns: ["Hyperpigmentation", "Dark Spots"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 12,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 8900,
-    color: "#d4a85f",
-    buyLink: "https://www.amazon.com/dp/B098TQK3XJ?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Ultra-affordable dark spot corrector with tranexamic acid, kojic acid, and niacinamide that visibly fades discoloration and post-acne marks. Fragrance-free and gentle enough for sensitive skin.",
-  },
-  {
-    id: 243,
-    name: "Niacinamide Brightening Toner",
-    brand: "Good Molecules",
-    type: "Toner",
-    ingredients: ["Niacinamide", "Hyaluronic Acid"],
-    concerns: ["Hyperpigmentation", "Large Pores"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 8,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 11200,
-    color: "#d4a85f",
-    buyLink: "https://www.amazon.com/dp/B0987FDQMH?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "10% niacinamide toner at an almost unbelievably low price. Minimizes pores, controls oil, brightens skin, and reduces redness. A cult favorite for getting clinical-grade niacinamide on any budget.",
-  },
-  {
-    id: 244,
-    name: "Overnight Exfoliating Treatment",
-    brand: "Good Molecules",
-    type: "Treatment",
-    ingredients: ["Glycolic Acid", "Hyaluronic Acid"],
-    concerns: ["Texture", "Dullness", "Acne"],
-    features: ["Vegan"],
-    price: 9,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 5600,
-    color: "#d4a85f",
-    buyLink: "https://www.amazon.com/dp/B087HDTGDF?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Overnight AHA treatment with glycolic and lactic acid that renews skin texture while you sleep. Wake up with visibly smoother, more even-toned skin. Budget-friendly alternative to luxury acid treatments.",
-  },
-  {
-    id: 245,
-    name: "Hyaluronic Acid Serum",
-    brand: "Good Molecules",
-    type: "Serum",
-    ingredients: ["Hyaluronic Acid"],
-    concerns: ["Dryness", "Fine Lines"],
-    features: ["Fragrance-Free", "Vegan"],
-    price: 9,
-    priceRange: "$",
-    oilFree: false,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.4,
-    reviews: 7300,
-    color: "#d4a85f",
-    buyLink: "https://www.amazon.com/dp/B087HBTF72?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Pure hyaluronic acid serum with multiple molecular weights for deep and surface hydration. Lightweight, fast-absorbing, and fragrance-free. One of the most affordable HA serums that actually delivers results.",
-  },
-  {
-    id: 246,
-    name: "Lightweight Daily Moisturizer",
-    brand: "Good Molecules",
-    type: "Moisturizer",
-    ingredients: ["Ceramides", "Hyaluronic Acid"],
-    concerns: ["Oily Skin"],
-    features: ["Fragrance-Free", "Vegan", "Oil-Free"],
-    price: 10,
-    priceRange: "$",
-    oilFree: true,
-    fragranceFree: true,
-    vegan: true,
-    rating: 4.3,
-    reviews: 4200,
-    color: "#d4a85f",
-    buyLink: "https://www.amazon.com/dp/B098TQPMGS?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Gel-cream moisturizer with ceramides and niacinamide that hydrates without heaviness. Perfect for oily and combination skin types. Fragrance-free, non-comedogenic, and exceptionally affordable.",
-  },
-
-  // ─── ALPYN BEAUTY ───────────────────────────────────────────────
-  {
-    id: 247,
-    name: "PlantGenius Melt Moisturizer",
-    brand: "Alpyn Beauty",
-    type: "Moisturizer",
-    ingredients: ["Hyaluronic Acid", "Peptides"],
-    concerns: ["Dryness", "Fine Lines"],
-    features: ["Vegan"],
-    price: 65,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 2100,
-    color: "#8b7355",
-    buyLink: "https://www.amazon.com/dp/B08F2H3QJT?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Rich moisturizer with wild-harvested alpine botanicals, 4 peptides, and hyaluronic acid that melts into skin for deep nourishment. Visibly firms and plumps with continued use.",
-  },
-  {
-    id: 248,
-    name: "Wild Huckleberry 8-Acid Polishing Peel",
-    brand: "Alpyn Beauty",
-    type: "Treatment",
-    ingredients: ["Glycolic Acid", "Salicylic Acid", "Hyaluronic Acid"],
-    concerns: ["Texture", "Dullness", "Hyperpigmentation"],
-    features: ["Vegan"],
-    price: 60,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.5,
-    reviews: 1800,
-    color: "#8b7355",
-    buyLink: "https://www.amazon.com/dp/B08BCPRL8C?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "8-acid resurfacing peel with huckleberry, AHAs, BHA, and PHAs that polishes away dead skin cells for visibly smoother, brighter skin. Anti-inflammatory botanicals keep skin calm during exfoliation.",
-  },
-  {
-    id: 249,
-    name: "Vitamin C Brightening Eye Cream",
-    brand: "Alpyn Beauty",
-    type: "Eye Cream",
-    ingredients: ["Vitamin C", "Peptides"],
-    concerns: ["Dark Circles", "Fine Lines"],
-    features: ["Vegan"],
-    price: 55,
-    priceRange: "$$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 1100,
-    color: "#8b7355",
-    buyLink: "https://www.amazon.com/dp/B08BCPRM9D?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Brightening eye cream with stable vitamin C, peptides, and alpine plant extracts that target dark circles and fine lines. Lightweight yet nourishing with real visible results after 2-4 weeks.",
-  },
-  {
-    id: 250,
-    name: "PlantGenius Daydream SPF 40",
-    brand: "Alpyn Beauty",
-    type: "Sunscreen",
-    ingredients: ["Hyaluronic Acid", "Peptides"],
-    concerns: ["Sun Protection"],
-    features: ["Vegan"],
-    price: 48,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.4,
-    reviews: 1400,
-    color: "#8b7355",
-    buyLink: "https://www.amazon.com/dp/B09L6GVP5T?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Tinted mineral SPF 40 with wild-harvested botanicals, peptides, and hyaluronic acid in a moisturizing base. Gives a natural healthy glow while protecting. Clean ingredients meet real sun protection.",
-  },
-  {
-    id: 251,
-    name: "Wild Nettle & Niacinamide Toner",
-    brand: "Alpyn Beauty",
-    type: "Toner",
-    ingredients: ["Niacinamide"],
-    concerns: ["Hyperpigmentation", "Dullness"],
-    features: ["Vegan"],
-    price: 38,
-    priceRange: "$$",
-    oilFree: false,
-    fragranceFree: false,
-    vegan: true,
-    rating: 4.3,
-    reviews: 900,
-    color: "#8b7355",
-    buyLink: "https://www.amazon.com/dp/B09L6GVQTX?tag=bunnyindex-20",
-    imageUrl: "",
-    description: "Brightening toner with niacinamide, wild nettle, and alpine plant extracts that even skin tone and refine texture. Preps skin beautifully for the rest of your routine and delivers antioxidant protection.",
-  },
-]
-
-
-
-const brandLogos = {
-  "e.l.f. Cosmetics": "data:image/png;base64,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",
-  "Acure": "data:image/png;base64,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",
-  "Pacifica": "data:image/png;base64,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",
-  "Supergoop": "data:image/png;base64,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OOvdEGTXKofM8+ZoOjT0Xel33fs4N3R0nn/6hVo/Fq+xqmtVD26sOxUmJrHiSCIg10ElPOQOG9GQWk+pEh/l9FbxV+256Zr8srXWFo3orqyMHw3o5D/lVBszMYrnFjnke8KTVtDoXL4uwdXvfZsSW57yWxzxSsb4agg/grNqqmwZ/f4lP6sX2lWrXu07Q26S47PAJSH8FqIiKgUlERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERV026264IsbtTwrX/AHQq/bODBJndhhhGo9peekTyrE7co/7OrYdOVd+Cr7swMD898MA8u2lP/gyL6ZZHf7BJ2B/gVU1I/am+zxVrM6rNVT3B1U6GY0NdRCjdVRwul9keJo5AXNaCQ0hhBdpoDprwWHlZZJ24kpHUfa1NDbqqsqZLk6J0bant9d1jd4DUjXU7uoHiplI1GhXgAA0A0XCNuLxB0OPrh4dvsVpu65XqIirlkstEREWIiIiLnvtL1z6/OzET3OLmxTiJnHkA0fiSrsZK0BtmVGGaJ4G/Hbog/TvO7xVCc26g1eZeIZyCC6ukHH0On4LonhSNsWGbbGwaNbTRgD+ELu9qfw7fSxdngB81XUesshX01A+3Ef8Asgoh/wDeof8AlTKeFXjbqq2sy9s1ESd6a5doB6NjcP8AMuc2fBNyhx1qVU+qd3L4GwXG7dxNNp7oMLfnxKtMq37CNE6LCN/rnA7tRVxtb/C12v2qyC27TO3rpLjs8AvKQYhaiIiolIREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREUAbcLdctKB2v0a4fYoI2SoO2zxs79P7lk0n9BH4qfttxoOVFO7Ti2vj4+HAqDtjeMyZ1U5A+hRTOPVo/FfRbQ7Gz0v93gquf8Ae2+xXpREXzpWiIiIiy0RERYiIiIuauaUJp8xsQROGhFfLw+LtV0Hywr2XTLywXCNxc2ooIngnv1aFRjaQtclqznxDE9payWcTR+rXNHHqCrObHWLYb7ljHZZJQa2zu7FzT/hn6BHppwX0PaeI1FrgqG64x8R81V0h3Z3tKm5VH28bvHNiLDlkY/8pS001RI0Hukc1rf+W5W4Wl4lyuwPiTFcOJ75ZGV1yijbG10sjjGWtJIB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",
-  "Physicians Formula": "data:image/png;base64,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",
-  "Olaplex": "data:image/png;base64,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",
-  "Mineral Fusion": "https://www.google.com/s2/favicons?domain=mineralfusion.com&sz=128",
-  "Overtone": "https://www.google.com/s2/favicons?domain=overtone.co&sz=128",
-  "ColourPop": "https://www.google.com/s2/favicons?domain=colourpop.com&sz=128",
-  "Glossier": "https://www.google.com/s2/favicons?domain=glossier.com&sz=128",
-  "Thrive Causemetics": "https://www.google.com/s2/favicons?domain=thrivecausemetics.com&sz=128",
-  "Milk Makeup": "https://www.google.com/s2/favicons?domain=milkmakeup.com&sz=128",
-  "Biossance": "https://www.google.com/s2/favicons?domain=biossance.com&sz=128",
-  "Versed": "https://www.google.com/s2/favicons?domain=versed.com&sz=128",
-  "Cocokind": "https://www.google.com/s2/favicons?domain=cocokind.com&sz=128",
-  "Herbivore Botanicals": "https://www.google.com/s2/favicons?domain=herbivorebotanicals.com&sz=128",
-  "Tower 28": "https://www.google.com/s2/favicons?domain=tower28beauty.com&sz=128",
-  "Saie": "https://www.google.com/s2/favicons?domain=saiebeauty.com&sz=128",
-  "Glow Recipe": "https://www.google.com/s2/favicons?domain=glowrecipe.com&sz=128",
-  "Krave Beauty": "https://www.google.com/s2/favicons?domain=kravebeauty.com&sz=128",
-  "Byoma": "https://www.google.com/s2/favicons?domain=byoma.com&sz=128",
-  "Good Molecules": "https://www.google.com/s2/favicons?domain=goodmolecules.com&sz=128",
-  "Alpyn Beauty": "https://www.google.com/s2/favicons?domain=alpynbeauty.com&sz=128",
-};
-const allBrands = [...new Set(products.map((p) => p.brand))].sort();
-const allIngredients = [...new Set(products.flatMap((p) => p.ingredients))].sort();
-const allConcerns = [...new Set(products.flatMap((p) => p.concerns))].sort();
-const allTypes = [...new Set(products.map((p) => p.type))].sort();
-const allCerts = ["Leaping Bunny", "PETA", "Not sold in China"];
-
-const certMeta = {
-  "Leaping Bunny": { icon: "🐇", color: "#c9826b" },
-  "PETA": { icon: "✦", color: "#8fac8f" },
-  "Not sold in China": { icon: "⊘", color: "#7a9eb5" },
-};
-
-const quickSearches = [
-  "Niacinamide", "Ceramides", "Hyaluronic Acid", "Vitamin C",
-  "Salicylic Acid", "Retinol", "Glycolic Acid", "Squalane",
-  "Peptides", "Bakuchiol", "Zinc Oxide", "Azelaic Acid"
+const RAW_PRODUCTS = [
+  {"id": 1, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Face Cream", "type": "Moisturizer", "price": 12.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08127SC4G?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.7, "reviews": 15200, "imageUrl": "", "description": "Rich yet lightweight moisturizer packed with hyaluronic acid, peptides, and ceramides to deeply nourish and plump skin. Fragrance-free and non-comedogenic, ideal for all skin types.", "ingredients": ["Hyaluronic Acid", "Ceramides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 2, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Suntouchable! Whoa Glow SPF 30", "type": "Sunscreen", "price": 14.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0BSP3N82M?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 5800, "imageUrl": "", "description": "Lightweight SPF 30 sunscreen that doubles as a glowy makeup primer, infused with hyaluronic acid for a radiant, skin-like finish. Broad-spectrum protection with zero white cast.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Sun Protection"], "features": [], "skinTypes": []},
+  {"id": 3, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Halo Glow Liquid Filter", "type": "Serum", "price": 14.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0B5MGBDHZ?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 21000, "imageUrl": "", "description": "Complexion-boosting serum-meets-filter that blurs, brightens, and adds a luminous glow in seconds. Can be worn alone, mixed into foundation, or layered under or over makeup.", "ingredients": ["Vitamin C"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 4, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Keep Your Balance Toner", "type": "Toner", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07X2M2TXN?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 8400, "imageUrl": "", "description": "Gentle, refreshing toner formulated with hyaluronic acid, witch hazel, and aloe to remove residual impurities and rebalance skin after cleansing. Oil-free and fragrance-free.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Oily Skin"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 5, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Daily Cleanser", "type": "Cleanser", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08T7DY96H?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.6, "reviews": 11200, "imageUrl": "", "description": "Gel-based foaming cleanser with hyaluronic acid and ceramides that washes away oil, impurities, and makeup without stripping skin. Leaves skin clean, hydrated, and balanced.", "ingredients": ["Hyaluronic Acid", "Ceramides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 6, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Cleansing Balm", "type": "Cleansing Balm", "price": 11.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08TQTT8LK?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.6, "reviews": 8100, "imageUrl": "", "description": "Melt-away cleansing balm with hyaluronic acid that dissolves makeup, sunscreen, and impurities in seconds and rinses clean without residue. Leaves skin soft and hydrated.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 7, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Suntouchable! Invisible SPF 35", "type": "Sunscreen", "price": 14.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0C7SFTTV3?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 4200, "imageUrl": "", "description": "Lightweight gel-based SPF 35 sunscreen that disappears on contact and doubles as a smoothing makeup primer. Oil-free and fragrance-free, suited for oily and sensitive skin types.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 8, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Facial Scrub", "type": "Exfoliant", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B003Z4OD24?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 15100, "imageUrl": "", "description": "Gentle daily exfoliating scrub with sea kelp, lemon peel, and French green clay that detoxifies pores and polishes skin to a radiant glow. 100% vegan and sulfate-free.", "ingredients": ["Glycolic Acid"], "concerns": ["Hyperpigmentation"], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 9, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Cleansing Gel", "type": "Cleanser", "price": 11.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B00TXCGEQU?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 9800, "imageUrl": "", "description": "Antioxidant-rich cleansing gel with pomegranate, blackberry, and acai that washes away dirt and makeup while infusing skin with brightening nutrients. Lathers into a luxurious foam.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 10, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brilliantly Brightening Glowing Serum", "type": "Serum", "price": 14.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0040ZHUH2?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 3200, "imageUrl": "", "description": "Vitamin C–powered serum with argan oil and cranberry seed oil that revitalizes dull skin and delivers a visibly radiant, healthy-looking glow. Packed with super-nutrients for smoother skin.", "ingredients": ["Vitamin C"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 11, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Cleansing Cream", "type": "Cleanser", "price": 11.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B00B4C35IW?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 5600, "imageUrl": "", "description": "Gentle cream cleanser formulated with peony extract, chamomile, and argan oil to soothe, hydrate, and cleanse dry and sensitive skin without stripping its natural moisture.", "ingredients": [], "concerns": ["Sensitive Skin", "Dry Skin", "Rosacea"], "features": [], "skinTypes": []},
+  {"id": 12, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Ultra Hydrating 12 Hour Facial Cream", "type": "Moisturizer", "price": 20.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B082G1C4BZ?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 2800, "imageUrl": "", "description": "Adaptogen-powered 12-hour moisturizer with ashwagandha, holy basil, and antioxidants that replenishes and tones dry skin for an all-day hydration boost. 100% vegan.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Dry Skin"], "features": [], "skinTypes": []},
+  {"id": 13, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Eye Cream", "type": "Eye Cream", "price": 20.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B003Z4MCJA?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 5200, "imageUrl": "", "description": "Anti-aging eye cream with CoQ10, edelweiss extract, and blackberry that targets dark circles, puffiness, and fine lines for brighter, more youthful-looking eyes.", "ingredients": [], "concerns": ["Hyperpigmentation", "Dry Skin"], "features": [], "skinTypes": []},
+  {"id": 14, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Whipped Night Cream", "type": "Moisturizer", "price": 18.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07NJ4H5S3?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 3100, "imageUrl": "", "description": "Overnight recovery cream with vitamin C, peptides, and ashwagandha that renews and resurfaces skin while you sleep, visibly reducing fine lines and dark spots by morning.", "ingredients": ["Vitamin C"], "concerns": ["Dry Skin"], "features": [], "skinTypes": []},
+  {"id": 15, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Cloud Cream", "type": "Moisturizer", "price": 18.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B077X5NFY9?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 4100, "imageUrl": "", "description": "Whipped, cloud-light night moisturizer with argan extract and hyaluronic acid formulated for normal to dry, sensitive skin. Delivers intensive hydration overnight without heaviness.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Sensitive Skin", "Dry Skin", "Rosacea"], "features": [], "skinTypes": []},
+  {"id": 16, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Coconut Cream to Foam Face Wash", "type": "Cleanser", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B073Z33B3Z?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 8700, "imageUrl": "", "description": "Sulfate-free cleansing gel with coconut water and vitamin E that transforms from cream to a luxurious foam, removing impurities while keeping skin soft and balanced.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 17, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Glow Baby Vitamin C Booster Serum", "type": "Serum", "price": 16.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07VRTP6SY?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 14600, "imageUrl": "", "description": "Ultra-concentrated vitamin C serum with AHA complex and ferulic acid that visibly brightens dark spots, evens skin tone, and boosts natural radiance. Oil-free and non-comedogenic.", "ingredients": ["Vitamin C"], "concerns": ["Hyperpigmentation"], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 18, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Vegan Collagen Complex Face Serum", "type": "Serum", "price": 18.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B095335RGC?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 5200, "imageUrl": "", "description": "Plant-powered collagen-boosting serum with vegan collagen, ceramides, and niacinamide that plumps, firms, and hydrates for a visibly more youthful complexion.", "ingredients": ["Niacinamide", "Ceramides"], "concerns": ["Dry Skin"], "features": [], "skinTypes": []},
+  {"id": 19, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Water Rehab Cream", "type": "Moisturizer", "price": 14.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B01MTFE7LB?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 5900, "imageUrl": "", "description": "Oil-free probiotic moisturizer with coconut water and plant extracts that restores and rebalances skin", "ingredients": ["Hyaluronic Acid"], "concerns": ["Sensitive Skin"], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 20, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Glow Baby Vitamin C Brightening Moisturizer", "type": "Moisturizer", "price": 16.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08TT1FTK8?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 3400, "imageUrl": "", "description": "Daily vitamin C moisturizer with AHA blend and hyaluronic acid that brightens dull skin and boosts glow with every application. Lightweight texture absorbs quickly.", "ingredients": ["Vitamin C", "Hyaluronic Acid"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 21, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Glow Baby Resurfacing & Brightening Toner", "type": "Toner", "price": 15.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09RRXRFVH?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 3100, "imageUrl": "", "description": "Exfoliating liquid toner with glycolic acid, vitamin C, and aloe vera that smooths, brightens, and preps skin for the rest of your routine. Visibly minimizes pores over time.", "ingredients": ["Glycolic Acid", "Vitamin C"], "concerns": ["Hyperpigmentation"], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 22, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Coconut Whip Cream to Foam Face Wash", "type": "Cleanser", "price": 16.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0DC88HQW3?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 2300, "imageUrl": "", "description": "Extra-large format cleansing foam with coconut milk, vegan squalane, and vitamin E that nourishes and moisturizes as it cleanses, ideal for dry and sensitive skin types.", "ingredients": [], "concerns": ["Dry Skin", "Sensitive Skin"], "features": [], "skinTypes": []},
+  {"id": 23, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Pore Warrior Niacinamide Serum", "type": "Serum", "price": 14.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07VPS2K19?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.2, "reviews": 2800, "imageUrl": "", "description": "Lightweight niacinamide serum with salicylic acid and hyaluronic acid that visibly tightens pores, controls oil, and clears blemishes for a smoother, more refined complexion.", "ingredients": ["Niacinamide", "Salicylic Acid"], "concerns": ["Acne", "Oily Skin"], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 24, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Unseen Sunscreen SPF 40", "type": "Sunscreen", "price": 36.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08CFVM1TT?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.6, "reviews": 17200, "imageUrl": "", "description": "Invisible, primer-finish SPF 40 that leaves absolutely no white cast and creates a velvety base for flawless makeup application. Broad-spectrum, oil-free, and fragrance-free.", "ingredients": [], "concerns": ["Sun Protection", "Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 25, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Glowscreen SPF 40", "type": "Sunscreen", "price": 36.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B088ZRZ668?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 10800, "imageUrl": "", "description": "Hydrating SPF 40 sunscreen that delivers a luminous, lit-from-within glow with skincare benefits like hyaluronic acid and niacinamide. Wear alone or as a dewy primer under makeup.", "ingredients": ["Hyaluronic Acid", "Niacinamide"], "concerns": ["Sun Protection", "Hyperpigmentation"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 26, "brand": "Supergoop", "brandColor": "#D4956A", "name": "PLAY Everyday Lotion SPF 50", "type": "Sunscreen", "price": 22.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B087H8W6Y2?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.7, "reviews": 12400, "imageUrl": "", "description": "Water- and sweat-resistant SPF 50 face and body lotion that absorbs fast and leaves no greasy residue. Broad-spectrum protection great for active outdoor use and daily wear.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic", "Pregnancy-Safe"], "skinTypes": []},
+  {"id": 27, "brand": "Supergoop", "brandColor": "#D4956A", "name": "PLAY 100% Mineral Lotion SPF 50", "type": "Sunscreen", "price": 22.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09RNDPKQF?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 5100, "imageUrl": "", "description": "Non-nano zinc oxide mineral SPF 50 lotion that", "ingredients": ["Zinc Oxide"], "concerns": ["Sun Protection", "Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Reef-Safe", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 28, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Superscreen Daily Moisturizer SPF 40", "type": "Moisturizer", "price": 45.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07VR6BBY8?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 4800, "imageUrl": "", "description": "Daily moisturizer and SPF 40 in one, powered by hyaluronic acid and sea silt extract for all-day hydration and plumping. A true skin-care-and-sun-protection multitasker.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Sun Protection"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 29, "brand": "Supergoop", "brandColor": "#D4956A", "name": "(Re)setting 100% Mineral Powder SPF 35", "type": "Sunscreen", "price": 35.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07VLNVB69?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 6200, "imageUrl": "", "description": "Translucent mineral setting powder with SPF 35 that lets you reapply sun protection over makeup without disturbing it. Made with non-nano zinc oxide and free of chemical filters.", "ingredients": ["Zinc Oxide"], "concerns": ["Sun Protection", "Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 30, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Mineral Mattescreen SPF 40", "type": "Sunscreen", "price": 38.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09CJPRPFD?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 4600, "imageUrl": "", "description": "100% mineral SPF 40 with a true matte finish that controls oil and shine all day. Non-nano zinc oxide formula doubles as a pore-minimizing primer, fragrance-free and reef-safe.", "ingredients": ["Zinc Oxide"], "concerns": ["Sun Protection", "Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic", "Mineral Sunscreen", "Reef-Safe"], "skinTypes": []},
+  {"id": 31, "brand": "Supergoop", "brandColor": "#D4956A", "name": "PLAY Antioxidant Body Mist SPF 50", "type": "Sunscreen", "price": 28.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": false, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07VVQ4XPN?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 3900, "imageUrl": "", "description": "Weightless SPF 50 mist with antioxidants including meadowfoam seed oil and rosemary extract for full-body protection that feels invisible on skin. Water-resistant up to 80 minutes.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Fragrance-Free", "Oil-Free"], "skinTypes": []},
+  {"id": 32, "brand": "Glossier", "brandColor": "#C4A882", "name": "Milky Jelly Cleanser", "type": "Cleanser", "price": 18.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.glossier.com/products/milky-jelly-cleanser", "retailer": "direct", "rating": 4.6, "reviews": 12400, "imageUrl": "", "description": "pH-balanced gel-cream cleanser that gently dissolves makeup and impurities without stripping skin. Leaves a soft, conditioned finish thanks to allantoin and rosewater.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 33, "brand": "Glossier", "brandColor": "#C4A882", "name": "Invisible Shield Daily Sunscreen SPF 35", "type": "Sunscreen", "price": 34.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.glossier.com/products/invisible-shield", "retailer": "direct", "rating": 4.3, "reviews": 4800, "imageUrl": "", "description": "Water-gel daily sunscreen with broad-spectrum SPF 35 that disappears into skin. No white cast, no residue — just effortless UV protection for all skin tones.", "ingredients": [], "concerns": ["Sun Protection", "Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 34, "brand": "Glossier", "brandColor": "#C4A882", "name": "Super Bounce Serum", "type": "Serum", "price": 28.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.glossier.com/products/super-bounce", "retailer": "direct", "rating": 4.5, "reviews": 7200, "imageUrl": "", "description": "Hyaluronic acid + pro-vitamin B5 serum that delivers a concentrated hit of hydration. Boosts plumpness and suppleness for all skin types, especially dry and dehydrated.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Dry Skin", "Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 35, "brand": "Glossier", "brandColor": "#C4A882", "name": "Priming Moisturizer Balance", "type": "Moisturizer", "price": 34.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.glossier.com/products/priming-moisturizer-balance", "retailer": "direct", "rating": 4.4, "reviews": 5100, "imageUrl": "", "description": "Lightweight gel moisturizer that controls shine and minimizes the appearance of pores. Formulated with niacinamide to balance oily and combination skin.", "ingredients": ["Niacinamide"], "concerns": ["Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 36, "brand": "Glossier", "brandColor": "#C4A882", "name": "Futuredew", "type": "Face Oil", "price": 24.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.glossier.com/products/futuredew", "retailer": "direct", "rating": 4.3, "reviews": 4300, "imageUrl": "", "description": "Oil-serum hybrid that gives the dewy, lit-from-within glow of glass skin without looking greasy. Packed with plant oils and chia seed for lasting radiance.", "ingredients": ["Antioxidants"], "concerns": ["Brightening"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 37, "brand": "Glossier", "brandColor": "#C4A882", "name": "Balm Dotcom", "type": "Lip Balm", "price": 14.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.glossier.com/products/balm-dotcom", "retailer": "direct", "rating": 4.7, "reviews": 14200, "imageUrl": "", "description": "Intensely moisturizing skin salve for lips and dry spots. Made with beeswax-free natural emollients, this cult-classic provides lasting hydration in delicious scented varieties.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 38, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Sunshine Skin Tint SPF 30", "type": "Tinted Moisturizer", "price": 44.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.milkmakeup.com/products/sunshine-skin-tint-spf-30", "retailer": "direct", "rating": 4.3, "reviews": 4900, "imageUrl": "", "description": "Sheer tinted moisturizer with SPF 30 that evens skin tone while delivering sun protection and a natural, glowing finish. Buildable, skin-like coverage for everyday wear.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 39, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Bionic Treatment Oil", "type": "Face Oil", "price": 52.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.milkmakeup.com/products/bionic-treatment-oil", "retailer": "direct", "rating": 4.5, "reviews": 2900, "imageUrl": "", "description": "Treatment face oil blended with bakuchiol, hemp-derived cannabis oil, and squalane to visibly smooth fine lines, boost radiance, and deeply nourish skin overnight.", "ingredients": ["Squalane", "Bakuchiol", "Antioxidants"], "concerns": ["Anti-Aging", "Brightening", "Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 40, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Guards Up Daily Mineral Sunscreen SPF 35", "type": "Sunscreen", "price": 22.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/guards-up-daily-mineral-sunscreen", "retailer": "direct", "rating": 4.2, "reviews": 3600, "imageUrl": "", "description": "Lightweight daily mineral SPF 35 with zinc oxide that protects without white cast or heavy residue. Reef-safe formula suits sensitive skin and wears beautifully under makeup.", "ingredients": ["Zinc Oxide"], "concerns": ["Sun Protection", "Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic", "Reef-Safe", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 41, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Dew Point Moisturizing Gel-Cream", "type": "Moisturizer", "price": 16.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/dew-point-moisturizing-gel-cream", "retailer": "direct", "rating": 4.4, "reviews": 5100, "imageUrl": "", "description": "Lightweight gel-cream moisturizer with hyaluronic acid and aloe vera that delivers lasting hydration without greasiness. Perfect for oily to normal skin types.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 42, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Day Dissolve Cleansing Balm", "type": "Cleansing Balm", "price": 18.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/day-dissolve-cleansing-balm", "retailer": "direct", "rating": 4.5, "reviews": 4700, "imageUrl": "", "description": "Melt-away cleansing balm that effectively dissolves sunscreen, makeup, and impurities without stripping skin. Transforms to a milky texture on contact with water.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 43, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Skin Soak Rich Moisture Cream", "type": "Moisturizer", "price": 16.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/skin-soak-rich-moisture-cream", "retailer": "direct", "rating": 4.3, "reviews": 3900, "imageUrl": "", "description": "Rich, nourishing moisturizer with ceramides and squalane for very dry, thirsty skin. Deeply replenishes the moisture barrier and provides lasting comfort throughout the day.", "ingredients": ["Ceramides", "Squalane"], "concerns": ["Dry Skin", "Barrier Support"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 44, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Press Restart Gentle Retinol Serum", "type": "Serum", "price": 26.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/press-restart-gentle-retinol-serum", "retailer": "direct", "rating": 4.4, "reviews": 4400, "imageUrl": "", "description": "Gentle retinol serum formulated with squalane and peptides to minimize fine lines and improve skin texture without irritation. Great for retinol beginners.", "ingredients": ["Retinol", "Squalane", "Peptides"], "concerns": ["Anti-Aging"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 45, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Weekend Glow Daily Brightening Solution", "type": "Toner", "price": 19.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/weekend-glow-daily-brightening-solution", "retailer": "direct", "rating": 4.4, "reviews": 5300, "imageUrl": "", "description": "Exfoliating toning solution with glycolic acid, niacinamide, and brightening botanicals that visibly improves skin tone and texture with regular use.", "ingredients": ["Niacinamide", "Glycolic Acid", "Vitamin C"], "concerns": ["Hyperpigmentation", "Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 46, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Calm Your Pores Pore Minimizing Serum", "type": "Serum", "price": 20.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/calm-your-pores-pore-minimizing-serum", "retailer": "direct", "rating": 4.2, "reviews": 3100, "imageUrl": "", "description": "Niacinamide-powered serum that minimizes the appearance of pores and controls shine. Lightweight formula absorbs instantly and reduces excess oil production over time.", "ingredients": ["Niacinamide"], "concerns": ["Oily Skin", "Blackheads", "Acne"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 47, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Just Breathe Clarifying Serum", "type": "Serum", "price": 20.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/just-breathe-clarifying-serum", "retailer": "direct", "rating": 4.3, "reviews": 2800, "imageUrl": "", "description": "Salicylic acid + niacinamide serum that clears blemishes and prevents future breakouts while calming redness. Ideal for acne-prone and congested skin.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": ["Acne", "Blackheads", "Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 48, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Barrier Restore Ceramide Moisturizer", "type": "Moisturizer", "price": 18.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/barrier-restore-ceramide-moisturizer", "retailer": "direct", "rating": 4.5, "reviews": 4200, "imageUrl": "", "description": "Ceramide-rich moisturizer that repairs and fortifies the skin barrier for calmer, more resilient skin. Soothing formula is ideal for sensitive, dry, and eczema-prone skin types.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": ["Eczema", "Dry Skin", "Sensitive Skin", "Barrier Support"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 49, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Good Habits Brightening Vitamin C Serum", "type": "Serum", "price": 26.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.versed.com/products/good-habits-brightening-vitamin-c-serum", "retailer": "direct", "rating": 4.4, "reviews": 3400, "imageUrl": "", "description": "Stable vitamin C + turmeric serum that fades dark spots, evens skin tone, and brightens the complexion over time. Antioxidant-rich formula protects against environmental damage.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": ["Hyperpigmentation", "Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 50, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Ceramide Barrier Serum", "type": "Serum", "price": 22.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/ceramide-barrier-serum", "retailer": "direct", "rating": 4.6, "reviews": 3800, "imageUrl": "", "description": "Ceramide + phytosterol serum that rebuilds the skin", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": ["Eczema", "Dry Skin", "Sensitive Skin", "Barrier Support"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 51, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Texture Smoothing Cream", "type": "Moisturizer", "price": 19.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/texture-smoothing-cream", "retailer": "direct", "rating": 4.5, "reviews": 4200, "imageUrl": "", "description": "Rich moisturizer with oat kernel flour and squalane that visibly reduces texture and roughness. Comforting formula softens skin and improves overall smoothness over time.", "ingredients": ["Squalane"], "concerns": ["Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 52, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Oil to Milk Cleanser", "type": "Cleanser", "price": 14.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/oil-to-milk-cleanser", "retailer": "direct", "rating": 4.4, "reviews": 3100, "imageUrl": "", "description": "Gentle oil-to-milk cleansing formula that dissolves makeup and impurities without stripping the skin. Transforms from a lightweight oil to a milky emulsion with water.", "ingredients": [], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 53, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Redness Erasing Toner", "type": "Toner", "price": 18.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/redness-erasing-toner", "retailer": "direct", "rating": 4.3, "reviews": 2500, "imageUrl": "", "description": "Calming toner with azelaic acid and allantoin that reduces redness, evens skin tone, and soothes reactive or sensitive skin. Prepares skin to better absorb subsequent serums.", "ingredients": ["Azelaic Acid"], "concerns": ["Rosacea", "Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 54, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Daily SPF Facial Moisturizer SPF 32", "type": "Sunscreen", "price": 20.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/daily-spf-moisturizer", "retailer": "direct", "rating": 4.3, "reviews": 3700, "imageUrl": "", "description": "Tinted mineral SPF 32 moisturizer that hydrates, evens skin tone, and protects in one step. Zinc oxide-based formula with a natural tint that suits a range of skin tones.", "ingredients": ["Zinc Oxide"], "concerns": ["Sun Protection"], "features": ["Fragrance-Free", "Non-Comedogenic", "Reef-Safe", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 55, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Resurfacing Vitamin C Serum", "type": "Serum", "price": 22.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/resurfacing-vitamin-c-serum", "retailer": "direct", "rating": 4.4, "reviews": 2900, "imageUrl": "", "description": "Vitamin C + alpha arbutin serum that brightens dull skin, fades dark spots, and evens skin tone. Stable formula absorbs quickly for a radiant, more luminous complexion.", "ingredients": ["Vitamin C", "Glycolic Acid"], "concerns": ["Hyperpigmentation", "Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 56, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Eye Cream", "type": "Eye Cream", "price": 16.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/eye-cream", "retailer": "direct", "rating": 4.2, "reviews": 2200, "imageUrl": "", "description": "Lightweight peptide eye cream with caffeine that depuffs, hydrates, and brightens the delicate under-eye area. Reduces the appearance of dark circles and fine lines.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": ["Anti-Aging"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 57, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Milky Micellar Water", "type": "Cleanser", "price": 12.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/milky-micellar-water", "retailer": "direct", "rating": 4.3, "reviews": 1900, "imageUrl": "", "description": "Gentle micellar cleanser that lifts away makeup and impurities without rubbing or rinsing. Nourishing milk formula leaves skin clean and comfortable — no tightness or residue.", "ingredients": [], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free", "Non-Comedogenic", "Oil-Free"], "skinTypes": []},
+  {"id": 58, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Facial Repair Serum", "type": "Serum", "price": 28.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/facial-repair-serum", "retailer": "direct", "rating": 4.5, "reviews": 2700, "imageUrl": "", "description": "Squalane + retinol serum that speeds cell turnover, smooths fine lines, and repairs uneven texture. Gentle enough for most skin types and formulated without fragrance.", "ingredients": ["Retinol", "Squalane"], "concerns": ["Anti-Aging", "Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 59, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Moisture Stick", "type": "Moisturizer", "price": 12.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.cocokind.com/products/moisture-stick", "retailer": "direct", "rating": 4.4, "reviews": 3100, "imageUrl": "", "description": "Solid moisturizing stick made with organic coconut oil and vitamin E. Portable and multi-use — hydrates dry elbows, cuticles, lips, and anywhere that needs extra moisture.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 60, "brand": "Tower 28", "brandColor": "#C4907A", "name": "BeachPlease Luminous Tinted Balm", "type": "Lip Balm", "price": 22.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.tower28beauty.com/products/beachplease-luminous-tinted-balm", "retailer": "direct", "rating": 4.5, "reviews": 4900, "imageUrl": "", "description": "Multi-use tinted balm for lips and cheeks with a buttery, luminous finish. Buildable color and comfortable all-day wear in clean, EWG-verified formula for sensitive skin.", "ingredients": [], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 61, "brand": "Tower 28", "brandColor": "#C4907A", "name": "AO+ Rescue Spray", "type": "Mist", "price": 32.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.tower28beauty.com/products/ao-rescue-spray", "retailer": "direct", "rating": 4.4, "reviews": 3800, "imageUrl": "", "description": "Balancing facial spray with a clinically studied, patented biotechnology that helps restore the skin", "ingredients": [], "concerns": ["Rosacea", "Eczema", "Sensitive Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 62, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Vitamin C Rose Oil", "type": "Face Oil", "price": 72.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-vitamin-c-rose-oil", "retailer": "direct", "rating": 4.5, "reviews": 3800, "imageUrl": "", "description": "Brightening face oil with sustainably-sourced squalane and vitamin C that visibly reduces dark spots, firms skin, and delivers a radiant glow. Absorbs quickly without greasiness.", "ingredients": ["Vitamin C", "Squalane", "Antioxidants"], "concerns": ["Hyperpigmentation", "Brightening"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 63, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Phyto-Retinol Serum", "type": "Serum", "price": 88.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-phyto-retinol-serum", "retailer": "direct", "rating": 4.4, "reviews": 3200, "imageUrl": "", "description": "Phyto-retinol + bakuchiol serum in a squalane base that delivers retinol-like results without irritation. Reduces fine lines, improves texture, and firms skin overnight.", "ingredients": ["Squalane", "Bakuchiol", "Peptides"], "concerns": ["Anti-Aging"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 64, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Probiotic Gel Moisturizer", "type": "Moisturizer", "price": 52.0, "priceRange": "$$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-probiotic-gel-moisturizer", "retailer": "direct", "rating": 4.4, "reviews": 3600, "imageUrl": "", "description": "Lightweight gel moisturizer with squalane, probiotics, and prebiotic inulin that balances the skin microbiome and provides 72-hour hydration. Great for oily and combination skin.", "ingredients": ["Squalane"], "concerns": ["Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 65, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Lactic Acid Resurfacing Night Serum", "type": "Serum", "price": 72.0, "priceRange": "$$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-lactic-acid-resurfacing-night-serum", "retailer": "direct", "rating": 4.5, "reviews": 4100, "imageUrl": "", "description": "Overnight resurfacing serum with lactic acid and squalane that smooths texture, fades dark spots, and plumps skin. Gentler than glycolic acid, ideal for sensitive skin types.", "ingredients": ["Squalane"], "concerns": ["Hyperpigmentation", "Sensitive Skin", "Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 66, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Omega Repair Cream", "type": "Moisturizer", "price": 58.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-omega-repair-cream", "retailer": "direct", "rating": 4.6, "reviews": 5500, "imageUrl": "", "description": "Ultra-rich repair cream with squalane, omega fatty acids, and ceramides that deeply nourishes very dry skin and restores the moisture barrier. Best-seller for dry and eczema-prone skin.", "ingredients": ["Ceramides", "Squalane"], "concerns": ["Eczema", "Dry Skin", "Barrier Support"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 67, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Antioxidant Cleansing Oil", "type": "Cleansing Oil", "price": 38.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-antioxidant-cleansing-oil", "retailer": "direct", "rating": 4.5, "reviews": 4900, "imageUrl": "", "description": "Squalane-based cleansing oil enriched with antioxidant vitamin C and beta-carotene that melts away makeup and impurities while leaving skin nourished and radiant.", "ingredients": ["Vitamin C", "Squalane", "Antioxidants"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 68, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Marine Algae Eye Cream", "type": "Eye Cream", "price": 58.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-marine-algae-eye-cream", "retailer": "direct", "rating": 4.4, "reviews": 2800, "imageUrl": "", "description": "Firming eye cream with squalane, marine algae, and peptides that reduces puffiness, firms the under-eye area, and visibly improves the look of fine lines and dark circles.", "ingredients": ["Squalane", "Peptides"], "concerns": ["Anti-Aging"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 69, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Zinc Sheer Mineral Sunscreen SPF 30", "type": "Sunscreen", "price": 34.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-zinc-sheer-mineral-sunscreen-spf-30", "retailer": "direct", "rating": 4.3, "reviews": 3300, "imageUrl": "", "description": "Sheer mineral SPF 30 with non-nano zinc oxide and squalane that provides broad-spectrum protection with zero white cast. Reef-safe, non-comedogenic, and suitable for all skin tones.", "ingredients": ["Zinc Oxide", "Squalane"], "concerns": ["Sun Protection"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic", "Reef-Safe", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 70, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Glycolic Renewal Mask", "type": "Mask", "price": 52.0, "priceRange": "$$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-glycolic-renewal-mask", "retailer": "direct", "rating": 4.4, "reviews": 2400, "imageUrl": "", "description": "Resurfacing overnight mask with glycolic acid and squalane that exfoliates dead skin cells, smooths texture, and reveals brighter skin by morning with zero irritation.", "ingredients": ["Glycolic Acid", "Squalane"], "concerns": ["Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 71, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Peptide Eye Gel", "type": "Eye Cream", "price": 52.0, "priceRange": "$$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.biossance.com/products/squalane-peptide-eye-gel", "retailer": "direct", "rating": 4.3, "reviews": 2100, "imageUrl": "", "description": "Lightweight eye gel with squalane, peptides, and caffeine that instantly depuffs, hydrates, and firms the under-eye area. Absorbs quickly for a smooth, awake-looking finish.", "ingredients": ["Squalane", "Peptides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 72, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Lapis Facial Oil", "type": "Face Oil", "price": 72.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/lapis-blue-tansy-face-oil", "retailer": "direct", "rating": 4.3, "reviews": 2900, "imageUrl": "", "description": "Balancing face oil with blue tansy and squalane that calms redness and reduces excess oil production. Luxurious blue color and herbaceous scent from pure botanicals — no synthetic fragrance.", "ingredients": ["Squalane"], "concerns": ["Acne", "Rosacea", "Oily Skin"], "features": [], "skinTypes": []},
+  {"id": 73, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Bakuchiol Retinol Alternative Serum", "type": "Serum", "price": 54.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/bakuchiol-serum", "retailer": "direct", "rating": 4.3, "reviews": 3400, "imageUrl": "", "description": "Plant-powered retinol alternative with bakuchiol that minimizes fine lines, improves skin tone, and increases cell turnover without the irritation of traditional retinol.", "ingredients": ["Bakuchiol", "Hyaluronic Acid"], "concerns": ["Anti-Aging", "Sensitive Skin"], "features": ["Pregnancy-Safe", "Fragrance-Free"], "skinTypes": []},
+  {"id": 74, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Prism 20% AHA + 5% BHA Exfoliating Glow Facial", "type": "Exfoliant", "price": 62.0, "priceRange": "$$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/prism-glow-facial", "retailer": "direct", "rating": 4.4, "reviews": 4700, "imageUrl": "", "description": "At-home chemical peel with 20% AHA and 5% BHA that dramatically resurfaces skin, fades dark spots, and reveals a glowing, poreless complexion in 20 minutes.", "ingredients": ["Salicylic Acid", "Glycolic Acid"], "concerns": ["Acne", "Hyperpigmentation", "Blackheads", "Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 75, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Moon Fruit Superfruit Night Treatment", "type": "Serum", "price": 72.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/moon-fruit-superfruit-night-treatment", "retailer": "direct", "rating": 4.3, "reviews": 2600, "imageUrl": "", "description": "Restorative overnight treatment with bakuchiol, peptides, and hyaluronic acid that visibly plumps, firms, and brightens skin while you sleep. Wake up to luminous, supple skin.", "ingredients": ["Bakuchiol", "Peptides", "Hyaluronic Acid"], "concerns": ["Anti-Aging", "Brightening", "Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 76, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Emerald Hemp + Adaptogens Deep Moisture Glow Oil", "type": "Face Oil", "price": 88.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/emerald-hemp-oil", "retailer": "direct", "rating": 4.4, "reviews": 3100, "imageUrl": "", "description": "Luxurious nourishing oil with hemp-derived cannabidiol, ashwagandha, and reishi that calms inflamed skin, reduces redness, and imparts a radiant, healthy glow.", "ingredients": ["Antioxidants"], "concerns": ["Rosacea", "Eczema", "Sensitive Skin", "Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 77, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Blue Tansy Resurfacing Clarity Mask", "type": "Mask", "price": 48.0, "priceRange": "$$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/blue-tansy-mask", "retailer": "direct", "rating": 4.2, "reviews": 3800, "imageUrl": "", "description": "Resurfacing clay mask with blue tansy and white willow bark BHA that unclogs pores, smooths texture, and calms redness. Distinctive blue hue and spa-like aromatic scent.", "ingredients": ["Salicylic Acid"], "concerns": ["Acne", "Oily Skin", "Blackheads"], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 78, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Phoenix Facial Oil", "type": "Face Oil", "price": 88.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/phoenix-facial-oil", "retailer": "direct", "rating": 4.4, "reviews": 3600, "imageUrl": "", "description": "Rich facial oil with sea buckthorn, rosehip, and squalane that reverses the signs of aging and dramatically improves skin radiance. Ideal for dry and mature skin types.", "ingredients": ["Squalane", "Antioxidants"], "concerns": ["Anti-Aging", "Dry Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 79, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Nova 15% Vitamin C + Turmeric Brightening Serum", "type": "Serum", "price": 68.0, "priceRange": "$$$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/nova-vitamin-c-brightening-serum", "retailer": "direct", "rating": 4.3, "reviews": 4200, "imageUrl": "", "description": "Brightening vitamin C serum with 15% stable encapsulated vitamin C, turmeric, and ferulic acid. Visibly fades dark spots, evens tone, and delivers glass-skin radiance.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": ["Hyperpigmentation", "Brightening"], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 80, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Jasmine Body Polish", "type": "Body Scrub", "price": 32.0, "priceRange": "$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.herbivorebotanicals.com/products/jasmine-body-polish", "retailer": "direct", "rating": 4.5, "reviews": 4100, "imageUrl": "", "description": "Exfoliating body polish with fine sea salt, jasmine essential oil, and sweet almond oil that buffs away dead skin and leaves the body silky smooth and delicately scented.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 81, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Overnight Sensation Dark Circle Eye Cream", "type": "Eye Cream", "price": 52.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.thrivecausemetics.com/products/overnight-sensation-dark-circle-eye-cream", "retailer": "direct", "rating": 4.4, "reviews": 7600, "imageUrl": "", "description": "Intensive overnight eye cream with ceramides, peptides, and hyaluronic acid that visibly reduces dark circles and puffiness while firming the under-eye area. Wake up to brighter eyes.", "ingredients": ["Ceramides", "Hyaluronic Acid", "Peptides"], "concerns": ["Anti-Aging"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 82, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Lip Serum Balm", "type": "Lip Balm", "price": 28.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.thrivecausemetics.com/products/lip-serum-balm", "retailer": "direct", "rating": 4.5, "reviews": 5900, "imageUrl": "", "description": "Hydrating lip treatment that combines the benefits of a serum and balm to smooth, plump, and deeply moisturize lips. Hyaluronic acid and peptides improve lip fullness over time.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 83, "brand": "Saie", "brandColor": "#C4A86A", "name": "Slip Tint Dewy Tinted Moisturizer SPF 35", "type": "Tinted Moisturizer", "price": 38.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.saiebeauty.com/products/slip-tint-dewy-tinted-moisturizer-spf-35", "retailer": "direct", "rating": 4.5, "reviews": 5800, "imageUrl": "", "description": "Lightweight tinted moisturizer with SPF 35, hyaluronic acid, and 10% niacinamide that provides sheer coverage, sun protection, and skincare benefits in one step.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": ["Sun Protection"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 84, "brand": "Saie", "brandColor": "#C4A86A", "name": "Sunvisor Radiant SPF 35 Moisturizer", "type": "Sunscreen", "price": 44.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.saiebeauty.com/products/sunvisor-radiant-spf-35-moisturizer", "retailer": "direct", "rating": 4.4, "reviews": 3900, "imageUrl": "", "description": "Radiance-boosting SPF 35 moisturizer with hyaluronic acid and vitamin E that hydrates, protects, and adds a luminous glow. Wears beautifully alone or under makeup.", "ingredients": ["Hyaluronic Acid"], "concerns": ["Sun Protection"], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 85, "brand": "Saie", "brandColor": "#C4A86A", "name": "Hydralight Healthy Glow Serum", "type": "Serum", "price": 42.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.saiebeauty.com/products/hydralight-healthy-glow-serum", "retailer": "direct", "rating": 4.4, "reviews": 2700, "imageUrl": "", "description": "Brightening serum with vitamin C, niacinamide, and hyaluronic acid that hydrates, evens tone, and delivers a healthy glow. Lightweight formula absorbs quickly for daily use.", "ingredients": ["Niacinamide", "Hyaluronic Acid", "Vitamin C"], "concerns": ["Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 86, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Pure Skin Cleanser", "type": "Cleanser", "price": 12.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.elfcosmetics.com/pure-skin-cleanser/83372.html", "retailer": "direct", "rating": 4.3, "reviews": 6800, "imageUrl": "", "description": "Gentle foaming cleanser with niacinamide and salicylic acid that thoroughly cleanses pores, controls oil, and prevents breakouts without over-drying sensitive skin.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": ["Acne"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 87, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Acne Fighting Spot Gel", "type": "Spot Treatment", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.elfcosmetics.com/acne-fighting-spot-gel/83314.html", "retailer": "direct", "rating": 4.2, "reviews": 7400, "imageUrl": "", "description": "Targeted blemish treatment with 2% salicylic acid and tea tree oil that visibly reduces pimples, whiteheads, and blackheads overnight. Clear gel formula works under makeup.", "ingredients": ["Salicylic Acid"], "concerns": ["Acne", "Blackheads", "Oily Skin"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 88, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Anti-Aging Serum", "type": "Serum", "price": 20.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-anti-aging-serum", "retailer": "direct", "rating": 4.3, "reviews": 3400, "imageUrl": "", "description": "Age-defying serum with CoQ10, ferulic acid, and chlorella growth factor that plumps fine lines, firms skin, and delivers a radiant, youthful complexion.", "ingredients": ["Peptides", "Antioxidants"], "concerns": ["Anti-Aging"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 89, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing 24-Hour Moisture Lotion", "type": "Moisturizer", "price": 15.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-24-hour-moisture-lotion", "retailer": "direct", "rating": 4.3, "reviews": 2900, "imageUrl": "", "description": "24-hour hydrating lotion with argan oil and sunflower seed oil that deeply nourishes and soothes sensitive, dry skin. Lightweight formula absorbs quickly for all-day moisture.", "ingredients": [], "concerns": ["Dry Skin", "Sensitive Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 90, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Facial Mask", "type": "Mask", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-facial-mask", "retailer": "direct", "rating": 4.2, "reviews": 2100, "imageUrl": "", "description": "Brightening clay mask with vitamin C, CoQ10, and unicorn root extract that evens skin tone, reduces dullness, and leaves skin radiant in just 15 minutes.", "ingredients": ["Vitamin C"], "concerns": ["Hyperpigmentation", "Brightening"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 91, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Buildalicious Peptide Serum", "type": "Serum", "price": 22.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/buildalicious-peptide-serum", "retailer": "direct", "rating": 4.3, "reviews": 1800, "imageUrl": "", "description": "Plumping peptide serum that firms skin and reduces the appearance of fine lines. Vegan collagen-building formula delivers a smoother, more youthful complexion with daily use.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": ["Anti-Aging"], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 92, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Island Tinted SPF Balm", "type": "Lip Balm", "price": 10.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/island-tinted-spf-balm", "retailer": "direct", "rating": 4.3, "reviews": 2400, "imageUrl": "", "description": "Hydrating tinted lip balm with SPF protection. Nourishing coconut and avocado oil formula adds a sheer wash of color and sun protection in one effortless swipe.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 93, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Multi-Peptide + C Eye Cream", "type": "Eye Cream", "price": 22.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/multi-peptide-c-eye-cream", "retailer": "direct", "rating": 4.2, "reviews": 2200, "imageUrl": "", "description": "Brightening eye cream with multi-peptides, vitamin C, and hyaluronic acid that reduces dark circles, puffiness, and fine lines around the delicate eye area.", "ingredients": ["Vitamin C", "Peptides", "Hyaluronic Acid"], "concerns": ["Anti-Aging"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 94, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Sea Foam Complete Face Wash", "type": "Cleanser", "price": 12.0, "priceRange": "$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/sea-foam-complete-face-wash", "retailer": "direct", "rating": 4.3, "reviews": 3600, "imageUrl": "", "description": "Sea mineral-powered foaming face wash that deep cleans pores and leaves skin refreshed, balanced, and soft. Gentle enough for daily use on all skin types.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 95, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Glow Oil SPF 50", "type": "Face Oil", "price": 42.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/glow-oil-spf-50", "retailer": "direct", "rating": 4.4, "reviews": 5200, "imageUrl": "", "description": "Luxurious facial oil with SPF 50 that delivers golden, lit-from-within radiance while providing strong UV protection. A unique way to protect skin without sacrificing glow.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 96, "brand": "Supergoop", "brandColor": "#D4956A", "name": "(Re)setting 100% Mineral Tinted Sunscreen SPF 40", "type": "Sunscreen", "price": 40.0, "priceRange": "$$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/resetting-100-mineral-tinted-sunscreen", "retailer": "direct", "rating": 4.4, "reviews": 6100, "imageUrl": "", "description": "Tinted mineral SPF 40 with a matte, pore-perfecting finish. Sets makeup, controls oil, and provides clean zinc oxide protection in one easy swipe. Available in universal-fit tints.", "ingredients": ["Zinc Oxide"], "concerns": ["Sun Protection"], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic", "Reef-Safe", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 97, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Watermelon Glow Niacinamide Dew Drops", "type": "Serum", "price": 35.0, "priceRange": "$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09TWPP3VN?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 14200, "imageUrl": "", "description": "TikTok-famous serum-makeup hybrid that gives skin a dewy, lit-from-within glow. Niacinamide reduces pores and brightens, while watermelon extract hydrates. Wear alone or under foundation.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 98, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Watermelon Glow PHA+BHA Pore-Tight Toner", "type": "Toner", "price": 34.0, "priceRange": "$$", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07BQMH4WJ?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 8700, "imageUrl": "", "description": "Gentle exfoliating toner with BHA (salicylic acid) and PHA to minimize pores, smooth texture, and hydrate simultaneously. Infused with watermelon extract and hyaluronic acid. Suitable for sensitive skin.", "ingredients": ["Hyaluronic Acid", "Salicylic Acid", "Glycolic Acid"], "concerns": ["Oily Skin"], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 99, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Plum Plump Hyaluronic Acid Serum", "type": "Serum", "price": 42.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09JWL1Q6T?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.6, "reviews": 5100, "imageUrl": "", "description": "Five weights of hyaluronic acid work together to deeply plump and hydrate at every level of the skin. Antioxidant-rich plum extract and vegan collagen support suppleness and smooth fine lines.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 100, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Avocado Melt Retinol Eye Sleeping Mask", "type": "Eye Cream", "price": 38.0, "priceRange": "$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09JWL2R5F?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 2900, "imageUrl": "", "description": "Overnight eye treatment with encapsulated retinol and avocado oil that melts into skin while you sleep. Visibly reduces fine lines, puffiness, and dark circles by morning.", "ingredients": ["Retinol"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 101, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Banana Soufflé Moisture Cream", "type": "Moisturizer", "price": 39.0, "priceRange": "$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0C8X2YNH3?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 3800, "imageUrl": "", "description": "Whipped moisture cream with banana extract, niacinamide, and peptides that brightens skin tone and provides all-day hydration. The airy soufflé texture absorbs instantly without heaviness.", "ingredients": ["Niacinamide", "Peptides"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 102, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Great Barrier Relief Serum", "type": "Serum", "price": 28.0, "priceRange": "$$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07R1QZLZ2?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 6400, "imageUrl": "", "description": "Cult-status barrier repair serum with niacinamide, tamanu oil, and ceramide-precursor ingredients that calm inflammation and rebuild the skin barrier. Fragrance-free and ideal for reactive skin.", "ingredients": ["Ceramides", "Niacinamide"], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 103, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Matcha Hemp Hydrating Cleanser", "type": "Cleanser", "price": 20.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07GL5Y8H5?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 9200, "imageUrl": "", "description": "Gentle gel cleanser with green tea water, hemp seed oil, and glycerin that cleans thoroughly without stripping. Leaves skin clean, soft, and perfectly balanced—never tight or dry.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 104, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Oat So Simple Water Cream", "type": "Moisturizer", "price": 24.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0DGKXBBFH?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 4300, "imageUrl": "", "description": "Lightweight water cream with squalane, oat extract, and a minimalist ingredient list that respects even the most sensitive skin. Hydrates all day without greasiness or pore-clogging residue.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 105, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Kale-Lalu-yAHA Exfoliating Toner", "type": "Toner", "price": 22.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B07KHTG86L?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 5800, "imageUrl": "", "description": "5.25% glycolic acid exfoliating toner buffered with hyaluronic acid for gentle but effective exfoliation. Smooths texture, unclogs pores, and improves radiance over time without over-drying.", "ingredients": ["Glycolic Acid", "Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 106, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Beet The Sun SPF 40 Sunscreen", "type": "Sunscreen", "price": 24.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09XQTQ5GM?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 2100, "imageUrl": "", "description": "Chemical SPF 40 that applies like a serum—no white cast, no greasiness, and no pilling under makeup. Beet-derived antioxidants provide added environmental protection. K-beauty inspired formula.", "ingredients": [], "concerns": ["Sun Protection"], "features": ["Fragrance-Free", "Non-Comedogenic", "Oil-Free"], "skinTypes": []},
+  {"id": 107, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Moisturizing Rich Cream", "type": "Moisturizer", "price": 15.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0BXGG8VWG?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 7800, "imageUrl": "", "description": "Drugstore-priced barrier cream packed with ceramides, cholesterol, and fatty acids in the skin", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 108, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Hydrating Serum", "type": "Serum", "price": 14.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0BXGD5WJX?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 5100, "imageUrl": "", "description": "Barrier-boosting serum with multi-weight hyaluronic acid and the TriKOMP complex (ceramides, cholesterol, fatty acids) to deeply hydrate and lock moisture in. Lightweight and fragrance-free.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": ["Sensitive Skin"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 109, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Clarifying Gel Cleanser", "type": "Cleanser", "price": 13.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0BXGB3NQS?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 3200, "imageUrl": "", "description": "PHA-powered gel cleanser that removes excess oil and impurities without disrupting the moisture barrier. Gentle enough for daily use, with ceramides added to prevent post-cleanse tightness.", "ingredients": ["Ceramides"], "concerns": ["Oily Skin", "Acne"], "features": ["Fragrance-Free", "Oil-Free"], "skinTypes": []},
+  {"id": 110, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Brightening Toner", "type": "Toner", "price": 13.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0BXGF4ZKW?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 2700, "imageUrl": "", "description": "Niacinamide and AHA toner that gently brightens and evens skin tone while reinforcing the barrier with ceramides. Affordable barrier-care with real results for uneven, dull complexions.", "ingredients": ["Ceramides", "Niacinamide"], "concerns": ["Hyperpigmentation"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 111, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Clarifying Serum", "type": "Serum", "price": 14.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0BXGGYYW4?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 3400, "imageUrl": "", "description": "PHA and ceramide serum that targets blemishes and pores without compromising barrier integrity. Blue tansy extract soothes redness while the TriKOMP complex keeps skin resilient and balanced.", "ingredients": ["Ceramides", "Salicylic Acid"], "concerns": ["Acne"], "features": ["Fragrance-Free", "Oil-Free"], "skinTypes": []},
+  {"id": 112, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Discoloration Correcting Serum", "type": "Serum", "price": 12.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B098TQK3XJ?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 8900, "imageUrl": "", "description": "Ultra-affordable dark spot corrector with tranexamic acid, kojic acid, and niacinamide that visibly fades discoloration and post-acne marks. Fragrance-free and gentle enough for sensitive skin.", "ingredients": ["Niacinamide", "Vitamin C"], "concerns": ["Hyperpigmentation"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 113, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Niacinamide Brightening Toner", "type": "Toner", "price": 8.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B0987FDQMH?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 11200, "imageUrl": "", "description": "10% niacinamide toner at an almost unbelievably low price. Minimizes pores, controls oil, brightens skin, and reduces redness. A cult favorite for getting clinical-grade niacinamide on any budget.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": ["Hyperpigmentation"], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 114, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Overnight Exfoliating Treatment", "type": "Treatment", "price": 9.0, "priceRange": "$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B087HDTGDF?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 5600, "imageUrl": "", "description": "Overnight AHA treatment with glycolic and lactic acid that renews skin texture while you sleep. Wake up with visibly smoother, more even-toned skin. Budget-friendly alternative to luxury acid treatments.", "ingredients": ["Glycolic Acid", "Hyaluronic Acid"], "concerns": ["Acne"], "features": [], "skinTypes": []},
+  {"id": 115, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Hyaluronic Acid Serum", "type": "Serum", "price": 9.0, "priceRange": "$", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B087HBTF72?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 7300, "imageUrl": "", "description": "Pure hyaluronic acid serum with multiple molecular weights for deep and surface hydration. Lightweight, fast-absorbing, and fragrance-free. One of the most affordable HA serums that actually delivers results.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 116, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Lightweight Daily Moisturizer", "type": "Moisturizer", "price": 10.0, "priceRange": "$", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B098TQPMGS?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 4200, "imageUrl": "", "description": "Gel-cream moisturizer with ceramides and niacinamide that hydrates without heaviness. Perfect for oily and combination skin types. Fragrance-free, non-comedogenic, and exceptionally affordable.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": ["Oily Skin"], "features": ["Fragrance-Free", "Oil-Free"], "skinTypes": []},
+  {"id": 117, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "PlantGenius Melt Moisturizer", "type": "Moisturizer", "price": 65.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08F2H3QJT?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 2100, "imageUrl": "", "description": "Rich moisturizer with wild-harvested alpine botanicals, 4 peptides, and hyaluronic acid that melts into skin for deep nourishment. Visibly firms and plumps with continued use.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 118, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Wild Huckleberry 8-Acid Polishing Peel", "type": "Treatment", "price": 60.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08BCPRL8C?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.5, "reviews": 1800, "imageUrl": "", "description": "8-acid resurfacing peel with huckleberry, AHAs, BHA, and PHAs that polishes away dead skin cells for visibly smoother, brighter skin. Anti-inflammatory botanicals keep skin calm during exfoliation.", "ingredients": ["Glycolic Acid", "Salicylic Acid", "Hyaluronic Acid"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 119, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Vitamin C Brightening Eye Cream", "type": "Eye Cream", "price": 55.0, "priceRange": "$$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B08BCPRM9D?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 1100, "imageUrl": "", "description": "Brightening eye cream with stable vitamin C, peptides, and alpine plant extracts that target dark circles and fine lines. Lightweight yet nourishing with real visible results after 2-4 weeks.", "ingredients": ["Vitamin C", "Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 120, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "PlantGenius Daydream SPF 40", "type": "Sunscreen", "price": 48.0, "priceRange": "$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09L6GVP5T?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.4, "reviews": 1400, "imageUrl": "", "description": "Tinted mineral SPF 40 with wild-harvested botanicals, peptides, and hyaluronic acid in a moisturizing base. Gives a natural healthy glow while protecting. Clean ingredients meet real sun protection.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": ["Sun Protection"], "features": [], "skinTypes": []},
+  {"id": 121, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Wild Nettle & Niacinamide Toner", "type": "Toner", "price": 38.0, "priceRange": "$$", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://www.amazon.com/dp/B09L6GVQTX?tag=bunnyindex-20", "retailer": "amazon", "rating": 4.3, "reviews": 900, "imageUrl": "", "description": "Brightening toner with niacinamide, wild nettle, and alpine plant extracts that even skin tone and refine texture. Preps skin beautifully for the rest of your routine and delivers antioxidant protection.", "ingredients": ["Niacinamide"], "concerns": ["Hyperpigmentation"], "features": [], "skinTypes": []},
+  {"id": 122, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Eye Cream", "type": "eye cream", "price": 11.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Brightens and hydrates the delicate eye area with vitamin C and chlorella green tea.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 123, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Facial Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-facial-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A resurfacing mask with AHAs and plant extracts that leave skin glowing and refreshed.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 124, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich overnight mask packed with peptides and antioxidants to plump and revitalize dull skin.", "ingredients": ["Peptides", "Antioxidants"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 125, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Incredibly Clear Charcoal Lemonade Clarifying Toner", "type": "toner", "price": 10.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://acure.com/products/incredibly-clear-charcoal-lemonade-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying toner with activated charcoal and lemon extract that removes impurities and minimizes pores.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 126, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Incredibly Clear Blemish Busting Spot Treatment", "type": "spot treatment", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://acure.com/products/blemish-busting-spot-treatment", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A targeted spot treatment with salicylic acid and tea tree to address blemishes quickly.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 127, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Facial Moisturizer", "type": "moisturizer", "price": 12.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-facial-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A moisturizer with peptides and plant stem cells that firms skin and reduces the appearance of fine lines.", "ingredients": ["Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 128, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Facial Toner", "type": "toner", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-facial-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing toner with blue tansy and cucumber extract that calms redness and prepares skin for moisturizer.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 129, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Peel Gel", "type": "exfoliant", "price": 11.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-peel-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle peel gel with AHAs and plant extracts that removes dead skin cells for a brighter, smoother complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 130, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Ultra-Hydrating Facial Lotion", "type": "moisturizer", "price": 11.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/ultra-hydrating-facial-lotion", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight facial lotion with hyaluronic acid and squalane that provides all-day hydration without clogging pores.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 131, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Sensitive Facial Cleanser", "type": "cleanser", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/sensitive-facial-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle cleanser for sensitive skin formulated with argan oil and chamomile that removes impurities without stripping.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 132, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Rosehip Facial Oil", "type": "face oil", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/rosehip-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pure rosehip facial oil packed with omega fatty acids and vitamins that deeply nourishes and revitalizes skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 133, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Skin Serum", "type": "serum", "price": 11.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-skin-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight serum with vitamin C and chlorella that brightens skin tone and fades dark spots over time.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 134, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Overnight Hydration Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-overnight-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight hydrating mask with blue tansy and hyaluronic acid that deeply moisturizes and soothes irritated skin while you sleep.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 135, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Complete Moisture Facial Oil", "type": "face oil", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/complete-moisture-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A blend of 7 plant oils including argan, marula, and rosehip that provides complete facial nourishment and radiance.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 136, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating 5% Retinol Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-retinol-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A concentrated retinol serum with plant stem cells that visibly reduces fine lines and improves skin texture.", "ingredients": ["Retinol"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 137, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Vitamin C Eye Contour Cream", "type": "eye cream", "price": 11.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-eye-contour-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An eye cream with vitamin C and green tea that brightens dark circles and reduces puffiness.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 138, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing 24hr Moisture Lotion", "type": "moisturizer", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-24hr-moisture-lotion", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A long-lasting moisturizer with chamomile and argan oil providing 24-hour hydration for sensitive skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 139, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Dual-Phase Vitamin C Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-dual-phase-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A two-phase serum combining pure vitamin C and ferulic acid to deliver targeted brightening and antioxidant benefits.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 140, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Facial Cleanser", "type": "cleanser", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-facial-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A daily cleanser with vitamin C and sea kelp that removes impurities while brightening and refreshing skin.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 141, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Argan Oil Facial Cleansing Cream", "type": "cleanser", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/argan-facial-cleansing-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich cleansing cream with argan oil and shea butter that removes makeup and impurities while leaving skin soft.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 142, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Bearberry & Vitamin C Glow Serum", "type": "serum", "price": 59.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/bearberry-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening serum that fades dark spots and hyperpigmentation using vitamin C, bearberry, and plant-based AHAs.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 143, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Wild Nettle & Niacinamide Firming Serum", "type": "serum", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/wild-nettle-niacinamide-firming-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating firming serum with wild nettle, niacinamide, and rambutan extract to smooth, plump, and reduce pore appearance.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 144, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Super Sculpt Serum for Face & Neck", "type": "serum", "price": 62.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/super-sculpt-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight gel serum with tri-peptide complex, mountain cherry, and lactic acid to lift and firm face and neck.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 145, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Clarifying Facial Oil with Retinol & Pink Algae", "type": "face oil", "price": 56.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://alpynbeauty.com/products/clarifying-facial-oil-retinol", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A moisturizing facial oil with retinol and salicylic acid that clears congestion, smooths fine lines, and improves glow.", "ingredients": ["Salicylic Acid", "Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 146, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Pore Perfecting Liquid Toner with 2% BHA & Borage", "type": "toner", "price": 39.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/pore-perfecting-liquid-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An Allure Award-winning exfoliating toner with 2% salicylic acid and borage that minimizes pores and restores skin balance.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 147, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Juneberry Hydrating Cream Cleanser", "type": "cleanser", "price": 39.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/juneberry-hydrating-cream-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A superberry and vitamin C cold cream cleanser with circular jojoba beads that gently buffs and brightens while cleansing.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 148, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Brightening Bubbling Cleanser with AHAs & Fruit Enzymes", "type": "cleanser", "price": 36.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/brightening-bubbling-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A silky cleanser with glycolic and lactic acids, papaya and pomegranate enzymes that gently dissolves impurities.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 149, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Super Peptide & Ghostberry Barrier Repair Cream", "type": "moisturizer", "price": 72.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/super-peptide-ghostberry-barrier-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich barrier repair cream with 14 peptides, ghostberry, and a 5-ceramide complex to replenish hydration and relax wrinkles.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 150, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Instant Bright Eye with Peptides & Niacinamide", "type": "eye cream", "price": 52.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/instant-bright-eye", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A peptide-packed eye cream with niacinamide and Reneseed to blur dark circles, firm, and soften fine lines.", "ingredients": ["Niacinamide", "Peptides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 151, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Triple C Brightening Bounce Cream", "type": "moisturizer", "price": 49.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/triple-c-brightening-bounce-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gel-cream with 50% organic aloe and three forms of vitamin C to brighten and boost skin's visible elasticity.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 152, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Calming Midnight Mask with Melatonin & Wild Dandelion", "type": "face mask", "price": 42.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/calming-midnight-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious calming night mask with melatonin and bakuchiol that detoxifies and makes skin look plump and firm overnight.", "ingredients": ["Bakuchiol"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 153, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Willow & Sweet Agave Plumping Lip Mask", "type": "lip treatment", "price": 28.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/willow-sweet-agave-lip-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An ultra-moisturizing lip treatment with hyaluronic acid and wildcrafted willow bark to plump and smooth lips.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 154, "brand": "Alpyn Beauty", "brandColor": "#7A9A7A", "name": "Wild Huckleberry Brightening Facial Polish", "type": "exfoliant", "price": 44.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://alpynbeauty.com/products/wild-huckleberry-brightening-facial-polish", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening face polish infused with wild huckleberry extract and vitamin C to gently exfoliate and illuminate skin.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 155, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Tea Tree Balancing Oil", "type": "face oil", "price": 72.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-tea-tree-balancing-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying facial oil with squalane and tea tree that balances oil production and soothes blemish-prone skin.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 156, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Copper Peptide Rapid Plumping Serum", "type": "serum", "price": 82.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-copper-peptide-rapid-plumping-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A powerhouse serum with squalane and copper peptides that rapidly plumps skin and visibly reduces wrinkle depth.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 157, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Peptide Eye Gel", "type": "eye cream", "price": 62.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-peptide-eye-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A cooling, lightweight eye gel with squalane and peptides that depuffs and firms the skin around the eyes.", "ingredients": ["Peptides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 158, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + BHA Pore Minimizing Toner", "type": "toner", "price": 30.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://biossance.com/products/squalane-bha-pore-minimizing-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying toner with squalane and salicylic acid that unclogs pores and refines skin texture without stripping moisture.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 159, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Hyaluronic Toning Mist", "type": "mist", "price": 30.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-hyaluronic-toning-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing mist with squalane and hyaluronic acid that hydrates and tones skin any time throughout the day.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 160, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Firming Vitamin C Eye Cream", "type": "eye cream", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-firming-vitamin-c-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich eye cream with squalane, vitamin C, and retinol that firms the eye area and reduces dark circles and fine lines.", "ingredients": ["Retinol", "Vitamin C"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 161, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Niacinamide Rose Vegan Cream", "type": "moisturizer", "price": 68.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-niacinamide-rose-vegan-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious vegan cream with squalane, niacinamide, and rose extract that brightens skin tone and deeply moisturizes.", "ingredients": ["Niacinamide"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 162, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Zinc Sheer Mineral Sunscreen SPF 45", "type": "sunscreen", "price": 48.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-zinc-sheer-mineral-sunscreen-spf-45", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight mineral sunscreen with squalane that provides broad-spectrum SPF 45 protection with a sheer, weightless finish.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 163, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Comfort Lip Balm SPF 30", "type": "lip treatment", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-comfort-lip-balm-spf-30", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A nourishing SPF 30 lip balm with squalane and plant oils that protects and softens lips all day long.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 164, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Collagen Peptide Firming Mask", "type": "face mask", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-collagen-peptide-firming-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight firming mask with squalane, collagen-boosting peptides, and hyaluronic acid to plump and smooth skin while you sleep.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 165, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Balancing Gel Wash", "type": "cleanser", "price": 30.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-balancing-gel-wash", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle yet effective gel cleanser with squalane that thoroughly removes makeup and impurities while maintaining skin balance.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 166, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + EGF Aqua Serum", "type": "serum", "price": 82.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-egf-aqua-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A next-generation hydrating serum with squalane and EGF (epidermal growth factor) that promotes skin renewal and intense moisture.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 167, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Rose Vegan Lip Balm", "type": "lip treatment", "price": 16.0, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-rose-vegan-lip-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing vegan lip balm with squalane and rose extract that conditions and plumps lips with lasting moisture.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 168, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Vitamin C Eye Cream", "type": "eye cream", "price": 52.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-vitamin-c-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye cream with squalane and vitamin C that targets dark circles and minimizes fine lines under the eyes.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 169, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Peptide Lip Balm", "type": "lip treatment", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-peptide-lip-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plumping lip balm with squalane and peptides that smooths fine lines around the mouth and delivers lasting hydration.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 170, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Toning Serum", "type": "serum", "price": 19.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/toning-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight serum with glycolic acid and ceramides that gently resurfaces skin while supporting the moisture barrier.", "ingredients": ["Ceramides", "Glycolic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 171, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Brightening Eye Cream", "type": "eye cream", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/brightening-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A ceramide-enriched eye cream that brightens dark circles, reduces puffiness, and strengthens the delicate eye area skin barrier.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 172, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Hydrating Toner Pads", "type": "toner", "price": 17.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/hydrating-toner-pads", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Pre-soaked toner pads with hyaluronic acid and ceramides that prep skin for skincare while supporting the skin barrier.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 173, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Moisturizing Lotion SPF 30", "type": "moisturizer", "price": 19.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/moisturizing-lotion-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A daily moisturizer with SPF 30 protection, ceramides, and niacinamide that hydrates and protects skin from UV damage.", "ingredients": ["Niacinamide", "Ceramides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 174, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Clarifying Facial Cleanser", "type": "cleanser", "price": 15.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/clarifying-facial-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle clarifying cleanser with niacinamide and ceramides that removes excess oil and impurities without disrupting the skin barrier.", "ingredients": ["Niacinamide", "Ceramides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 175, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Balancing Facial Oil", "type": "face oil", "price": 21.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://byoma.com/products/balancing-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight facial oil with squalane and ceramides that balances moisture levels and strengthens skin barrier function.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 176, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Barrier Plus Recovery Serum", "type": "serum", "price": 21.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/barrier-recovery-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensive recovery serum with ceramides, fatty acids, and cholesterol that helps restore a compromised skin barrier.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 177, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Deep Moisture Night Cream", "type": "moisturizer", "price": 21.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/deep-moisture-night-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich overnight cream with ceramides, peptides, and squalane that intensely repairs and replenishes skin during sleep.", "ingredients": ["Ceramides", "Peptides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 178, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Hydrating Cleanser", "type": "cleanser", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/hydrating-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle milk cleanser with ceramides and hyaluronic acid that effectively removes impurities while keeping skin moisturized.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 179, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Exfoliating Toner", "type": "toner", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/exfoliating-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle AHA/BHA toner with ceramides that exfoliates dead skin cells and refines pores while maintaining barrier health.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 180, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Brightening Vitamin C Serum", "type": "serum", "price": 21.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/brightening-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A stabilized vitamin C serum with ceramides and niacinamide that fades dark spots and brightens skin tone.", "ingredients": ["Niacinamide", "Ceramides", "Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 181, "brand": "Byoma", "brandColor": "#6A9CB8", "name": "Soothing Face Mist", "type": "mist", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://byoma.com/products/soothing-face-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing ceramide-infused mist that calms redness and provides instant hydration to stressed or irritated skin.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 182, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Resurfacing Milk Peel", "type": "exfoliant", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://cocokind.com/products/resurfacing-milk-peel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle exfoliating peel with lactic acid and probiotic milk that smooths texture and reveals brighter skin.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 183, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Revitalizing Cleansing Balm", "type": "cleanser", "price": 16.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/revitalizing-cleansing-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A balm cleanser that melts away makeup and impurities with plant oils, leaving skin clean and nourished.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 184, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Matcha Face Moisturizer", "type": "moisturizer", "price": 18.0, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/matcha-face-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An antioxidant-rich moisturizer with matcha, sea kelp, and aloe that provides lightweight daily hydration.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 185, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Chia Facial Oil", "type": "face oil", "price": 16.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/chia-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A nourishing facial oil with chia seeds and sea buckthorn that deeply hydrates and adds a healthy glow.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 186, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Vitamin C Serum", "type": "serum", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plant-based vitamin C serum that brightens skin tone and reduces the appearance of dark spots and uneven pigmentation.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 187, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Retinol Eye Serum", "type": "eye cream", "price": 20.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/retinol-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle retinol eye serum with bakuchiol and peptides that reduces fine lines and brightens the delicate eye area.", "ingredients": ["Retinol", "Peptides", "Bakuchiol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 188, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Plant Stem Cell Lip Serum", "type": "lip treatment", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/plant-stem-cell-lip-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A nourishing lip serum with plant stem cells and hyaluronic acid that plumps and hydrates lips for a fuller look.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 189, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Sea Moss Jelly Facial Cleanser", "type": "cleanser", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/sea-moss-jelly-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A unique jelly cleanser with sea moss and hyaluronic acid that gently cleanses while retaining skin moisture.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 190, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Niacinamide Serum", "type": "serum", "price": 16.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://cocokind.com/products/niacinamide-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 10% niacinamide serum that minimizes pores, balances oil production, and fades dark spots for an even skin tone.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 191, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Peptide Face Cream", "type": "moisturizer", "price": 20.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/peptide-face-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A peptide-powered moisturizer that firms skin, reduces fine lines, and provides long-lasting hydration for all skin types.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 192, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Watermelon Clay Mask", "type": "face mask", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/watermelon-clay-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening clay mask with watermelon extract and kaolin that draws out impurities and leaves skin fresh and glowing.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 193, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "AHA Exfoliating Toner", "type": "toner", "price": 18.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://cocokind.com/products/aha-exfoliating-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle AHA toner with glycolic and mandelic acids that resurfaces and brightens skin for a smoother, more radiant complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 194, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Daily SPF Moisturizer", "type": "moisturizer", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/daily-spf-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight daily moisturizer with SPF 30 protection and plant extracts that hydrates while shielding skin from UV damage.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 195, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Golden Elixir Face Oil", "type": "face oil", "price": 24.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/golden-elixir-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious golden face oil blend with turmeric, sea buckthorn, and rosehip that deeply nourishes and adds luminosity.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 196, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Eye Renewal Cream", "type": "eye cream", "price": 16.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/eye-renewal-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle eye cream with peptides and plant extracts that reduces puffiness and fine lines while brightening the eye area.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 197, "brand": "Glossier", "brandColor": "#C4A882", "name": "Futuredew Oil-Serum Hybrid", "type": "face oil", "price": 24.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/futuredew", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight oil-serum hybrid that gives skin a natural, healthy glow by locking in skincare's benefits throughout the day.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 198, "brand": "Glossier", "brandColor": "#C4A882", "name": "Invisible Shield Daily Sunscreen SPF 35", "type": "sunscreen", "price": 30.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/invisible-shield", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A weightless, completely invisible sunscreen that provides SPF 35 protection without any white cast or heavy residue.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 199, "brand": "Glossier", "brandColor": "#C4A882", "name": "Super Pure Niacinamide + Zinc Serum", "type": "serum", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://glossier.com/products/super-pure", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming serum with 10% niacinamide and zinc PCA that targets blemishes, reduces redness, and minimizes pores.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 200, "brand": "Glossier", "brandColor": "#C4A882", "name": "Super Bounce Hyaluronic Acid + B5 Serum", "type": "serum", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/super-bounce", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A bouncy, hydrating serum with hyaluronic acid and vitamin B5 that plumps and smooths skin for a dewy, moisturized finish.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 201, "brand": "Glossier", "brandColor": "#C4A882", "name": "Super Glow Vitamin C + Magnesium Serum", "type": "serum", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/super-glow", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening serum with vitamin C and magnesium that energizes and revives dull skin for an instant radiant glow.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 202, "brand": "Glossier", "brandColor": "#C4A882", "name": "Balm Dotcom Universal Skin Salve", "type": "balm", "price": 15.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/balm-dotcom", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A multi-use skin salve with castor oil, beeswax, and antioxidants that soothes, conditions, and protects dry patches anywhere.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 203, "brand": "Glossier", "brandColor": "#C4A882", "name": "Cleanser Concentrate", "type": "cleanser", "price": 22.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/cleanser-concentrate", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A sulfate-free, gel-to-foam cleanser concentrate that removes impurities and makeup while leaving skin feeling clean and balanced.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 204, "brand": "Glossier", "brandColor": "#C4A882", "name": "Bubblewrap Peptide Eye + Lip Cream", "type": "eye cream", "price": 32.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/bubblewrap", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plumping peptide cream formulated for both eyes and lips that visibly smooths fine lines and deeply hydrates.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 205, "brand": "Glossier", "brandColor": "#C4A882", "name": "After Baume Moisture Recovery Treatment", "type": "moisturizer", "price": 29.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/after-baume", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich, multi-use balm-cream with shea butter and allantoin that soothes and repairs dry, depleted skin overnight.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 206, "brand": "Glossier", "brandColor": "#C4A882", "name": "Priming Moisturizer Original", "type": "moisturizer", "price": 35.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/priming-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight daily moisturizer that hydrates and primes skin for a smooth, glowing complexion that wears well under makeup.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 207, "brand": "Glossier", "brandColor": "#C4A882", "name": "Zit Stick Acne Spot Treatment", "type": "spot treatment", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://glossier.com/products/zit-stick", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A targeted acne spot treatment pen with benzoyl peroxide, octanoylcarnitine, and capryloyl salicylic acid to flatten blemishes fast.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 208, "brand": "Glossier", "brandColor": "#C4A882", "name": "Solution Exfoliating Toner", "type": "toner", "price": 24.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://glossier.com/products/solution", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An exfoliating liquid with AHA, BHA, and PHA that visibly minimizes pores and improves skin texture with regular use.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 209, "brand": "Glossier", "brandColor": "#C4A882", "name": "Universal Pro-Retinol Multi-Peptide Serum", "type": "serum", "price": 46.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/universal-pro-retinol", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle retinol serum with multi-peptide complex that reduces fine lines and improves skin texture without irritation.", "ingredients": ["Retinol", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 210, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Plum Plump Hyaluronic Serum", "type": "serum", "price": 49.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/plum-plump-hyaluronic-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A multi-molecular hyaluronic acid serum with plum extract that provides deep, long-lasting hydration and visibly plumps skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 211, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Plum Plump Hyaluronic Cream", "type": "moisturizer", "price": 39.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/plum-plump-hyaluronic-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A whipped, bouncy cream with 6 types of hyaluronic acid and plum extract that delivers intense, long-lasting moisture.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 212, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Avocado Ceramide Moisture Barrier Cleanser", "type": "cleanser", "price": 32.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/avocado-ceramide-moisture-barrier-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A creamy cleanser with avocado oil and ceramides that effectively removes impurities while reinforcing the skin moisture barrier.", "ingredients": ["Ceramides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 213, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Avocado Ceramide Recovery Serum", "type": "serum", "price": 42.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/avocado-ceramide-recovery-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensely nourishing serum with avocado oil and ceramides that restores moisture barrier function and replenishes dry skin.", "ingredients": ["Ceramides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 214, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Guava Vitamin C Dark Spot Serum", "type": "serum", "price": 45.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/guava-vitamin-c-dark-spot-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A potent vitamin C serum with guava extract and AHA that targets dark spots and hyperpigmentation for a brighter complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 215, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Guava Vitamin C Eye Cream", "type": "eye cream", "price": 35.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/guava-vitamin-c-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye cream with vitamin C and guava that fades dark circles and firms the delicate skin under the eyes.", "ingredients": ["Vitamin C"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 216, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Blueberry Bounce Gentle Cleanser", "type": "cleanser", "price": 30.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/blueberry-bounce-gentle-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A bouncy gel cleanser with blueberry and PHA that removes impurities and makeup while brightening and balancing skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 217, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Blueberry Bounce Bright Serum", "type": "serum", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/blueberry-bounce-bright-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening serum with blueberry extract and PHA that visibly evens skin tone and provides antioxidant protection.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 218, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Strawberry Smooth BHA+AHA Salicylic Serum", "type": "serum", "price": 35.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://glowrecipe.com/products/strawberry-smooth-bha-aha-salicylic-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An exfoliating serum with strawberry-derived AHA and BHA that smooths texture, minimizes pores, and fades dark spots.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 219, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Watermelon AHA Glow Sleeping Mask", "type": "face mask", "price": 45.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/watermelon-aha-glow-sleeping-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight sleeping mask with watermelon and AHA that exfoliates and replenishes skin for a glowing, refreshed complexion by morning.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 220, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Cherry Calming Facial Mist", "type": "mist", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/cherry-calming-facial-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming, antioxidant-rich facial mist with cherry extract and squalane that soothes and hydrates skin throughout the day.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 221, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Papaya Sorbet Enzyme Cleansing Balm", "type": "cleanser", "price": 34.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/papaya-sorbet-enzyme-cleansing-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A melt-on-contact cleansing balm with papaya enzymes that dissolves makeup and impurities while gently exfoliating for a smooth finish.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 222, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Watermelon Glow PHA+BHA Pore-Tight Toner", "type": "toner", "price": 29.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://glowrecipe.com/products/watermelon-glow-pore-tight-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing toner with watermelon extract, PHA, and BHA that minimizes pores and brightens skin with each use.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 223, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Plum Plump Hyaluronic Lip Butter Balm", "type": "lip treatment", "price": 22.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/plum-plump-lip-butter-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pillowy lip balm with plum butter and hyaluronic acid that visibly plumps and nourishes lips for a smooth, glossy finish.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 224, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Avocado Ceramide Waterless Sleeping Mask", "type": "face mask", "price": 44.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/avocado-ceramide-waterless-sleeping-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A waterless overnight mask with avocado oil and ceramides that deeply replenishes moisture and repairs the skin barrier while you sleep.", "ingredients": ["Ceramides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 225, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Pineapple-C Bright Serum", "type": "serum", "price": 45.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/pineapple-c-bright-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An ultra-brightening serum with pineapple-derived vitamin C and AHA that targets hyperpigmentation and delivers a luminous glow.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 226, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Banana Soufflé Eye Cream", "type": "eye cream", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/banana-souffle-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye cream with banana extract and peptides that depuffs, reduces dark circles, and smooths the under-eye area.", "ingredients": ["Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 227, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Peach Slices Toner", "type": "toner", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/peach-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing toner with peach extract and hyaluronic acid that balances skin and preps it for the rest of your skincare routine.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 228, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Mango Micellar Cleansing Water", "type": "cleanser", "price": 29.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/mango-micellar-cleansing-water", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing micellar water with mango extract that gently dissolves makeup and impurities without rinsing, leaving skin balanced.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 229, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Mandelic Acid Treatment Water", "type": "toner", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/mandelic-acid-treatment-water", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle exfoliating toner with mandelic acid that resurfacing skin and fades dark spots without irritation.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 230, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Yerba Mate Awakening Eye Gel", "type": "eye cream", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/yerba-mate-eye-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening, caffeine-infused eye gel with yerba mate that reduces puffiness and dark circles for an awake, refreshed look.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 231, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Vitamin B, C, E Face Oil", "type": "face oil", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/vitamin-bce-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight, antioxidant-rich face oil with vitamins B, C, and E that brightens, nourishes, and protects skin from environmental damage.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 232, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "10% Azelaic Acid Booster", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/azelaic-acid-booster", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 10% azelaic acid treatment that targets uneven skin tone, hyperpigmentation, and blemishes while calming inflammation.", "ingredients": ["Azelaic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 233, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Superlight Moisturizer", "type": "moisturizer", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/superlight-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An ultra-lightweight moisturizer that hydrates without heaviness, perfect for oily or combination skin types that need oil-free moisture.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 234, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Gentle Retinol Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/gentle-retinol-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A beginner-friendly retinol serum with squalane that reduces fine lines and improves skin texture without causing irritation.", "ingredients": ["Retinol"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 235, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Squalane Facial Oil", "type": "face oil", "price": 8.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/squalane-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pure squalane facial oil that mimics skin's natural sebum to deeply moisturize, balance, and protect without clogging pores.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 236, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Brightening Vitamin C Spot Treatment", "type": "spot treatment", "price": 8.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/brightening-vitamin-c-spot-treatment", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A concentrated vitamin C spot treatment that rapidly fades dark spots and post-acne marks for a more even skin tone.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 237, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Caffeine Energizing Hydrogel Eye Patches", "type": "eye patch", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/caffeine-eye-patches", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Cooling hydrogel eye patches with caffeine and niacinamide that depuff, brighten, and hydrate the under-eye area instantly.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 238, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Polyglutamic Acid Serum", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/polyglutamic-acid-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A next-level hydration serum with polyglutamic acid that holds four times more moisture than hyaluronic acid for plump skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 239, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Smoothing Retinol Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/smoothing-retinol-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An advanced retinol serum that smooths skin texture, reduces wrinkles, and improves overall skin appearance with continued use.", "ingredients": ["Retinol"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 240, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Antioxidant Sunscreen SPF 30", "type": "sunscreen", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/antioxidant-sunscreen-spf30", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight SPF 30 sunscreen with antioxidant vitamins C and E that protects skin from UV damage with a weightless finish.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 241, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Resurfacing Vitamin C Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/resurfacing-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A potent vitamin C serum with AHA that brightens skin tone and resurfacing dead cells for a smoother, more radiant complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 242, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Lightweight Daily Moisturizer", "type": "moisturizer", "price": 10.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/lightweight-daily-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle, everyday moisturizer with hyaluronic acid and ceramides that provides comfortable hydration for all skin types.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 243, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Exfoliating BHA Powder", "type": "exfoliant", "price": 8.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/exfoliating-bha-powder", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A powder exfoliant with salicylic acid that can be mixed with any cleanser to dissolve excess oil and clarify congested pores.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 244, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Niacinamide Brightening Toner", "type": "toner", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/niacinamide-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing toner with 10% niacinamide that brightens, minimizes pores, and prepares skin for the rest of your routine.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 245, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Hyaluronic Acid Gel Moisturizer", "type": "moisturizer", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/hyaluronic-acid-gel-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gel-textured moisturizer with multiple weights of hyaluronic acid that provides lightweight yet deep hydration for all skin types.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 246, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Nova 15% Vitamin C + Turmeric Brightening Serum", "type": "serum", "price": 68.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/nova-15-vitamin-c-turmeric-brightening-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A potent brightening serum with 15% vitamin C and turmeric that dramatically reduces dark spots and illuminates complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 247, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Pink Cloud Rosewater + Tremella Soft Moisture Cream", "type": "moisturizer", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/pink-cloud-rosewater-tremella-soft-moisture-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soft, whipped cream moisturizer with rosewater and tremella mushroom that delivers deep, lasting hydration with a lightweight finish.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 248, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Aquarius Balancing Facial Mask", "type": "face mask", "price": 48.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/aquarius-balancing-facial-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A detoxifying clay mask with kaolin, AHAs, and blue tansy that draws out impurities and balances oily, breakout-prone skin.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 249, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Indigo CBD Oat Milk Moisturizer", "type": "moisturizer", "price": 50.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/indigo-cbd-oat-milk-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming moisturizer with CBD, oat milk, and blue tansy that soothes reactive skin and reduces redness and irritation.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 250, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Calm CBD Ultra-Soothing Serum", "type": "serum", "price": 58.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/calm-cbd-ultra-soothing-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plant-derived CBD serum with blue tansy and oat extract that deeply calms reactive, sensitive, and rosacea-prone skin.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 251, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Orchid + Pink Champagne Renewing Face Oil", "type": "face oil", "price": 74.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/orchid-pink-champagne-renewing-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious renewing face oil with orchid extract and champagne grape seed oil that deeply nourishes and restores youthful radiance.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 252, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Rose Hibiscus Hydrating Face Mist", "type": "mist", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/rose-hibiscus-hydrating-face-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing hydrating mist with pure rosewater and hibiscus that plumps, tones, and revitalizes skin throughout the day.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 253, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Blue Clay Spot Treatment Mask", "type": "face mask", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/blue-clay-spot-treatment-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A targeted spot mask with blue clay and willow bark that draws out congestion and minimizes the appearance of blemishes.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 254, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Altair Adaptogen Glow Serum", "type": "serum", "price": 64.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/altair-adaptogen-glow-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A glow-enhancing serum with adaptogenic mushrooms, ashwagandha, and vitamin C that protects and brightens stressed skin.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 255, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Moon Dew Collagen Peptide Anti-Aging Serum", "type": "serum", "price": 72.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/moon-dew-collagen-peptide-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious anti-aging serum with collagen-boosting peptides and plant oils that plumps fine lines and restores skin elasticity.", "ingredients": ["Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 256, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Cloud Jelly Niacinamide Gel Moisturizer", "type": "moisturizer", "price": 48.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://herbivorebotanicals.com/products/cloud-jelly-niacinamide-gel-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A bouncy jelly moisturizer with niacinamide and tremella mushroom that provides lightweight, oil-free hydration for balanced skin.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 257, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Nectar Brightening Vitamin C Serum", "type": "serum", "price": 64.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/nectar-brightening-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A honey-infused vitamin C serum with propolis and antioxidants that brightens skin and provides antibacterial protection.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 258, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Bambusa Refining Powder Exfoliator", "type": "exfoliant", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/bambusa-refining-powder-exfoliator", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A fine bamboo powder exfoliator that gently polishes skin to reveal a smoother, brighter complexion without causing irritation.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 259, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Kale-Lalu-yAHA Exfoliating Toner", "type": "toner", "price": 25.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://kravebeauty.com/products/kale-lalu-yaha", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle glycolic acid toner with kale and vitamin B that exfoliates and brightens skin with K-beauty simplicity.", "ingredients": ["Glycolic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 260, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Makeup Re-Wined Jelly Oil Cleanser", "type": "cleanser", "price": 26.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/makeup-re-wined", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A unique jelly-oil cleanser with grape seed and marula oils that melts away makeup and sunscreen without stripping the skin.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 261, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "The Beet Shield Mineral Sunscreen SPF 50", "type": "sunscreen", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/the-beet-shield", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral sunscreen SPF 50 with beet extract that leaves skin glowing with no white cast or heavy texture.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 262, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Taro Milk Honey Nourishing Night Mask", "type": "face mask", "price": 36.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/taro-milk-honey-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight sleeping mask with taro extract, honey, and ceramides that deeply nourishes and replenishes moisture while you sleep.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 263, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Glow-Holic Vitamin C Serum", "type": "serum", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/glow-holic-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C brightening serum infused with fermented ingredients that evens skin tone and delivers a lit-from-within glow.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 264, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Dump The Scrub Gentle Powder Cleanser", "type": "exfoliant", "price": 18.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://kravebeauty.com/products/dump-the-scrub", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle exfoliating powder cleanser that activates on contact with water to dissolve impurities without harsh abrasion.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 265, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Oat So Simple Minimalist Cleanser", "type": "cleanser", "price": 22.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/oat-so-simple-water-cream-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A minimalist cream cleanser with oat extract and glycerin that gently removes impurities while preserving skin's natural moisture.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 266, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Plump Party Hyaluronic Serum", "type": "serum", "price": 29.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/plump-party-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating hyaluronic acid serum with fermented soy and ceramides that plumps and smooths skin for a bouncy, dewy look.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 267, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Great Barrier Relief Face Oil", "type": "face oil", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/great-barrier-relief-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A nourishing face oil with sea buckthorn and rosehip that strengthens the skin barrier and delivers intense moisture to dry skin.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 268, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Moisturizing Gel Eye Cream", "type": "eye cream", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/moisturizing-eye-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A cooling gel eye cream with peptides and caffeine that reduces puffiness, hydrates, and firms the delicate under-eye area.", "ingredients": ["Peptides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 269, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Barrier Restore Night Cream", "type": "moisturizer", "price": 32.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/barrier-restore-night-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensely rich night cream with ceramides, fatty acids, and peptides that deeply repairs and restores the skin barrier overnight.", "ingredients": ["Ceramides", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 270, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Intensive Hydrating Toner", "type": "toner", "price": 24.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/intensive-hydrating-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A K-beauty inspired hydrating toner with hyaluronic acid and fermented extracts that plumps and prepares skin for serums.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 271, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Pore-Refining Serum", "type": "serum", "price": 28.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://kravebeauty.com/products/pore-refining-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying serum with niacinamide and witch hazel that minimizes the appearance of pores and balances oil production.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 272, "brand": "Krave Beauty", "brandColor": "#9A8B6A", "name": "Calming Face Mask", "type": "face mask", "price": 26.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://kravebeauty.com/products/calming-face-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing clay mask with centella asiatica and green tea that calms redness and congestion while deeply cleansing pores.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 273, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "MELATONIN Overnight Face Mask", "type": "face mask", "price": 36.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/melatonin-overnight-face-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A relaxing overnight face mask with melatonin, retinol, and hyaluronic acid that repairs and plumps skin while you sleep.", "ingredients": ["Hyaluronic Acid", "Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 274, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "SUNSHINE Drops Brightening Serum", "type": "serum", "price": 36.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/sunshine-drops", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin D-powered serum with turmeric and ginger root that brightens skin and provides an energy boost for a healthy glow.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 275, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Vegan Milk Moisturizer", "type": "moisturizer", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/vegan-milk-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich moisturizer with oat and desert milk that deeply hydrates and soothes dry, stressed skin with lasting moisture.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 276, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Cooling Water Jelly Serum Stick", "type": "serum", "price": 28.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/cooling-water-serum-stick", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing serum stick with niacinamide and watermelon extract that controls oil and minimizes pores in a convenient format.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 277, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Vegan Milk Makeup Remover Balm", "type": "cleanser", "price": 28.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/vegan-milk-makeup-remover-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle cleansing balm with oat milk and squalane that dissolves even the most stubborn makeup and impurities effortlessly.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 278, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Cannabis Sativa Hemp Seed Hydrating Face Serum", "type": "serum", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/hemp-face-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A balancing serum with hemp seed oil and hyaluronic acid that hydrates, soothes, and reduces redness for calm, even skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 279, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "MATCHA Toner", "type": "toner", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/matcha-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An antioxidant-packed toner with matcha, green tea, and aloe that preps and balances skin while providing antioxidant protection.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 280, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Cooling Eye Gel Patches", "type": "eye patch", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/cooling-eye-patches", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Cooling hydrogel eye patches infused with caffeine and collagen that instantly depuff and brighten the under-eye area.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 281, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Vegan Milk Face Wash", "type": "cleanser", "price": 26.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/vegan-milk-face-wash", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle, creamy face wash with oat milk and desert milk proteins that removes impurities while nourishing and softening skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 282, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "Hydro Grip Hydrating Moisturizer", "type": "moisturizer", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/hydro-grip-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A water-gel moisturizer with niacinamide and blue agave that provides lightweight, long-lasting hydration and pore-minimizing benefits.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 283, "brand": "Milk Makeup", "brandColor": "#9C7B8E", "name": "BRIGHT SIDE Ceramide Eye Cream", "type": "eye cream", "price": 30.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://milkmakeup.com/products/bright-side-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening ceramide eye cream that reduces dark circles, puffiness, and fine lines while deeply moisturizing the eye area.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 284, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Rose Quartz Crystal Illuminating Face Mask", "type": "face mask", "price": 7.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/rose-quartz-crystal-illuminating-face-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening clay mask with rose quartz and vitamin C that illuminates and deeply cleanses for radiant, glowing skin.", "ingredients": ["Vitamin C"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 285, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Wake Up Beautiful Retinoid Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/wake-up-beautiful-retinoid-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight retinoid serum with bakuchiol and peptides that visibly reduces fine lines and improves skin texture while you sleep.", "ingredients": ["Peptides", "Bakuchiol"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 286, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Glow Baby Brightening Toner", "type": "toner", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/glow-baby-brightening-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening toner with vitamin C and niacinamide that evens skin tone and prepares skin to absorb serums and moisturizers.", "ingredients": ["Niacinamide", "Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 287, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Future Youth Time Shift Hydrogel Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/future-youth-hydrogel-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Hydrogel sheet masks with collagen, retinoid, and hyaluronic acid that intensely hydrate and plump skin for a youthful look.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 288, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Vegan Ceramide Real Hydration Moisturizer", "type": "moisturizer", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/vegan-ceramide-real-hydration-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A ceramide-rich moisturizer with hyaluronic acid that restores the skin barrier and provides lasting, deep hydration.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 289, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Sea Vitamin C Brightening Serum", "type": "serum", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/sea-vitamin-c-brightening-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C serum with sea kelp extract that brightens dark spots and evens complexion for a luminous, healthy-looking glow.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 290, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Cosmic Botanicals Brightening Eye Cream", "type": "eye cream", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/cosmic-botanicals-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable brightening eye cream with plant extracts that reduces dark circles and puffiness around the delicate eye area.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 291, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Sea Zinc SPF 50 Mineral Sunscreen", "type": "sunscreen", "price": 12.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/sea-zinc-spf50-mineral-sunscreen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral SPF 50 sunscreen with sea botanicals that provides broad-spectrum UV protection with a natural finish.", "ingredients": [], "concerns": [], "features": ["Mineral Sunscreen"], "skinTypes": []},
+  {"id": 292, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Coconut Water Super Hydrating Lotion", "type": "moisturizer", "price": 12.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/coconut-water-hydrating-lotion", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight moisturizing lotion with coconut water and hyaluronic acid that quenches dry, thirsty skin without heaviness.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 293, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Crystal Peel Microcrystal Face Polish", "type": "exfoliant", "price": 10.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/crystal-peel-microcrystal-face-polish", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle microcrystal exfoliating polish that buffs away dead skin cells and reveals a smoother, more refined complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 294, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Dreamy Youth Advanced Retinoid Night Cream", "type": "moisturizer", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/dreamy-youth-retinoid-night-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An advanced night cream with bakuchiol and peptides that reduces the appearance of fine lines and smooths skin texture overnight.", "ingredients": ["Peptides", "Bakuchiol"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 295, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Super Reboot Resurfacing Mask", "type": "face mask", "price": 11.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/super-reboot-resurfacing-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A resurfacing mask with AHAs and enzymes that dissolves dead skin cells and brightens for a visibly renewed complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 296, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Power Greens Detox Clay Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/power-greens-detox-clay-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A detoxifying clay mask with spirulina and kale that draws out impurities and excess oil for a deep-cleansed, refreshed complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 297, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Glow Baby Booster Serum", "type": "serum", "price": 13.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/glow-baby-booster-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C booster serum that instantly brightens and energizes dull skin with powerful antioxidants.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 298, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Super Natural Hydra Shot Serum", "type": "serum", "price": 15.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/super-natural-hydra-shot-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intense hydrating serum with hyaluronic acid and plant extracts that gives skin a plump, dewy boost of moisture.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 299, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Future Dew Glass Skin Essence", "type": "toner", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/future-dew-glass-skin-essence", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A K-beauty inspired essence that delivers instant glass skin glow with hyaluronic acid and botanical extracts.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 300, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Vegan Collagen Ceramide Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/vegan-collagen-ceramide-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vegan collagen serum with ceramides and plant stem cells that plumps skin and strengthens the moisture barrier.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 301, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Rose Love Brightening Eye Cream", "type": "eye cream", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/rose-love-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rose-infused brightening eye cream with vitamin C and antioxidants that reduces dark circles and illuminates the eye area.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 302, "brand": "Saie", "brandColor": "#C4A86A", "name": "Sunvisor Radiant Sunscreen Fluid SPF 35", "type": "sunscreen", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/sunvisor", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A silky sunscreen fluid with SPF 35 that leaves skin with a radiant, natural finish while providing broad-spectrum protection.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 303, "brand": "Saie", "brandColor": "#C4A86A", "name": "Hydrabeam Under Eye Brightener", "type": "eye cream", "price": 28.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/hydrabeam", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye treatment with hyaluronic acid and niacinamide that instantly illuminates dark circles and hydrates the under-eye area.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 304, "brand": "Saie", "brandColor": "#C4A86A", "name": "Glassy Skin Refining Serum", "type": "serum", "price": 36.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://saiebeauty.com/products/glassy-skin-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pore-refining serum with niacinamide and hyaluronic acid that smooths, plumps, and creates a glass skin effect.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 305, "brand": "Saie", "brandColor": "#C4A86A", "name": "Dewy Cleanser Micellar Water", "type": "cleanser", "price": 26.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/dewy-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle micellar water cleanser with aloe and rose water that removes makeup and impurities while leaving skin dewy and refreshed.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 306, "brand": "Saie", "brandColor": "#C4A86A", "name": "Glow Daily Vitamin C Serum", "type": "serum", "price": 36.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/glow-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A daily vitamin C brightening serum that fades dark spots and delivers an immediate luminous glow with continued use.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 307, "brand": "Saie", "brandColor": "#C4A86A", "name": "Instant Glow Illuminating Mist", "type": "mist", "price": 28.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/instant-glow-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An illuminating face mist with hyaluronic acid and mineral-derived pearls that delivers an instant dewy glow to skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 308, "brand": "Saie", "brandColor": "#C4A86A", "name": "Radiant Moisturizer SPF 25", "type": "moisturizer", "price": 34.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/radiant-moisturizer-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight SPF 25 moisturizer that hydrates and protects skin while imparting a natural, skin-like radiant finish.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 309, "brand": "Saie", "brandColor": "#C4A86A", "name": "Lip Treat SPF 15 Nourishing Lip Balm", "type": "lip treatment", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://saiebeauty.com/products/lip-treat-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A nourishing SPF 15 lip balm with natural butters and oils that protects and conditions lips for all-day softness.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 310, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Protec(tint) Daily Skin Tint SPF 50", "type": "tinted SPF moisturizer", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/protectint", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A sheer, buildable skin tint with SPF 50 that provides sun protection while giving skin a natural, glowing finish.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 311, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Superscreen Daily Moisturizer SPF 40", "type": "moisturizer", "price": 48.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/superscreen-daily-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich SPF 40 moisturizer with vitamin B5 and green tea that provides all-day hydration and broad-spectrum sun protection.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 312, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Every. Single. Face. Watery Lotion SPF 50", "type": "sunscreen", "price": 28.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/every-single-face-watery-lotion", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight watery lotion SPF 50 designed for all skin tones that absorbs quickly with no white cast for everyday protection.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 313, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Shine On Broad Spectrum Lip Screen SPF 50", "type": "lip treatment", "price": 19.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/shine-on-lip-screen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A glossy SPF 50 lip treatment that protects and plumps lips with a sheer, shiny finish that feels like a lip gloss.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 314, "brand": "Supergoop", "brandColor": "#D4956A", "name": "CC Screen 100% Mineral CC Cream SPF 50+", "type": "tinted SPF moisturizer", "price": 42.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/cc-screen-mineral-cc-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral CC cream with SPF 50+ that covers, corrects, and protects with a naturally flawless finish.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 315, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Smooth & Poreless 100% Mineral Matte Sunscreen SPF 40", "type": "sunscreen", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/smooth-poreless-100-mineral-matte-sunscreen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral matte sunscreen with niacinamide that minimizes pores and controls oil while providing SPF 40 protection.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 316, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Everyday Eye Cream SPF 24", "type": "eye cream", "price": 48.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/everyday-eye-cream-spf-24", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "The first eye cream with SPF 24 protection that hydrates, depuffs, and shields the delicate eye area from UV damage.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 317, "brand": "Supergoop", "brandColor": "#D4956A", "name": "100% Mineral Sheerscreen SPF 30", "type": "sunscreen", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/mineral-sheerscreen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral sunscreen SPF 30 with a sheer, invisible finish that works beautifully under makeup for all skin tones.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 318, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Daily Dose Vitamin C+SPF Hybrid Moisturizer SPF 40", "type": "moisturizer", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/daily-dose-vitamin-c-spf-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C-packed SPF 40 moisturizer that brightens skin and provides daily antioxidant protection in one convenient step.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 319, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Glow Oil 100% Mineral Sunscreen Face Oil SPF 30", "type": "face oil", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/glow-oil-mineral-sunscreen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious SPF 30 face oil with sea buckthorn and jojoba that provides mineral sun protection with a radiant, dewy finish.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 320, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Super Power Sunscreen Mousse SPF 50", "type": "sunscreen", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/super-power-sunscreen-mousse", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A whipped SPF 50 sunscreen mousse with antioxidants and sea kelp that applies seamlessly and is ideal for active days.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 321, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Slip Cover Smoothing Primer SPF 30", "type": "moisturizer", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/slip-cover-smoothing-primer-spf-30", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A silky SPF 30 smoothing primer that blurs pores and fine lines while protecting skin from UV rays under makeup.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 322, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Unseen Sunscreen SPF 50", "type": "sunscreen", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/unseen-sunscreen-spf-50", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "The next level of the iconic Unseen Sunscreen with upgraded SPF 50 protection and the same beloved invisible, velvety formula.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 323, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Forever Young Hand Cream SPF 40", "type": "moisturizer", "price": 28.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/forever-young-hand-cream-spf-40", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious SPF 40 hand cream with peptides and bakuchiol that protects hands from UV damage while visibly plumping skin.", "ingredients": ["Peptides", "Bakuchiol"], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 324, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Poof 100% Mineral Matte Screen SPF 35", "type": "sunscreen", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/poof-100-mineral-matte-screen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A finely-milled 100% mineral SPF 35 setting powder that blots oil, sets makeup, and provides daily sun protection in one step.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 325, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Superstar Screen Hydrating Mineral SPF 40", "type": "sunscreen", "price": 44.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/superstar-screen-hydrating-mineral-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating mineral SPF 40 sunscreen with ceramides and hyaluronic acid that protects and deeply moisturizes in one step.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 326, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Mineral Lit Primer SPF 25", "type": "moisturizer", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/mineral-lit-primer-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight mineral SPF 25 illuminating primer that creates a luminous, lit-from-within glow while providing sun protection.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 327, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Acai Energizing Serum Sunscreen SPF 30", "type": "serum", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/acai-energizing-serum-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An energizing SPF 30 serum with acai berry antioxidants that protects skin from UV and environmental damage with a silky finish.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 328, "brand": "Supergoop", "brandColor": "#D4956A", "name": "Suntegrity Natural Mineral Sunscreen SPF 30", "type": "sunscreen", "price": 36.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://supergoop.com/products/suntegrity-mineral-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle mineral SPF 30 sunscreen with certified organic ingredients that provides clean broad-spectrum UV protection.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 329, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Liquid Lux Vitamin C Brightening Serum", "type": "serum", "price": 48.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/liquid-lux-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A potent vitamin C serum that brightens skin tone, fades dark spots, and boosts collagen production for a luminous complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 330, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Defying Gravity Eye Lifting Serum", "type": "eye cream", "price": 48.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/defying-gravity-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A firming eye serum with peptides and plant stem cells that lifts, firms, and smooths the appearance of the eye area.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 331, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Bright Balance Hydrating Gel Cleanser", "type": "cleanser", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/bright-balance-gel-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing gel cleanser that removes impurities and excess oil while balancing skin and leaving it soft and hydrated.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 332, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Daily Defender Mineral Sunscreen SPF 50", "type": "sunscreen", "price": 42.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/daily-defender-mineral-sunscreen", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral SPF 50 sunscreen with antioxidants that provides clean, broad-spectrum UV protection with a lightweight formula.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 333, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Defying Gravity Gel Moisturizer", "type": "moisturizer", "price": 48.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/defying-gravity-gel-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight gel moisturizer with firming peptides and hyaluronic acid that provides long-lasting hydration and a plumping effect.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 334, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Moisture Flash Conditioning Toner Mist", "type": "toner", "price": 38.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/moisture-flash-toner-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating toner mist with hyaluronic acid and vitamin B5 that instantly refreshes and preps skin for serums and moisturizers.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 335, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Overnight Amino Acid Repair Mask", "type": "face mask", "price": 54.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/overnight-amino-acid-repair-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensive overnight repair mask with amino acids, peptides, and hyaluronic acid that deeply restores and rejuvenates skin.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 336, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Retinol + Peptide Resurfacing Serum", "type": "serum", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/retinol-peptide-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An advanced serum with retinol and multi-peptide complex that resurfacing skin texture and reduces wrinkles for visibly younger-looking skin.", "ingredients": ["Retinol", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 337, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Hyaluronic + Prebiotic Microbiome Moisturizer", "type": "moisturizer", "price": 52.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/hyaluronic-prebiotic-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A microbiome-balancing moisturizer with prebiotic and hyaluronic acid that nourishes skin's natural ecosystem for healthier, hydrated skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 338, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Skin Aqua Shield SPF 50 Mineral Serum", "type": "sunscreen", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/skin-aqua-shield-spf50", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A mineral SPF 50 sunscreen serum that blends seamlessly into skin, providing lightweight protection with a weightless, water-like texture.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 339, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Bright Future Vitamin C + Peptide Serum", "type": "serum", "price": 48.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/bright-future-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening serum with vitamin C and peptides that targets dark spots, firms skin, and delivers long-lasting antioxidant protection.", "ingredients": ["Vitamin C", "Peptides", "Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 340, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Sensitive Skin Hydrating Cleanser", "type": "cleanser", "price": 36.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/sensitive-skin-hydrating-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle, creamy cleanser formulated for sensitive skin that effectively removes impurities without causing irritation or stripping moisture.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 341, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Smoothing Eye Serum with Peptides", "type": "eye cream", "price": 46.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/smoothing-eye-serum-peptides", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A peptide-rich eye serum that smooths crow's feet, reduces puffiness, and brightens dark circles for a more youthful eye area.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 342, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Glow Activating Exfoliating Peel", "type": "exfoliant", "price": 44.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/glow-activating-exfoliating-peel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle chemical peel with AHAs and enzymes that removes dead skin cells and reveals a brighter, smoother complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 343, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Resurfacing Glycolic Toner", "type": "toner", "price": 40.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://thrivecausemetics.com/products/resurfacing-glycolic-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A glycolic acid toner that gently exfoliates and brightens skin while minimizing the appearance of pores with regular use.", "ingredients": ["Glycolic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 344, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Nourishing Eye Cream SPF 15", "type": "eye cream", "price": 46.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/nourishing-eye-cream-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An SPF 15 eye cream that protects and hydrates the eye area while reducing the appearance of puffiness and dark circles.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 345, "brand": "Thrive Causemetics", "brandColor": "#8B6A9C", "name": "Hydrating Intensive Face Mask", "type": "face mask", "price": 48.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://thrivecausemetics.com/products/hydrating-intensive-face-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich hydrating mask with hyaluronic acid and botanical extracts that intensely replenishes moisture-depleted or dry, stressed skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 346, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Barrier Recovery Cream", "type": "moisturizer", "price": 28.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-barrier-recovery-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An EWG-verified barrier recovery cream with ceramides, panthenol, and squalane that soothes and restores compromised, reactive skin.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 347, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Gentle Foaming Cleanser", "type": "cleanser", "price": 24.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-gentle-foaming-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An EWG-verified foaming cleanser with hypochlorous acid and aloe that gently removes impurities without disrupting the skin barrier.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 348, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Recovery Serum", "type": "serum", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-recovery-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing recovery serum with hypochlorous acid and hyaluronic acid that calms inflammation and intensely hydrates reactive skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 349, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Daily Balancing Gel Cleanser", "type": "cleanser", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-daily-balancing-gel-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle gel cleanser for daily use that balances skin while thoroughly cleansing without causing dryness or irritation.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 350, "brand": "Tower 28", "brandColor": "#C4907A", "name": "LipSoftie Hydrating Tinted Lip Treatment", "type": "lip treatment", "price": 14.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/lipsoftie", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An EWG-verified hydrating tinted lip treatment with hyaluronic acid and shea butter that nourishes and adds a soft tint to lips.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 351, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Intensive Treatment Serum", "type": "serum", "price": 36.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-intensive-treatment-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensive treatment serum with hypochlorous acid and niacinamide that targets redness, breakouts, and sensitive skin flare-ups.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 352, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Calming Hydrating Mist", "type": "mist", "price": 24.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-calming-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing facial mist with hypochlorous acid and aloe that instantly calms redness and provides refreshing hydration throughout the day.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 353, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Hydrating Overnight Mask", "type": "face mask", "price": 30.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-hydrating-overnight-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle overnight sleeping mask with ceramides and aloe that deeply hydrates and calms sensitive skin while you sleep.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 354, "brand": "Tower 28", "brandColor": "#C4907A", "name": "Beach Please Tinted SPF 15 Lip Balm", "type": "lip treatment", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/beach-please", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An EWG-verified SPF 15 tinted lip balm that protects and nourishes lips with a sheer wash of color.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Non-Comedogenic", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 355, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Eye Recovery Gel", "type": "eye cream", "price": 28.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-eye-recovery-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle cooling eye gel with hypochlorous acid and caffeine that depuffs and soothes sensitive, reactive skin around the eyes.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 356, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Spot Treatment", "type": "spot treatment", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-spot-treatment", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An EWG-verified spot treatment with hypochlorous acid that targets blemishes without drying or irritating surrounding sensitive skin.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 357, "brand": "Tower 28", "brandColor": "#C4907A", "name": "Shine On Milky Lip Jelly", "type": "lip treatment", "price": 14.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://tower28beauty.com/products/shine-on-lip-jelly", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A glossy, conditioning lip jelly with hyaluronic acid and vitamin E that plumps and hydrates lips with a mirror-shine finish.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 358, "brand": "Tower 28", "brandColor": "#C4907A", "name": "SOS Cleanser Gel to Foam", "type": "cleanser", "price": 24.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://tower28beauty.com/products/sos-cleanser-gel-to-foam", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gel-to-foam cleanser with hypochlorous acid that transforms into a gentle lather to deeply cleanse without disrupting the skin barrier.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 359, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Day Dissolve Cleansing Balm", "type": "cleanser", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/day-dissolve-cleansing-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A melt-on-contact cleansing balm with antioxidant-rich plant oils that dissolves sunscreen, makeup, and impurities effortlessly.", "ingredients": ["Antioxidants"], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 360, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Good Behavior Spirulina + AHA Exfoliating Peel", "type": "exfoliant", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://versed.com/products/good-behavior-spirulina-aha-peel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle overnight peel with spirulina and AHA that resurfaces and brightens skin while you sleep, with no irritation.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 361, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Doctor's Visit Instant Resurfacing Mask", "type": "face mask", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://versed.com/products/doctors-visit-instant-resurfacing-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clinical-grade resurfacing mask with AHAs and enzymes that delivers an at-home facial-level exfoliation in minutes.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 362, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Dew Good Illuminating Serum", "type": "serum", "price": 16.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/dew-good-illuminating-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A glow-boosting serum with plant-based niacinamide and hyaluronic acid that illuminates and hydrates for a dewy, radiant look.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 363, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Just Breathe Clarifying Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://versed.com/products/just-breathe-clarifying-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying serum with 2% salicylic acid and niacinamide that unclogs pores, controls oil, and prevents future breakouts.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 364, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Skin Soothe Chia + Oat Calming Moisturizer", "type": "moisturizer", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/skin-soothe-chia-oat-calming-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming moisturizer with chia seed and oat extract that soothes redness and irritation while providing comfortable daily hydration.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 365, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Skin Refine Pore-Clarifying Serum", "type": "serum", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://versed.com/products/skin-refine-pore-clarifying-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pore-clarifying serum with 10% niacinamide and zinc that minimizes pores, controls shine, and evens skin tone.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 366, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Press Restart Gentle Retinol Serum", "type": "serum", "price": 19.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/press-restart-gentle-retinol-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A beginner-friendly retinol serum with encapsulated retinol and squalane that reduces fine lines without causing irritation.", "ingredients": ["Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 367, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Daily Recovery Rich Barrier Cream", "type": "moisturizer", "price": 16.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/daily-recovery-rich-barrier-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A ceramide-rich barrier cream with fatty acids and cholesterol that restores and maintains a healthy skin barrier.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 368, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Good Defense Daily Mineral Sunscreen SPF 50", "type": "sunscreen", "price": 19.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/good-defense-mineral-sunscreen-spf50", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A 100% mineral SPF 50 sunscreen with green tea and vitamin E that protects skin from UV damage with a lightweight formula.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 369, "brand": "Versed", "brandColor": "#7A9E8C", "name": "R&R Eye Cream", "type": "eye cream", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/r-and-r-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A nourishing eye cream with peptides and caffeine that reduces puffiness, dark circles, and fine lines around the eyes.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 370, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Head Start Restorative Eye Cream", "type": "eye cream", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/head-start-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensive eye cream with retinol and niacinamide that firms and brightens the delicate eye area over time.", "ingredients": ["Niacinamide", "Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 371, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Day Dream Hydrogel Eye Masks", "type": "eye patch", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/day-dream-eye-masks", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Hydrogel eye masks with hyaluronic acid and vitamin C that instantly depuff and brighten tired, puffy eyes in minutes.", "ingredients": ["Hyaluronic Acid", "Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 372, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Leave the Day Behind Cleansing Balm", "type": "cleanser", "price": 12.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/leave-the-day-behind-cleansing-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A coconut-based cleansing balm that melts into an oil on contact, thoroughly removing makeup and daily impurities.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 373, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Plump Party Plumping Facial Serum", "type": "serum", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/plump-party-plumping-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hyaluronic acid serum with vegan collagen that visibly plumps and firms skin, reducing the look of fine lines.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 374, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Moisture in Your Court Waterless Moisturizer", "type": "moisturizer", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/moisture-in-your-court-waterless-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A concentrated waterless moisturizer with squalane and plant oils that delivers intense hydration in a lightweight format.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 375, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Bright Fix Brightening Toner", "type": "toner", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://versed.com/products/bright-fix-brightening-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C and niacinamide toner that brightens skin, minimizes pores, and preps skin to absorb serum benefits more effectively.", "ingredients": ["Niacinamide", "Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 376, "brand": "Versed", "brandColor": "#7A9E8C", "name": "On the Bright Side Vitamin C Moisturizer", "type": "moisturizer", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/on-the-bright-side-vitamin-c-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C-infused daily moisturizer that brightens skin tone and provides antioxidant protection in a lightweight, oil-free formula.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 377, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Dew Drops Hydrating Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/dew-drops-hydrating-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An ultra-lightweight hydrating serum with hyaluronic acid and glycerin that delivers a dewy plump to all skin types.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 378, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Makeup Melting Cleansing Balm", "type": "cleanser", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-makeup-melting-cleansing-balm", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle cleansing balm with ceramides and peptides that melts away makeup and impurities while keeping skin soft and hydrated.", "ingredients": ["Ceramides", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 379, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Daily Cleanser", "type": "cleanser", "price": 10.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-daily-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle daily cleanser with ceramides and hyaluronic acid that removes impurities while maintaining skin's natural moisture balance.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 380, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Eye Cream", "type": "eye cream", "price": 10.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable eye cream with ceramides, peptides, and hyaluronic acid that hydrates and plumps the delicate under-eye area.", "ingredients": ["Ceramides", "Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 381, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Essence Toner", "type": "toner", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-essence-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An essence toner with ceramides and hyaluronic acid that preps and plumps skin for maximum absorption of serums.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 382, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Pure Skin Toner", "type": "toner", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/pure-skin-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying toner with niacinamide and salicylic acid that minimizes pores, controls oil, and refines skin texture.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 383, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Pure Skin Cleanser", "type": "cleanser", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/pure-skin-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pore-clarifying gel cleanser with niacinamide and salicylic acid that removes excess oil and impurities for clearer skin.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 384, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Blemish Breakthrough Acne-Fighting Serum", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/blemish-breakthrough-acne-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An acne-fighting serum with salicylic acid and niacinamide that targets breakouts, minimizes pores, and prevents future blemishes.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 385, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Blemish Breakthrough Spot-Correcting Gel", "type": "spot treatment", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/blemish-breakthrough-spot-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A targeted spot gel with salicylic acid that flattens and fades blemishes quickly while soothing the surrounding skin.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 386, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Bright Eye Hydrogel Eye Masks", "type": "eye patch", "price": 8.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/bright-eye-hydrogel-eye-masks", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Affordable hydrogel eye patches with caffeine and niacinamide that brighten and depuff tired eyes in just 10-15 minutes.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 387, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Suntouchable! Invisible Broad Spectrum SPF 35", "type": "sunscreen", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/suntouchable-invisible-spf35", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight, invisible SPF 35 sunscreen that layers seamlessly under makeup with a weightless, non-greasy finish.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 388, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Bright Icon Vitamin C Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/bright-icon-vitamin-c-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable vitamin C serum with ferulic acid that brightens skin tone, fades dark spots, and boosts antioxidant protection.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 389, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Gentle Exfoliating Scrub", "type": "exfoliant", "price": 10.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-exfoliating-scrub", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle exfoliating scrub with ceramides and shea butter that buffs away dead skin cells while maintaining hydration.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 390, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Pure Skin Moisturizer", "type": "moisturizer", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/pure-skin-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight, oil-free moisturizer with niacinamide and hyaluronic acid that hydrates and minimizes pores without clogging them.", "ingredients": ["Niacinamide", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 391, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Thirst Burst Hydrating Drops", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-thirst-burst-drops", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Concentrated hydrating drops with ceramides and hyaluronic acid that can be added to any moisturizer for an extra hydration boost.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 392, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Triple Bounce Serum", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-triple-bounce-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A bouncy, jelly-like serum with triple ceramide complex and hyaluronic acid that deeply plumps and hydrates all skin types.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 393, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Blemish Breakthrough Moisturizer", "type": "moisturizer", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/blemish-breakthrough-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An oil-free moisturizer with salicylic acid and niacinamide designed to prevent breakouts while providing lightweight hydration.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 394, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Wow Brow Hydrating Serum", "type": "serum", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/wow-brow-hydrating-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating serum designed for brows that conditions, nourishes, and defines while promoting healthier-looking brow hairs.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 395, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Face Cream SPF 30", "type": "moisturizer", "price": 14.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-face-cream-spf30", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "The fan-favorite Holy Hydration! moisturizer with ceramides and SPF 30 that hydrates and protects skin in one step.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 396, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Hydrating Camo Concealer Primer", "type": "moisturizer", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/hydrating-camo-concealer-primer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating primer with hyaluronic acid and vitamin E that blurs skin and creates a smooth canvas for concealer.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 397, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Illuminating Face Mist", "type": "mist", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/illuminating-face-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing mist with vitamin C and aloe that delivers an instant glow and keeps makeup looking fresh throughout the day.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 398, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Niacinamide Targeted Brightening Serum", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/niacinamide-brightening-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A targeted 10% niacinamide serum that visibly minimizes pores, brightens skin, and balances oil for a more even complexion.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 399, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Serum", "type": "serum", "price": 13.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An anti-aging serum with peptides, CoQ10, and plant stem cells that visibly reduces wrinkles and firms skin.", "ingredients": ["Peptides"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 400, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Illuminating Moisturizer SPF 18", "type": "moisturizer", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-day-cream-spf18", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight illuminating moisturizer with vitamin C and SPF 18 that brightens and protects skin daily.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 401, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Incredibly Clear Acne Facial Cleanser", "type": "cleanser", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://acure.com/products/incredibly-clear-acne-facial-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying cleanser with salicylic acid and tea tree that targets acne-causing bacteria and clears congested pores.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 402, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Blue Tansy Night Mask", "type": "face mask", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-blue-tansy-night-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming overnight mask with blue tansy and rose hip that soothes irritated skin and deeply hydrates while you sleep.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 403, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Micellar Gel Eye Makeup Remover", "type": "cleanser", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-micellar-gel-eye-makeup-remover", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle micellar gel that effectively removes eye makeup, including waterproof mascara, without tugging or irritation.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 404, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Plumping Serum", "type": "serum", "price": 14.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-plumping-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plumping serum with hyaluronic acid and marine collagen that instantly volumizes and smooths the appearance of fine lines.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 405, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Turmeric Face Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-turmeric-face-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening clay mask with turmeric and vitamin C that evens skin tone and gives a natural golden glow.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 406, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Cleansing Cream SPF 15", "type": "cleanser", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-cleansing-cream-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming cleansing cream with SPF 15 protection formulated for sensitive skin with blue tansy and chamomile.", "ingredients": [], "concerns": [], "features": ["Mineral Sunscreen"], "skinTypes": []},
+  {"id": 407, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Incredibly Clear Mattifying Moisturizer", "type": "moisturizer", "price": 10.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://acure.com/products/incredibly-clear-mattifying-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight mattifying moisturizer with salicylic acid that controls shine and keeps acne-prone skin clear and balanced.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 408, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Vitamin C Eye Serum", "type": "eye cream", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-vitamin-c-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An eye serum with vitamin C and ferulic acid that targets dark circles and crow's feet for a brighter eye area.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 409, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Radically Rejuvenating Whipped Eye Cream", "type": "eye cream", "price": 11.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/radically-rejuvenating-whipped-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich whipped eye cream with peptides and plant stem cells that firms and plumps the delicate skin around the eyes.", "ingredients": ["Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 410, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Aloe Cleansing Gel", "type": "cleanser", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-aloe-cleansing-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing gel cleanser with aloe vera and cucumber that gently removes impurities while calming sensitive or reactive skin.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 411, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Glow Serum with AHA", "type": "serum", "price": 13.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-glow-serum-aha", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An AHA-powered brightening serum that resurfaces skin and fades dark spots for a visibly more radiant, even complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 412, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Mega Whipped Argan Oil Conditioner Mask", "type": "face mask", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/mega-whipped-argan-oil-face-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A deeply nourishing whipped face mask with argan oil, marula oil, and sea kelp that intensely hydrates very dry skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 413, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Probiotic + 5% Glycolic Mask", "type": "face mask", "price": 10.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-probiotic-glycolic-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening mask with probiotics and 5% glycolic acid that exfoliates and balances skin microbiome for a glowing complexion.", "ingredients": ["Glycolic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 414, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing 2% Hyaluronic Acid Serum", "type": "serum", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-hyaluronic-acid-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A concentrated 2% hyaluronic acid serum with blue tansy that intensely hydrates and soothes dry or sensitive skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 415, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Brightening Toner with Vitamin C", "type": "toner", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/brightening-facial-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A refreshing vitamin C toner that balances skin's pH, removes traces of makeup, and prepares skin for moisturizers.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 416, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Incredibly Clear Pore Cleansing Scrub", "type": "exfoliant", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://acure.com/products/incredibly-clear-pore-cleansing-scrub", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pore-clearing facial scrub with salicylic acid and lemon extract that deeply cleanses and polishes acne-prone skin.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 417, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Rosehip + Argan Facial Radiance Oil", "type": "face oil", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/rosehip-argan-radiance-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious facial oil blending rosehip and argan that deeply nourishes, brightens, and imparts a lit-from-within glow.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 418, "brand": "Acure", "brandColor": "#8B9D6A", "name": "Seriously Soothing Tinted Moisturizer", "type": "moisturizer", "price": 11.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://acure.com/products/seriously-soothing-tinted-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight tinted moisturizer with blue tansy and chamomile that provides sheer coverage and calms sensitive skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 419, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Aquarian Glow Daily Moisturizer", "type": "moisturizer", "price": 13.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/aquarian-glow-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A daily moisturizer with sea botanicals that provides a dewy, luminous glow while keeping skin soft and hydrated.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 420, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Pore Warrior Clarifying Clay Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://pacificabeauty.com/products/pore-warrior-clay-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A clarifying clay mask with niacinamide and green clay that deep-cleans pores and controls oil for clearer skin.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 421, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Vegan Collagen Lip Plump Gloss", "type": "lip treatment", "price": 9.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/vegan-collagen-lip-plump", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plumping lip gloss with vegan collagen and hyaluronic acid that visibly plumps and hydrates lips with a glossy finish.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 422, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Glow Baby Retinol Overnight Cream", "type": "moisturizer", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/glow-baby-retinol-overnight-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable overnight cream with bakuchiol and vitamin C that improves skin texture and fades dark spots while you sleep.", "ingredients": ["Retinol", "Vitamin C", "Bakuchiol"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 423, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Sea Foam Micellar Cleansing Water", "type": "cleanser", "price": 11.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/sea-foam-micellar-cleansing-water", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle micellar cleansing water with sea botanicals that effectively removes makeup and daily impurities without rinsing.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 424, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Cosmic Botanicals Eye Serum", "type": "eye cream", "price": 12.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/cosmic-botanicals-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye serum with vitamin C and plant extracts that targets dark circles and fine lines affordably.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 425, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Future Dew Overnight Glow Serum Mask", "type": "face mask", "price": 13.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/future-dew-overnight-glow-serum-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight serum-mask hybrid with hyaluronic acid and plant extracts that hydrates and brightens for a dewy morning glow.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 426, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Kale Brightening Vitamin C Scrub", "type": "exfoliant", "price": 10.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/kale-brightening-vitamin-c-scrub", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle brightening scrub with kale and vitamin C that exfoliates dead skin cells for a smoother, more radiant complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 427, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Vegan Collagen Recovery Oil", "type": "face oil", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/vegan-collagen-recovery-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight face oil with vegan collagen and plant oils that replenishes moisture and visibly plumps skin overnight.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 428, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Wake Up Beautiful Sleep Mask", "type": "face mask", "price": 10.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/wake-up-beautiful-sleep-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight sleeping mask with retinoid and bakuchiol that works while you sleep to smooth and firm skin by morning.", "ingredients": ["Bakuchiol"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 429, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Vitamin C Glow Drops", "type": "serum", "price": 13.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/vitamin-c-glow-drops", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "Concentrated vitamin C glow drops that can be added to any moisturizer to boost brightening and antioxidant benefits.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 430, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Sea Mineral Lifting Serum", "type": "serum", "price": 13.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/sea-mineral-lifting-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lifting serum with sea minerals and peptides that firms skin and reduces the appearance of sagging for a more youthful look.", "ingredients": ["Peptides"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 431, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Future Youth Cream", "type": "moisturizer", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/future-youth-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An anti-aging moisturizer with vegan collagen, peptides, and ceramides that plumps, firms, and visibly reduces fine lines.", "ingredients": ["Ceramides", "Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 432, "brand": "Pacifica", "brandColor": "#7B9EA8", "name": "Pineapple Enzyme Brightening Face Mask", "type": "face mask", "price": 9.99, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://pacificabeauty.com/products/pineapple-enzyme-brightening-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An enzyme-powered brightening mask with pineapple extract that gently dissolves dead skin and reveals a more radiant glow.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 433, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Supercharge Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-supercharge-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A ceramide-powered supercharge serum that provides long-lasting hydration and supports healthy skin barrier function.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 434, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Blemish Breakthrough Daily Cleanser", "type": "cleanser", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/blemish-breakthrough-daily-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A daily acne-fighting cleanser with 0.5% salicylic acid that clears pores and prevents breakouts without over-drying skin.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 435, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Glow Reviver Hydrating Primer", "type": "moisturizer", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/glow-reviver-hydrating-primer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating primer with hyaluronic acid and vitamin C that preps skin with a glowing, smooth base for makeup application.", "ingredients": ["Hyaluronic Acid", "Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 436, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Triple Bounce Eye Cream", "type": "eye cream", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/triple-bounce-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A triple-action eye cream with ceramides, peptides, and hyaluronic acid that hydrates, firms, and depuffs the eye area.", "ingredients": ["Ceramides", "Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 437, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Pure Skin Facial Mask", "type": "face mask", "price": 8.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/pure-skin-facial-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pore-clarifying sheet mask with niacinamide and salicylic acid that deeply cleanses and minimizes the appearance of pores.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 438, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Intensive Moisture Cream", "type": "moisturizer", "price": 14.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-intensive-moisture-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An intensive moisture cream with ceramides, peptides, and squalane that deeply hydrates and repairs dry, stressed skin.", "ingredients": ["Ceramides", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 439, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Bright Side Up Illuminating SPF Primer", "type": "moisturizer", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/bright-side-up-spf-primer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening SPF primer with vitamin C that evens skin tone, blurs pores, and protects while creating a glowing base.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 440, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Acne Fighting Spot Treatment Gel", "type": "spot treatment", "price": 8.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/acne-fighting-spot-treatment", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A maximum strength spot treatment with 10% benzoyl peroxide that quickly reduces blemishes and prevents new breakouts.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 441, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Lip Mask", "type": "lip treatment", "price": 8.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-lip-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A ceramide-infused overnight lip mask that deeply hydrates and repairs dry, chapped lips while you sleep for softer lips.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 442, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Pure Skin Refining Serum", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/pure-skin-refining-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pore-refining serum with niacinamide and BHA that reduces pore appearance, controls shine, and clears congestion.", "ingredients": ["Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 443, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Glow Nourishing Facial Oil", "type": "face oil", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/glow-nourishing-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight facial oil with rosehip and argan that nourishes and adds a natural glow without feeling greasy.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 444, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Revitalizing Facial Toner", "type": "toner", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/revitalizing-facial-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating toner with witch hazel and aloe vera that balances skin's pH and refreshes complexion after cleansing.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 445, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Bright Icon Vitamin C Eye Cream", "type": "eye cream", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/bright-icon-vitamin-c-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening vitamin C eye cream that reduces dark circles and firms the under-eye area at an accessible price point.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 446, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Sheet Mask", "type": "face mask", "price": 4.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-sheet-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating sheet mask with ceramides and hyaluronic acid that intensely moisturizes and plumps skin in just 10-15 minutes.", "ingredients": ["Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 447, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Blemish Breakthrough Acne Face Wash", "type": "cleanser", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://elfcosmetics.com/products/blemish-breakthrough-face-wash", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An acne-fighting face wash with 1% salicylic acid that clears excess oil and prevents breakouts while maintaining hydration.", "ingredients": ["Salicylic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 448, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Mineral Sunscreen SPF 50 Face", "type": "sunscreen", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/mineral-sunscreen-spf50", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight 100% mineral SPF 50 sunscreen that provides clean, broad-spectrum protection with a non-greasy finish.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 449, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "Holy Hydration! Firming Facial Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/holy-hydration-firming-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A firming serum with ceramides, peptides, and niacinamide that visibly tightens and plumps skin for a more youthful appearance.", "ingredients": ["Niacinamide", "Ceramides", "Peptides"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 450, "brand": "e.l.f. Cosmetics", "brandColor": "#C17B5C", "name": "SKIN by e.l.f. Resurfacing Retinol Serum", "type": "serum", "price": 14.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://elfcosmetics.com/products/resurfacing-retinol-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An accessible retinol serum with squalane that reduces fine lines and improves skin texture with regular use.", "ingredients": ["Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 451, "brand": "Glossier", "brandColor": "#C4A882", "name": "Milky Jelly Face Wash", "type": "cleanser", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/milky-jelly-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle gel cleanser with conditioning agents and rose water that removes makeup and leaves skin soft, never tight.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 452, "brand": "Glossier", "brandColor": "#C4A882", "name": "Stretch Eye Serum", "type": "eye cream", "price": 32.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/stretch-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An eye serum with peptides and hyaluronic acid that plumps fine lines and smooths the delicate skin around the eyes.", "ingredients": ["Hyaluronic Acid", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 453, "brand": "Glossier", "brandColor": "#C4A882", "name": "Moisturizing Moon Mask", "type": "face mask", "price": 22.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/moon-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich, intensely hydrating sheet mask with hyaluronic acid that replenishes moisture and leaves skin plump and glowing.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 454, "brand": "Glossier", "brandColor": "#C4A882", "name": "Futuredew Face Serum Oil", "type": "serum", "price": 24.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/futuredew-face-serum-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A skin-care serum with plant oils and squalane that locks in the benefits of your skincare routine for an all-day glow.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 455, "brand": "Glossier", "brandColor": "#C4A882", "name": "Cleanser Concentrate Refill", "type": "cleanser", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/cleanser-concentrate-refill", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "The refill format of Glossier's beloved sulfate-free Cleanser Concentrate in eco-friendly sustainable packaging.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 456, "brand": "Glossier", "brandColor": "#C4A882", "name": "Skin Tint SPF 30", "type": "moisturizer", "price": 35.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glossier.com/products/skin-tint-spf30", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A sheer SPF 30 skin tint that provides natural coverage and sun protection while evening out complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 457, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Watermelon Glow Hyaluronic Clay Pore-Tight Facial", "type": "face mask", "price": 39.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/watermelon-hyaluronic-clay-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A watermelon-infused clay mask with hyaluronic acid that purifies and tightens pores while keeping skin hydrated.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 458, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Plum Plump Toner", "type": "toner", "price": 34.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/plum-plump-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A bouncy, hyaluronic acid toner with plum extract that primes and plumps skin for maximum serum absorption.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 459, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Avocado Retinol Face Oil", "type": "face oil", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/avocado-retinol-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A retinol-infused face oil with avocado and squalane that smooths texture and brightens without causing irritation.", "ingredients": ["Retinol"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 460, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Blueberry Bounce Eye Cream", "type": "eye cream", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/blueberry-bounce-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye cream with blueberry extract and peptides that reduces dark circles and firms the delicate eye area.", "ingredients": ["Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 461, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Guava Vitamin C Eye Serum", "type": "eye cream", "price": 35.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/guava-vitamin-c-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An eye serum with vitamin C and guava extract that brightens dark circles and reduces fine lines around the eyes.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 462, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Strawberry Slash AHA + BHA Serum", "type": "serum", "price": 32.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": true, "buyUrl": "https://glowrecipe.com/products/strawberry-slash-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A multi-acid serum with strawberry enzymes that deeply exfoliates and minimizes pores for a smoother, clearer complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 463, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Banana Soufflé Brightening Night Mask", "type": "face mask", "price": 42.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/banana-souffle-night-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An overnight brightening mask with banana extract and vitamin C that boosts radiance and smooths skin tone while you sleep.", "ingredients": ["Vitamin C"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 464, "brand": "Glow Recipe", "brandColor": "#D4789A", "name": "Watermelon Glow Ultra-Fine Mist", "type": "mist", "price": 22.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://glowrecipe.com/products/watermelon-glow-ultra-fine-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A watermelon-infused facial mist that delivers a refreshing burst of hydration and brightens skin with a dewy glow.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 465, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Restorative Cleansing Oil", "type": "cleanser", "price": 38.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-restorative-cleansing-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle cleansing oil with squalane and plant oils that melts away makeup and impurities without stripping skin's natural moisture.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 466, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Phyto-Retinol Serum (Refill)", "type": "serum", "price": 75.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-phyto-retinol-serum-refill", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "The refill version of Biossance's plant-based retinol alternative serum in sustainable packaging that reduces plastic waste.", "ingredients": ["Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 467, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Hyaluronic Acid Deep Moisture Serum", "type": "serum", "price": 65.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-hyaluronic-deep-moisture-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A multi-molecular hyaluronic acid serum with squalane that provides deep, long-lasting hydration at every layer of skin.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 468, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Marine Algae Hydrating Eye Gel", "type": "eye cream", "price": 52.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-marine-algae-eye-gel", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A cooling eye gel with squalane and marine algae that reduces puffiness and provides intense hydration to the eye area.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 469, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Ceramide Fine Line Lifting Serum", "type": "serum", "price": 78.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-ceramide-fine-line-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An advanced anti-aging serum with squalane, ceramides, and peptides that lifts and firms while visibly reducing fine lines.", "ingredients": ["Ceramides", "Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 470, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Black Pepper Quick Dry Body Mist", "type": "mist", "price": 42.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-black-pepper-body-mist", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A hydrating body and face mist with squalane and black pepper that absorbs instantly and leaves skin smooth and refreshed.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 471, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Glycolic Renewal Mask", "type": "face mask", "price": 58.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-glycolic-renewal-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A resurfacing mask with squalane and glycolic acid that exfoliates dead skin cells and brightens for a more radiant complexion.", "ingredients": ["Glycolic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 472, "brand": "Biossance", "brandColor": "#6A8B7A", "name": "Squalane + Bakuchiol Eye Contour Cream", "type": "eye cream", "price": 58.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://biossance.com/products/squalane-bakuchiol-eye-contour-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plant-retinol eye cream with squalane and bakuchiol that visibly reduces crow's feet and dark circles without irritation.", "ingredients": ["Retinol", "Bakuchiol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 473, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Discoloration Correcting Toner", "type": "toner", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/discoloration-correcting-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A targeted toner with tranexamic acid and kojic acid that fades hyperpigmentation and dark spots for a more even skin tone.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 474, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Bakuchiol Moisturizer", "type": "moisturizer", "price": 12.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/bakuchiol-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable plant-based retinol alternative moisturizer with bakuchiol that reduces fine lines without causing irritation.", "ingredients": ["Retinol", "Bakuchiol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 475, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Vitamin C Powder", "type": "serum", "price": 8.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/vitamin-c-powder", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A pure vitamin C powder that can be mixed with any moisturizer or serum to add brightening and antioxidant benefits.", "ingredients": ["Vitamin C", "Antioxidants"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 476, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Peptide Moisturizer", "type": "moisturizer", "price": 14.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/peptide-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable peptide-rich moisturizer that firms skin, reduces fine lines, and provides long-lasting hydration.", "ingredients": ["Peptides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 477, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Hyaluronic Acid Serum (Mini)", "type": "serum", "price": 6.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/hyaluronic-acid-serum-mini", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A mini-sized version of the bestselling hyaluronic acid serum, perfect for travel or trying before committing to full size.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 478, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Gentle Daily Exfoliating Cleanser", "type": "cleanser", "price": 10.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://goodmolecules.com/products/gentle-daily-exfoliating-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle daily cleanser with mild exfoliating acids that removes impurities and smooths skin texture without irritation.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 479, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Prebiotic Gel Moisturizer", "type": "moisturizer", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/prebiotic-gel-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A lightweight gel moisturizer with prebiotics that nourishes the skin microbiome and provides oil-free, long-lasting hydration.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 480, "brand": "Good Molecules", "brandColor": "#8BAA8B", "name": "Tranexamic Acid Serum", "type": "serum", "price": 12.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://goodmolecules.com/products/tranexamic-acid-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening tranexamic acid serum that targets stubborn hyperpigmentation and dark spots for a more even complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 481, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Bakuchiol Smoothing Serum", "type": "serum", "price": 22.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/bakuchiol-smoothing-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plant-based retinol alternative serum with bakuchiol that reduces fine lines and improves skin texture without irritation.", "ingredients": ["Retinol", "Bakuchiol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 482, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Organic Rose Facial Toner", "type": "toner", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/organic-rose-facial-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing toner with organic rosewater and plant extracts that balances skin pH and provides a gentle daily refresh.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 483, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Clarity Serum", "type": "serum", "price": 18.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": true, "buyUrl": "https://cocokind.com/products/clarity-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A blemish-targeting serum with niacinamide and salicylic acid that clarifies pores and reduces the appearance of breakouts.", "ingredients": ["Salicylic Acid", "Niacinamide"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free", "Non-Comedogenic"], "skinTypes": []},
+  {"id": 484, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Superberry Hydrate and Glow Dream Eye Cream", "type": "eye cream", "price": 18.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/superberry-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plant-powered eye cream with superberry extracts and hyaluronic acid that brightens and hydrates the delicate eye area.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 485, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Ceramide Eye Cream", "type": "eye cream", "price": 20.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/ceramide-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An affordable ceramide-rich eye cream that strengthens the moisture barrier and provides long-lasting hydration around the eyes.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 486, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Fruit Stem Cell Moisturizer", "type": "moisturizer", "price": 22.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/fruit-stem-cell-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A plant-based moisturizer with fruit stem cells and ceramides that supports skin renewal and provides rich daily hydration.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 487, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Brightening Facial Cleanser", "type": "cleanser", "price": 14.0, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/brightening-facial-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A vitamin C-infused cleanser that brightens skin while gently removing impurities and excess oil.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 488, "brand": "Cocokind", "brandColor": "#B89B6A", "name": "Mushroom Hyaluronic Glow Moisturizer", "type": "moisturizer", "price": 20.0, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://cocokind.com/products/mushroom-hyaluronic-glow-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A mushroom-powered moisturizer with tremella and hyaluronic acid that provides adaptogenic hydration and a natural glow.", "ingredients": ["Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 489, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Jasmine AHA Exfoliating Toner", "type": "toner", "price": 44.0, "priceRange": "mid-range", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/jasmine-aha-toner", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening toner with jasmine and AHAs that gently resurfaces skin for a smoother, more radiant complexion.", "ingredients": [], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 490, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Lapis Blue Tansy Face Oil", "type": "face oil", "price": 72.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/lapis-blue-tansy-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A calming and balancing facial oil with blue tansy and hemp seed that soothes blemish-prone and acne-prone skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 491, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Botanist Hydrating Moisturizing Mask", "type": "face mask", "price": 48.0, "priceRange": "mid-range", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/botanist-hydrating-mask", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A deeply nourishing mask with botanical extracts and plant oils that intensely hydrates and revitalizes dry or dehydrated skin.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 492, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Brighten Vitamin C + Pineapple Enzyme Serum", "type": "serum", "price": 64.0, "priceRange": "luxury", "oilFree": true, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/brighten-pineapple-enzyme-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An enzymatic brightening serum with vitamin C and pineapple enzymes that fades dark spots and illuminates complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free"], "skinTypes": []},
+  {"id": 493, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Golden Aura Glow Face Oil", "type": "face oil", "price": 64.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/golden-aura-glow-face-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A radiance-boosting face oil with gold and vitamin C that imparts a luminous, healthy glow to all skin types.", "ingredients": ["Vitamin C"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 494, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Pink Moon Night Treatment Oil", "type": "face oil", "price": 98.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/pink-moon-night-treatment-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A luxurious overnight facial oil with jasmine, jojoba, and vitamins that deeply nourishes and rejuvenates skin while you sleep.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 495, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Clei De Lune Brightening Eye Serum", "type": "eye cream", "price": 62.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/clei-de-lune-eye-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A brightening eye serum with vitamin C and plant peptides that targets dark circles and smooths the delicate eye area.", "ingredients": ["Vitamin C", "Peptides"], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 496, "brand": "Herbivore Botanicals", "brandColor": "#A87B6A", "name": "Cypress Clarifying Facial Oil", "type": "face oil", "price": 68.0, "priceRange": "luxury", "oilFree": false, "fragranceFree": false, "vegan": true, "nonComedogenic": false, "buyUrl": "https://herbivorebotanicals.com/products/cypress-clarifying-facial-oil", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A balancing facial oil with cypress, hemp seed, and blue tansy that clarifies and soothes oily and combination skin types.", "ingredients": [], "concerns": [], "features": [], "skinTypes": []},
+  {"id": 497, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Skin Soak Rich Moisture Cream", "type": "moisturizer", "price": 16.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/skin-soak-rich-moisture-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A rich moisture cream with ceramides, hyaluronic acid, and niacinamide that provides intense hydration for dry skin types.", "ingredients": ["Niacinamide", "Ceramides", "Hyaluronic Acid"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 498, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Gentle Reset Creamy Gel Cleanser", "type": "cleanser", "price": 13.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/gentle-reset-creamy-gel-cleanser", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A gentle hybrid cleanser with oat and aloe that removes impurities while keeping skin feeling balanced and calm.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 499, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Kick Brass Toning Serum", "type": "serum", "price": 16.99, "priceRange": "budget", "oilFree": true, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/kick-brass-toning-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A toning serum with vitamin C and AHAs that reduces the appearance of brassiness and uneven skin tone for a brighter complexion.", "ingredients": ["Vitamin C"], "concerns": [], "features": ["Oil-Free", "Fragrance-Free"], "skinTypes": []},
+  {"id": 500, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Rewind Retinal Visibly Aging Serum", "type": "serum", "price": 24.99, "priceRange": "mid-range", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/rewind-retinal-serum", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "An advanced retinal serum that works faster than retinol to visibly reduce fine lines and improve skin texture over time.", "ingredients": ["Retinol"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 501, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Barrier Baby Protective Moisturizer", "type": "moisturizer", "price": 16.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/barrier-baby-protective-moisturizer", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A protective moisturizer with ceramides and fatty acids that creates a shield against environmental stressors while hydrating.", "ingredients": ["Ceramides"], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
+  {"id": 502, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Sun Care Daily SPF 35 Moisturizer", "type": "moisturizer", "price": 16.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/sun-care-daily-moisturizer-spf", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A daily moisturizer with SPF 35 that provides sun protection and hydration in one lightweight, non-greasy formula.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free", "Mineral Sunscreen"], "skinTypes": []},
+  {"id": 503, "brand": "Versed", "brandColor": "#7A9E8C", "name": "Soothe Said Eye Cream", "type": "eye cream", "price": 14.99, "priceRange": "budget", "oilFree": false, "fragranceFree": true, "vegan": true, "nonComedogenic": false, "buyUrl": "https://versed.com/products/soothe-said-eye-cream", "retailer": "Brand Website", "rating": 0, "reviews": 0, "imageUrl": "", "description": "A soothing eye cream with caffeine and green tea that de-puffs and brightens tired eyes for an instantly refreshed look.", "ingredients": [], "concerns": [], "features": ["Fragrance-Free"], "skinTypes": []},
 ];
 
-const coreIngredients = [
-  "Niacinamide", "Ceramides", "Hyaluronic Acid", "Vitamin C",
-  "Salicylic Acid", "Retinol", "Glycolic Acid", "Squalane",
-  "Peptides", "Bakuchiol", "Zinc Oxide", "Azelaic Acid"
-];
+const normalizeType = t => {
+  if (!t) return "Other";
+  const m = {
+    "cleanser": "Cleanser", "cleansing balm": "Cleansing Balm", "cleansing oil": "Cleansing Oil",
+    "exfoliant": "Exfoliant", "eye cream": "Eye Cream", "eye patch": "Eye Cream",
+    "face mask": "Mask", "face oil": "Face Oil", "lip treatment": "Lip Balm",
+    "mist": "Mist", "moisturizer": "Moisturizer", "serum": "Serum",
+    "spot treatment": "Spot Treatment", "sunscreen": "Sunscreen",
+    "tinted spf moisturizer": "Tinted Moisturizer", "toner": "Toner", "balm": "Lip Balm",
+  };
+  return m[t.toLowerCase()] || t;
+};
 
-export default function App() {
+const products = RAW_PRODUCTS.map(p => ({ ...p, type: normalizeType(p.type) }));
+const BRAND_NAMES = [...new Set(products.map(p => p.brand))].sort();
+const INGREDIENTS = [...new Set(products.flatMap(p => p.ingredients))].sort();
+const CONCERNS = [...new Set(products.flatMap(p => p.concerns))].sort();
+const TYPES = [...new Set(products.map(p => p.type))].sort();
+
+const BRAND_COLORS = {
+  "e.l.f. Cosmetics": { bg: "#C17B5C", text: "#fff" },
+  "Acure": { bg: "#8B9D6A", text: "#fff" },
+  "Pacifica": { bg: "#7B9EA8", text: "#fff" },
+  "Supergoop": { bg: "#D4956A", text: "#fff" },
+  "Glossier": { bg: "#C4A882", text: "#fff" },
+  "Milk Makeup": { bg: "#9C7B8E", text: "#fff" },
+  "Versed": { bg: "#7A9E8C", text: "#fff" },
+  "Cocokind": { bg: "#B89B6A", text: "#fff" },
+  "Tower 28": { bg: "#C4907A", text: "#fff" },
+  "Biossance": { bg: "#6A8B7A", text: "#fff" },
+  "Herbivore Botanicals": { bg: "#A87B6A", text: "#fff" },
+  "Thrive Causemetics": { bg: "#8B6A9C", text: "#fff" },
+  "Saie": { bg: "#C4A86A", text: "#fff" },
+  "Glow Recipe": { bg: "#D4789A", text: "#fff" },
+  "Krave Beauty": { bg: "#9A8B6A", text: "#fff" },
+  "Byoma": { bg: "#6A9CB8", text: "#fff" },
+  "Good Molecules": { bg: "#8BAA8B", text: "#fff" },
+  "Alpyn Beauty": { bg: "#7A9A7A", text: "#fff" },
+};
+
+const CSS = `
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --terra: #B85C38; --terra-dk: #8F3F22; --terra-lt: #D4906A; --terra-pale: #F5EBE4;
+    --sage: #6B8C6B; --sage-pale: #EDF2ED;
+    --cream: #FAF7F4; --parchment: #F2ECE4;
+    --ink: #1A1410; --ink-soft: #4A3F35; --ink-muted: #8A7A6A;
+    --border: #E2D8CE; --border-dk: #C8BAA8; --white: #FFFFFF;
+    --shadow-sm: 0 1px 3px rgba(26,20,16,0.08);
+    --shadow-md: 0 4px 16px rgba(26,20,16,0.10);
+    --shadow-lg: 0 12px 40px rgba(26,20,16,0.14);
+    --radius-sm: 4px; --radius-md: 8px; --radius-lg: 16px;
+    --transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .app { display: flex; flex-direction: column; min-height: 100vh; }
+  .header { position: sticky; top: 0; z-index: 100; background: rgba(250,247,244,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 32px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: baseline; gap: 2px; text-decoration: none; }
+  .logo-bunny { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--ink); }
+  .logo-index { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300; font-style: italic; color: var(--terra); }
+  .nav { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 13px; font-weight: 500; color: var(--ink-soft); text-decoration: none; letter-spacing: 0.02em; transition: color 0.15s; background: none; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; padding: 0; }
+  .nav-link:hover, .nav-link.active { color: var(--terra); }
+  .hero { background: var(--parchment); border-bottom: 1px solid var(--border); padding: 56px 32px 48px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -60px; right: -60px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(184,92,56,0.08) 0%, transparent 70%); pointer-events: none; }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .hero-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--terra); }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(38px, 5vw, 60px); font-weight: 500; line-height: 1.08; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 18px; }
+  .hero-title em { font-style: italic; color: var(--terra); font-weight: 300; }
+  .hero-sub { font-size: 15px; color: var(--ink-soft); line-height: 1.6; max-width: 520px; }
+  .hero-stats { display: flex; gap: 40px; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--border); }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 600; color: var(--terra); line-height: 1; }
+  .stat-label { font-size: 12px; color: var(--ink-muted); margin-top: 4px; letter-spacing: 0.04em; }
+  .search-wrap { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 32px; position: sticky; top: 64px; z-index: 90; box-shadow: var(--shadow-sm); }
+  .search-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 12px; align-items: center; }
+  .search-box { flex: 1; position: relative; }
+  .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--ink-muted); pointer-events: none; font-size: 16px; }
+  .search-input { width: 100%; padding: 11px 14px 11px 42px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 14px; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--cream); transition: var(--transition); outline: none; }
+  .search-input:focus { border-color: var(--terra); background: var(--white); box-shadow: 0 0 0 3px rgba(184,92,56,0.08); }
+  .search-input::placeholder { color: var(--ink-muted); }
+  .filter-toggle { display: flex; align-items: center; gap: 7px; padding: 10px 18px; border-radius: var(--radius-sm); border: 1.5px solid var(--border); background: var(--cream); font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; color: var(--ink-soft); cursor: pointer; transition: var(--transition); white-space: nowrap; }
+  .filter-toggle:hover, .filter-toggle.active { border-color: var(--terra); color: var(--terra); background: var(--terra-pale); }
+  .result-count { font-size: 13px; color: var(--ink-muted); white-space: nowrap; min-width: 80px; text-align: right; }
+  .main { flex: 1; max-width: 1200px; margin: 0 auto; padding: 0 32px; width: 100%; }
+  .filter-panel { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); margin: 24px 0 0; overflow: hidden; }
+  .filter-panel-inner { padding: 24px; display: flex; gap: 32px; flex-wrap: wrap; }
+  .filter-group { min-width: 160px; flex: 1; }
+  .filter-group-label { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 10px; }
+  .filter-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { display: inline-flex; align-items: center; gap: 4px; padding: 5px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; font-family: 'DM Sans', sans-serif; border: 1.5px solid var(--border); background: var(--cream); color: var(--ink-soft); cursor: pointer; transition: var(--transition); white-space: nowrap; }
+  .chip:hover { border-color: var(--terra-lt); color: var(--terra); }
+  .chip.active { border-color: var(--terra); background: var(--terra-pale); color: var(--terra); font-weight: 600; }
+  .chip-x { font-size: 10px; opacity: 0.7; }
+  .toggle-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 500; border: 1.5px solid var(--border); background: var(--cream); color: var(--ink-soft); cursor: pointer; transition: var(--transition); font-family: 'DM Sans', sans-serif; }
+  .toggle-chip:hover { border-color: var(--sage); color: var(--sage); }
+  .toggle-chip.active { border-color: var(--sage); background: var(--sage-pale); color: var(--sage); }
+  .filter-actions { display: flex; align-items: center; gap: 12px; padding: 14px 24px; border-top: 1px solid var(--border); background: var(--cream); }
+  .btn-clear { background: none; border: none; font-size: 13px; color: var(--ink-muted); cursor: pointer; font-family: 'DM Sans', sans-serif; }
+  .btn-clear:hover { color: var(--terra); }
+  .sort-bar { display: flex; align-items: center; justify-content: space-between; padding: 18px 0 0; }
+  .sort-label { font-size: 12px; color: var(--ink-muted); font-weight: 500; }
+  .sort-options { display: flex; gap: 4px; }
+  .sort-btn { padding: 5px 12px; border-radius: 100px; border: none; background: none; font-size: 12px; font-weight: 500; color: var(--ink-muted); cursor: pointer; font-family: 'DM Sans', sans-serif; transition: var(--transition); }
+  .sort-btn:hover { color: var(--terra); }
+  .sort-btn.active { background: var(--terra-pale); color: var(--terra); }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; padding: 20px 0 60px; }
+  .card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; cursor: pointer; transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
+  .card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--border-dk); }
+  .card-img-wrap { position: relative; width: 100%; overflow: hidden; background: var(--parchment); }
+  .card-img-wrap::before { content: ''; display: block; padding-top: 75%; }
+  .card-img-wrap.has-image::before { display: none; }
+  .card-img-wrap.has-image { max-height: 260px; display: flex; align-items: center; justify-content: center; background: var(--white); }
+  .card-img { max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; padding: 16px; display: block; }
+  .card-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; }
+  .card-placeholder-brand { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.75; text-align: center; }
+  .card-placeholder-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 500; text-align: center; line-height: 1.3; opacity: 0.9; }
+  .card-placeholder-icon { font-size: 22px; opacity: 0.45; }
+  .card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .card-brand { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terra); }
+  .card-name { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+  .card-ingredients { display: flex; flex-wrap: wrap; gap: 4px; }
+  .ing-tag { display: inline-block; padding: 3px 9px; border-radius: 100px; font-size: 11px; font-weight: 500; background: var(--terra-pale); color: var(--terra); letter-spacing: 0.01em; }
+  .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 4px; }
+  .card-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--ink); }
+  .card-meta { display: flex; align-items: center; gap: 5px; }
+  .card-rating { font-size: 12px; color: var(--ink-muted); }
+  .star { color: #D4956A; }
+  .card-badges { display: flex; gap: 4px; flex-wrap: wrap; }
+  .badge { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 100px; letter-spacing: 0.04em; }
+  .badge-ff { background: #EDF2ED; color: #5A7A5A; }
+  .badge-of { background: #EBF3FF; color: #4A6A9A; }
+  .badge-vegan { background: var(--sage-pale); color: var(--sage); }
+  .card-buy { display: block; width: 100%; padding: 10px; text-align: center; background: var(--cream); border: none; border-top: 1px solid var(--border); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--terra); cursor: pointer; transition: var(--transition); font-family: 'DM Sans', sans-serif; text-decoration: none; }
+  .card-buy:hover { background: var(--terra); color: var(--white); }
+  .modal-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(26,20,16,0.6); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; padding: 24px; animation: fadeIn 0.15s ease; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .modal { background: var(--white); border-radius: var(--radius-lg); max-width: 680px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: var(--shadow-lg); animation: slideUp 0.2s cubic-bezier(0.34,1.56,0.64,1); }
+  @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .modal-header { position: relative; }
+  .modal-img-wrap { width: 100%; height: 280px; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0; display: flex; align-items: center; justify-content: center; }
+  .modal-img { max-width: 100%; max-height: 100%; object-fit: contain; padding: 24px; background: var(--white); }
+  .modal-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+  .modal-placeholder-icon { font-size: 40px; opacity: 0.4; }
+  .modal-placeholder-brand { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; }
+  .modal-placeholder-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; opacity: 0.85; text-align: center; padding: 0 24px; }
+  .modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.9); border: none; cursor: pointer; font-size: 16px; color: var(--ink); display: flex; align-items: center; justify-content: center; transition: var(--transition); backdrop-filter: blur(4px); box-shadow: var(--shadow-sm); }
+  .modal-close:hover { background: var(--white); color: var(--terra); }
+  .modal-body { padding: 28px 32px 32px; }
+  .modal-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terra); margin-bottom: 8px; }
+  .modal-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; line-height: 1.15; color: var(--ink); margin-bottom: 16px; }
+  .modal-desc { font-size: 14px; line-height: 1.7; color: var(--ink-soft); margin-bottom: 24px; }
+  .modal-section { margin-bottom: 20px; }
+  .modal-section-label { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 10px; }
+  .modal-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .modal-tag-ing { background: var(--terra-pale); color: var(--terra); padding: 5px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; }
+  .modal-tag-concern { background: var(--sage-pale); color: var(--sage); padding: 5px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; }
+  .modal-tag-feat { background: var(--parchment); color: var(--ink-soft); padding: 5px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; border: 1px solid var(--border); }
+  .modal-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 24px; border-top: 1px solid var(--border); margin-top: 8px; }
+  .modal-price { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 600; color: var(--ink); }
+  .modal-rating { font-size: 13px; color: var(--ink-muted); }
+  .btn-buy { padding: 13px 32px; background: var(--terra); color: var(--white); border: none; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; text-decoration: none; font-family: 'DM Sans', sans-serif; transition: background 0.15s; }
+  .btn-buy:hover { background: var(--terra-dk); }
+  .about-body { padding: 40px; }
+  .about-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra); margin-bottom: 12px; }
+  .about-title { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--ink); margin-bottom: 28px; }
+  .about-accent { background: var(--terra-pale); border-left: 3px solid var(--terra); padding: 18px 22px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin: 20px 0; }
+  .about-text { font-size: 15px; line-height: 1.8; color: var(--ink-soft); margin-bottom: 18px; }
+  .about-sig { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--terra); font-style: italic; margin-top: 8px; }
+  .ethics-bar { background: var(--ink); padding: 56px 32px; }
+  .ethics-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+  .ethics-item { display: flex; flex-direction: column; gap: 10px; }
+  .ethics-icon { font-size: 22px; }
+  .ethics-title { font-size: 14px; font-weight: 600; color: #F5EBE4; letter-spacing: 0.01em; line-height: 1.3; }
+  .ethics-body { font-size: 13px; color: rgba(245,235,228,0.6); line-height: 1.6; }
+  @media (max-width: 768px) { .ethics-inner { grid-template-columns: 1fr 1fr; gap: 28px; } }
+  @media (max-width: 480px) { .ethics-inner { grid-template-columns: 1fr; gap: 24px; } }
+  .contact-section { background: var(--parchment); border-top: 1px solid var(--border); padding: 80px 32px; }  .contact-inner { max-width: 640px; margin: 0 auto; }
+  .contact-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .contact-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--terra); }
+  .contact-title { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 500; color: var(--ink); margin-bottom: 12px; }
+  .contact-sub { font-size: 15px; color: var(--ink-soft); line-height: 1.6; margin-bottom: 36px; }
+  .footer { border-top: 1px solid var(--border); background: var(--white); padding: 32px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+  .footer-copy { font-size: 12px; color: var(--ink-muted); }
+  .empty { text-align: center; padding: 80px 24px; }
+  .empty-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.4; }
+  .empty-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--ink); margin-bottom: 8px; }
+  .empty-sub { font-size: 14px; color: var(--ink-muted); }
+  @media (max-width: 768px) {
+    .header { padding: 0 20px; }
+    .hero { padding: 40px 20px 36px; }
+    .hero-stats { gap: 24px; }
+    .search-wrap { padding: 12px 20px; }
+    .main { padding: 0 20px; }
+    .product-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+    .contact-section { padding: 60px 20px; }
+    .footer { padding: 24px 20px; }
+    .footer-inner { flex-direction: column; gap: 8px; text-align: center; }
+    .nav { gap: 16px; }
+  }
+`;
+
+function ProductCard({ product, onClick }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
+  const color = BRAND_COLORS[product.brand] || { bg: "#A08070", text: "#fff" };
+  const hasImg = product.imageUrl && !imgError;
+
+  return (
+    <div className="card" onClick={() => onClick(product)}>
+      <div className={`card-img-wrap${hasImg ? " has-image" : ""}`}
+        style={!hasImg ? { background: color.bg } : {}}>
+        {hasImg ? (
+          <img src={product.imageUrl} alt={product.name} className="card-img"
+            onLoad={() => setImgLoaded(true)} onError={() => setImgError(true)}
+            style={{ opacity: imgLoaded ? 1 : 0, transition: "opacity 0.3s" }} />
+        ) : (
+          <div className="card-placeholder" style={{ color: color.text }}>
+            <span className="card-placeholder-icon">🐰</span>
+            <span className="card-placeholder-brand">{product.brand}</span>
+            <span className="card-placeholder-name">{product.name}</span>
+          </div>
+        )}
+      </div>
+      <div className="card-body">
+        <div className="card-brand">{product.brand}</div>
+        <div className="card-name">{product.name}</div>
+        {product.ingredients.length > 0 && (
+          <div className="card-ingredients">
+            {product.ingredients.slice(0, 3).map(i => <span key={i} className="ing-tag">{i}</span>)}
+            {product.ingredients.length > 3 && (
+              <span className="ing-tag" style={{ background: "var(--parchment)", color: "var(--ink-muted)" }}>+{product.ingredients.length - 3}</span>
+            )}
+          </div>
+        )}
+        <div className="card-badges">
+          {product.fragranceFree && <span className="badge badge-ff">Fragrance-free</span>}
+          {product.oilFree && <span className="badge badge-of">Oil-free</span>}
+          {product.vegan && <span className="badge badge-vegan">Vegan</span>}
+        </div>
+        <div className="card-footer">
+          <div className="card-price">${product.price}</div>
+          {product.rating > 0 && (
+            <div className="card-meta">
+              <span className="star">★</span>
+              <span className="card-rating">{product.rating} ({product.reviews >= 1000 ? (product.reviews/1000).toFixed(1)+"k" : product.reviews})</span>
+            </div>
+          )}
+        </div>
+      </div>
+      <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer"
+        onClick={e => e.stopPropagation()}>
+        {product.retailer === "amazon" ? "Shop on Amazon →" : "Shop now →"}
+      </a>
+    </div>
+  );
+}
+
+function ProductModal({ product, onClose }) {
+  const [imgError, setImgError] = useState(false);
+  const color = BRAND_COLORS[product.brand] || { bg: "#A08070", text: "#fff" };
+  const hasImg = product.imageUrl && !imgError;
+
+  useEffect(() => {
+    const fn = e => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", fn);
+    return () => window.removeEventListener("keydown", fn);
+  }, [onClose]);
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <div className="modal-img-wrap" style={!hasImg ? { background: color.bg } : { background: "var(--white)" }}>
+            {hasImg ? (
+              <img src={product.imageUrl} alt={product.name} className="modal-img" onError={() => setImgError(true)} />
+            ) : (
+              <div className="modal-placeholder" style={{ color: color.text }}>
+                <span className="modal-placeholder-icon">🐰</span>
+                <span className="modal-placeholder-brand">{product.brand}</span>
+                <span className="modal-placeholder-name">{product.name}</span>
+              </div>
+            )}
+          </div>
+          <button className="modal-close" onClick={onClose}>✕</button>
+        </div>
+        <div className="modal-body">
+          <div className="modal-eyebrow">{product.brand} · {product.type}</div>
+          <div className="modal-title">{product.name}</div>
+          {product.description && <div className="modal-desc">{product.description}</div>}
+          {product.ingredients.length > 0 && (
+            <div className="modal-section">
+              <div className="modal-section-label">Key Ingredients</div>
+              <div className="modal-tags">{product.ingredients.map(i => <span key={i} className="modal-tag-ing">{i}</span>)}</div>
+            </div>
+          )}
+          {product.concerns.length > 0 && (
+            <div className="modal-section">
+              <div className="modal-section-label">Good For</div>
+              <div className="modal-tags">{product.concerns.map(c => <span key={c} className="modal-tag-concern">✓ {c}</span>)}</div>
+            </div>
+          )}
+          {(product.fragranceFree || product.oilFree || product.vegan || product.nonComedogenic) && (
+            <div className="modal-section">
+              <div className="modal-section-label">Features</div>
+              <div className="modal-tags">
+                {product.fragranceFree && <span className="modal-tag-feat">Fragrance-free</span>}
+                {product.oilFree && <span className="modal-tag-feat">Oil-free</span>}
+                {product.vegan && <span className="modal-tag-feat">🌱 Vegan</span>}
+                {product.nonComedogenic && <span className="modal-tag-feat">Non-comedogenic</span>}
+              </div>
+            </div>
+          )}
+          <div className="modal-footer">
+            <div>
+              <div className="modal-price">${product.price}</div>
+              {product.rating > 0 && <div className="modal-rating"><span className="star">★</span> {product.rating} · {product.reviews >= 1000 ? (product.reviews/1000).toFixed(1)+"k" : product.reviews} reviews</div>}
+            </div>
+            <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer">
+              {product.retailer === "amazon" ? "Buy on Amazon →" : "Shop now →"}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function BunnyIndex() {
   const [search, setSearch] = useState("");
-  const [selectedBrands, setSelectedBrands] = useState([]);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [selectedIngredients, setSelectedIngredients] = useState([]);
   const [selectedConcerns, setSelectedConcerns] = useState([]);
+  const [selectedBrands, setSelectedBrands] = useState([]);
   const [selectedTypes, setSelectedTypes] = useState([]);
-  const [selectedCerts, setSelectedCerts] = useState([]);
   const [oilFreeOnly, setOilFreeOnly] = useState(false);
   const [fragranceFreeOnly, setFragranceFreeOnly] = useState(false);
   const [veganOnly, setVeganOnly] = useState(false);
-  const [priceFilter, setPriceFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("popular");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [aboutOpen, setAboutOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  useEffect(() => { setTimeout(() => setMounted(true), 50); }, []);
+  const toggle = (arr, setArr, val) => setArr(prev => prev.includes(val) ? prev.filter(x => x !== val) : [...prev, val]);
+  const hasFilters = selectedIngredients.length || selectedConcerns.length || selectedBrands.length || selectedTypes.length || oilFreeOnly || fragranceFreeOnly || veganOnly;
+  const filterCount = [selectedIngredients, selectedConcerns, selectedBrands, selectedTypes].flat().length + (oilFreeOnly?1:0) + (fragranceFreeOnly?1:0) + (veganOnly?1:0);
 
-  const toggle = (arr, setArr, val) =>
-    setArr(arr.includes(val) ? arr.filter((v) => v !== val) : [...arr, val]);
-
-  const activeFilterCount = selectedBrands.length + selectedIngredients.length + selectedConcerns.length + selectedTypes.length + selectedCerts.length + (oilFreeOnly ? 1 : 0) + (fragranceFreeOnly ? 1 : 0) + (veganOnly ? 1 : 0) + (priceFilter !== "all" ? 1 : 0);
+  const clearFilters = () => { setSelectedIngredients([]); setSelectedConcerns([]); setSelectedBrands([]); setSelectedTypes([]); setOilFreeOnly(false); setFragranceFreeOnly(false); setVeganOnly(false); };
 
   const filtered = useMemo(() => {
-    return products.filter((p) => {
-      if (search && !p.name.toLowerCase().includes(search.toLowerCase()) &&
-        !p.brand.toLowerCase().includes(search.toLowerCase()) &&
-        !p.ingredients.some(i => i.toLowerCase().includes(search.toLowerCase())) &&
-        !p.concerns.some(c => c.toLowerCase().includes(search.toLowerCase())) &&
-        !p.type.toLowerCase().includes(search.toLowerCase())) return false;
-      if (selectedBrands.length && !selectedBrands.includes(p.brand)) return false;
-      if (selectedIngredients.length && !selectedIngredients.every(i => p.ingredients.includes(i))) return false;
-      if (selectedConcerns.length && !selectedConcerns.some(c => p.concerns.includes(c))) return false;
-      if (selectedTypes.length && !selectedTypes.includes(p.type)) return false;
-      if (selectedCerts.length && !selectedCerts.every(c => p.certifications.includes(c))) return false;
-      if (oilFreeOnly && !p.oilFree) return false;
-      if (fragranceFreeOnly && !p.fragranceFree) return false;
-      if (veganOnly && !p.vegan) return false;
-      if (priceFilter === "$" && p.priceRange !== "$") return false;
-      if (priceFilter === "$$" && p.priceRange !== "$$") return false;
-      return true;
-    });
-  }, [search, selectedBrands, selectedIngredients, selectedConcerns, selectedTypes, selectedCerts, oilFreeOnly, fragranceFreeOnly, veganOnly, priceFilter]);
-
-  const clearAll = () => {
-    setSelectedBrands([]); setSelectedIngredients([]); setSelectedConcerns([]); setSelectedTypes([]); setSelectedCerts([]);
-    setOilFreeOnly(false); setFragranceFreeOnly(false); setVeganOnly(false); setPriceFilter("all"); setSearch("");
-  };
+    let r = products;
+    const q = search.toLowerCase().trim();
+    if (q) r = r.filter(p => p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.type.toLowerCase().includes(q) || p.ingredients.some(i => i.toLowerCase().includes(q)) || p.concerns.some(c => c.toLowerCase().includes(q)) || p.description.toLowerCase().includes(q));
+    if (selectedIngredients.length) r = r.filter(p => selectedIngredients.every(i => p.ingredients.includes(i)));
+    if (selectedConcerns.length) r = r.filter(p => selectedConcerns.every(c => p.concerns.includes(c)));
+    if (selectedBrands.length) r = r.filter(p => selectedBrands.includes(p.brand));
+    if (selectedTypes.length) r = r.filter(p => selectedTypes.includes(p.type));
+    if (oilFreeOnly) r = r.filter(p => p.oilFree);
+    if (fragranceFreeOnly) r = r.filter(p => p.fragranceFree);
+    if (veganOnly) r = r.filter(p => p.vegan);
+    return [...r].sort((a,b) => sortBy==="popular" ? (b.reviews||0)-(a.reviews||0) : sortBy==="rating" ? (b.rating||0)-(a.rating||0) : sortBy==="price-lo" ? a.price-b.price : b.price-a.price);
+  }, [search, selectedIngredients, selectedConcerns, selectedBrands, selectedTypes, oilFreeOnly, fragranceFreeOnly, veganOnly, sortBy]);
 
   return (
-    <div style={{ fontFamily: "sans-serif", minHeight: "100vh", background: "#fdf8f2" }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap');
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-          --terra: #b85c38;
-          --terra-light: #e8896a;
-          --terra-pale: #f5e6df;
-          --cream: #fdf8f2;
-          --ink: #1c1410;
-          --ink-soft: #4a3f38;
-          --sage: #6b8f71;
-          --sage-pale: #e8f0e9;
-          --warm-grey: #9e8e84;
-          --border: #e8ddd4;
-        }
-
-        .display { font-family: 'Cormorant Garamond', Georgia, serif; }
-        .body { font-family: 'Outfit', sans-serif; }
-
-        .card {
-          background: #fff;
-          border: 1px solid var(--border);
-          border-radius: 4px;
-          cursor: pointer;
-          transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
-          position: relative;
-          overflow: hidden;
-        }
-        .card::before {
-          content: '';
-          position: absolute;
-          top: 0; left: 0; right: 0;
-          height: 3px;
-          background: var(--card-accent, var(--terra));
-          transform: scaleX(0);
-          transform-origin: left;
-          transition: transform 0.3s ease;
-        }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(184,92,56,0.12); border-color: var(--terra-light); }
-        .card:hover::before { transform: scaleX(1); }
-
-        .chip {
-          display: inline-flex; align-items: center;
-          padding: 3px 10px; border-radius: 2px;
-          font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 500;
-          letter-spacing: 0.04em;
-        }
-
-        .filter-check {
-          display: flex; align-items: center; gap: 10px;
-          padding: 6px 0; cursor: pointer;
-          font-family: 'Outfit', sans-serif; font-size: 13px;
-          color: var(--ink-soft); transition: color 0.15s;
-        }
-        .filter-check:hover { color: var(--terra); }
-
-        .custom-check {
-          width: 16px; height: 16px; border: 1.5px solid var(--border);
-          border-radius: 2px; display: flex; align-items: center; justify-content: center;
-          flex-shrink: 0; transition: all 0.15s; background: #fff;
-        }
-        .custom-check.active { background: var(--terra); border-color: var(--terra); }
-
-        .search-wrap { position: relative; }
-        .search-input {
-          width: 100%; padding: 16px 24px 16px 52px;
-          border: 2px solid rgba(255,255,255,0.3);
-          border-radius: 3px;
-          font-family: 'Outfit', sans-serif; font-size: 16px;
-          background: rgba(255,255,255,0.15);
-          color: #fff; outline: none;
-          transition: all 0.2s;
-          backdrop-filter: blur(10px);
-        }
-        .search-input::placeholder { color: rgba(255,255,255,0.5); }
-        .search-input:focus { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.22); }
-
-        .pill-filter {
-          padding: 6px 16px; border-radius: 2px;
-          font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 500;
-          cursor: pointer; border: 1.5px solid; transition: all 0.15s;
-          letter-spacing: 0.05em; text-transform: uppercase;
-        }
-        .pill-on { background: var(--terra); color: #fff; border-color: var(--terra); }
-        .pill-off { background: transparent; color: var(--ink-soft); border-color: var(--border); }
-        .pill-off:hover { border-color: var(--terra); color: var(--terra); }
-
-        .toggle-row {
-          display: flex; align-items: center; justify-content: space-between;
-          padding: 8px 0; border-bottom: 1px solid var(--border);
-          cursor: pointer;
-        }
-        .toggle-track {
-          width: 40px; height: 22px; border-radius: 11px;
-          position: relative; transition: background 0.2s; flex-shrink: 0;
-        }
-        .toggle-thumb {
-          position: absolute; top: 3px; width: 16px; height: 16px;
-          border-radius: 50%; background: #fff;
-          transition: left 0.2s; box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-        }
-
-        .fade-in {
-          opacity: 0; transform: translateY(16px);
-          transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        .fade-in.show { opacity: 1; transform: translateY(0); }
-
-        .modal-bg {
-          position: fixed; inset: 0; background: rgba(28,20,16,0.6);
-          z-index: 200; display: flex; align-items: center; justify-content: center;
-          padding: 20px; backdrop-filter: blur(4px);
-        }
-        .modal {
-          background: var(--cream); border-radius: 4px;
-          max-width: 580px; width: 100%; max-height: 90vh;
-          overflow-y: auto; border: 1px solid var(--border);
-        }
-
-        .section-title {
-          font-family: 'Outfit', sans-serif; font-size: 10px;
-          letter-spacing: 0.14em; text-transform: uppercase;
-          color: var(--warm-grey); font-weight: 600; margin-bottom: 12px;
-        }
-
-        .star { color: #c9826b; }
-
-        .mobile-filter-btn {
-          display: none;
-          position: fixed; bottom: 24px; right: 24px;
-          z-index: 50; background: var(--terra); color: #fff;
-          border: none; border-radius: 3px; padding: 14px 22px;
-          font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 14px;
-          cursor: pointer; box-shadow: 0 8px 24px rgba(184,92,56,0.35);
-          letter-spacing: 0.05em;
-        }
-
-        @media (max-width: 768px) {
-          .sidebar { display: none !important; }
-          .mobile-filter-btn { display: block; }
-        }
-
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: var(--terra-pale); }
-        ::-webkit-scrollbar-thumb { background: var(--terra-light); border-radius: 3px; }
-      `}</style>
-
-      {/* Header */}
-      <header style={{ background: "#f5ede6", borderBottom: "1px solid #e8d5c8" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", height: 60, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 1 }}>
-            <span className="display" style={{ fontSize: 24, fontWeight: 600, color: "#1c1410", letterSpacing: "-0.02em" }}>bunny</span>
-            <span className="display" style={{ fontSize: 24, fontWeight: 400, color: "#b85c38", fontStyle: "italic", letterSpacing: "-0.02em" }}>index</span>
+    <>
+      <style>{CSS}</style>
+      <div className="app">
+        <header className="header">
+          <div className="logo">
+            <span className="logo-bunny">bunny</span>
+            <span className="logo-index">index</span>
           </div>
-          <nav style={{ display: "flex", gap: 32, alignItems: "center" }}>
-            {["Directory", "About", "Submit a Brand"].map((item, i) => (
-              <a key={item} href="#" onClick={item === "About" ? (e) => { e.preventDefault(); setAboutOpen(true); } : undefined} style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: i === 0 ? "#b85c38" : "#7a5c4a", textDecoration: "none", fontWeight: 500, letterSpacing: "0.04em", transition: "color 0.15s" }}
-                onMouseEnter={e => e.target.style.color = "#b85c38"}
-                onMouseLeave={e => e.target.style.color = i === 0 ? "#b85c38" : "#7a5c4a"}>
-                {item}
-              </a>
-            ))}
+          <nav className="nav">
+            <button className="nav-link active">Directory</button>
+            <button className="nav-link" onClick={() => setAboutOpen(true)}>About</button>
+            <button className="nav-link" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Contact</button>
           </nav>
-        </div>
-      </header>
+        </header>
 
-      {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #1c1410 0%, #2e1f17 50%, #3d2518 100%)", padding: "64px 24px 72px", position: "relative", overflow: "hidden" }}>
-        {/* decorative circles */}
-        <div style={{ position: "absolute", top: -60, right: -60, width: 300, height: 300, borderRadius: "50%", border: "1px solid rgba(201,130,107,0.12)" }} />
-        <div style={{ position: "absolute", top: -30, right: -30, width: 200, height: 200, borderRadius: "50%", border: "1px solid rgba(201,130,107,0.08)" }} />
-        <div style={{ position: "absolute", bottom: -80, left: "40%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(201,130,107,0.06) 0%, transparent 70%)" }} />
-
-        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative" }}>
-          <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.1s" }}>
-            <p className="body" style={{ fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: "#c9826b", marginBottom: 16, fontWeight: 500 }}>
-              ✦ Cruelty-Free Skincare · Ingredient-First
-            </p>
-          </div>
-          <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.2s" }}>
-            <h1 className="display" style={{ fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 600, color: "#fff", lineHeight: 1.05, marginBottom: 8, letterSpacing: "-0.02em" }}>
-              The cruelty-free<br /><em style={{ color: "#c9826b" }}>ingredient directory.</em>
+        <section className="hero">
+          <div className="hero-inner">
+            <div className="hero-eyebrow">Cruelty-free skincare directory</div>
+            <h1 className="hero-title">
+              Skincare you can<br />
+              <em>feel good about.</em>
             </h1>
-          </div>
-          <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.3s" }}>
-            <p className="body" style={{ fontSize: 16, color: "rgba(255,255,255,0.5)", maxWidth: 500, marginBottom: 36, lineHeight: 1.7, fontWeight: 300 }}>
-              Find skincare that works for your skin. Search by ingredient, skin type, or concern — every product verified cruelty-free.
+            <p className="hero-sub">
+              Search {products.length} verified cruelty-free products by ingredient, skin concern, or brand. Every brand independently vetted — no greenwashing, no loopholes.
             </p>
+            <div className="hero-stats">
+              <div><div className="stat-num">{products.length}</div><div className="stat-label">Products</div></div>
+              <div><div className="stat-num">{BRAND_NAMES.length}</div><div className="stat-label">Brands</div></div>
+              <div><div className="stat-num">{INGREDIENTS.length}</div><div className="stat-label">Ingredients tracked</div></div>
+            </div>
           </div>
-          <div className={`fade-in ${mounted ? "show" : ""}`} style={{ transitionDelay: "0.4s", maxWidth: 580 }}>
-            <div className="search-wrap">
-              <span style={{ position: "absolute", left: 18, top: "50%", transform: "translateY(-50%)", fontSize: 20, opacity: 0.4 }}>⌕</span>
-              <input
-                className="search-input"
-                placeholder="Search by ingredient, skin type, or concern…"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-              />
+        </section>
+
+        <div className="search-wrap">
+          <div className="search-inner">
+            <div className="search-box">
+              <span className="search-icon">⌕</span>
+              <input className="search-input" type="text" placeholder="Search products, brands, ingredients…" value={search} onChange={e => setSearch(e.target.value)} />
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 14 }}>
-              {quickSearches.map(s => (
-                <button key={s} onClick={() => setSearch(s === search ? "" : s)}
-                  style={{
-                    background: search === s ? "rgba(201,130,107,0.3)" : "rgba(255,255,255,0.07)",
-                    border: `1px solid ${search === s ? "rgba(201,130,107,0.6)" : "rgba(255,255,255,0.12)"}`,
-                    color: search === s ? "#e8896a" : "rgba(255,255,255,0.5)",
-                    borderRadius: "2px", padding: "5px 14px",
-                    fontFamily: "'Outfit', sans-serif", fontSize: 12, cursor: "pointer",
-                    transition: "all 0.15s", fontWeight: 400
-                  }}>
-                  {s}
-                </button>
-              ))}
-            </div>
+            <button className={`filter-toggle${filtersOpen || hasFilters ? " active" : ""}`} onClick={() => setFiltersOpen(v => !v)}>
+              ⊞ Filters{filterCount > 0 ? ` (${filterCount})` : ""}
+            </button>
+            <span className="result-count">{filtered.length} results</span>
           </div>
         </div>
-      </div>
 
-      {/* Stats bar */}
-      <div style={{ background: "#fff", borderBottom: "1px solid var(--border)", padding: "12px 24px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", gap: 32, alignItems: "center" }}>
-          {[[products.length.toString(), "Products"], ["19", "Brands"], ["100%", "Cruelty-free verified"]].map(([num, label]) => (
-            <div key={label} style={{ display: "flex", align: "center", gap: 8 }}>
-              <span className="display" style={{ fontSize: 18, fontWeight: 700, color: "#b85c38" }}>{num}</span>
-              <span className="body" style={{ fontSize: 12, color: "var(--warm-grey)", alignSelf: "center", fontWeight: 400 }}>{label}</span>
-            </div>
-          ))}
-          <div style={{ marginLeft: "auto", fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "var(--warm-grey)" }}>
-            Showing <strong style={{ color: "var(--ink)" }}>{filtered.length}</strong> of {products.length} products
-          </div>
-        </div>
-      </div>
-
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px 24px", display: "flex", gap: 32, alignItems: "flex-start" }}>
-
-        {/* Sidebar */}
-        <aside className="sidebar" style={{ width: 230, flexShrink: 0, position: "sticky", top: 20, maxHeight: "calc(100vh - 40px)", overflowY: "auto" }}>
-          <div style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: "4px", padding: "24px 20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
-              <span className="display" style={{ fontSize: 18, fontWeight: 600, color: "var(--ink)" }}>Filter</span>
-              {activeFilterCount > 0 && (
-                <button onClick={clearAll} style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11, color: "#b85c38", background: "none", border: "none", cursor: "pointer", textDecoration: "underline", fontWeight: 500 }}>
-                  Clear {activeFilterCount}
-                </button>
-              )}
-            </div>
-
-            {/* Brand */}
-            <div style={{ marginBottom: 24 }}>
-              <p className="section-title">Brand</p>
-              {allBrands.map(brand => (
-                <label key={brand} className="filter-check" onClick={() => toggle(selectedBrands, setSelectedBrands, brand)}>
-                  <div className={`custom-check ${selectedBrands.includes(brand) ? "active" : ""}`}>
-                    {selectedBrands.includes(brand) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
+        <main className="main">
+          {filtersOpen && (
+            <div className="filter-panel">
+              <div className="filter-panel-inner">
+                <div className="filter-group">
+                  <div className="filter-group-label">Ingredients</div>
+                  <div className="filter-chips">
+                    {INGREDIENTS.map(i => <button key={i} className={`chip${selectedIngredients.includes(i)?" active":""}`} onClick={() => toggle(selectedIngredients, setSelectedIngredients, i)}>{i}{selectedIngredients.includes(i)&&<span className="chip-x">×</span>}</button>)}
                   </div>
-                  {brand}
-                </label>
-              ))}
-            </div>
-
-            {/* Key Ingredient */}
-            <div style={{ marginBottom: 24 }}>
-              <p className="section-title">Key Ingredient</p>
-              {coreIngredients.map(ing => (
-                <label key={ing} className="filter-check" onClick={() => toggle(selectedIngredients, setSelectedIngredients, ing)}>
-                  <div className={`custom-check ${selectedIngredients.includes(ing) ? "active" : ""}`}>
-                    {selectedIngredients.includes(ing) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
+                </div>
+                <div className="filter-group">
+                  <div className="filter-group-label">Skin Concerns</div>
+                  <div className="filter-chips">
+                    {CONCERNS.map(c => <button key={c} className={`chip${selectedConcerns.includes(c)?" active":""}`} onClick={() => toggle(selectedConcerns, setSelectedConcerns, c)}>{c}{selectedConcerns.includes(c)&&<span className="chip-x">×</span>}</button>)}
                   </div>
-                  {ing}
-                </label>
-              ))}
-            </div>
-
-            {/* Product Type */}
-            <div style={{ marginBottom: 24 }}>
-              <p className="section-title">Product Type</p>
-              {allTypes.map(type => (
-                <label key={type} className="filter-check" onClick={() => toggle(selectedTypes, setSelectedTypes, type)}>
-                  <div className={`custom-check ${selectedTypes.includes(type) ? "active" : ""}`}>
-                    {selectedTypes.includes(type) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
+                </div>
+                <div className="filter-group">
+                  <div className="filter-group-label">Product Type</div>
+                  <div className="filter-chips">
+                    {TYPES.map(t => <button key={t} className={`chip${selectedTypes.includes(t)?" active":""}`} onClick={() => toggle(selectedTypes, setSelectedTypes, t)}>{t}{selectedTypes.includes(t)&&<span className="chip-x">×</span>}</button>)}
                   </div>
-                  {type}
-                </label>
-              ))}
-            </div>
-
-            {/* Skin Concern */}
-            <div style={{ marginBottom: 24 }}>
-              <p className="section-title">Skin Concern</p>
-              {allConcerns.slice(0, 9).map(c => (
-                <label key={c} className="filter-check" onClick={() => toggle(selectedConcerns, setSelectedConcerns, c)}>
-                  <div className={`custom-check ${selectedConcerns.includes(c) ? "active" : ""}`}>
-                    {selectedConcerns.includes(c) && <span style={{ color: "#fff", fontSize: 10, fontWeight: 700 }}>✓</span>}
+                </div>
+                <div className="filter-group">
+                  <div className="filter-group-label">Brand</div>
+                  <div className="filter-chips">
+                    {BRAND_NAMES.map(b => <button key={b} className={`chip${selectedBrands.includes(b)?" active":""}`} onClick={() => toggle(selectedBrands, setSelectedBrands, b)}>{b}{selectedBrands.includes(b)&&<span className="chip-x">×</span>}</button>)}
                   </div>
-                  {c}
-                </label>
-              ))}
-            </div>
-
-
-
-            {/* Price */}
-            <div style={{ marginBottom: 24 }}>
-              <p className="section-title">Price</p>
-              <div style={{ display: "flex", gap: 6 }}>
-                {["all", "$", "$$"].map(p => (
-                  <button key={p} onClick={() => setPriceFilter(p)}
-                    className={`pill-filter ${priceFilter === p ? "pill-on" : "pill-off"}`}
-                    style={{ flex: 1 }}>
-                    {p === "all" ? "All" : p}
-                  </button>
-                ))}
+                </div>
+                <div className="filter-group">
+                  <div className="filter-group-label">Properties</div>
+                  <div className="filter-chips">
+                    <button className={`toggle-chip${fragranceFreeOnly?" active":""}`} onClick={() => setFragranceFreeOnly(v=>!v)}>Fragrance-free</button>
+                    <button className={`toggle-chip${oilFreeOnly?" active":""}`} onClick={() => setOilFreeOnly(v=>!v)}>Oil-free</button>
+                    <button className={`toggle-chip${veganOnly?" active":""}`} onClick={() => setVeganOnly(v=>!v)}>🌱 Vegan</button>
+                  </div>
+                </div>
+              </div>
+              <div className="filter-actions">
+                {hasFilters && <button className="btn-clear" onClick={clearFilters}>Clear all filters</button>}
               </div>
             </div>
+          )}
 
-            {/* Toggles */}
-            <div>
-              {[["Oil-free only", oilFreeOnly, setOilFreeOnly], ["Vegan only", veganOnly, setVeganOnly]].map(([label, val, setter]) => (
-                <div key={label} className="toggle-row" onClick={() => setter(!val)}>
-                  <span className="body" style={{ fontSize: 13, color: "var(--ink-soft)", fontWeight: 400 }}>{label}</span>
-                  <div className="toggle-track" style={{ background: val ? "#b85c38" : "var(--border)" }}>
-                    <div className="toggle-thumb" style={{ left: val ? 21 : 3 }} />
-                  </div>
-                </div>
+          <div className="sort-bar">
+            <span className="sort-label">{filtered.length} products</span>
+            <div className="sort-options">
+              {[["popular","Most reviewed"],["rating","Top rated"],["price-lo","Price ↑"],["price-hi","Price ↓"]].map(([val,label]) => (
+                <button key={val} className={`sort-btn${sortBy===val?" active":""}`} onClick={() => setSortBy(val)}>{label}</button>
               ))}
             </div>
           </div>
-        </aside>
 
-        {/* Grid */}
-        <main style={{ flex: 1 }}>
           {filtered.length === 0 ? (
-            <div style={{ textAlign: "center", padding: "80px 20px" }}>
-              <p className="display" style={{ fontSize: 32, color: "var(--border)", marginBottom: 12 }}>No results</p>
-              <p className="body" style={{ fontSize: 14, color: "var(--warm-grey)" }}>Try broadening your search or clearing some filters.</p>
-              <button onClick={clearAll} style={{ marginTop: 16, padding: "10px 24px", background: "var(--terra)", color: "#fff", border: "none", borderRadius: "2px", fontFamily: "'Outfit', sans-serif", fontSize: 13, cursor: "pointer", fontWeight: 500 }}>Clear filters</button>
+            <div className="empty">
+              <div className="empty-icon">🐰</div>
+              <div className="empty-title">No products found</div>
+              <div className="empty-sub">Try adjusting your search or filters</div>
             </div>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))", gap: 16 }}>
-              {filtered.map((p, i) => (
-                <div key={p.id} className={`card fade-in ${mounted ? "show" : ""}`}
-                  style={{ "--card-accent": p.color, transitionDelay: `${i * 0.05}s`, padding: "24px", cursor: "default" }}>
-
-                  {/* Top row */}
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
-  <div></div>
-                    <span className="body" style={{ fontSize: 11, color: "var(--warm-grey)", fontWeight: 400, textTransform: "uppercase", letterSpacing: "0.06em" }}>{p.type}</span>
-                  </div>
-
-                  {/* Color block accent */}
-                  <div style={{ width: 36, height: 36, borderRadius: "50%", background: p.color + "22", border: `2px solid ${p.color}40`, marginBottom: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <div style={{ width: 14, height: 14, borderRadius: "50%", background: p.color }} />
-                  </div>
-
-                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4, fontWeight: 500 }}>{p.brand}</p>
-                  <h3 className="display" style={{ fontSize: 19, fontWeight: 600, color: "var(--ink)", marginBottom: 12, lineHeight: 1.2, letterSpacing: "-0.01em" }}>{p.name}</h3>
-
-                  {/* Concerns */}
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginBottom: 14 }}>
-                    {p.concerns.slice(0, 3).map(c => (
-                      <span key={c} className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 10 }}>
-                        {c}
-                      </span>
-                    ))}
-                    {p.concerns.length > 3 && (
-                      <span className="chip" style={{ background: "#f5f0eb", color: "var(--warm-grey)", fontSize: 10 }}>+{p.concerns.length - 3}</span>
-                    )}
-                  </div>
-
-                  {/* Ingredients */}
-                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", marginBottom: 16, lineHeight: 1.5 }}>
-                    <span style={{ fontWeight: 500, color: "var(--ink-soft)" }}>Key: </span>
-                    {p.ingredients.slice(0, 2).join(", ")}
-                  </p>
-
-                  {/* Bottom */}
-                  <div style={{ paddingTop: 14, borderTop: "1px solid var(--border)" }}>
-                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
-                      <div>
-                        <span className="display" style={{ fontSize: 22, fontWeight: 700, color: "var(--terra)" }}>${p.price}</span>
-                        <div style={{ display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
-                          <span className="star" style={{ fontSize: 10 }}>★★★★★</span>
-                          <span className="body" style={{ fontSize: 10, color: "var(--warm-grey)" }}>{p.rating} · {(p.reviews / 1000).toFixed(1)}k</span>
-                        </div>
-                      </div>
-                      <div style={{ display: "flex", gap: 4 }}>
-                        {p.oilFree && <span className="chip" style={{ background: "#e8f2f8", color: "#4a7fa0", fontSize: 10, fontWeight: 600 }}>Oil-free</span>}
-                        {p.vegan && <span className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 10, fontWeight: 600 }}>Vegan</span>}
-                      </div>
-                    </div>
-                    <a href={p.buyLink} target="_blank" rel="noopener noreferrer"
-                      onClick={e => e.stopPropagation()}
-                      style={{ display: "block", width: "100%", padding: "10px 0", background: "var(--terra)", color: "#fff", textAlign: "center", textDecoration: "none", borderRadius: 2, fontFamily: "'Outfit', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", transition: "background 0.15s" }}
-                      onMouseEnter={e => e.target.style.background = "#a04d2e"}
-                      onMouseLeave={e => e.target.style.background = "var(--terra)"}>
-                      {(() => {
-                        try {
-                          const domain = new URL(p.buyLink).hostname.replace('www.', '');
-                          if (domain.includes('amazon.com')) return `Buy on Amazon · $${p.price}`;
-                          if (domain.includes('sephora.com')) return `Buy on Sephora · $${p.price}`;
-                          if (domain.includes('ulta.com')) return `Buy on Ulta · $${p.price}`;
-                          if (domain.includes('target.com')) return `Buy on Target · $${p.price}`;
-                          return `Buy at ${domain} · $${p.price}`;
-                        } catch(e) { return `Buy · $${p.price}`; }
-                      })()}
-                    </a>
-                  </div>
-                </div>
-              ))}
+            <div className="product-grid">
+              {filtered.map(p => <ProductCard key={p.id} product={p} onClick={setSelectedProduct} />)}
             </div>
           )}
         </main>
+
+        {/* Ethics pillars */}
+        <section className="ethics-bar">
+          <div className="ethics-inner">
+            {[
+              { icon: "🐰", title: "Never tested on animals", body: "Zero animal testing at any stage, including supplier ingredients." },
+              { icon: "🚫", title: "No China market sales", body: "We exclude brands that sell in markets requiring animal testing." },
+              { icon: "🏛️", title: "Independent ownership", body: "No subsidiaries of L'Oréal, Unilever, Estée Lauder, or P&G." },
+              { icon: "🔬", title: "Ingredient searchable", body: "Every product tagged by active ingredients and skin concerns." },
+            ].map(({ icon, title, body }) => (
+              <div key={title} className="ethics-item">
+                <span className="ethics-icon">{icon}</span>
+                <div className="ethics-title">{title}</div>
+                <div className="ethics-body">{body}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="contact" className="contact-section">
+          <div className="contact-inner">
+            <div className="contact-eyebrow">Get in touch</div>
+            <h2 className="contact-title">Say hello.</h2>
+            <p className="contact-sub">Submitting a brand, press inquiry, or just a question — I'd love to hear from you.</p>
+            <div style={{ borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border)", background: "var(--white)" }}>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdi4pJyVj1S5n3r7RTejBkK_eWlBkU3ORR8_tMqH4eHe4sqJg/viewform?embedded=true" width="100%" height="560" frameBorder="0" title="Contact BunnyIndex" style={{ display: "block" }}>Loading…</iframe>
+            </div>
+          </div>
+        </section>
+
+        <footer className="footer">
+          <div className="footer-inner">
+            <div style={{ display: "flex", alignItems: "baseline", gap: 2 }}>
+              <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, fontWeight: 600, color: "var(--ink)" }}>bunny</span>
+              <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, fontWeight: 300, fontStyle: "italic", color: "var(--terra)" }}>index</span>
+            </div>
+            <p className="footer-copy">© 2026 BunnyIndex · The cruelty-free ingredient directory</p>
+          </div>
+        </footer>
+
+        {selectedProduct && <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />}
+
+        {aboutOpen && (
+          <div className="modal-overlay" onClick={() => setAboutOpen(false)}>
+            <div className="modal" onClick={e => e.stopPropagation()} style={{ maxWidth: 600, position: "relative" }}>
+              <button className="modal-close" onClick={() => setAboutOpen(false)}>✕</button>
+              <div className="about-body">
+                <div className="about-eyebrow">About</div>
+                <div className="about-title">Hi, I'm Nick.</div>
+                <p className="about-text">I started BunnyIndex because I couldn't find what I was looking for — a beauty directory that let me search by ingredient and skin concern, not just browse a list of brands.</p>
+                <p className="about-text">The other thing that frustrated me was how murky "cruelty-free" had become. A lot of brands carry the label but are owned by parent companies that test on animals. That always felt like a loophole.</p>
+                <div className="about-accent">
+                  <p className="about-text" style={{ marginBottom: 0 }}>So I built BunnyIndex to hold a higher standard. Every brand here is independently cruelty-free — not just at the product level but at the ownership level. No parent companies that test. No exceptions.</p>
+                </div>
+                <p className="about-text">My goal is simple: make it easier to find products that actually work for your skin, from brands that actually mean what they say.</p>
+                <div className="about-sig">— Nick</div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-
-      {/* Footer */}
-      <footer style={{ borderTop: "1px solid var(--border)", padding: "40px 24px", marginTop: 40, background: "#fff" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 1, marginBottom: 6 }}>
-              <span className="display" style={{ fontSize: 18, fontWeight: 600, color: "var(--ink)" }}>bunny</span>
-              <span className="display" style={{ fontSize: 18, fontWeight: 400, color: "var(--terra)", fontStyle: "italic" }}>index</span>
-            </div>
-            <p className="body" style={{ fontSize: 12, color: "var(--warm-grey)" }}>The cruelty-free ingredient directory</p>
-          </div>
-          <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)" }}>© 2026 BunnyIndex · Made with purpose</p>
-        </div>
-      </footer>
-
-      {/* Product Modal */}
-      {selectedProduct && (
-        <div className="modal-bg" onClick={() => setSelectedProduct(null)}>
-          <div className="modal" onClick={e => e.stopPropagation()}>
-            {/* Modal header accent */}
-            <div style={{ height: 4, background: selectedProduct.color, borderRadius: "4px 4px 0 0" }} />
-            <div style={{ padding: "32px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
-                <div>
-                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 4, fontWeight: 500 }}>{selectedProduct.brand} · {selectedProduct.type}</p>
-                  <h2 className="display" style={{ fontSize: 28, fontWeight: 600, color: "var(--ink)", lineHeight: 1.15, letterSpacing: "-0.01em" }}>{selectedProduct.name}</h2>
-                </div>
-                <button onClick={() => setSelectedProduct(null)}
-                  style={{ background: "var(--terra-pale)", border: "none", borderRadius: "2px", width: 32, height: 32, cursor: "pointer", fontSize: 14, color: "var(--terra)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 700 }}>
-                  ✕
-                </button>
-              </div>
-
-              {/* Properties */}
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 24 }}>
-                {selectedProduct.oilFree && <span className="chip" style={{ background: "#e8f2f8", color: "#4a7fa0", fontSize: 12, padding: "5px 14px" }}>Oil-free</span>}
-                {selectedProduct.fragranceFree && <span className="chip" style={{ background: "#f0f5e8", color: "#5a8a3a", fontSize: 12, padding: "5px 14px" }}>Fragrance-free</span>}
-                {selectedProduct.vegan && <span className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 12, padding: "5px 14px" }}>🌱 Vegan</span>}
-              </div>
-
-              {/* Ingredients */}
-              <div style={{ marginBottom: 20 }}>
-                <p className="section-title">Key Ingredients</p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {selectedProduct.ingredients.map(i => (
-                    <span key={i} className="chip" style={{ background: "#f5ede6", color: "#7a4f38", fontSize: 12, padding: "5px 14px", fontWeight: 500 }}>{i}</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Concerns */}
-              <div style={{ marginBottom: 24 }}>
-                <p className="section-title">Good For</p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {selectedProduct.concerns.map(c => (
-                    <span key={c} className="chip" style={{ background: "var(--sage-pale)", color: "var(--sage)", fontSize: 12, padding: "5px 14px" }}>✓ {c}</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Buy row */}
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-                <div>
-                  <div className="display" style={{ fontSize: 34, fontWeight: 700, color: "var(--terra)" }}>${selectedProduct.price}</div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 5, marginTop: 2 }}>
-                    <span className="star">★★★★★</span>
-                    <span className="body" style={{ fontSize: 12, color: "var(--warm-grey)" }}>{selectedProduct.rating} · {selectedProduct.reviews.toLocaleString()} reviews</span>
-                  </div>
-                </div>
-                <a href={selectedProduct.buyLink} style={{ textDecoration: "none" }}>
-                  <button style={{
-                    background: "var(--terra)", color: "#fff", border: "none",
-                    padding: "14px 32px", borderRadius: "2px", cursor: "pointer",
-                    fontFamily: "'Outfit', sans-serif", fontWeight: 600, fontSize: 15,
-                    letterSpacing: "0.04em", transition: "background 0.15s"
-                  }}
-                    onMouseEnter={e => e.target.style.background = "#9e4a2a"}
-                    onMouseLeave={e => e.target.style.background = "var(--terra)"}>
-                    Buy now →
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-      {/* About Modal */}
-      {aboutOpen && (
-        <div className="modal-bg" onClick={() => setAboutOpen(false)}>
-          <div className="modal" onClick={e => e.stopPropagation()} style={{ maxWidth: 640 }}>
-            <div style={{ height: 4, background: "var(--terra)", borderRadius: "4px 4px 0 0" }} />
-            <div style={{ padding: "40px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 28 }}>
-                <div>
-                  <p className="body" style={{ fontSize: 11, color: "var(--warm-grey)", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 8, fontWeight: 600 }}>About</p>
-                  <h2 className="display" style={{ fontSize: 32, fontWeight: 600, color: "var(--ink)", lineHeight: 1.1, letterSpacing: "-0.01em" }}>Hi, I'm Nick.</h2>
-                </div>
-                <button onClick={() => setAboutOpen(false)}
-                  style={{ background: "var(--terra-pale)", border: "none", borderRadius: "2px", width: 32, height: 32, cursor: "pointer", fontSize: 14, color: "var(--terra)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 700 }}>
-                  ✕
-                </button>
-              </div>
-
-              <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-                <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
-                  I started BunnyIndex because I couldn't find what I was looking for — a beauty directory that let me search by ingredient and skin concern, not just browse a list of brands. When you have specific skin needs, "cruelty-free favorites" roundups don't cut it. I wanted to search for oil-free SPF with niacinamide, or fragrance-free moisturizers for sensitive skin, and actually get results.
-                </p>
-                <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
-                  The other thing that frustrated me was how murky "cruelty-free" had become. A lot of brands carry the label but are owned by parent companies that test on animals. That always felt like a loophole — and I didn't want to support it.
-                </p>
-                <div style={{ background: "var(--terra-pale)", borderLeft: "3px solid var(--terra)", padding: "16px 20px", borderRadius: "0 4px 4px 0" }}>
-                  <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
-                    So I built BunnyIndex to hold a higher standard. Every brand here is independently cruelty-free — not just at the product level but at the ownership level. No parent companies that test. No selling in markets that require animal testing. If a brand doesn't meet that bar, it doesn't make the index. No exceptions.
-                  </p>
-                </div>
-                <p className="body" style={{ fontSize: 15, color: "var(--ink-soft)", lineHeight: 1.75 }}>
-                  My goal is simple: make it easier to find products that actually work for your skin, from brands that actually mean what they say.
-                </p>
-                <p className="display" style={{ fontSize: 20, color: "var(--terra)", fontStyle: "italic", marginTop: 8 }}>— Nick</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
+    </>
   );
 }
