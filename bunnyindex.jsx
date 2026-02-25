@@ -612,13 +612,8 @@ const CSS = `
   .eth-body{font-size:12px;color:rgba(245,235,228,0.55);line-height:1.6;}
 
   /* ── DIRECTORY ── */
-  .dir-header{background:var(--parchment);border-bottom:1px solid var(--border);padding:28px 32px;}
-  .dir-header-inner{max-width:1400px;margin:0 auto;display:flex;gap:16px;align-items:center;}
-  .search-wrap{flex:1;position:relative;}
-  .search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink-muted);pointer-events:none;font-size:16px;}
-  .search-input{width:100%;padding:11px 14px 11px 42px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--white);transition:var(--ease);outline:none;}
-  .search-input:focus{border-color:var(--terra);background:var(--white);box-shadow:0 0 0 3px rgba(184,92,56,0.08);}
-  .search-input::placeholder{color:var(--ink-muted);}
+  .dir-header{background:var(--parchment);border-bottom:1px solid var(--border);padding:16px 32px;}
+  .dir-header-inner{max-width:1400px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;}
   .result-count{font-size:13px;color:var(--ink-muted);white-space:nowrap;}
 
   /* Sort */
@@ -824,7 +819,7 @@ function ProductCard({ product, onClick }) {
       </div>
       <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer"
         onClick={e => e.stopPropagation()}>
-        {product.retailer==="amazon" ? "Shop on Amazon →" : "Shop now →"}
+        {buyLabel(product.buyUrl)}
       </a>
     </div>
   );
@@ -875,7 +870,7 @@ function ProductModal({ product, onClose }) {
               {product.rating>0&&<div className="modal-rating"><span className="star">★</span> {product.rating} · {product.reviews>=1000?(product.reviews/1000).toFixed(1)+"k":product.reviews} reviews</div>}
             </div>
             <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer">
-              {product.retailer==="amazon" ? "Buy on Amazon →" : "Shop now →"}
+              {buyLabel(product.buyUrl)}
             </a>
           </div>
         </div>
@@ -940,9 +935,17 @@ function FeatCard({ product: p, onClick }) {
   );
 }
 
+function buyLabel(url) {
+  if (!url) return "Shop now →";
+  try {
+    const domain = new URL(url).hostname.replace("www.", "");
+    if (domain === "amazon.com") return "Buy on Amazon →";
+    return `Buy at ${domain} →`;
+  } catch { return "Shop now →"; }
+}
+
 export default function BunnyIndex() {
   const [view, setView] = useState("home"); // "home" | "directory"
-  const [search, setSearch] = useState("");
   const [selIngredients, setSelIngredients] = useState([]);
   const [selConcerns, setSelConcerns] = useState([]);
   const [selBrands, setSelBrands] = useState([]);
@@ -952,7 +955,6 @@ export default function BunnyIndex() {
   const [veganOnly, setVeganOnly] = useState(false);
   const [sortBy, setSortBy] = useState("popular");
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [aboutOpen, setAboutOpen] = useState(false);
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 24;
 
@@ -972,8 +974,6 @@ export default function BunnyIndex() {
 
   const filtered = useMemo(() => {
     let r = products;
-    const q = search.toLowerCase().trim();
-    if (q) r = r.filter(p => p.name.toLowerCase().includes(q)||p.brand.toLowerCase().includes(q)||p.type.toLowerCase().includes(q)||p.ingredients.some(i=>i.toLowerCase().includes(q))||p.concerns.some(c=>c.toLowerCase().includes(q))||p.description.toLowerCase().includes(q));
     if (selIngredients.length) r = r.filter(p => selIngredients.every(i=>p.ingredients.includes(i)));
     if (selConcerns.length) r = r.filter(p => selConcerns.every(c=>p.concerns.includes(c)));
     if (selBrands.length) r = r.filter(p => selBrands.includes(p.brand));
@@ -982,17 +982,17 @@ export default function BunnyIndex() {
     if (fragFree) r = r.filter(p=>p.fragranceFree);
     if (veganOnly) r = r.filter(p=>p.vegan);
     return [...r].sort((a,b) => sortBy==="popular"?(b.reviews||0)-(a.reviews||0):sortBy==="rating"?(b.rating||0)-(a.rating||0):sortBy==="price-lo"?a.price-b.price:b.price-a.price);
-  }, [search,selIngredients,selConcerns,selBrands,selTypes,oilFree,fragFree,veganOnly,sortBy]);
+  }, [selIngredients,selConcerns,selBrands,selTypes,oilFree,fragFree,veganOnly,sortBy]);
 
-  // Reset to page 1 whenever filters or search change
+  // Reset to page 1 whenever filters change
   const prevFilterKey = useRef("");
-  const filterKey = [search,selIngredients.join(),selConcerns.join(),selBrands.join(),selTypes.join(),oilFree,fragFree,veganOnly,sortBy].join("|");
+  const filterKey = [selIngredients.join(),selConcerns.join(),selBrands.join(),selTypes.join(),oilFree,fragFree,veganOnly,sortBy].join("|");
   if (filterKey !== prevFilterKey.current) { prevFilterKey.current = filterKey; if (page !== 1) setPage(1); }
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
 
-  const openDir = () => { clearAll(); setSearch(""); setView("directory"); };
+  const openDir = () => { clearAll(); setView("directory"); };
 
   return (
     <>
@@ -1008,7 +1008,8 @@ export default function BunnyIndex() {
           <nav className="nav">
             <button className={`nav-btn${view==="home"?" active":""}`} onClick={() => setView("home")}>Home</button>
             <button className={`nav-btn${view==="directory"?" active":""}`} onClick={openDir}>Directory</button>
-            <button className="nav-btn" onClick={() => setAboutOpen(true)}>About</button>
+            <button className={`nav-btn${view==="brands"?" active":""}`} onClick={() => setView("brands")}>Our Brands</button>
+            <button className={`nav-btn${view==="about"?" active":""}`} onClick={() => setView("about")}>About</button>
             <button className={`nav-btn${view==="contact"?" active":""}`} onClick={() => setView("contact")}>Contact</button>
           </nav>
         </header>
@@ -1076,10 +1077,7 @@ export default function BunnyIndex() {
         {view === "directory" && (<>
           <div className="dir-header">
             <div className="dir-header-inner">
-              <div className="search-wrap">
-                <span className="search-icon">⌕</span>
-                <input className="search-input" type="text" placeholder="Search products, brands, ingredients…" value={search} onChange={e => setSearch(e.target.value)} autoFocus />
-              </div>
+              <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:"var(--ink)"}}>Browse Products</div>
               <span className="result-count">{filtered.length} of {products.length}</span>
             </div>
           </div>
@@ -1183,6 +1181,128 @@ export default function BunnyIndex() {
         </>)}
 
         {/* ── CONTACT ── */}
+        {view === "brands" && (<>
+          <section style={{padding:"64px 0 80px",background:"var(--cream)"}}>
+            <div style={{maxWidth:900,margin:"0 auto",padding:"0 24px"}}>
+              <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--terra)",marginBottom:12}}>The directory</div>
+              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:42,fontWeight:600,color:"var(--ink)",margin:"0 0 12px",lineHeight:1.1}}>Our Brands</h2>
+              <p style={{fontFamily:"'Inter',sans-serif",fontSize:16,color:"var(--muted)",maxWidth:560,lineHeight:1.6,margin:"0 0 56px"}}>Every brand featured on BunnyIndex is independently cruelty-free — no parent company exceptions, no markets that require animal testing. Here's who made the cut.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(400px,1fr))",gap:32}}>
+                {[
+                  {name:"Acure",count:52,blurb:"Founded on the belief that personal care shouldn't come at the planet's expense, Acure is a B-Corp certified brand delivering affordable, plant-powered skincare. They're fully vegan, PETA-certified, and formulate without parabens, sulfates, or mineral oil — proof that budget-friendly doesn't have to mean corner-cutting."},
+                  {name:"Alpyn Beauty",count:18,blurb:"Born in Jackson Hole, Wyoming, Alpyn Beauty harvests wild-harvested botanicals from the Rocky Mountains and blends them with clinically active ingredients. The brand is independently owned, PETA-certified cruelty-free, and built around the idea that the most powerful skincare ingredients are the ones that survive harsh environments."},
+                  {name:"Biossance",count:33,blurb:"Biossance is a clean biotech brand best known for bringing sugarcane-derived squalane to the mainstream, offering a plant-based alternative to shark-derived squalane that's identical to skin's natural oils. Every formula is EWG-verified, PETA-certified, and made with sustainability baked into the science."},
+                  {name:"Byoma",count:17,blurb:"Byoma launched with a singular focus: barrier repair. The brand's Tri-Ceramide Complex anchors every product, targeting skin that's sensitized, stripped, or just struggling. They're cruelty-free, fragrance-free across the line, and deliberately affordable — making barrier-first skincare accessible without the prestige markup."},
+                  {name:"Cocokind",count:33,blurb:"Cocokind is a certified B-Corp and one of the rare brands that publishes its supply chain and carbon footprint data on product pages. Their approach is low-waste, high-transparency, and driven by skin-barrier philosophy — affordable enough for everyday use, honest enough to earn real trust."},
+                  {name:"Glossier",count:25,blurb:"Glossier grew out of a beauty blog and became a brand that insists skin is something to work with, not cover up. Their lineup is deliberately minimal — focusing on skincare, light coverage, and the occasional cult lip product — and they've remained independently cruelty-free throughout their growth."},
+                  {name:"Glow Recipe",count:32,blurb:"Co-founded by two former L'Oréal executives who left to build something better, Glow Recipe is a Korean beauty-inspired brand that leads with fruit-powered actives and joyful, candy-colored packaging. They're PETA-certified cruelty-free and vegan, and consistently deliver effective formulas that don't take themselves too seriously."},
+                  {name:"Good Molecules",count:30,blurb:"Good Molecules was built to close the gap between clinical-grade ingredients and accessible pricing. Their serums, toners, and treatments pack actives like niacinamide, glycolic acid, and tranexamic acid into no-frills packaging at prices that make it easy to use them consistently — which is the whole point."},
+                  {name:"Herbivore Botanicals",count:30,blurb:"Herbivore was one of the early brands to prove that natural skincare could look like luxury. Their minimalist glass bottles and pastel tones became a category aesthetic, but the formulas have real substance — clean actives, no synthetic fragrance, and a commitment to botanical ingredients that's been there since day one."},
+                  {name:"Krave Beauty",count:19,blurb:"Founded by esthetician Liah Yoo, Krave Beauty is built on one principle: most people are over-cleansing and over-exfoliating their way to irritated skin. Their tightly edited lineup encourages pausing on actives and restoring barrier function first. The brand is Korean-owned, cruelty-free, and refreshingly honest about what skincare can and can't do."},
+                  {name:"Milk Makeup",count:13,blurb:"Milk Makeup launched out of New York's creative world and has always felt more like a downtown studio project than a beauty brand. Their products are built for quick, expressive routines — sticks, tubes, and multi-use formats designed for people who don't want a 12-step process. Vegan, cruelty-free, and free of parabens and fragrances."},
+                  {name:"Pacifica",count:43,blurb:"Pacifica has been 100% vegan and cruelty-free since 1996 — long before either of those things were a marketing strategy. The brand covers skincare, makeup, and fragrance, all formulated without common irritants, and consistently lands at a price point that makes clean beauty genuinely available. One of the originals."},
+                  {name:"Saie",count:11,blurb:"Saie was built around the idea that makeup should do less to the skin while making it look more like itself. Their clean, lightweight formulas emphasize skin health over coverage and carry EWG VERIFIED status, meaning every ingredient has passed independent safety review. Independently operated and fully cruelty-free."},
+                  {name:"Supergoop",count:29,blurb:"Supergoop built a brand on a single conviction: nobody was using enough sunscreen, and most formulas gave people a good reason not to. They reformulated SPF to be lightweight, blendable, and something people actually want to apply — and in doing so, almost singlehandedly made daily sun protection a skincare category of its own. Cruelty-free throughout."},
+                  {name:"Thrive Causemetics",count:19,blurb:"Thrive Causemetics donates one product to a woman in need for every product sold, which is where the name comes from. Beyond the giving model, they're fully vegan, ophthalmologist-tested, and formulate without parabens, sulfates, or synthetic fragrance. Founded by Karissa Bodnar after losing her best friend to cancer at 24."},
+                  {name:"Tower 28",count:15,blurb:"Tower 28 was built specifically for sensitive and reactive skin — every product meets the National Eczema Association's standards, and they formulate without the 1,400-plus ingredients banned by the European Union. The brand's sunny, California-casual aesthetic belies how seriously they take ingredient safety."},
+                  {name:"Versed",count:36,blurb:"Versed is a climate-conscious skincare brand that publishes its environmental impact data and offsets its carbon footprint. Their formulas are dermatologist-developed, made with EWG-verified ingredients, and housed in packaging that's at least 50% recycled material. Cruelty-free, affordable, and unusually transparent for a mass-market brand."},
+                  {name:"e.l.f. Cosmetics",count:48,blurb:"e.l.f. — eyes lips face — started in 2004 with a $1 price point and a mission to prove that quality didn't have to be expensive. They're now one of the few publicly traded brands that has remained 100% vegan and cruelty-free at scale, holding PETA and Leaping Bunny certifications while consistently delivering products that rival prestige counterparts."},
+                ].sort((a,b) => a.name.localeCompare(b.name)).map(brand => {
+                  const count = products.filter(p => p.brand === brand.name).length;
+                  return (
+                    <div key={brand.name} style={{background:"var(--white)",borderRadius:"var(--r-md)",border:"1px solid var(--border)",padding:"28px 28px 24px",display:"flex",flexDirection:"column",gap:10}}>
+                      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:12}}>
+                        <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:"var(--ink)",lineHeight:1.1}}>{brand.name}</div>
+                        <button onClick={() => { clearAll(); setSelBrands([brand.name]); setView("directory"); }} style={{flexShrink:0,background:"none",border:"1px solid var(--border)",borderRadius:20,padding:"4px 12px",fontFamily:"'Inter',sans-serif",fontSize:12,color:"var(--muted)",cursor:"pointer",whiteSpace:"nowrap"}}>{count} products →</button>
+                      </div>
+                      <p style={{fontFamily:"'Inter',sans-serif",fontSize:14,color:"var(--muted)",lineHeight:1.65,margin:0}}>{brand.blurb}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+          <footer className="footer">
+            <div className="footer-inner">
+              <div style={{display:"flex",alignItems:"baseline",gap:2}}>
+                <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:18,fontWeight:600,color:"var(--ink)"}}>bunny</span>
+                <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:18,fontWeight:300,fontStyle:"italic",color:"var(--terra)"}}>index</span>
+              </div>
+              <p className="footer-copy">© 2026 BunnyIndex · The cruelty-free ingredient directory</p>
+            </div>
+          </footer>
+        </>)}
+
+        {view === "about" && (<>
+          <section style={{padding:"72px 0 0",background:"var(--cream)"}}>
+            <div style={{maxWidth:680,margin:"0 auto",padding:"0 24px"}}>
+
+              {/* Eyebrow */}
+              <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--terra)",marginBottom:16}}>About BunnyIndex</div>
+
+              {/* Hero */}
+              <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:48,fontWeight:600,color:"var(--ink)",lineHeight:1.08,margin:"0 0 40px"}}>The independent bookstore of skincare.</h1>
+
+              {/* Personal intro */}
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>Hi, I'm Nick. I built BunnyIndex because I kept running into the same wall — I'd find a "cruelty-free" brand, dig a little deeper, and discover it was owned by a conglomerate that tests on animals everywhere it's required by law. The label was real. The commitment wasn't.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 48px"}}>I wanted a directory I could actually trust. So I built one.</p>
+
+              {/* Divider */}
+              <div style={{borderTop:"1px solid var(--border)",margin:"0 0 48px"}} />
+
+              {/* Independence section */}
+              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:32,fontWeight:600,color:"var(--ink)",margin:"0 0 20px",lineHeight:1.15}}>Think of your independent bookstore.</h2>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>You know the one. It's not a chain. There's no corporate parent making decisions three layers up. The person who chose what goes on the shelves is the same person who unlocks the door every morning. That independence isn't just an operational fact — it's a value system.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>Every brand on BunnyIndex is that kind of business. Independently owned. Answerable to their customers, not to a parent company's bottom line or a global compliance map. When they say they don't test on animals, there's no asterisk — no subsidiary, no contract manufacturer, no market where the rules are different.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 48px"}}>That's what independence actually means here.</p>
+
+              {/* Compassion section */}
+              <div style={{background:"var(--parchment)",border:"1px solid var(--border)",borderRadius:"var(--r-md)",padding:"36px 40px",margin:"0 0 48px"}}>
+                <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:28,fontWeight:600,color:"var(--ink)",margin:"0 0 16px",lineHeight:1.2}}>The highest level of compassion.</h2>
+                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:"var(--ink)",lineHeight:1.75,margin:"0 0 16px"}}>There are different ways to be "cruelty-free." Some brands stop at their own products. Some stop at their own factories. The brands here go further — they've made a decision that no animal should suffer for their business, at any point in the chain, in any market, under any legal framework.</p>
+                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:"var(--ink)",lineHeight:1.75,margin:0}}>That's not a certification requirement. It's a choice. And it's the clearest expression of what it means to actually care.</p>
+              </div>
+
+              {/* Criteria */}
+              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:32,fontWeight:600,color:"var(--ink)",margin:"0 0 20px",lineHeight:1.15}}>The criteria.</h2>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 24px"}}>To be listed on BunnyIndex, a brand must meet all three of the following:</p>
+              <div style={{display:"flex",flexDirection:"column",gap:16,margin:"0 0 48px"}}>
+                {[
+                  ["No animal testing at any stage","Not on finished products, not on ingredients, not by third-party manufacturers acting on their behalf."],
+                  ["No sales in markets that require it","Selling in mainland China historically required animal testing for imported cosmetics. Brands that choose that market are excluded — regardless of whether they've found a workaround."],
+                  ["No parent company that tests","A brand can be genuinely cruelty-free and still be owned by a conglomerate that isn't. We don't accept that arrangement. Every brand here is independently operated."],
+                ].map(([title, body]) => (
+                  <div key={title} style={{display:"flex",gap:20,alignItems:"flex-start"}}>
+                    <div style={{flexShrink:0,width:24,height:24,borderRadius:"50%",background:"var(--terra)",display:"flex",alignItems:"center",justifyContent:"center",marginTop:2}}>
+                      <span style={{color:"var(--white)",fontSize:12,fontWeight:700}}>✓</span>
+                    </div>
+                    <div>
+                      <div style={{fontFamily:"'DM Sans',sans-serif",fontSize:15,fontWeight:600,color:"var(--ink)",marginBottom:4}}>{title}</div>
+                      <div style={{fontFamily:"'DM Sans',sans-serif",fontSize:15,color:"var(--muted)",lineHeight:1.65}}>{body}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Sign-off */}
+              <div style={{borderTop:"1px solid var(--border)",padding:"40px 0 80px"}}>
+                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 8px"}}>BunnyIndex is a one-person project. I research, verify, and curate every brand myself. If you know a brand that belongs here — or one that doesn't — I'd love to hear from you.</p>
+                <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontStyle:"italic",color:"var(--terra)",marginTop:24}}>— Nick</div>
+              </div>
+
+            </div>
+          </section>
+          <footer className="footer">
+            <div className="footer-inner">
+              <div style={{display:"flex",alignItems:"baseline",gap:2}}>
+                <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:18,fontWeight:600,color:"var(--ink)"}}>bunny</span>
+                <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:18,fontWeight:300,fontStyle:"italic",color:"var(--terra)"}}>index</span>
+              </div>
+              <p className="footer-copy">© 2026 BunnyIndex · The cruelty-free ingredient directory</p>
+            </div>
+          </footer>
+        </>)}
+
         {view === "contact" && (<>
           <section className="contact-section" style={{minHeight:"calc(100vh - 64px)"}}>
             <div className="contact-inner">
@@ -1208,25 +1328,6 @@ export default function BunnyIndex() {
         {/* Product modal */}
         {selectedProduct && <ProductModal product={selectedProduct} onClose={()=>setSelectedProduct(null)} />}
 
-        {/* About modal */}
-        {aboutOpen && (
-          <div className="modal-overlay" onClick={()=>setAboutOpen(false)}>
-            <div className="modal" onClick={e=>e.stopPropagation()} style={{maxWidth:600}}>
-              <button className="modal-close" style={{position:"absolute",top:14,right:14}} onClick={()=>setAboutOpen(false)}>✕</button>
-              <div className="about-body">
-                <div className="about-eyebrow">About</div>
-                <div className="about-title">Hi, I'm Nick.</div>
-                <p className="about-text">I started BunnyIndex because I couldn't find what I was looking for — a beauty directory that let me search by ingredient and skin concern, not just browse a list of brands.</p>
-                <p className="about-text">The other thing that frustrated me was how murky "cruelty-free" had become. A lot of brands carry the label but are owned by parent companies that test on animals. That always felt like a loophole.</p>
-                <div className="about-accent">
-                  <p className="about-text" style={{marginBottom:0}}>So I built BunnyIndex to hold a higher standard. Every brand here is independently cruelty-free — not just at the product level but at the ownership level. No parent companies that test. No exceptions.</p>
-                </div>
-                <p className="about-text">My goal is simple: make it easier to find products that actually work for your skin, from brands that actually mean what they say.</p>
-                <div className="about-sig">— Nick</div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </>
   );
