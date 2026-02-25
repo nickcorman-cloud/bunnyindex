@@ -1241,31 +1241,32 @@ export default function BunnyIndex() {
               <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--terra)",marginBottom:16}}>About BunnyIndex</div>
 
               {/* Hero */}
-              <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:48,fontWeight:600,color:"var(--ink)",lineHeight:1.08,margin:"0 0 40px"}}>The independent bookstore of skincare.</h1>
+              <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:48,fontWeight:600,color:"var(--ink)",lineHeight:1.08,margin:"0 0 16px"}}>A true cruelty-free skincare directory.</h1>
+              <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:24,fontWeight:400,fontStyle:"italic",color:"var(--terra)",margin:"0 0 40px",lineHeight:1.3}}>No exceptions. Ever.</p>
 
               {/* Personal intro */}
-              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>Hi, I'm Nick. I built BunnyIndex because I kept running into the same wall — I'd find a "cruelty-free" brand, dig a little deeper, and discover it was owned by a conglomerate that tests on animals everywhere it's required by law. The label was real. The commitment wasn't.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>Hi, I'm Nick. I built BunnyIndex because I kept running into the same wall — I'd find a <strong>"cruelty-free"</strong> brand, dig a little deeper, and discover it was owned by a conglomerate that tests on animals everywhere it's required by law. The label was real. The commitment wasn't.</p>
               <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 48px"}}>I wanted a directory I could actually trust. So I built one.</p>
 
               {/* Divider */}
               <div style={{borderTop:"1px solid var(--border)",margin:"0 0 48px"}} />
 
-              {/* Independence section */}
+              {/* Compassion section */}
               <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:32,fontWeight:600,color:"var(--ink)",margin:"0 0 20px",lineHeight:1.15}}>Think of your independent bookstore.</h2>
-              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>You know the one. It's not a chain. There's no corporate parent making decisions three layers up. The person who chose what goes on the shelves is the same person who unlocks the door every morning. That independence isn't just an operational fact — it's a value system.</p>
-              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>Every brand on BunnyIndex is that kind of business. Independently owned. Answerable to their customers, not to a parent company's bottom line or a global compliance map. When they say they don't test on animals, there's no asterisk — no subsidiary, no contract manufacturer, no market where the rules are different.</p>
-              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 48px"}}>That's what independence actually means here.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>You know the one. It's not a chain. The person behind the counter chose every book on those shelves — not because a corporate algorithm told them to, but because <strong>they actually care</strong>. That care shows up in every decision they make.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 20px"}}>The brands on BunnyIndex are built the same way. They didn't choose to be cruelty-free because a market demanded it. They chose it because <strong>they believe no animal should suffer for a skincare product</strong> — and they've organized their entire business around that belief.</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 48px"}}>That's not a marketing position. <strong>It's compassion, operating as a business.</strong></p>
 
               {/* Compassion section */}
               <div style={{background:"var(--parchment)",border:"1px solid var(--border)",borderRadius:"var(--r-md)",padding:"36px 40px",margin:"0 0 48px"}}>
                 <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:28,fontWeight:600,color:"var(--ink)",margin:"0 0 16px",lineHeight:1.2}}>The highest level of compassion.</h2>
-                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:"var(--ink)",lineHeight:1.75,margin:"0 0 16px"}}>There are different ways to be "cruelty-free." Some brands stop at their own products. Some stop at their own factories. The brands here go further — they've made a decision that no animal should suffer for their business, at any point in the chain, in any market, under any legal framework.</p>
-                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:"var(--ink)",lineHeight:1.75,margin:0}}>That's not a certification requirement. It's a choice. And it's the clearest expression of what it means to actually care.</p>
+                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:"var(--ink)",lineHeight:1.75,margin:"0 0 16px"}}>There are different ways to be <strong>"cruelty-free."</strong> Some brands stop at their own products. Some stop at their own factories. <strong>The brands here go further</strong> — they've made a decision that no animal should suffer for their business, at any point in the chain, in any market, under any legal framework.</p>
+                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:"var(--ink)",lineHeight:1.75,margin:0}}>That's not a certification requirement. <strong>It's a choice.</strong> And it's the clearest expression of what it means to actually care.</p>
               </div>
 
               {/* Criteria */}
               <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:32,fontWeight:600,color:"var(--ink)",margin:"0 0 20px",lineHeight:1.15}}>The criteria.</h2>
-              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 24px"}}>To be listed on BunnyIndex, a brand must meet all three of the following:</p>
+              <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:17,color:"var(--ink)",lineHeight:1.75,margin:"0 0 24px"}}>To be listed on BunnyIndex, a brand must meet <strong>all three</strong> of the following:</p>
               <div style={{display:"flex",flexDirection:"column",gap:16,margin:"0 0 48px"}}>
                 {[
                   ["No animal testing at any stage","Not on finished products, not on ingredients, not by third-party manufacturers acting on their behalf."],
@@ -1277,7 +1278,7 @@ export default function BunnyIndex() {
                       <span style={{color:"var(--white)",fontSize:12,fontWeight:700}}>✓</span>
                     </div>
                     <div>
-                      <div style={{fontFamily:"'DM Sans',sans-serif",fontSize:15,fontWeight:600,color:"var(--ink)",marginBottom:4}}>{title}</div>
+                      <div style={{fontFamily:"'DM Sans',sans-serif",fontSize:15,fontWeight:700,color:"var(--ink)",marginBottom:4}}>{title}</div>
                       <div style={{fontFamily:"'DM Sans',sans-serif",fontSize:15,color:"var(--muted)",lineHeight:1.65}}>{body}</div>
                     </div>
                   </div>
