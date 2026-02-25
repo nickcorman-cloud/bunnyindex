@@ -1021,7 +1021,7 @@ export default function BunnyIndex() {
               <div>
                 <div className="hero-eyebrow">Cruelty-free skincare directory</div>
                 <h1 className="hero-title">Skincare you can<em>feel good about.</em></h1>
-                <p className="hero-sub">Search {products.length} verified cruelty-free products by ingredient, skin concern, or brand. Every brand independently vetted — no greenwashing, no loopholes.</p>
+                <p className="hero-sub">Cruelty-free means something specific here. No testing at any stage. No sales in markets that require it. No ownership by companies that do. {products.length} products. Zero exceptions.</p>
                 <div className="hero-actions">
                   <button className="btn-primary" onClick={openDir}>Browse the directory →</button>
                   <button className="btn-ghost" onClick={() => setAboutOpen(true)}>Our standards</button>
