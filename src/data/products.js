@@ -17,7 +17,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.7,
     "reviews": 15200,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwf49f8bd5/2024/HolyHydrationRepack/82829_CLOSED_v2_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwf49f8bd5/2024/HolyHydrationRepack/82829_CLOSED_v2_R.jpg?sw=700&q=90&strip=false",
     "description": "Rich yet lightweight moisturizer packed with hyaluronic acid, peptides, and ceramides to deeply nourish and plump skin. Fragrance-free and non-comedogenic, ideal for all skin types.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -47,7 +47,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.4,
     "reviews": 5800,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8d284e1e/2024/SuntouchableUpdatedAssets_US/WhoaGlow/57278_CLOSED_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8d284e1e/2024/SuntouchableUpdatedAssets_US/WhoaGlow/57278_CLOSED_R.jpg?sw=700&q=90&strip=false",
     "description": "Lightweight SPF 30 sunscreen that doubles as a glowy makeup primer, infused with hyaluronic acid for a radiant, skin-like finish. Broad-spectrum protection with zero white cast.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -75,7 +75,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.5,
     "reviews": 21000,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwafa28edf/2023/HaloGlowLiquidFilterSHADEEXT/83565_OpenA_V2_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwafa28edf/2023/HaloGlowLiquidFilterSHADEEXT/83565_OpenA_V2_R.jpg?sw=700&q=90&strip=false",
     "description": "Complexion-boosting serum-meets-filter that blurs, brightens, and adds a luminous glow in seconds. Can be worn alone, mixed into foundation, or layered under or over makeup.",
     "ingredients": [],
     "concerns": [
@@ -100,7 +100,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.5,
     "reviews": 8400,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw948428bb/2022/HolyHydration!NewPackaging/57441-HH!MiniKeepYourBalanceToner/59333-HHKeepYourBalanceToner/elf.com/59333_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw948428bb/2022/HolyHydration!NewPackaging/57441-HH!MiniKeepYourBalanceToner/59333-HHKeepYourBalanceToner/elf.com/59333_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "Gentle, refreshing toner formulated with hyaluronic acid, witch hazel, and aloe to remove residual impurities and rebalance skin after cleansing. Oil-free and fragrance-free.",
     "ingredients": [
       "Hyaluronic Acid"
@@ -130,7 +130,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.6,
     "reviews": 11200,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw5ccf5840/2022/HolyHydration!NewPackaging/59990_SCCLE_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw5ccf5840/2022/HolyHydration!NewPackaging/59990_SCCLE_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "Gel-based foaming cleanser with hyaluronic acid and ceramides that washes away oil, impurities, and makeup without stripping skin. Leaves skin clean, hydrated, and balanced.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -159,7 +159,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.6,
     "reviews": 8100,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw44d0f80d/2022/HolyHydration!NewPackaging/59910_SCREM_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw44d0f80d/2022/HolyHydration!NewPackaging/59910_SCREM_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "Melt-away cleansing balm with hyaluronic acid that dissolves makeup, sunscreen, and impurities in seconds and rinses clean without residue. Leaves skin soft and hydrated.",
     "ingredients": [
       "Hyaluronic Acid"
@@ -188,7 +188,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.3,
     "reviews": 4200,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw6fc3ba73/2023/SuntouchableInvisible/Newpackaging/81807_Closed_MAIN_v3_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw6fc3ba73/2023/SuntouchableInvisible/Newpackaging/81807_Closed_MAIN_v3_R.jpg?sw=700&q=90&strip=false",
     "description": "Lightweight gel-based SPF 35 sunscreen that disappears on contact and doubles as a smoothing makeup primer. Oil-free and fragrance-free, suited for oily and sensitive skin types.",
     "ingredients": [
       "SPF"
@@ -2322,7 +2322,7 @@ export const RAW_PRODUCTS = [
     "retailer": "direct",
     "rating": 4.3,
     "reviews": 6800,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwb5ac6120/2021/57530_OpenA_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwb5ac6120/2021/57530_OpenA_R.jpg?sw=700&q=90&strip=false",
     "description": "Gentle foaming cleanser with niacinamide and salicylic acid that thoroughly cleanses pores, controls oil, and prevents breakouts without over-drying sensitive skin.",
     "ingredients": [
       "Salicylic Acid",
@@ -2354,7 +2354,7 @@ export const RAW_PRODUCTS = [
     "retailer": "direct",
     "rating": 4.2,
     "reviews": 7400,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw1247a6cb/23201_SILO.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw1247a6cb/23201_SILO.jpg?sw=700&q=90&strip=false",
     "description": "Targeted blemish treatment with 2% salicylic acid and tea tree oil that visibly reduces pimples, whiteheads, and blackheads overnight. Clear gel formula works under makeup.",
     "ingredients": [
       "Salicylic Acid"
@@ -9811,7 +9811,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw44d0f80d/2022/HolyHydration!NewPackaging/59910_SCREM_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw44d0f80d/2022/HolyHydration!NewPackaging/59910_SCREM_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A gentle cleansing balm with ceramides and peptides that melts away makeup and impurities while keeping skin soft and hydrated.",
     "ingredients": [
       "Ceramides",
@@ -9839,7 +9839,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw5ccf5840/2022/HolyHydration!NewPackaging/59990_SCCLE_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw5ccf5840/2022/HolyHydration!NewPackaging/59990_SCCLE_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A gentle daily cleanser with ceramides and hyaluronic acid that removes impurities while maintaining skin's natural moisture balance.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -9867,7 +9867,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw73edcbbf/2020/HH/57014_SCMOI_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw73edcbbf/2020/HH/57014_SCMOI_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "An affordable eye cream with ceramides, peptides, and hyaluronic acid that hydrates and plumps the delicate under-eye area.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -9925,7 +9925,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwd55188d0/2021/57532_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwd55188d0/2021/57532_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A clarifying toner with niacinamide and salicylic acid that minimizes pores, controls oil, and refines skin texture.",
     "ingredients": [
       "Salicylic Acid",
@@ -9955,7 +9955,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwb5ac6120/2021/57530_OpenA_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwb5ac6120/2021/57530_OpenA_R.jpg?sw=700&q=90&strip=false",
     "description": "A pore-clarifying gel cleanser with niacinamide and salicylic acid that removes excess oil and impurities for clearer skin.",
     "ingredients": [
       "Salicylic Acid",
@@ -9985,7 +9985,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8f60ed2e/2022/MayLaunches-Skin/57250_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8f60ed2e/2022/MayLaunches-Skin/57250_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "An acne-fighting serum with salicylic acid and niacinamide that targets breakouts, minimizes pores, and prevents future blemishes.",
     "ingredients": [
       "Salicylic Acid",
@@ -10015,7 +10015,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8f60ed2e/2022/MayLaunches-Skin/57250_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8f60ed2e/2022/MayLaunches-Skin/57250_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A targeted spot gel with salicylic acid that flattens and fades blemishes quickly while soothing the surrounding skin.",
     "ingredients": [
       "Salicylic Acid"
@@ -10073,7 +10073,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw6fc3ba73/2023/SuntouchableInvisible/Newpackaging/81807_Closed_MAIN_v3_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw6fc3ba73/2023/SuntouchableInvisible/Newpackaging/81807_Closed_MAIN_v3_R.jpg?sw=700&q=90&strip=false",
     "description": "A lightweight, invisible SPF 35 sunscreen that layers seamlessly under makeup with a weightless, non-greasy finish.",
     "ingredients": [
       "SPF"
@@ -10104,7 +10104,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwb3d0a046/2025/Bright_Icon_Vitamin/57615_Closed_V3_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwb3d0a046/2025/Bright_Icon_Vitamin/57615_Closed_V3_R.jpg?sw=700&q=90&strip=false",
     "description": "An affordable vitamin C serum with ferulic acid that brightens skin tone, fades dark spots, and boosts antioxidant protection.",
     "ingredients": [
       "Vitamin C"
@@ -10132,7 +10132,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw530df8f2/2023/GentlePeelingSoftConversion/57065_InPack_V2_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw530df8f2/2023/GentlePeelingSoftConversion/57065_InPack_V2_R.jpg?sw=700&q=90&strip=false",
     "description": "A gentle exfoliating scrub with ceramides and shea butter that buffs away dead skin cells while maintaining hydration.",
     "ingredients": [
       "Ceramides"
@@ -10159,7 +10159,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwd5d42241/2021/57531_OpenA_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwd5d42241/2021/57531_OpenA_R.jpg?sw=700&q=90&strip=false",
     "description": "A lightweight, oil-free moisturizer with niacinamide and hyaluronic acid that hydrates and minimizes pores without clogging them.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -10189,7 +10189,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw459c3d0a/2024/ThirstBurstDrops/57586_CLOSED_v5_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw459c3d0a/2024/ThirstBurstDrops/57586_CLOSED_v5_R.jpg?sw=700&q=90&strip=false",
     "description": "Concentrated hydrating drops with ceramides and hyaluronic acid that can be added to any moisturizer for an extra hydration boost.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -10218,7 +10218,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw603e0e85/2023/HolyHydration!TripleBounceSerum/57167_CLOSED_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw603e0e85/2023/HolyHydration!TripleBounceSerum/57167_CLOSED_R.jpg?sw=700&q=90&strip=false",
     "description": "A bouncy, jelly-like serum with triple ceramide complex and hyaluronic acid that deeply plumps and hydrates all skin types.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -10277,7 +10277,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwdafb8036/83576_WowBrow_Black_Open.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwdafb8036/83576_WowBrow_Black_Open.jpg?sw=700&q=90&strip=false",
     "description": "A hydrating serum designed for brows that conditions, nourishes, and defines while promoting healthier-looking brow hairs.",
     "ingredients": [],
     "concerns": [],
@@ -10303,7 +10303,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwfce49c94/2024/HolyHydrationRepack/81570_CLOSED_v3_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwfce49c94/2024/HolyHydrationRepack/81570_CLOSED_v3_R.jpg?sw=700&q=90&strip=false",
     "description": "The fan-favorite Holy Hydration! moisturizer with ceramides and SPF 30 that hydrates and protects skin in one step.",
     "ingredients": [
       "Ceramides",
@@ -10334,7 +10334,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw6118af84/2020/84826_Open_A_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw6118af84/2020/84826_Open_A_R.jpg?sw=700&q=90&strip=false",
     "description": "A hydrating primer with hyaluronic acid and vitamin E that blurs skin and creates a smooth canvas for concealer.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -11326,7 +11326,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwbd3116a5/2022/HolyHydration!NewPackaging/57015-HH!HydratingSerum/elf.com/57015_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwbd3116a5/2022/HolyHydration!NewPackaging/57015-HH!HydratingSerum/elf.com/57015_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A ceramide-powered supercharge serum that provides long-lasting hydration and supports healthy skin barrier function.",
     "ingredients": [
       "Ceramides"
@@ -11354,7 +11354,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8acdce0c/2022/MayLaunches-Skin/57560_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8acdce0c/2022/MayLaunches-Skin/57560_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A daily acne-fighting cleanser with 0.5% salicylic acid that clears pores and prevents breakouts without over-drying skin.",
     "ingredients": [
       "Salicylic Acid"
@@ -11532,7 +11532,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw1247a6cb/23201_SILO.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw1247a6cb/23201_SILO.jpg?sw=700&q=90&strip=false",
     "description": "A maximum strength spot treatment with 10% benzoyl peroxide that quickly reduces blemishes and prevents new breakouts.",
     "ingredients": [],
     "concerns": [],
@@ -11559,7 +11559,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw00c19ca0/2022/JulyLaunches-Skin/57162_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw00c19ca0/2022/JulyLaunches-Skin/57162_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "A ceramide-infused overnight lip mask that deeply hydrates and repairs dry, chapped lips while you sleep for softer lips.",
     "ingredients": [
       "Ceramides"
@@ -11723,7 +11723,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8acdce0c/2022/MayLaunches-Skin/57560_Closed_R.jpg",
+    "imageUrl": "https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw8acdce0c/2022/MayLaunches-Skin/57560_Closed_R.jpg?sw=700&q=90&strip=false",
     "description": "An acne-fighting face wash with 1% salicylic acid that clears excess oil and prevents breakouts while maintaining hydration.",
     "ingredients": [
       "Salicylic Acid"
