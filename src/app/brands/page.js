@@ -1,0 +1,40 @@
+import Link from 'next/link';
+import { products, BRAND_PROFILES } from '@/lib/constants';
+
+export const metadata = {
+  title: 'Our Brands — BunnyIndex',
+  description: 'Meet the 18 independently cruelty-free brands featured on BunnyIndex. No parent company exceptions, no markets that require animal testing.',
+};
+
+export default function BrandsPage() {
+  const sorted = [...BRAND_PROFILES].sort((a, b) => a.name.localeCompare(b.name));
+
+  return (
+    <section style={{padding:'64px 0 80px',background:'var(--cream)'}}>
+      <div style={{maxWidth:900,margin:'0 auto',padding:'0 24px'}}>
+        <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--terra)',marginBottom:12}}>The directory</div>
+        <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:42,fontWeight:600,color:'var(--ink)',margin:'0 0 12px',lineHeight:1.1}}>Our Brands</h1>
+        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:560,lineHeight:1.6,margin:'0 0 56px'}}>
+          Every brand featured on BunnyIndex is independently cruelty-free — no parent company exceptions, no markets that require animal testing. Here's who made the cut.
+        </p>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(400px,1fr))',gap:32}}>
+          {sorted.map(brand => {
+            const count = products.filter(p => p.brand === brand.name).length;
+            return (
+              <div key={brand.name} style={{background:'var(--white)',borderRadius:'var(--r-md)',border:'1px solid var(--border)',padding:'28px 28px 24px',display:'flex',flexDirection:'column',gap:10}}>
+                <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:12}}>
+                  <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)',lineHeight:1.1}}>{brand.name}</div>
+                  <Link href={`/directory?brand=${encodeURIComponent(brand.name)}`}
+                    style={{flexShrink:0,background:'none',border:'1px solid var(--border)',borderRadius:20,padding:'4px 12px',fontFamily:"'DM Sans',sans-serif",fontSize:12,color:'var(--muted)',textDecoration:'none',whiteSpace:'nowrap'}}>
+                    {count} products →
+                  </Link>
+                </div>
+                <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:14,color:'var(--muted)',lineHeight:1.65,margin:0}}>{brand.blurb}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
