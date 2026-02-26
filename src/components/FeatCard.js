@@ -9,9 +9,9 @@ export default function FeatCard({ product }) {
     <div style={{background:'var(--white)',borderRadius:'var(--r-md)',border:'1px solid var(--border)',overflow:'hidden'}}>
       <div style={{aspectRatio:'1/1',background:'var(--parchment)',display:'flex',alignItems:'center',justifyContent:'center',overflow:'hidden'}}>
         {product.imageUrl && !imgErr
-          ? <img src={product.imageUrl} alt={product.name} style={{width:'100%',height:'100%',objectFit:'cover'}} onError={() => setImgErr(true)} />
+          ? <img src={product.imageUrl} alt={product.name} style={{width:'100%',height:'100%',objectFit:'cover'}} onError={() => setImgErr(true)} referrerPolicy="no-referrer" />
           : <div style={{textAlign:'center',padding:16}}>
-              <div style={{fontSize:32,marginBottom:8}}>🐰</div>
+              <div style={{fontSize:32,marginBottom:8}}>ð°</div>
               <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,color:'var(--muted)'}}>{product.brand}</div>
             </div>
         }
