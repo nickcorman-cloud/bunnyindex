@@ -7,12 +7,12 @@ export const RAW_PRODUCTS = [
     "brandColor": "#C17B5C",
     "name": "Holy Hydration! Face Cream",
     "type": "Moisturizer",
-    "price": 12.0
+    "price": 12.0,
     "priceRange": "$",
     "oilFree": false,
     "fragranceFree": true,
     "vegan": true,
-    "nonComedogenic": false
+    "nonComedogenic": false,
     "buyUrl": "https://www.elfcosmetics.com/products/holy-hydration-face-cream",
     "retailer": "amazon",
     "rating": 4.7,
