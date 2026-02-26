@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export async function GET(request, { params }) {
   const path = params.path.join('/');
   const { searchParams } = new URL(request.url);
@@ -13,10 +15,7 @@ export async function GET(request, { params }) {
         'Referer': 'https://www.elfcosmetics.com/',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'sec-fetch-dest': 'image',
-        'sec-fetch-mode': 'no-cors',
-        'sec-fetch-site': 'same-origin'
+        'Accept-Language': 'en-US,en;q=0.9'
       }
     });
     if (!res.ok) return new Response('Not found', { status: 404 });
