@@ -1,6 +1,7 @@
 export async function GET(request, { params }) {
   const path = params.path.join('/');
   const { searchParams } = new URL(request.url);
+  if (!searchParams.has('sfrm')) searchParams.set('sfrm', 'png');
   const query = searchParams.toString();
   const elfUrl = `https://www.elfcosmetics.com/dw/image/v2/${path}${query ? '?' + query : ''}`;
   try {
