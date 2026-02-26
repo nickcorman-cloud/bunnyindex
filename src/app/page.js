@@ -19,7 +19,7 @@ export default function Home() {
           <div>
             <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--terra)',marginBottom:16}}>The cruelty-free standard</div>
             <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:56,fontWeight:600,lineHeight:1.05,color:'var(--ink)',marginBottom:24}}>
-              Products you can <em style={{fontStyle:'italic',color:'var(--terra)'}}>feel goo/em> about.
+              Products you can <em style={{fontStyle:'italic',color:'var(--terra)'}}>feel good/em> about.
             </h1>
             <p style={{fontSize:16,color:'var(--ink-muted)',lineHeight:1.65,marginBottom:32,maxWidth:480}}>
               Cruelty-free means something specific here. No testing at any stage. No sales in markets that require it. No ownership by companies that do. {products.length} products. Zero exceptions.
