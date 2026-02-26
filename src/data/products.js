@@ -1,4 +1,4 @@
-// Auto-generated from bunnyindex-database.xlsx
+// Auto-generated from bunnyindex-database.xlsx | Updated: Feb 2026 | 25 new products (ILIA, Merit, Summer Fridays, Topicals)
 export const FEATURED_IDS = [8, 37, 97, 103];
 export const RAW_PRODUCTS = [
 {
