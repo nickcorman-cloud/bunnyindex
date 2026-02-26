@@ -9867,7 +9867,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "/api/elf-img/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw73edcbbf/2020/HH/57014_SCMOI_Closed_R.jpg?sw=700&q=90&strip=false",
+    "imageUrl": "/api/elf-img/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw73edcbbf/2020/HH/57014_SCMOI_Closed_R.jpeg?sw=700&q=90&strip=false",
     "description": "An affordable eye cream with ceramides, peptides, and hyaluronic acid that hydrates and plumps the delicate under-eye area.",
     "ingredients": [
       "Hyaluronic Acid",
