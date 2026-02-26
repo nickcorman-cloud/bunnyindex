@@ -1,7 +1,7 @@
 // Auto-generated from bunnyindex-database.xlsx
 export const FEATURED_IDS = [8, 37, 97, 103];
 export const RAW_PRODUCTS = [
-  {
+{
     "id": 1,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -31,7 +31,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 2,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -59,7 +59,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 3,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -84,7 +84,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 4,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -114,7 +114,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 5,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -143,7 +143,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 6,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -172,7 +172,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 7,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -203,7 +203,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 8,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -231,7 +231,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 9,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -258,7 +258,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 10,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -286,7 +286,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 11,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -313,7 +313,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 12,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -338,7 +338,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 13,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -364,7 +364,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 14,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -392,7 +392,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 15,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -421,7 +421,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 16,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -437,7 +437,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.5,
     "reviews": 8700,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/0_94e33514-1283-4080-920b-48da877a2a44_400x.jpg?v=1745520830",
     "description": "Sulfate-free cleansing gel with coconut water and vitamin E that transforms from cream to a luxurious foam, removing impurities while keeping skin soft and balanced.",
     "ingredients": [
       "Vitamin E"
@@ -448,7 +448,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 17,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -464,7 +464,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.4,
     "reviews": 14600,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/1_8e15c59d-9df8-49ed-8d00-e0376e742f51_400x.jpg?v=1758052822",
     "description": "Ultra-concentrated vitamin C serum with AHA complex and ferulic acid that visibly brightens dark spots, evens skin tone, and boosts natural radiance. Oil-free and non-comedogenic.",
     "ingredients": [
       "Vitamin C"
@@ -478,7 +478,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 18,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -494,7 +494,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.3,
     "reviews": 5200,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/1_16f4678f-37ad-4a82-8a6a-c70f4e826fb9_400x.jpg?v=1745522062",
     "description": "Plant-powered collagen-boosting serum with vegan collagen, ceramides, and niacinamide that plumps, firms, and hydrates for a visibly more youthful complexion.",
     "ingredients": [
       "Ceramides",
@@ -506,7 +506,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 19,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -533,7 +533,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 20,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -549,7 +549,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.3,
     "reviews": 3400,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/products/PAC_GLOW_BABY_VITAMIN_C_BRIGHTENING_LOTION_400x.jpg?v=1674747099",
     "description": "Daily vitamin C moisturizer with AHA blend and hyaluronic acid that brightens dull skin and boosts glow with every application. Lightweight texture absorbs quickly.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -562,7 +562,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 21,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -578,7 +578,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.3,
     "reviews": 3100,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/AWARD_PAC_GLOW_BABY_BRIGHTENING_SETTING_MIST_SPF_45_BOTTLE_2024_400x.jpg?v=1718230817",
     "description": "Exfoliating liquid toner with glycolic acid, vitamin C, and aloe vera that smooths, brightens, and preps skin for the rest of your routine. Visibly minimizes pores over time.",
     "ingredients": [
       "Glycolic Acid",
@@ -594,7 +594,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 22,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -610,7 +610,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.5,
     "reviews": 2300,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/HERO_d9e7dfe5-cdfb-452e-8997-cb9ac9de60d4_400x.jpg?v=1745557711",
     "description": "Extra-large format cleansing foam with coconut milk, vegan squalane, and vitamin E that nourishes and moisturizes as it cleanses, ideal for dry and sensitive skin types.",
     "ingredients": [
       "Squalane",
@@ -623,7 +623,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 23,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -656,262 +656,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
-    "id": 24,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Unseen Sunscreen SPF 40",
-    "type": "Sunscreen",
-    "price": 36.0,
-    "priceRange": "$$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/unseen-sunscreen-spf-40",
-    "retailer": "amazon",
-    "rating": 4.6,
-    "reviews": 17200,
-    "imageUrl": "",
-    "description": "Invisible, primer-finish SPF 40 that leaves absolutely no white cast and creates a velvety base for flawless makeup application. Broad-spectrum, oil-free, and fragrance-free.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection",
-      "Oily Skin"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Non-Comedogenic"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 25,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Glowscreen SPF 40",
-    "type": "Sunscreen",
-    "price": 36.0,
-    "priceRange": "$$",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/glowscreen-spf-40",
-    "retailer": "amazon",
-    "rating": 4.5,
-    "reviews": 10800,
-    "imageUrl": "",
-    "description": "Hydrating SPF 40 sunscreen that delivers a luminous, lit-from-within glow with skincare benefits like hyaluronic acid and niacinamide. Wear alone or as a dewy primer under makeup.",
-    "ingredients": [
-      "Hyaluronic Acid",
-      "Niacinamide",
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection",
-      "Hyperpigmentation"
-    ],
-    "features": [
-      "Fragrance-Free"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 26,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "PLAY Everyday Lotion SPF 50",
-    "type": "Sunscreen",
-    "price": 22.0,
-    "priceRange": "$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-everyday-lotion-spf-50",
-    "retailer": "amazon",
-    "rating": 4.7,
-    "reviews": 12400,
-    "imageUrl": "",
-    "description": "Water- and sweat-resistant SPF 50 face and body lotion that absorbs fast and leaves no greasy residue. Broad-spectrum protection great for active outdoor use and daily wear.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Non-Comedogenic",
-      "Pregnancy-Safe"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 27,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "PLAY 100% Mineral Lotion SPF 50",
-    "type": "Sunscreen",
-    "price": 22.0,
-    "priceRange": "$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-100-mineral-lotion-spf-50",
-    "retailer": "amazon",
-    "rating": 4.5,
-    "reviews": 5100,
-    "imageUrl": "",
-    "description": "Non-nano zinc oxide mineral SPF 50 lotion that",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection",
-      "Sensitive Skin"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Reef-Safe",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 28,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Superscreen Daily Moisturizer SPF 40",
-    "type": "Moisturizer",
-    "price": 45.0,
-    "priceRange": "$$",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/superscreen-daily-moisturizer-spf-40",
-    "retailer": "amazon",
-    "rating": 4.4,
-    "reviews": 4800,
-    "imageUrl": "",
-    "description": "Daily moisturizer and SPF 40 in one, powered by hyaluronic acid and sea silt extract for all-day hydration and plumping. A true skin-care-and-sun-protection multitasker.",
-    "ingredients": [
-      "Hyaluronic Acid",
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 29,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "(Re)setting 100% Mineral Powder SPF 35",
-    "type": "Sunscreen",
-    "price": 35.0,
-    "priceRange": "$$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/resetting-100-mineral-powder-spf-35",
-    "retailer": "amazon",
-    "rating": 4.4,
-    "reviews": 6200,
-    "imageUrl": "",
-    "description": "Translucent mineral setting powder with SPF 35 that lets you reapply sun protection over makeup without disturbing it. Made with non-nano zinc oxide and free of chemical filters.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection",
-      "Oily Skin"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 30,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Mineral Mattescreen SPF 40",
-    "type": "Sunscreen",
-    "price": 38.0,
-    "priceRange": "$$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/mineral-mattescreen-spf-40",
-    "retailer": "amazon",
-    "rating": 4.5,
-    "reviews": 4600,
-    "imageUrl": "",
-    "description": "100% mineral SPF 40 with a true matte finish that controls oil and shine all day. Non-nano zinc oxide formula doubles as a pore-minimizing primer, fragrance-free and reef-safe.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection",
-      "Oily Skin"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Non-Comedogenic",
-      "Mineral Sunscreen",
-      "Reef-Safe"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 31,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "PLAY Antioxidant Body Mist SPF 50",
-    "type": "Sunscreen",
-    "price": 28.0,
-    "priceRange": "$$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": false,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-antioxidant-body-mist-spf-50",
-    "retailer": "amazon",
-    "rating": 4.5,
-    "reviews": 3900,
-    "imageUrl": "",
-    "description": "Weightless SPF 50 mist with antioxidants including meadowfoam seed oil and rosemary extract for full-body protection that feels invisible on skin. Water-resistant up to 80 minutes.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Oil-Free"
-    ],
-    "skinTypes": []
-  },
-  {
+{
     "id": 32,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -940,7 +685,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 33,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -972,7 +717,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 34,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -1004,7 +749,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 35,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -1035,7 +780,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 36,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -1062,7 +807,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 37,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -1085,7 +830,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 38,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -1115,7 +860,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 39,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -1147,7 +892,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 40,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1181,7 +926,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 41,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1210,7 +955,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 42,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1226,7 +971,7 @@ export const RAW_PRODUCTS = [
     "retailer": "direct",
     "rating": 4.5,
     "reviews": 4700,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0130/2514/8987/files/DAYDISSOLVEHERO_400x.jpg?v=1738869973",
     "description": "Melt-away cleansing balm that effectively dissolves sunscreen, makeup, and impurities without stripping skin. Transforms to a milky texture on contact with water.",
     "ingredients": [],
     "concerns": [],
@@ -1236,7 +981,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 43,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1267,7 +1012,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 44,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1299,7 +1044,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 45,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1331,7 +1076,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 46,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1364,7 +1109,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 47,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1398,7 +1143,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 48,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1431,7 +1176,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 49,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -1462,7 +1207,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 50,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1495,7 +1240,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 51,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1524,7 +1269,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 52,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1552,7 +1297,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 53,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1584,7 +1329,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 54,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1616,7 +1361,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 55,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1647,7 +1392,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 56,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1678,7 +1423,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 57,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1707,7 +1452,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 58,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1738,7 +1483,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 59,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -1765,7 +1510,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 60,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -1792,7 +1537,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 61,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -1808,7 +1553,7 @@ export const RAW_PRODUCTS = [
     "retailer": "direct",
     "rating": 4.4,
     "reviews": 3800,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/SOS_20Spray_20_E2_80_94_C2_A04_20oz_400x.webp?v=1762649181",
     "description": "Balancing facial spray with a clinically studied, patented biotechnology that helps restore the skin",
     "ingredients": [],
     "concerns": [
@@ -1823,7 +1568,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 62,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -1854,7 +1599,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 63,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -1885,7 +1630,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 64,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -1916,7 +1661,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 65,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -1950,7 +1695,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 66,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -1982,7 +1727,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 67,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -2010,7 +1755,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 68,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -2040,7 +1785,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 69,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -2074,7 +1819,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 70,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -2105,7 +1850,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 71,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -2135,7 +1880,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 72,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2164,7 +1909,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 73,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2196,7 +1941,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 74,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2229,7 +1974,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 75,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2262,7 +2007,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 76,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2292,7 +2037,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 77,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2323,7 +2068,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 78,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2353,7 +2098,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 79,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2383,7 +2128,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 80,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -2406,7 +2151,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 81,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -2437,7 +2182,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 82,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -2465,7 +2210,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 83,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -2497,7 +2242,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 84,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -2529,7 +2274,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 85,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -2561,7 +2306,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 86,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -2593,7 +2338,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 87,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -2626,7 +2371,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 88,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -2654,7 +2399,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 89,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -2682,7 +2427,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 90,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -2713,7 +2458,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 91,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -2743,7 +2488,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 92,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -2772,7 +2517,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 93,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -2788,7 +2533,7 @@ export const RAW_PRODUCTS = [
     "retailer": "direct",
     "rating": 4.2,
     "reviews": 2200,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/products/PAC_30424_ALIGHT_BB_CREAM_SHADE_3_400x.jpg?v=1580754630",
     "description": "Brightening eye cream with multi-peptides, vitamin C, and hyaluronic acid that reduces dark circles, puffiness, and fine lines around the delicate eye area.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -2803,7 +2548,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 94,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -2819,7 +2564,7 @@ export const RAW_PRODUCTS = [
     "retailer": "direct",
     "rating": 4.3,
     "reviews": 3600,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/0_94e33514-1283-4080-920b-48da877a2a44_400x.jpg?v=1745520830",
     "description": "Sea mineral-powered foaming face wash that deep cleans pores and leaves skin refreshed, balanced, and soft. Gentle enough for daily use on all skin types.",
     "ingredients": [],
     "concerns": [],
@@ -2830,69 +2575,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
-    "id": 95,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Glow Oil SPF 50",
-    "type": "Face Oil",
-    "price": 42.0,
-    "priceRange": "$$",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/glow-oil-spf-50",
-    "retailer": "direct",
-    "rating": 4.4,
-    "reviews": 5200,
-    "imageUrl": "",
-    "description": "Luxurious facial oil with SPF 50 that delivers golden, lit-from-within radiance while providing strong UV protection. A unique way to protect skin without sacrificing glow.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 96,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "(Re)setting 100% Mineral Tinted Sunscreen SPF 40",
-    "type": "Sunscreen",
-    "price": 40.0,
-    "priceRange": "$$",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/resetting-100-mineral-tinted-sunscreen-spf-40",
-    "retailer": "direct",
-    "rating": 4.4,
-    "reviews": 6100,
-    "imageUrl": "",
-    "description": "Tinted mineral SPF 40 with a matte, pore-perfecting finish. Sets makeup, controls oil, and provides clean zinc oxide protection in one easy swipe. Available in universal-fit tints.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Non-Comedogenic",
-      "Reef-Safe",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
+{
     "id": 97,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -2919,7 +2602,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 98,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -2949,7 +2632,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 99,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -2976,7 +2659,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 100,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -3001,7 +2684,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 101,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -3029,7 +2712,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 102,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -3045,7 +2728,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.5,
     "reviews": 6400,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2090/8057/files/Jumbo_GBR_01_1_400x.png?v=1764794134",
     "description": "Cult-status barrier repair serum with niacinamide, tamanu oil, and ceramide-precursor ingredients that calm inflammation and rebuild the skin barrier. Fragrance-free and ideal for reactive skin.",
     "ingredients": [
       "Ceramides",
@@ -3059,7 +2742,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 103,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -3085,7 +2768,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 104,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -3114,7 +2797,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 105,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -3140,7 +2823,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 106,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -3156,7 +2839,7 @@ export const RAW_PRODUCTS = [
     "retailer": "amazon",
     "rating": 4.3,
     "reviews": 2100,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2090/8057/files/BTS_SPF_40_01_400x.png?v=1749227742",
     "description": "Chemical SPF 40 that applies like a serum\u2014no white cast, no greasiness, and no pilling under makeup. Beet-derived antioxidants provide added environmental protection. K-beauty inspired formula.",
     "ingredients": [
       "SPF"
@@ -3171,7 +2854,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 107,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -3200,7 +2883,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 108,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -3230,7 +2913,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 109,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -3261,7 +2944,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 110,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -3292,7 +2975,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 111,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -3322,7 +3005,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 112,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -3352,7 +3035,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 113,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -3382,7 +3065,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 114,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -3409,7 +3092,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 115,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -3436,7 +3119,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 116,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -3467,7 +3150,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 117,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -3493,7 +3176,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 118,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -3520,7 +3203,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 119,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -3548,7 +3231,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 120,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -3577,7 +3260,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 121,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -3604,7 +3287,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 122,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3633,7 +3316,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 123,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3658,7 +3341,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 124,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3683,7 +3366,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 125,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3709,7 +3392,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 126,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3737,7 +3420,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 127,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3762,7 +3445,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 128,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3787,7 +3470,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 129,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3814,7 +3497,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 130,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3840,7 +3523,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 131,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3863,7 +3546,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 132,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3886,7 +3569,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 133,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3915,7 +3598,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 134,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3940,7 +3623,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 135,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3963,7 +3646,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 136,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -3990,7 +3673,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 137,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -4019,7 +3702,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 138,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -4042,7 +3725,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 139,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -4071,7 +3754,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 140,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -4100,7 +3783,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 141,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -4123,7 +3806,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 142,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4151,7 +3834,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 143,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4179,7 +3862,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 144,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4208,7 +3891,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 145,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4236,7 +3919,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 146,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4265,7 +3948,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 147,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4293,7 +3976,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 148,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4323,7 +4006,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 149,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4352,7 +4035,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 150,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4381,7 +4064,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 151,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4411,7 +4094,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 152,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4439,7 +4122,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 153,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4467,7 +4150,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 154,
     "brand": "Alpyn Beauty",
     "brandColor": "#7A9A7A",
@@ -4497,7 +4180,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 155,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4524,7 +4207,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 156,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4552,7 +4235,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 157,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4581,7 +4264,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 158,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4611,7 +4294,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 159,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4640,7 +4323,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 160,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4669,7 +4352,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 161,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4695,7 +4378,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 162,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4726,7 +4409,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 163,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4757,7 +4440,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 164,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4786,7 +4469,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 165,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4814,7 +4497,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 166,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4842,7 +4525,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 167,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4867,7 +4550,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 168,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4895,7 +4578,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 169,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -4923,7 +4606,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 170,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -4953,7 +4636,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 171,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -4984,7 +4667,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 172,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5014,7 +4697,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 173,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5048,7 +4731,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 174,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5078,7 +4761,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 175,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5106,7 +4789,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 176,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5135,7 +4818,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 177,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5165,7 +4848,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 178,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5194,7 +4877,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 179,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5224,7 +4907,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 180,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5257,7 +4940,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 181,
     "brand": "Byoma",
     "brandColor": "#6A9CB8",
@@ -5286,7 +4969,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 182,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5315,7 +4998,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 183,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5340,7 +5023,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 184,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5365,7 +5048,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 185,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5390,7 +5073,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 186,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5418,7 +5101,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 187,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5447,7 +5130,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 188,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5474,7 +5157,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 189,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5501,7 +5184,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 190,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5530,7 +5213,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 191,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5557,7 +5240,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 192,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5582,7 +5265,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 193,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5609,7 +5292,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 194,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5640,7 +5323,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 195,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5665,7 +5348,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 196,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -5692,7 +5375,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 197,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5717,7 +5400,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 198,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5748,7 +5431,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 199,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5777,7 +5460,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 200,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5805,7 +5488,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 201,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5833,7 +5516,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 202,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5858,7 +5541,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 203,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5883,7 +5566,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 204,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5910,7 +5593,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 205,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5935,7 +5618,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 206,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5960,7 +5643,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 207,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -5989,7 +5672,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 208,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -6018,7 +5701,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 209,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -6046,7 +5729,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 210,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6073,7 +5756,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 211,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6098,7 +5781,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 212,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6123,7 +5806,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 213,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6148,7 +5831,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 214,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6175,7 +5858,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 215,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6200,7 +5883,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 216,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6223,7 +5906,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 217,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6248,7 +5931,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 218,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6276,7 +5959,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 219,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6299,7 +5982,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 220,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6326,7 +6009,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 221,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6349,7 +6032,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 222,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6377,7 +6060,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 223,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6402,7 +6085,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 224,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6427,7 +6110,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 225,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6454,7 +6137,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 226,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6479,7 +6162,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 227,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6506,7 +6189,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 228,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -6531,7 +6214,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 229,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6558,7 +6241,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 230,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6587,7 +6270,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 231,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6612,7 +6295,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 232,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6641,7 +6324,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 233,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6668,7 +6351,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 234,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6697,7 +6380,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 235,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6724,7 +6407,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 236,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6755,7 +6438,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 237,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6785,7 +6468,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 238,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6813,7 +6496,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 239,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6841,7 +6524,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 240,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6872,7 +6555,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 241,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6900,7 +6583,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 242,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6928,7 +6611,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 243,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6957,7 +6640,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 244,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -6988,7 +6671,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 245,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -7016,7 +6699,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 246,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7046,7 +6729,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 247,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7069,7 +6752,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 248,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7094,7 +6777,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 249,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7119,7 +6802,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 250,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7145,7 +6828,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 251,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7168,7 +6851,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 252,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7193,7 +6876,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 253,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7218,7 +6901,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 254,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7245,7 +6928,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 255,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7270,7 +6953,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 256,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7298,7 +6981,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 257,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7327,7 +7010,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 258,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -7352,7 +7035,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 259,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7381,7 +7064,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 260,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7407,7 +7090,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 261,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7438,7 +7121,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 262,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7465,7 +7148,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 263,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7493,7 +7176,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 264,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7520,7 +7203,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 265,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7536,7 +7219,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2090/8057/files/OSSWC_01_400x.png?v=1762526160",
     "description": "A minimalist cream cleanser with oat extract and glycerin that gently removes impurities while preserving skin's natural moisture.",
     "ingredients": [],
     "concerns": [],
@@ -7545,7 +7228,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 266,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7574,7 +7257,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 267,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7599,7 +7282,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 268,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7628,7 +7311,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 269,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7656,7 +7339,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 270,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7684,7 +7367,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 271,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7713,7 +7396,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 272,
     "brand": "Krave Beauty",
     "brandColor": "#9A8B6A",
@@ -7738,7 +7421,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 273,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7766,7 +7449,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 274,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7794,7 +7477,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 275,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7817,7 +7500,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 276,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7845,7 +7528,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 277,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7870,7 +7553,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 278,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7897,7 +7580,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 279,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7922,7 +7605,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 280,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7950,7 +7633,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 281,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7973,7 +7656,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 282,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -7989,7 +7672,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0572/3645/5609/files/Hydrogrip_400x.jpg?v=1726845761",
     "description": "A water-gel moisturizer with niacinamide and blue agave that provides lightweight, long-lasting hydration and pore-minimizing benefits.",
     "ingredients": [
       "Niacinamide"
@@ -8001,7 +7684,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 283,
     "brand": "Milk Makeup",
     "brandColor": "#9C7B8E",
@@ -8028,7 +7711,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 284,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8053,7 +7736,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 285,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8069,7 +7752,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/PACKAGING_BOTH_0950848f-1a00-46d1-aece-04acebc78bf7_400x.jpg?v=1745528591",
     "description": "An overnight retinoid serum with bakuchiol and peptides that visibly reduces fine lines and improves skin texture while you sleep.",
     "ingredients": [
       "Retinol",
@@ -8080,7 +7763,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 286,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8096,7 +7779,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/AWARD_PAC_GLOW_BABY_BRIGHTENING_SETTING_MIST_SPF_45_BOTTLE_2024_400x.jpg?v=1718230817",
     "description": "A brightening toner with vitamin C and niacinamide that evens skin tone and prepares skin to absorb serums and moisturizers.",
     "ingredients": [
       "Vitamin C",
@@ -8110,7 +7793,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 287,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8126,7 +7809,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/30663_FUTUREYOUTHGRAVITYREBOUNDFACEMASK_3_400x.jpg?v=1704296706",
     "description": "Hydrogel sheet masks with collagen, retinoid, and hyaluronic acid that intensely hydrate and plump skin for a youthful look.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -8136,7 +7819,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 288,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8162,7 +7845,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 289,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8178,7 +7861,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/1_35125f88-fed2-48d1-8a2e-486a41a03775_400x.jpg?v=1745556943",
     "description": "A vitamin C serum with sea kelp extract that brightens dark spots and evens complexion for a luminous, healthy-looking glow.",
     "ingredients": [
       "Vitamin C"
@@ -8191,7 +7874,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 290,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8216,7 +7899,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 291,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8245,7 +7928,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 292,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8270,7 +7953,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 293,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8295,7 +7978,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 294,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8311,7 +7994,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/files/PACKAGING_BOTH_fe7c8583-17d9-4072-aef0-71c2e6a6b094_400x.jpg?v=1745523094",
     "description": "An advanced night cream with bakuchiol and peptides that reduces the appearance of fine lines and smooths skin texture overnight.",
     "ingredients": [
       "Retinol",
@@ -8322,7 +8005,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 295,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8347,7 +8030,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 296,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8372,7 +8055,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 297,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8399,7 +8082,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 298,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8426,7 +8109,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 299,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8453,7 +8136,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 300,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8480,7 +8163,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 301,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -8507,7 +8190,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 302,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8538,7 +8221,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 303,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8566,7 +8249,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 304,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8596,7 +8279,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 305,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8622,7 +8305,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 306,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8650,7 +8333,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 307,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8678,7 +8361,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 308,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8708,7 +8391,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 309,
     "brand": "Saie",
     "brandColor": "#C4A86A",
@@ -8738,593 +8421,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
-    "id": 310,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Protec(tint) Daily Skin Tint SPF 50",
-    "type": "Tinted Moisturizer",
-    "price": 42.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://supergoop.com/products/protectint",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "",
-    "description": "A sheer, buildable skin tint with SPF 50 that provides sun protection while giving skin a natural, glowing finish.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 311,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Superscreen Daily Moisturizer SPF 40",
-    "type": "Moisturizer",
-    "price": 48.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://supergoop.com/products/superscreen-daily-moisturizer",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/products/PAC_DREAMY_YOUTH_COMPLEX_LIP_BALM.jpg",
-    "description": "A rich SPF 40 moisturizer with vitamin B5 and green tea that provides all-day hydration and broad-spectrum sun protection.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 312,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Every. Single. Face. Watery Lotion SPF 50",
-    "type": "Sunscreen",
-    "price": 28.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://supergoop.com/products/every-single-face-watery-lotion-spf-50",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/products/PAC_DREAMY_YOUTH_COMPLEX_LIP_BALM.jpg",
-    "description": "A lightweight watery lotion SPF 50 designed for all skin tones that absorbs quickly with no white cast for everyday protection.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 313,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Shine On Broad Spectrum Lip Screen SPF 50",
-    "type": "Lip Balm",
-    "price": 19.0,
-    "priceRange": "budget",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/smooth-and-poreless-mattescreen",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/Mattescreen_1.5oz_Img1_new_234b06e3-dae1-4ceb-a8b5-d92b5aeae655.jpg",
-    "description": "A glossy SPF 50 lip treatment that protects and plumps lips with a sheer, shiny finish that feels like a lip gloss.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 314,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "CC Screen 100% Mineral CC Cream SPF 50+",
-    "type": "Tinted Moisturizer",
-    "price": 42.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-everyday-face-lotion-spf-50-sample-1",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/play-face-sunscreen-10ml-texture.jpg",
-    "description": "A 100% mineral CC cream with SPF 50+ that covers, corrects, and protects with a naturally flawless finish.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 315,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Smooth & Poreless 100% Mineral Matte Sunscreen SPF 40",
-    "type": "Sunscreen",
-    "price": 38.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-antioxidant-body-mist-spf-50-with-vitamin-c-3-pack",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/supergoop-play-mist-spf-50-3-pack_dd4af562-ec62-4c38-953b-6d27b38fcf58.jpg",
-    "description": "A 100% mineral matte sunscreen with niacinamide that minimizes pores and controls oil while providing SPF 40 protection.",
-    "ingredients": [
-      "Niacinamide",
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 316,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Everyday Eye Cream SPF 24",
-    "type": "Eye Cream",
-    "price": 48.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/everyday-eye-cream-spf-24",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/Glowscreen_PDP_d9278e44-8f22-4987-ab44-290b1aa283d5.png",
-    "description": "The first eye cream with SPF 24 protection that hydrates, depuffs, and shields the delicate eye area from UV damage.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 317,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "100% Mineral Sheerscreen SPF 30",
-    "type": "Sunscreen",
-    "price": 42.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/oily-skin-best-friend-spf-40",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/OilySkinBFF_1_new.jpg",
-    "description": "A 100% mineral sunscreen SPF 30 with a sheer, invisible finish that works beautifully under makeup for all skin tones.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 318,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Daily Dose Vitamin C+SPF Hybrid Moisturizer SPF 40",
-    "type": "Moisturizer",
-    "price": 58.0,
-    "priceRange": "luxury",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-spf-50-sunscreen-mousse",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/PLAYMousse_Img1_new.jpg",
-    "description": "A vitamin C-packed SPF 40 moisturizer that brightens skin and provides daily antioxidant protection in one convenient step.",
-    "ingredients": [
-      "Vitamin C",
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 319,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Glow Oil 100% Mineral Sunscreen Face Oil SPF 30",
-    "type": "Face Oil",
-    "price": 38.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/resetting-refreshing-mist-spf-40",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/ResettingMist_Img1_new.jpg",
-    "description": "A luxurious SPF 30 face oil with sea buckthorn and jojoba that provides mineral sun protection with a radiant, dewy finish.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 320,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Super Power Sunscreen Mousse SPF 50",
-    "type": "Sunscreen",
-    "price": 34.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/antioxidant-infused-sunscreen-mist-with-vitamin-c",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/PLAYMist_SPF50_6oz_Img1_new.jpg",
-    "description": "A whipped SPF 50 sunscreen mousse with antioxidants and sea kelp that applies seamlessly and is ideal for active days.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 321,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Slip Cover Smoothing Primer SPF 30",
-    "type": "Moisturizer",
-    "price": 38.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-mineral-lotion-spf-50-with-green-algae",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/PLAYMineralLotionSPF50_3.4oz_Img1_new.jpg",
-    "description": "A silky SPF 30 smoothing primer that blurs pores and fine lines while protecting skin from UV rays under makeup.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 322,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Unseen Sunscreen SPF 50",
-    "type": "Sunscreen",
-    "price": 38.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/BrightEyed_Img1_new.jpg",
-    "description": "The next level of the iconic Unseen Sunscreen with upgraded SPF 50 protection and the same beloved invisible, velvety formula.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 323,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Forever Young Hand Cream SPF 40",
-    "type": "Moisturizer",
-    "price": 28.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/smooth-and-poreless-mattescreen",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/Mattescreen_1.5oz_Img1_new_234b06e3-dae1-4ceb-a8b5-d92b5aeae655.jpg",
-    "description": "A luxurious SPF 40 hand cream with peptides and bakuchiol that protects hands from UV damage while visibly plumping skin.",
-    "ingredients": [
-      "Peptides",
-      "Bakuchiol",
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 324,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Poof 100% Mineral Matte Screen SPF 35",
-    "type": "Sunscreen",
-    "price": 32.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/poof-100-mineral-matte-screen-spf-35",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/Glowscreen_PDP_d9278e44-8f22-4987-ab44-290b1aa283d5.png",
-    "description": "A finely-milled 100% mineral SPF 35 setting powder that blots oil, sets makeup, and provides daily sun protection in one step.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 325,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Superstar Screen Hydrating Mineral SPF 40",
-    "type": "Sunscreen",
-    "price": 44.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/city-sunscreen-serum",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/CitySerum_Img1_new.jpg",
-    "description": "A hydrating mineral SPF 40 sunscreen with ceramides and hyaluronic acid that protects and deeply moisturizes in one step.",
-    "ingredients": [
-      "Hyaluronic Acid",
-      "Ceramides",
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 326,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Mineral Lit Primer SPF 25",
-    "type": "Moisturizer",
-    "price": 34.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/play-mineral-lotion-spf-50-with-green-algae",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/PLAYMineralLotionSPF50_3.4oz_Img1_new.jpg",
-    "description": "A lightweight mineral SPF 25 illuminating primer that creates a luminous, lit-from-within glow while providing sun protection.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 327,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Acai Energizing Serum Sunscreen SPF 30",
-    "type": "Serum",
-    "price": 42.0,
-    "priceRange": "mid-range",
-    "oilFree": true,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/glowscreen-body-spf-40",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/GlowscreenBody_Img1_new.jpg",
-    "description": "An energizing SPF 30 serum with acai berry antioxidants that protects skin from UV and environmental damage with a silky finish.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Oil-Free",
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
-    "id": 328,
-    "brand": "Supergoop",
-    "brandColor": "#D4956A",
-    "name": "Suntegrity Natural Mineral Sunscreen SPF 30",
-    "type": "Sunscreen",
-    "price": 36.0,
-    "priceRange": "mid-range",
-    "oilFree": false,
-    "fragranceFree": true,
-    "vegan": true,
-    "nonComedogenic": false,
-    "buyUrl": "https://www.supergoop.com/products/mineral-setting-powder",
-    "retailer": "Brand Website",
-    "rating": 0,
-    "reviews": 0,
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5658/files/ResettingPowder_Translucent_Img1_new.jpg",
-    "description": "A gentle mineral SPF 30 sunscreen with certified organic ingredients that provides clean broad-spectrum UV protection.",
-    "ingredients": [
-      "SPF"
-    ],
-    "concerns": [
-      "Sun Protection"
-    ],
-    "features": [
-      "Fragrance-Free",
-      "Mineral Sunscreen"
-    ],
-    "skinTypes": []
-  },
-  {
+{
     "id": 329,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9354,7 +8451,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 330,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9381,7 +8478,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 331,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9407,7 +8504,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 332,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9437,7 +8534,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 333,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9466,7 +8563,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 334,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9494,7 +8591,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 335,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9522,7 +8619,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 336,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9550,7 +8647,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 337,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9577,7 +8674,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 338,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9608,7 +8705,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 339,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9637,7 +8734,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 340,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9662,7 +8759,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 341,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9689,7 +8786,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 342,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9715,7 +8812,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 343,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9744,7 +8841,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 344,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9774,7 +8871,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 345,
     "brand": "Thrive Causemetics",
     "brandColor": "#8B6A9C",
@@ -9801,7 +8898,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 346,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9830,7 +8927,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 347,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9846,7 +8943,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/SOSCLEANSER-PACKSHOT_2fda86f3-024f-4c61-aefa-455d5a9c7286_400x.webp?v=1762200697",
     "description": "An EWG-verified foaming cleanser with hypochlorous acid and aloe that gently removes impurities without disrupting the skin barrier.",
     "ingredients": [],
     "concerns": [],
@@ -9857,7 +8954,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 348,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9873,7 +8970,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/SOS_20Cream_400x.webp?v=1762199903",
     "description": "A soothing recovery serum with hypochlorous acid and hyaluronic acid that calms inflammation and intensely hydrates reactive skin.",
     "ingredients": [
       "Hyaluronic Acid"
@@ -9886,7 +8983,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 349,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9902,7 +8999,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/SOSCLEANSER-PACKSHOT_2fda86f3-024f-4c61-aefa-455d5a9c7286_400x.webp?v=1762200697",
     "description": "A gentle gel cleanser for daily use that balances skin while thoroughly cleansing without causing dryness or irritation.",
     "ingredients": [],
     "concerns": [],
@@ -9913,7 +9010,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 350,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9929,7 +9026,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/PACKSHOT_400x.webp?v=1762200718",
     "description": "An EWG-verified hydrating tinted lip treatment with hyaluronic acid and shea butter that nourishes and adds a soft tint to lips.",
     "ingredients": [
       "Hyaluronic Acid"
@@ -9941,7 +9038,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 351,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9970,7 +9067,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 352,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -9997,7 +9094,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 353,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -10025,7 +9122,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 354,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -10056,7 +9153,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 355,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -10085,7 +9182,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 356,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -10101,7 +9198,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/PACKSHOT-SOS_400x.webp?v=1762971723",
     "description": "An EWG-verified spot treatment with hypochlorous acid that targets blemishes without drying or irritating surrounding sensitive skin.",
     "ingredients": [],
     "concerns": [],
@@ -10112,7 +9209,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 357,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -10128,7 +9225,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/ShineOn_Sesame_ad8b16b9-0fe1-4c06-b69f-bf9329204408_400x.webp?v=1762198402",
     "description": "A glossy, conditioning lip jelly with hyaluronic acid and vitamin E that plumps and hydrates lips with a mirror-shine finish.",
     "ingredients": [
       "Hyaluronic Acid",
@@ -10140,7 +9237,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 358,
     "brand": "Tower 28",
     "brandColor": "#C4907A",
@@ -10156,7 +9253,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/SOSCLEANSER-PACKSHOT_2fda86f3-024f-4c61-aefa-455d5a9c7286_400x.webp?v=1762200697",
     "description": "A gel-to-foam cleanser with hypochlorous acid that transforms into a gentle lather to deeply cleanse without disrupting the skin barrier.",
     "ingredients": [],
     "concerns": [],
@@ -10167,7 +9264,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 359,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10183,7 +9280,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0130/2514/8987/files/DAYDISSOLVEHERO_400x.jpg?v=1738869973",
     "description": "A melt-on-contact cleansing balm with antioxidant-rich plant oils that dissolves sunscreen, makeup, and impurities effortlessly.",
     "ingredients": [],
     "concerns": [],
@@ -10193,7 +9290,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 360,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10220,7 +9317,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 361,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10247,7 +9344,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 362,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10275,7 +9372,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 363,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10305,7 +9402,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 364,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10330,7 +9427,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 365,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10359,7 +9456,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 366,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10387,7 +9484,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 367,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10414,7 +9511,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 368,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10445,7 +9542,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 369,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10473,7 +9570,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 370,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10501,7 +9598,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 371,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10530,7 +9627,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 372,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10555,7 +9652,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 373,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10583,7 +9680,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 374,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10610,7 +9707,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 375,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10642,7 +9739,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 376,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10670,7 +9767,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 377,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -10698,7 +9795,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 378,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10726,7 +9823,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 379,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10754,7 +9851,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 380,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10783,7 +9880,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 381,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10812,7 +9909,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 382,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10842,7 +9939,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 383,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10872,7 +9969,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 384,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10902,7 +9999,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 385,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10931,7 +10028,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 386,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10960,7 +10057,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 387,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -10991,7 +10088,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 388,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11019,7 +10116,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 389,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11046,7 +10143,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 390,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11076,7 +10173,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 391,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11105,7 +10202,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 392,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11134,7 +10231,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 393,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11164,7 +10261,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 394,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11190,7 +10287,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 395,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11221,7 +10318,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 396,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11250,7 +10347,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 397,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11278,7 +10375,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 398,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -11309,7 +10406,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 399,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11336,7 +10433,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 400,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11368,7 +10465,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 401,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11396,7 +10493,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 402,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11419,7 +10516,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 403,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11446,7 +10543,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 404,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11473,7 +10570,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 405,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11502,7 +10599,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 406,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11531,7 +10628,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 407,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11559,7 +10656,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 408,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11588,7 +10685,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 409,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11613,7 +10710,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 410,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11638,7 +10735,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 411,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11665,7 +10762,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 412,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11688,7 +10785,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 413,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11717,7 +10814,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 414,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11744,7 +10841,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 415,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11773,7 +10870,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 416,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11801,7 +10898,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 417,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11824,7 +10921,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 418,
     "brand": "Acure",
     "brandColor": "#8B9D6A",
@@ -11847,7 +10944,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 419,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -11870,7 +10967,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 420,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -11898,7 +10995,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 421,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -11914,7 +11011,7 @@ export const RAW_PRODUCTS = [
     "retailer": "Brand Website",
     "rating": 0,
     "reviews": 0,
-    "imageUrl": "",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1515/0462/products/VEGAN_COLLAGEN_LIP_PLUMPING_GLOSS_OPEN_400x.jpg?v=1637091048",
     "description": "A plumping lip gloss with vegan collagen and hyaluronic acid that visibly plumps and hydrates lips with a glossy finish.",
     "ingredients": [
       "Hyaluronic Acid"
@@ -11923,7 +11020,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 422,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -11950,7 +11047,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 423,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -11975,7 +11072,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 424,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12002,7 +11099,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 425,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12027,7 +11124,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 426,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12056,7 +11153,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 427,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12079,7 +11176,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 428,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12105,7 +11202,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 429,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12132,7 +11229,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 430,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12160,7 +11257,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 431,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12186,7 +11283,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 432,
     "brand": "Pacifica",
     "brandColor": "#7B9EA8",
@@ -12213,7 +11310,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 433,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12241,7 +11338,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 434,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12270,7 +11367,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 435,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12299,7 +11396,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 436,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12328,7 +11425,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 437,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12358,7 +11455,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 438,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12387,7 +11484,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 439,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12419,7 +11516,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 440,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12446,7 +11543,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 441,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12473,7 +11570,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 442,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12503,7 +11600,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 443,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12528,7 +11625,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 444,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12554,7 +11651,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 445,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12581,7 +11678,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 446,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12610,7 +11707,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 447,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12639,7 +11736,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 448,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12670,7 +11767,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 449,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12700,7 +11797,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 450,
     "brand": "e.l.f. Cosmetics",
     "brandColor": "#C17B5C",
@@ -12728,7 +11825,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 451,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -12753,7 +11850,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 452,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -12781,7 +11878,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 453,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -12808,7 +11905,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 454,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -12835,7 +11932,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 455,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -12860,7 +11957,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 456,
     "brand": "Glossier",
     "brandColor": "#C4A882",
@@ -12891,7 +11988,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 457,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -12918,7 +12015,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 458,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -12945,7 +12042,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 459,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -12971,7 +12068,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 460,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -12996,7 +12093,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 461,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -13023,7 +12120,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 462,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -13051,7 +12148,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 463,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -13078,7 +12175,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 464,
     "brand": "Glow Recipe",
     "brandColor": "#D4789A",
@@ -13103,7 +12200,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 465,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13130,7 +12227,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 466,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13158,7 +12255,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 467,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13187,7 +12284,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 468,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13215,7 +12312,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 469,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13244,7 +12341,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 470,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13272,7 +12369,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 471,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13301,7 +12398,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 472,
     "brand": "Biossance",
     "brandColor": "#6A8B7A",
@@ -13330,7 +12427,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 473,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13359,7 +12456,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 474,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13387,7 +12484,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 475,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13415,7 +12512,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 476,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13442,7 +12539,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 477,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13470,7 +12567,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 478,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13497,7 +12594,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 479,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13523,7 +12620,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 480,
     "brand": "Good Molecules",
     "brandColor": "#8BAA8B",
@@ -13551,7 +12648,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 481,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13579,7 +12676,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 482,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13604,7 +12701,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 483,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13634,7 +12731,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 484,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13661,7 +12758,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 485,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13688,7 +12785,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 486,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13715,7 +12812,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 487,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13745,7 +12842,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 488,
     "brand": "Cocokind",
     "brandColor": "#B89B6A",
@@ -13772,7 +12869,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 489,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13797,7 +12894,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 490,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13820,7 +12917,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 491,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13843,7 +12940,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 492,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13870,7 +12967,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 493,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13895,7 +12992,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 494,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13918,7 +13015,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 495,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13946,7 +13043,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 496,
     "brand": "Herbivore Botanicals",
     "brandColor": "#A87B6A",
@@ -13969,7 +13066,7 @@ export const RAW_PRODUCTS = [
     "features": [],
     "skinTypes": []
   },
-  {
+{
     "id": 497,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -13998,7 +13095,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 498,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -14023,7 +13120,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 499,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -14051,7 +13148,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 500,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -14078,7 +13175,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 501,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -14105,7 +13202,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 502,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
@@ -14135,7 +13232,7 @@ export const RAW_PRODUCTS = [
     ],
     "skinTypes": []
   },
-  {
+{
     "id": 503,
     "brand": "Versed",
     "brandColor": "#7A9E8C",
