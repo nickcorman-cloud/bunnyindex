@@ -27,7 +27,7 @@ function ProductModal({ product, onClose }) {
         </div>
         {product.imageUrl && (
           <div style={{width:'100%',aspectRatio:'1/1',borderRadius:'var(--r-sm)',overflow:'hidden',marginBottom:20,background:'var(--parchment)'}}>
-            <img src={product.imageUrl} alt={product.name} style={{width:'100%',height:'100%',objectFit:'cover'}} />
+            <img src={product.imageUrl} alt={product.name} style={{width:'100%',height:'100%',objectFit:'cover'}} referrerPolicy="no-referrer" />
           </div>
         )}
         <div style={{fontSize:11,fontWeight:700,letterSpacing:'0.08em',textTransform:'uppercase',color:'var(--terra)',marginBottom:4}}>{product.brand}</div>
@@ -210,7 +210,7 @@ export default function DirectoryClient() {
                   <div key={product.id} className="card" onClick={() => setSelectedProduct(product)}>
                     <div className="card-img">
                       {product.imageUrl
-                        ? <img src={product.imageUrl} alt={product.name} loading="lazy" />
+                        ? <img src={product.imageUrl} alt={product.name} loading="lazy" referrerPolicy="no-referrer" />
                         : <div className="card-img-placeholder">🐰<div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:12,color:'var(--muted)',marginTop:4}}>{product.brand}</div></div>
                       }
                     </div>
