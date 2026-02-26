@@ -8,7 +8,7 @@ export const RAW_PRODUCTS = [
     "name": "Holy Hydration! Face Cream",
     "type": "Moisturizer",
     "price": 12.0,
-    "priceRange": "$"
+    "priceRange": "$",
     "oilFree": false,
     "fragranceFree": true,
     "vegan": true,
