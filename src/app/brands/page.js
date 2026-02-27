@@ -15,9 +15,16 @@ export default function BrandsPage() {
     <section style={{padding:'64px 0 80px',background:'var(--cream)'}}>
       <div style={{maxWidth:900,margin:'0 auto',padding:'0 24px'}}>
         <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--terra)',marginBottom:12}}>The directory</div>
-        <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:42,fontWeight:600,color:'var(--ink)',margin:'0 0 12px',lineHeight:1.1}}>Our Brands</h1>
-        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:560,lineHeight:1.6,margin:'0 0 56px'}}>
-          Every brand featured on BunnyIndex is independently cruelty-free — no parent company exceptions, no markets that require animal testing. Here's who made the cut.
+        <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:42,fontWeight:600,color:'var(--ink)',margin:'0 0 20px',lineHeight:1.1}}>Our Brands</h1>
+        <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontStyle:'italic',color:'var(--ink)',maxWidth:620,lineHeight:1.5,margin:'0 0 16px'}}>
+          This is just the beginning.
+        </p>
+        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 12px'}}>
+          Below is a curated sample of brands that meet the Bunny Index Standard. There are many more out there — and I'm continually researching and expanding the list.
+        </p>
+        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 56px'}}>
+          If you know of a brand that belongs here, please{' '}
+          <a href="/contact" style={{color:'var(--terra)',textDecoration:'none'}}>contact me</a>.
         </p>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(400px,1fr))',gap:32}}>
           {sorted.map(brand => {
