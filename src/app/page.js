@@ -11,11 +11,10 @@ export const metadata = {
 export default function Home() {
   const featured = FEATURED_IDS.map(id => products.find(p => p.id === id)).filter(Boolean);
   const brandCount = [...new Set(products.map(p => p.brand))].length;
-
   return (
     <>
-      <section style={{background:'var(--cream)',padding:'80px 32px 64px'}}>
-        <div style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'center'}}>
+      <section style={{background:'var(--cream)'}} className="home-hero-section">
+        <div className="home-hero-grid" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'center'}}>
           <div>
             <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--terra)',marginBottom:16}}>The Bunny Index Standard.</div>
             <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:56,fontWeight:600,lineHeight:1.05,color:'var(--ink)',marginBottom:24}}>
@@ -41,11 +40,7 @@ export default function Home() {
               </Link>
             </div>
             <div style={{marginTop:40}}>
-              <img
-                src="/bunnies.jpg"
-                alt="Bunnies in a field of flowers"
-                style={{width:'100%',maxWidth:480,borderRadius:12,display:'block'}}
-              />
+              <img src="/bunnies.jpg" alt="Bunnies in a field of flowers" style={{width:'100%',maxWidth:480,borderRadius:12,display:'block'}} />
             </div>
           </div>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
@@ -53,9 +48,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section style={{background:'var(--ink)',padding:'56px 32px'}}>
-        <div style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:32}}>
+      <section style={{background:'var(--ink)'}} className="home-stats-section">
+        <div className="home-stats-grid" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:32}}>
           {[
             {icon:'🐰',title:'Never tested on animals',body:'Zero animal testing at any stage, including supplier ingredients.'},
             {icon:'🚫',title:'No China market sales',body:'We exclude brands that sell in markets requiring animal testing.'},
@@ -70,7 +64,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       <section style={{padding:'64px 32px',textAlign:'center',background:'var(--cream)'}}>
         <Link href="/directory" style={{display:'inline-flex',alignItems:'center',gap:8,background:'none',border:'1.5px solid var(--border)',color:'var(--ink)',padding:'14px 32px',borderRadius:'var(--r-sm)',fontSize:15,fontWeight:500,textDecoration:'none'}}>
           See all {products.length} products →
