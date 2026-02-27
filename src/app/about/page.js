@@ -7,7 +7,6 @@ export default function AboutPage() {
   return (
     <section style={{ padding: '72px 0 80px', background: 'var(--cream)' }}>
       <div style={{ maxWidth: 680, margin: '0 auto', padding: '0 24px' }}>
-
         <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
           The Bunny Index Standard
         </div>
@@ -93,10 +92,24 @@ export default function AboutPage() {
         <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 40px' }}>
           If a brand enters a required-testing market, it no longer qualifies.
         </p>
-        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 80px' }}>
+        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 64px' }}>
           Cruelty-free should mean exactly that.
         </p>
 
+        <div style={{ borderTop: '1px solid var(--border)', margin: '0 0 48px' }} />
+
+        <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 30, fontWeight: 600, color: 'var(--ink)', margin: '0 0 20px', lineHeight: 1.15 }}>
+          How This Site Is Supported
+        </h2>
+        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 20px' }}>
+          If you buy a product through a link on Bunny Index, I may earn a small affiliate commission. It doesn't cost you anything extra.
+        </p>
+        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 20px' }}>
+          Brands are never selected based on commission rates or affiliate programs. Inclusion is based solely on whether a brand meets the Bunny Index Standard.
+        </p>
+        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--muted)', lineHeight: 1.75, margin: 0 }}>
+          Affiliate revenue helps keep the site running and allows me to continue expanding the directory.
+        </p>
       </div>
     </section>
   );
