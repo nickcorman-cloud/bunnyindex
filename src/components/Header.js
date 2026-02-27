@@ -16,6 +16,7 @@ export default function Header() {
         <Link href="/" className={`nav-btn${path === '/' ? ' active' : ''}`}>Home</Link>
         <Link href="/directory" className={`nav-btn${active('/directory') ? ' active' : ''}`}>Directory</Link>
         <Link href="/brands" className={`nav-btn${active('/brands') ? ' active' : ''}`}>Our Brands</Link>
+          <Link href="/not-carried" className={` nav-btns${active('/not-carried') ? ' active' : ''}`}>Not Carried</Link>
         <Link href="/about" className={`nav-btn${active('/about') ? ' active' : ''}`}>About</Link>
         <Link href="/contact" className={`nav-btn${active('/contact') ? ' active' : ''}`}>Contact</Link>
         <Link href="/terms" className={`nav-btn${active('/terms') ? ' active' : ''}`} style={{fontSize:12,opacity:0.7}}>Terms</Link>
