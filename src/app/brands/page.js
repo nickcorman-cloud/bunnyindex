@@ -10,7 +10,6 @@ export default function BrandsPage() {
   const sorted = [...BRAND_PROFILES]
     .filter(brand => products.some(p => p.brand === brand.name))
     .sort((a, b) => a.name.localeCompare(b.name));
-
   return (
     <section style={{padding:'64px 0 80px',background:'var(--cream)'}}>
       <div style={{maxWidth:900,margin:'0 auto',padding:'0 24px'}}>
@@ -26,7 +25,7 @@ export default function BrandsPage() {
           If you know of a brand that belongs here, please{' '}
           <a href="/contact" style={{color:'var(--terra)',textDecoration:'none'}}>contact me</a>.
         </p>
-        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(400px,1fr))',gap:32}}>
+        <div className="brands-grid" style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(400px,1fr))',gap:32}}>
           {sorted.map(brand => {
             const count = products.filter(p => p.brand === brand.name).length;
             return (
