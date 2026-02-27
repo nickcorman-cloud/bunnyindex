@@ -211,7 +211,7 @@ export default function DirectoryClient() {
                     <div className="card-img">
                       {product.imageUrl
                         ? <img src={product.imageUrl} alt={product.name} loading="lazy" referrerPolicy="no-referrer" />
-                        : <div className="card-img-placeholder">🐰<div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:12,color:'var(--muted)',marginTop:4}}>{product.brand}</div></div>
+                        : <div className="card-img-placeholder"><div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:12,color:'var(--muted)',marginTop:4}}>{product.brand}</div></div>
                       }
                     </div>
                     <div className="card-eyebrow">{product.brand}</div>
