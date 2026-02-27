@@ -11,6 +11,7 @@ export const metadata = {
 export default function Home() {
   const featured = FEATURED_IDS.map(id => products.find(p => p.id === id)).filter(Boolean);
   const brandCount = [...new Set(products.map(p => p.brand))].length;
+
   return (
     <>
       <section style={{background:'var(--cream)',padding:'80px 32px 64px'}}>
@@ -39,13 +40,12 @@ export default function Home() {
                 Our standards
               </Link>
             </div>
-            <div style={{display:'flex',gap:40,marginTop:48}}>
-              {[[products.length, 'Products'],[brandCount, 'Brands'],[16, 'Ingredients']].map(([n, label]) => (
-                <div key={label}>
-                  <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:36,fontWeight:600,color:'var(--terra)'}}>{n}</div>
-                  <div style={{fontSize:12,color:'var(--muted)',marginTop:2}}>{label}</div>
-                </div>
-              ))}
+            <div style={{marginTop:40}}>
+              <img
+                src="/bunnies.jpg"
+                alt="Bunnies in a field of flowers"
+                style={{width:'100%',maxWidth:480,borderRadius:12,display:'block'}}
+              />
             </div>
           </div>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
@@ -53,6 +53,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section style={{background:'var(--ink)',padding:'56px 32px'}}>
         <div style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:32}}>
           {[
@@ -69,6 +70,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+
       <section style={{padding:'64px 32px',textAlign:'center',background:'var(--cream)'}}>
         <Link href="/directory" style={{display:'inline-flex',alignItems:'center',gap:8,background:'none',border:'1.5px solid var(--border)',color:'var(--ink)',padding:'14px 32px',borderRadius:'var(--r-sm)',fontSize:15,fontWeight:500,textDecoration:'none'}}>
           See all {products.length} products →
