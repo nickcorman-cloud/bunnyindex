@@ -1,6 +1,7 @@
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FathomAnalytics from '@/components/FathomAnalytics';
 
 export const metadata = {
   title: 'BunnyIndex — The Cruelty-Free Ingredient Directory',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <FathomAnalytics />
         <Header />
         <main>{children}</main>
         <Footer />
