@@ -80,58 +80,125 @@ export default function NotCarriedPage() {
   return (
     <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
-        <div
-          style={{
-            fontFamily: "'Cormorant Garamond',serif",
-            fontSize: 13,
-            letterSpacing: '0.12em',
-            textTransform: 'uppercase',
-            color: 'var(--terra)',
-            marginBottom: 12,
-          }}
-        >
-          Our Standards
-        </div>
         <h1
           style={{
             fontFamily: "'Cormorant Garamond',serif",
             fontSize: 42,
             fontWeight: 600,
             color: 'var(--ink)',
-            margin: '0 0 16px',
+            margin: '0 0 40px',
             lineHeight: 1.1,
           }}
         >
-          Brands Not Included
+          Why Some Brands Aren't Included
         </h1>
         <p
           style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 16,
-            color: 'var(--muted)',
+            color: 'var(--ink)',
             maxWidth: 620,
-            lineHeight: 1.65,
-            margin: '0 0 12px',
+            lineHeight: 1.75,
+            margin: '0 0 20px',
           }}
         >
-          Some of the most popular skincare brands don't qualify for BunnyIndex — not because
-          their products are bad, but because of who owns them.
+          One night while shopping for skincare, I kept discovering incredible brands — thoughtful
+          formulas, strong missions, beautiful packaging.
         </p>
         <p
           style={{
             fontFamily: "'DM Sans',sans-serif",
             fontSize: 16,
-            color: 'var(--muted)',
+            color: 'var(--ink)',
+            maxWidth: 620,
+            lineHeight: 1.75,
+            margin: '0 0 20px',
+          }}
+        >
+          But after digging a little deeper, I found that many had been acquired by larger parent
+          companies that test on animals elsewhere in their portfolios.
+        </p>
+        <p
+          style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: 16,
+            color: 'var(--ink)',
+            maxWidth: 620,
+            lineHeight: 1.75,
+            margin: '0 0 20px',
+          }}
+        >
+          On the surface, these brands may call themselves cruelty-free. And in many cases,
+          they're doing meaningful work.
+        </p>
+        <p
+          style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: 16,
+            fontWeight: 600,
+            color: 'var(--ink)',
+            maxWidth: 620,
+            lineHeight: 1.75,
+            margin: '0 0 20px',
+          }}
+        >
+          But ownership matters.
+        </p>
+        <p
+          style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: 16,
+            color: 'var(--ink)',
+            maxWidth: 620,
+            lineHeight: 1.75,
+            margin: '0 0 20px',
+          }}
+        >
+          When a brand is owned by a company that profits from animal testing, I don't consider
+          that fully aligned with the standard I want to support.
+        </p>
+        <p
+          style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: 16,
+            fontWeight: 600,
+            color: 'var(--ink)',
+            maxWidth: 620,
+            lineHeight: 1.75,
+            margin: '0 0 20px',
+          }}
+        >
+          So I set a higher bar.
+        </p>
+        <p
+          style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: 16,
+            color: 'var(--ink)',
+            maxWidth: 620,
+            lineHeight: 1.75,
+            margin: '0 0 20px',
+          }}
+        >
+          The brands listed below aren't included on Bunny Index because they don't meet the full
+          standard — whether due to required-testing markets or ownership by companies that test.
+        </p>
+        <p
+          style={{
+            fontFamily: "'Cormorant Garamond',serif",
+            fontSize: 20,
+            fontStyle: 'italic',
+            color: 'var(--terra)',
             maxWidth: 620,
             lineHeight: 1.65,
             margin: '0 0 56px',
           }}
         >
-          BunnyIndex requires that every brand meets three criteria: no animal testing at any
-          stage, no sales in markets that require it, and no ownership by a parent company that
-          does. Many beloved indie brands were acquired by large conglomerates that test where the
-          law demands — which disqualifies them under our standards.
+          This isn't a judgment of quality.
+          <br />
+          It's a line I've chosen to draw.
         </p>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
           {Object.entries(grouped).map(([parent, brands]) => (
             <div key={parent}>
