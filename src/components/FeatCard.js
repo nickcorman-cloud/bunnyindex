@@ -22,6 +22,7 @@ export default function FeatCard({ product }) {
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
           <span style={{fontSize:14,fontWeight:500,color:'var(--ink)'}}>${product.price}</span>
           <a href={product.buyUrl} target="_blank" rel="noopener noreferrer"
+            onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}
             style={{fontSize:11,color:'var(--terra)',fontWeight:600,textDecoration:'none',border:'1px solid var(--terra)',borderRadius:20,padding:'3px 8px'}}>
             {buyLabel(product.buyUrl)}
           </a>
