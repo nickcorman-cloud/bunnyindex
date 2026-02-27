@@ -11,11 +11,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const product = findProductBySlug(params.slug);
   if (!product) return { title: 'Product not found — BunnyIndex' };
-
   const ingredientList = product.ingredients?.join(', ');
-  const description = product.description ||
-    `${product.brand} ${product.name} — cruelty-free ${product.type?.toLowerCase() || 'skincare'}${ingredientList ? ` with ${ingredientList}` : ''}. Verified cruelty-free, independently owned, never sold in markets that require animal testing.`;
-
+  const description = product.description || `${product.brand} ${product.name} — cruelty-free ${product.type?.toLowerCase() || 'skincare'}${ingredientList ? ` with ${ingredientList}` : ''}. Verified cruelty-free, independently owned, never sold in markets that require animal testing.`;
   return {
     title: `${product.brand} ${product.name} — BunnyIndex`,
     description,
@@ -89,14 +86,11 @@ export default function ProductPage({ params }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       {/* Breadcrumb */}
-      <div style={{background:'var(--parchment)',borderBottom:'1px solid var(--border)',padding:'12px 32px'}}>
-        <div style={{maxWidth:1100,margin:'0 auto',display:'flex',gap:8,alignItems:'center',fontSize:13,color:'var(--muted)'}}>
+      <div className="breadcrumb">
+        <div style={{maxWidth:1100,margin:'0 auto',display:'flex',gap:8,alignItems:'center',fontSize:13,color:'var(--muted)',flexWrap:'wrap'}}>
           <Link href="/" style={{color:'var(--muted)',textDecoration:'none'}}>Home</Link>
           <span>›</span>
           <Link href="/directory" style={{color:'var(--muted)',textDecoration:'none'}}>Directory</Link>
@@ -107,9 +101,8 @@ export default function ProductPage({ params }) {
         </div>
       </div>
 
-      {/* Main content */}
-      <div style={{maxWidth:1100,margin:'0 auto',padding:'48px 32px',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'start'}}>
-
+      {/* Main content — product-layout class handles 1-col on mobile via globals.css */}
+      <div className="product-layout product-page-padding" style={{maxWidth:1100,margin:'0 auto',padding:'48px 32px',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'start'}}>
         {/* Left: image */}
         <div>
           <div style={{aspectRatio:'1/1',borderRadius:'var(--r-md)',background:'var(--parchment)',border:'1px solid var(--border)',overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
@@ -127,14 +120,12 @@ export default function ProductPage({ params }) {
         <div>
           {/* Brand + type */}
           <div style={{display:'flex',gap:8,alignItems:'center',marginBottom:8}}>
-            <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`}
-              style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--terra)',textDecoration:'none'}}>
+            <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`} style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--terra)',textDecoration:'none'}}>
               {product.brand}
             </Link>
             <span style={{color:'var(--border)'}}>·</span>
             <span style={{fontSize:11,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'0.08em'}}>{product.type}</span>
           </div>
-
           <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:40,fontWeight:600,color:'var(--ink)',lineHeight:1.08,margin:'0 0 8px'}}>{product.name}</h1>
           <div style={{fontSize:24,fontWeight:500,color:'var(--ink)',margin:'0 0 20px'}}>${product.price}</div>
 
@@ -161,8 +152,7 @@ export default function ProductPage({ params }) {
               <div style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--ink)',marginBottom:8}}>Key Ingredients</div>
               <div style={{display:'flex',flexWrap:'wrap',gap:6}}>
                 {product.ingredients.map(i => (
-                  <Link key={i} href={`/directory?ingredient=${encodeURIComponent(i)}`}
-                    style={{background:'var(--terra-light)',color:'var(--terra)',borderRadius:20,padding:'4px 12px',fontSize:13,fontWeight:500,textDecoration:'none'}}>
+                  <Link key={i} href={`/directory?ingredient=${encodeURIComponent(i)}`} style={{background:'var(--terra-light)',color:'var(--terra)',borderRadius:20,padding:'4px 12px',fontSize:13,fontWeight:500,textDecoration:'none'}}>
                     {i}
                   </Link>
                 ))}
@@ -191,8 +181,7 @@ export default function ProductPage({ params }) {
           </div>
 
           {/* Buy button */}
-          <a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored"
-            style={{display:'inline-flex',alignItems:'center',gap:8,background:'var(--terra)',color:'var(--white)',border:'none',borderRadius:'var(--r-sm)',padding:'14px 24px',fontSize:15,fontWeight:600,cursor:'pointer',textDecoration:'none',marginBottom:12}}>
+          <a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored" style={{display:'inline-flex',alignItems:'center',gap:8,background:'var(--terra)',color:'var(--white)',border:'none',borderRadius:'var(--r-sm)',padding:'14px 24px',fontSize:15,fontWeight:600,cursor:'pointer',textDecoration:'none',marginBottom:12}}>
             {buyLabel(product.buyUrl)}
           </a>
           <p style={{fontSize:11,color:'var(--muted)',margin:0}}>Affiliate link — we may earn a small commission at no extra cost to you.</p>
@@ -210,13 +199,12 @@ export default function ProductPage({ params }) {
 
       {/* Brand section */}
       {brandProfile && (
-        <div style={{background:'var(--parchment)',borderTop:'1px solid var(--border)',borderBottom:'1px solid var(--border)',padding:'48px 32px'}}>
+        <div className="product-section-padding" style={{background:'var(--parchment)',borderTop:'1px solid var(--border)',borderBottom:'1px solid var(--border)',padding:'48px 32px'}}>
           <div style={{maxWidth:1100,margin:'0 auto'}}>
             <div style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--muted)',marginBottom:8}}>About the brand</div>
             <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:26,fontWeight:600,color:'var(--ink)',marginBottom:12}}>{brandProfile.name}</div>
             <p style={{fontSize:15,color:'var(--muted)',lineHeight:1.7,maxWidth:700,margin:'0 0 16px'}}>{brandProfile.blurb}</p>
-            <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`}
-              style={{fontSize:13,color:'var(--terra)',fontWeight:600,textDecoration:'none'}}>
+            <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`} style={{fontSize:13,color:'var(--terra)',fontWeight:600,textDecoration:'none'}}>
               See all {sameBrand.length + 1} {product.brand} products →
             </Link>
           </div>
@@ -225,9 +213,9 @@ export default function ProductPage({ params }) {
 
       {/* Related products */}
       {related.length > 0 && (
-        <div style={{maxWidth:1100,margin:'0 auto',padding:'48px 32px'}}>
+        <div className="product-page-padding" style={{maxWidth:1100,margin:'0 auto',padding:'48px 32px'}}>
           <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:28,fontWeight:600,color:'var(--ink)',marginBottom:24}}>You might also like</div>
-          <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:20}}>
+          <div className="related-grid" style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:20}}>
             {related.map(p => <RelatedCard key={p.id} product={p} />)}
           </div>
         </div>
