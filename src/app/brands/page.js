@@ -3,11 +3,13 @@ import { products, BRAND_PROFILES } from '@/lib/constants';
 
 export const metadata = {
   title: 'Our Brands — BunnyIndex',
-  description: 'Meet the 18 independently cruelty-free brands featured on BunnyIndex. No parent company exceptions, no markets that require animal testing.',
+  description: 'Meet the independently cruelty-free brands featured on BunnyIndex. No parent company exceptions, no markets that require animal testing.',
 };
 
 export default function BrandsPage() {
-  const sorted = [...BRAND_PROFILES].sort((a, b) => a.name.localeCompare(b.name));
+  const sorted = [...BRAND_PROFILES]
+    .filter(brand => products.some(p => p.brand === brand.name))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <section style={{padding:'64px 0 80px',background:'var(--cream)'}}>
@@ -24,8 +26,7 @@ export default function BrandsPage() {
               <div key={brand.name} style={{background:'var(--white)',borderRadius:'var(--r-md)',border:'1px solid var(--border)',padding:'28px 28px 24px',display:'flex',flexDirection:'column',gap:10}}>
                 <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:12}}>
                   <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)',lineHeight:1.1}}>{brand.name}</div>
-                  <Link href={`/directory?brand=${encodeURIComponent(brand.name)}`}
-                    style={{flexShrink:0,background:'none',border:'1px solid var(--border)',borderRadius:20,padding:'4px 12px',fontFamily:"'DM Sans',sans-serif",fontSize:12,color:'var(--muted)',textDecoration:'none',whiteSpace:'nowrap'}}>
+                  <Link href={`/directory?brand=${encodeURIComponent(brand.name)}`} style={{flexShrink:0,background:'none',border:'1px solid var(--border)',borderRadius:20,padding:'4px 12px',fontFamily:"'DM Sans',sans-serif",fontSize:12,color:'var(--muted)',textDecoration:'none',whiteSpace:'nowrap'}}>
                     {count} products →
                   </Link>
                 </div>
