@@ -43,6 +43,7 @@ export const CONCERNS = [
   'Hyperpigmentation',
   'Oily Skin',
   'Rosacea',
+  'Seborrheic Dermatitis',
   'Sensitive Skin',
   'Sun Protection',
 ];
