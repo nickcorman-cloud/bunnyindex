@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <section style={{background:'var(--cream)'}} className="home-hero-section">
-        <div className="home-hero-grid" style={{maxWidth:1400,margin:'0 auto',padding:'48px 32px 0',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'center'}}>
+        <div className="home-hero-grid" style={{maxWidth:1400,margin:'0 auto',padding:'48px 32px 64px',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'start'}}>
           <div>
             <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--terra)',marginBottom:16}}>The Bunny Index Standard.</div>
             <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:56,fontWeight:600,lineHeight:1.05,color:'var(--ink)',marginBottom:24}}>
@@ -23,7 +23,7 @@ export default function Home() {
             <p style={{fontSize:16,color:'var(--ink-muted)',lineHeight:1.65,marginBottom:32,maxWidth:480}}>
               Search brands, products, ingredients, and skin concerns — all vetted against a strict, no-loopholes standard.
             </p>
-            <div style={{display:'flex',gap:12,flexWrap:'wrap'}}>
+            <div style={{display:'flex',gap:12,flexWrap:'wrap',marginBottom:40}}>
               <Link href="/directory" style={{background:'var(--terra)',color:'var(--white)',padding:'12px 24px',borderRadius:'var(--r-sm)',fontWeight:600,fontSize:15,textDecoration:'none',display:'inline-block'}}>
                 Search
               </Link>
@@ -31,13 +31,11 @@ export default function Home() {
                 Our Vision
               </Link>
             </div>
+            <img src="/bunnies.jpg" alt="Bunnies in a field of flowers" style={{width:'100%',borderRadius:12,display:'block'}} />
           </div>
-          <div style={{marginTop:40}}>
-            <img src="/bunnies.jpg" alt="Bunnies in a field of flowers" style={{width:'100%',maxWidth:480,borderRadius:12,display:'block'}} />
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
+            {featured.map(p => <FeatCard key={p.id} product={p} />)}
           </div>
-        </div>
-        <div style={{maxWidth:1400,margin:'0 auto',padding:'40px 32px 64px',display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>
-          {featured.map(p => <FeatCard key={p.id} product={p} />)}
         </div>
       </section>
       <section style={{background:'var(--ink)'}} className="home-stats-section">
@@ -63,4 +61,4 @@ export default function Home() {
       </section>
     </>
   );
-            }
+}
