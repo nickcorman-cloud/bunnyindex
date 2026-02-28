@@ -1,4 +1,5 @@
 import './globals.css';
+import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FathomAnalytics from '@/components/FathomAnalytics';
@@ -13,9 +14,9 @@ export const metadata = {
     siteName: 'BunnyIndex',
     type: 'website',
   },
-    other: {
-          'awin-site-verification': 'Awin',
-    },
+  other: {
+    'awin-site-verification': 'Awin',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +27,10 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script
+          src="https://subscribe-forms.beehiiv.com/attribution.min.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
