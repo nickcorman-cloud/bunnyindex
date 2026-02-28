@@ -177,8 +177,7 @@ export default function ProductPage({ params }) {
             {product.fragranceFree && <span style={{background:'var(--parchment)',color:'var(--ink-muted)',borderRadius:20,padding:'4px 12px',fontSize:12,border:'1px solid var(--border)'}}>Fragrance-Free</span>}
             {product.oilFree && <span style={{background:'var(--parchment)',color:'var(--ink-muted)',borderRadius:20,padding:'4px 12px',fontSize:12,border:'1px solid var(--border)'}}>Oil-Free</span>}
             {product.nonComedogenic && <span style={{background:'var(--parchment)',color:'var(--ink-muted)',borderRadius:20,padding:'4px 12px',fontSize:12,border:'1px solid var(--border)'}}>Non-Comedogenic</span>}
-            {product.vegan && <span style={{background:'var(--parchment)',color:'var(--ink-muted)',borderRadius:20,padding:'4px 12px',fontSize:12,border:'1px solid var(--border)'}}>🌱 Vegan</span>}
-          </div>
+            div>
 
           {/* Buy button */}
           <a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored" style={{display:'inline-flex',alignItems:'center',gap:8,background:'var(--terra)',color:'var(--white)',border:'none',borderRadius:'var(--r-sm)',padding:'14px 24px',fontSize:15,fontWeight:600,cursor:'pointer',textDecoration:'none',marginBottom:12}}>
