@@ -61,11 +61,7 @@ const NOT_CARRIED = [
 ];
 
 export default function NotCarriedPage() {
-  const grouped = NOT_CARRIED.reduce((acc, brand) => {
-    if (!acc[brand.acquiredBy]) acc[brand.acquiredBy] = [];
-    acc[brand.acquiredBy].push(brand);
-    return acc;
-  }, {});
+  const sorted = [...NOT_CARRIED].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
@@ -97,24 +93,14 @@ export default function NotCarriedPage() {
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontStyle: 'italic', color: 'var(--terra)', maxWidth: 620, lineHeight: 1.65, margin: '0 0 56px' }}>
           This isn't a judgment of quality.<br />It's a line I've chosen to draw.
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
-          {Object.entries(grouped).map(([parent, brands]) => (
-            <div key={parent}>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: 14, paddingBottom: 10, borderBottom: '1px solid var(--border)' }}>
-                <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontWeight: 600, color: 'var(--ink)' }}>{parent}</span>
-                <span style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 12, color: 'var(--muted)' }}>{brands.length} brand{brands.length !== 1 ? 's' : ''}</span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          {sorted.map(brand => (
+            <div key={brand.name} style={{ background: 'var(--white)', borderRadius: 'var(--r-md)', border: '1px solid var(--border)', padding: '18px 22px', display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+                <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, fontWeight: 600, color: 'var(--ink)' }}>{brand.name}</div>
+                <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, color: 'var(--muted)' }}>acquired {brand.year}</div>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {brands.map(brand => (
-                  <div key={brand.name} style={{ background: 'var(--white)', borderRadius: 'var(--r-md)', border: '1px solid var(--border)', padding: '18px 22px', display: 'flex', flexDirection: 'column', gap: 6 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-                      <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, fontWeight: 600, color: 'var(--ink)' }}>{brand.name}</div>
-                      <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, color: 'var(--muted)' }}>acquired {brand.year}</div>
-                    </div>
-                    <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, color: 'var(--muted)', lineHeight: 1.6, margin: 0 }}>{brand.reason}</p>
-                  </div>
-                ))}
-              </div>
+              <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, color: 'var(--muted)', lineHeight: 1.6, margin: 0 }}>{brand.reason}</p>
             </div>
           ))}
         </div>
@@ -127,4 +113,4 @@ export default function NotCarriedPage() {
       </div>
     </section>
   );
-}
+            }
