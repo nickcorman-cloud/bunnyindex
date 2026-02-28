@@ -15218,6 +15218,12 @@ export const RAW_PRODUCTS = [
             "All",
             "Dry",
             "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/jet-lag-mask-P429952"
+            }
         ]
     },
     {
@@ -15252,6 +15258,12 @@ export const RAW_PRODUCTS = [
         "skinTypes": [
             "All",
             "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/summer-fridays-jet-lag-hydration-mist-P511756"
+            }
         ]
     },
     {
@@ -15286,6 +15298,12 @@ export const RAW_PRODUCTS = [
         "skinTypes": [
             "All",
             "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/summer-fridays-jet-lag-hydration-serum-P511987"
+            }
         ]
     },
     {
@@ -15319,6 +15337,12 @@ export const RAW_PRODUCTS = [
         ],
         "skinTypes": [
             "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/summer-fridays-jet-lag-overnight-eye-serum-for-fine-lines-wrinkles-with-gentle-retinol-blend-P510508"
+            }
         ]
     },
     {
@@ -15392,6 +15416,12 @@ export const RAW_PRODUCTS = [
         ],
         "skinTypes": [
             "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/cc-me-vitamin-c-serum-P449180"
+            }
         ]
     },
     {
@@ -15463,6 +15493,12 @@ export const RAW_PRODUCTS = [
         ],
         "skinTypes": [
             "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/summer-fridays-midnight-ritual-retinol-renewal-serum-P503827"
+            }
         ]
     },
     {
@@ -15497,6 +15533,12 @@ export const RAW_PRODUCTS = [
         "skinTypes": [
             "Dry",
             "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/summer-fridays-heavenly-sixteen-P476028"
+            }
         ]
     },
     {
@@ -15531,6 +15573,12 @@ export const RAW_PRODUCTS = [
         "skinTypes": [
             "All",
             "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/shadedrops-broad-spectrum-spf-30-mineral-milk-sunscreen-P500181"
+            }
         ]
     },
     {
@@ -15565,6 +15613,12 @@ export const RAW_PRODUCTS = [
             "All",
             "Oily",
             "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Sephora",
+                "url": "https://www.sephora.com/product/summer-fridays-super-amino-gel-cleanser-P455242"
+            }
         ]
     },
     {
