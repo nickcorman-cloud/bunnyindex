@@ -13,6 +13,9 @@ export const metadata = {
     siteName: 'BunnyIndex',
     type: 'website',
   },
+    other: {
+          'awin-site-verification': 'Awin',
+    },
 };
 
 export default function RootLayout({ children }) {
