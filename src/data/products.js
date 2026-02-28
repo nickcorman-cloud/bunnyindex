@@ -648,7 +648,7 @@ export const RAW_PRODUCTS = [
     ],
     "concerns": [
       "Acne",
-      "Oily Skin"
+      "Oily Skin",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -1135,7 +1135,7 @@ export const RAW_PRODUCTS = [
     "concerns": [
       "Acne",
       "Blackheads",
-      "Oily Skin"
+      "Oily Skin",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -1968,7 +1968,7 @@ export const RAW_PRODUCTS = [
       "Acne",
       "Hyperpigmentation",
       "Blackheads",
-      "Brightening"
+      "Brightening",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -2064,7 +2064,7 @@ export const RAW_PRODUCTS = [
     "concerns": [
       "Acne",
       "Oily Skin",
-      "Blackheads"
+      "Blackheads",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -2333,7 +2333,7 @@ export const RAW_PRODUCTS = [
       "Niacinamide"
     ],
     "concerns": [
-      "Acne"
+      "Acne",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -2367,7 +2367,7 @@ export const RAW_PRODUCTS = [
     "concerns": [
       "Acne",
       "Blackheads",
-      "Oily Skin"
+      "Oily Skin",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -2631,7 +2631,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid"
     ],
     "concerns": [
-      "Oily Skin"
+      "Oily Skin",
         "Seborrheic Dermatitis"
     ],
     "features": [
@@ -3205,7 +3205,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid"
     ],
     "concerns": [
-      "Hyperpigmentation"
+      "Hyperpigmentation",
         "Seborrheic Dermatitis"
     ],
     "features": [],
