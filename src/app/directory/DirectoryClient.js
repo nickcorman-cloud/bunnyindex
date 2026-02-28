@@ -53,8 +53,7 @@ function ProductModal({ product, onClose }) {
         <div style={{display:'flex',gap:8,flexWrap:'wrap',marginBottom:20}}>
           {product.fragranceFree && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>Fragrance-Free</span>}
           {product.oilFree && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>Oil-Free</span>}
-          {product.vegan && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>🌱 Vegan</span>}
-        </div>
+          div>
         <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer"
                           onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}>
           {buyLabel(product.buyUrl)}
@@ -95,7 +94,6 @@ export default function DirectoryClient() {
   const [selTypes, setSelTypes] = useState([]);
   const [oilFree, setOilFree] = useState(false);
   const [fragFree, setFragFree] = useState(false);
-  const [veganOnly, setVeganOnly] = useState(false);
   const [sortBy, setSortBy] = useState('popular');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [page, setPage] = useState(1);
@@ -103,10 +101,10 @@ export default function DirectoryClient() {
   const toggle = (arr, setArr, val) => setArr(prev =>
     prev.includes(val) ? prev.filter(x => x !== val) : [...prev, val]
   );
-  const hasFilters = selIngredients.length || selConcerns.length || selBrands.length || selTypes.length || oilFree || fragFree || veganOnly;
+  const hasFilters = selIngredients.length || selConcerns.length || selBrands.length || selTypes.length || oilFree || fragFree;
   const clearAll = () => {
     setSelIngredients([]); setSelConcerns([]); setSelBrands([]); setSelTypes([]);
-    setOilFree(false); setFragFree(false); setVeganOnly(false); setPage(1);
+    setOilFree(false); setFragFree(false); setPage(1);
   };
 
   const filtered = useMemo(() => {
@@ -117,16 +115,15 @@ export default function DirectoryClient() {
     if (selTypes.length) r = r.filter(p => selTypes.includes(p.type));
     if (oilFree) r = r.filter(p => p.oilFree);
     if (fragFree) r = r.filter(p => p.fragranceFree);
-    if (veganOnly) r = r.filter(p => p.vegan);
     return [...r].sort((a, b) =>
       sortBy === 'popular' ? (b.reviews || 0) - (a.reviews || 0) :
       sortBy === 'rating' ? (b.rating || 0) - (a.rating || 0) :
       sortBy === 'price-lo' ? a.price - b.price : b.price - a.price
     );
-  }, [selIngredients, selConcerns, selBrands, selTypes, oilFree, fragFree, veganOnly, sortBy]);
+  }, [selIngredients, selConcerns, selBrands, selTypes, oilFree, fragFree, sortBy]);
 
   const prevFilterKey = useRef('');
-  const filterKey = [selIngredients.join(), selConcerns.join(), selBrands.join(), selTypes.join(), oilFree, fragFree, veganOnly, sortBy].join('|');
+  const filterKey = [selIngredients.join(), selConcerns.join(), selBrands.join(), selTypes.join(), oilFree, fragFree, sortBy].join('|');
   if (filterKey !== prevFilterKey.current) { prevFilterKey.current = filterKey; if (page !== 1) setPage(1); }
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
@@ -177,8 +174,7 @@ export default function DirectoryClient() {
             <div className="sb-title">Properties</div>
             <div className="sb-chips">
               {[['Fragrance-free', fragFree, () => setFragFree(v => !v)],
-                ['Oil-free', oilFree, () => setOilFree(v => !v)],
-                ['🌱 Vegan', veganOnly, () => setVeganOnly(v => !v)]].map(([label, active, fn]) => (
+                ['Oil-free', oilFree, () => setOilFree(v => !v)]].map(([label, active, fn]) => (
                 <button key={label} className={`sb-toggle${active ? ' active' : ''}`} onClick={fn}>
                   <span className="sb-pill" />
                   {label}
