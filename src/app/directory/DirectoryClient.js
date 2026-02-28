@@ -2,9 +2,7 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import {
-  products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify
-} from '@/lib/constants';
+import { products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify } from '@/lib/constants';
 
 const PAGE_SIZE = 24;
 
@@ -20,8 +18,7 @@ function ProductModal({ product, onClose }) {
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>✕</button>
         <div style={{marginBottom:16}}>
-          <Link href={`/products/${slugify(product.brand, product.name)}`}
-            style={{fontSize:12,color:'var(--muted)',textDecoration:'none',display:'inline-flex',alignItems:'center',gap:4}}>
+          <Link href={`/products/${slugify(product.brand, product.name)}`} style={{fontSize:12,color:'var(--muted)',textDecoration:'none',display:'inline-flex',alignItems:'center',gap:4}}>
             ↗ View full page
           </Link>
         </div>
@@ -53,9 +50,8 @@ function ProductModal({ product, onClose }) {
         <div style={{display:'flex',gap:8,flexWrap:'wrap',marginBottom:20}}>
           {product.fragranceFree && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>Fragrance-Free</span>}
           {product.oilFree && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>Oil-Free</span>}
-            </div>
-        <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer"
-                          onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}>
+        </div>
+        <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer" onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}>
           {buyLabel(product.buyUrl)}
         </a>
       </div>
@@ -63,28 +59,34 @@ function ProductModal({ product, onClose }) {
   );
 }
 
-function SidebarChips({ label, options, selected, onToggle, onClear }) {
+function SidebarChips({ label, options, selected, onToggle, onClear, maxVisible }) {
+  const [expanded, setExpanded] = useState(false);
+  const shown = (maxVisible && !expanded) ? options.slice(0, maxVisible) : options;
+  const hasMore = maxVisible && options.length > maxVisible;
   return (
     <div className="sb-section">
       <div className="sb-title">
-        {label}
-        {selected.length > 0 && <button className="sb-clear" onClick={onClear}>clear</button>}
+        {label} {selected.length > 0 && <button className="sb-clear" onClick={onClear}>clear</button>}
       </div>
       <div className="sb-chips">
-        {options.map(opt => (
+        {shown.map(opt => (
           <button key={opt} className={`sb-chip${selected.includes(opt) ? ' active' : ''}`} onClick={() => onToggle(opt)}>
             <span className="sb-check">{selected.includes(opt) && '✓'}</span>
             {opt}
           </button>
         ))}
       </div>
+      {hasMore && (
+        <button onClick={() => setExpanded(v => !v)} style={{fontSize:11,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:'4px 0',marginTop:2,fontWeight:600,letterSpacing:'0.02em'}}>
+          {expanded ? 'Show less ↑' : `Show all (${options.length}) ↓`}
+        </button>
+      )}
     </div>
   );
 }
 
 export default function DirectoryClient() {
   const searchParams = useSearchParams();
-
   const [selIngredients, setSelIngredients] = useState([]);
   const [selConcerns, setSelConcerns] = useState([]);
   const [selBrands, setSelBrands] = useState(() => {
@@ -92,6 +94,7 @@ export default function DirectoryClient() {
     return brand ? [brand] : [];
   });
   const [selTypes, setSelTypes] = useState([]);
+  const [selPrice, setSelPrice] = useState('');
   const [oilFree, setOilFree] = useState(false);
   const [fragFree, setFragFree] = useState(false);
   const [sortBy, setSortBy] = useState('popular');
@@ -101,10 +104,18 @@ export default function DirectoryClient() {
   const toggle = (arr, setArr, val) => setArr(prev =>
     prev.includes(val) ? prev.filter(x => x !== val) : [...prev, val]
   );
-  const hasFilters = selIngredients.length || selConcerns.length || selBrands.length || selTypes.length || oilFree || fragFree;
+
+  const hasFilters = selIngredients.length || selConcerns.length || selBrands.length || selTypes.length || oilFree || fragFree || selPrice;
+
   const clearAll = () => {
-    setSelIngredients([]); setSelConcerns([]); setSelBrands([]); setSelTypes([]);
-    setOilFree(false); setFragFree(false); setPage(1);
+    setSelIngredients([]);
+    setSelConcerns([]);
+    setSelBrands([]);
+    setSelTypes([]);
+    setSelPrice('');
+    setOilFree(false);
+    setFragFree(false);
+    setPage(1);
   };
 
   const filtered = useMemo(() => {
@@ -113,18 +124,25 @@ export default function DirectoryClient() {
     if (selConcerns.length) r = r.filter(p => selConcerns.every(c => p.concerns.includes(c)));
     if (selBrands.length) r = r.filter(p => selBrands.includes(p.brand));
     if (selTypes.length) r = r.filter(p => selTypes.includes(p.type));
+    if (selPrice === '<15') r = r.filter(p => p.price < 15);
+    else if (selPrice === '15-30') r = r.filter(p => p.price >= 15 && p.price <= 30);
+    else if (selPrice === '30+') r = r.filter(p => p.price > 30);
     if (oilFree) r = r.filter(p => p.oilFree);
     if (fragFree) r = r.filter(p => p.fragranceFree);
     return [...r].sort((a, b) =>
       sortBy === 'popular' ? (b.reviews || 0) - (a.reviews || 0) :
       sortBy === 'rating' ? (b.rating || 0) - (a.rating || 0) :
-      sortBy === 'price-lo' ? a.price - b.price : b.price - a.price
+      sortBy === 'price-lo' ? a.price - b.price :
+      b.price - a.price
     );
-  }, [selIngredients, selConcerns, selBrands, selTypes, oilFree, fragFree, sortBy]);
+  }, [selIngredients, selConcerns, selBrands, selTypes, selPrice, oilFree, fragFree, sortBy]);
 
   const prevFilterKey = useRef('');
-  const filterKey = [selIngredients.join(), selConcerns.join(), selBrands.join(), selTypes.join(), oilFree, fragFree, sortBy].join('|');
-  if (filterKey !== prevFilterKey.current) { prevFilterKey.current = filterKey; if (page !== 1) setPage(1); }
+  const filterKey = [selIngredients.join(), selConcerns.join(), selBrands.join(), selTypes.join(), selPrice, oilFree, fragFree, sortBy].join('|');
+  if (filterKey !== prevFilterKey.current) {
+    prevFilterKey.current = filterKey;
+    if (page !== 1) setPage(1);
+  }
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -137,7 +155,6 @@ export default function DirectoryClient() {
           <span className="result-count">{filtered.length} of {products.length}</span>
         </div>
       </div>
-
       <div className="dir-body">
         {/* Sidebar */}
         <aside className="sidebar">
@@ -163,21 +180,33 @@ export default function DirectoryClient() {
             ))}
           </div>
 
-          <SidebarChips label="Skin Concerns" options={CONCERNS} selected={selConcerns}
-            onToggle={v => toggle(selConcerns, setSelConcerns, v)} onClear={() => setSelConcerns([])} />
-          <SidebarChips label="Product Type" options={TYPES} selected={selTypes}
-            onToggle={v => toggle(selTypes, setSelTypes, v)} onClear={() => setSelTypes([])} />
-          <SidebarChips label="Brand" options={BRAND_NAMES} selected={selBrands}
-            onToggle={v => toggle(selBrands, setSelBrands, v)} onClear={() => setSelBrands([])} />
+          <SidebarChips label="Skin Concerns" options={CONCERNS} selected={selConcerns} onToggle={v => toggle(selConcerns, setSelConcerns, v)} onClear={() => setSelConcerns([])} />
+
+          <SidebarChips label="Product Type" options={TYPES} selected={selTypes} onToggle={v => toggle(selTypes, setSelTypes, v)} onClear={() => setSelTypes([])} maxVisible={5} />
+
+          {/* Price */}
+          <div className="sb-section">
+            <div className="sb-title">
+              Price {selPrice && <button className="sb-clear" onClick={() => setSelPrice('')}>clear</button>}
+            </div>
+            <div className="sb-chips">
+              {[['<15', 'Under $15'], ['15-30', '$15–$30'], ['30+', '$30+']].map(([val, label]) => (
+                <button key={val} className={`sb-chip${selPrice === val ? ' active' : ''}`} onClick={() => setSelPrice(prev => prev === val ? '' : val)}>
+                  <span className="sb-check">{selPrice === val && '✓'}</span>
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <SidebarChips label="Brand" options={BRAND_NAMES} selected={selBrands} onToggle={v => toggle(selBrands, setSelBrands, v)} onClear={() => setSelBrands([])} maxVisible={6} />
 
           <div className="sb-section">
             <div className="sb-title">Properties</div>
             <div className="sb-chips">
-              {[['Fragrance-free', fragFree, () => setFragFree(v => !v)],
-                ['Oil-free', oilFree, () => setOilFree(v => !v)]].map(([label, active, fn]) => (
+              {[['Fragrance-free', fragFree, () => setFragFree(v => !v)], ['Oil-free', oilFree, () => setOilFree(v => !v)]].map(([label, active, fn]) => (
                 <button key={label} className={`sb-toggle${active ? ' active' : ''}`} onClick={fn}>
-                  <span className="sb-pill" />
-                  {label}
+                  <span className="sb-pill" /> {label}
                 </button>
               ))}
             </div>
@@ -193,7 +222,6 @@ export default function DirectoryClient() {
               ))}
             </div>
           </div>
-
           {filtered.length === 0 ? (
             <div className="empty">
               <div className="empty-icon">🐰</div>
@@ -212,9 +240,7 @@ export default function DirectoryClient() {
                       }
                     </div>
                     <div className="card-eyebrow">{product.brand}</div>
-                    <Link href={`/products/${slugify(product.brand, product.name)}`}
-                      onClick={e => e.stopPropagation()}
-                      style={{textDecoration:'none'}}>
+                    <Link href={`/products/${slugify(product.brand, product.name)}`} onClick={e => e.stopPropagation()} style={{textDecoration:'none'}}>
                       <div className="card-name" style={{textDecoration:'none'}}>{product.name}</div>
                     </Link>
                     {product.ingredients?.length > 0 && (
@@ -224,15 +250,13 @@ export default function DirectoryClient() {
                     )}
                     <div className="card-footer">
                       <span className="card-price">${product.price}</span>
-                      <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer"
-                        onClick={e => e.stopPropagation()}>
+                      <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
                         {buyLabel(product.buyUrl)}
                       </a>
                     </div>
                   </div>
                 ))}
               </div>
-
               {totalPages > 1 && (
                 <div className="pagination">
                   <button className="page-btn" onClick={() => { setPage(p => p - 1); window.scrollTo(0,0); }} disabled={page === 1}>←</button>
@@ -254,7 +278,6 @@ export default function DirectoryClient() {
           )}
         </div>
       </div>
-
       {selectedProduct && <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />}
     </>
   );
