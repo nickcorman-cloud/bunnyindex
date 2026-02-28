@@ -30,22 +30,20 @@ export const BRAND_NAMES = [...new Set(products.map((p) => p.brand))].sort();
 
 export const INGREDIENT_GROUPS = [
   { label: 'Hydrators', items: ['Hyaluronic Acid', 'Ceramides', 'Squalane'] },
-  { label: 'Exfoliants', items: ['Glycolic Acid', 'Lactic Acid', 'Salicylic Acid', 'Azelaic Acid'] },
-  { label: 'Brighteners', items: ['Vitamin C', 'Niacinamide', 'Tranexamic Acid'] },
-  { label: 'Treatments', items: ['Retinol', 'Peptides', 'Bakuchiol', 'Caffeine', 'Vitamin E'] },
+  { label: 'Exfoliants', items: ['Glycolic Acid', 'Lactic Acid', 'Salicylic Acid'] },
+  { label: 'Brighteners', items: ['Vitamin C', 'Niacinamide', 'Tranexamic Acid', 'Azelaic Acid'] },
+  { label: 'Treatments', items: ['Retinol', 'Peptides', 'Bakuchiol'] },
   { label: 'Sun Protection', items: ['SPF'] },
 ];
 
 export const CONCERNS = [
   'Acne',
-  'Brightening',
   'Dry Skin',
   'Hyperpigmentation',
   'Oily Skin',
   'Rosacea',
   'Seborrheic Dermatitis',
   'Sensitive Skin',
-  'Sun Protection',
 ];
 
 export const TYPES = [
