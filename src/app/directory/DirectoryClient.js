@@ -265,9 +265,19 @@ export default function DirectoryClient() {
                     )}
                     <div className="card-footer">
                       <span className="card-price">${product.price}</span>
-                      <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
-                        {buyLabel(product.buyUrl)}
-                      </a>
+                      <div style={{display:'flex',flexDirection:'column',alignItems:'flex-end',gap:4}}>
+                        <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
+                          {buyLabel(product.buyUrl)}
+                        </a>
+                        {product.buyLinks?.length > 0 && (
+                          <button
+                            onClick={e => { e.stopPropagation(); setSelectedProduct(product); }}
+                            style={{fontSize:11,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:0,fontWeight:500,opacity:0.8}}
+                          >
+                            Other stores
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
