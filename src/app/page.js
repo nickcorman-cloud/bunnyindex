@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <section style={{background:'var(--cream)'}} className="home-hero-section">
-        <div className="home-hero-grid" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'center'}}>
+        <div className="home-hero-grid" style={{maxWidth:1400,margin:'0 auto',padding:'48px 32px 0',display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'center'}}>
           <div>
             <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,letterSpacing:'0.12em',textTransform:'uppercase',color:'var(--terra)',marginBottom:16}}>The Bunny Index Standard.</div>
             <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:56,fontWeight:600,lineHeight:1.05,color:'var(--ink)',marginBottom:24}}>
@@ -36,7 +36,7 @@ export default function Home() {
             <img src="/bunnies.jpg" alt="Bunnies in a field of flowers" style={{width:'100%',maxWidth:480,borderRadius:12,display:'block'}} />
           </div>
         </div>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
+        <div style={{maxWidth:1400,margin:'0 auto',padding:'40px 32px 64px',display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>
           {featured.map(p => <FeatCard key={p.id} product={p} />)}
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
           {[
             {icon:'🐰',title:'Never tested on animals',body:'Zero animal testing at any stage, including supplier ingredients.'},
             {icon:'🚫',title:'No China market sales',body:'We exclude brands that sell in markets requiring animal testing.'},
-            {icon:'🏗',title:'Independent ownership',body:"No subsidiaries of L’Oréal, Unilever, Estée Lauder, or P&G."},
+            {icon:'🏗',title:'Independent ownership',body:"No subsidiaries of L'Oréal, Unilever, Estée Lauder, or P&G."},
             {icon:'🔍',title:'Ingredient searchable',body:'Every product tagged by active ingredients and skin concerns.'},
           ].map(({icon,title,body}) => (
             <div key={title}>
@@ -63,4 +63,4 @@ export default function Home() {
       </section>
     </>
   );
-}
+            }
