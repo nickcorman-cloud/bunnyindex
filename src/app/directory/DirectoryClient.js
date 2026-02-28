@@ -54,6 +54,16 @@ function ProductModal({ product, onClose }) {
         <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer" onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}>
           {buyLabel(product.buyUrl)}
         </a>
+        {product.buyLinks?.length > 0 && (
+          <div style={{display:'flex',gap:8,flexWrap:'wrap',marginTop:8}}>
+            {product.buyLinks.map(link => (
+              <a key={link.store} href={link.url} target="_blank" rel="noopener noreferrer"
+                style={{fontSize:12,color:'var(--terra)',border:'1px solid var(--terra)',borderRadius:20,padding:'4px 12px',textDecoration:'none',fontWeight:600}}>
+                Also on {link.store} →
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
