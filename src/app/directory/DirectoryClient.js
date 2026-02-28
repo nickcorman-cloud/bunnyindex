@@ -85,6 +85,9 @@ function SidebarChips({ label, options, selected, onToggle, onClear, maxVisible 
   );
 }
 
+const PRIORITY_TYPES = ['Cleanser', 'Moisturizer', 'Serum', 'Sunscreen', 'Exfoliant'];
+const PRIORITY_BRANDS = ['e.l.f. Cosmetics', 'Pacifica', 'Biossance', 'Tower 28', 'Herbivore Botanicals'];
+
 export default function DirectoryClient() {
   const searchParams = useSearchParams();
   const [selIngredients, setSelIngredients] = useState([]);
@@ -100,6 +103,8 @@ export default function DirectoryClient() {
   const [sortBy, setSortBy] = useState('popular');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [page, setPage] = useState(1);
+  const orderedTypes = [...PRIORITY_TYPES, ...TYPES.filter(t => !PRIORITY_TYPES.includes(t))];
+  const orderedBrands = [...PRIORITY_BRANDS, ...BRAND_NAMES.filter(b => !PRIORITY_BRANDS.includes(b))];
 
   const toggle = (arr, setArr, val) => setArr(prev =>
     prev.includes(val) ? prev.filter(x => x !== val) : [...prev, val]
@@ -182,7 +187,7 @@ export default function DirectoryClient() {
 
           <SidebarChips label="Skin Concerns" options={CONCERNS} selected={selConcerns} onToggle={v => toggle(selConcerns, setSelConcerns, v)} onClear={() => setSelConcerns([])} />
 
-          <SidebarChips label="Product Type" options={TYPES} selected={selTypes} onToggle={v => toggle(selTypes, setSelTypes, v)} onClear={() => setSelTypes([])} maxVisible={5} />
+          <SidebarChips label="Product Type" options={orderedTypes} selected={selTypes} onToggle={v => toggle(selTypes, setSelTypes, v)} onClear={() => setSelTypes([])} maxVisible={5} />
 
           {/* Price */}
           <div className="sb-section">
@@ -199,7 +204,7 @@ export default function DirectoryClient() {
             </div>
           </div>
 
-          <SidebarChips label="Brand" options={BRAND_NAMES} selected={selBrands} onToggle={v => toggle(selBrands, setSelBrands, v)} onClear={() => setSelBrands([])} maxVisible={6} />
+          <SidebarChips label="Brand" options={orderedBrands} selected={selBrands} onToggle={v => toggle(selBrands, setSelBrands, v)} onClear={() => setSelBrands([])} maxVisible={5} />
 
           <div className="sb-section">
             <div className="sb-title">Properties</div>
