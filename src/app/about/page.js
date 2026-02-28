@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
@@ -12,12 +13,23 @@ export default function AboutPage() {
         <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
           About BunnyIndex
         </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 48, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.08, margin: '0 0 12px' }}>
+        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 48, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.08, margin: '0 0 32px' }}>
           A Higher Standard — And a Better Way to Find It
         </h1>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 20px' }}>
-          Hi, I'm Nick. I built BunnyIndex because I was tired of the same story again and again:
-        </p>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20, margin: '0 0 20px' }}>
+          <Image
+            src="/nick.png"
+            alt="Nick, founder of BunnyIndex"
+            width={88}
+            height={88}
+            style={{ borderRadius: '9999px', flexShrink: 0 }}
+          />
+          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--ink)', lineHeight: 1.75, margin: 0 }}>
+            Hi, I'm Nick. I built BunnyIndex because I was tired of the same story again and again:
+          </p>
+        </div>
+
         <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 20px' }}>
           I'd read a label that said "cruelty-free," feel hopeful, and then dig deeper — only to discover the brand was owned by a conglomerate that tests on animals somewhere else, or sells in markets that require animal testing. The label was there… but the standard wasn't real.
         </p>
@@ -35,7 +47,9 @@ export default function AboutPage() {
           <li>Explore brands and products that align with your values.</li>
           <li>Make ethical choices with confidence, not guesswork.</li>
         </ul>
+
         <div style={{ borderTop: '1px solid var(--border)', margin: '0 0 48px' }} />
+
         <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 30, fontWeight: 600, color: 'var(--ink)', margin: '0 0 20px', lineHeight: 1.15 }}>
           A Standard You Can Trust
         </h2>
@@ -60,7 +74,9 @@ export default function AboutPage() {
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 64px', lineHeight: 1.3 }}>
           No exceptions. No loopholes. Ever.
         </p>
+
         <div style={{ borderTop: '1px solid var(--border)', margin: '0 0 48px' }} />
+
         <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 30, fontWeight: 600, color: 'var(--ink)', margin: '0 0 20px', lineHeight: 1.15 }}>
           Search. Discover. Decide.
         </h2>
