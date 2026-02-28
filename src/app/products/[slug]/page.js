@@ -179,11 +179,18 @@ export default function ProductPage({ params }) {
             {product.nonComedogenic && <span style={{background:'var(--parchment)',color:'var(--ink-muted)',borderRadius:20,padding:'4px 12px',fontSize:12,border:'1px solid var(--border)'}}>Non-Comedogenic</span>}
             </div>
 
-          {/* Buy button */}
-          <a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored" style={{display:'inline-flex',alignItems:'center',gap:8,background:'var(--terra)',color:'var(--white)',border:'none',borderRadius:'var(--r-sm)',padding:'14px 24px',fontSize:15,fontWeight:600,cursor:'pointer',textDecoration:'none',marginBottom:12}}>
-            {buyLabel(product.buyUrl)}
-          </a>
-          <p style={{fontSize:11,color:'var(--muted)',margin:0}}>Affiliate link — we may earn a small commission at no extra cost to you.</p>
+          {/* Buy buttons */}
+          <div style={{display:'flex',flexWrap:'wrap',gap:8,marginBottom:8}}>
+            <a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored" style={{display:'inline-flex',alignItems:'center',gap:8,background:'var(--terra)',color:'var(--white)',border:'none',borderRadius:'var(--r-sm)',padding:'14px 24px',fontSize:15,fontWeight:600,cursor:'pointer',textDecoration:'none'}}>
+              {buyLabel(product.buyUrl)}
+            </a>
+            {product.buyLinks?.map(link => (
+              <a key={link.store} href={link.url} target="_blank" rel="noopener noreferrer sponsored" style={{display:'inline-flex',alignItems:'center',gap:8,background:'transparent',color:'var(--terra)',border:'1.5px solid var(--terra)',borderRadius:'var(--r-sm)',padding:'12px 20px',fontSize:14,fontWeight:600,cursor:'pointer',textDecoration:'none'}}>
+                {link.store} →
+              </a>
+            ))}
+          </div>
+          <p style={{fontSize:11,color:'var(--muted)',margin:'0 0 12px'}}>Affiliate links — we may earn a small commission at no extra cost to you.</p>
 
           {/* Cruelty-free badge */}
           <div style={{marginTop:28,padding:'16px 20px',background:'var(--parchment)',borderRadius:'var(--r-sm)',border:'1px solid var(--border)',display:'flex',gap:12,alignItems:'flex-start'}}>
