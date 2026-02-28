@@ -25,6 +25,7 @@ export default function Header() {
         <Link href="/brands" className={`nav-btn${active('/brands') ? ' active' : ''}`} onClick={close}>Our Brands</Link>
         <Link href="/not-carried" className={`nav-btn${active('/not-carried') ? ' active' : ''}`} onClick={close}>Not Included</Link>
         <Link href="/about" className={`nav-btn${active('/about') ? ' active' : ''}`} onClick={close}>About</Link>
+        <Link href="/newsletter" className={`nav-btn${active('/newsletter') ? ' active' : ''}`} onClick={close}>Newsletter</Link>
         <Link href="/contact" className={`nav-btn${active('/contact') ? ' active' : ''}`} onClick={close}>Contact</Link>
         <Link href="/terms" className={`nav-btn${active('/terms') ? ' active' : ''}`} style={{fontSize:12,opacity:0.7}} onClick={close}>Terms</Link>
       </nav>
