@@ -53,7 +53,7 @@ function ProductModal({ product, onClose }) {
         <div style={{display:'flex',gap:8,flexWrap:'wrap',marginBottom:20}}>
           {product.fragranceFree && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>Fragrance-Free</span>}
           {product.oilFree && <span style={{fontSize:11,color:'var(--muted)',background:'var(--parchment)',borderRadius:20,padding:'2px 8px'}}>Oil-Free</span>}
-          div>
+            </div>
         <a href={product.buyUrl} className="btn-buy" target="_blank" rel="noopener noreferrer"
                           onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}>
           {buyLabel(product.buyUrl)}
