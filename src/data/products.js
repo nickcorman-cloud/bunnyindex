@@ -649,6 +649,7 @@ export const RAW_PRODUCTS = [
     "concerns": [
       "Acne",
       "Oily Skin"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free",
@@ -1135,6 +1136,7 @@ export const RAW_PRODUCTS = [
       "Acne",
       "Blackheads",
       "Oily Skin"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free",
@@ -1967,6 +1969,7 @@ export const RAW_PRODUCTS = [
       "Hyperpigmentation",
       "Blackheads",
       "Brightening"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free",
@@ -2062,6 +2065,7 @@ export const RAW_PRODUCTS = [
       "Acne",
       "Oily Skin",
       "Blackheads"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free"
@@ -2330,6 +2334,7 @@ export const RAW_PRODUCTS = [
     ],
     "concerns": [
       "Acne"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free",
@@ -2363,6 +2368,7 @@ export const RAW_PRODUCTS = [
       "Acne",
       "Blackheads",
       "Oily Skin"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free",
@@ -2626,6 +2632,7 @@ export const RAW_PRODUCTS = [
     ],
     "concerns": [
       "Oily Skin"
+        "Seborrheic Dermatitis"
     ],
     "features": [
       "Oil-Free"
@@ -3199,6 +3206,7 @@ export const RAW_PRODUCTS = [
     ],
     "concerns": [
       "Hyperpigmentation"
+        "Seborrheic Dermatitis"
     ],
     "features": [],
     "skinTypes": []
@@ -3413,7 +3421,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -3913,7 +3921,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Retinol"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Fragrance-Free"
     ],
@@ -3940,7 +3948,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -4286,7 +4294,7 @@ export const RAW_PRODUCTS = [
       "Squalane",
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -4899,7 +4907,7 @@ export const RAW_PRODUCTS = [
       "Ceramides",
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -5664,7 +5672,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -5693,7 +5701,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -5952,7 +5960,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -6053,7 +6061,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -6632,7 +6640,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -9394,7 +9402,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -9931,7 +9939,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -9961,7 +9969,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -9991,7 +9999,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -10020,7 +10028,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -10253,7 +10261,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -10486,7 +10494,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -10649,7 +10657,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -10891,7 +10899,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -11359,7 +11367,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -11447,7 +11455,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -11592,7 +11600,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -11728,7 +11736,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -12141,7 +12149,7 @@ export const RAW_PRODUCTS = [
     "ingredients": [
       "Salicylic Acid"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Non-Comedogenic"
@@ -12723,7 +12731,7 @@ export const RAW_PRODUCTS = [
       "Salicylic Acid",
       "Niacinamide"
     ],
-    "concerns": [],
+    "concerns": ["Seborrheic Dermatitis"],
     "features": [
       "Oil-Free",
       "Fragrance-Free",
@@ -13265,17 +13273,17 @@ export const RAW_PRODUCTS = [
   {"id":509,"brand":"Merit Beauty","brandColor":"#1A1A1A","name":"Great Skin Serum","type":"Serum","price":42,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.meritbeauty.com/products/great-skin-serum","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://www.meritbeauty.com/cdn/shop/files/GS-Serum-Minis-Uncapped.jpg","description":"A lightweight bi-phase instant glow serum with 4 types of hyaluronic acid, niacinamide, and caffeine that plumps and gives skin a healthy, dewy finish.","ingredients":["Hyaluronic Acid","Niacinamide","Caffeine"],"concerns":["Dry Skin","Brightening"],"features":["Vegan"],"skinTypes":["All"]},
   {"id":510,"brand":"Merit Beauty","brandColor":"#1A1A1A","name":"Great Skin Moisturizer","type":"Moisturizer","price":42,"priceRange":"$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.meritbeauty.com/products/great-skin-moisturizer","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://www.meritbeauty.com/cdn/shop/files/GS-Moisturizer-Minis-Uncapped.jpg","description":"A lightweight priming moisturizer with peptides and hyaluronic acid that provides time-release hydration, soothes the skin barrier, and preps skin for the day.","ingredients":["Peptides","Hyaluronic Acid"],"concerns":["Dry Skin","Sensitive Skin"],"features":["Vegan"],"skinTypes":["All"]},
   {"id":511,"brand":"Merit Beauty","brandColor":"#1A1A1A","name":"Great Skin Double Cleanse","type":"Cleanser","price":32,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.meritbeauty.com/products/great-skin-double-cleanse","retailer":"Brand Website","rating":4.5,"reviews":0,"imageUrl":"https://www.meritbeauty.com/cdn/shop/files/MERIT25-DoubleCleanse-Hero_b4a39ae6-ebf2-4c93-890b-885df22e89ac.jpg","description":"A bi-phase foaming cleanser that effectively removes sunscreen and makeup while providing gentle daily exfoliation. Leaves skin clean, smooth, and bright.","ingredients":[],"concerns":["Acne","Brightening"],"features":["Vegan"],"skinTypes":["All","Oily","Combination"]},
-  {"id":512,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lag™ Mask","type":"Mask","price":49,"priceRange":"$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-mask","retailer":"Brand Website","rating":4.8,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Main-Square.jpg","description":"The award-winning multi-use mask and moisturizer beloved worldwide. Deeply hydrates with hyaluronic acid, niacinamide, and vitamin B5, leaving skin plump, soft, and glowing.","ingredients":["Hyaluronic Acid","Niacinamide","Vitamin B5"],"concerns":["Dry Skin","Sensitive Skin"],"features":["Vegan"],"skinTypes":["All","Dry","Sensitive"]},
-  {"id":513,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lag™ Skin Soothing Hydration Mist","type":"Mist","price":21,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-mist","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Mist-Square.jpg","description":"A skin-soothing hydration mist that delivers instant moisture and cooling relief. Formulated with hyaluronic acid and aloe vera to refresh and calm skin anytime.","ingredients":["Hyaluronic Acid","Aloe Vera"],"concerns":["Dry Skin","Sensitive Skin"],"features":["Vegan"],"skinTypes":["All","Sensitive"]},
-  {"id":514,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lag™ Deep Hydration Serum","type":"Serum","price":44,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-deep-hydration-serum","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Deep-Hydration-Serum-Square.jpg","description":"A deeply hydrating serum with hyaluronic acid, glycerin, and niacinamide that replenishes moisture for visibly plumper, softer skin throughout the day.","ingredients":["Hyaluronic Acid","Glycerin","Niacinamide"],"concerns":["Dry Skin"],"features":["Vegan"],"skinTypes":["All","Dry"]},
-  {"id":515,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lag™ Overnight Eye Serum","type":"Eye Cream","price":46,"priceRange":"$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-overnight-eye-serum","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Overnight-Eye-Serum-Main-Square.jpg","description":"An overnight eye serum that works while you sleep to depuff, hydrate, and brighten the under-eye area with peptides and hyaluronic acid.","ingredients":["Hyaluronic Acid","Peptides"],"concerns":["Dry Skin","Brightening"],"features":["Vegan"],"skinTypes":["All"]},
+  {"id":512,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lagâ¢ Mask","type":"Mask","price":49,"priceRange":"$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-mask","retailer":"Brand Website","rating":4.8,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Main-Square.jpg","description":"The award-winning multi-use mask and moisturizer beloved worldwide. Deeply hydrates with hyaluronic acid, niacinamide, and vitamin B5, leaving skin plump, soft, and glowing.","ingredients":["Hyaluronic Acid","Niacinamide","Vitamin B5"],"concerns":["Dry Skin","Sensitive Skin"],"features":["Vegan"],"skinTypes":["All","Dry","Sensitive"]},
+  {"id":513,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lagâ¢ Skin Soothing Hydration Mist","type":"Mist","price":21,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-mist","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Mist-Square.jpg","description":"A skin-soothing hydration mist that delivers instant moisture and cooling relief. Formulated with hyaluronic acid and aloe vera to refresh and calm skin anytime.","ingredients":["Hyaluronic Acid","Aloe Vera"],"concerns":["Dry Skin","Sensitive Skin"],"features":["Vegan"],"skinTypes":["All","Sensitive"]},
+  {"id":514,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lagâ¢ Deep Hydration Serum","type":"Serum","price":44,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-deep-hydration-serum","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Deep-Hydration-Serum-Square.jpg","description":"A deeply hydrating serum with hyaluronic acid, glycerin, and niacinamide that replenishes moisture for visibly plumper, softer skin throughout the day.","ingredients":["Hyaluronic Acid","Glycerin","Niacinamide"],"concerns":["Dry Skin"],"features":["Vegan"],"skinTypes":["All","Dry"]},
+  {"id":515,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Jet Lagâ¢ Overnight Eye Serum","type":"Eye Cream","price":46,"priceRange":"$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/jet-lag-overnight-eye-serum","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Jet-Lag-Overnight-Eye-Serum-Main-Square.jpg","description":"An overnight eye serum that works while you sleep to depuff, hydrate, and brighten the under-eye area with peptides and hyaluronic acid.","ingredients":["Hyaluronic Acid","Peptides"],"concerns":["Dry Skin","Brightening"],"features":["Vegan"],"skinTypes":["All"]},
   {"id":516,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Rich Cushion Cream","type":"Moisturizer","price":52,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/rich-cushion-cream","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Rich-Cushion-Cream-Main-Square.jpg","description":"An ultra-plumping rich moisturizer with hyaluronic acid, ceramides, and peptides that deeply nourishes and restores the skin barrier for visibly plumper skin.","ingredients":["Hyaluronic Acid","Ceramides","Peptides"],"concerns":["Dry Skin"],"features":["Vegan"],"skinTypes":["Dry","Sensitive"]},
-  {"id":517,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"CC Me Vitamin C Serum™","type":"Serum","price":68,"priceRange":"$$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/cc-me-vitamin-c-serum","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-15.jpg","description":"A brightening vitamin C and niacinamide serum that visibly reduces dark spots, evens skin tone, and delivers a radiant, glass-skin finish.","ingredients":["Vitamin C","Niacinamide"],"concerns":["Hyperpigmentation","Brightening"],"features":["Vegan"],"skinTypes":["All"]},
+  {"id":517,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"CC Me Vitamin C Serumâ¢","type":"Serum","price":68,"priceRange":"$$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/cc-me-vitamin-c-serum","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-15.jpg","description":"A brightening vitamin C and niacinamide serum that visibly reduces dark spots, evens skin tone, and delivers a radiant, glass-skin finish.","ingredients":["Vitamin C","Niacinamide"],"concerns":["Hyperpigmentation","Brightening"],"features":["Vegan"],"skinTypes":["All"]},
   {"id":518,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Light Aura Vitamin C + Peptide Eye Cream","type":"Eye Cream","price":44,"priceRange":"$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/light-aura-vitamin-c-peptide-eye-cream","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-10.jpg","description":"A brightening eye cream with vitamin C and peptides that reduces dark circles, puffiness, and fine lines for a more awake and luminous look.","ingredients":["Vitamin C","Peptides"],"concerns":["Brightening","Hyperpigmentation"],"features":["Vegan"],"skinTypes":["All"]},
-  {"id":519,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Midnight Ritual Retinol™ Renewal Serum","type":"Serum","price":69,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/midnight-ritual-retinol-renewal-serum","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-13.jpg","description":"A night-time retinol renewal serum that smooths fine lines, improves skin texture, and visibly renews skin overnight.","ingredients":["Retinol"],"concerns":["Brightening","Dry Skin"],"features":["Vegan"],"skinTypes":["All"]},
-  {"id":520,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Heavenly Sixteen™ All-In-One Face Oil","type":"Oil","price":55,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/heavenly-sixteen-face-oil","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-11.jpg","description":"A luxurious all-in-one face oil with 16 plant-based oils including squalane and rosehip that nourishes, softens, and gives skin a dewy, healthy glow.","ingredients":["Squalane","Rosehip Oil"],"concerns":["Dry Skin","Brightening"],"features":["Vegan"],"skinTypes":["Dry","Combination"]},
-  {"id":521,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"ShadeDrops™ Broad Spectrum SPF 30 Mineral Sunscreen","type":"SPF/Sunscreen","price":60,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/shadedrops-spf-30","retailer":"Brand Website","rating":4.5,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-12.jpg","description":"A lightweight mineral milk sunscreen with SPF 30 that blends seamlessly for a natural finish. Broad spectrum protection with no white cast.","ingredients":["Zinc Oxide"],"concerns":["Sensitive Skin"],"features":["Mineral Sunscreen","Vegan","SPF"],"skinTypes":["All","Sensitive"]},
-  {"id":522,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Super Amino Gel Cleanser™","type":"Cleanser","price":35,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/super-amino-gel-cleanser","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-9.jpg","description":"A gel cleanser with amino acids that gently removes impurities while maintaining the skin's natural moisture balance for a clean, balanced complexion.","ingredients":["Amino Acids"],"concerns":["Acne","Oily Skin"],"features":["Vegan"],"skinTypes":["All","Oily","Combination"]},
+  {"id":519,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Midnight Ritual Retinolâ¢ Renewal Serum","type":"Serum","price":69,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/midnight-ritual-retinol-renewal-serum","retailer":"Brand Website","rating":4.7,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-13.jpg","description":"A night-time retinol renewal serum that smooths fine lines, improves skin texture, and visibly renews skin overnight.","ingredients":["Retinol"],"concerns":["Brightening","Dry Skin"],"features":["Vegan"],"skinTypes":["All"]},
+  {"id":520,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Heavenly Sixteenâ¢ All-In-One Face Oil","type":"Oil","price":55,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/heavenly-sixteen-face-oil","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-11.jpg","description":"A luxurious all-in-one face oil with 16 plant-based oils including squalane and rosehip that nourishes, softens, and gives skin a dewy, healthy glow.","ingredients":["Squalane","Rosehip Oil"],"concerns":["Dry Skin","Brightening"],"features":["Vegan"],"skinTypes":["Dry","Combination"]},
+  {"id":521,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"ShadeDropsâ¢ Broad Spectrum SPF 30 Mineral Sunscreen","type":"SPF/Sunscreen","price":60,"priceRange":"$$$","oilFree":false,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/shadedrops-spf-30","retailer":"Brand Website","rating":4.5,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-12.jpg","description":"A lightweight mineral milk sunscreen with SPF 30 that blends seamlessly for a natural finish. Broad spectrum protection with no white cast.","ingredients":["Zinc Oxide"],"concerns":["Sensitive Skin"],"features":["Mineral Sunscreen","Vegan","SPF"],"skinTypes":["All","Sensitive"]},
+  {"id":522,"brand":"Summer Fridays","brandColor":"#7A8FA3","name":"Super Amino Gel Cleanserâ¢","type":"Cleanser","price":35,"priceRange":"$$","oilFree":true,"fragranceFree":false,"vegan":true,"nonComedogenic":false,"buyUrl":"https://www.summerfridays.com/products/super-amino-gel-cleanser","retailer":"Brand Website","rating":4.6,"reviews":0,"imageUrl":"https://summerfridays.com/cdn/shop/files/Main_PDP_1-9.jpg","description":"A gel cleanser with amino acids that gently removes impurities while maintaining the skin's natural moisture balance for a clean, balanced complexion.","ingredients":["Amino Acids"],"concerns":["Acne","Oily Skin"],"features":["Vegan"],"skinTypes":["All","Oily","Combination"]},
   {"id":523,"brand":"Topicals","brandColor":"#E84C46","name":"Faded Brightening + Clearing Serum","type":"Serum","price":29,"priceRange":"$$","oilFree":true,"fragranceFree":true,"vegan":true,"nonComedogenic":false,"buyUrl":"https://mytopicals.com/products/faded-brightening-clearing-serum","retailer":"Brand Website","rating":4.9,"reviews":0,"imageUrl":"https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251009_TOPICALS_Website_Faded_Unscented_Ppage_1.jpg","description":"An award-winning brightening serum with tranexamic acid, niacinamide, azelaic acid, and kojic acid that fades dark spots, hyperpigmentation, and post-acne marks.","ingredients":["Tranexamic Acid","Niacinamide","Azelaic Acid","Kojic Acid"],"concerns":["Hyperpigmentation","Acne","Brightening"],"features":["Fragrance-Free","Vegan"],"skinTypes":["All"]},
   {"id":524,"brand":"Topicals","brandColor":"#E84C46","name":"Like Butter Moisturizer","type":"Moisturizer","price":34,"priceRange":"$$","oilFree":false,"fragranceFree":true,"vegan":true,"nonComedogenic":false,"buyUrl":"https://mytopicals.com/products/like-butter-moisturizer","retailer":"Brand Website","rating":4.9,"reviews":0,"imageUrl":"https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251015_TOPICALS_LikeButter_Ppage_Image_1.jpg","description":"A skin-barrier repairing moisturizer with 1% colloidal oatmeal, madecassoside, and turmeric that soothes, hydrates, and calms reactive or sensitized skin.","ingredients":["Colloidal Oatmeal","Madecassoside","Turmeric"],"concerns":["Sensitive Skin","Rosacea","Dry Skin"],"features":["Fragrance-Free","Vegan"],"skinTypes":["Sensitive","Dry","All"]},
   {"id":525,"brand":"Topicals","brandColor":"#E84C46","name":"High Roller Ingrown Hair Tonic","type":"Exfoliant","price":26,"priceRange":"$$","oilFree":true,"fragranceFree":true,"vegan":true,"nonComedogenic":false,"buyUrl":"https://mytopicals.com/products/high-roller","retailer":"Brand Website","rating":4.9,"reviews":0,"imageUrl":"https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251015_TOPICALS_HighRoller_Ppage_Image_1.jpg","description":"A cult-favorite exfoliating tonic with salicylic acid, glycolic acid, and niacinamide that prevents and treats ingrown hairs and bumps on body and face.","ingredients":["Salicylic Acid","Glycolic Acid","Niacinamide"],"concerns":["Acne","Hyperpigmentation"],"features":["Fragrance-Free","Vegan"],"skinTypes":["All","Oily"]},
