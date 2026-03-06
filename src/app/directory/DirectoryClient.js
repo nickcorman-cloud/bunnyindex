@@ -11,7 +11,7 @@ function ProductModal({ product, onClose }) {
     const handler = (e) => { if (e.key === 'Escape') onClose(); };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [onClose])
+  }, [onClose]
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -272,7 +272,7 @@ export default function DirectoryClient() {
                         {product.buyLinks?.length > 0 && (
                           <button
                             onClick={e => { e.stopPropagation(); setSelectedProduct(product); }}
-                            style={{fontSize:11,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:0,fontWeight:500,opacity:0.8}}
+                            style={{fontSize:13,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:0,fontWeight:500,opacity:0.75,transition:'var(--ease)'}} onMouseEnter={e=>{e.currentTarget.style.opacity='1';e.currentTarget.style.textDecoration='underline';}} onMouseLeave={e=>{e.currentTarget.style.opacity='0.75';e.currentTarget.style.textDecoration='none';}}
                           >
                             Other stores
                           </button>
