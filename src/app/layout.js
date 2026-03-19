@@ -16,6 +16,7 @@ export const metadata = {
   },
   other: {
     'awin-site-verification': 'Awin',
+    'impact-site-verification': '76572be3-8a69-422d-b9c1-6e83f99d27a5',
   },
 };
 
