@@ -1049,7 +1049,7 @@ export default function BunnyIndex() {
             <div className="ethics-inner">
               {[
                 {icon:"🐰",title:"Never tested on animals",body:"Zero animal testing at any stage, including supplier ingredients."},
-                {icon:"🚫",title:"No China market sales",body:"We exclude brands that sell in markets requiring animal testing."},
+                {icon:"🚫",title:"No animal-testing markets",body:"We exclude brands that sell in markets requiring animal testing."},
                 {icon:"🏛️",title:"Independent ownership",body:"No subsidiaries of L'Oréal, Unilever, Estée Lauder, or P&G."},
                 {icon:"🔬",title:"Ingredient searchable",body:"Every product tagged by active ingredients and skin concerns."},
               ].map(({icon,title,body}) => (
