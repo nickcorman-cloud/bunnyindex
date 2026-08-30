@@ -150,8 +150,8 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://www.amazon.com/Hydration-Cleanser-Excess-Impurities-Makeup/dp/B08T7DY96H?th=1",
-        "retailer": "Brand Website",
+        "buyUrl": "https://www.amazon.com/dp/B08T7DY96H?tag=bunnyindex-20",
+        "retailer": "amazon",
         "rating": 4.6,
         "reviews": 11200,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0661/2251/4520/files/59990_SCCLE_Closed_R_1c70699f-fec3-49a7-99d0-aac3811fd653.png?v=1778587295",
@@ -168,8 +168,8 @@ export const RAW_PRODUCTS = [
         "skinTypes": [],
         "buyLinks": [
             {
-                "store": "Brand Website",
-                "url": "https://www.amazon.com/Hydration-Cleanser-Excess-Impurities-Makeup/dp/B08T7DY96H?th=1"
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08T7DY96H?tag=bunnyindex-20"
             }
         ]
     },
@@ -220,8 +220,8 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://www.amazon.com/l-f-Suntouchable-Lightweight-Complexion-Cruelty-free/dp/B0C7SFTTV3?th=1",
-        "retailer": "Brand Website",
+        "buyUrl": "https://www.amazon.com/dp/B0C7SFTTV3?tag=bunnyindex-20",
+        "retailer": "amazon",
         "rating": 4.3,
         "reviews": 4200,
         "imageUrl": "https://m.media-amazon.com/images/I/61Dguj1Lr6L._SL1500_.jpg",
@@ -240,8 +240,8 @@ export const RAW_PRODUCTS = [
         "skinTypes": [],
         "buyLinks": [
             {
-                "store": "Brand Website",
-                "url": "https://www.amazon.com/l-f-Suntouchable-Lightweight-Complexion-Cruelty-free/dp/B0C7SFTTV3?th=1"
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0C7SFTTV3?tag=bunnyindex-20"
             }
         ]
     },
@@ -3110,7 +3110,7 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://www.amazon.com/dp/B0BZX2RLNX?tag=bunnyindex-20&tag=bunnyindex-20",
+        "buyUrl": "https://www.amazon.com/dp/B0BZX2RLNX?tag=bunnyindex-20",
         "retailer": "amazon",
         "rating": 4.5,
         "reviews": 7800,
@@ -3129,7 +3129,7 @@ export const RAW_PRODUCTS = [
         "buyLinks": [
             {
                 "store": "amazon",
-                "url": "https://www.amazon.com/dp/B0BZX2RLNX?tag=bunnyindex-20&tag=bunnyindex-20"
+                "url": "https://www.amazon.com/dp/B0BZX2RLNX?tag=bunnyindex-20"
             }
         ]
     },
@@ -3145,7 +3145,7 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://www.amazon.com/dp/B0C7C88ZSK?tag=bunnyindex-20&tag=bunnyindex-20",
+        "buyUrl": "https://www.amazon.com/dp/B0C7C88ZSK?tag=bunnyindex-20",
         "retailer": "amazon",
         "rating": 4.4,
         "reviews": 5100,
@@ -3165,7 +3165,7 @@ export const RAW_PRODUCTS = [
         "buyLinks": [
             {
                 "store": "amazon",
-                "url": "https://www.amazon.com/dp/B0C7C88ZSK?tag=bunnyindex-20&tag=bunnyindex-20"
+                "url": "https://www.amazon.com/dp/B0C7C88ZSK?tag=bunnyindex-20"
             }
         ]
     },
@@ -9706,8 +9706,8 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://www.amazon.com/Versed-Day-Dissolve-Cleansing-Balm/dp/B0FKCS93T4?th=1",
-        "retailer": "Brand Website",
+        "buyUrl": "https://www.amazon.com/dp/B0FKCS93T4?tag=bunnyindex-20",
+        "retailer": "amazon",
         "rating": 0,
         "reviews": 0,
         "imageUrl": "https://versedskin.com/cdn/shop/files/DAYDISSOLVEHERO.jpg?v=1738869973&width=1440",
@@ -9720,8 +9720,8 @@ export const RAW_PRODUCTS = [
         "skinTypes": [],
         "buyLinks": [
             {
-                "store": "Brand Website",
-                "url": "https://www.amazon.com/Versed-Day-Dissolve-Cleansing-Balm/dp/B0FKCS93T4?th=1"
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FKCS93T4?tag=bunnyindex-20"
             }
         ]
     },
@@ -17223,6 +17223,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://iliabeauty.com/products/sun-serum-mineral-sunscreen-spf-50"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0H4X2F9SY?tag=bunnyindex-20"
             }
         ]
     },
@@ -17264,6 +17268,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://iliabeauty.com/products/the-base-face-milk-essence-lightweight-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CQ74PF2M?tag=bunnyindex-20"
             }
         ]
     },
@@ -17308,6 +17316,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://iliabeauty.com/products/super-serum-skin-tint-spf-40-tinted-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08L5JTBC8?tag=bunnyindex-20"
             }
         ]
     },
@@ -17343,6 +17355,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://iliabeauty.com/products/true-skin-radiant-priming-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B07NQPXT4B?tag=bunnyindex-20"
             }
         ]
     },
@@ -17380,6 +17396,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://iliabeauty.com/products/lip-wrap-hydrating-lip-balm-hyaluronic-acid"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09PNVQG9B?tag=bunnyindex-20"
             }
         ]
     },
@@ -17459,6 +17479,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://milkmakeup.com/products/watermelon-jelly-glow-hydrating-brightening-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DX4BVS98?tag=bunnyindex-20"
             }
         ]
     },
@@ -17492,6 +17516,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://milkmakeup.com/products/cooling-water"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B01HACL2Y8?tag=bunnyindex-20"
             }
         ]
     },
@@ -17572,6 +17600,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://mytopicals.com/products/sealed-active-scar-primer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CDQP9CHG?tag=bunnyindex-20"
             }
         ]
     },
@@ -17611,6 +17643,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://mytopicals.com/products/clearly-acne-mist"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DTR3GXDQ?tag=bunnyindex-20"
             }
         ]
     },
@@ -17732,6 +17768,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://mytopicals.com/products/slick-salve-mint-lip-balm"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CRF7H6X1?tag=bunnyindex-20"
             }
         ]
     },
@@ -17772,6 +17812,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://mytopicals.com/products/faded-original"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09V9QRHCD?tag=bunnyindex-20"
             }
         ]
     }
