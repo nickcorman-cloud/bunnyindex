@@ -14615,7 +14615,9 @@ export const RAW_PRODUCTS = [
         "reviews": 4231,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/NakedPapaya-PDP_5b09bb93-69a0-43a8-9da6-4b0e24e3576c.jpg?v=1722464631",
         "description": "Non-foaming milky cleanser with papaya enzymes, jojoba oil, and Kinbiome that melts makeup and impurities without stripping. Gentle enough for dry, sensitive, and eczema-prone skin.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Sensitive Skin",
             "Dry Skin",
@@ -14960,7 +14962,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_Purple-Ginseng-Cleansing-Balm_front.webp?v=1774290539",
         "description": "Cleansing balm with purple ginseng and linoleic-rich oils that dissolves makeup, sunscreen, and impurities. Developed for all skin types.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Dry Skin",
+            "Acne",
+            "Anti-Aging"
+        ],
         "features": [
             "Fragrance-Free"
         ],
@@ -15254,7 +15261,9 @@ export const RAW_PRODUCTS = [
         "reviews": 940,
         "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-DNC_PDP_FRONTAL_1600x2000_41b16068-3909-4862-874a-b3bdfc20276b.jpg?v=1769200467",
         "description": "Overnight moisturizer with algae-derived bio-retinol and five hydrators that firms and smooths the look of lines while you sleep. Clinically shown to support skin’s nightly repair phase.",
-        "ingredients": [],
+        "ingredients": [
+            "Squalane"
+        ],
         "concerns": [
             "Anti-Aging",
             "Dry Skin"
@@ -15286,7 +15295,9 @@ export const RAW_PRODUCTS = [
         "reviews": 720,
         "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-APC_PDP_ECOMM_1600x2000_ea93a0c6-637e-4694-9c01-c687454e90e3.jpg?v=1769202334",
         "description": "Lightweight seaweed moisturizer clinically shown to create a barrier against environmental pollutants. Fast-absorbing formula that rebalances skin’s microbiota and layers under SPF.",
-        "ingredients": [],
+        "ingredients": [
+            "Niacinamide"
+        ],
         "concerns": [
             "Dry Skin",
             "Sensitive Skin",
@@ -15461,7 +15472,9 @@ export const RAW_PRODUCTS = [
         "rating": 4.5,
         "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OSEA_SeaMineralsMist_SM-1-DTC-1.jpg?v=1762197935",
         "description": "Seaweed-infused toning mist that primes, sets, and refreshes with mineral-rich hydration. Cooling formula for a dewy finish.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin"
         ],
@@ -15558,7 +15571,9 @@ export const RAW_PRODUCTS = [
         "rating": 4.3,
         "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OSEA_RedAlgaeClarifyingMask_RAM_DTC-1_69453cd5-de6d-4a64-a54b-a1e543251103.jpg?v=1762197945",
         "description": "Red algae and bentonite clay mask that cools on contact while drawing out impurities and excess oil. Made for blemished or congested skin.",
-        "ingredients": [],
+        "ingredients": [
+            "Vitamin C"
+        ],
         "concerns": [
             "Acne",
             "Oily Skin",
@@ -15707,7 +15722,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_1e3b45fe-2cef-48e2-9aa2-db1c9f658e9d.jpg?v=1762282103",
         "description": "Water-based gel cleanser with camellia, chamomile, and cucumber that draws out impurities without stripping. Leaves skin calm, hydrated, and comfortable.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Sensitive Skin",
             "Dry Skin",
