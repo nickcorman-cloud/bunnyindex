@@ -7674,40 +7674,6 @@ export const RAW_PRODUCTS = [
         ]
     },
     {
-        "id": 274,
-        "brand": "Milk Makeup",
-        "brandColor": "#9C7B8E",
-        "name": "SUNSHINE Drops Brightening Serum",
-        "type": "Serum",
-        "price": 36,
-        "priceRange": "mid-range",
-        "oilFree": true,
-        "fragranceFree": true,
-        "vegan": true,
-        "nonComedogenic": false,
-        "buyUrl": "https://milkmakeup.com/products/watermelon-jelly-glow-hydrating-brightening-serum?srsltid=AfmBOooWarF-7Q5ws1GZrXz1hLHvlpVtfzMjISsAcJKw8A49h5yhvRoZ&variant=44703628296377",
-        "retailer": "Brand Website",
-        "rating": 0,
-        "reviews": 0,
-        "imageUrl": "https://milkmakeup.com/cdn/shop/files/1200x1500-MMU-WATERMELONJELLYGLOW-OPEN-CAP-L_c7559342-a65f-433f-967a-06314f55c212_1500x.jpg?v=1773976453",
-        "description": "A vitamin D-powered serum with turmeric and ginger root that brightens skin and provides an energy boost for a healthy glow.",
-        "ingredients": [],
-        "concerns": [
-            "Brightening"
-        ],
-        "features": [
-            "Oil-Free",
-            "Fragrance-Free"
-        ],
-        "skinTypes": [],
-        "buyLinks": [
-            {
-                "store": "Brand Website",
-                "url": "https://milkmakeup.com/products/watermelon-jelly-glow-hydrating-brightening-serum?srsltid=AfmBOooWarF-7Q5ws1GZrXz1hLHvlpVtfzMjISsAcJKw8A49h5yhvRoZ&variant=44703628296377"
-            }
-        ]
-    },
-    {
         "id": 276,
         "brand": "Milk Makeup",
         "brandColor": "#9C7B8E",
@@ -7771,40 +7737,6 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.milkmakeup.com/products/hydro-grip-set-refresh-spray"
-            }
-        ]
-    },
-    {
-        "id": 280,
-        "brand": "Milk Makeup",
-        "brandColor": "#9C7B8E",
-        "name": "Cooling Eye Gel Patches",
-        "type": "Eye Cream",
-        "price": 22,
-        "priceRange": "mid-range",
-        "oilFree": true,
-        "fragranceFree": true,
-        "vegan": true,
-        "nonComedogenic": false,
-        "buyUrl": "https://milkmakeup.com/products/cooling-water?srsltid=AfmBOopvwoP7o0jG5UgleRPFpabG0sRe2QWHhvHP3dAtru5MzpnjU7Ay&variant=41249185988793",
-        "retailer": "Brand Website",
-        "rating": 0,
-        "reviews": 0,
-        "imageUrl": "https://milkmakeup.com/cdn/shop/products/mini-Cooling-Water-capcopy_164c5739-bf49-44d6-b068-866d5aa9e508_1500x.jpg?v=1773980893",
-        "description": "Cooling hydrogel eye patches infused with caffeine and collagen that instantly depuff and brighten the under-eye area.",
-        "ingredients": [
-            "Caffeine"
-        ],
-        "concerns": [],
-        "features": [
-            "Oil-Free",
-            "Fragrance-Free"
-        ],
-        "skinTypes": [],
-        "buyLinks": [
-            {
-                "store": "Brand Website",
-                "url": "https://milkmakeup.com/products/cooling-water?srsltid=AfmBOopvwoP7o0jG5UgleRPFpabG0sRe2QWHhvHP3dAtru5MzpnjU7Ay&variant=41249185988793"
             }
         ]
     },
@@ -17250,5 +17182,597 @@ export const RAW_PRODUCTS = [
             }
         ],
         "id": 607
+    },
+    {
+        "id": 608,
+        "brand": "ILIA Beauty",
+        "brandColor": "#A8737F",
+        "name": "Sun Serum Mineral Sunscreen SPF 50",
+        "type": "Sunscreen",
+        "price": 40,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://iliabeauty.com/products/sun-serum-mineral-sunscreen-spf-50",
+        "retailer": "Brand Website",
+        "rating": 4.6,
+        "reviews": 906,
+        "imageUrl": "https://iliabeauty.com/cdn/shop/files/ILIA_2026_SUN_SERUM_CLOSED_US_WHITE.jpg",
+        "description": "A mineral SPF 50 with a water-burst texture, 10.5% zinc oxide, hyaluronic acid, and niacinamide, sold in two sheer shades. ILIA also claims oil and shine control and up to 24-hour hydration; it is labeled vegan, non-comedogenic, and formulated without fragrance.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Niacinamide",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Dry Skin",
+            "Oily Skin",
+            "Sensitive Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://iliabeauty.com/products/sun-serum-mineral-sunscreen-spf-50"
+            }
+        ]
+    },
+    {
+        "id": 609,
+        "brand": "ILIA Beauty",
+        "brandColor": "#A8737F",
+        "name": "The Base Face Milk",
+        "type": "Moisturizer",
+        "price": 58,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://iliabeauty.com/products/the-base-face-milk-essence-lightweight-moisturizer",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 1706,
+        "imageUrl": "https://iliabeauty.com/cdn/shop/files/ILIA_Face_Milk_Open_Seal_1200x1600_b95745b1-7c84-4cbd-8a95-a38b67eeb8ad.jpg",
+        "description": "A lightweight essence-moisturizer with hyaluronic acid and squalane that ILIA sells as a hydrating makeup-prep layer, used alone or under cream. Labeled vegan, fragrance-free, and non-comedogenic; lactic acid is last on the INCI list.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://iliabeauty.com/products/the-base-face-milk-essence-lightweight-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 610,
+        "brand": "ILIA Beauty",
+        "brandColor": "#A8737F",
+        "name": "Super Serum Skin Tint SPF 40",
+        "type": "Tinted Moisturizer",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://iliabeauty.com/products/super-serum-skin-tint-spf-40-tinted-moisturizer",
+        "retailer": "Brand Website",
+        "rating": 4.5,
+        "reviews": 15878,
+        "imageUrl": "https://iliabeauty.com/cdn/shop/files/ILIA_Silo_Shot_Award_Seals_Final-white-ST1-B.jpg",
+        "description": "A dewy skin tint with mineral SPF 40 (12% zinc oxide), hyaluronic acid, niacinamide, and plant-based squalane. ILIA positions it as light-to-medium coverage plus skincare; labeled vegan, non-comedogenic, and formulated without fragrance.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Dry Skin",
+            "Sensitive Skin",
+            "Barrier Support",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://iliabeauty.com/products/super-serum-skin-tint-spf-40-tinted-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 611,
+        "brand": "ILIA Beauty",
+        "brandColor": "#A8737F",
+        "name": "True Skin Radiant Priming Serum",
+        "type": "Serum",
+        "price": 52,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://iliabeauty.com/products/true-skin-radiant-priming-serum",
+        "retailer": "Brand Website",
+        "rating": 4.5,
+        "reviews": 2032,
+        "imageUrl": "https://iliabeauty.com/cdn/shop/files/Priming_Serum_B_resizedandbaseline_White_Background_4b7310da-75dc-4c71-944a-f43ef7b2c896.jpg",
+        "description": "A silicone-free priming serum with aloe, hibiscus, and beta-glucan that ILIA says firms, moisturizes, and preps skin for makeup. Fragrance-free and labeled vegan; titanium dioxide is listed as a colorant (CI 77891), not an SPF.",
+        "ingredients": [],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://iliabeauty.com/products/true-skin-radiant-priming-serum"
+            }
+        ]
+    },
+    {
+        "id": 612,
+        "brand": "ILIA Beauty",
+        "brandColor": "#A8737F",
+        "name": "Lip Wrap Reviving Balm",
+        "type": "Lip Balm",
+        "price": 26,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://iliabeauty.com/products/lip-wrap-hydrating-lip-balm-hyaluronic-acid",
+        "retailer": "Brand Website",
+        "rating": 4.6,
+        "reviews": 728,
+        "imageUrl": "https://iliabeauty.com/cdn/shop/files/Allure_Seal_LWRB_Open_1200x1600_White.jpg",
+        "description": "A daily lip balm with hyaluronic acid and squalane that ILIA describes as barrier-building. Vegan (FAQ and PDP); naturally derived lavender and chamomile scent, so not fragrance-free.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://iliabeauty.com/products/lip-wrap-hydrating-lip-balm-hyaluronic-acid"
+            }
+        ]
+    },
+    {
+        "id": 613,
+        "brand": "Merit Beauty",
+        "brandColor": "#1A1A1A",
+        "name": "The Uniform",
+        "type": "Sunscreen",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.meritbeauty.com/products/the-uniform-spf-45",
+        "retailer": "Brand Website",
+        "rating": 4.5,
+        "reviews": 1595,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0412/1296/9117/files/MERIT-TheUniform-Soldier-US-04_09e1815b-a15e-4ba1-ab28-6d3da3d54c10.jpg?v=1747836286",
+        "description": "A mineral sunscreen that provides broad spectrum UVA/UVB protection and a sheer tint that blends in with a light-as-air finish. It's a sunscreen so perfect, you'll actually want to wear it every day.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Oily Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.meritbeauty.com/products/the-uniform-spf-45"
+            }
+        ]
+    },
+    {
+        "id": 614,
+        "brand": "Milk Makeup",
+        "brandColor": "#9C7B8E",
+        "name": "Watermelon Jelly Glow Peptide Serum",
+        "type": "Serum",
+        "price": 29,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://milkmakeup.com/products/watermelon-jelly-glow-hydrating-brightening-serum",
+        "retailer": "Brand Website",
+        "rating": 4.5,
+        "reviews": 120,
+        "imageUrl": "https://milkmakeup.com/cdn/shop/files/1200x1500-MMU-WATERMELONJELLYGLOW-OPEN-CAP-L_c7559342-a65f-433f-967a-06314f55c212_1500x.jpg?v=1773976453",
+        "description": "Clean, peptide-packed hydrating serum stick clinically proven to help smooth, brighten, hydrate, and minimize the look of pores. Formulated with 3% Matrixyl, watermelon fruit extract, and Swiss garden cress sprout extract.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Brightening",
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Anti-Aging",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free",
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://milkmakeup.com/products/watermelon-jelly-glow-hydrating-brightening-serum"
+            }
+        ]
+    },
+    {
+        "id": 615,
+        "brand": "Milk Makeup",
+        "brandColor": "#9C7B8E",
+        "name": "Cooling Water Under Eye Caffeine Boost",
+        "type": "Eye Cream",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://milkmakeup.com/products/cooling-water",
+        "retailer": "Brand Website",
+        "rating": 4.5,
+        "reviews": 492,
+        "imageUrl": "https://milkmakeup.com/cdn/shop/products/mini-Cooling-Water-capcopy_164c5739-bf49-44d6-b068-866d5aa9e508_1500x.jpg?v=1773980893",
+        "description": "A cooling under eye gel stick that helps reduce the look of puffy eyes with caffeine and soothes with seawater for hydrated, refreshed skin.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [
+            "Oil-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://milkmakeup.com/products/cooling-water"
+            }
+        ]
+    },
+    {
+        "id": 616,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Faded Dark Spot Peel Pads",
+        "type": "Exfoliant",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://mytopicals.com/products/faded-dark-spot-peel-pads",
+        "retailer": "Brand Website",
+        "rating": 4.7,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/260709_TOPICALS_Web_FadedPeelPads_Ppage_1.jpg?v=1784304496",
+        "description": "Faded Dark Spot Peel Pads deliver professional-level exfoliation to visibly reduce dark spots, post-breakout marks, and uneven skin tone, while smoothing skin after just one use. Powered by retinol, tranexamic acid, and a multi-acid blend to improve the look of discoloration in as little as one week.",
+        "ingredients": [
+            "Glycolic Acid",
+            "Tranexamic Acid",
+            "Lactic Acid",
+            "Salicylic Acid",
+            "Squalane",
+            "Retinol"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening",
+            "Acne"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/faded-dark-spot-peel-pads"
+            }
+        ]
+    },
+    {
+        "id": 617,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Sealed Active Primer",
+        "type": "Serum",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://mytopicals.com/products/sealed-active-scar-primer",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251015_TOPICALS_SealedPrimer_Ppage_Image_1_012056b7-e549-40d4-bb56-acb33f20a71a.jpg?v=1761780080",
+        "description": "Meet Sealed, the active primer that visibly fills in pitted texture and pores while effectively resurfacing the skin’s texture over time. The hybrid formula works as a blurring, silky primer while clinically proven actives reduce the appearance of marks over time.",
+        "ingredients": [
+            "Retinol",
+            "Peptides",
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/sealed-active-scar-primer"
+            }
+        ]
+    },
+    {
+        "id": 618,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Clearly Acne Mist",
+        "type": "Mist",
+        "price": 26,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://mytopicals.com/products/clearly-acne-mist",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251015_TOPICALS_ClearlyMist_Ppage_Image_1_1.jpg?v=1786242624",
+        "description": "A powerful face and body acne mist that minimizes pimples, blackheads, and whiteheads, while calming and soothing irritated skin. Use daily and on-the-go to control oil, reduce redness, and maintain even tone and texture.",
+        "ingredients": [
+            "Salicylic Acid",
+            "Glycolic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Blackheads",
+            "Oily Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/clearly-acne-mist"
+            }
+        ]
+    },
+    {
+        "id": 619,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Faded Brightening Cleansing Bar",
+        "type": "Cleanser",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://mytopicals.com/products/faded-brightening-cleansing-bar",
+        "retailer": "Brand Website",
+        "rating": 4.9,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251014_TOPICALS_FadedBar_Ppage_Image_1.jpg?v=1761779777",
+        "description": "This face + body cleansing bar cleanses, moisturizes, and visibly brightens with shea butter, niacinamide, and vitamin C, helping fade the look of stubborn marks and discoloration without stripping the skin. Fragrance-free, non-bleaching, and safe for all skin types.",
+        "ingredients": [
+            "Vitamin C",
+            "Azelaic Acid",
+            "Niacinamide",
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening",
+            "Acne",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/faded-brightening-cleansing-bar"
+            }
+        ]
+    },
+    {
+        "id": 620,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Slather Exfoliating & Smoothing Bar",
+        "type": "Cleanser",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://mytopicals.com/products/slather-exfoliating-smoothing-bar",
+        "retailer": "Brand Website",
+        "rating": 4.9,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251014_TOPICALS_SlatherBar_Ppage_Image_1.jpg?v=1761780121",
+        "description": "This retinol-infused exfoliating body bar scrubs away dry skin, texture, and bumps associated with KP, revealing softer skin after just one use. The multi-tasking formula uses nourishing ingredients to help maintain hydration during every use.",
+        "ingredients": [
+            "Squalane",
+            "Niacinamide",
+            "Lactic Acid",
+            "Retinol"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/slather-exfoliating-smoothing-bar"
+            }
+        ]
+    },
+    {
+        "id": 621,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Slick Salve Lip Balm - Mint",
+        "type": "Lip Balm",
+        "price": 16,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://mytopicals.com/products/slick-salve-mint-lip-balm",
+        "retailer": "Brand Website",
+        "rating": 4.9,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251015_TOPICALS_SlickSalveMint_Ppage_Image_1.jpg?v=1761780359",
+        "description": "This hydrating balm nourishes the lips and protects the skin’s moisture barrier with ceramides and glycerin. Formulated with hyaluronic acid and rice bran wax to lock in moisture, it conditions, softens, and soothes for all-day comfort.",
+        "ingredients": [
+            "Ceramides",
+            "Peptides",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/slick-salve-mint-lip-balm"
+            }
+        ]
+    },
+    {
+        "id": 622,
+        "brand": "Topicals",
+        "brandColor": "#E84C46",
+        "name": "Faded Serum (Original Formula)",
+        "type": "Serum",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://mytopicals.com/products/faded-original",
+        "retailer": "Brand Website",
+        "rating": 4.7,
+        "reviews": 0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0503/2932/1627/files/251009_TOPICALS_Website_Faded_OG_Ppage_1_a43e81cf-3673-4bed-92c1-5056f300bbac.jpg?v=1761780928",
+        "description": "Last-chance original Faded serum that visibly reduces stubborn discoloration, post-blemish marks, scars, and spots for all ethnicities and skin shades. Gentle enough for daily use, it produces visible results in as little as two weeks.",
+        "ingredients": [
+            "Niacinamide",
+            "Tranexamic Acid",
+            "Azelaic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening",
+            "Acne"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://mytopicals.com/products/faded-original"
+            }
+        ]
     }
 ];
