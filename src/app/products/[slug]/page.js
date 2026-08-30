@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { products, slugify, findProductBySlug, buyLabel, BRAND_PROFILES } from '@/lib/constants';
 
-// Pre-generate all 503 product pages at build time
+// Pre-generate all product pages at build time
 export async function generateStaticParams() {
   return products.map(p => ({ slug: slugify(p.brand, p.name) }));
 }

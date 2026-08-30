@@ -58,6 +58,12 @@ const NOT_CARRIED = [
     acquiredBy: "L'Oréal",
     year: 2017,
   },
+  {
+    name: 'Tata Harper',
+    reason: 'Acquired by Amorepacific in 2022. Amorepacific is not cruelty-free — it allows animal testing when required by other countries or regulations and does not hold cruelty-free certification.',
+    acquiredBy: 'Amorepacific',
+    year: 2022,
+  },
 ];
 
 export default function NotCarriedPage() {

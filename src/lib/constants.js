@@ -148,10 +148,6 @@ export const BRAND_PROFILES = [
     blurb: "Sunday Riley is one of the most-trusted prestige skincare actives brands — independently owned, cruelty-free, and built around high-concentration formulas. Their Good Genes and Luna oil are perennial editor favorites.",
   },
   {
-    name: 'Tata Harper',
-    blurb: "Tata Harper is fully independent, farm-to-face, and cruelty-free — producing every product at their Vermont farm. The brand represents the top tier of natural luxury skincare with full supply chain transparency.",
-  },
-  {
     name: 'Thrive Causemetics',
     blurb: "Thrive Causemetics donates one product to a woman in need for every product sold. Beyond the giving model, they're fully vegan, ophthalmologist-tested, and formulate without parabens, sulfates, or synthetic fragrance.",
   },

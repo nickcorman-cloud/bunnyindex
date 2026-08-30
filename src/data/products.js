@@ -14364,5 +14364,2775 @@ export const RAW_PRODUCTS = [
                 "url": "https://mytopicals.com/products/faded-dark-spot-patches"
             }
         ]
+    },
+    {
+        "id": 529,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Supermello Hyaluronic Gel Cream Moisturizer",
+        "type": "Moisturizer",
+        "price": 38,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/supermello-gel-cream-moisturizer",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 249,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/Screenshot2026-07-16at11.39.14AM.png?v=1784227167",
+        "description": "Lightweight hyaluronic gel cream with marshmallow root, coconut water, and Kinbiome pre-probiotics that cools on contact and hydrates without a greasy finish. National Eczema Association accepted and dermatologist tested.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Eczema",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/supermello-gel-cream-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 530,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Brightwave 10% Vitamin C + Peptide Brightening Serum",
+        "type": "Serum",
+        "price": 45,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/brightwave-vitamin-c-peptide-brightening-serum",
+        "retailer": "Brand Website",
+        "rating": 4.9,
+        "reviews": 182,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/Screenshot2025-07-28at1.58.24PM.png?v=1753736334",
+        "description": "10% THD ascorbate vitamin C serum with vegan collagen peptides that brightens dark spots and supports firmness. Fast-absorbing formula designed for sensitive skin.",
+        "ingredients": [
+            "Vitamin C",
+            "Peptides",
+            "Squalane"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening",
+            "Anti-Aging",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/brightwave-vitamin-c-peptide-brightening-serum"
+            }
+        ]
+    },
+    {
+        "id": 531,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Dreamwave 2% Bio-Retinoid Complex Overnight Serum",
+        "type": "Serum",
+        "price": 48,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/dreamwave-2-bio-retinoid-complex-overnight-serum",
+        "retailer": "Brand Website",
+        "rating": 4.9,
+        "reviews": 78,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/DreamWave-PDP_5f94a7df-f383-47df-acbb-3b646be43fe9.jpg?v=1722464773",
+        "description": "Overnight serum with a 2% microalgae bio-retinoid complex plus retinal, niacinamide, and tranexamic acid to smooth texture and fade discoloration. Hydrated with hyaluronic acid for sensitive and retinol-reactive skin.",
+        "ingredients": [
+            "Retinol",
+            "Niacinamide",
+            "Tranexamic Acid",
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Hyperpigmentation",
+            "Brightening",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/dreamwave-2-bio-retinoid-complex-overnight-serum"
+            }
+        ]
+    },
+    {
+        "id": 532,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Super Rich Ceramide + Collagen Firming Cream",
+        "type": "Moisturizer",
+        "price": 45,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/super-rich-ceramide-collagen-firming-cream",
+        "retailer": "Brand Website",
+        "rating": 5.0,
+        "reviews": 45,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/RichCream-PackShot-KSCrop.jpg?v=1727902226",
+        "description": "Rich barrier cream with plant ceramides and vegan collagen peptides that firms, locks in moisture, and supports the skin barrier. Absorbs without a greasy finish.",
+        "ingredients": [
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Anti-Aging",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/super-rich-ceramide-collagen-firming-cream"
+            }
+        ]
+    },
+    {
+        "id": 533,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Brightwave Vitamin C Brightening + Energizing Eye Cream",
+        "type": "Eye Cream",
+        "price": 40,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/brightwave-energizing-brightening-eye-cream",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 80,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/BrightWave-Eye-PDP_86b1d308-94f9-4a4c-a042-ee7ed7bd55ec.jpg?v=1722464599",
+        "description": "Vitamin C THD ascorbate eye cream with red algae and chaga mushroom that brightens dark circles and depuffs tired under-eyes. Fragrance-free and suitable for sensitive skin.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation",
+            "Anti-Aging",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/brightwave-energizing-brightening-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 534,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Self Reflect Probiotic Moisturizing Sunscreen Zinc Oxide SPF 32",
+        "type": "Sunscreen",
+        "price": 32,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/self-reflect-zinc-oxide-mineral-sunscreen",
+        "retailer": "Brand Website",
+        "rating": 4.4,
+        "reviews": 2129,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/SelfReflect-NEWPackaging-KSCrop_1013b3f4-d2c7-43b4-a88f-a63c8ffafe9d.jpg?v=1753996044",
+        "description": "100% mineral sunscreen with 22.4% non-nano zinc oxide, turmeric, and Kinbiome probiotics that moisturizes, primes, and protects sensitive skin. National Eczema Association accepted.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Sensitive Skin",
+            "Eczema",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/self-reflect-zinc-oxide-mineral-sunscreen"
+            }
+        ]
+    },
+    {
+        "id": 535,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Naked Papaya Gentle Enzyme Milky Cleanser",
+        "type": "Cleanser",
+        "price": 24,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/naked-papaya-gentle-enzyme-cleanser",
+        "retailer": "Brand Website",
+        "rating": 4.2,
+        "reviews": 4231,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/NakedPapaya-PDP_5b09bb93-69a0-43a8-9da6-4b0e24e3576c.jpg?v=1722464631",
+        "description": "Non-foaming milky cleanser with papaya enzymes, jojoba oil, and Kinbiome that melts makeup and impurities without stripping. Gentle enough for dry, sensitive, and eczema-prone skin.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/naked-papaya-gentle-enzyme-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 536,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Restorative Body Serum - Unscented",
+        "type": "Serum",
+        "price": 20,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/restorative-body-serum-unscented",
+        "retailer": "Brand Website",
+        "rating": 5.0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/UnscentedBodySerum_shadow-white.jpg?v=1760631981",
+        "description": "Fragrance-free body serum with ceramides, hyaluronic acid, and pre-probiotics that restores the barrier and locks in post-shower hydration. National Eczema Association accepted.",
+        "ingredients": [
+            "Ceramides",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Eczema",
+            "Sensitive Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/restorative-body-serum-unscented"
+            }
+        ]
+    },
+    {
+        "id": 537,
+        "brand": "Kinship",
+        "brandColor": "#E8897A",
+        "name": "Gentle Body Wash - Unscented",
+        "type": "Cleanser",
+        "price": 20,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://lovekinship.com/products/gentle-body-wash-unscented",
+        "retailer": "Brand Website",
+        "rating": 5.0,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0236/4427/4768/files/UnscentedBodyWash_shadow-white.jpg?v=1760632039",
+        "description": "Fragrance-free velvety body wash with ceramides and pre-probiotics that cleanses without stripping. Formulated for dry, reactive, and eczema-prone skin.",
+        "ingredients": [
+            "Ceramides",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Eczema",
+            "Sensitive Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://lovekinship.com/products/gentle-body-wash-unscented"
+            }
+        ]
+    },
+    {
+        "id": 538,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Niacinamide Serum 12% Plus Zinc 2%",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/niacinamide-serum-12-plus-zinc-2",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_NiacinamideSerum_Anniv_Front_CapOn_ecomm.webp?v=1774292312",
+        "description": "Concentrated serum with 12% niacinamide and 2% zinc PCA, clinically shown to reduce the look of dark spots, pores, and fine lines. Lightweight, vegan, and fragrance-free.",
+        "ingredients": [
+            "Niacinamide",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Oily Skin",
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/niacinamide-serum-12-plus-zinc-2"
+            }
+        ]
+    },
+    {
+        "id": 539,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Vitamin C Complex Serum",
+        "type": "Serum",
+        "price": 21,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/vitamin-c-complex-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_VitaminC_ComplexSerum_brighter_Front_CapOn_2_ecomm.webp?v=1774291207",
+        "description": "Stabilized L-ascorbic acid vitamin C serum with sodium ascorbyl phosphate and hyaluronic acid that hydrates and is clinically shown to improve fine lines. Fragrance-free and vegan.",
+        "ingredients": [
+            "Vitamin C",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Anti-Aging",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/vitamin-c-complex-serum"
+            }
+        ]
+    },
+    {
+        "id": 540,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Vitamin C Super Serum Plus",
+        "type": "Serum",
+        "price": 26,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/vitamin-c-super-serum-plus",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_Catalog_CPlus-Serum-CapOn.webp?v=1774295176",
+        "description": "Multi-benefit serum combining vitamin C, retinol, hyaluronic acid, niacinamide, and salicylic acid to brighten, smooth texture, and soften fine lines. Clinically tested across skin types.",
+        "ingredients": [
+            "Vitamin C",
+            "Retinol",
+            "Hyaluronic Acid",
+            "Niacinamide",
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Anti-Aging",
+            "Acne",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/vitamin-c-super-serum-plus"
+            }
+        ]
+    },
+    {
+        "id": 541,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Multi-Peptide Moisturizer",
+        "type": "Moisturizer",
+        "price": 20,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/multi-peptide-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR-10065_Multi-Peptide-Moisturizer-Front-CapOn-bonebkgd.jpg?v=1777319292",
+        "description": "Peptide moisturizer with encapsulated ethylated vitamin C, niacinamide, squalane, and panthenol that targets the look of fine lines. Clinically shown to improve wrinkles in 8 weeks.",
+        "ingredients": [
+            "Peptides",
+            "Niacinamide",
+            "Squalane",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/multi-peptide-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 542,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Niacinamide Cleansing Gelée 3%",
+        "type": "Cleanser",
+        "price": 18,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/niacinamide-cleansing-gelee-3",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATRM_Ecomm_Niacinamide-Cleansing-Gelee_Front.webp?v=1774289601",
+        "description": "Essence-like gel cleanser with 3% niacinamide that dissolves makeup and oil without stripping. Clinically shown to provide all-day oil control.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Oily Skin",
+            "Acne"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/niacinamide-cleansing-gelee-3"
+            }
+        ]
+    },
+    {
+        "id": 543,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "BHA Liquid Exfoliant 2%",
+        "type": "Exfoliant",
+        "price": 19,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/bha-liquid-exfoliant-2",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR-10027_BHA-Liquid-Exfoliant-2_front_capon_bonebkgd.webp?v=1774289560",
+        "description": "Leave-on liquid exfoliant with encapsulated 2% salicylic acid plus fruit acids, clinically shown to reduce the look of pores and even tone. Fragrance-free and vegan.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Blackheads",
+            "Oily Skin",
+            "Brightening"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/bha-liquid-exfoliant-2"
+            }
+        ]
+    },
+    {
+        "id": 544,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Purple Ginseng Cleansing Balm",
+        "type": "Cleansing Balm",
+        "price": 20,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/purple-ginseng-cleansing-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_Purple-Ginseng-Cleansing-Balm_front.webp?v=1774290539",
+        "description": "Cleansing balm with purple ginseng and linoleic-rich oils that dissolves makeup, sunscreen, and impurities. Developed for all skin types.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/purple-ginseng-cleansing-balm"
+            }
+        ]
+    },
+    {
+        "id": 545,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Retinaldehyde Cream Serum 0.10%",
+        "type": "Serum",
+        "price": 32,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/retinaldehyde-cream-serum-0-10",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_Retinadehyde_0.webp?v=1774291618",
+        "description": "Sustained-release 0.10% retinaldehyde cream serum that converts to retinoic acid to address fine lines, uneven tone, and texture. Includes a biofermented oligopeptide for radiance.",
+        "ingredients": [
+            "Retinol",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/retinaldehyde-cream-serum-0-10"
+            }
+        ]
+    },
+    {
+        "id": 546,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Tranexamic Topical Acid 5%",
+        "type": "Serum",
+        "price": 20,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/tranexamic-topical-acid-5",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/Naturium_Tranexamic_Acid_Front_CapOn_Bone_1.webp?v=1774294545",
+        "description": "5% tranexamic acid serum with kojic acid, niacinamide, and licorice root, clinically shown to fade dark spots and brighten in 8 weeks. Vegan and fragrance-free.",
+        "ingredients": [
+            "Tranexamic Acid",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/tranexamic-topical-acid-5"
+            }
+        ]
+    },
+    {
+        "id": 547,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Azelaic Acid Emulsion 10%",
+        "type": "Serum",
+        "price": 22,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/azelaic-acid-emulsion-10",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_Azelaic-Acid-Emulsion-10_Cap-on.webp?v=1774290946",
+        "description": "Lightweight 10% pure azelaic acid emulsion with niacinamide, squalane, and bio-retinol that calms skin and minimizes uneven tone and texture.",
+        "ingredients": [
+            "Azelaic Acid",
+            "Niacinamide",
+            "Squalane"
+        ],
+        "concerns": [
+            "Acne",
+            "Hyperpigmentation",
+            "Rosacea",
+            "Brightening"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/azelaic-acid-emulsion-10"
+            }
+        ]
+    },
+    {
+        "id": 548,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Dew-Glow Moisturizer SPF 50",
+        "type": "Sunscreen",
+        "price": 22,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/dew-glow-moisturizer-spf-50-original",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_DewGlow_SPF50_Front_CapOn_bonebkgd.webp?v=1774295804",
+        "description": "Daily moisturizer with chemical SPF 50 PA++++ filters that apply invisibly on all skin tones, plus niacinamide and ethyl ascorbic acid for a dewy finish.",
+        "ingredients": [
+            "SPF",
+            "Niacinamide",
+            "Squalane",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Brightening",
+            "Dry Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/dew-glow-moisturizer-spf-50-original"
+            }
+        ]
+    },
+    {
+        "id": 549,
+        "brand": "Naturium",
+        "brandColor": "#3D3229",
+        "name": "Quadruple Hyaluronic Acid Serum 5%",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://naturium.com/products/quadruple-hyaluronic-acid-serum-5",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR_Catalog_HA-Serum-CapOn.webp?v=1774294628",
+        "description": "5% hyaluronic acid serum using four molecular weights to hydrate and leave skin looking plump and supple. Vegan and fragrance-free.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://naturium.com/products/quadruple-hyaluronic-acid-serum-5"
+            }
+        ]
+    },
+    {
+        "id": 550,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Ocean Cleanser",
+        "type": "Cleanser",
+        "price": 48,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/ocean-cleanser",
+        "retailer": "Brand Website",
+        "rating": 4.7,
+        "reviews": 1250,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OC-5_fl_oz_pump.jpg?v=1763756484",
+        "description": "Seaweed-infused gel cleanser with lactic acid that removes impurities and excess oil while gently refining pores. pH-balanced with an energizing lime and bergamot scent.",
+        "ingredients": [
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Oily Skin",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/ocean-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 551,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Hyaluronic Sea Serum",
+        "type": "Serum",
+        "price": 88,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/hyaluronic-sea-serum",
+        "retailer": "Brand Website",
+        "rating": 4.6,
+        "reviews": 944,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-HSS_PDP_ECOMM_1600x2000_84592bad-f79c-43cf-a7f2-79ac949e203e.jpg?v=1769725294",
+        "description": "Hydrating serum with two molecular weights of hyaluronic acid, seaweed, and snow mushroom, clinically shown to improve elasticity and visibly reduce fine lines. Fragrance-free.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Anti-Aging",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/hyaluronic-sea-serum"
+            }
+        ]
+    },
+    {
+        "id": 552,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Dream Night Cream with Bio-Retinol",
+        "type": "Moisturizer",
+        "price": 68,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/dream-night-cream",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 940,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-DNC_PDP_FRONTAL_1600x2000_41b16068-3909-4862-874a-b3bdfc20276b.jpg?v=1769200467",
+        "description": "Overnight moisturizer with algae-derived bio-retinol and five hydrators that firms and smooths the look of lines while you sleep. Clinically shown to support skin’s nightly repair phase.",
+        "ingredients": [],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/dream-night-cream"
+            }
+        ]
+    },
+    {
+        "id": 553,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Atmosphere Protection Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/atmosphere-protection-cream",
+        "retailer": "Brand Website",
+        "rating": 4.6,
+        "reviews": 720,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-APC_PDP_ECOMM_1600x2000_ea93a0c6-637e-4694-9c01-c687454e90e3.jpg?v=1769202334",
+        "description": "Lightweight seaweed moisturizer clinically shown to create a barrier against environmental pollutants. Fast-absorbing formula that rebalances skin’s microbiota and layers under SPF.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/atmosphere-protection-cream"
+            }
+        ]
+    },
+    {
+        "id": 554,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Ocean Eyes Age-Defying Eye Serum",
+        "type": "Eye Cream",
+        "price": 58,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/ocean-eyes",
+        "retailer": "Brand Website",
+        "rating": 4.4,
+        "reviews": 798,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-OEYES_PDP_OPEN_ECOMM_1600x2000_ca11d762-8f21-4d2f-8b8b-305a4300a376.jpg?v=1774454539",
+        "description": "Cooling rollerball eye serum with seaweed, hyaluronic acid, caffeine, and peptides that smooths crow’s feet and reduces the look of dark circles and puffiness.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/ocean-eyes"
+            }
+        ]
+    },
+    {
+        "id": 555,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Marine Screen SPF 50 Mineral Sunscreen",
+        "type": "Sunscreen",
+        "price": 42,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/marine-screen-spf-50-mineral-sunscreen",
+        "retailer": "Brand Website",
+        "rating": 4.7,
+        "reviews": 172,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/PDP_2_MS_PRODUCT_FRONTAL_NEA-SEAL_1600x2000_1fbeec3e-5dec-4f59-9cb5-16a29e23d02e.jpg?v=1779307594",
+        "description": "Daily mineral face SPF 50 with non-nano zinc oxide, seaweed, and hyaluronic acid that hydrates while shielding UVA/UVB. National Eczema Association Seal of Acceptance.",
+        "ingredients": [
+            "SPF",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Dry Skin",
+            "Eczema",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/marine-screen-spf-50-mineral-sunscreen"
+            }
+        ]
+    },
+    {
+        "id": 556,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Dream Night Serum with Bio-Retinol",
+        "type": "Serum",
+        "price": 88,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/dream-night-serum",
+        "retailer": "Brand Website",
+        "rating": 4.8,
+        "reviews": 278,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-DNS_PDP_LIFESTYLE_1600x2000_8e7e9735-56f3-4156-a0f0-53f392344cda.jpg?v=1769725787",
+        "description": "Overnight wrinkle serum with algae-derived bio-retinol and two firming peptides that mimics retinol without irritation. Clinically shown to smooth crow’s feet and deeper lines.",
+        "ingredients": [
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/dream-night-serum"
+            }
+        ]
+    },
+    {
+        "id": 557,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Seabiotic Water Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/seabiotic-water-cream",
+        "retailer": "Brand Website",
+        "rating": 4.4,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-SWC_PDP_LIFESYLE_1600x2000_7d8e7762-51e7-41c7-a6e0-757000c8d6af.jpg?v=1769203785",
+        "description": "Nutrient-rich water cream with seaweed, squalane, and pre/probiotics, clinically shown to boost hydration 173% and last 72+ hours. Fragrance- and essential-oil-free.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Barrier Support",
+            "Acne"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/seabiotic-water-cream"
+            }
+        ]
+    },
+    {
+        "id": 558,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Sea Minerals Mist",
+        "type": "Mist",
+        "price": 38,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/sea-minerals-mist",
+        "retailer": "Brand Website",
+        "rating": 4.5,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OSEA_SeaMineralsMist_SM-1-DTC-1.jpg?v=1762197935",
+        "description": "Seaweed-infused toning mist that primes, sets, and refreshes with mineral-rich hydration. Cooling formula for a dewy finish.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/sea-minerals-mist"
+            }
+        ]
+    },
+    {
+        "id": 559,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Ocean Wave Cleanser",
+        "type": "Cleansing Oil",
+        "price": 38,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://oseamalibu.com/products/ocean-wave-cleanser",
+        "retailer": "Brand Website",
+        "rating": 4.6,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OSEA_OceanWaveCleanser_OWC-1_Frontal_1000x1275_96077db4-83c7-48c6-8d2d-95d08b7a194d.jpg?v=1762268769",
+        "description": "Bi-phase cleansing oil that dissolves waterproof makeup, impurities, and sebum without stripping. Non-comedogenic and non-acnegenic, with Undaria seaweed.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Oily Skin"
+        ],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/ocean-wave-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 560,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Essential Hydrating Oil",
+        "type": "Face Oil",
+        "price": 68,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/essential-hydrating-oil-1",
+        "retailer": "Brand Website",
+        "rating": 4.7,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OSEA_EssentialHydratingOil_EHO-D-DTC-2.jpg?v=1762197994",
+        "description": "Anti-aging face oil with pink microalgae and 14 antioxidant-rich oils that lock in hydration and soften the look of fine lines. Scented with geranium, rosewood, and clary sage.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/essential-hydrating-oil-1"
+            }
+        ]
+    },
+    {
+        "id": 561,
+        "brand": "OSEA Malibu",
+        "brandColor": "#1A6B6B",
+        "name": "Red Algae Clarifying Mask",
+        "type": "Mask",
+        "price": 48,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://oseamalibu.com/products/red-algae-mask",
+        "retailer": "Brand Website",
+        "rating": 4.3,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/OSEA_RedAlgaeClarifyingMask_RAM_DTC-1_69453cd5-de6d-4a64-a54b-a1e543251103.jpg?v=1762197945",
+        "description": "Red algae and bentonite clay mask that cools on contact while drawing out impurities and excess oil. Made for blemished or congested skin.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Oily Skin",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://oseamalibu.com/products/red-algae-mask"
+            }
+        ]
+    },
+    {
+        "id": 562,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Glass Skin Refining Serum",
+        "type": "Serum",
+        "price": 39,
+        "priceRange": "$$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/glass-skin-refining-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_17.jpg?v=1769790764",
+        "description": "Iconic glass-skin serum with niacinamide, multi-weight hyaluronic acid, peach extract, and peptides that hydrates, brightens, and calms. Fragrance-free 40ml flagship size.",
+        "ingredients": [
+            "Niacinamide",
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation",
+            "Dry Skin",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/glass-skin-refining-serum"
+            }
+        ]
+    },
+    {
+        "id": 563,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Glass Skin Water-Gel Moisturizer",
+        "type": "Moisturizer",
+        "price": 43,
+        "priceRange": "$$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/glass-skin-water-gel-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_42.jpg?v=1769796159",
+        "description": "Lightweight oil-free water-gel with hyaluronic acid, chamomile, kiwi, and peach extracts plus a vegan prebiotic complex. Hydrates without shine, especially for oily and acne-prone skin.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Oily Skin",
+            "Acne",
+            "Dry Skin",
+            "Brightening",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/glass-skin-water-gel-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 564,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Ginger Melt Oil Cleanser",
+        "type": "Cleansing Oil",
+        "price": 35,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/ginger-melt-oil-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_39.jpg?v=1769795973",
+        "description": "Antioxidant cleansing oil with ginger root, pineapple extract, sunflower, and grapeseed oils that melts makeup and sunscreen without a greasy residue. First step of the Glass Skin double cleanse.",
+        "ingredients": [],
+        "concerns": [
+            "Blackheads",
+            "Acne",
+            "Oily Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/ginger-melt-oil-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 565,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Power Calm Hydrating Gel Cleanser",
+        "type": "Cleanser",
+        "price": 29,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/power-calm-hydrating-gel-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_1e3b45fe-2cef-48e2-9aa2-db1c9f658e9d.jpg?v=1762282103",
+        "description": "Water-based gel cleanser with camellia, chamomile, and cucumber that draws out impurities without stripping. Leaves skin calm, hydrated, and comfortable.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Dry Skin",
+            "Acne"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/power-calm-hydrating-gel-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 566,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Wild Dew Treatment Essence",
+        "type": "Toner",
+        "price": 39,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/wild-dew-treatment-essence",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_b2cd4a26-704e-4cf6-b057-7baf98ee6c9c.jpg?v=1762282103",
+        "description": "Featherlight Korean essence with adenosine, lotus extract, and niacinamide that drenches skin in hydration and evens tone. 100ml treatment size.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Brightening",
+            "Sensitive Skin",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/wild-dew-treatment-essence"
+            }
+        ]
+    },
+    {
+        "id": 567,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Retinal For All Renewing Serum",
+        "type": "Serum",
+        "price": 55,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/retinal-for-all-renewing-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_31.jpg?v=1769794988",
+        "description": "0.1% encapsulated retinal serum paired with ectoin and ceramides for clinical anti-aging results with virtually no barrier disruption. Safe for sensitive skin.",
+        "ingredients": [
+            "Retinol",
+            "Ceramides"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/retinal-for-all-renewing-serum"
+            }
+        ]
+    },
+    {
+        "id": 568,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Matcha Pudding Antioxidant Cream",
+        "type": "Moisturizer",
+        "price": 43,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/matcha-pudding-antioxidant-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_21.jpg?v=1769791016",
+        "description": "Velvety matcha cream with niacinamide, cape lilac, and adenosine that cushions skin in antioxidant hydration while brightening and balancing.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Brightening",
+            "Anti-Aging",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/matcha-pudding-antioxidant-cream"
+            }
+        ]
+    },
+    {
+        "id": 569,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Pure Peach Retinoic Eye Cream",
+        "type": "Eye Cream",
+        "price": 43,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/pure-peach-retinoic-eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_27.jpg?v=1769794456",
+        "description": "All-in-one eye cream with a retinoic complex, bakuchiol, niacinamide, and peach extract that brightens dark circles and smooths fine lines without heaviness.",
+        "ingredients": [
+            "Retinol",
+            "Bakuchiol",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Brightening",
+            "Dry Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/pure-peach-retinoic-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 570,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Beam Blocker Invisible Sunscreen",
+        "type": "Sunscreen",
+        "price": 34,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.peachandlily.com/products/beam-blocker-invisible-sunscreen",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Beam_Blocker_PDP_ea44061a-72da-4ca5-84fa-64d9fbe47b89.jpg?v=1781037247",
+        "description": "Weightless Korean SPF 30 PA+++ sunscreen with a dewy glass-skin finish and no white cast. Dermatologist approved, ophthalmologist tested, non-comedogenic, and hypoallergenic.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/beam-blocker-invisible-sunscreen"
+            }
+        ]
+    },
+    {
+        "id": 571,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Copper Peptide Pro Firming Serum",
+        "type": "Serum",
+        "price": 49,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/copper-peptide-pro-firming-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_16.jpg?v=1769789442",
+        "description": "0.2% copper peptide serum with hyaluronic acid, amino acids, and squalane that softens fine lines and supports a firmer, bouncier look.",
+        "ingredients": [
+            "Peptides",
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/copper-peptide-pro-firming-serum"
+            }
+        ]
+    },
+    {
+        "id": 572,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "Power Cocktail Lactic Acid Repair Serum",
+        "type": "Serum",
+        "price": 51,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/power-cocktail-lactic-acid-repair-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_f93ca853-267d-457d-8225-0faad9303bcc.jpg?v=1762274764",
+        "description": "10% lactic acid serum with algae extract, ginseng, and hyaluronic acid that refines texture and tone without irritation. Clinically tested exfoliating treatment.",
+        "ingredients": [
+            "Lactic Acid",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/power-cocktail-lactic-acid-repair-serum"
+            }
+        ]
+    },
+    {
+        "id": 573,
+        "brand": "Peach & Lily",
+        "brandColor": "#E8A090",
+        "name": "The Good Acids Pore Toner",
+        "type": "Toner",
+        "price": 39,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.peachandlily.com/products/the-good-acids-pore-toner",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_35.jpg?v=1769795342",
+        "description": "pH-balancing daily toner with AHAs and salicylic acid plus turmeric and aloe that refines pores and brightens without stripping. Soft, smooth, clearer-looking skin.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Blackheads",
+            "Oily Skin",
+            "Brightening"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.peachandlily.com/products/the-good-acids-pore-toner"
+            }
+        ]
+    },
+    {
+        "id": 574,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "Good Genes Lactic Acid Treatment",
+        "type": "Exfoliant",
+        "price": 85,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/good-genes-lactic-acid-treatment",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/products/good_genes_lactic_50ml_pack.jpg?v=1758920489",
+        "description": "A cult lactic acid leave-on treatment that exfoliates dull surface cells for instant glow and smoother texture. Licorice and lactic acid help brighten the look of dark spots and plump the appearance of fine lines.",
+        "ingredients": [
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation",
+            "Anti-Aging",
+            "Acne"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/good-genes-lactic-acid-treatment"
+            }
+        ]
+    },
+    {
+        "id": 575,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "C.E.O. 15% Vitamin C Brightening Serum",
+        "type": "Serum",
+        "price": 85,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/ceo-vitamin-c-brightening-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/ceo_serum.png?v=1758920477",
+        "description": "A 15% THD ascorbate vitamin C serum that targets dullness, dark spots, and discoloration. The oil-soluble, stable vitamin C is designed to absorb quickly and restore a firmer, more even-toned look.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/ceo-vitamin-c-brightening-serum"
+            }
+        ]
+    },
+    {
+        "id": 576,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "C.E.O. Afterglow Brightening Vitamin C Gel Cream",
+        "type": "Moisturizer",
+        "price": 65,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/c-e-o-afterglow-brightening-vitamin-c-gel-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/ceo-afterglow-circana-25.jpg?v=1753206299",
+        "description": "A hydrating vitamin C gel-cream moisturizer with THD ascorbate and hyaluronic acid. It is formulated for 24-hour hydration and visible brightening.",
+        "ingredients": [
+            "Vitamin C",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Brightening",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/c-e-o-afterglow-brightening-vitamin-c-gel-cream"
+            }
+        ]
+    },
+    {
+        "id": 577,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "C.E.O. Glow Vitamin C and Turmeric Face Oil",
+        "type": "Face Oil",
+        "price": 80,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/ceo-glow",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/ceo-glow-circana-25.jpg?v=1753212234",
+        "description": "A vitamin C and turmeric face oil that delivers instant radiance with cold-pressed seed oils. THD ascorbate and turmeric provide antioxidant glow without a heavy finish.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening",
+            "Dry Skin",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/ceo-glow"
+            }
+        ]
+    },
+    {
+        "id": 578,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "Luna Sleeping Night Oil",
+        "type": "Face Oil",
+        "price": 105,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/luna-sleeping-night-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/luna-circana-25.jpg?v=1753210547",
+        "description": "A blue nighttime retinoid oil with hydroxypinacolone retinoate to improve the look of wrinkles, pores, and uneven tone while you sleep. Blue tansy and seed oils balance the retinoid for overnight luminosity.",
+        "ingredients": [
+            "Retinol"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/luna-sleeping-night-oil"
+            }
+        ]
+    },
+    {
+        "id": 579,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "Auto Correct Brightening + Depuffing Eye Cream",
+        "type": "Eye Cream",
+        "price": 65,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/autocorrect-brightening-eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/products/SundayRileyAutoCorrectongoop1D_2000x2000_c4107098-1385-4eca-b23b-4585172104ef.jpg?v=1754369472",
+        "description": "A bestselling eye cream that instantly depuffs and brightens the look of tired eyes. Caffeine and Brazilian ginseng help reduce the appearance of dark circles and puffiness.",
+        "ingredients": [],
+        "concerns": [
+            "Brightening",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/autocorrect-brightening-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 580,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "U.F.O. Acne Treatment Face Oil",
+        "type": "Face Oil",
+        "price": 80,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/ufo-acne-treatment-face-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/ufo-circana-25.jpg?v=1753208609",
+        "description": "A medicated 1.5% salicylic acid face oil that clears acne- and blackhead-causing buildup in pores. Tea tree and black cumin seed oils support clearer skin while licorice helps fade the look of old marks.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Blackheads",
+            "Oily Skin",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/ufo-acne-treatment-face-oil"
+            }
+        ]
+    },
+    {
+        "id": 581,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "Ceramic Slip Cleanser",
+        "type": "Cleanser",
+        "price": 35,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/ceramic-slip-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/products/SR_CeramicSlip_150mL_2000x2000_noBadge_150dpi.jpg?v=1680188704",
+        "description": "A gentle plant-based clay cleanser that lifts dirt and oil with French green clay while rice oil esters help prevent tightness. Formulated as a universal foaming wash for even sensitive skin.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Oily Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/ceramic-slip-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 582,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "B3 Nice 10% Niacinamide Serum",
+        "type": "Serum",
+        "price": 65,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/b3-nice-10-niacinamide-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/b3nice-pump-30_f0cb1f37-686b-487b-8b6e-282ad1d7ad5c.jpg?v=1754407863",
+        "description": "A 10% niacinamide serum that helps minimize the look of pores and improve post-acne dark spots and surface redness. Resveratrol and turmeric extracts support a more even, radiant complexion.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Acne",
+            "Brightening",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/b3-nice-10-niacinamide-serum"
+            }
+        ]
+    },
+    {
+        "id": 583,
+        "brand": "Sunday Riley",
+        "brandColor": "#1A1A1A",
+        "name": "Aquamarine Melt Hydrating Gel-Balm Cleanser",
+        "type": "Cleansing Balm",
+        "price": 48,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://sundayriley.com/products/aquamarine-melt-hydrating-gel-balm-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1681/2995/files/aquamarine-close-up.jpg?v=1739985393",
+        "description": "A glossy gel-balm that melts into a cleansing oil to dissolve makeup and impurities. Evening primrose oil and a hyaluronic acid derivative hydrate as it rinses, leaving a plumped, glass-skin feel.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://sundayriley.com/products/aquamarine-melt-hydrating-gel-balm-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 584,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Ginger Turmeric Cleansing Balm",
+        "type": "Cleansing Balm",
+        "price": 52,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/natural-cleansing-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_GingerCleansingBalm_Image1.jpg?v=1786654862",
+        "description": "A 3-in-1 cleansing balm that melts makeup and sunscreen with ginger and turmeric oils, then rinses to a milky lather so no double cleanse is needed. Lactic and azelaic acids provide a mild clarifying boost.",
+        "ingredients": [
+            "Lactic Acid",
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Sensitive Skin",
+            "Acne"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/natural-cleansing-balm"
+            }
+        ]
+    },
+    {
+        "id": 585,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Chebula Active Serum",
+        "type": "Serum",
+        "price": 90,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/chebula-active-face-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_ChebulaActiveSerum_Image1.jpg?v=1786638551",
+        "description": "The brand’s #1 serum, clinically shown to outperform two leading anti-aging serums for fine lines. Chebula antioxidant fruit extract plus hyaluronic acid hydrate, firm, and brighten dark spots.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Hyperpigmentation",
+            "Brightening",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/chebula-active-face-serum"
+            }
+        ]
+    },
+    {
+        "id": 586,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Renew Pure Radiance Oil",
+        "type": "Face Oil",
+        "price": 120,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/pure-radiance-oil-renew",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_RenewRadianceOil_Image1.jpg?v=1786638683",
+        "description": "A cult 14-oil face blend clinically shown to outperform a leading anti-aging moisturizer for fine lines and hydration. Small-molecule seed oils plus squalane absorb before cream moisturizers.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/pure-radiance-oil-renew"
+            }
+        ]
+    },
+    {
+        "id": 587,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Chebula Extreme Cream",
+        "type": "Moisturizer",
+        "price": 110,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/chebula-extreme-skin-barrier-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_ChebulaExtremeCreme_Image1.jpg?v=1786638664",
+        "description": "A rich, breathable Chebula moisturizer clinically shown to boost hydration and fight five visible signs of aging. Formulated without pore-clogging waxes and includes hyaluronic acid for barrier support.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin",
+            "Barrier Support",
+            "Hyperpigmentation"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/chebula-extreme-skin-barrier-cream"
+            }
+        ]
+    },
+    {
+        "id": 588,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Phyto-Retinol Clinical Serum",
+        "type": "Serum",
+        "price": 90,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/phyto-retinol-sleep-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_PhytoSerum_Image1_1ac82e37-37e0-4390-a874-87eafc2df310.jpg?v=1786719203",
+        "description": "A retinol alternative serum powered by 2% Peptilium, a peptide complex the brand cites as faster and less irritating than traditional retinol. Safe for daily use on sensitive skin and contains no actual retinol.",
+        "ingredients": [
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/phyto-retinol-sleep-serum"
+            }
+        ]
+    },
+    {
+        "id": 589,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Phyto-Retinol Advanced Clinical Cream",
+        "type": "Moisturizer",
+        "price": 110,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/phyto-retinol-advanced-clinical-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_PhytoRetinolClinicalCream_Image1.jpg?v=1786655689",
+        "description": "A 10-benefit phyto-retinol cream that hydrates and brightens without classic retinoid irritation. Peptilium peptide complex is used as a pregnancy-safe retinol alternative.",
+        "ingredients": [
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/phyto-retinol-advanced-clinical-cream"
+            }
+        ]
+    },
+    {
+        "id": 590,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Pure Radiance Supreme Eye Cream",
+        "type": "Eye Cream",
+        "price": 95,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/pure-radiance-supreme-eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_PureRadianceSupremeEyeCream_Image1.jpg?v=1786638680",
+        "description": "An eye cream formulated to penetrate three layers of skin with hydration the brand describes as five times more powerful than hyaluronic acid. Targets wrinkles and puffiness around the eye area.",
+        "ingredients": [],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/pure-radiance-supreme-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 591,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Skin Barrier Sun Shield SPF 30",
+        "type": "Sunscreen",
+        "price": 65,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://truebotanicals.com/products/clean-face-sunscreen-spf-30",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_SkinBarrierSunShield_Image1.jpg?v=1786654917",
+        "description": "A mineral SPF 30 with 19% zinc oxide, clinically positioned for oily and blemish-prone skin. Chebula, squalane, pea peptides, and lactic acid add anti-aging barrier care under daily sun protection.",
+        "ingredients": [
+            "SPF",
+            "Squalane",
+            "Peptides",
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Anti-Aging",
+            "Oily Skin",
+            "Acne",
+            "Barrier Support"
+        ],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/clean-face-sunscreen-spf-30"
+            }
+        ]
+    },
+    {
+        "id": 592,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Vitamin C Serum-Booster",
+        "type": "Serum",
+        "price": 95,
+        "priceRange": "$$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/vitamin-c-booster",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_VitaminCBooster_Image1.jpg?v=1786655081",
+        "description": "A powder vitamin C booster of ascorbic acid and ferulic acid, mixed into a water-based serum at use so the vitamin C stays stable. Targets brighter, more even-looking skin and dark spots.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/vitamin-c-booster"
+            }
+        ]
+    },
+    {
+        "id": 593,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "SuperSEA Firming & Lifting Treatment",
+        "type": "Serum",
+        "price": 188,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/supersea-firming-lifting-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_SuperSeaTreatment_Image1.jpg?v=1786655248",
+        "description": "A clinical marine treatment shown to visibly tighten and firm jawline, neck, and cheek contours. Peptides and ceramides support a lifted, smoother look.",
+        "ingredients": [
+            "Peptides",
+            "Ceramides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/supersea-firming-lifting-serum"
+            }
+        ]
+    },
+    {
+        "id": 594,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Renew Nourishing Cleanser",
+        "type": "Cleanser",
+        "price": 48,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/nourishing-cleanser-renew",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_RenewNourishingCleanser_Image1.jpg?v=1786655133",
+        "description": "A cream cleanser for normal to dry skin that removes impurities without stripping the barrier. Naturally scented with grapefruit, lavender, vetiver, and jasmine.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/nourishing-cleanser-renew"
+            }
+        ]
+    },
+    {
+        "id": 595,
+        "brand": "True Botanicals",
+        "brandColor": "#4A5D4E",
+        "name": "Clear Pure Radiance Oil",
+        "type": "Face Oil",
+        "price": 120,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://truebotanicals.com/products/pure-radiance-oil-clear",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0545/1009/files/TrueBotanicals_ClearRadianceOil_Image1.jpg?v=1786655845",
+        "description": "A moisturizing face oil for breakout-prone skin that helps prevent blemishes, balance oil, and fight visible aging. Ceramide-supporting botanicals deliver glow without a heavy, pore-clogging feel.",
+        "ingredients": [
+            "Ceramides"
+        ],
+        "concerns": [
+            "Acne",
+            "Oily Skin",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://truebotanicals.com/products/pure-radiance-oil-clear"
+            }
+        ]
+    },
+    {
+        "id": 596,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Coffee Bean Caffeine Brightening Eye Cream",
+        "type": "Eye Cream",
+        "price": 35,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/coffee-bean-caffeine-brightening-eye-cream",
+        "retailer": "Brand Website",
+        "rating": 4.54,
+        "reviews": 4672,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/CoffeeBeanEyeCream_PF.webp?v=1787822178",
+        "description": "A bestselling caffeine eye cream using coffee bean, coffee cherry, and green tea to reduce the look of puffiness and dark circles. Niacinamide, hyaluronic acid, and vitamin C support a brighter, firmer eye area.",
+        "ingredients": [
+            "Niacinamide",
+            "Hyaluronic Acid",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/coffee-bean-caffeine-brightening-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 597,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Vitamin C Serum",
+        "type": "Serum",
+        "price": 58,
+        "priceRange": "$$$",
+        "oilFree": true,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/vitamin-c-serum",
+        "retailer": "Brand Website",
+        "rating": 4.69,
+        "reviews": 1436,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/VitaminC_Serum_PF_2483f4ab-4284-452f-81bc-7b7987695cd0.webp?v=1773834559",
+        "description": "A lightweight aloe-gel serum with stabilized 3-O-ethyl ascorbic acid and sodium hyaluronate. It is formulated to firm, brighten, and hydrate without added fragrance oils.",
+        "ingredients": [
+            "Vitamin C",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Anti-Aging",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Oil-Free",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/vitamin-c-serum"
+            }
+        ]
+    },
+    {
+        "id": 598,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Hydra Drench Cream",
+        "type": "Moisturizer",
+        "price": 48,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/hydra-drench-cream",
+        "retailer": "Brand Website",
+        "rating": 4.46,
+        "reviews": 513,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/HydraDrenchCreamPF.webp?v=1774867250",
+        "description": "A fast-absorbing cream that rehydrates with chia seed lipids, niacinamide, squalane, and hyaluronic acid. Layerable under richer oils for drier skin.",
+        "ingredients": [
+            "Niacinamide",
+            "Squalane",
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/hydra-drench-cream"
+            }
+        ]
+    },
+    {
+        "id": 599,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Bakuchiol Moisturizer",
+        "type": "Moisturizer",
+        "price": 55,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/bakuchiol-moisturizer",
+        "retailer": "Brand Website",
+        "rating": 4.32,
+        "reviews": 195,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/BakuchiolMoisturizer_PF.webp?v=1783003922",
+        "description": "A plant retinol-alternative moisturizer with bakuchiol, niacinamide, hyaluronic acid, and squalane. Clinically reported to smooth fine lines and even tone without typical retinoid irritation.",
+        "ingredients": [
+            "Bakuchiol",
+            "Niacinamide",
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Hyperpigmentation",
+            "Brightening",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/bakuchiol-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 600,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Watermelon Cucumber Water Locking Mist",
+        "type": "Mist",
+        "price": 34,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/watermelon-cucumber-water-locking-mist",
+        "retailer": "Brand Website",
+        "rating": 4.59,
+        "reviews": 46,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/WatermelonCucumberMistPF_1.webp?v=1774867112",
+        "description": "A hydrating face mist with watermelon and cucumber waters, hyaluronic acid, and polyglutamic acid to plump the look of fine lines. Olive squalane helps lock in moisture.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/watermelon-cucumber-water-locking-mist"
+            }
+        ]
+    },
+    {
+        "id": 601,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Apple Enzyme Exfoliating Cleanser",
+        "type": "Cleanser",
+        "price": 32,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/apple-enzyme-exfoliating-cleanser",
+        "retailer": "Brand Website",
+        "rating": 4.64,
+        "reviews": 84,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/Apple_Enzyme_Cleanser_PF.webp?v=1783003407",
+        "description": "An exfoliating cleanser with a fruit-acid blend of lactic, glycolic, malic, and tartaric acids plus pineapple and papaya enzymes. Helps pores look clearer and brightens uneven tone.",
+        "ingredients": [
+            "Lactic Acid",
+            "Glycolic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation",
+            "Acne",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/apple-enzyme-exfoliating-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 602,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Apple Enzyme Resurfacing Serum",
+        "type": "Serum",
+        "price": 32,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/apple-enzyme-resurfacing-serum",
+        "retailer": "Brand Website",
+        "rating": 4.59,
+        "reviews": 86,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/AppleEnzyme_Serum_FRONT.jpg?v=1762443400",
+        "description": "A glow-boosting resurfacing serum with sugar-derived AHAs, beet lactic acid, and enzymes from pineapple, green apple, and papaya. Licorice root helps brighten the look of dark spots and texture.",
+        "ingredients": [
+            "Lactic Acid",
+            "Glycolic Acid"
+        ],
+        "concerns": [
+            "Brightening",
+            "Hyperpigmentation"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/apple-enzyme-resurfacing-serum"
+            }
+        ]
+    },
+    {
+        "id": 603,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Blood Orange Cleansing Balm",
+        "type": "Cleansing Balm",
+        "price": 38,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/blood-orange-cleansing-balm",
+        "retailer": "Brand Website",
+        "rating": 4.52,
+        "reviews": 885,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/Blood_Orange_Cleansing_Balm.png?v=1773740166",
+        "description": "An oil-based cleansing balm of avocado, coconut, and olive leaf that bonds with surface oils to lift makeup and debris. Blood orange helps clarify the look of pores as it massages on.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/blood-orange-cleansing-balm"
+            }
+        ]
+    },
+    {
+        "id": 604,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Dark Spot Remover",
+        "type": "Spot Treatment",
+        "price": 55,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/dark-spot-remover",
+        "retailer": "Brand Website",
+        "rating": 4.19,
+        "reviews": 548,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/Dark_Spot_Remover.png?v=1773312865",
+        "description": "A brightening serum for discoloration powered by 3-O-ethyl ascorbic acid, sake filtrate, arbutin, and kojic acid. Targets the look of age spots and post-blemish marks without chemical bleaching agents.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/dark-spot-remover"
+            }
+        ]
+    },
+    {
+        "id": 605,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Multi-Vitamin + Antioxidants Ultra Riché PM Treatment",
+        "type": "Moisturizer",
+        "price": 35,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/multi-vitamin-antioxidants-ultra-riche-pm-treatment",
+        "retailer": "Brand Website",
+        "rating": 4.48,
+        "reviews": 1056,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/Multi-Vitamin_Antioxidants_Ultra_Riche_PM_Treatment.png?v=1773403309",
+        "description": "A rich overnight cream with vitamin C, niacinamide, bakuchiol, and retinol to smooth texture and brighten while you sleep. Antioxidants and shea/cocoa butters support dry, aging skin.",
+        "ingredients": [
+            "Vitamin C",
+            "Niacinamide",
+            "Bakuchiol",
+            "Retinol"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Dry Skin",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/multi-vitamin-antioxidants-ultra-riche-pm-treatment"
+            }
+        ]
+    },
+    {
+        "id": 606,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Rose Water Hyaluronic Acid Serum",
+        "type": "Serum",
+        "price": 60,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/rose-water-hyaluronic-acid-serum",
+        "retailer": "Brand Website",
+        "rating": 4.51,
+        "reviews": 97,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/Rose_Water_Hyaluronic_Acid_Serum.png?v=1773312636",
+        "description": "A light gel serum of rose hydrosol and hyaluronic acid that quenches dry, sensitive skin. Chamomile and calendula soothe while beta-glucan supports a bouncier look.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/rose-water-hyaluronic-acid-serum"
+            }
+        ]
+    },
+    {
+        "id": 607,
+        "brand": "100% Pure",
+        "brandColor": "#C41E3A",
+        "name": "Flower Water Toner",
+        "type": "Toner",
+        "price": 35,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.100percentpure.com/products/flower-water-toner",
+        "retailer": "Brand Website",
+        "rating": 4.75,
+        "reviews": 40,
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0648/1955/files/PFFWT_Primary.png?v=1762441223",
+        "description": "A hydrating toner of rose and calendula hydrosols with hyaluronic acid, rice ceramides, quinoa peptides, niacinamide, and squalane. Preps skin and supports a calmer, plumper barrier.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Peptides",
+            "Niacinamide",
+            "Squalane"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.100percentpure.com/products/flower-water-toner"
+            }
+        ]
     }
 ];

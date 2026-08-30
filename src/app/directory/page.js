@@ -1,10 +1,13 @@
 import { Suspense } from 'react';
 import DirectoryClient from './DirectoryClient';
+import { products } from '@/lib/constants';
 
-export const metadata = {
-    title: 'Browse Products — BunnyIndex',
-    description: 'Browse 503 cruelty-free skincare products. Filter by ingredient, skin concern, brand, and more.',
-};
+export async function generateMetadata() {
+    return {
+        title: 'Browse Products — BunnyIndex',
+        description: `Browse ${products.length} cruelty-free skincare products. Filter by ingredient, skin concern, brand, and more.`,
+    };
+}
 
 export default function DirectoryPage() {
     return (

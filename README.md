@@ -17,14 +17,17 @@ src/
     about/page.js      ← About page
     contact/page.js    ← Contact page
     terms/page.js      ← Terms of Service
+    privacy/page.js    ← Privacy Policy
+    robots.js          ← robots.txt
+    sitemap.js         ← sitemap.xml
   components/
     Header.js          ← Sticky nav (client, uses usePathname)
-    Footer.js          ← Footer with Terms link
+    Footer.js          ← Footer with Terms and Privacy links
     FeatCard.js        ← Featured product card (client, handles img errors)
   lib/
     constants.js       ← All filter data, brand profiles, helpers
   data/
-    products.js        ← 503 products (auto-generated)
+    products.js        ← product catalog (auto-generated)
 ```
 
 ## Getting started
