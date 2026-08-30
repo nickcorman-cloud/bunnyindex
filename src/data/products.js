@@ -14366,13 +14366,12 @@ export const RAW_PRODUCTS = [
         ]
     },
     {
-        "id": 529,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Supermello Hyaluronic Gel Cream Moisturizer",
         "type": "Moisturizer",
         "price": 38,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14403,16 +14402,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/supermello-gel-cream-moisturizer"
             }
-        ]
+        ],
+        "id": 529
     },
     {
-        "id": 530,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Brightwave 10% Vitamin C + Peptide Brightening Serum",
         "type": "Serum",
         "price": 45,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -14441,16 +14440,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/brightwave-vitamin-c-peptide-brightening-serum"
             }
-        ]
+        ],
+        "id": 530
     },
     {
-        "id": 531,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Dreamwave 2% Bio-Retinoid Complex Overnight Serum",
         "type": "Serum",
         "price": 48,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -14481,16 +14480,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/dreamwave-2-bio-retinoid-complex-overnight-serum"
             }
-        ]
+        ],
+        "id": 531
     },
     {
-        "id": 532,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Super Rich Ceramide + Collagen Firming Cream",
         "type": "Moisturizer",
         "price": 45,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14520,16 +14519,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/super-rich-ceramide-collagen-firming-cream"
             }
-        ]
+        ],
+        "id": 532
     },
     {
-        "id": 533,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Brightwave Vitamin C Brightening + Energizing Eye Cream",
         "type": "Eye Cream",
         "price": 40,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14558,16 +14557,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/brightwave-energizing-brightening-eye-cream"
             }
-        ]
+        ],
+        "id": 533
     },
     {
-        "id": 534,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Self Reflect Probiotic Moisturizing Sunscreen Zinc Oxide SPF 32",
         "type": "Sunscreen",
         "price": 32,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14596,16 +14595,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/self-reflect-zinc-oxide-mineral-sunscreen"
             }
-        ]
+        ],
+        "id": 534
     },
     {
-        "id": 535,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Naked Papaya Gentle Enzyme Milky Cleanser",
         "type": "Cleanser",
         "price": 24,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -14629,16 +14628,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/naked-papaya-gentle-enzyme-cleanser"
             }
-        ]
+        ],
+        "id": 535
     },
     {
-        "id": 536,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Restorative Body Serum - Unscented",
         "type": "Serum",
         "price": 20,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14667,16 +14666,17 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/restorative-body-serum-unscented"
             }
-        ]
+        ],
+        "id": 536,
+        "reviews": 0
     },
     {
-        "id": 537,
         "brand": "Kinship",
         "brandColor": "#E8897A",
         "name": "Gentle Body Wash - Unscented",
         "type": "Cleanser",
         "price": 20,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14705,16 +14705,17 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://lovekinship.com/products/gentle-body-wash-unscented"
             }
-        ]
+        ],
+        "id": 537,
+        "reviews": 0
     },
     {
-        "id": 538,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Niacinamide Serum 12% Plus Zinc 2%",
         "type": "Serum",
         "price": 17,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": true,
         "fragranceFree": true,
         "vegan": true,
@@ -14743,16 +14744,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/niacinamide-serum-12-plus-zinc-2"
             }
-        ]
+        ],
+        "id": 538,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 539,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Vitamin C Complex Serum",
         "type": "Serum",
         "price": 21,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14779,10 +14782,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/vitamin-c-complex-serum"
             }
-        ]
+        ],
+        "id": 539,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 540,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Vitamin C Super Serum Plus",
@@ -14819,16 +14824,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/vitamin-c-super-serum-plus"
             }
-        ]
+        ],
+        "id": 540,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 541,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Multi-Peptide Moisturizer",
         "type": "Moisturizer",
         "price": 20,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14856,16 +14863,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/multi-peptide-moisturizer"
             }
-        ]
+        ],
+        "id": 541,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 542,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Niacinamide Cleansing Gelée 3%",
         "type": "Cleanser",
         "price": 18,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": true,
         "fragranceFree": true,
         "vegan": true,
@@ -14891,16 +14900,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/niacinamide-cleansing-gelee-3"
             }
-        ]
+        ],
+        "id": 542,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 543,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "BHA Liquid Exfoliant 2%",
         "type": "Exfoliant",
         "price": 19,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": true,
         "fragranceFree": true,
         "vegan": true,
@@ -14928,16 +14939,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/bha-liquid-exfoliant-2"
             }
-        ]
+        ],
+        "id": 543,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 544,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Purple Ginseng Cleansing Balm",
         "type": "Cleansing Balm",
         "price": 20,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14957,16 +14970,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/purple-ginseng-cleansing-balm"
             }
-        ]
+        ],
+        "id": 544,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 545,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Retinaldehyde Cream Serum 0.10%",
         "type": "Serum",
         "price": 32,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -14992,16 +15007,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/retinaldehyde-cream-serum-0-10"
             }
-        ]
+        ],
+        "id": 545,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 546,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Tranexamic Topical Acid 5%",
         "type": "Serum",
         "price": 20,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15027,16 +15044,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/tranexamic-topical-acid-5"
             }
-        ]
+        ],
+        "id": 546,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 547,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Azelaic Acid Emulsion 10%",
         "type": "Serum",
         "price": 22,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15065,16 +15084,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/azelaic-acid-emulsion-10"
             }
-        ]
+        ],
+        "id": 547,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 548,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Dew-Glow Moisturizer SPF 50",
         "type": "Sunscreen",
         "price": 22,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15103,16 +15124,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/dew-glow-moisturizer-spf-50-original"
             }
-        ]
+        ],
+        "id": 548,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 549,
         "brand": "Naturium",
         "brandColor": "#3D3229",
         "name": "Quadruple Hyaluronic Acid Serum 5%",
         "type": "Serum",
         "price": 17,
-        "priceRange": "$$",
+        "priceRange": "$",
         "oilFree": true,
         "fragranceFree": true,
         "vegan": true,
@@ -15138,16 +15161,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://naturium.com/products/quadruple-hyaluronic-acid-serum-5"
             }
-        ]
+        ],
+        "id": 549,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 550,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Ocean Cleanser",
         "type": "Cleanser",
         "price": 48,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -15172,10 +15197,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/ocean-cleanser"
             }
-        ]
+        ],
+        "id": 550
     },
     {
-        "id": 551,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Hyaluronic Sea Serum",
@@ -15209,10 +15234,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/hyaluronic-sea-serum"
             }
-        ]
+        ],
+        "id": 551
     },
     {
-        "id": 552,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Dream Night Cream with Bio-Retinol",
@@ -15241,10 +15266,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/dream-night-cream"
             }
-        ]
+        ],
+        "id": 552
     },
     {
-        "id": 553,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Atmosphere Protection Cream",
@@ -15274,10 +15299,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/atmosphere-protection-cream"
             }
-        ]
+        ],
+        "id": 553
     },
     {
-        "id": 554,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Ocean Eyes Age-Defying Eye Serum",
@@ -15309,16 +15334,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/ocean-eyes"
             }
-        ]
+        ],
+        "id": 554
     },
     {
-        "id": 555,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Marine Screen SPF 50 Mineral Sunscreen",
         "type": "Sunscreen",
         "price": 42,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -15346,10 +15371,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/marine-screen-spf-50-mineral-sunscreen"
             }
-        ]
+        ],
+        "id": 555
     },
     {
-        "id": 556,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Dream Night Serum with Bio-Retinol",
@@ -15379,10 +15404,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/dream-night-serum"
             }
-        ]
+        ],
+        "id": 556
     },
     {
-        "id": 557,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Seabiotic Water Cream",
@@ -15416,16 +15441,17 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/seabiotic-water-cream"
             }
-        ]
+        ],
+        "id": 557,
+        "reviews": 0
     },
     {
-        "id": 558,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Sea Minerals Mist",
         "type": "Mist",
         "price": 38,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -15446,16 +15472,17 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/sea-minerals-mist"
             }
-        ]
+        ],
+        "id": 558,
+        "reviews": 0
     },
     {
-        "id": 559,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Ocean Wave Cleanser",
         "type": "Cleansing Oil",
         "price": 38,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -15479,10 +15506,11 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/ocean-wave-cleanser"
             }
-        ]
+        ],
+        "id": 559,
+        "reviews": 0
     },
     {
-        "id": 560,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Essential Hydrating Oil",
@@ -15510,16 +15538,17 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/essential-hydrating-oil-1"
             }
-        ]
+        ],
+        "id": 560,
+        "reviews": 0
     },
     {
-        "id": 561,
         "brand": "OSEA Malibu",
         "brandColor": "#1A6B6B",
         "name": "Red Algae Clarifying Mask",
         "type": "Mask",
         "price": 48,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -15542,16 +15571,17 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://oseamalibu.com/products/red-algae-mask"
             }
-        ]
+        ],
+        "id": 561,
+        "reviews": 0
     },
     {
-        "id": 562,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Glass Skin Refining Serum",
         "type": "Serum",
         "price": 39,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": true,
         "fragranceFree": true,
         "vegan": true,
@@ -15582,16 +15612,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/glass-skin-refining-serum"
             }
-        ]
+        ],
+        "id": 562,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 563,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Glass Skin Water-Gel Moisturizer",
         "type": "Moisturizer",
         "price": 43,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": true,
         "fragranceFree": true,
         "vegan": true,
@@ -15620,16 +15652,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/glass-skin-water-gel-moisturizer"
             }
-        ]
+        ],
+        "id": 563,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 564,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Ginger Melt Oil Cleanser",
         "type": "Cleansing Oil",
         "price": 35,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15653,10 +15687,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/ginger-melt-oil-cleanser"
             }
-        ]
+        ],
+        "id": 564,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 565,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Power Calm Hydrating Gel Cleanser",
@@ -15686,16 +15722,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/power-calm-hydrating-gel-cleanser"
             }
-        ]
+        ],
+        "id": 565,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 566,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Wild Dew Treatment Essence",
         "type": "Toner",
         "price": 39,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15722,10 +15760,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/wild-dew-treatment-essence"
             }
-        ]
+        ],
+        "id": 566,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 567,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Retinal For All Renewing Serum",
@@ -15758,16 +15798,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/retinal-for-all-renewing-serum"
             }
-        ]
+        ],
+        "id": 567,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 568,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Matcha Pudding Antioxidant Cream",
         "type": "Moisturizer",
         "price": 43,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15794,16 +15836,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/matcha-pudding-antioxidant-cream"
             }
-        ]
+        ],
+        "id": 568,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 569,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Pure Peach Retinoic Eye Cream",
         "type": "Eye Cream",
         "price": 43,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15831,16 +15875,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/pure-peach-retinoic-eye-cream"
             }
-        ]
+        ],
+        "id": 569,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 570,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Beam Blocker Invisible Sunscreen",
         "type": "Sunscreen",
         "price": 34,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15865,16 +15911,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/beam-blocker-invisible-sunscreen"
             }
-        ]
+        ],
+        "id": 570,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 571,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Copper Peptide Pro Firming Serum",
         "type": "Serum",
         "price": 49,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15901,10 +15949,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/copper-peptide-pro-firming-serum"
             }
-        ]
+        ],
+        "id": 571,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 572,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "Power Cocktail Lactic Acid Repair Serum",
@@ -15937,16 +15987,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/power-cocktail-lactic-acid-repair-serum"
             }
-        ]
+        ],
+        "id": 572,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 573,
         "brand": "Peach & Lily",
         "brandColor": "#E8A090",
         "name": "The Good Acids Pore Toner",
         "type": "Toner",
         "price": 39,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -15973,10 +16025,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.peachandlily.com/products/the-good-acids-pore-toner"
             }
-        ]
+        ],
+        "id": 573,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 574,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "Good Genes Lactic Acid Treatment",
@@ -16007,10 +16061,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/good-genes-lactic-acid-treatment"
             }
-        ]
+        ],
+        "id": 574,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 575,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "C.E.O. 15% Vitamin C Brightening Serum",
@@ -16040,10 +16096,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/ceo-vitamin-c-brightening-serum"
             }
-        ]
+        ],
+        "id": 575,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 576,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "C.E.O. Afterglow Brightening Vitamin C Gel Cream",
@@ -16074,10 +16132,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/c-e-o-afterglow-brightening-vitamin-c-gel-cream"
             }
-        ]
+        ],
+        "id": 576,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 577,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "C.E.O. Glow Vitamin C and Turmeric Face Oil",
@@ -16107,10 +16167,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/ceo-glow"
             }
-        ]
+        ],
+        "id": 577,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 578,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "Luna Sleeping Night Oil",
@@ -16139,10 +16201,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/luna-sleeping-night-oil"
             }
-        ]
+        ],
+        "id": 578,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 579,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "Auto Correct Brightening + Depuffing Eye Cream",
@@ -16169,10 +16233,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/autocorrect-brightening-eye-cream"
             }
-        ]
+        ],
+        "id": 579,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 580,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "U.F.O. Acne Treatment Face Oil",
@@ -16203,16 +16269,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/ufo-acne-treatment-face-oil"
             }
-        ]
+        ],
+        "id": 580,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 581,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "Ceramic Slip Cleanser",
         "type": "Cleanser",
         "price": 35,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": true,
         "vegan": true,
@@ -16235,10 +16303,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/ceramic-slip-cleanser"
             }
-        ]
+        ],
+        "id": 581,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 582,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "B3 Nice 10% Niacinamide Serum",
@@ -16269,16 +16339,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/b3-nice-10-niacinamide-serum"
             }
-        ]
+        ],
+        "id": 582,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 583,
         "brand": "Sunday Riley",
         "brandColor": "#1A1A1A",
         "name": "Aquamarine Melt Hydrating Gel-Balm Cleanser",
         "type": "Cleansing Balm",
         "price": 48,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16301,10 +16373,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://sundayriley.com/products/aquamarine-melt-hydrating-gel-balm-cleanser"
             }
-        ]
+        ],
+        "id": 583,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 584,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Ginger Turmeric Cleansing Balm",
@@ -16335,10 +16409,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/natural-cleansing-balm"
             }
-        ]
+        ],
+        "id": 584,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 585,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Chebula Active Serum",
@@ -16369,10 +16445,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/chebula-active-face-serum"
             }
-        ]
+        ],
+        "id": 585,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 586,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Renew Pure Radiance Oil",
@@ -16401,10 +16479,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/pure-radiance-oil-renew"
             }
-        ]
+        ],
+        "id": 586,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 587,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Chebula Extreme Cream",
@@ -16435,10 +16515,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/chebula-extreme-skin-barrier-cream"
             }
-        ]
+        ],
+        "id": 587,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 588,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Phyto-Retinol Clinical Serum",
@@ -16467,10 +16549,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/phyto-retinol-sleep-serum"
             }
-        ]
+        ],
+        "id": 588,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 589,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Phyto-Retinol Advanced Clinical Cream",
@@ -16500,10 +16584,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/phyto-retinol-advanced-clinical-cream"
             }
-        ]
+        ],
+        "id": 589,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 590,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Pure Radiance Supreme Eye Cream",
@@ -16530,10 +16616,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/pure-radiance-supreme-eye-cream"
             }
-        ]
+        ],
+        "id": 590,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 591,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Skin Barrier Sun Shield SPF 30",
@@ -16570,10 +16658,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/clean-face-sunscreen-spf-30"
             }
-        ]
+        ],
+        "id": 591,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 592,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Vitamin C Serum-Booster",
@@ -16606,10 +16696,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/vitamin-c-booster"
             }
-        ]
+        ],
+        "id": 592,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 593,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "SuperSEA Firming & Lifting Treatment",
@@ -16638,16 +16730,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/supersea-firming-lifting-serum"
             }
-        ]
+        ],
+        "id": 593,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 594,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Renew Nourishing Cleanser",
         "type": "Cleanser",
         "price": 48,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16668,10 +16762,12 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/nourishing-cleanser-renew"
             }
-        ]
+        ],
+        "id": 594,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 595,
         "brand": "True Botanicals",
         "brandColor": "#4A5D4E",
         "name": "Clear Pure Radiance Oil",
@@ -16701,16 +16797,18 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://truebotanicals.com/products/pure-radiance-oil-clear"
             }
-        ]
+        ],
+        "id": 595,
+        "rating": 0,
+        "reviews": 0
     },
     {
-        "id": 596,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Coffee Bean Caffeine Brightening Eye Cream",
         "type": "Eye Cream",
         "price": 35,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16737,10 +16835,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/coffee-bean-caffeine-brightening-eye-cream"
             }
-        ]
+        ],
+        "id": 596
     },
     {
-        "id": 597,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Vitamin C Serum",
@@ -16776,16 +16874,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/vitamin-c-serum"
             }
-        ]
+        ],
+        "id": 597
     },
     {
-        "id": 598,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Hydra Drench Cream",
         "type": "Moisturizer",
         "price": 48,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16811,10 +16909,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/hydra-drench-cream"
             }
-        ]
+        ],
+        "id": 598
     },
     {
-        "id": 599,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Bakuchiol Moisturizer",
@@ -16850,16 +16948,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/bakuchiol-moisturizer"
             }
-        ]
+        ],
+        "id": 599
     },
     {
-        "id": 600,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Watermelon Cucumber Water Locking Mist",
         "type": "Mist",
         "price": 34,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16885,16 +16983,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/watermelon-cucumber-water-locking-mist"
             }
-        ]
+        ],
+        "id": 600
     },
     {
-        "id": 601,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Apple Enzyme Exfoliating Cleanser",
         "type": "Cleanser",
         "price": 32,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16922,16 +17020,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/apple-enzyme-exfoliating-cleanser"
             }
-        ]
+        ],
+        "id": 601
     },
     {
-        "id": 602,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Apple Enzyme Resurfacing Serum",
         "type": "Serum",
         "price": 32,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16957,16 +17055,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/apple-enzyme-resurfacing-serum"
             }
-        ]
+        ],
+        "id": 602
     },
     {
-        "id": 603,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Blood Orange Cleansing Balm",
         "type": "Cleansing Balm",
         "price": 38,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -16988,10 +17086,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/blood-orange-cleansing-balm"
             }
-        ]
+        ],
+        "id": 603
     },
     {
-        "id": 604,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Dark Spot Remover",
@@ -17022,16 +17120,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/dark-spot-remover"
             }
-        ]
+        ],
+        "id": 604
     },
     {
-        "id": 605,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Multi-Vitamin + Antioxidants Ultra Riché PM Treatment",
         "type": "Moisturizer",
         "price": 35,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -17060,10 +17158,10 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/multi-vitamin-antioxidants-ultra-riche-pm-treatment"
             }
-        ]
+        ],
+        "id": 605
     },
     {
-        "id": 606,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Rose Water Hyaluronic Acid Serum",
@@ -17094,16 +17192,16 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/rose-water-hyaluronic-acid-serum"
             }
-        ]
+        ],
+        "id": 606
     },
     {
-        "id": 607,
         "brand": "100% Pure",
         "brandColor": "#C41E3A",
         "name": "Flower Water Toner",
         "type": "Toner",
         "price": 35,
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "oilFree": false,
         "fragranceFree": false,
         "vegan": true,
@@ -17133,6 +17231,7 @@ export const RAW_PRODUCTS = [
                 "store": "Brand Website",
                 "url": "https://www.100percentpure.com/products/flower-water-toner"
             }
-        ]
+        ],
+        "id": 607
     }
 ];
