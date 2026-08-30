@@ -6,7 +6,7 @@ import FathomAnalytics from '@/components/FathomAnalytics';
 
 export const metadata = {
   title: 'BunnyIndex — The Cruelty-Free Ingredient Directory',
-  description: 'A true cruelty-free skincare directory. No testing at any stage. No sales in markets that require it. No ownership by companies that do. 503 products. Zero exceptions.',
+  description: 'A true cruelty-free skincare directory. No testing at any stage. No sales in markets that require it. No ownership by companies that do. Zero exceptions.',
   openGraph: {
     title: 'BunnyIndex — The Cruelty-Free Ingredient Directory',
     description: 'Discover cruelty-free skincare products from truly independent brands. Search by ingredient, skin concern, or product type.',

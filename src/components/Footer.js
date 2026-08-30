@@ -11,6 +11,8 @@ export default function Footer() {
         <p className="footer-copy">
           © 2026 BunnyIndex · The cruelty-free ingredient directory ·{' '}
           <Link href="/terms" style={{color:'#6B5B52',textDecoration:'underline',textUnderlineOffset:2}}>Terms of Service</Link>
+          {' · '}
+          <Link href="/privacy" style={{color:'#6B5B52',textDecoration:'underline',textUnderlineOffset:2}}>Privacy</Link>
         </p>
       </div>
     </footer>

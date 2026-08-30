@@ -22,9 +22,12 @@ export default function BrandsPage() {
         <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 12px'}}>
           Below is a curated sample of brands that meet the Bunny Index Standard. There are many more out there — and I'm continually researching and expanding the list.
         </p>
-        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 56px'}}>
+        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 12px'}}>
           If you know of a brand that belongs here, please{' '}
           <a href="/contact" style={{color:'var(--terra)',textDecoration:'none'}}>contact me</a>.
+        </p>
+        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 56px'}}>
+          Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.
         </p>
         <div className="brands-grid" style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(400px,1fr))',gap:32}}>
           {sorted.map(brand => {
