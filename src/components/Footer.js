@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+const linkStyle = {color:'#6B5B52',textDecoration:'underline',textUnderlineOffset:2};
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -10,9 +12,17 @@ export default function Footer() {
         </div>
         <p className="footer-copy">
           © 2026 BunnyIndex · The cruelty-free ingredient directory ·{' '}
-          <Link href="/terms" style={{color:'#6B5B52',textDecoration:'underline',textUnderlineOffset:2}}>Terms of Service</Link>
+          <Link href="/standard" style={linkStyle}>Standard</Link>
           {' · '}
-          <Link href="/privacy" style={{color:'#6B5B52',textDecoration:'underline',textUnderlineOffset:2}}>Privacy</Link>
+          <Link href="/not-carried" style={linkStyle}>Not carried</Link>
+          {' · '}
+          <Link href="/the-label" style={linkStyle}>The label</Link>
+          {' · '}
+          <Link href="/updates" style={linkStyle}>Updates</Link>
+          {' · '}
+          <Link href="/terms" style={linkStyle}>Terms of Service</Link>
+          {' · '}
+          <Link href="/privacy" style={linkStyle}>Privacy</Link>
         </p>
       </div>
     </footer>

@@ -1,107 +1,125 @@
+import Link from 'next/link';
+
 export const metadata = {
-  title: "Brands Not Included — BunnyIndex",
-  description: "Some of the most popular skincare brands don't qualify for BunnyIndex. Here's why — and which parent companies are behind them.",
+  title: 'Not carried — BunnyIndex',
+  description: 'The other half of the directory. Brands that failed one of the three rules, and why they are not listed.',
 };
 
-const NOT_CARRIED = [
+const TATA_HARPER = {
+  name: 'Tata Harper',
+  year: 2022,
+  acquiredBy: 'Amorepacific',
+  rule: '3 — controlling parent that tests',
+  note: 'Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.',
+};
+
+const ALSO_NOT_CARRIED = [
   {
     name: 'The Ordinary / DECIEM',
-    reason: 'Acquired by Estée Lauder in 2021. Estée Lauder is not cruelty-free — it tests on animals in markets where it is legally required, including mainland China.',
-    acquiredBy: 'Estée Lauder',
     year: 2021,
+    acquiredBy: 'Estée Lauder',
+    reason: 'Rule 3 — Estée Lauder is a testing parent.',
   },
   {
     name: 'Drunk Elephant',
-    reason: 'Acquired by Shiseido in 2019. Shiseido is not cruelty-free — it sells in markets that require animal testing and has never held cruelty-free certification.',
-    acquiredBy: 'Shiseido',
     year: 2019,
+    acquiredBy: 'Shiseido',
+    reason: 'Rule 3 — Shiseido is a testing parent.',
   },
   {
     name: 'Tatcha',
-    reason: 'Acquired by Unilever in 2019. Unilever is not cruelty-free — it tests on animals in markets where it is legally required and does not hold cruelty-free status.',
-    acquiredBy: 'Unilever',
     year: 2019,
+    acquiredBy: 'Unilever',
+    reason: 'Rule 3 — Unilever is a testing parent.',
   },
   {
     name: "Paula's Choice",
-    reason: 'Acquired by Unilever in 2021. Unilever is not cruelty-free — it tests on animals in markets where it is legally required and does not hold cruelty-free status.',
-    acquiredBy: 'Unilever',
     year: 2021,
+    acquiredBy: 'Unilever',
+    reason: 'Rule 3 — Unilever is a testing parent.',
   },
   {
     name: 'Youth to the People',
-    reason: "Acquired by L'Oréal in 2021. L'Oréal is not cruelty-free — it sells in markets that require animal testing and has never held cruelty-free certification.",
-    acquiredBy: "L'Oréal",
     year: 2021,
+    acquiredBy: "L’Oréal",
+    reason: "Rule 3 — L’Oréal is a testing parent.",
   },
   {
     name: 'Aesop',
-    reason: "Acquired by L'Oréal in 2023. L'Oréal is not cruelty-free — it sells in markets that require animal testing and has never held cruelty-free certification.",
-    acquiredBy: "L'Oréal",
     year: 2023,
+    acquiredBy: "L’Oréal",
+    reason: "Rule 3 — L’Oréal is a testing parent.",
   },
   {
     name: 'Farmacy Beauty',
-    reason: 'Acquired by Unilever in 2021. Unilever is not cruelty-free — it tests on animals in markets where it is legally required and does not hold cruelty-free status.',
-    acquiredBy: 'Unilever',
     year: 2021,
+    acquiredBy: 'Unilever',
+    reason: 'Rule 3 — Unilever is a testing parent.',
   },
   {
     name: 'First Aid Beauty',
-    reason: "Acquired by Procter & Gamble in 2019. P&G is not cruelty-free — it tests on animals in markets where it is legally required and does not hold cruelty-free status.",
-    acquiredBy: 'Procter & Gamble',
     year: 2019,
+    acquiredBy: 'Procter & Gamble',
+    reason: 'Rule 3 — Procter & Gamble is a testing parent.',
   },
   {
     name: 'CeraVe',
-    reason: "Acquired by L'Oréal in 2017. L'Oréal is not cruelty-free — it sells in markets that require animal testing and has never held cruelty-free certification.",
-    acquiredBy: "L'Oréal",
     year: 2017,
-  },
-  {
-    name: 'Tata Harper',
-    reason: 'Acquired by Amorepacific in 2022. Amorepacific is not cruelty-free — it allows animal testing when required by other countries or regulations and does not hold cruelty-free certification.',
-    acquiredBy: 'Amorepacific',
-    year: 2022,
+    acquiredBy: "L’Oréal",
+    reason: "Rule 3 — L’Oréal is a testing parent.",
   },
 ];
 
+const linkStyle = { color: 'var(--terra)', textDecoration: 'none' };
+const p = { fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 20px', maxWidth: 620 };
+const card = { background: 'var(--white)', borderRadius: 'var(--r-md)', border: '1px solid var(--border)', padding: '18px 22px', display: 'flex', flexDirection: 'column', gap: 6 };
+
 export default function NotCarriedPage() {
-  const sorted = [...NOT_CARRIED].sort((a, b) => a.name.localeCompare(b.name));
+  const also = [...ALSO_NOT_CARRIED].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 42, fontWeight: 600, color: 'var(--ink)', margin: '0 0 40px', lineHeight: 1.1 }}>
-          Why Some Brands Aren't Included
+        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
+          Not carried
+        </div>
+        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 42, fontWeight: 600, color: 'var(--ink)', margin: '0 0 24px', lineHeight: 1.1 }}>
+          Who isn’t here, and why.
         </h1>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          One night while shopping for skincare, I kept discovering incredible brands — thoughtful formulas, strong missions, beautiful packaging.
+        <p style={p}>This is the other half of the directory.</p>
+        <p style={p}>
+          If you only see who passed, BunnyIndex still looks like a listicle: a row of names, a warm feeling, no cost. The cost is the brands that don’t make it. They are often the ones with the widest shelves.
         </p>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          But after digging a little deeper, I found that many had been acquired by larger parent companies that test on animals elsewhere in their portfolios.
+        <p style={p}>
+          A brand is not listed because it failed one of the three rules — testing at some stage, selling where testing is required, or a controlling parent that tests. This is not a judgment of the formula. It is the standard, applied.
         </p>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          On the surface, these brands may call themselves cruelty-free. And in many cases, they're doing meaningful work.
+        <p style={{ ...p, margin: '0 0 48px' }}>
+          The full bar is on <Link href="/standard" style={linkStyle}>The Standard</Link>.
         </p>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, fontWeight: 600, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          But ownership matters.
-        </p>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          When a brand is owned by a company that profits from animal testing, I don't consider that fully aligned with the standard I want to support.
-        </p>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, fontWeight: 600, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          So I set a higher bar.
-        </p>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', maxWidth: 620, lineHeight: 1.75, margin: '0 0 20px' }}>
-          The brands listed below aren't included on Bunny Index because they don't meet the full standard — whether due to required-testing markets or ownership by companies that test.
-        </p>
-        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontStyle: 'italic', color: 'var(--terra)', maxWidth: 620, lineHeight: 1.65, margin: '0 0 56px' }}>
-          This isn't a judgment of quality.<br />It's a line I've chosen to draw.
-        </p>
+
+        <div style={{ ...card, padding: '24px 24px 22px', gap: 10, margin: '0 0 48px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 28, fontWeight: 600, color: 'var(--ink)', margin: 0, lineHeight: 1.15 }}>
+              {TATA_HARPER.name}
+            </h2>
+            <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, color: 'var(--muted)' }}>
+              acquired {TATA_HARPER.year}
+            </div>
+          </div>
+          <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: 'var(--muted)' }}>
+            Year {TATA_HARPER.year} · Rule {TATA_HARPER.rule} · {TATA_HARPER.acquiredBy}
+          </div>
+          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', lineHeight: 1.75, margin: 0 }}>
+            {TATA_HARPER.note}
+          </p>
+        </div>
+
+        <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight: 600, color: 'var(--ink)', margin: '0 0 20px', lineHeight: 1.2 }}>
+          Also not carried
+        </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          {sorted.map(brand => (
-            <div key={brand.name} style={{ background: 'var(--white)', borderRadius: 'var(--r-md)', border: '1px solid var(--border)', padding: '18px 22px', display: 'flex', flexDirection: 'column', gap: 6 }}>
+          {also.map((brand) => (
+            <div key={brand.name} style={card}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
                 <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, fontWeight: 600, color: 'var(--ink)' }}>{brand.name}</div>
                 <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, color: 'var(--muted)' }}>acquired {brand.year}</div>
@@ -110,13 +128,15 @@ export default function NotCarriedPage() {
             </div>
           ))}
         </div>
+
         <div style={{ marginTop: 56, paddingTop: 40, borderTop: '1px solid var(--border)' }}>
-          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, color: 'var(--muted)', lineHeight: 1.65, maxWidth: 580 }}>
-            All determinations are based on publicly available ownership structures and market activity. If you believe a listing is inaccurate, please{' '}
-            <a href="/contact" style={{ color: 'var(--terra)', textDecoration: 'none' }}>contact us</a>.
+          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, color: 'var(--muted)', lineHeight: 1.65, maxWidth: 580, margin: 0 }}>
+            Determinations use publicly available ownership and market activity. If a listing is wrong,{' '}
+            <Link href="/contact" style={linkStyle}>contact us</Link>. Removals and additions are dated on{' '}
+            <Link href="/updates" style={linkStyle}>What changed</Link>.
           </p>
         </div>
       </div>
     </section>
   );
-            }
+}
