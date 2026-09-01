@@ -110,9 +110,17 @@ export default function StandardPage() {
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 40px', lineHeight: 1.3 }}>
           No asterisk.
         </p>
-        <p style={{ ...p, margin: 0 }}>
-          <Link href="/the-label" style={linkStyle}>How the claim actually works →</Link>
-        </p>
+        <div style={{ marginTop: 8, paddingTop: 32, borderTop: '1px solid var(--border)' }}>
+          <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
+            Also in The Standard
+          </div>
+          <p style={{ ...p, margin: '0 0 8px' }}>
+            <Link href="/the-label" style={linkStyle}>The label — how the claim actually works →</Link>
+          </p>
+          <p style={{ ...p, margin: 0 }}>
+            <Link href="/not-carried" style={linkStyle}>Who isn’t here — listings we don’t carry →</Link>
+          </p>
+        </div>
     </EditorialShell>
   );
 }
