@@ -199,3 +199,33 @@ export function buyLabel(url) {
     return 'Shop now →';
   }
 }
+
+export function isAmazonBuyUrl(url) {
+  if (!url) return false;
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, '');
+    return host === 'amazon.com';
+  } catch {
+    return false;
+  }
+}
+
+/** First US amazon.com URL from buyUrl or buyLinks (affiliate-ready rows only). */
+export function findAmazonBuyUrl(product) {
+  if (!product) return null;
+  if (isAmazonBuyUrl(product.buyUrl)) return product.buyUrl;
+  const link = product.buyLinks?.find(
+    (l) => isAmazonBuyUrl(l.url) || String(l.store || '').toLowerCase() === 'amazon'
+  );
+  return link?.url || null;
+}
+
+/** Secondary buyLinks excluding Amazon and exact duplicates of the primary buyUrl. */
+export function otherBuyLinks(product) {
+  if (!product?.buyLinks?.length) return [];
+  return product.buyLinks.filter((l) => {
+    if (isAmazonBuyUrl(l.url) || String(l.store || '').toLowerCase() === 'amazon') return false;
+    if (l.url && product.buyUrl && l.url === product.buyUrl) return false;
+    return true;
+  });
+}
