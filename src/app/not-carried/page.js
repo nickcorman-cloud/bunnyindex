@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import EditorialShell from '@/components/EditorialShell';
+import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
   title: 'Not carried — BunnyIndex',
@@ -76,14 +78,11 @@ export default function NotCarriedPage() {
   const also = [...ALSO_NOT_CARRIED].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
-          Not carried
-        </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 42, fontWeight: 600, color: 'var(--ink)', margin: '0 0 24px', lineHeight: 1.1 }}>
-          Who isn’t here, and why.
-        </h1>
+    <EditorialShell>
+      <PageHeader
+        eyebrow="Not carried"
+        title="Who isn’t here, and why."
+      />
         <p style={p}>This is the other half of the directory.</p>
         <p style={p}>
           If you only see who passed, BunnyIndex still looks like a listicle: a row of names, a warm feeling, no cost. The cost is the brands that don’t make it. They are often the ones with the widest shelves.
@@ -117,7 +116,6 @@ export default function NotCarriedPage() {
             <Link href="/updates" style={linkStyle}>What changed</Link>.
           </p>
         </div>
-      </div>
-    </section>
+    </EditorialShell>
   );
 }

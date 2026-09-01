@@ -1,36 +1,106 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
+const PRIMARY = [
+  { href: '/directory', label: 'Directory' },
+  { href: '/brands', label: 'Brands' },
+  { href: '/standard', label: 'Standard' },
+  { href: '/not-carried', label: 'Not carried' },
+];
+
+const MORE = [
+  { href: '/the-label', label: 'The label' },
+  { href: '/updates', label: 'Updates' },
+  { href: '/about', label: 'About' },
+  { href: '/newsletter', label: 'Newsletter' },
+  { href: '/contact', label: 'Contact' },
+];
 
 export default function Header() {
   const path = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef(null);
   const active = (href) => path === href || path.startsWith(href + '/');
-  const close = () => setMenuOpen(false);
+  const moreActive = MORE.some((item) => active(item.href));
+  const close = () => {
+    setMenuOpen(false);
+    setMoreOpen(false);
+  };
+
+  useEffect(() => {
+    if (!moreOpen) return undefined;
+    const onDoc = (e) => {
+      if (moreRef.current && !moreRef.current.contains(e.target)) {
+        setMoreOpen(false);
+      }
+    };
+    const onKey = (e) => {
+      if (e.key === 'Escape') setMoreOpen(false);
+    };
+    document.addEventListener('mousedown', onDoc);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDoc);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [moreOpen]);
+
   return (
     <header className="header">
       <Link href="/" className="logo" onClick={close}>
         <span className="logo-b">bunny</span>
         <span className="logo-i">index</span>
       </Link>
-      <button className="menu-toggle" onClick={() => setMenuOpen(v => !v)} aria-label="Toggle menu" aria-expanded={menuOpen}>
+      <button
+        className="menu-toggle"
+        onClick={() => {
+          setMenuOpen((v) => !v);
+          setMoreOpen(false);
+        }}
+        aria-label="Toggle menu"
+        aria-expanded={menuOpen}
+      >
         <span className="menu-bar" />
         <span className="menu-bar" />
         <span className="menu-bar" />
       </button>
       <nav className={`nav${menuOpen ? ' open' : ''}`}>
-        <Link href="/" className={`nav-btn${path === '/' ? ' active' : ''}`} onClick={close}>Home</Link>
-        <Link href="/directory" className={`nav-btn${active('/directory') ? ' active' : ''}`} onClick={close}>Directory</Link>
-        <Link href="/brands" className={`nav-btn${active('/brands') ? ' active' : ''}`} onClick={close}>Our Brands</Link>
-        <Link href="/standard" className={`nav-btn${active('/standard') ? ' active' : ''}`} onClick={close}>Standard</Link>
-        <Link href="/not-carried" className={`nav-btn${active('/not-carried') ? ' active' : ''}`} onClick={close}>Not carried</Link>
-        <Link href="/the-label" className={`nav-btn${active('/the-label') ? ' active' : ''}`} onClick={close}>The label</Link>
-        <Link href="/updates" className={`nav-btn${active('/updates') ? ' active' : ''}`} onClick={close}>Updates</Link>
-        <Link href="/about" className={`nav-btn${active('/about') ? ' active' : ''}`} onClick={close}>About</Link>
-        <Link href="/newsletter" className={`nav-btn${active('/newsletter') ? ' active' : ''}`} onClick={close}>Newsletter</Link>
-        <Link href="/contact" className={`nav-btn${active('/contact') ? ' active' : ''}`} onClick={close}>Contact</Link>
-        <Link href="/terms" className={`nav-btn${active('/terms') ? ' active' : ''}`} style={{fontSize:12,opacity:0.7}} onClick={close}>Terms</Link>
+        {PRIMARY.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={`nav-btn${active(item.href) ? ' active' : ''}`}
+            onClick={close}
+          >
+            {item.label}
+          </Link>
+        ))}
+        <div className={`nav-more${moreOpen ? ' open' : ''}`} ref={moreRef}>
+          <button
+            type="button"
+            className={`nav-btn${moreActive || moreOpen ? ' active' : ''}`}
+            aria-expanded={moreOpen}
+            aria-haspopup="true"
+            onClick={() => setMoreOpen((v) => !v)}
+          >
+            More
+          </button>
+          <div className="nav-more-panel" hidden={!moreOpen}>
+            {MORE.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`nav-btn${active(item.href) ? ' active' : ''}`}
+                onClick={close}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </nav>
     </header>
   );

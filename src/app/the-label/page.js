@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import EditorialShell from '@/components/EditorialShell';
+import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
   title: 'The label is not the company. — BunnyIndex',
@@ -11,17 +13,12 @@ const h2 = { fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight:
 
 export default function TheLabelPage() {
   return (
-    <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
-          The claim
-        </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 42, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.1, margin: '0 0 16px' }}>
-          The label is not the company.
-        </h1>
-        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--muted)', maxWidth: 620, lineHeight: 1.5, margin: '0 0 32px' }}>
-          Most cruelty-free claims stop at the finished product. Some stop at the factory. Almost none include the parent. We do.
-        </p>
+    <EditorialShell>
+      <PageHeader
+        eyebrow="The claim"
+        title="The label is not the company."
+        dek="Most cruelty-free claims stop at the finished product. Some stop at the factory. Almost none include the parent. We do."
+      />
 
         <p style={p}>
           The carton can be telling the truth about the bottle and still be silent about the company. “Cruelty-free” is a line of type. It is not an org chart, a supplier list, or a map of where the brand is sold.
@@ -91,7 +88,6 @@ export default function TheLabelPage() {
         <p style={{ ...p, margin: 0 }}>
           <Link href="/not-carried" style={linkStyle}>Who isn’t here →</Link>
         </p>
-      </div>
-    </section>
+    </EditorialShell>
   );
 }
