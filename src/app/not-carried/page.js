@@ -112,8 +112,7 @@ export default function NotCarriedPage() {
         <div style={{ marginTop: 56, paddingTop: 40, borderTop: '1px solid var(--border)' }}>
           <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, color: 'var(--muted)', lineHeight: 1.65, maxWidth: 580, margin: 0 }}>
             Determinations use publicly available ownership and market activity. If a listing is wrong,{' '}
-            <Link href="/contact" style={linkStyle}>contact us</Link>. Removals and additions are dated on{' '}
-            <Link href="/updates" style={linkStyle}>What changed</Link>.
+            <Link href="/contact" style={linkStyle}>contact us</Link>.
           </p>
         </div>
     </EditorialShell>

@@ -12,7 +12,6 @@ const PRIMARY = [
 
 const MORE = [
   { href: '/the-label', label: 'The label' },
-  { href: '/updates', label: 'Updates' },
   { href: '/about', label: 'About' },
   { href: '/newsletter', label: 'Newsletter' },
   { href: '/contact', label: 'Contact' },

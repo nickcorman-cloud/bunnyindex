@@ -8,7 +8,6 @@ const FOOTER_LINKS = [
   { href: '/standard', label: 'Standard' },
   { href: '/not-carried', label: 'Not carried' },
   { href: '/the-label', label: 'The label' },
-  { href: '/updates', label: 'Updates' },
   { href: '/about', label: 'About' },
   { href: '/newsletter', label: 'Newsletter' },
   { href: '/contact', label: 'Contact' },

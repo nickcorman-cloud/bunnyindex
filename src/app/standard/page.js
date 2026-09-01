@@ -53,7 +53,7 @@ export default function StandardPage() {
           The bottle still says cruelty-free. The brand site can still read like an independent studio. The controlling parent still tests on animals when legally required, or as policy. That brand does not get a listing here. It fails rule 3.
         </p>
         <p style={p}>
-          Who we don’t carry lives on <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link>. When a listing changes, it goes in <Link href="/updates" style={linkStyle}>What changed</Link>.
+          Who we don’t carry — and when a listing changes — lives on <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link>.
         </p>
 
         <h2 style={h2}>What does not automatically fail</h2>
