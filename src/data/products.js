@@ -292,6 +292,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://acure.com/products/brightening-facial-scrub?_pos=1&_psq=Brightening+Facial+Scrub&_ss=e&_v=1.0"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B003Z4OD24?tag=bunnyindex-20"
             }
         ]
     },
@@ -359,6 +363,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://acure.com/products/brightening-glowing-serum?_pos=1&_psq=Brightening+Glowing+Serum&_ss=e&_v=1.0"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0040ZHUH2?tag=bunnyindex-20"
             }
         ]
     },
@@ -392,6 +400,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://acure.com/products/seriously-soothing-cleansing-cream?srsltid=AfmBOopG7tow0QQhj0XTeoxiXvtkSTXu_OiaLqzRm7FnD5fAeN-1B1Cx"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B00B4C35IW?tag=bunnyindex-20"
             }
         ]
     },
@@ -455,6 +467,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://acure.com/products/radically-rejuvenating-eye-cream-1"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B003Z4MCJA?tag=bunnyindex-20"
             }
         ]
     },
@@ -489,6 +505,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://acure.com/products/radically-rejuvenating-whipped-night-cream?srsltid=AfmBOooT0z6ey-sCSseCO59Od-vXX_bQS3zLwJvTFlJHGKjN3Nks3QnX"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BDZL7QGL?tag=bunnyindex-20"
             }
         ]
     },
