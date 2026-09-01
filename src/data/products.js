@@ -34,6 +34,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-face-cream/82829.html?srsltid=AfmBOor5Y0w9ljikfOUx3-4g-eDCHjNJMbFpQp2qR_NTUuSsoJmmUvJ6"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08127SC4G?tag=bunnyindex-20"
             }
         ]
     },
@@ -68,6 +72,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/suntouchable-whoa-glow-spf-30/300227.html?srsltid=AfmBOoocaXj6Oazop5XNU5Z1HSRLAT2XJDdrQwdnyykooWbnGxg81BBe"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CBR3KRMB?tag=bunnyindex-20"
             }
         ]
     },
@@ -99,6 +107,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/halo-glow-liquid-filter/300211.html?srsltid=AfmBOopL2f8kvOFyxQeHgYe66SvflUi-QgVQmjMg8OApOT4d0YhnHqMG"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0F3J798SG?tag=bunnyindex-20"
             }
         ]
     },
@@ -135,6 +147,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-keep-your-balance-toner/59333.html?srsltid=AfmBOorcX-7bUfliQzk6PXbwWbVhxim3VY0RvcKODlf9ugfTE64zyfuE"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B07X2M2TXN?tag=bunnyindex-20"
             }
         ]
     },
@@ -9897,6 +9913,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-eye-cream/57014.html?srsltid=AfmBOoqwUTk5uKfKPJXdKGU8S-ThMPuKMDvluYiaqJ4aZvq7Vh-16Vjt"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B01D1DR514?tag=bunnyindex-20"
             }
         ]
     },
@@ -10046,6 +10066,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/blemish-breakthrough-tripleacid-resurfacing-serum/57562UP.html?srsltid=AfmBOoqUH7I9yLXVzkH2KlwLEy1Afq3aPi6VaW-ghfR8lTxWuzlXH1_k"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0B5MFHHNZ?tag=bunnyindex-20"
             }
         ]
     },
@@ -10189,6 +10213,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/bright-icon-vitamin-c--e--ferulic-serum/300314.html?srsltid=AfmBOooz_XOenpjbbA7AP16pQJGl7rx4BzflH6Lxdnd9G9V0yco6eQ9R"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0F3JCDFVT?tag=bunnyindex-20"
             }
         ]
     },
@@ -10222,6 +10250,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-gentle-peeling-exfoliant/500024.html?srsltid=AfmBOoqL8Vq5pgTQQf4t42F1C9Gciktd2YD84VxH300oRZ9xR7zQ-fdJ"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B073R2ZFJ5?tag=bunnyindex-20"
             }
         ]
     },
@@ -10293,6 +10325,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-thirst-burst-drops/300313.html?srsltid=AfmBOoqk0xqWzzJJ3KpaW6M9MTL_wUL7DIzqSiSWbmDD8rtyuZXqQpmt"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DHRQXYCH?tag=bunnyindex-20"
             }
         ]
     },
@@ -10328,6 +10364,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-triple-bounce-serum/57167.html?srsltid=AfmBOooO0PgeMwxyg4ZlqIbDKCT4IQCcoLbGmkdLPjrcjt7jqEp3UXxP"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSP4T13Z?tag=bunnyindex-20"
             }
         ]
     },
@@ -10366,6 +10406,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/blemish-breakthrough-acne-calming-water-cream/57563UP.html?srsltid=AfmBOoqoLm1oGZT2c0KX56XsiiIF9Ewo2xilBPgyGINBCR76cORJaVfw"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0B5MFC5DW?tag=bunnyindex-20"
             }
         ]
     },
@@ -10435,6 +10479,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration-face-cream--spf-30/81570.html?srsltid=AfmBOop-Sa_Y4BK7ZuuwW-HWU7nW3E7jGeLjLnlAJbxUpMq5doCRdJ_g"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0984H7XH5?tag=bunnyindex-20"
             }
         ]
     },
@@ -11695,6 +11743,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.elfcosmetics.com/holy-hydration!-lip-mask/57162.html?srsltid=AfmBOoqU-7aL0Zx0MZO34_7_8l6fuJx_sTGdQ8SlI_tCizpIYjHwUPx6"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0B5MGPXPN?tag=bunnyindex-20"
             }
         ]
     },
