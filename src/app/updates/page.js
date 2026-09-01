@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import EditorialShell from '@/components/EditorialShell';
+import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
   title: 'What changed. — BunnyIndex',
@@ -10,14 +12,12 @@ const p = { fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)
 
 export default function UpdatesPage() {
   return (
-    <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
-          The record
-        </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 42, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.1, margin: '0 0 24px' }}>
-          What changed.
-        </h1>
+    <EditorialShell>
+      <PageHeader
+        eyebrow="The record"
+        title="What changed."
+      />
+
         <p style={p}>
           This is the dated record of the directory: brands added, brands removed, and why. It is not a newsletter, and it is not a recap of how we feel about it.
         </p>
@@ -37,7 +37,6 @@ export default function UpdatesPage() {
         <p style={{ ...p, margin: 0 }}>
           Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.
         </p>
-      </div>
-    </section>
+    </EditorialShell>
   );
 }

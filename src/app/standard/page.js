@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import EditorialShell from '@/components/EditorialShell';
+import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
   title: 'Three rules. No asterisk. — BunnyIndex',
@@ -11,17 +13,12 @@ const h2 = { fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight:
 
 export default function StandardPage() {
   return (
-    <section style={{ padding: '64px 0 80px', background: 'var(--cream)' }}>
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
-          The Bunny Index Standard
-        </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 42, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.1, margin: '0 0 16px' }}>
-          Three rules. No asterisk.
-        </h1>
-        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--muted)', maxWidth: 620, lineHeight: 1.5, margin: '0 0 32px' }}>
-          A brand can print cruelty-free on the bottle and still fail.
-        </p>
+    <EditorialShell>
+      <PageHeader
+        eyebrow="The Bunny Index Standard"
+        title="Three rules. No asterisk."
+        dek="A brand can print cruelty-free on the bottle and still fail."
+      />
 
         <p style={p}>
           Cruelty-free is not a regulated phrase in skincare. It is a sentence a brand chooses. The carton can say it while ingredients are tested, while the brand sells where tests are required, or while a parent company tests and the subsidiary keeps the nicer label.
@@ -101,7 +98,6 @@ export default function StandardPage() {
         <p style={{ ...p, margin: 0 }}>
           <Link href="/the-label" style={linkStyle}>How the claim actually works →</Link>
         </p>
-      </div>
-    </section>
+    </EditorialShell>
   );
 }

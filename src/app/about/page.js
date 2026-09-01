@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import EditorialShell from '@/components/EditorialShell';
+import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
   title: 'About — BunnyIndex',
@@ -8,14 +10,12 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <section style={{ padding: '72px 0 80px', background: 'var(--cream)' }}>
-      <div style={{ maxWidth: 680, margin: '0 auto', padding: '0 24px' }}>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--terra)', marginBottom: 16 }}>
-          About BunnyIndex
-        </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 48, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.08, margin: '0 0 32px' }}>
-          A Higher Standard — And a Better Way to Find It
-        </h1>
+    <EditorialShell>
+      <PageHeader
+        eyebrow="About BunnyIndex"
+        title="A Higher Standard — And a Better Way to Find It"
+        measure={680}
+      />
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 20, margin: '0 0 20px' }}>
           <Image
@@ -95,7 +95,6 @@ export default function AboutPage() {
         <Link href="/contact" style={{ display: 'inline-block', fontFamily: "'DM Sans',sans-serif", fontSize: 15, fontWeight: 600, color: 'var(--cream)', background: 'var(--ink)', padding: '12px 28px', borderRadius: 'var(--r-sm)', textDecoration: 'none', letterSpacing: '0.02em' }}>
           Get in touch →
         </Link>
-      </div>
-    </section>
+    </EditorialShell>
   );
 }
