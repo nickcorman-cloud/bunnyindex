@@ -14,7 +14,6 @@ const STATIC_PATHS = [
   '/privacy',
   '/standard',
   '/the-label',
-  '/updates',
   '/ingredients/niacinamide',
   '/ingredients/retinol',
   '/ingredients/vitamin-c',
