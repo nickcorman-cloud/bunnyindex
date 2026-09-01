@@ -2,7 +2,7 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify } from '@/lib/constants';
+import { products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify, findAmazonBuyUrl, isAmazonBuyUrl, otherBuyLinks } from '@/lib/constants';
 
 const PAGE_SIZE = 24;
 
@@ -57,9 +57,9 @@ function ProductModal({ product, onClose }) {
         {product.buyLinks?.length > 0 && (
           <div style={{display:'flex',gap:8,flexWrap:'wrap',marginTop:8}}>
             {product.buyLinks.map(link => (
-              <a key={link.store} href={link.url} target="_blank" rel="noopener noreferrer"
+              <a key={link.store + link.url} href={link.url} target="_blank" rel="noopener noreferrer sponsored"
                 style={{fontSize:12,color:'var(--terra)',border:'1px solid var(--terra)',borderRadius:20,padding:'4px 12px',textDecoration:'none',fontWeight:600}}>
-                Also on {link.store} →
+                Also on {String(link.store || '').toLowerCase() === 'amazon' || isAmazonBuyUrl(link.url) ? 'Amazon' : link.store} →
               </a>
             ))}
           </div>
@@ -269,14 +269,34 @@ export default function DirectoryClient() {
                         <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
                           {buyLabel(product.buyUrl)}
                         </a>
-                        {product.buyLinks?.length > 0 && (
-                          <button
-                            onClick={e => { e.stopPropagation(); setSelectedProduct(product); }}
-                            style={{fontSize:13,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:0,fontWeight:500,opacity:0.75,transition:'var(--ease)'}} onMouseEnter={e=>{e.currentTarget.style.opacity='1';e.currentTarget.style.textDecoration='underline';}} onMouseLeave={e=>{e.currentTarget.style.opacity='0.75';e.currentTarget.style.textDecoration='none';}}
-                          >
-                            Other stores
-                          </button>
-                        )}
+                        {(() => {
+                          const amazonUrl = findAmazonBuyUrl(product);
+                          const showAmazon = amazonUrl && !isAmazonBuyUrl(product.buyUrl);
+                          const extras = otherBuyLinks(product);
+                          return (
+                            <>
+                              {showAmazon && (
+                                <a
+                                  href={amazonUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer sponsored"
+                                  onClick={e => e.stopPropagation()}
+                                  style={{fontSize:13,color:'var(--terra)',fontWeight:600,textDecoration:'none',opacity:0.9}}
+                                >
+                                  Amazon →
+                                </a>
+                              )}
+                              {extras.length > 0 && (
+                                <button
+                                  onClick={e => { e.stopPropagation(); setSelectedProduct(product); }}
+                                  style={{fontSize:13,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:0,fontWeight:500,opacity:0.75,transition:'var(--ease)'}} onMouseEnter={e=>{e.currentTarget.style.opacity='1';e.currentTarget.style.textDecoration='underline';}} onMouseLeave={e=>{e.currentTarget.style.opacity='0.75';e.currentTarget.style.textDecoration='none';}}
+                                >
+                                  Other stores
+                                </button>
+                              )}
+                            </>
+                          );
+                        })()}
                       </div>
                     </div>
                   </div>
