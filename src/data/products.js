@@ -8784,6 +8784,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/liquid-brilliance-super-serum?variant=40224000639066&queryID=11b5fcaa3604ff5e1a8ae61d92ad3db3&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FTTTP3Y3?tag=bunnyindex-20"
             }
         ]
     },
@@ -8817,6 +8821,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/defying-gravity-eye-lifting-cream-1?variant=40224007618650&queryID=93f429c0e25ed2983f566ad0ddddab59&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FTTRB1QB?tag=bunnyindex-20"
             }
         ]
     },
@@ -8849,6 +8857,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/bright-balance-hydrating-gel-cleanser?variant=40224000180314&queryID=a5dc539220c3b44deee594f4c596edd0&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FNVJH6ZD?tag=bunnyindex-20"
             }
         ]
     },
@@ -8958,6 +8970,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/moisture-flash-conditioning-toner-mist?variant=40224001687642&queryID=b3967ec85e95fc340c82e15a43d896cf&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DHXMK83W?tag=bunnyindex-20"
             }
         ]
     },
@@ -8992,6 +9008,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/overnight-sensation-hydrating-sleep-mask?variant=41332312146010&queryID=7ba38394272ff197f410788cbb8e57fc&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FV2DT24H?tag=bunnyindex-20"
             }
         ]
     },
@@ -9026,6 +9046,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/overnight-sensation-gentle-retexturizing-solution?variant=40224004603994&queryID=371080d162e609630f1e70aeef513ff1&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FV282GTJ?tag=bunnyindex-20"
             }
         ]
     },
@@ -9059,6 +9083,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/defying-gravity-deep-hydration-moisturizer?variant=40224006275162&queryID=2db05293b8ae49aadb9529a40b2d9846&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FV2671H3?tag=bunnyindex-20"
             }
         ]
     },
@@ -9192,6 +9220,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://thrivecausemetics.com/products/bright-balance-2-in-1-instant-exfoliator?variant=40872201519194&queryID=9726036f5abbd65dd8282e994bdc9baa&indexName=shopify_products"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FTTQ3516?tag=bunnyindex-20"
             }
         ]
     },
