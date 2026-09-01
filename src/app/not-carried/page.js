@@ -68,6 +68,12 @@ const ALSO_NOT_CARRIED = [
     acquiredBy: "L’Oréal",
     reason: "Rule 3 — L’Oréal is a testing parent.",
   },
+  {
+    name: 'ILIA Beauty',
+    year: 2022,
+    acquiredBy: 'Clarins',
+    reason: 'Rule 3 — Clarins is a testing parent.',
+  },
 ];
 
 const linkStyle = { color: 'var(--terra)', textDecoration: 'none' };
