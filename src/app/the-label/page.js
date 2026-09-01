@@ -72,10 +72,6 @@ export default function TheLabelPage() {
         <p style={p}>
           Most claims never include the parent. Almost no badge is a substitute for reading who owns the brand. That is rule 3.
         </p>
-        <p style={p}>Tata Harper is the worked example.</p>
-        <p style={p}>
-          Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.
-        </p>
         <p style={p}>
           A minority investor is not the same thing as a controlling parent. We do not treat every stake as a fail. We do treat a testing parent as one. The line is control, not a vibe about “selling out.”
         </p>

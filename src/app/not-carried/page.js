@@ -5,14 +5,6 @@ export const metadata = {
   description: 'The other half of the directory. Brands that failed one of the three rules, and why they are not listed.',
 };
 
-const TATA_HARPER = {
-  name: 'Tata Harper',
-  year: 2022,
-  acquiredBy: 'Amorepacific',
-  rule: '3 — controlling parent that tests',
-  note: 'Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.',
-};
-
 const ALSO_NOT_CARRIED = [
   {
     name: 'The Ordinary / DECIEM',
@@ -43,6 +35,12 @@ const ALSO_NOT_CARRIED = [
     year: 2021,
     acquiredBy: "L’Oréal",
     reason: "Rule 3 — L’Oréal is a testing parent.",
+  },
+  {
+    name: 'Tata Harper',
+    year: 2022,
+    acquiredBy: 'Amorepacific',
+    reason: 'Rule 3 — Amorepacific is a testing parent.',
   },
   {
     name: 'Aesop',
@@ -97,25 +95,8 @@ export default function NotCarriedPage() {
           The full bar is on <Link href="/standard" style={linkStyle}>The Standard</Link>.
         </p>
 
-        <div style={{ ...card, padding: '24px 24px 22px', gap: 10, margin: '0 0 48px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 28, fontWeight: 600, color: 'var(--ink)', margin: 0, lineHeight: 1.15 }}>
-              {TATA_HARPER.name}
-            </h2>
-            <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 11, color: 'var(--muted)' }}>
-              acquired {TATA_HARPER.year}
-            </div>
-          </div>
-          <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: 'var(--muted)' }}>
-            Year {TATA_HARPER.year} · Rule {TATA_HARPER.rule} · {TATA_HARPER.acquiredBy}
-          </div>
-          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', lineHeight: 1.75, margin: 0 }}>
-            {TATA_HARPER.note}
-          </p>
-        </div>
-
         <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight: 600, color: 'var(--ink)', margin: '0 0 20px', lineHeight: 1.2 }}>
-          Also not carried
+          Not carried
         </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {also.map((brand) => (

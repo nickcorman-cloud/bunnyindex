@@ -28,14 +28,8 @@ export default function UpdatesPage() {
           The bar itself: <Link href="/standard" style={linkStyle}>The Standard</Link>. Who is out, in full: <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link>.
         </p>
 
-        <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight: 600, color: 'var(--ink)', margin: '0 0 16px', lineHeight: 1.2 }}>
-          30 August 2026
-        </h2>
-        <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, fontWeight: 700, color: 'var(--ink)', margin: '0 0 16px' }}>
-          Removed: Tata Harper
-        </p>
         <p style={{ ...p, margin: 0 }}>
-          Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.
+          Removals for ownership failures are logged here. Brand-specific callouts are kept off this page for now — see <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link> for the current list.
         </p>
       </div>
     </section>
