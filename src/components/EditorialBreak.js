@@ -1,7 +1,7 @@
 /**
  * Editorial visual break — typographic / diagrammatic first.
  * Variants: figure | band | diagram
- * Photos are P1; optional empty figure placeholders OK for v1.
+ * Photos are P1; empty figure placeholders OK when children omitted.
  */
 export default function EditorialBreak({
   variant = 'diagram',
@@ -54,33 +54,31 @@ export default function EditorialBreak({
           padding: 0,
         }}
       >
-        {/* Photo slot (P1) — leave empty or commented until stills land.
-            Example: <div style={{ aspectRatio: '16/9', background: 'var(--parchment)', border: '1px solid var(--border)' }} aria-hidden /> */}
-        <div
-          style={{
-            aspectRatio: '16 / 9',
-            background: 'var(--parchment)',
-            border: '1px dashed var(--border)',
-            borderRadius: 'var(--r-sm)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          aria-hidden="true"
-        >
-          {children || (
-            <span
-              style={{
-                fontFamily: "'DM Sans',sans-serif",
-                fontSize: 12,
-                color: 'var(--muted)',
-                letterSpacing: '0.04em',
-              }}
-            >
-              {/* empty photo placeholder */}
-            </span>
-          )}
-        </div>
+        {children ? (
+          <div
+            style={{
+              position: 'relative',
+              aspectRatio: '16 / 9',
+              borderRadius: 'var(--r-sm)',
+              overflow: 'hidden',
+            }}
+          >
+            {children}
+          </div>
+        ) : (
+          <div
+            style={{
+              aspectRatio: '16 / 9',
+              background: 'var(--parchment)',
+              border: '1px dashed var(--border)',
+              borderRadius: 'var(--r-sm)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            aria-hidden="true"
+          />
+        )}
         {caption ? (
           <figcaption
             style={{

@@ -1,7 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import EditorialShell from '@/components/EditorialShell';
 import PageHeader from '@/components/PageHeader';
 import RuleStack from '@/components/RuleStack';
+import EditorialBreak from '@/components/EditorialBreak';
 
 export const metadata = {
   title: 'Three rules. No asterisk. — BunnyIndex',
@@ -30,9 +32,22 @@ export default function StandardPage() {
 
         <RuleStack />
 
-        {/* Optional P1 mid-page photo slot (standard-label-close) — empty for v1
-        <EditorialBreak variant="figure" caption="The carton is not the company." />
-        */}
+        <EditorialBreak
+          variant="figure"
+          caption={
+            <Link href="/the-label" style={linkStyle}>
+              The carton is not the company.
+            </Link>
+          }
+        >
+          <Image
+            src="/editorial/standard-label-close.png"
+            alt="Matte carton with printed text reading cruelty-free, window light"
+            fill
+            sizes="(max-width: 768px) 100vw, 720px"
+            style={{ objectFit: 'cover' }}
+          />
+        </EditorialBreak>
 
         <h2 style={h2}>1. No animal testing at any stage</h2>
         <p style={p}>Not the finished product. Not the ingredients. Not the suppliers. Not a third party asked to do it.</p>

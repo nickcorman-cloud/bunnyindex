@@ -1,7 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import EditorialShell from '@/components/EditorialShell';
 import PageHeader from '@/components/PageHeader';
 import ClaimLayers from '@/components/ClaimLayers';
+import EditorialBreak from '@/components/EditorialBreak';
 
 export const metadata = {
   title: 'The label is not the company. — BunnyIndex',
@@ -21,16 +23,23 @@ export default function TheLabelPage() {
         dek="Most cruelty-free claims stop at the finished product. Some stop at the factory. Almost none include the parent. We do."
       />
 
+        <EditorialBreak variant="figure">
+          <Image
+            src="/editorial/label-claim-close.png"
+            alt="Matte carton with printed text reading cruelty-free, window light"
+            fill
+            sizes="(max-width: 768px) 100vw, 720px"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </EditorialBreak>
+
         <p style={p}>
           The carton can be telling the truth about the bottle and still be silent about the company. “Cruelty-free” is a line of type. It is not an org chart, a supplier list, or a map of where the brand is sold.
         </p>
         <p style={p}>This page is how that line usually works — and where it stops.</p>
 
         <ClaimLayers />
-
-        {/* Optional P1 hero/still photo slot (label-claim-close) — empty for v1
-        <EditorialBreak variant="figure" />
-        */}
 
         <h2 style={h2}>The finished product</h2>
         <p style={p}>This is the easiest claim, and the one you can read without turning the box over.</p>
