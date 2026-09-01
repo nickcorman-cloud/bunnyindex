@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import EditorialShell from '@/components/EditorialShell';
 import PageHeader from '@/components/PageHeader';
+import RuleStack from '@/components/RuleStack';
 
 export const metadata = {
   title: 'Three rules. No asterisk. — BunnyIndex',
@@ -26,6 +27,12 @@ export default function StandardPage() {
         <p style={p}>
           BunnyIndex is a directory, not a certification program. We do not sell a mark. To be listed, a brand has to pass all three rules below. Miss one, and it is not here. There is no partial listing, and no asterisk for a famous name.
         </p>
+
+        <RuleStack />
+
+        {/* Optional P1 mid-page photo slot (standard-label-close) — empty for v1
+        <EditorialBreak variant="figure" caption="The carton is not the company." />
+        */}
 
         <h2 style={h2}>1. No animal testing at any stage</h2>
         <p style={p}>Not the finished product. Not the ingredients. Not the suppliers. Not a third party asked to do it.</p>
