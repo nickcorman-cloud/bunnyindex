@@ -1,10 +1,12 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { buyLabel } from '@/lib/constants';
+import { buyLabel, findAmazonBuyUrl, isAmazonBuyUrl } from '@/lib/constants';
 
 export default function FeatCard({ product }) {
   const [imgErr, setImgErr] = useState(false);
+  const amazonUrl = findAmazonBuyUrl(product);
+  const showAmazon = amazonUrl && !isAmazonBuyUrl(product.buyUrl);
   return (
     <div style={{background:'var(--white)',borderRadius:'var(--r-md)',border:'1px solid var(--border)',overflow:'hidden'}}>
       <div style={{aspectRatio:'1/1',background:'var(--parchment)',display:'flex',alignItems:'center',justifyContent:'center',overflow:'hidden'}}>
@@ -19,13 +21,25 @@ export default function FeatCard({ product }) {
       <div style={{padding:'14px 16px 16px'}}>
         <div style={{fontSize:10,fontWeight:700,letterSpacing:'0.08em',textTransform:'uppercase',color:'var(--terra)',marginBottom:4}}>{product.brand}</div>
         <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:18,fontWeight:600,color:'var(--ink)',lineHeight:1.2,marginBottom:12}}>{product.name}</div>
-        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',gap:8}}>
           <span style={{fontSize:14,fontWeight:500,color:'var(--ink)'}}>${product.price}</span>
-          <a href={product.buyUrl} target="_blank" rel="noopener noreferrer"
-            onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}
-            style={{fontSize:11,color:'var(--terra)',fontWeight:600,textDecoration:'none',border:'1px solid var(--terra)',borderRadius:20,padding:'3px 8px'}}>
-            {buyLabel(product.buyUrl)}
-          </a>
+          <div style={{display:'flex',alignItems:'center',gap:10}}>
+            <a href={product.buyUrl} target="_blank" rel="noopener noreferrer"
+              onClick={() => window.fathom?.trackEvent?.('buy: ' + product.brand)}
+              style={{fontSize:11,color:'var(--terra)',fontWeight:600,textDecoration:'none',border:'1px solid var(--terra)',borderRadius:20,padding:'3px 8px'}}>
+              {buyLabel(product.buyUrl)}
+            </a>
+            {showAmazon && (
+              <a
+                href={amazonUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                style={{fontSize:11,color:'var(--terra)',fontWeight:600,textDecoration:'none',opacity:0.9}}
+              >
+                Amazon →
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
