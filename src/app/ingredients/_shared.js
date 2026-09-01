@@ -2,6 +2,7 @@ import Link from 'next/link';
 import FeatCard from '@/components/FeatCard';
 import EditorialShell from '@/components/EditorialShell';
 import PageHeader from '@/components/PageHeader';
+import EditorialBreak from '@/components/EditorialBreak';
 import { products, slugify } from '@/lib/constants';
 
 export const pStyle = {
@@ -44,11 +45,17 @@ export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing }) {
         ))}
       </div>
 
-      {matches.length > 0 ? (
-        <p style={{ ...pStyle, color: 'var(--muted)', margin: '32px 0 20px' }}>
-          {matches.length} products from brands that pass.
-        </p>
-      ) : null}
+      <EditorialBreak variant="band" eyebrow="Listed brands that pass.">
+        {matches.length > 0 ? (
+          <p style={{ ...pStyle, color: 'var(--muted)', margin: 0 }}>
+            {matches.length} products from brands that pass.
+          </p>
+        ) : (
+          <p style={{ ...pStyle, color: 'var(--muted)', margin: 0 }}>
+            No products listed for this ingredient yet.
+          </p>
+        )}
+      </EditorialBreak>
 
       <div
         style={{
