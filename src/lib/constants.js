@@ -100,10 +100,6 @@ export const BRAND_PROFILES = [
     blurb: "Herbivore Botanicals was an early independent in natural skincare. Formulas are botanical, without synthetic fragrance, in glass bottles.",
   },
   {
-    name: "ILIA Beauty",
-    blurb: "ILIA makes tinted serums and SPF-forward formulas — skincare and makeup in the same products. PETA-certified cruelty-free and independently operated.",
-  },
-  {
     name: "Kinship",
     blurb: "Kinship is EWG-verified, independently owned, and cruelty-free. Formulas focus on actives and barrier support, without a prestige markup.",
   },
