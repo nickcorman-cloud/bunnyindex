@@ -44,7 +44,7 @@ export default function StandardPage() {
 
         <h2 style={h2}>3. Not owned by a parent that tests</h2>
         <p style={p}>
-          A brand can police its own supply chain and still fail if a controlling parent tests — L’Oréal, Unilever, Estée Lauder, P&amp;G, Shiseido, Amorepacific, and companies like them.
+          A brand can police its own supply chain and still fail if a controlling parent tests — L’Oréal, Unilever, Estée Lauder, P&amp;G, Shiseido, and companies like them.
         </p>
         <p style={p}>
           The subsidiary’s label is not the group’s policy. Rule 3 is about who can set that policy. A testing parent is a fail. A parent that does not test is not the same thing; this rule is not a ban on having a parent at all, and it is not a prize for staying founder-owned forever.
@@ -54,13 +54,6 @@ export default function StandardPage() {
         <p style={p}>The fail people miss is ownership.</p>
         <p style={p}>
           The bottle still says cruelty-free. The brand site can still read like an independent studio. The controlling parent still tests on animals when legally required, or as policy. That brand does not get a listing here. It fails rule 3.
-        </p>
-        <p style={p}>Tata Harper is the worked example.</p>
-        <p style={p}>
-          Tata Harper is no longer listed. Amorepacific has owned the brand since 2022, and the parent tests on animals when legally required. BunnyIndex does not carry brands owned by a testing parent.
-        </p>
-        <p style={p}>
-          Amorepacific Corp. acquired Tata’s Natural Alchemy, LLC in 2022 — 100% of the shares, announced 1 September 2022. That is a controlling parent, not a minority line on a cap table.
         </p>
         <p style={p}>
           Who we don’t carry lives on <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link>. When a listing changes, it goes in <Link href="/updates" style={linkStyle}>What changed</Link>.
