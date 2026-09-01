@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import FeatCard from '@/components/FeatCard';
 import EditorialShell from '@/components/EditorialShell';
@@ -22,10 +23,32 @@ const h2Style = {
   lineHeight: 1.2,
 };
 
+/** P1 hero stills — keyed by IngredientPage tag */
+const INGREDIENT_STILLS = {
+  Niacinamide: {
+    src: '/editorial/ingredient-niacinamide.png',
+    alt: 'White crystalline powder in a clear glass dish on paper, window light',
+  },
+  Retinol: {
+    src: '/editorial/ingredient-retinol.png',
+    alt: 'Pale oil in a clear glass dish on a lab bench, window light',
+  },
+  'Vitamin C': {
+    src: '/editorial/ingredient-vitamin-c.png',
+    alt: 'White powder in a clear glass dish on a lab bench, window light',
+  },
+  Squalane: {
+    src: '/editorial/ingredient-squalane.png',
+    alt: 'Clear oil in a clear glass dish on a lab bench, window light',
+  },
+};
+
 export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing }) {
   const matches = products
     .filter((p) => Array.isArray(p.ingredients) && p.ingredients.includes(tag))
     .sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
+
+  const still = INGREDIENT_STILLS[tag];
 
   return (
     <EditorialShell wide>
@@ -44,6 +67,18 @@ export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing }) {
           </div>
         ))}
       </div>
+
+      {still ? (
+        <EditorialBreak variant="figure">
+          <Image
+            src={still.src}
+            alt={still.alt}
+            fill
+            sizes="(max-width: 768px) 100vw, 960px"
+            style={{ objectFit: 'cover' }}
+          />
+        </EditorialBreak>
+      ) : null}
 
       <EditorialBreak variant="band" eyebrow="Listed brands that pass.">
         {matches.length > 0 ? (
