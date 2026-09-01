@@ -23,7 +23,10 @@ export default function Header() {
         <Link href="/" className={`nav-btn${path === '/' ? ' active' : ''}`} onClick={close}>Home</Link>
         <Link href="/directory" className={`nav-btn${active('/directory') ? ' active' : ''}`} onClick={close}>Directory</Link>
         <Link href="/brands" className={`nav-btn${active('/brands') ? ' active' : ''}`} onClick={close}>Our Brands</Link>
-        <Link href="/not-carried" className={`nav-btn${active('/not-carried') ? ' active' : ''}`} onClick={close}>Not Included</Link>
+        <Link href="/standard" className={`nav-btn${active('/standard') ? ' active' : ''}`} onClick={close}>Standard</Link>
+        <Link href="/not-carried" className={`nav-btn${active('/not-carried') ? ' active' : ''}`} onClick={close}>Not carried</Link>
+        <Link href="/the-label" className={`nav-btn${active('/the-label') ? ' active' : ''}`} onClick={close}>The label</Link>
+        <Link href="/updates" className={`nav-btn${active('/updates') ? ' active' : ''}`} onClick={close}>Updates</Link>
         <Link href="/about" className={`nav-btn${active('/about') ? ' active' : ''}`} onClick={close}>About</Link>
         <Link href="/newsletter" className={`nav-btn${active('/newsletter') ? ' active' : ''}`} onClick={close}>Newsletter</Link>
         <Link href="/contact" className={`nav-btn${active('/contact') ? ' active' : ''}`} onClick={close}>Contact</Link>

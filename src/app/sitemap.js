@@ -12,6 +12,13 @@ const STATIC_PATHS = [
   '/not-carried',
   '/terms',
   '/privacy',
+  '/standard',
+  '/the-label',
+  '/updates',
+  '/ingredients/niacinamide',
+  '/ingredients/retinol',
+  '/ingredients/vitamin-c',
+  '/ingredients/squalane',
 ];
 
 export default function sitemap() {
