@@ -32,18 +32,52 @@ body {
   background: rgba(250, 247, 244, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0 32px;
-  height: 64px;
+  padding: 10px 32px;
+  min-height: 64px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .logo { display: flex; align-items: baseline; gap: 2px; cursor: pointer; text-decoration: none; }
 .logo-b { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--ink); }
 .logo-i { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300; font-style: italic; color: var(--terra); }
 
-.nav { display: flex; align-items: center; gap: 4px; }
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.nav-primary {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-secondary {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-sub {
+  background: none;
+  border: none;
+  padding: 2px 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-sub:hover { color: var(--ink); }
+.nav-sub.active { color: var(--terra); font-weight: 500; }
 
 .nav-btn {
   background: none;
@@ -165,7 +199,7 @@ body {
 @media (max-width: 768px) {
 
   /* Header */
-  .header { padding: 0 16px; }
+  .header { padding: 10px 16px; }
   .menu-toggle { display: flex; }
   .nav { display: none; }
 
@@ -174,7 +208,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     position: absolute;
-    top: 64px;
+    top: 100%;
     left: 0;
     right: 0;
     background: rgba(250, 247, 244, 0.98);
@@ -185,7 +219,21 @@ body {
     z-index: 99;
   }
 
+  .nav.open .nav-primary,
+  .nav.open .nav-secondary {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .nav.open .nav-secondary {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+  }
+
   .nav.open .nav-btn { padding: 10px 16px; border-radius: 8px; font-size: 15px; }
+  .nav.open .nav-sub { padding: 10px 16px; font-size: 14px; }
 
   .editorial-shell { padding: 48px 0 64px; }
   .editorial-shell-inner { padding: 0 16px; }
