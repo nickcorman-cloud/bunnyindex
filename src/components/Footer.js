@@ -4,11 +4,11 @@ const linkStyle = {color:'#6B5B52',textDecoration:'underline',textUnderlineOffse
 
 const FOOTER_LINKS = [
   { href: '/directory', label: 'Directory' },
+  { href: '/standard', label: 'The Standard' },
+  { href: '/about', label: 'About' },
   { href: '/brands', label: 'Brands' },
-  { href: '/standard', label: 'Standard' },
   { href: '/not-carried', label: 'Not carried' },
   { href: '/the-label', label: 'The label' },
-  { href: '/about', label: 'About' },
   { href: '/newsletter', label: 'Newsletter' },
   { href: '/contact', label: 'Contact' },
   { href: '/terms', label: 'Terms' },

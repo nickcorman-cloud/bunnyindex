@@ -92,9 +92,14 @@ export default function AboutPage() {
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 40px', lineHeight: 1.3 }}>
           — Nick
         </p>
-        <Link href="/contact" style={{ display: 'inline-block', fontFamily: "'DM Sans',sans-serif", fontSize: 15, fontWeight: 600, color: 'var(--cream)', background: 'var(--ink)', padding: '12px 28px', borderRadius: 'var(--r-sm)', textDecoration: 'none', letterSpacing: '0.02em' }}>
-          Get in touch →
-        </Link>
+        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'center' }}>
+          <Link href="/contact" style={{ display: 'inline-block', fontFamily: "'DM Sans',sans-serif", fontSize: 15, fontWeight: 600, color: 'var(--cream)', background: 'var(--ink)', padding: '12px 28px', borderRadius: 'var(--r-sm)', textDecoration: 'none', letterSpacing: '0.02em' }}>
+            Get in touch →
+          </Link>
+          <Link href="/newsletter" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, fontWeight: 600, color: 'var(--terra)', textDecoration: 'none' }}>
+            Newsletter →
+          </Link>
+        </div>
     </EditorialShell>
   );
 }
