@@ -40,7 +40,18 @@ export default function Home() {
   return (
     <>
       <section style={{ background: 'var(--cream)' }} className="home-hero-section">
-        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '48px 32px 32px' }}>
+        <div
+          className="home-hero-grid"
+          style={{
+            maxWidth: 1100,
+            margin: '0 auto',
+            padding: '48px 32px 32px',
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: 48,
+            alignItems: 'center',
+          }}
+        >
           <PageHeader
             eyebrow="The Bunny Index Standard"
             title="The label is not enough."
@@ -55,6 +66,11 @@ export default function Home() {
                 </Link>
               </>
             }
+          />
+          <img
+            src="/bunnies.jpg"
+            alt="Bunnies in a field of flowers"
+            style={{ width: '100%', borderRadius: 12, display: 'block' }}
           />
         </div>
       </section>
