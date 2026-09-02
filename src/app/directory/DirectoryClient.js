@@ -137,8 +137,8 @@ export default function DirectoryClient() {
 
   const filtered = useMemo(() => {
     let r = products;
-    if (selIngredients.length) r = r.filter(p => selIngredients.every(i => p.ingredients.includes(i)));
-    if (selConcerns.length) r = r.filter(p => selConcerns.every(c => p.concerns.includes(c)));
+    if (selIngredients.length) r = r.filter(p => selIngredients.every(i => p.ingredients?.includes(i)));
+    if (selConcerns.length) r = r.filter(p => selConcerns.every(c => p.concerns?.includes(c)));
     if (selBrands.length) r = r.filter(p => selBrands.includes(p.brand));
     if (selTypes.length) r = r.filter(p => selTypes.includes(p.type));
     if (selPrice === '<15') r = r.filter(p => p.price < 15);
@@ -173,8 +173,10 @@ export default function DirectoryClient() {
       sort: sortBy,
       page,
     });
+    const current = searchParams.toString();
+    if (q === current) return;
     router.replace('/directory' + (q ? '?' + q : ''), { scroll: false });
-  }, [selBrands, selIngredients, selConcerns, selTypes, selPrice, oilFree, fragFree, sortBy, page, router]);
+  }, [selBrands, selIngredients, selConcerns, selTypes, selPrice, oilFree, fragFree, sortBy, page, router, searchParams]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
