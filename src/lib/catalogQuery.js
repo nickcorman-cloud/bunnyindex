@@ -29,7 +29,13 @@ export function parseCatalogSearch(searchParams) {
       page: 1,
     };
   }
-  const get = (key) => searchParams.get?.(key) ?? searchParams[key] ?? '';
+  const get = (key) => {
+    // Do not fall through to searchParams[key]: ReadonlyURLSearchParams.sort is a method.
+    // useState(thatFn) calls it and Next throws "Method unavailable on ReadonlyURLSearchParams".
+    if (typeof searchParams.get === 'function') return searchParams.get(key) || '';
+    const v = searchParams[key];
+    return typeof v === 'string' ? v : '';
+  };
   return {
     brands: splitParam(get('brand')),
     ingredients: splitParam(get('ingredient')),
