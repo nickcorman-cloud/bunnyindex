@@ -1,11 +1,11 @@
 'use client';
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify, isAmazonBuyUrl } from '@/lib/constants';
 import CatalogCard from '@/components/CatalogCard';
 import CatalogEmpty from '@/components/CatalogEmpty';
-import { parseCatalogSearch, catalogSearchString } from '@/lib/catalogQuery';
+import { parseCatalogSearch } from '@/lib/catalogQuery';
 
 const PAGE_SIZE = 24;
 
@@ -103,7 +103,6 @@ const PRIORITY_BRANDS = ['e.l.f. Cosmetics', 'Pacifica', 'Biossance', 'Tower 28'
 
 export default function DirectoryClient() {
   const searchParams = useSearchParams();
-  const router = useRouter();
   const initial = parseCatalogSearch(searchParams);
   const [selIngredients, setSelIngredients] = useState(initial.ingredients);
   const [selConcerns, setSelConcerns] = useState(initial.concerns);
@@ -160,23 +159,6 @@ export default function DirectoryClient() {
     prevFilterKey.current = filterKey;
     if (page !== 1) setPage(1);
   }
-
-  useEffect(() => {
-    const q = catalogSearchString({
-      brands: selBrands,
-      ingredients: selIngredients,
-      concerns: selConcerns,
-      types: selTypes,
-      price: selPrice,
-      oilFree,
-      fragFree,
-      sort: sortBy,
-      page,
-    });
-    const current = searchParams.toString();
-    if (q === current) return;
-    router.replace('/directory' + (q ? '?' + q : ''), { scroll: false });
-  }, [selBrands, selIngredients, selConcerns, selTypes, selPrice, oilFree, fragFree, sortBy, page, router, searchParams]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
