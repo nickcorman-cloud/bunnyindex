@@ -7,18 +7,18 @@ import EditorialBreak from '@/components/EditorialBreak';
 const RULES = [
   {
     n: '1',
-    label: 'Any stage',
-    under: 'Product, ingredients, suppliers, third parties',
+    label: 'No testing at any stage',
+    under: 'Not the finished product. Not the ingredients. Not a supplier.',
   },
   {
     n: '2',
-    label: 'Markets',
-    under: 'Not sold where testing is required',
+    label: 'Not sold where testing is required',
+    under: 'If a market requires animal tests to sell there, the brand is out.',
   },
   {
     n: '3',
-    label: 'Ownership',
-    under: 'Not owned by a parent that tests',
+    label: 'Not owned by a company that tests',
+    under: 'The label on a subsidiary is not the parent’s policy.',
   },
 ];
 
