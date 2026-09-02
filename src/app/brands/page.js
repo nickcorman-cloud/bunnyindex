@@ -2,6 +2,7 @@ import Link from 'next/link';
 import EditorialShell from '@/components/EditorialShell';
 import PageHeader from '@/components/PageHeader';
 import { products, BRAND_PROFILES } from '@/lib/constants';
+import { YES_BRAND_PATHS } from '@/data/determinations-wave1';
 
 export const metadata = {
   title: 'Our Brands — BunnyIndex',
@@ -34,7 +35,13 @@ export default function BrandsPage() {
             return (
               <div key={brand.name} style={{background:'var(--white)',borderRadius:'var(--r-md)',border:'1px solid var(--border)',padding:'28px 28px 24px',display:'flex',flexDirection:'column',gap:10}}>
                 <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:12}}>
-                  <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)',lineHeight:1.1}}>{brand.name}</div>
+                  {YES_BRAND_PATHS[brand.name] ? (
+                    <Link href={YES_BRAND_PATHS[brand.name]} style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)',lineHeight:1.1,textDecoration:'none'}}>
+                      {brand.name}
+                    </Link>
+                  ) : (
+                    <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)',lineHeight:1.1}}>{brand.name}</div>
+                  )}
                   <Link href={`/directory?brand=${encodeURIComponent(brand.name)}`} style={{flexShrink:0,background:'none',border:'1px solid var(--border)',borderRadius:20,padding:'4px 12px',fontFamily:"'DM Sans',sans-serif",fontSize:12,color:'var(--muted)',textDecoration:'none',whiteSpace:'nowrap'}}>
                     see products →
                   </Link>
