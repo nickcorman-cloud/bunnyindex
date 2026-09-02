@@ -41,6 +41,7 @@ export default function StandardPage() {
         <p style={p}>
           A brand can police its own supply chain and still fail if a controlling parent tests — L’Oréal, Unilever, Estée Lauder, P&amp;G, Shiseido, and companies like them.
         </p>
+        <p style={p}>The subsidiary’s label is not the group’s policy.</p>
 
         <h2 style={h2}>Where the carton usually stops</h2>
         <p style={p}>
