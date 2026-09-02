@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { products, slugify, findProductBySlug, buyLabel, BRAND_PROFILES } from '@/lib/constants';
+import CatalogCard from '@/components/CatalogCard';
 
 // Pre-generate all product pages at build time
 export async function generateStaticParams() {
@@ -23,29 +24,6 @@ export async function generateMetadata({ params }) {
       type: 'website',
     },
   };
-}
-
-function RelatedCard({ product }) {
-  return (
-    <Link href={`/products/${slugify(product.brand, product.name)}`} style={{textDecoration:'none'}}>
-      <div style={{background:'var(--white)',border:'1px solid var(--border)',borderRadius:'var(--r-md)',overflow:'hidden',transition:'all 0.18s ease'}}>
-        <div style={{aspectRatio:'1/1',background:'var(--parchment)',display:'flex',alignItems:'center',justifyContent:'center',overflow:'hidden'}}>
-          {product.imageUrl
-            ? <img src={product.imageUrl} alt={product.name} style={{width:'100%',height:'100%',objectFit:'cover'}} loading="lazy" />
-            : <div style={{textAlign:'center',padding:12}}>
-                <div style={{fontSize:24}}>🐰</div>
-                <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:11,color:'var(--muted)',marginTop:4}}>{product.brand}</div>
-              </div>
-          }
-        </div>
-        <div style={{padding:'12px 14px 14px'}}>
-          <div style={{fontSize:10,fontWeight:700,letterSpacing:'0.08em',textTransform:'uppercase',color:'var(--terra)',marginBottom:3}}>{product.brand}</div>
-          <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:15,fontWeight:600,color:'var(--ink)',lineHeight:1.2,marginBottom:8}}>{product.name}</div>
-          <div style={{fontSize:13,fontWeight:500,color:'var(--ink)'}}>${product.price}</div>
-        </div>
-      </div>
-    </Link>
-  );
 }
 
 export default function ProductPage({ params }) {
@@ -222,7 +200,7 @@ export default function ProductPage({ params }) {
         <div className="product-page-padding" style={{maxWidth:1100,margin:'0 auto',padding:'48px 32px'}}>
           <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:28,fontWeight:600,color:'var(--ink)',marginBottom:24}}>You might also like</div>
           <div className="related-grid" style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:20}}>
-            {related.map(p => <RelatedCard key={p.id} product={p} />)}
+            {related.map(p => <CatalogCard key={p.id} product={p} />)}
           </div>
         </div>
       )}

@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import FeatCard from '@/components/FeatCard';
+import CatalogCard from '@/components/CatalogCard';
+import CatalogEmpty from '@/components/CatalogEmpty';
 import EditorialShell from '@/components/EditorialShell';
 import PageHeader from '@/components/PageHeader';
 import EditorialBreak from '@/components/EditorialBreak';
-import { products, slugify } from '@/lib/constants';
+import { products } from '@/lib/constants';
+import { catalogHref } from '@/lib/catalogQuery';
 
 export const pStyle = {
   fontFamily: "'DM Sans',sans-serif",
@@ -90,7 +92,14 @@ export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing }) {
             No products listed for this ingredient yet.
           </p>
         )}
+        <p style={{ ...pStyle, margin: '12px 0 0' }}>
+          <Link href={catalogHref({ ingredients: [tag] })} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
+            See all {tag} in the directory →
+          </Link>
+        </p>
       </EditorialBreak>
+
+      {matches.length === 0 ? <CatalogEmpty tone="ingredient" /> : null}
 
       <div
         style={{
@@ -101,13 +110,7 @@ export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing }) {
         }}
       >
         {matches.map((product) => (
-          <Link
-            key={product.id ?? `${product.brand}-${product.name}`}
-            href={`/products/${slugify(product.brand, product.name)}`}
-            style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
-          >
-            <FeatCard product={product} />
-          </Link>
+          <CatalogCard key={product.id ?? `${product.brand}-${product.name}`} product={product} />
         ))}
       </div>
 
