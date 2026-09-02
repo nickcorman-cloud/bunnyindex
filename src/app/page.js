@@ -54,7 +54,7 @@ export default function Home() {
         >
           <PageHeader
             eyebrow="The Bunny Index Standard"
-            title="The label is not enough."
+            title="If they test anywhere, they're not here."
             dek="A directory of skincare that passes three rules — no testing at any stage, not sold where testing is required, not owned by a testing parent. Search brands, products, and ingredients. Miss one rule, and it is not here."
             actions={
               <>
