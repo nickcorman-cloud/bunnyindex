@@ -15,8 +15,6 @@ const linkStyle = { color: 'var(--terra)', textDecoration: 'none' };
 const p = { fontFamily: "'DM Sans',sans-serif", fontSize: 16, color: 'var(--ink)', lineHeight: 1.75, margin: '0 0 20px' };
 const h2 = { fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight: 600, color: 'var(--ink)', margin: '36px 0 16px', lineHeight: 1.2 };
 
-const STRIP = ['Any stage', 'Markets', 'Ownership'];
-
 export default function StandardPage() {
   return (
     <EditorialShell>
@@ -89,24 +87,6 @@ export default function StandardPage() {
         <p style={p}>
           We do not treat a mark as a pass. A brand can hold a well-known certification and still fail rule 3. A brand can pass all three rules and never have paid for a sticker. BunnyIndex does not certify. We keep a directory. The bunny in the corner of this site is a reminder of the bar — not a logo a brand can apply for.
         </p>
-
-        <EditorialBreak variant="band">
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 28px' }}>
-            {STRIP.map((label) => (
-              <span
-                key={label}
-                style={{
-                  fontFamily: "'Cormorant Garamond',serif",
-                  fontSize: 18,
-                  fontWeight: 600,
-                  color: 'var(--ink)',
-                }}
-              >
-                {label}
-              </span>
-            ))}
-          </div>
-        </EditorialBreak>
 
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 40px', lineHeight: 1.3 }}>
           No asterisk.
