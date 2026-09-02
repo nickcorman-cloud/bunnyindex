@@ -77,6 +77,18 @@ export default function Home() {
 
       <section style={{ background: 'var(--cream)', padding: '0 32px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <p
+            style={{
+              fontFamily: "'Cormorant Garamond',serif",
+              fontSize: 22,
+              fontStyle: 'italic',
+              color: 'var(--ink)',
+              margin: '0 0 20px',
+              lineHeight: 1.35,
+            }}
+          >
+            Cruelty-free is not a regulated phrase. We keep a directory, not a badge you can buy.
+          </p>
           <RuleStack />
           <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, color: 'var(--muted)', margin: '0 0 8px' }}>
             <Link href="/not-carried" style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
@@ -117,18 +129,7 @@ export default function Home() {
               Browse brands →
             </Link>
           </div>
-          <p
-            style={{
-              fontFamily: "'Cormorant Garamond',serif",
-              fontSize: 18,
-              fontStyle: 'italic',
-              color: 'var(--muted)',
-              textAlign: 'center',
-              margin: '28px 0 0',
-            }}
-          >
-            Cruelty-free is not a regulated phrase. We keep a directory, not a badge you can buy.
-          </p>
+
         </div>
       </section>
     </>
