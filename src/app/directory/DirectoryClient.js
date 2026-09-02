@@ -1,8 +1,11 @@
 'use client';
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify, findAmazonBuyUrl, isAmazonBuyUrl, otherBuyLinks } from '@/lib/constants';
+import { products, BRAND_NAMES, INGREDIENT_GROUPS, CONCERNS, TYPES, buyLabel, slugify, isAmazonBuyUrl } from '@/lib/constants';
+import CatalogCard from '@/components/CatalogCard';
+import CatalogEmpty from '@/components/CatalogEmpty';
+import { parseCatalogSearch, catalogSearchString } from '@/lib/catalogQuery';
 
 const PAGE_SIZE = 24;
 
@@ -100,19 +103,18 @@ const PRIORITY_BRANDS = ['e.l.f. Cosmetics', 'Pacifica', 'Biossance', 'Tower 28'
 
 export default function DirectoryClient() {
   const searchParams = useSearchParams();
-  const [selIngredients, setSelIngredients] = useState([]);
-  const [selConcerns, setSelConcerns] = useState([]);
-  const [selBrands, setSelBrands] = useState(() => {
-    const brand = searchParams.get('brand');
-    return brand ? [brand] : [];
-  });
-  const [selTypes, setSelTypes] = useState([]);
-  const [selPrice, setSelPrice] = useState('');
-  const [oilFree, setOilFree] = useState(false);
-  const [fragFree, setFragFree] = useState(false);
-  const [sortBy, setSortBy] = useState('popular');
+  const router = useRouter();
+  const initial = parseCatalogSearch(searchParams);
+  const [selIngredients, setSelIngredients] = useState(initial.ingredients);
+  const [selConcerns, setSelConcerns] = useState(initial.concerns);
+  const [selBrands, setSelBrands] = useState(initial.brands);
+  const [selTypes, setSelTypes] = useState(initial.types);
+  const [selPrice, setSelPrice] = useState(initial.price);
+  const [oilFree, setOilFree] = useState(initial.oilFree);
+  const [fragFree, setFragFree] = useState(initial.fragFree);
+  const [sortBy, setSortBy] = useState(initial.sort);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(initial.page);
   const orderedTypes = [...PRIORITY_TYPES, ...TYPES.filter(t => !PRIORITY_TYPES.includes(t))];
   const orderedBrands = [...PRIORITY_BRANDS, ...BRAND_NAMES.filter(b => !PRIORITY_BRANDS.includes(b))];
 
@@ -152,12 +154,27 @@ export default function DirectoryClient() {
     );
   }, [selIngredients, selConcerns, selBrands, selTypes, selPrice, oilFree, fragFree, sortBy]);
 
-  const prevFilterKey = useRef('');
+  const prevFilterKey = useRef([initial.ingredients.join(), initial.concerns.join(), initial.brands.join(), initial.types.join(), initial.price, initial.oilFree, initial.fragFree, initial.sort].join('|'));
   const filterKey = [selIngredients.join(), selConcerns.join(), selBrands.join(), selTypes.join(), selPrice, oilFree, fragFree, sortBy].join('|');
   if (filterKey !== prevFilterKey.current) {
     prevFilterKey.current = filterKey;
     if (page !== 1) setPage(1);
   }
+
+  useEffect(() => {
+    const q = catalogSearchString({
+      brands: selBrands,
+      ingredients: selIngredients,
+      concerns: selConcerns,
+      types: selTypes,
+      price: selPrice,
+      oilFree,
+      fragFree,
+      sort: sortBy,
+      page,
+    });
+    router.replace('/directory' + (q ? '?' + q : ''), { scroll: false });
+  }, [selBrands, selIngredients, selConcerns, selTypes, selPrice, oilFree, fragFree, sortBy, page, router]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -166,7 +183,7 @@ export default function DirectoryClient() {
     <>
       <div className="dir-header">
         <div className="dir-header-inner">
-          <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)'}}>Browse Products</div>
+          <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)',margin:0}}>Browse Products</h1>
           <span className="result-count">{filtered.length} of {products.length}</span>
         </div>
       </div>
@@ -238,68 +255,12 @@ export default function DirectoryClient() {
             </div>
           </div>
           {filtered.length === 0 ? (
-            <div className="empty">
-              <div className="empty-icon">🐰</div>
-              <div className="empty-title">No products found</div>
-              <div className="empty-sub">Try adjusting your filters</div>
-            </div>
+            <CatalogEmpty onClear={clearAll} />
           ) : (
             <>
               <div className="product-grid">
                 {paginated.map(product => (
-                  <div key={product.id} className="card" onClick={() => setSelectedProduct(product)}>
-                    <div className="card-img">
-                      {product.imageUrl
-                        ? <img src={product.imageUrl} alt={product.name} loading="lazy" referrerPolicy="no-referrer" />
-                        : <div className="card-img-placeholder"><div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:12,color:'var(--muted)',marginTop:4}}>{product.brand}</div></div>
-                      }
-                    </div>
-                    <div className="card-eyebrow">{product.brand}</div>
-                    <Link href={`/products/${slugify(product.brand, product.name)}`} onClick={e => e.stopPropagation()} style={{textDecoration:'none'}}>
-                      <div className="card-name" style={{textDecoration:'none'}}>{product.name}</div>
-                    </Link>
-                    {product.ingredients?.length > 0 && (
-                      <div className="card-tags">
-                        {product.ingredients.slice(0, 2).map(i => <span key={i} className="card-tag">{i}</span>)}
-                      </div>
-                    )}
-                    <div className="card-footer">
-                      <span className="card-price">${product.price}</span>
-                      <div style={{display:'flex',flexDirection:'column',alignItems:'flex-end',gap:4}}>
-                        <a href={product.buyUrl} className="card-buy" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>
-                          {buyLabel(product.buyUrl)}
-                        </a>
-                        {(() => {
-                          const amazonUrl = findAmazonBuyUrl(product);
-                          const showAmazon = amazonUrl && !isAmazonBuyUrl(product.buyUrl);
-                          const extras = otherBuyLinks(product);
-                          return (
-                            <>
-                              {showAmazon && (
-                                <a
-                                  href={amazonUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer sponsored"
-                                  onClick={e => e.stopPropagation()}
-                                  style={{fontSize:13,color:'var(--terra)',fontWeight:600,textDecoration:'none',opacity:0.9}}
-                                >
-                                  Amazon →
-                                </a>
-                              )}
-                              {extras.length > 0 && (
-                                <button
-                                  onClick={e => { e.stopPropagation(); setSelectedProduct(product); }}
-                                  style={{fontSize:13,color:'var(--terra)',background:'none',border:'none',cursor:'pointer',padding:0,fontWeight:500,opacity:0.75,transition:'var(--ease)'}} onMouseEnter={e=>{e.currentTarget.style.opacity='1';e.currentTarget.style.textDecoration='underline';}} onMouseLeave={e=>{e.currentTarget.style.opacity='0.75';e.currentTarget.style.textDecoration='none';}}
-                                >
-                                  Other stores
-                                </button>
-                              )}
-                            </>
-                          );
-                        })()}
-                      </div>
-                    </div>
-                  </div>
+                  <CatalogCard key={product.id} product={product} onOpen={setSelectedProduct} />
                 ))}
               </div>
               {totalPages > 1 && (
