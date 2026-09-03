@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
+  alternates: { canonical: 'https://www.bunnyindex.com/ingredients/squalane' },
   title: "Squalane, from brands that actually pass. — BunnyIndex",
   description: "A skin-similar oil, from brands that meet all three rules — not from a “clean oil” story.",
 };
