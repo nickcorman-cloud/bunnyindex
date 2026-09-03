@@ -21,10 +21,22 @@ const STATIC_PATHS = [
   '/ingredients/squalane',
   '/ingredients/hyaluronic-acid',
   '/ingredients/spf',
+  '/ingredients/ceramides',
+  '/ingredients/glycolic-acid',
+  '/ingredients/lactic-acid',
+  '/ingredients/salicylic-acid',
+  '/ingredients/tranexamic-acid',
+  '/ingredients/azelaic-acid',
+  '/ingredients/peptides',
+  '/ingredients/bakuchiol',
   '/concerns/acne',
   '/concerns/dry-skin',
   '/concerns/hyperpigmentation',
   '/concerns/barrier-support',
+  '/concerns/oily-skin',
+  '/concerns/rosacea',
+  '/concerns/seborrheic-dermatitis',
+  '/concerns/sensitive-skin',
 ];
 
 export default function sitemap() {
