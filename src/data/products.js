@@ -18372,5 +18372,5358 @@ export const RAW_PRODUCTS = [
                 "url": "https://www.amazon.com/dp/B09V9QRHCD?tag=bunnyindex-20"
             }
         ]
+    },
+    {
+        "id": 623,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Firm Revival HydroRetinal Firming Serum",
+        "type": "Serum",
+        "price": 42,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.dieuxskin.com/products/firm-revival-hydroretinal-firming-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/FirmPDPHero_01_Eczema.png?v=1784655148",
+        "description": "Firm Revival is a powerful yet gentle retinal serum that visibly firms skin, smooths fine lines, and hydrates. Ideal for retinal serum beginners.",
+        "ingredients": [
+            "Squalane",
+            "Lactic Acid",
+            "Retinol"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/firm-revival-hydroretinal-firming-serum"
+            }
+        ]
+    },
+    {
+        "id": 624,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Skin Mercy Recovery Cream",
+        "type": "Moisturizer",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.dieuxskin.com/products/skin-mercy-recovery-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_SkinMercy_PDP_1.png?v=1779057712",
+        "description": "An all-over recovery cream packed with 1% colloidal oatmeal and soothing antioxidants, clinically proven to calm irritation, reduce redness and itch, and protect skin.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/skin-mercy-recovery-cream"
+            }
+        ]
+    },
+    {
+        "id": 625,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Ethereal Cleansing Oil",
+        "type": "Cleansing Oil",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.dieuxskin.com/products/ethereal-facial-cleansing-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_Ethereal_D2CPDP_41142b0c-6e3b-45cf-8583-26a7c178b3c4.png?v=1779058150",
+        "description": "Dissolve the day away with Ethereal. This luxurious oil cleanser effortlessly melts away even the toughest waterproof makeup and sunscreen in seconds.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/ethereal-facial-cleansing-oil"
+            }
+        ]
+    },
+    {
+        "id": 626,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Baptism Gentle Gel Cleanser (Woodsy Bergamot)",
+        "type": "Cleanser",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.dieuxskin.com/products/baptism-fragranced",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_BAP-FRAGFREE_PDP_Hero_1603e864-93fd-4c1c-bae7-aea62f125567.jpg?v=1779058176",
+        "description": "Leave your skin feeling reborn with Baptism. Every skin type's favorite cleanser, this water-based formula lathers into a rich, creamy foam that leaves your barrier intact and skin supple.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/baptism-fragranced"
+            }
+        ]
+    },
+    {
+        "id": 627,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Baptism Gentle Gel Cleanser Fragrance-Free",
+        "type": "Cleanser",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.dieuxskin.com/products/baptism-fragrance-free",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_BAP-FRAGFREE_PDP_Hero_1593d5bd-debc-4b7f-a560-fc19ca4461e2.jpg?v=1779058208",
+        "description": "Leave your skin feeling reborn with Baptism. A favorite cleanser for all skin types, this water-based formula lathers into a rich, creamy foam that leaves your barrier intact and skin supple.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/baptism-fragrance-free"
+            }
+        ]
+    },
+    {
+        "id": 628,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Air Angel Peptide Plumping Gel Cream",
+        "type": "Moisturizer",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.dieuxskin.com/products/air-angel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_AirAngel_50ml_D2CPDP_c367df44-821e-4976-a332-6d0a1280d6e6.jpg?v=1779057556",
+        "description": "Harnessing the power of peptides to visibly plump, hydrate, and smooth skin. Giving a cloud-like cocoon of breathable moisture, Air Angel is clinically shown to hydrate skin for up to 12 hours after application, without clogging pores.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Lactic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/air-angel"
+            }
+        ]
+    },
+    {
+        "id": 629,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Auracle Eye Serum",
+        "type": "Eye Cream",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.dieuxskin.com/products/auracle",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_Auracle_D2CPDP.png?v=1779058234",
+        "description": "Resurrect your eyes with Auracle. This lightweight, gel-like eye serum was formulated to revive the under-eyes, leaving them visibly smoother, hydrated and refreshed.",
+        "ingredients": [
+            "Peptides"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/auracle"
+            }
+        ]
+    },
+    {
+        "id": 630,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Instant Angel Lipid-Rich Firming Moisturizer",
+        "type": "Moisturizer",
+        "price": 45,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.dieuxskin.com/products/instant-angel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/01_InstantAngel_50ml_D2CPDP_3e2d527b-b798-4bbf-b654-9b26fb9c5d53.png?v=1787942265",
+        "description": "Your skin barrier’s protector Instant Angel is a cult-favorite, rich-never-heavy moisturizer that provides instant and lasting hydration. This nourishing, quick-to-absorb formula visibly firms skin while reducing the appearance of fine lines and wrinkles over time.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Lactic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/instant-angel"
+            }
+        ]
+    },
+    {
+        "id": 631,
+        "brand": "Dieux Skin",
+        "brandColor": "#2E2E2E",
+        "name": "Deliverance 3-in-1 Repair Serum",
+        "type": "Serum",
+        "price": 62,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.dieuxskin.com/products/deliverance",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0291/1449/9165/files/1_30mL_2ff45d4f-07b7-4847-8cbe-5b579acbf7d5.png?v=1787942160",
+        "description": "Deliver your skin from the look of redness, wrinkles, and dark spots. With the power of 3 serums in 1, this multitasking formula is clinically proven to deliver results that only get more remarkable with time.",
+        "ingredients": [
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.dieuxskin.com/products/deliverance"
+            }
+        ]
+    },
+    {
+        "id": 632,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Dream Fade",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/dream-fade",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Dream-Fade_1_silo_2c68c7bf-35e9-44cd-a7ca-2bfa799307f7.jpg?v=1785161630",
+        "description": "Built for the breakout aftermath, this 10% azelaic acid serum is clinically proven to visibly fade dark spots and discoloration in 4 weeks* while improving skin tone, redness, and radiance.",
+        "ingredients": [
+            "Salicylic Acid",
+            "Azelaic Acid",
+            "Bakuchiol"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/dream-fade"
+            }
+        ]
+    },
+    {
+        "id": 633,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Clean Landing",
+        "type": "Mist",
+        "price": 13,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/clean-landing",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Clean-Landing_1_silo_97dc9a3e-fe92-48f1-a5f2-0eff7bdfe8e1.jpg?v=1785161796",
+        "description": "Your skin's daily reset. Our dermatologist-developed clinical-grade hypochlorous acid spray visibly soothes redness and irritation.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/clean-landing"
+            }
+        ]
+    },
+    {
+        "id": 634,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Cosmic Rain",
+        "type": "Mist",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/cosmic-rain",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Cosmic-Rain_1_silo.jpg?v=1784209503",
+        "description": "Instant hydration meets all-day glow. Cosmic Rain is a dermatologist-developed, clinically proven dewy hydrating mist powered by Aquaxyl™ to drive hydration through all 4 layers of the epidermis, leaving skin plumper, smoother, and more radiant.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/cosmic-rain"
+            }
+        ]
+    },
+    {
+        "id": 635,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Knock Out",
+        "type": "Spot Treatment",
+        "price": 12,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/knock-out",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Knock-Out_1_silo_a0ede097-da9f-4911-8fcd-b75fe112cb7d.jpg?v=1784209159",
+        "description": "Knock Out Acne Spot Treatment is clinically proven to clear breakouts fast. Powered by Salicylic Acid, it targets acne at the source.",
+        "ingredients": [
+            "Salicylic Acid",
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/knock-out"
+            }
+        ]
+    },
+    {
+        "id": 636,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Sun Rise",
+        "type": "Sunscreen",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://hellobubble.com/products/sunrise-mineral-sunscreen-stick-spf40",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Sun-Rise_1_silo.jpg?v=1784211026",
+        "description": "SPF you'll actually stick to. SUN RISE Mineral Sunscreen Stick glides on effortlessly with a lightweight, skin-like feel and blends in with no white cast.",
+        "ingredients": [
+            "Squalane",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/sunrise-mineral-sunscreen-stick-spf40"
+            }
+        ]
+    },
+    {
+        "id": 637,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Soft Swerve",
+        "type": "Moisturizer",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/soft-swerve",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Soft-Swerve_1_silo.jpg?v=1784210027",
+        "description": "Designed for skin that's been pushed too far, Soft Swerve Barrier Restore Balm is clinically proven to calm redness, soothe dryness, and restore a softer, plumper, smoother, and more radiant look and feel to your skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/soft-swerve"
+            }
+        ]
+    },
+    {
+        "id": 638,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Secret Agent",
+        "type": "Moisturizer",
+        "price": 13,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/secret-agent",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Secret-Agent_1_silo.jpg?v=1784210868",
+        "description": "SECRET AGENT Color Correcting Balm is a green-tinted balm that blends into skin to instantly neutralize the look of redness. It's not makeup — it's a skincare-first formula powered by skin tone-evening niacinamide, discoloration-targeting bakuchiol, and soothing allantoin, working over time to fade redness and blemish marks.",
+        "ingredients": [
+            "Squalane",
+            "Salicylic Acid",
+            "Niacinamide",
+            "Bakuchiol"
+        ],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/secret-agent"
+            }
+        ]
+    },
+    {
+        "id": 639,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Under Cover",
+        "type": "Moisturizer",
+        "price": 13,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/under-cover",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Under-Cover_1_silo.jpg?v=1784211136",
+        "description": "SECRET AGENT Color Correcting Balm is an orange-tinted balm that blends into skin to instantly camouflage the look of dark spots. It's not makeup — it's a skincare-first formula powered by skin tone-evening niacinamide, discoloration-targeting bakuchiol, and soothing allantoin, working over time to fade dark spots and blemish marks.",
+        "ingredients": [
+            "Salicylic Acid",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/under-cover"
+            }
+        ]
+    },
+    {
+        "id": 640,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "All Clear",
+        "type": "Cleanser",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/all-clear",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_All-Clear_1_silo.jpg?v=1784149332",
+        "description": "Clear your mind and your skin. All Clear is a thoughtfully designed, clinically proven lightweight acne cleanser with 2% salicylic acid to help treat and prevent breakouts by clearing pore-clogging oil and reducing blemish size and redness, without stripping or drying skin.",
+        "ingredients": [
+            "Salicylic Acid",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/all-clear"
+            }
+        ]
+    },
+    {
+        "id": 641,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Cosmic Silk",
+        "type": "Toner",
+        "price": 16,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/cosmic-silk",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Cosmic-Silk_1_silo.jpg?v=1784209539",
+        "description": "A lightweight, ceramide-rich toner clinically proven to hydrate, smooth, plump, and boost radiance from the very first application. The milky texture cushions skin on contact, leaving it visibly dewy and glowing.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides"
+        ],
+        "concerns": [
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/cosmic-silk"
+            }
+        ]
+    },
+    {
+        "id": 642,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Power Wave",
+        "type": "Moisturizer",
+        "price": 16,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/power-wave",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Power-Wave_1_silo.jpg?v=1784210113",
+        "description": "A peptide-rich cream clinically proven to deliver up to 10x* hydration after 8 hours, restoring softness, smoothness, and glow to dry and sensitive skin. The silky, melt-into-skin texture absorbs quickly and creates an immediate layer of comfort, while peptides work to strengthen and support your skin barrier over time.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/power-wave"
+            }
+        ]
+    },
+    {
+        "id": 643,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Star Dew",
+        "type": "Eye Cream",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/star-dew",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Star-Dew_1.jpg?v=1783704719",
+        "description": "This rich, pillowy eye cream delivers lasting hydration to help smooth, soften, and refresh the delicate eye area. Star Dew features a nourishing blend of peptides, squalane, and shea butter that helps lock in moisture and support soft, comfortable-looking skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/star-dew"
+            }
+        ]
+    },
+    {
+        "id": 644,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Magic Melt",
+        "type": "Cleansing Balm",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/magic-melt",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Magic-Melt_1_silo.jpg?v=1784149430",
+        "description": "Magic Melt Micellar Makeup Remover effortlessly dissolves makeup, SPF, excess oil, and daily buildup. The cushiony texture glides over skin without tugging, while nourishing ingredients help leave it feeling soft, clean, and comfortable.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/magic-melt"
+            }
+        ]
+    },
+    {
+        "id": 645,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Soft Launch",
+        "type": "Cleanser",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/soft-launch",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Soft-Launch_1_silo_281fa3fa-2281-4157-a327-c28df8d7f219.jpg?v=1784148699",
+        "description": "Soft Launch Hydrating Cream Cleanser is a creamy, hydrating formula that lathers into a soft foam, removing buildup without stripping moisture or disrupting your barrier.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/soft-launch"
+            }
+        ]
+    },
+    {
+        "id": 646,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "First Class",
+        "type": "Cleansing Oil",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/first-class",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_First-Class_1_silo_no-seal.jpg?v=1785504754",
+        "description": "The champagne of cleansers. Bubble’s First Class Oil Cleanser is formulated to instantly dissolve makeup, SPF, and excess oil and clinically proven to leave your skin more hydrated than it was before.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Oily Skin",
+            "Rosacea",
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/first-class"
+            }
+        ]
+    },
+    {
+        "id": 647,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Water Slide",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/water-slide",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Water-Slide_1_silo.jpg?v=1784207733",
+        "description": "Water Slide delivers an instant surge of hydration that's clinically proven to boost moisture levels by 11x*. The silky texture glides on effortlessly and absorbs quickly, leaving skin looking plump and dewy.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/water-slide"
+            }
+        ]
+    },
+    {
+        "id": 648,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Moon Walk",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/moon-walk",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Moon-Walk_1_silo.jpg?v=1784209186",
+        "description": "Moon Walk is a gentle exfoliating serum designed to resurface skin and improve overall clarity over time. A blend of lactic and glycolic acid helps smooth texture, clear congested pores, and even out tone—without throwing the skin barrier into overdrive.",
+        "ingredients": [
+            "Squalane",
+            "Glycolic Acid",
+            "Lactic Acid",
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Barrier Support"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/moon-walk"
+            }
+        ]
+    },
+    {
+        "id": 649,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Bounce Back",
+        "type": "Mist",
+        "price": 13,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/bounce-back-spray-toner",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Bounce-Back_1_silo.jpg?v=1784207595",
+        "description": "Bounce Back Balancing Toner Mist instantly resets skin, adding hydration and balance while cutting mid-day shine. Throw it in your bag and stay toned on-the-go.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/bounce-back-spray-toner"
+            }
+        ]
+    },
+    {
+        "id": 650,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Day Dream",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/day-dream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Day-Dream_1_silo.jpg?v=1784209591",
+        "description": "Meet your daily fix for brighter, more even-looking skin. Backed by the powerhouse pairing of Vitamin C and Niacinamide, this serum helps visibly brighten, smooth texture, and improve the appearance of uneven skin tone.",
+        "ingredients": [
+            "Ceramides",
+            "Vitamin C",
+            "Niacinamide",
+            "Tranexamic Acid"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/day-dream"
+            }
+        ]
+    },
+    {
+        "id": 651,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Come Clean",
+        "type": "Mask",
+        "price": 19,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/come-clean-clay-mask",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Come-Clean_1_silo.jpg?v=1784209454",
+        "description": "Come Clean is a creamy Brazilian purple clay mask designed to deeply purify and reset skin without over-drying. Powered by Montmorillonite clay, it helps absorb excess oil, draw out impurities, and clear congestion for a more refined-looking complexion.",
+        "ingredients": [
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/come-clean-clay-mask"
+            }
+        ]
+    },
+    {
+        "id": 652,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Morning Rays",
+        "type": "Eye Cream",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/morning-rays",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Morning-Rays_1_silo.jpg?v=1784210195",
+        "description": "Morning Rays is a dermatologist-developed, clinically proven brightening eye cream that targets dark circles, puffiness, and dullness. Its lightweight, non-sticky serum texture absorbs quickly for seamless layering over moisturizer and under sunscreen and makeup.",
+        "ingredients": [
+            "Glycolic Acid",
+            "Vitamin C",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/morning-rays"
+            }
+        ]
+    },
+    {
+        "id": 653,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Plus One",
+        "type": "Tinted Moisturizer",
+        "price": 19,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://hellobubble.com/products/plus-one",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Plus-One_1_silo.jpg?v=1784210803",
+        "description": "Sun protection that looks as good as it feels. Plus One is a tinted mineral sunscreen with Broad Spectrum SPF 40 that protects against UVA/UVB rays while giving skin a healthy-looking, bronzy glow.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/plus-one"
+            }
+        ]
+    },
+    {
+        "id": 654,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Solar Mate",
+        "type": "Sunscreen",
+        "price": 19,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://hellobubble.com/products/solar-mate",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Solar-Mate_1_US.jpg?v=1783704720",
+        "description": "Daily mineral sun protection made easy. Solar Mate is a lightweight mineral sunscreen with Broad Spectrum SPF 40 that blends effortlessly into skin with no chalky white cast.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/solar-mate"
+            }
+        ]
+    },
+    {
+        "id": 655,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Over Night",
+        "type": "Mask",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/over-night",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Over-Night_1_silo.jpg?v=1784209236",
+        "description": "Over Night Hydrating Sleep Mask delivers deep, overnight hydration while you sleep. This creamy leave-on mask helps soothe, smooth, and visibly brighten skin by morning - without clogging pores.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/over-night"
+            }
+        ]
+    },
+    {
+        "id": 656,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Float On",
+        "type": "Face Oil",
+        "price": 19,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/float-on-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Float-On_1_silo.jpg?v=1784207916",
+        "description": "Your skin barrier does a lot - give it the support it deserves. This soothing facial oil features a lightweight blend of safflower, neem, prickly pear, and buriti oils that helps replenish moisture and support a healthy skin barrier.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/float-on-oil"
+            }
+        ]
+    },
+    {
+        "id": 657,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Fresh Start",
+        "type": "Cleanser",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/fresh-start-gel-cleanser-1",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Fresh-Start_1_silo_125ml.jpg?v=1784149398",
+        "description": "Fresh Start Gel Cleanser is your daily reset for clean, balanced skin. It melts away oil, buildup, and the weight of the day without leaving your skin tight, dry, or irritated.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin C",
+            "Peptides"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/fresh-start-gel-cleanser-1"
+            }
+        ]
+    },
+    {
+        "id": 658,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Slam Dunk",
+        "type": "Moisturizer",
+        "price": 16,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/slam-dunk-hydrating-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Slam-Dunk_1_silo_50ml.jpg?v=1784137702",
+        "description": "Slam Dunk is a deeply hydrating moisturizer clinically proven to boost hydration by 8x* in just 8 hours. It absorbs quickly, leaving skin soft, plump, and comfortable from the first application, and keeps it that way from morning through night.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/slam-dunk-hydrating-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 659,
+        "brand": "Bubble",
+        "brandColor": "#F66646",
+        "name": "Level Up",
+        "type": "Moisturizer",
+        "price": 16,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://hellobubble.com/products/level-up-balancing-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0299/6047/0660/files/NEW-DTC_PDP_Level-Up_1_silo.jpg?v=1784210079",
+        "description": "Get the glow without the greasy feeling. This refreshing daily gel moisturizer keeps oily skin feeling balanced, comfortable, and hydrated all day.",
+        "ingredients": [
+            "Squalane",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://hellobubble.com/products/level-up-balancing-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 660,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Total Clarity Dark Spot Serum",
+        "type": "Serum",
+        "price": 68,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://theoutset.com/products/total-clarity-dark-spot-serum-vitamin-c-alternative",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/Total_Clarity_PDP_DTC1.jpg?v=1767624952",
+        "description": "Brighten. Fade.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/total-clarity-dark-spot-serum-vitamin-c-alternative"
+            }
+        ]
+    },
+    {
+        "id": 661,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Hydrasheer 100% Mineral Sunscreen SPF 30",
+        "type": "Sunscreen",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/hydrasheer-mineral-sunscreen-spf-30",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/1_5.jpg?v=1782308778",
+        "description": "Protect. Hydrate.",
+        "ingredients": [
+            "Ceramides",
+            "Niacinamide",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/hydrasheer-mineral-sunscreen-spf-30"
+            }
+        ]
+    },
+    {
+        "id": 662,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Cool Cream Smoothing Mask",
+        "type": "Mask",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/cool-cream-smoothing-mask-with-electric-daisy",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/QVC_crops_0008_8A_AR2copy_037c6ede-2dfb-4e06-bdbf-c2ade73dbc9f.jpg?v=1750973617",
+        "description": "Cool Cream Smoothing Mask is your plumping, and hydrating mask for bouncy, cushiony-soft skin with no irritation. Use whenever your skin needs an extra boost of hydration and radiance—whether that’s on the way out the door after a restless night, as makeup prep before a big event, or as a restorative overnight treatment.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/cool-cream-smoothing-mask-with-electric-daisy"
+            }
+        ]
+    },
+    {
+        "id": 663,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Botanical Barrier Rescue Balm",
+        "type": "Moisturizer",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/botanical-barrier-rescue-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/BarrierBalmLaunch_0009_17_2_600x_ca9d51a4-d289-4a82-abd9-ae18ce064b09.webp?v=1738149047",
+        "description": "Soothe. Soften.",
+        "ingredients": [
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/botanical-barrier-rescue-balm"
+            }
+        ]
+    },
+    {
+        "id": 664,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Purifying Blue Clay Mask",
+        "type": "Mask",
+        "price": 46,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/purifying-blue-clay-mask",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/Clay_Mask_PDP_0000_Blue_Clay_Mask-_50ml__Glass_Jar__CapON.jpg?v=1727725862",
+        "description": "Detoxify. Clarify.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Salicylic Acid",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Acne",
+            "Oily Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/purifying-blue-clay-mask"
+            }
+        ]
+    },
+    {
+        "id": 665,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Ultralight Moisture-Boosting Oil",
+        "type": "Face Oil",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/ultralight-moisture-boosting-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/products/BoostingOil_PDP_0001_UltralightBoostingOil30mlGlassDropper_PDP.jpg?v=1668711825",
+        "description": "Nourish. Soothe.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/ultralight-moisture-boosting-oil"
+            }
+        ]
+    },
+    {
+        "id": 666,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Exfoliating Caffeine Micro Polish",
+        "type": "Exfoliant",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/exfoliating-caffeine-micro-polish",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/products/micropolsh_dotcom_0000_TheOutsetMicroPolish-100ml_Tube.jpg?v=1663775873",
+        "description": "Energize. Revitalize.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/exfoliating-caffeine-micro-polish"
+            }
+        ]
+    },
+    {
+        "id": 667,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Smoothing Vitamin C Eye + Expression Lines Cream",
+        "type": "Eye Cream",
+        "price": 42,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/smoothing-vitamin-c-eye-expression-lines-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/EyeCream_PDP_Update_0005_1.jpg?v=1706203882",
+        "description": "Erase expression lines and brighten eyes without the burning. Harnessing the power of Ascorbyl Glucoside, a gentle form of Vitamin C that brightens and revitalizes the skin, t his rich, vitamin-packed cream minimizes imperfections and diminishes the look of fine lines near the eye and around the mouth.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Anti-Aging",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/smoothing-vitamin-c-eye-expression-lines-cream"
+            }
+        ]
+    },
+    {
+        "id": 668,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Restorative Niacinamide Night Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/restorative-niacinamide-night-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/NightCream_PDP_Update_0005_1.jpg?v=1706203592",
+        "description": "Reset. Rejuvenate.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Niacinamide",
+            "Peptides",
+            "Bakuchiol"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin",
+            "Brightening"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/restorative-niacinamide-night-cream"
+            }
+        ]
+    },
+    {
+        "id": 669,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Nourishing Squalane Daily Moisturizer",
+        "type": "Moisturizer",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/products/PDPCROPS1240X1580__0010_FINAL_15_B_Moisturizer_146copy.jpg?v=1658852571",
+        "description": "Quench. Calm.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 670,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Firming Vegan Collagen Prep Serum",
+        "type": "Serum",
+        "price": 46,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/firming-vegan-collagen-prep-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/files/PDP_CROPS_1240X1580__0011_FINAL_14_B_Serum_104_copy_192a4ff6-7569-4c04-9b2e-bf90269dc3db.jpg?v=1727725729",
+        "description": "Firm. Plump.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Anti-Aging",
+            "Brightening"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive",
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/firming-vegan-collagen-prep-serum"
+            }
+        ]
+    },
+    {
+        "id": 671,
+        "brand": "The Outset",
+        "brandColor": "#0F3DFB",
+        "name": "Gentle Micellar Antioxidant Cleanser",
+        "type": "Cleanser",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0614/9373/9777/products/PDPCROPS1240X1580__0012_FINAL_13_B_Cleanser_245copy.jpg?v=1642003606",
+        "description": "Purify. Soothe.",
+        "ingredients": [],
+        "concerns": [
+            "Oily Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 672,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Glazing Mist",
+        "type": "Mist",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/glazing-mist",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/mist-menu-png-2000x2000_bf2f0f50-ad7a-4ffb-bd85-a5dc7ab67aec.png?v=1776707735",
+        "description": "Instant glazed skin wherever you go. Glazing Mist is a superfine mist that hydrates and refreshes for a next-level glowy finish.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/glazing-mist"
+            }
+        ]
+    },
+    {
+        "id": 673,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Glazing Milk",
+        "type": "Moisturizer",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/glazing-milk",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/glazing-milk-sq.png?v=1746170157",
+        "description": "The essential prep step for your skincare routine. Glazing Milk is a potent, nutrient-rich complex with a milky texture that leaves skin feeling hydrated and glowy while boosting the skin barrier over time.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/glazing-milk"
+            }
+        ]
+    },
+    {
+        "id": 674,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Caffeine Reset",
+        "type": "Mask",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/caffeine-reset",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/main-png-caffeine-reset.png?v=1770090005",
+        "description": "A cup of coffee for your face. Our sculpting cream mask wakes up tired skin with a caffeine-packed formula.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/caffeine-reset"
+            }
+        ]
+    },
+    {
+        "id": 675,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Peptide Eye Prep",
+        "type": "Eye Cream",
+        "price": 25,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/peptide-eye-prep-rhode-logo",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/eyeprep-rhode-main-png-2000x2000.png?v=1759292615",
+        "description": "Eye care starts with Peptide Eye Prep. Our cooling hydrogel eye patches depuff and brighten under the eyes while helping to reduce the look of fine lines and dark circles.",
+        "ingredients": [
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/peptide-eye-prep-rhode-logo"
+            }
+        ]
+    },
+    {
+        "id": 676,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Barrier Butter",
+        "type": "Moisturizer",
+        "price": 36,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/barrier-butter",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/big-bb-main-png.png?v=1762296685",
+        "description": "An intensive moisture balm for deep hydration overnight. Our buttery-smooth formula is a supercharged addition to your nighttime routine.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/barrier-butter"
+            }
+        ]
+    },
+    {
+        "id": 677,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Pineapple Refresh",
+        "type": "Cleanser",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/pineapple-refresh-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/files/cleanser-main-png-2000x2000-revision.png?v=1705696348",
+        "description": "The first step in your rhode routine. Pineapple Refresh is a gentle balm-to-lather daily cleanser that removes SPF and makeup while leaving skin clean, soft, and hydrated post-rinse.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/pineapple-refresh-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 678,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Peptide Glazing Fluid",
+        "type": "Serum",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/peptide-glazing-fluid",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/products/glaze-2000x2000_1.png?v=1737168098",
+        "description": "The signature step to dewy, glazed skin. Peptide Glazing Fluid is a lightweight, quick-absorbing gel serum that hydrates and brightens skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/peptide-glazing-fluid"
+            }
+        ]
+    },
+    {
+        "id": 679,
+        "brand": "Rhode",
+        "brandColor": "#DCAA96",
+        "name": "Barrier Restore Cream",
+        "type": "Moisturizer",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.rhodeskin.com/products/barrier-restore-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0606/5451/8510/products/brc-2000x2000_1.png?v=1677822162",
+        "description": "A rich yet lightweight cream moisturizer for your everyday routine. BRC hugs your skin with comforting hydration while improving dullness and supporting healthy-looking skin over time.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Glycolic Acid",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.rhodeskin.com/products/barrier-restore-cream"
+            }
+        ]
+    },
+    {
+        "id": 680,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Bio-Active Ceramide Eye Cream",
+        "type": "Eye Cream",
+        "price": 16,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/bio-active-ceramide-eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/Bio-Eye_Packshot_V1_1000x1000_1a7ceb4d-7b7c-4a14-97cb-f61ddae79415.png?v=1787747835",
+        "description": "Clinically proven to lift eyelids by 29% in 4 weeks*. Bio-Active Ceramides and Tetrapeptide Complex smooth fine lines, firm the eye contour, and hydrate.",
+        "ingredients": [
+            "Ceramides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/bio-active-ceramide-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 681,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Oat Cleansing Balm - 150ml",
+        "type": "Cleansing Balm",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/oat-cleansing-balm-150ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/Oat_Balm_Cleanser_150ml_Packshot_1000x1000_150ml.png?v=1786452414",
+        "description": "What you get: Our better than ever gentle cleansing balm features a buttery-smooth texture that effectively removes makeup, SPF and impurities in seconds*. Clinically proven to support skin barrier function** and leave skin hydrated for up to 12 hours***, this balm-to-milk cleanser is ideal for sensitive and blemish-prone skin.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin",
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/oat-cleansing-balm-150ml"
+            }
+        ]
+    },
+    {
+        "id": 682,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Advanced 0.2% Retinal Serum",
+        "type": "Serum",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/advanced-retinal",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/AdvancedRetinal_PackShot_1000x1000_136494cc-a562-4049-8815-8dc9016e8252.png?v=1765817076",
+        "description": "WHAT YOU GET A high-strength Retinal serum, clinically proven to target all 5 visible signs of aging, without irritation - smoothing deep wrinkles, fading dark spots, visibly firming and lifting while boosting skin’s luminosity.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/advanced-retinal"
+            }
+        ]
+    },
+    {
+        "id": 683,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Starter Retinol Serum",
+        "type": "Serum",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/starter-retinol",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/StarterRetinol_PackShot_1000x1000_40f6a4ba-a667-43af-ba0d-7c8868d288c8.png?v=1765806952",
+        "description": "WHAT YOU GET A gentle yet effective beginner Retinol serum , clinically proven to visibly smooth fine lines in just 7 days -without irritation*. It helps even skin tone and refine texture while being perfectly suited for first-time Retinol users, sensitive skin, and rosacea-prone skin.",
+        "ingredients": [
+            "Squalane",
+            "Retinol"
+        ],
+        "concerns": [
+            "Sensitive Skin",
+            "Rosacea",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/starter-retinol"
+            }
+        ]
+    },
+    {
+        "id": 684,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Exosome Boosting Dry Sheet Masks - Pack of 3",
+        "type": "Mask",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/exosome-hydrating-mask-pack-3",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/Packshot_PNG_x3_-2.png?v=1786974022",
+        "description": "Free shipping over $40. Get an instant glow with the Exosome Mask.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/exosome-hydrating-mask-pack-3"
+            }
+        ]
+    },
+    {
+        "id": 685,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Glycerin Gentle Purifying Cleanser",
+        "type": "Cleanser",
+        "price": 19,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/glycerin-gentle-purifying-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/GLYCERINHERO.png?v=1755519853",
+        "description": "WHAT YOU GET: A gentle cleans ing gel that lifts away excess oil and impurities and helps reduce the look of pores without stripping the skin. Skin feels fresh, balanced, and hydrated – no dryness, n o irritation.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Barrier Support",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/glycerin-gentle-purifying-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 686,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "360° Acne Clearing Serum",
+        "type": "Serum",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/360-acne-clearing-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/DIOIC_HERO_US.png?v=1755619509",
+        "description": "WHAT YOU GET: A high-performance, daily anti-blemish serum that targets all 3 stages of breakouts in one step . F rom excess shine to active breakouts and post-blemish pigmentation – it works like 3 products in 1 bottle.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/360-acne-clearing-serum"
+            }
+        ]
+    },
+    {
+        "id": 687,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Milk Cleanser - 240ml",
+        "type": "Cleanser",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/hydrating-cream-to-milk-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/Hydrating_Cream_To_Milk_Cleanser_240ml_Eczema_Packshot_US.png?v=1753781114",
+        "description": "Introducing Milk Cleanser, for a gentle yet effective cleanse that leaves skin hydrated and balanced without a hint of tightness. Non-irritating, non-stripping, non-drying.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin",
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/hydrating-cream-to-milk-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 688,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Hydro-surge Dewy Face Mist",
+        "type": "Mist",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/hydro-surge-dewy-face-mist",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/DTC_MistROW_Packshot_1000x1000_1a6e7de1-1994-4f0f-90fa-088373efd61e.png?v=1749049802",
+        "description": "Achieve dewy, glowing skin with our bestselling hydrating face mist. Instant moisture that lasts 12 hours without messing with your makeup.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/hydro-surge-dewy-face-mist"
+            }
+        ]
+    },
+    {
+        "id": 689,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Exosome Hydro-Glow Complex",
+        "type": "Serum",
+        "price": 24,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/exosome-hydro-glow-complex",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/EXOSOME-GLOBALS_PACKSHOT.png?v=1741787806",
+        "description": "Resurface, rejuvenate, and hydrate your skin with Exosome Hydro-Glow Complex. Powered by 3-million plant-derived Exosomes, this powerhouse collagen- boosting serum delivers clinic-worthy results without the price tag.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/exosome-hydro-glow-complex"
+            }
+        ]
+    },
+    {
+        "id": 690,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Ectoin Hydro-Barrier Serum",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/ectoin-hydro-barrier-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/Ectoin-Packshot_DTC-1000x1000_1.png?v=1734702543",
+        "description": "Ectoin Hydro-Barrier Serum is your daily non-negotiable for the ultimate healthy-looking skin. Clinically proven to restore skin bounce in 3 days* and deeply hydrate and strengthen the skin's barrier in 15 minutes.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [
+            "All",
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/ectoin-hydro-barrier-serum"
+            }
+        ]
+    },
+    {
+        "id": 691,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Hydrocolloid Invisible Pimple Patches - Pack of 22",
+        "type": "Spot Treatment",
+        "price": 10,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/hydrocolloid-invisible-pimple-patches",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/INKEY_Hydrocolloid_Invisible_Pimple_Patches_Ppage_Packshot_Primary_US.png?v=1733823003",
+        "description": "Last-minute breakout popped up at the worst time? Patch it, clear it, FAST with Hydrocolloid Invisible Pimple Patches.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/hydrocolloid-invisible-pimple-patches"
+            }
+        ]
+    },
+    {
+        "id": 692,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Bio-Active Ceramide Moisturizer",
+        "type": "Moisturizer",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/bio-active-ceramide-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/Bio-Face_Packshot_V1_1000x1000_031a840b-4288-4a64-bca6-be8342805bf0.png?v=1787747879",
+        "description": "A new age in skincare technology. Powered by Bio-Active Ceramides for up to 4X visible fine line and wrinkle reduction*, this rich, velvety, anti-aging moisturizer defends against visible signs of skin aging.",
+        "ingredients": [
+            "Ceramides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/bio-active-ceramide-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 693,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "10% Urea Moisturizer",
+        "type": "Moisturizer",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/dry-and-rough-skin-solution",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/Dry_Rough_TILSS_packshot_1000x1000_860934bc-426e-4d7d-95bf-3cfb4ce22039.png?v=1676630289",
+        "description": "A clinically proven, fast absorbing moisturiser formulated with 10% Urea that delivers instant hydration to very dry skin. It gently exfoliates rough skin, leaving skin soothed and delaying dryness for up to 48 hours.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/dry-and-rough-skin-solution"
+            }
+        ]
+    },
+    {
+        "id": 694,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "10% Azelaic Acid Serum for Redness Relief",
+        "type": "Serum",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/redness-relief-solution",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/RednessRelief_US_TILSS_packshot_1000x1000_5db7e7d4-d826-4c2d-b344-d5686b5abb51.png?v=1676629669",
+        "description": "A fast-absorbing, non-pilling azelaic acid serum is formulated with 10% Azelaic Acid. By reducing the appearance of redness and an uneven skin tone, this anti-redness serum gives the skin a more even complexion and instantly soothes and calms skin that feels irritated.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Rosacea"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/redness-relief-solution"
+            }
+        ]
+    },
+    {
+        "id": 695,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Omega Water Cream - 50ml",
+        "type": "Moisturizer",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://www.theinkeylist.com/products/omega-water-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/OMEGA_Packshot.png?v=1726837065",
+        "description": "Searching for an oil-free moisturizer that hydrates without feeling greasy or heavy on the skin? We've got it!",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Oily Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/omega-water-cream"
+            }
+        ]
+    },
+    {
+        "id": 696,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Salicylic Acid Cleanser - 150ml",
+        "type": "Cleanser",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/salicylic-acid-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/TheINKEYList_SalicylicAcidCleaser_150mlbottle_englishandfrenchUSA_1000x1000_4c9deb36-f0ac-48ed-9d80-aec4a948e3bc.png?v=1738662621",
+        "description": "Specially formulated for acne blemishes, combination and oily-prone skin, our bestselling Salicylic Acid Cleanser is your ultimate skin-clearing facial cleanser that visibly reduces acne blemishes and blackheads for a clearer-looking complexion.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Oily Skin",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/salicylic-acid-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 697,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Fulvic Acid Cleanser - 150ml",
+        "type": "Cleanser",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/fulvic-acid-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/TheINKEYList_FulvicAcidCleanser_150mltube_1000x1000_6dc7557c-21b1-410f-afb5-119cba0ad372.png?v=1672477902",
+        "description": "This luxurious gel Fulvic Acid Cleanser gently exfoliates to reveal a brighter, healthy looking complexion whilst removing makeup, including eye makeup. Containing 0.5% Nordic Peat, naturally high in Fulvic Acid which is proven to act as a strong antioxidant with anti-inflammatory properties, it helps to improve the appearance of uneven skin tone whilst leaving skin feeling soft and soothed.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/fulvic-acid-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 698,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Succinic Acid Acne Treatment",
+        "type": "Spot Treatment",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/succinic-acid",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/DTCROUNDELSon1000x1000packshots_CEWAWARDS_SUCCINIC_NINJA_UK.png?v=1786983285",
+        "description": "Clear blemishes fast, reduce inflammation and prevent clogged pores with our non-drying, targeted treatment. With a cream formula, it is easily layered under makeup without flaking.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/succinic-acid"
+            }
+        ]
+    },
+    {
+        "id": 699,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Tranexamic Acid Serum",
+        "type": "Serum",
+        "price": 19,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/tranexamic-acid-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/TheINKEYList_TranexamicAcidSerum_30mlpump_1000x1000_b480622d-efd7-48a7-ac34-87f6724691a2.png?v=1704369745",
+        "description": "This gel treatment targets hyperpigmentation, uneven patches and dark spots. It brightens your skin's complexion, as well as aids the reduction of dark spots and uneven skin tone.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/tranexamic-acid-serum"
+            }
+        ]
+    },
+    {
+        "id": 700,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "10% Niacinamide Serum",
+        "type": "Serum",
+        "price": 13,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/niacinamide-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/TheINKEYList_NiacinamideSerum_30mlbottle_1000x1000_5c1f85db-53c9-48cd-975e-e70371e617a1.png?v=1700586730",
+        "description": "A lightweight, power-packed Niacinamide Serum that can be easily layered into your skincare routine. Containing 10% Niacinamide this naturally occurring B3 vitamin helps to effectively reduce excess oil, blemishes and redness.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Acne",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/niacinamide-serum"
+            }
+        ]
+    },
+    {
+        "id": 701,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Retinol Eye Cream",
+        "type": "Eye Cream",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/retinol-eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/TheINKEYList_RetinolEyeCream_15mltube_1000x1000_2e0892ce-2d0d-4c47-afbb-eee2a3abf2a6.png?v=1668098841",
+        "description": "A night time eye cream for fine lines, formulated to reduce the appearance of wrinkles while giving extra support to your most fragile skin. Our Retinol Eye Cream has been formulated with slow release Vitamin A derivatives that helps to avoid irritation.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Retinol"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/retinol-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 702,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Peptide Moisturizer",
+        "type": "Moisturizer",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/peptide-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/TheINKEYList_PeptideMoisturizer_50mltube_1000x1000_fb2b544f-cf56-4c9c-83d6-1a1ab2733a99.png?v=1649679290",
+        "description": "A nurturing yet fast-absorbing daily face moisturizer for dry skin. Its dual peptide formula aims to reduce the appearance of fine line & wrinkles and balance skin's natural oil levels.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/peptide-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 703,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Glycolic Acid Toner",
+        "type": "Toner",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/glycolic-acid-toner",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/INKEY_GLYCOLICACID_1000x1000_83eb8067-762d-4a70-82ef-6d4a93cdb966.png?v=1633451254",
+        "description": "This 10% Glycolic Acid exfoliator works as a pore minimising toner, reducing blackheads and fine lines, as well as supporting smoother and brighter skin. Derived from sugar cane, Glycolic Acid Toner works to remove dead skin on the surface to help improve the overall appearance of skin texture and brightness without drying out the skin.",
+        "ingredients": [],
+        "concerns": [
+            "Oily Skin",
+            "Blackheads",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/glycolic-acid-toner"
+            }
+        ]
+    },
+    {
+        "id": 704,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Beta Hydroxy Acid (BHA) Serum",
+        "type": "Serum",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/beta-hydroxy-acid-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/beta-hydroxy-acid-serum-101-EU-CA-2000x2000.png?v=1747833170",
+        "description": "This BHA serum contains 2% Salicylic Acid which means it can penetrate deeper into your skin, helping to unclog pores. BHA products can help fight blackheads and breakouts and reduce pore appearance.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/beta-hydroxy-acid-serum"
+            }
+        ]
+    },
+    {
+        "id": 705,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Polyglutamic Acid Serum",
+        "type": "Serum",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/polyglutamic-acid-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/TheINKEYList_PolyglutamicAcidSerum_30mlpump_1000x1000_1_3514ed05-2bd9-4201-bbaf-f5c9efbd434d.png?v=1733135137",
+        "description": "A powerful hydrator for the skin's surface, Polyglutamic Acid can hold 4x more moisture than Hyaluronic Acid, locking in moisture and helping the skin appear instantly smoother.",
+        "ingredients": [],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/polyglutamic-acid-serum"
+            }
+        ]
+    },
+    {
+        "id": 706,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "PHA Toner",
+        "type": "Toner",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/pha-toner",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/INKEY_PHATONER_1000x1000_a3247410-8fd0-409a-abc2-3baad8b5a4bd.png?v=1633451583",
+        "description": "PHA Toner (Polyhydroxy Acid) is a gentle chemical exfoliant and toner for sensitive skin. Made of large molecules, it removes dead cells from the surface layer of the skin, while naturally locking in moisture.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/pha-toner"
+            }
+        ]
+    },
+    {
+        "id": 707,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "15% Vitamin C + EGF Serum",
+        "type": "Serum",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/15-vitamin-c-egf-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/TheINKEYList_15_VitaminCandEGFSerum_30mlpump_1000x1000_a2760d18-e65d-4fd8-ba49-74e43e26bdd8.png?v=1682516848",
+        "description": "What you get: A high-strength brightening serum powered by 15% Vitamin C & EGF. Targets hyperpigmentation, evens skin tone, and revives dull, tired skin for a visibly brighter, more even complexion.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/15-vitamin-c-egf-serum"
+            }
+        ]
+    },
+    {
+        "id": 708,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Vitamin B, C and E Moisturizer",
+        "type": "Moisturizer",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/vitamin-b-c-e-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/products/INKEY_VitaminB_CandEMoisturizer_1000x1000_fab1a082-ddf4-4998-b724-83ee314d77d0.png?v=1633452058",
+        "description": "This lightweight daily hydrating moisturizer quickly absorbs to deliver every essential vitamin for healthy-looking skin, including clarifying B3 (Niacinamide) to help balance oil, brightening antioxidant Vitamin C, and soothing Vitamin E.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin C",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/vitamin-b-c-e-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 709,
+        "brand": "The Inkey List",
+        "brandColor": "#272D45",
+        "name": "Hyaluronic Acid Serum - 30ml",
+        "type": "Serum",
+        "price": 13,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://www.theinkeylist.com/products/hyaluronic-acid-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/HASERUM.png?v=1730459493",
+        "description": "Our #1 bestseller, this is a daily essential for every routine and helps your other skincare work harder. Clinically proven to deliver instant and lasting hydration, this non- tacky hydrating serum leaves skin feeling plump, smooth and healthy.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://www.theinkeylist.com/products/hyaluronic-acid-serum"
+            }
+        ]
+    },
+    {
+        "id": 710,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Hydro Relief Peptides & Amino Acids Cream",
+        "type": "Moisturizer",
+        "price": 36.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/hydro-relief-peptide-amino-acid-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/hydro_relief_carousel_1.jpg?v=1728357485",
+        "description": "A deeply nourishing, gentle moisturizer that locks in hydration and calms skin without clogging pores or leaving a greasy residue. We combined these humectants with plant-based lipids like squalane, shea butter, and jojoba esters.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive",
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/hydro-relief-peptide-amino-acid-cream"
+            }
+        ]
+    },
+    {
+        "id": 711,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Peptide Squad Collagen Renewal Serum",
+        "type": "Serum",
+        "price": 47.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/peptide-squad-collagen-renewal-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/ps_no_badge.jpg?v=1767122615",
+        "description": "Argireline reduces expression lines, and rice peptides slow collagen breakdown. We've boosted the naturally hydrating properties of peptides with a blend of hyaluronic acid, ceramides, and jojoba oil.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/peptide-squad-collagen-renewal-serum"
+            }
+        ]
+    },
+    {
+        "id": 712,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Fade Away Brightening Serum",
+        "type": "Serum",
+        "price": 39.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/fade-away-brightening-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/fa_no_badge.jpg?v=1764906278",
+        "description": "Dermatologist-approved serum for hyperpigmentation and dark spots! Ideal for: fading dark spots, evening out skin tone, preventing future pigmentation A powerful yet gentle discoloration correcting serum to help treat and prevent hyperpigmentation and stubborn dark spots, without the need for hydroquinone.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin",
+            "Brightening"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/fade-away-brightening-serum"
+            }
+        ]
+    },
+    {
+        "id": 713,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Sheer Silk Ceramide Cleanser",
+        "type": "Cleanser",
+        "price": 22.95,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/sheer-silk-ceramide-gentle-dry-skin-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/sheer_silk_carousel_1.jpg?v=1728357850",
+        "description": "This luxurious cream cleanser combines gentle cleansing with high-performance moisturizing ingredients to pamper skin without stripping it. Powered by gentle coconut-derived cleansing agents, this hydrating cleanser thoroughly removes makeup, dirt, and sunscreen while leaving skin calm and balanced.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/sheer-silk-ceramide-gentle-dry-skin-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 714,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Plush Cream Lightweight Moisturizer",
+        "type": "Moisturizer",
+        "price": 34.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/plush-cream-featherweight-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/plush_carousel_1.jpg?v=1728357699",
+        "description": "An ultra lightweight, gentle moisturizer that locks in hydration for nourished skin without a heavy feel. We combined these powerful hydrators alongside anti-aging and calming ingredients like niacinamide, panthenol, algae extract, and aloe.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/plush-cream-featherweight-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 715,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Super Smooth AHA + BHA Resurfacing Serum",
+        "type": "Serum",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/super-smooth-aha-bha-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/super_smooth_carousel_1.jpg?v=1728357982",
+        "description": "A gentle AHA & BHA blend for sensitive-skin friendly exfoliation, enhanced with peptide technology and skin-soothing ingredients for a smoother, radiant complexion.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Hyperpigmentation",
+            "Sensitive Skin",
+            "Anti-Aging",
+            "Brightening"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/super-smooth-aha-bha-serum"
+            }
+        ]
+    },
+    {
+        "id": 716,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Stargaze Enhanced Retinol Serum",
+        "type": "Serum",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/stargaze-retinol-hyaluronic-night-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/stargaze_carousel_1_8f2f2a6a-97e2-4488-8634-8a77f96ce91a.jpg?v=1770177426",
+        "description": "Stargaze features a proprietary time-released 0.25% retinol system that gently disperses the anti-aging benefits over time for minimal irritation, making it ideal for those who are new to retinoids or with extra sensitive skin.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/stargaze-retinol-hyaluronic-night-serum"
+            }
+        ]
+    },
+    {
+        "id": 717,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Moonlight Advanced Retinal Night Serum",
+        "type": "Serum",
+        "price": 39.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/moonlight-retinaldehyde-retinal-night-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/ml_no_badge.jpg?v=1765582395",
+        "description": "Winner -- The Best Retinol Serum in The Zoe Report's 2021 Beauty Awards Ideal for: fine lines and wrinkles, loss of skin firmness and elasticity, aging skin, and overall dullness Meet Moonlight Retinal Super Serum, a multifunctional night serum that’s 10x more effective than retinol.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/moonlight-retinaldehyde-retinal-night-serum"
+            }
+        ]
+    },
+    {
+        "id": 718,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "The Exfoliator BHA + Clay Facial Scrub",
+        "type": "Exfoliant",
+        "price": 27.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/deep-exfoliator-bha-clay-facial-scrub",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/exfoliator_carousel_1.jpg?v=1728358009",
+        "description": "This deep cleansing exfoliation treatment helps to unclog pores, remove impurities, and buff away dead skin cells to give you smooth, renewed skin. This gentle but powerful deep cleansing treatment combines proven chemical and physical exfoliators to smooth skin’s texture and restore radiance.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Oily Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/deep-exfoliator-bha-clay-facial-scrub"
+            }
+        ]
+    },
+    {
+        "id": 719,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Hydrator Hyaluronic Acid B5 Serum",
+        "type": "Serum",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/hydrator-hyaluronic-acid-b5-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/hy_no_badge.jpg?v=1764906350",
+        "description": "Experience The Hydrator, a moisture-boosting gel serum that spreads well and layers easily for all-day hydration. Packed with super humectants like hyaluronic acid and panthenol, this serum delivers an immediate surge of moisture for a dewy, refreshed complexion.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/hydrator-hyaluronic-acid-b5-serum"
+            }
+        ]
+    },
+    {
+        "id": 720,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "LOVE 31 Botanical Facial Oil",
+        "type": "Face Oil",
+        "price": 79.95,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/love31-oil-botanical-extract-facial",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/love_31_carousel_1.jpg?v=1728357521",
+        "description": "A restorative botanical oil blend to balance, nourish, and hydrate skin with a non-greasy, lightweight finish. With anti-inflammatory, antioxidant, antimicrobial, and healing properties, this nourishing formula is the ultimate skin indulgence.",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/love31-oil-botanical-extract-facial"
+            }
+        ]
+    },
+    {
+        "id": 721,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "NIA 10 Niacinamide Serum",
+        "type": "Serum",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/nia-10-calming-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/nia_10_carousel_1.jpg?v=1728357595",
+        "description": "Nia 10 harnesses the power of 10% niacinamide (vitamin B3) to effectively soothe sensitive skin and alleviate redness by strengthening the skin barrier and protecting against environmental stressors.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Oily Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/nia-10-calming-serum"
+            }
+        ]
+    },
+    {
+        "id": 722,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "The Refresher AHA Clarifying Cleanser",
+        "type": "Cleanser",
+        "price": 22.95,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/refresher-aha-clarifying-face-wash-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/refresher_carousel_1.jpg?v=1728358037",
+        "description": "A revitalizing face wash that thoroughly cleanses, removes excess sebum, and kills microbes alongside gentle AHA exfoliation to help unclog pores and retain skin’s natural acidity.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/refresher-aha-clarifying-face-wash-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 723,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Eye Enhancer De-Puffing Peptide Cream",
+        "type": "Eye Cream",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/eye-enhancer-caffine-peptide-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/eye_enhancer_carousel_1.jpg?v=1728357210",
+        "description": "Revitalize the delicate skin around the eyes with our lightweight gel cream, designed to improve texture, tone, and radiance, so you can always look your freshest.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/eye-enhancer-caffine-peptide-cream"
+            }
+        ]
+    },
+    {
+        "id": 724,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Night Renewer Glycolic Acid Cream",
+        "type": "Moisturizer",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/night-renewer-glycolic-acid-night-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/nr_no_badge.jpg?v=1765582395",
+        "description": "Winner — Best Anti-Aging Cream in Prevention's 2024 Healthy Skin Awards Key Benefits: Improves skin texture, reduces dark spots, softens wrinkles, refines the look of pores Wake up to smooth, radiant skin after using this 2-in-1 glycolic acid treatment and hydrating night cream, best described as an “overnight facial.” Night Renewer uses 10% glycolic acid, an AHA exfoliant that improves skin texture, fades dark.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/night-renewer-glycolic-acid-night-cream"
+            }
+        ]
+    },
+    {
+        "id": 725,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Sun Protector SPF 30 Mineral Sunscreen",
+        "type": "Sunscreen",
+        "price": 24.95,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/sun-protector-spf-30-mineral-sunscreen",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/sun_protector_carousel_1.jpg?v=1728357910",
+        "description": "Broad spectrum, mineral SPF 30 protection without the heavy, pore-clogging feel of typical sunscreens. Our non-comedogenic, hypoallergenic formula is silky smooth, light as air, and doubles as a makeup primer to simplify your morning routine.",
+        "ingredients": [
+            "Vitamin C",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/sun-protector-spf-30-mineral-sunscreen"
+            }
+        ]
+    },
+    {
+        "id": 726,
+        "brand": "Maelove",
+        "brandColor": "#3078CD",
+        "name": "Glow Maker Vitamin C Serum",
+        "type": "Serum",
+        "price": 32.95,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://maelove.com/products/glow-maker-vitamin-c-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/gm_no_badge.jpg?v=1767122615",
+        "description": "Winner — the Strategist Beauty 100 Award The Glow Maker uses an expertly stabilized antioxidant blend of 15% l-ascorbic acid (the most effective form of vitamin C), vitamin E, and ferulic acid.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin",
+            "Anti-Aging",
+            "Brightening"
+        ],
+        "features": [
+            "Non-Comedogenic",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://maelove.com/products/glow-maker-vitamin-c-serum"
+            }
+        ]
+    },
+    {
+        "id": 727,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Wrinkle Relaxing Eye Treatment",
+        "type": "Eye Cream",
+        "price": 34.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/wrinkle-relaxing-eye-treatment",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/out-v1.jpg?v=1785436994",
+        "description": "Active-rich solutions to simplify your skincare routine. Clean formulas free from animal ingredients, parabens, synthetic dyes & bad vibes.",
+        "ingredients": [
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/wrinkle-relaxing-eye-treatment"
+            }
+        ]
+    },
+    {
+        "id": 728,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Brightening Gel Moisturizer",
+        "type": "Moisturizer",
+        "price": 29.99,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/brightening-gel-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2026-DTCPrimary-BrighteningGel-Sized.jpg?v=1768574383",
+        "description": "Our lightweight, oil-free gel helps visibly brighten dull skin, smooth texture, and hydrate without heaviness. With vitamin C, niacinamide, and hyaluronic acid, it absorbs quickly, leaving a clean, non-greasy finish ideal for oily and acne-prone skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin C",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Brightening"
+        ],
+        "features": [
+            "Oil-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/brightening-gel-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 729,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "AHA + BHA Milk Serum",
+        "type": "Serum",
+        "price": 25.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/aha-bha-milk-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2026-DTCPrimary-AHA_BHAMilkSerum.jpg?v=1767236391",
+        "description": "A treatment-strength overnight exfoliating formula that smooths and refines skin while respecting the skin barrier — delivering visible results without the dryness, flaking, or recovery days often associated with exfoliation.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Glycolic Acid",
+            "Lactic Acid",
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/aha-bha-milk-serum"
+            }
+        ]
+    },
+    {
+        "id": 730,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Blemish Cream",
+        "type": "Spot Treatment",
+        "price": 14.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/blemish-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_Blemish_Cream_Primary_2.jpg?v=1751570825",
+        "description": "Gently exfoliate and calm breakouts with this active-rich spot treatment featuring Salicylic Acid, Turmeric, Arnica, and Sea Kelp Bioferment. Formulated with the cleanest and best natural ingredients, this treatment helps to reduce the appearance of acne and improve the appearance of blemishes, so you can confidently go about your day.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Salicylic Acid"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/blemish-cream"
+            }
+        ]
+    },
+    {
+        "id": 731,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Ultra-Rich Barrier Cream",
+        "type": "Moisturizer",
+        "price": 17.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/ultra-rich-barrier-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH_Shopify_UltraRichBarrierCream.jpg?v=1768969714",
+        "description": "This ultra-rich hydrating cream provides head-to-toe care , powered by Hyaluronic Acid, Vegetable-Based Lanolin, Ceramides, and Prickly Pear to deeply hydrate skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Vitamin C",
+            "Niacinamide"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/ultra-rich-barrier-cream"
+            }
+        ]
+    },
+    {
+        "id": 732,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Luminizing Facial SPF",
+        "type": "Sunscreen",
+        "price": 24.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/luminizing-facial-spf",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/luminizingSPF_1.png?v=1751560199",
+        "description": "A slightly shimmery, lightweight clear zinc sunscreen with fair-trade mica & an antioxidant boost! For a clean, effortless glow...with an SPF 29+ rating & 80-min water resistance!",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/luminizing-facial-spf"
+            }
+        ]
+    },
+    {
+        "id": 733,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Hydrating Facial SPF",
+        "type": "Sunscreen",
+        "price": 24.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/hydrating-facial-spf",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/facialspf1.png?v=1751560066",
+        "description": "A clear, clean mineral SPF 25+ w/ 80-min water resistance loaded with actives to keep your skin protected, hydrated, and healthy! Our lotion blends in beautifully, and is perfect for daily use around town, a jog, or a trip to the beach!",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Vitamin C",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/hydrating-facial-spf"
+            }
+        ]
+    },
+    {
+        "id": 734,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Daily Protective Serum",
+        "type": "Sunscreen",
+        "price": 22.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/daily-protective-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/DailyProtectiveSerum_6e29f46e-8952-42a5-b432-f128a8ac4b61_1_1.png?v=1751559812",
+        "description": "Hydrate, nourish & protect with clear mineral SPF 30+. Lightweight and water-resistant (80 min), it locks in moisture with hyaluronic acid & buriti oil while antioxidants like resveratrol & vitamins C & E defend against daily stressors.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Vitamin C",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/daily-protective-serum"
+            }
+        ]
+    },
+    {
+        "id": 735,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Jelly Cleanser",
+        "type": "Cleanser",
+        "price": 17.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/jelly-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_JellyCleanser_Pastel.jpg?v=1751566055",
+        "description": "The most hydrating cleanser you've ever tried... Hydrating, mildly acidic jelly-to-milk cleanser with an antioxidant boost!",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/jelly-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 736,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Corrective Peptide Serum",
+        "type": "Serum",
+        "price": 32.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/corrective-peptide-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/PeptideSerumUpdated_ba2cb4a9-313e-470b-a2d4-91bcc26c58ec.jpg?v=1784826444",
+        "description": "A multi-peptide serum that visibly firms while reducing the look of wrinkles, sagging skin, and enlarged pores. Hydrating ingredients like polyglutamic acid, ceramides, and silver ear mushroom leave skin soft, smooth, and refreshed.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/corrective-peptide-serum"
+            }
+        ]
+    },
+    {
+        "id": 737,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "MicroDermabrasion Facial",
+        "type": "Exfoliant",
+        "price": 32.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/microdermabrasion-facial",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_MicrodermabrasionFacial_Pastels.jpg?v=1730751847",
+        "description": "Micro-exfoliants join forces with six alpha hydroxy acids plus probiotics to brighten, soften & smooth. Physical exfoliants, bamboo & volcanic ash, gently buff away dry, dull skin, while half a dozen AHAs, including glycolic & mandelic acid, offer a gentle chemical exfoliation that leaves you glowing!",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Glycolic Acid",
+            "Lactic Acid"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/microdermabrasion-facial"
+            }
+        ]
+    },
+    {
+        "id": 738,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Triple C Night Cream",
+        "type": "Moisturizer",
+        "price": 33.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/triple-c-night-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2026-DTCPrimary-TripleCNightCream_Shopify_68bd377f-2f6c-4271-a755-ce1caa82aa14.jpg?v=1767935599",
+        "description": "A luxurious night treatment powered by three forms of vitamin C, adaptogens & 19 skin-reviving actives. Deeply hydrates while visibly brightening, smoothing, and renewing your skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/triple-c-night-cream"
+            }
+        ]
+    },
+    {
+        "id": 739,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Cleansing Oil",
+        "type": "Cleansing Oil",
+        "price": 17.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://madhippie.com/products/cleansing-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_CleansingOil_Pastel.jpg?v=1730832377",
+        "description": "Radiance boosting blend that softens & smooths while gently removing dirt & impurities. Non-comedogenic & perfect for naturally removing makeup!",
+        "ingredients": [
+            "Squalane"
+        ],
+        "concerns": [],
+        "features": [
+            "Non-Comedogenic"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/cleansing-oil"
+            }
+        ]
+    },
+    {
+        "id": 740,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Vitamin C Toning Mist",
+        "type": "Mist",
+        "price": 19.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/hydrating-nutrient-mist",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_VitaminCToningMist_Pastel.jpg?v=1730744731",
+        "description": "Tone, protect & nourish with this antioxidant-rich, hydrating shield perfect for your face, neck, chest & arms. Brightening vitamin C joins with hydrating Tremella Mushroom, Sodium PCA & Polyglutamic Acid to leave your skin soft & glowing.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/hydrating-nutrient-mist"
+            }
+        ]
+    },
+    {
+        "id": 741,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Antioxidant Facial Oil",
+        "type": "Face Oil",
+        "price": 26.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/antioxidant-facial-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_AntioxidantFacialOil_Pastel.jpg?v=1730748991",
+        "description": "Make peace with your inner hippie while hydrating & protecting....our preservative-free Antioxidant Facial Oil is truly the most natural way to moisturize. We utilize an organic argan oil base & then add in over a dozen powerful natural antioxidants.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/antioxidant-facial-oil"
+            }
+        ]
+    },
+    {
+        "id": 742,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Face Cream",
+        "type": "Moisturizer",
+        "price": 27.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/face-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2026-DTCPrimary-FaceCream_Shopify.jpg?v=1767935775",
+        "description": "A lightweight daily cream with peptides, niacinamide, and antioxidants to hydrate, smooth, and support firmer, healthier-looking skin.",
+        "ingredients": [
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/face-cream"
+            }
+        ]
+    },
+    {
+        "id": 743,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Vitamin C Serum",
+        "type": "Serum",
+        "price": 33.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/vitamin-c-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2026-DTCPrimary-VitaminCSerum_Shopify_923cb972-84b8-4716-99a4-ed2ca23fb066.jpg?v=1767935440",
+        "description": "Our award-winning serum is a harmonious blend of antioxidants that sinks beautifully into skin to leave it soft & glowing! Utilizing Sodium Ascorbyl Phosphate, an advanced and stable form of vitamin C, this serum works wonders on aging, sun damaged and acne-prone skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Vitamin C"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/vitamin-c-serum"
+            }
+        ]
+    },
+    {
+        "id": 744,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Cream Cleanser",
+        "type": "Cleanser",
+        "price": 16.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/cream-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/Shopify_CreamCleanser_Hero_e9dcb300-21f2-4b56-8f27-7fb49bc85f6e.jpg?v=1769468070",
+        "description": "This mildly acidic Cream Cleanser is pH perfection - supporting the skin's natural balance of protective oils. Many overly alkaline cleansers strip the skin of the acid mantle, a protective layer of oils.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/cream-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 745,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Eye Cream",
+        "type": "Eye Cream",
+        "price": 26.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH2024_EyeCream_Pastel_dd414909-9de1-4aa7-a279-1a6f3e080d4f.jpg?v=1730742359",
+        "description": "It is often said that the eyes are the windows to the soul...unfortunately, they are also the first area to really show our age. From the dreaded crows feet to those tiring bags under the eyes, uniting the power of peptides & antioxidants, including niacinamide, this product packs a punch.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Vitamin C",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 746,
+        "brand": "Mad Hippie",
+        "brandColor": "#108474",
+        "name": "Super A Serum",
+        "type": "Serum",
+        "price": 33.99,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://madhippie.com/products/vitamin-a-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1503/5836/files/MH_SuperA.jpg?v=1768537884",
+        "description": "From discoloration to wrinkles to skin roughness, this active-packed serum is a game changer. Combining three bioactive retinoids & bakuchiol, this serum brings marked results to the appearance of sun-damaged, aging skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Retinol",
+            "Bakuchiol"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://madhippie.com/products/vitamin-a-serum"
+            }
+        ]
+    },
+    {
+        "id": 747,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Zero Feel",
+        "type": "Moisturizer",
+        "price": 14.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/zero-feel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/ZeroFeelUS_Front_webre_jomeret.jpg?v=1776847912",
+        "description": "A silky, weightless day cream that instantly mattifies & evens the complexion. Featuring globally popular cosmetic ingredients rarely found in U.S.",
+        "ingredients": [],
+        "concerns": [
+            "Oily Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive",
+            "Oily"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/zero-feel"
+            }
+        ]
+    },
+    {
+        "id": 748,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Power Peptides",
+        "type": "Serum",
+        "price": 18.8,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/power-peptides",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/Peptide-web.jpg?v=1713954985",
+        "description": "Made with a powerful blend of four advanced collagen & extracellular matrix boosting technologies, this gorgeous, milky peptide serum firms the skin & gives its bounce back.",
+        "ingredients": [
+            "Glycolic Acid",
+            "Lactic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/power-peptides"
+            }
+        ]
+    },
+    {
+        "id": 749,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Mighty Melt",
+        "type": "Cleansing Balm",
+        "price": 16.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/mighty-melt",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/MightyMelt-square150ml.jpg?v=1785398795",
+        "description": "A gentle, yet gorgeously effective cleansing balm that melts away even long-lasting, waterproof makeup & sunscreen. It rinses off completely clean.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/mighty-melt"
+            }
+        ]
+    },
+    {
+        "id": 750,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Smooth Out",
+        "type": "Exfoliant",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/smooth-out",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/157_SmoothOut100ml-okmeret.jpg?v=1747126701",
+        "description": "Our high strength anti-aging focused exfoliant with 12% AHA + Prickly Pear reveals fresh gorgeous skin overnight and gives you healthier, younger-looking skin with regular use.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Glycolic Acid",
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Anti-Aging"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/smooth-out"
+            }
+        ]
+    },
+    {
+        "id": 751,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Cheer Up",
+        "type": "Exfoliant",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/cheer-up",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/157_CheerUp100ml_okmeret_3ed38691-062a-49c7-8c75-5ec16cb2db5a.jpg?v=1747126369",
+        "description": "SAME FORMULA, NEW LOOK :) Our regular strength, combination skin focused exfoliant with 5% Mandelic Acid + 1% BHA works both on the surface of the skin and inside the pores to clear and balance the complexion.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Oily Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive",
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/cheer-up"
+            }
+        ]
+    },
+    {
+        "id": 752,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "HA 5 Light",
+        "type": "Serum",
+        "price": 9.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/ha5-light",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/HA5-Light-web.jpg?v=1705591143",
+        "description": "5 forms of Hyaluronic Acid in varying molecular weight and structure join forces in this light & fast-absorbing formula to hydrate, soften and plump the skin. (30 ml) Skin type: all skin types, especially combination, oily skin Skin concern: dehydration, damaged skin barrier Cruelty-free | Vegan | Fragrance & Essential oil free | Gluten-free | Malassezia-safe | Pregnancy-safe",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Oily Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/ha5-light"
+            }
+        ]
+    },
+    {
+        "id": 753,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "aPAD",
+        "type": "Serum",
+        "price": 12.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/gg-101-apad",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/aPAD-web.jpg?v=1705590863",
+        "description": "A silky & light 20% Azeclair Serum with a potent Azelaic Acid derivative (Potassium Azeloyl Diglycinate or PAD) to normalize oil production, even the skin tone & calm the skin.",
+        "ingredients": [
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Oily Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/gg-101-apad"
+            }
+        ]
+    },
+    {
+        "id": 754,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "C-Glow",
+        "type": "Serum",
+        "price": 14.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/c-glow",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/C-Glow-web.jpg?v=1705591084",
+        "description": "A super-light, water-like 15% Vitamin C + extra antioxidants (Ferulic Acid & a smaller amount of Vitamin E) formula to give the skin environmental protection, boost collagen and even the skin tone.",
+        "ingredients": [
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/c-glow"
+            }
+        ]
+    },
+    {
+        "id": 755,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "B-Bomb",
+        "type": "Serum",
+        "price": 8.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/b-bomb",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/B-Bomb-web.jpg?v=1705590889",
+        "description": "A light and hydrating 10% Niacinamide (aka Vitamin B3), Zinc PCA and Sarcosine formula to help combination skin related problems, such as enlarged pores, oiliness & blemishes.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Oily Skin"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/b-bomb"
+            }
+        ]
+    },
+    {
+        "id": 756,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Liquid Hydration",
+        "type": "Toner",
+        "price": 8.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/liquid-hydration",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/Liquid-Hyd-big-square-3D-jomeret.jpg?v=1703070434",
+        "description": "A silky facial toner spray with 5% Panthenol + Natural Moisturising Factors (NMF) to hydrate and soothe all skin types. 3.7 fl.oz.",
+        "ingredients": [
+            "Lactic Acid"
+        ],
+        "concerns": [],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/liquid-hydration"
+            }
+        ]
+    },
+    {
+        "id": 757,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Jelly Joker",
+        "type": "Cleanser",
+        "price": 9.9,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/jelly-joker",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/Jelly-Joker-big-square-3D-jomeret.jpg?v=1703070408",
+        "description": "A gentle, yet hard-working jelly cleanser that cleanses skin and dissolves (water-soluble) makeup, while being respectful to the skin barrier. 5.07 fl.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/jelly-joker"
+            }
+        ]
+    },
+    {
+        "id": 758,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Stress Less",
+        "type": "Serum",
+        "price": 13.2,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/stress-less",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/StressLess-new-front.jpg?v=1715589127",
+        "description": "A light & silky gel formula with high amounts of Beta-Glucan from Oat and Madecassoside from Centella Asiatica to soothe and repair the skin. (30 ml) Skin type: all skin types, especially sensitive Skin concern: sensitivity, irritation, weakened barrier, dehydration Cruelty-free | Vegan | Fragrance & Essential oil free | Gluten-free | Malassezia-safe | Pregnancy-safe",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "All"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/stress-less"
+            }
+        ]
+    },
+    {
+        "id": 759,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Porefectly Clear",
+        "type": "Exfoliant",
+        "price": 8.6,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/porefectly-clear",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/Porefectly-Clear-web.jpg?v=1705591327",
+        "description": "A light gel exfoliant with 2% Salicylic Acid (aka BHA) and Sarcosine to unclog pores and improve combination skin-related problems such as blackheads & oiliness.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Oily Skin",
+            "Blackheads"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/porefectly-clear"
+            }
+        ]
+    },
+    {
+        "id": 760,
+        "brand": "Geek & Gorgeous",
+        "brandColor": "#002BA3",
+        "name": "Happier Barrier",
+        "type": "Moisturizer",
+        "price": 11.8,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://geekandgorgeous.us/products/happier-barrier",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/Happier-Barrier-new-front.jpg?v=1715605277",
+        "description": "A nourishing, yet lightweight moisturizer with Squalane, skin-identical Lipids + Green tea polyphenols for a healthy skin barrier & silky soft skin. 1.69 fl.oz.",
+        "ingredients": [
+            "Ceramides",
+            "Squalane"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Oil-Free",
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://geekandgorgeous.us/products/happier-barrier"
+            }
+        ]
+    },
+    {
+        "id": 761,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Hypochlorous Daily Mist",
+        "type": "Mist",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/hypochlorous-daily-mist",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/Skinfix_Hypochlorous_Mist1.png?v=1785948557",
+        "description": "This is hypochlorous acid in its most serious form—take it to go, for whenever skin acts up. Clinically validated on acne-prone, sensitive skin.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/hypochlorous-daily-mist"
+            }
+        ]
+    },
+    {
+        "id": 762,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Balancing Soft-Foam Clay Cleanser",
+        "type": "Cleanser",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/balancing-soft-foam-clay-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/ClayCleanser_DTC_PDP_1.png?v=1780001402",
+        "description": "Clay mask clean—zero tightness. Made for and clinically tested on combination to oily skin, this creamy daily cleanser purifies and unclogs pores like a mask, but rinses off in a gentle foam, without the dryness or mess.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Dry Skin",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/balancing-soft-foam-clay-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 763,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Triple Lipid-Hyaluronate Serum",
+        "type": "Serum",
+        "price": 35,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/lipid-hyaluronate-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/TLHS_PDP_1.png?v=1779209939",
+        "description": "This refreshing hyaluronic acid serum floods skin with moisture—then seals it in with lipids that reduce water loss for lasting hydration. It leaves skin hydrated, supple, and radiant after every use.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/lipid-hyaluronate-serum"
+            }
+        ]
+    },
+    {
+        "id": 764,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Ceramide Prime Whipped Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/ceramide-prime-whipped-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/CeramidePrimeWhippedCream_DTC-PDP_Hero_1.png?v=1772027962",
+        "description": "This airy, lightweight moisturizer for combination skin visibly smooths fine lines and texture. With skin barrier-replenishing ceramides and deep, 72-hour hydration, it helps skin bounce back from daily stress that causes dryness, redness, and early signs of aging.",
+        "ingredients": [
+            "Ceramides",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/ceramide-prime-whipped-cream"
+            }
+        ]
+    },
+    {
+        "id": 765,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Brighten + Firm 15% Vitamin C Serum",
+        "type": "Serum",
+        "price": 69,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/vitamin-c-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/VitaminC_DTC-PDP_Hero.png?v=1765844034",
+        "description": "Visibly fade dark spots and lines in just 1 month with this breakthrough formula, which pairs THD Ascorbate—a gentle yet potent form of vitamin C—with two advanced peptides to brighten better and firm faster.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Lactic Acid",
+            "Vitamin C",
+            "Niacinamide",
+            "Retinol",
+            "Peptides"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Brightening"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/vitamin-c-serum"
+            }
+        ]
+    },
+    {
+        "id": 766,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Barrier Balancing Water Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/barrier-balancing-water-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/BarrierBalancingWaterCream_DTC-PDP_Hero.png?v=1762447414",
+        "description": "Made for—and tested on—combination and oily skin, this acne-safe water cream delivers fast-absorbing hydration, locks it in with microbiome-friendly ingredients that support the skin barrier, and keeps shine under control.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Oily Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/barrier-balancing-water-cream"
+            }
+        ]
+    },
+    {
+        "id": 767,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Exo + Ectoin Intensive Repair Baume",
+        "type": "Moisturizer",
+        "price": 69,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/barrier-exo-ectoin-baume",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/Exo_EctoinIntensiveRepairBaume_DTC-PDP_Hero.png?v=1762447377",
+        "description": "This breakthrough, first-of-its-kind serum-balm is an alternative to retinol proven to visibly even, firm and dramatically smooth wrinkles. Powered by peptides and biomimetic exosomes, it renews even the most sensitive, depleted skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Lactic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Sensitive Skin",
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/barrier-exo-ectoin-baume"
+            }
+        ]
+    },
+    {
+        "id": 768,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Pre-Biotic Face + Body Foaming Oil Cleanser",
+        "type": "Cleanser",
+        "price": 21,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/eczema-pre-biotic-face-body-foaming-oil-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/PreBioticFOC_DTC-PDP_Hero.png?v=1762447379",
+        "description": "This gentle face and body cleanser was developed with a leading derm for irritated skin conditions, and made with extra dry, eczema-prone skin in mind. Its creamy formula is loaded with barrier-restoring moisturizers, so you can wash twice a day and still feel comfortably hydrated.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Lactic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/eczema-pre-biotic-face-body-foaming-oil-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 769,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "AHA/BHA Niacinamide Exfoliating Pads",
+        "type": "Exfoliant",
+        "price": 35,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/aha-bha-niacinamide-exfoliating-pads",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/ExfoliatingPads_DTC-PDP_Hero.png?v=1762439586",
+        "description": "These easy-to-use, gently textured pads deliver a potent trio of exfoliating acids—which help smooth rough texture, clear away flakes and dead skin cells that trap ingrown hairs, and visibly reduce discoloration all over your body.",
+        "ingredients": [
+            "Glycolic Acid",
+            "Lactic Acid",
+            "Salicylic Acid",
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Acne",
+            "Hyperpigmentation"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/aha-bha-niacinamide-exfoliating-pads"
+            }
+        ]
+    },
+    {
+        "id": 770,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Gentle Gel Ceramide + Ectoin Cleanser",
+        "type": "Cleanser",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/barrier-ectoin-ceramide-gentle-gel-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/GentleGelCleanser_DTC_PDP_1copy.png?v=1780361603",
+        "description": "The ideal everyday cleanser for most skin types, this gentle gel formula breaks down makeup, oils, and SPF residue, leaving behind cleaner, softer skin that retains its moisture.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/barrier-ectoin-ceramide-gentle-gel-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 771,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Dermatitis Relief Balm",
+        "type": "Moisturizer",
+        "price": 45,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/eczema-dermatitis-relief-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/DermatitisReliefBalm_DTC-PDP_Hero.png?v=1762447278",
+        "description": "Developed with a leading dermatologist for irritated skin conditions, this powerful cream-balm temporarily helps relieve minor skin irritation and itching for those with eczema-prone skin or rashes, and can be combined with prescription treatments.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Lactic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Rosacea",
+            "Eczema"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/eczema-dermatitis-relief-balm"
+            }
+        ]
+    },
+    {
+        "id": 772,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Adapinoid® Gel",
+        "type": "Serum",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/acne-adapinoid-gel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/AdapinoidGel_DTC-PDP_Hero.png?v=1762447199",
+        "description": "This innovative serum improves the look of breakouts without irritation. Its key ingredient, Adapinoid, is a gentle, time-release retinoid that helps smooth skin texture without dryness, flaking, or compromising overall skin health.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/acne-adapinoid-gel"
+            }
+        ]
+    },
+    {
+        "id": 773,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Triple Lipid Eye Treatment",
+        "type": "Eye Cream",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/triple-lipid-eye-treatment",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/TripleLipidEyeTreatment_DTC-PDP_Hero.png?v=1762447032",
+        "description": "Caffeine and niacinamide team up in this eye treatment to reduce puffiness—whether it’s an everyday thing or just from lack of sleep. This gel formula absorbs evenly and acts almost as a primer, allowing undereye concealer to glide on easily without creasing.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/triple-lipid-eye-treatment"
+            }
+        ]
+    },
+    {
+        "id": 774,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Triple Lipid Activating Serum",
+        "type": "Serum",
+        "price": 69,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/barrier-niacinamide-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/TripleLipidActivatingSerum_DTC-PDP_Hero.png?v=1762443749",
+        "description": "Effective anti-aging doesn't have to come with irritation—this solution leverages structure-boosting peptides to lock in moisture and reactivate tired-looking skin.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/barrier-niacinamide-serum"
+            }
+        ]
+    },
+    {
+        "id": 775,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Skin Barrier Restoring Gel Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/restoring-gel-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/SkinBarrierRestoringGelCream_DTC-PDP_Hero.png?v=1762441173",
+        "description": "This gel cream moisturizer—ideal for normal to combination skin—delivers light, long-lasting hydration in a silky, fast-absorbing formula. It instantly supports the moisture barrier and keeps working over time, leaving skin looking plump, smooth, and naturally glowy (never greasy).",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane",
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/restoring-gel-cream"
+            }
+        ]
+    },
+    {
+        "id": 776,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "2% BHA Spot Treatment",
+        "type": "Spot Treatment",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/acne-bha-spot-treatment",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/SpotTreatment_DTC-PDP_Hero.png?v=1762439610",
+        "description": "This concentrated formula zaps pore-clogging oil on the spot, while visibly fading post-breakout hyperpigmentation that makes acne-prone skin look uneven. Salicylic acid decongests pores while azelaic acid visibly reduces lingering redness.",
+        "ingredients": [
+            "Salicylic Acid",
+            "Niacinamide",
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Hyperpigmentation"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/acne-bha-spot-treatment"
+            }
+        ]
+    },
+    {
+        "id": 777,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "2% BHA Cleanser",
+        "type": "Cleanser",
+        "price": 35,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/acne-bha-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/2_BHACleanser_DTC-PDP_Hero.png?v=1762439610",
+        "description": "This multi-tasking cleanser addresses the entire breakout lifecycle, and is safe for all types of acne. It stacks the deck with exfoliating acids, each chosen to manage either clogged pores, acne blemishes, blackheads, or lingering redness, helping clear what you have and prevent future flares.",
+        "ingredients": [
+            "Glycolic Acid",
+            "Salicylic Acid",
+            "Niacinamide",
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Acne",
+            "Blackheads"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/acne-bha-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 778,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Hydrating Foaming Oil Cleanser",
+        "type": "Cleanser",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/foaming-oil-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/FOC_DTC_PDP_1.png?v=1780361409",
+        "description": "This creamy formula delivers our most comfortable cleanse, transforming from a rich gel to a foamy lather that hydrates to soothe dry, blotchy skin—even after rinsing.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/foaming-oil-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 779,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Triple Lipid-Peptide Cream",
+        "type": "Moisturizer",
+        "price": 54,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/lipid-peptide-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/TripleLipid-PeptideCream_DTC-PDP_Hero_98d6b241-86f5-40c1-94be-b21f8dfd25dc.png?v=1762439491",
+        "description": "Re-meet the original formula of this derm-approved must-have. Most moisturizers mask dryness at skin’s surface.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Peptides"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/lipid-peptide-cream"
+            }
+        ]
+    },
+    {
+        "id": 780,
+        "brand": "Skinfix",
+        "brandColor": "#101D55",
+        "name": "Triple Lipid-Boost 360° Eye",
+        "type": "Eye Cream",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://skinfix.com/products/lipid-boost-360-eye",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0051/6033/7477/files/TripleLipid-Boost360Eye_DTC-PDP_Hero.png?v=1762439489",
+        "description": "New to eye cream? Start here.",
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Anti-Aging"
+        ],
+        "features": [],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://skinfix.com/products/lipid-boost-360-eye"
+            }
+        ]
     }
 ];

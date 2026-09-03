@@ -76,12 +76,24 @@ export const BRAND_PROFILES = [
     blurb: "Biossance is a biotech skincare brand known for sugarcane-derived squalane.",
   },
   {
+    name: "Bubble",
+    blurb: "Bubble makes everyday skincare at accessible prices.",
+  },
+  {
     name: "Byoma",
     blurb: "Byoma makes fragrance-free barrier-repair formulas without a prestige markup.",
   },
   {
     name: "Cocokind",
     blurb: "Cocokind makes barrier-support formulas with a low-waste approach.",
+  },
+  {
+    name: "Dieux Skin",
+    blurb: "Dieux Skin makes barrier-repair formulas, including Instant Angel.",
+  },
+  {
+    name: "Geek & Gorgeous",
+    blurb: "Geek & Gorgeous makes straightforward actives at accessible prices.",
   },
   {
     name: "Glossier",
@@ -108,6 +120,14 @@ export const BRAND_PROFILES = [
     blurb: "Krave Beauty makes simple formulas for irritated, over-cleansed skin.",
   },
   {
+    name: "Mad Hippie",
+    blurb: "Mad Hippie makes antioxidant formulas around vitamin C and peptides.",
+  },
+  {
+    name: "Maelove",
+    blurb: "Maelove makes clinical actives without a prestige markup.",
+  },
+  {
     name: "Merit Beauty",
     blurb: "Merit sells a short list of essentials, formulated without common irritants.",
   },
@@ -132,8 +152,16 @@ export const BRAND_PROFILES = [
     blurb: "Peach & Lily pairs clinical actives with K-beauty methods.",
   },
   {
+    name: "Rhode",
+    blurb: "Rhode makes a short list of face formulas. Owned by e.l.f. Beauty, which does not test.",
+  },
+  {
     name: "Saie",
     blurb: "Saie makes lightweight makeup and skin formulas.",
+  },
+  {
+    name: "Skinfix",
+    blurb: "Skinfix makes lipid-rich barrier formulas for dry and reactive skin.",
   },
   {
     name: "Summer Fridays",
@@ -142,6 +170,14 @@ export const BRAND_PROFILES = [
   {
     name: "Sunday Riley",
     blurb: "Sunday Riley makes high-concentration formulas, including Good Genes and Luna oil.",
+  },
+  {
+    name: "The Inkey List",
+    blurb: "The Inkey List puts named actives into no-frills formulas at accessible prices.",
+  },
+  {
+    name: "The Outset",
+    blurb: "The Outset makes formulas for sensitive and reactive skin.",
   },
   {
     name: "Thrive Causemetics",
