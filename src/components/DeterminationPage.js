@@ -89,13 +89,12 @@ export default function DeterminationPage({ rec }) {
   const brandProducts = isYes
     ? products.filter((p) => p.brand === rec.directoryBrandParam)
     : [];
-  const shown = brandProducts.slice(0, 6);
   const dirHref = rec.directoryBrandParam
     ? brandDirectoryHref(rec.directoryBrandParam)
     : '/directory';
 
   return (
-    <EditorialShell>
+    <EditorialShell wide={isYes}>
       <div className="editorial-measure">
         <PageHeader eyebrow={rec.eyebrow} title={rec.h1} />
 
@@ -142,11 +141,15 @@ export default function DeterminationPage({ rec }) {
         {rec.rulesAfter ? <Rich text={rec.rulesAfter} /> : null}
         {rec.failLine ? <Rich text={rec.failLine} /> : null}
 
+      </div>
+
         {isYes ? (
           <section>
-            <h2 style={h2}>In the directory</h2>
-            <p style={muted}>{rec.directoryIntro}</p>
-            {shown.length > 0 ? (
+            <div className="editorial-measure">
+              <h2 style={h2}>In the directory</h2>
+              <p style={muted}>{rec.directoryIntro}</p>
+            </div>
+            {brandProducts.length > 0 ? (
               <div
                 className="product-grid"
                 style={{
@@ -156,23 +159,27 @@ export default function DeterminationPage({ rec }) {
                   marginTop: 24,
                 }}
               >
-                {shown.map((p) => (
+                {brandProducts.map((p) => (
                   <CatalogCard key={p.id} product={p} />
                 ))}
               </div>
             ) : (
-              <p style={{ ...muted, padding: '16px 0 0' }}>
-                No live SKUs for this brand in the catalog yet. The determination still stands.
-              </p>
+              <div className="editorial-measure">
+                <p style={{ ...muted, padding: '16px 0 0' }}>
+                  No products listed for this brand yet.{' '}
+                  <Link href="/standard" style={inlineLink}>The Standard</Link>.
+                </p>
+              </div>
             )}
             <p style={{ margin: '24px 0 0' }}>
               <Link
                 href={dirHref}
                 style={{
-                  color: 'var(--terra)',
-                  fontWeight: 600,
-                  fontSize: 15,
-                  textDecoration: 'none',
+                  color: 'var(--muted)',
+                  fontWeight: 500,
+                  fontSize: 14,
+                  textDecoration: 'underline',
+                  textUnderlineOffset: 2,
                 }}
               >
                 {rec.directoryCta}
@@ -180,6 +187,7 @@ export default function DeterminationPage({ rec }) {
             </p>
           </section>
         ) : (
+          <div className="editorial-measure">
           <section>
             <h2 style={h2}>What to use instead</h2>
             {rec.insteadIntro ? <p style={muted}>{rec.insteadIntro}</p> : null}
@@ -208,8 +216,10 @@ export default function DeterminationPage({ rec }) {
               No buy buttons on this page. The directory is where listed products live.
             </p>
           </section>
+          </div>
         )}
 
+        <div className="editorial-measure">
         <section>
           <h2 style={h2}>FAQ</h2>
           <dl style={{ margin: 0 }}>
@@ -254,7 +264,7 @@ export default function DeterminationPage({ rec }) {
             </Link>
           ))}
         </nav>
-      </div>
+        </div>
     </EditorialShell>
   );
 }
