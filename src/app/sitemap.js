@@ -19,6 +19,12 @@ const STATIC_PATHS = [
   '/ingredients/retinol',
   '/ingredients/vitamin-c',
   '/ingredients/squalane',
+  '/ingredients/hyaluronic-acid',
+  '/ingredients/spf',
+  '/concerns/acne',
+  '/concerns/dry-skin',
+  '/concerns/hyperpigmentation',
+  '/concerns/barrier-support',
 ];
 
 export default function sitemap() {
