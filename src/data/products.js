@@ -2576,7 +2576,7 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://saiehello.com/products/slip-tint-tinted-moisturizer?srsltid=AfmBOor6KRUrnTaCatKSrn3Z-hl-kxBBMa7BEOa_02mE7J4fW6oizcep",
+        "buyUrl": "https://saiehello.com/products/slip-tint-tinted-moisturizer",
         "retailer": "Brand Website",
         "rating": 4.5,
         "reviews": 5800,
@@ -2598,7 +2598,7 @@ export const RAW_PRODUCTS = [
         "buyLinks": [
             {
                 "store": "Brand Website",
-                "url": "https://saiehello.com/products/slip-tint-tinted-moisturizer?srsltid=AfmBOor6KRUrnTaCatKSrn3Z-hl-kxBBMa7BEOa_02mE7J4fW6oizcep"
+                "url": "https://saiehello.com/products/slip-tint-tinted-moisturizer"
             }
         ]
     },
@@ -2614,7 +2614,7 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://saiehello.com/products/sunvisor?srsltid=AfmBOorRc4YsFii_wbHLOjNGYIxezWeUiQHJEG0150ExehdYBV984Hpt",
+        "buyUrl": "https://saiehello.com/products/sunvisor",
         "retailer": "Brand Website",
         "rating": 4.4,
         "reviews": 3900,
@@ -2636,7 +2636,7 @@ export const RAW_PRODUCTS = [
         "buyLinks": [
             {
                 "store": "Brand Website",
-                "url": "https://saiehello.com/products/sunvisor?srsltid=AfmBOorRc4YsFii_wbHLOjNGYIxezWeUiQHJEG0150ExehdYBV984Hpt"
+                "url": "https://saiehello.com/products/sunvisor"
             }
         ]
     },
@@ -8825,7 +8825,7 @@ export const RAW_PRODUCTS = [
         "fragranceFree": true,
         "vegan": true,
         "nonComedogenic": false,
-        "buyUrl": "https://saiehello.com/products/sunvisor?srsltid=AfmBOorRc4YsFii_wbHLOjNGYIxezWeUiQHJEG0150ExehdYBV984Hpt",
+        "buyUrl": "https://saiehello.com/products/sunvisor",
         "retailer": "Brand Website",
         "rating": 0,
         "reviews": 0,
@@ -8846,7 +8846,7 @@ export const RAW_PRODUCTS = [
         "buyLinks": [
             {
                 "store": "Brand Website",
-                "url": "https://saiehello.com/products/sunvisor?srsltid=AfmBOorRc4YsFii_wbHLOjNGYIxezWeUiQHJEG0150ExehdYBV984Hpt"
+                "url": "https://saiehello.com/products/sunvisor"
             }
         ]
     },
