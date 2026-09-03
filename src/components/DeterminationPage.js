@@ -166,7 +166,8 @@ export default function DeterminationPage({ rec }) {
             ) : (
               <div className="editorial-measure">
                 <p style={{ ...muted, padding: '16px 0 0' }}>
-                  No live SKUs for this brand in the catalog yet. The determination still stands.
+                  No products listed for this brand yet.{' '}
+                  <Link href="/standard" style={inlineLink}>The Standard</Link>.
                 </p>
               </div>
             )}
