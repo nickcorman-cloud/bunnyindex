@@ -65,111 +65,111 @@ export const TYPES = [
 export const BRAND_PROFILES = [
   {
     name: "Acure",
-    blurb: "Acure is a B-Corp, fully vegan, and PETA-certified. It sells affordable plant-based skincare formulated without parabens, sulfates, or mineral oil.",
+    blurb: "Acure sells affordable plant-based skincare without parabens, sulfates, or mineral oil.",
   },
   {
     name: "Alpyn Beauty",
-    blurb: "Alpyn Beauty comes from Jackson Hole, Wyoming, and blends wild-harvested Rocky Mountain botanicals with clinically active ingredients. Independently owned and PETA-certified cruelty-free.",
+    blurb: "Alpyn Beauty blends wild-harvested botanicals with clinically active ingredients.",
   },
   {
     name: "Biossance",
-    blurb: "Biossance is a biotech skincare brand known for sugarcane-derived squalane. Every formula is EWG-verified and PETA-certified.",
+    blurb: "Biossance is a biotech skincare brand known for sugarcane-derived squalane.",
   },
   {
     name: "Byoma",
-    blurb: "Byoma launched around barrier repair. The line is cruelty-free, fragrance-free, and priced without a prestige markup.",
+    blurb: "Byoma makes fragrance-free barrier-repair formulas without a prestige markup.",
   },
   {
     name: "Cocokind",
-    blurb: "Cocokind is a certified B-Corp that publishes supply-chain and carbon-footprint data on product pages. Formulas are built around barrier support, with a low-waste approach.",
+    blurb: "Cocokind makes barrier-support formulas with a low-waste approach.",
   },
   {
     name: "Glossier",
-    blurb: "Glossier started as a beauty blog. The lineup is small on purpose, and the brand has stayed independently cruelty-free as it expanded.",
+    blurb: "Glossier keeps a small lineup on purpose.",
   },
   {
     name: "Glow Recipe",
-    blurb: "Glow Recipe is a Korean-beauty-inspired brand built around fruit-derived actives. PETA-certified cruelty-free and vegan.",
+    blurb: "Glow Recipe makes skincare around fruit-derived actives.",
   },
   {
     name: "Good Molecules",
-    blurb: "Good Molecules puts named actives — niacinamide, glycolic acid, tranexamic acid — into serums, toners, and treatments at accessible prices. Packaging is no-frills.",
+    blurb: "Good Molecules puts named actives into serums and treatments at accessible prices.",
   },
   {
     name: "Herbivore Botanicals",
-    blurb: "Herbivore Botanicals was an early independent in natural skincare. Formulas are botanical, without synthetic fragrance, in glass bottles.",
+    blurb: "Herbivore Botanicals makes botanical formulas without synthetic fragrance, in glass bottles.",
   },
   {
     name: "Kinship",
-    blurb: "Kinship is EWG-verified, independently owned, and cruelty-free. Formulas focus on actives and barrier support, without a prestige markup.",
+    blurb: "Kinship makes actives and barrier-support formulas without a prestige markup. Owned by Kindred Brands.",
   },
   {
     name: "Krave Beauty",
-    blurb: "Founded by esthetician Liah Yoo, Krave Beauty starts from a blunt point: a lot of people are over-cleansing their way into irritated skin. Korean-owned, cruelty-free, and plain about what skincare can and cannot do.",
+    blurb: "Krave Beauty makes simple formulas for irritated, over-cleansed skin.",
   },
   {
     name: "Merit Beauty",
-    blurb: "Merit sells a short list of essentials, formulated without common irritants. Independently owned, PETA-certified, and cruelty-free.",
+    blurb: "Merit sells a short list of essentials, formulated without common irritants.",
   },
   {
     name: "Milk Makeup",
-    blurb: "Milk Makeup is a New York brand built around multi-use products for people who don’t want a 12-step routine. Vegan, cruelty-free, and formulated without parabens or fragrance.",
+    blurb: "Milk Makeup makes multi-use products without parabens or fragrance.",
   },
   {
     name: "Naturium",
-    blurb: "Naturium sells actives — niacinamide, retinol, vitamin C — without a prestige markup. Acquired by e.l.f. Beauty in 2023, it still operates independently and stays cruelty-free and vegan.",
+    blurb: "Naturium sells actives without a prestige markup. Owned by e.l.f. Beauty, which does not test.",
   },
   {
     name: "OSEA Malibu",
-    blurb: "OSEA has been family-owned and cruelty-free since 1996, with formulas built around seaweed. Still independently run.",
+    blurb: "OSEA makes formulas built around seaweed.",
   },
   {
     name: "Pacifica",
-    blurb: "Pacifica has been 100% vegan and cruelty-free since 1996, before those labels were a default claim. The line covers skincare, makeup, and fragrance, formulated without common irritants.",
+    blurb: "Pacifica is vegan skincare, makeup, and fragrance, formulated without common irritants.",
   },
   {
     name: "Peach & Lily",
-    blurb: "Peach & Lily brings Korean formulation into the US market. Founded by licensed esthetician Alicia Yoon, the brand pairs clinical actives with K-beauty methods.",
+    blurb: "Peach & Lily pairs clinical actives with K-beauty methods.",
   },
   {
     name: "Saie",
-    blurb: "Saie makes lightweight makeup and skin formulas with EWG VERIFIED status. Independently operated and fully cruelty-free.",
+    blurb: "Saie makes lightweight makeup and skin formulas.",
   },
   {
     name: "Summer Fridays",
-    blurb: "Summer Fridays started as a beauty blog and is now a skincare line. Independently owned and PETA-certified.",
+    blurb: "Summer Fridays is a skincare line that started as a beauty blog.",
   },
   {
     name: "Sunday Riley",
-    blurb: "Sunday Riley is independently owned and cruelty-free, with high-concentration formulas. The line includes Good Genes and Luna oil.",
+    blurb: "Sunday Riley makes high-concentration formulas, including Good Genes and Luna oil.",
   },
   {
     name: "Thrive Causemetics",
-    blurb: "Thrive Causemetics donates one product to a woman in need for every product sold. Fully vegan, ophthalmologist-tested, and formulated without parabens, sulfates, or synthetic fragrance.",
+    blurb: "Thrive Causemetics donates one product for every product sold. Vegan, formulated without parabens, sulfates, or synthetic fragrance.",
   },
   {
     name: "Topicals",
-    blurb: "Topicals is a Black-owned, dermatologist-developed brand focused on chronic skin conditions and hyperpigmentation. It donates to mental health organizations.",
+    blurb: "Topicals is a Black-owned, dermatologist-developed brand focused on chronic skin conditions and hyperpigmentation.",
   },
   {
     name: "Tower 28",
-    blurb: "Tower 28 makes products for sensitive and reactive skin. Every product meets National Eczema Association standards, and formulas avoid the 1,400-plus ingredients banned by the European Union.",
+    blurb: "Tower 28 makes products for sensitive and reactive skin.",
   },
   {
     name: "True Botanicals",
-    blurb: "True Botanicals holds MADE SAFE certification. Independently owned, cruelty-free prestige skincare.",
+    blurb: "True Botanicals makes prestige skincare.",
   },
   {
     name: "Versed",
-    blurb: "Versed publishes environmental-impact data and offsets its carbon footprint. Formulas are dermatologist-developed and EWG-verified; packaging is at least 50% recycled material.",
+    blurb: "Versed makes dermatologist-developed formulas; packaging is at least 50% recycled material.",
   },
   {
     name: "e.l.f. Cosmetics",
-    blurb: "e.l.f. Cosmetics started in 2004 as a low-price line. It is publicly traded, 100% vegan and cruelty-free, and holds both PETA and Leaping Bunny certifications.",
+    blurb: "e.l.f. Cosmetics is a low-price line, vegan, publicly traded. It passes all three rules.",
   },
   {
     name: "100% Pure",
-    blurb: "100% Pure has been independently cruelty-free since 2005. The skincare line uses food-grade colorants and fruit-pigmented formulas, across hundreds of products.",
+    blurb: "100% Pure uses food-grade colorants in its skincare.",
   },
 ];
 
