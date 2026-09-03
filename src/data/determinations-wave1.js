@@ -3,6 +3,7 @@
  * No remaining GT-hold YES. Do not name required-testing-market countries.
  * YES directoryBrandParam is the exact catalog string (encodeURIComponent, do not slugify).
  */
+/* prod redeploy 2026-09-03 */
 export const DETERMINATIONS = [
   {
     slug: "glossier",
