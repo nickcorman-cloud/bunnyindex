@@ -37,6 +37,10 @@ const STATIC_PATHS = [
   '/concerns/rosacea',
   '/concerns/seborrheic-dermatitis',
   '/concerns/sensitive-skin',
+  '/types/moisturizer',
+  '/types/sunscreen',
+  '/types/cleanser',
+  '/types/serum',
 ];
 
 export default function sitemap() {
