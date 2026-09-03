@@ -521,7 +521,8 @@ export const RAW_PRODUCTS = [
         "description": "Overnight recovery cream with vitamin C, peptides, and ashwagandha that renews and resurfaces skin while you sleep, visibly reducing fine lines and dark spots by morning.",
         "ingredients": [
             "Vitamin C",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Dry Skin"
@@ -813,9 +814,12 @@ export const RAW_PRODUCTS = [
         "reviews": 12400,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0627/9164/7477/files/glossier-skincare-mjc177ml-carousel-1.png",
         "description": "pH-balanced gel-cream cleanser that gently dissolves makeup and impurities without stripping skin. Leaves a soft, conditioned finish thanks to allantoin and rosewater.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Oil-Free",
@@ -853,7 +857,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Sun Protection",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Oil-Free",
@@ -967,7 +972,9 @@ export const RAW_PRODUCTS = [
         "reviews": 4300,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0627/9164/7477/files/glossier-skincare-futuredew-carousel-01.png",
         "description": "Oil-serum hybrid that gives the dewy, lit-from-within glow of glass skin without looking greasy. Packed with plant oils and chia seed for lasting radiance.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Brightening"
         ],
@@ -1217,7 +1224,8 @@ export const RAW_PRODUCTS = [
         "description": "Rich, nourishing moisturizer with ceramides and squalane for very dry, thirsty skin. Deeply replenishes the moisture barrier and provides lasting comfort throughout the day.",
         "ingredients": [
             "Ceramides",
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Dry Skin",
@@ -1879,7 +1887,8 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Rosacea",
             "Eczema",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Oil-Free",
@@ -2131,7 +2140,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Anti-Aging",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Dry Skin"
         ],
         "features": [
             "Fragrance-Free"
@@ -2244,7 +2254,8 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Acne",
             "Rosacea",
-            "Oily Skin"
+            "Oily Skin",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [
@@ -2354,7 +2365,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0203/8454/files/BlueTansy_Mask_4x5_Carousel_1_3d34f3b8-42c0-45c1-8892-8e5d4a6a53f7.png",
         "description": "Resurfacing clay mask with blue tansy and white willow bark BHA that unclogs pores, smooths texture, and calms redness. Distinctive blue hue and spa-like aromatic scent.",
         "ingredients": [
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Acne",
@@ -2430,7 +2442,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0203/8454/files/Nova_Serum_4x5_Carousel_1.png",
         "description": "Brightening vitamin C serum with 15% stable encapsulated vitamin C, turmeric, and ferulic acid. Visibly fades dark spots, evens tone, and delivers glass-skin radiance.",
         "ingredients": [
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Hyperpigmentation",
@@ -2941,7 +2954,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/51esnnJ8xzL._SL1500_.jpg",
         "description": "TikTok-famous serum-makeup hybrid that gives skin a dewy, lit-from-within glow. Niacinamide reduces pores and brightens, while watermelon extract hydrates. Wear alone or under foundation.",
         "ingredients": [
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Hyperpigmentation"
@@ -3021,7 +3035,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
@@ -3118,10 +3134,12 @@ export const RAW_PRODUCTS = [
         "description": "Cult-status barrier repair serum with niacinamide, tamanu oil, and ceramide-precursor ingredients that calm inflammation and rebuild the skin barrier. Fragrance-free and ideal for reactive skin.",
         "ingredients": [
             "Ceramides",
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Fragrance-Free"
@@ -3161,7 +3179,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [],
         "concerns": [
             "Sensitive Skin",
-            "Dry Skin"
+            "Dry Skin",
+            "Barrier Support"
         ],
         "features": [
             "Fragrance-Free",
@@ -3284,7 +3303,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://kravebeauty.com/cdn/shop/files/BTS_SPF_40_01.png?v=1749227742&width=1200",
         "description": "Chemical SPF 40 that applies like a serum—no white cast, no greasiness, and no pilling under makeup. Beet-derived antioxidants provide added environmental protection. K-beauty inspired formula.",
         "ingredients": [
-            "SPF"
+            "SPF",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Sun Protection"
@@ -4338,9 +4358,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0125/4198/4827/files/HFSv2.png",
         "description": "A hydrating firming serum with wild nettle, niacinamide, and rambutan extract to smooth, plump, and reduce pore appearance.",
         "ingredients": [
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
@@ -4377,7 +4400,8 @@ export const RAW_PRODUCTS = [
         "description": "A lightweight gel serum with tri-peptide complex, mountain cherry, and lactic acid to lift and firm face and neck.",
         "ingredients": [
             "Lactic Acid",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
@@ -4419,7 +4443,8 @@ export const RAW_PRODUCTS = [
             "Retinol"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Fragrance-Free"
@@ -4451,10 +4476,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0125/4198/4827/files/PorePerfectingLiquid_ProductPage_1B-min.jpg",
         "description": "An Allure Award-winning exfoliating toner with 2% salicylic acid and borage that minimizes pores and restores skin balance.",
         "ingredients": [
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Hyaluronic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -4494,7 +4521,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
@@ -4526,10 +4555,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/51-V5WPnpyL._SL1500_.jpg",
         "description": "A silky cleanser with glycolic and lactic acids, papaya and pomegranate enzymes that gently dissolves impurities.",
         "ingredients": [
-            "Lactic Acid"
+            "Lactic Acid",
+            "Hyaluronic Acid"
         ],
         "concerns": [
-            "Brightening"
+            "Brightening",
+            "Acne"
         ],
         "features": [
             "Fragrance-Free",
@@ -4563,9 +4594,13 @@ export const RAW_PRODUCTS = [
         "description": "A rich barrier repair cream with 14 peptides, ghostberry, and a 5-ceramide complex to replenish hydration and relax wrinkles.",
         "ingredients": [
             "Ceramides",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
@@ -4602,7 +4637,8 @@ export const RAW_PRODUCTS = [
         "description": "A peptide-packed eye cream with niacinamide and Reneseed to blur dark circles, firm, and soften fine lines.",
         "ingredients": [
             "Niacinamide",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
@@ -4780,7 +4816,9 @@ export const RAW_PRODUCTS = [
             "Peptides",
             "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
@@ -5608,7 +5646,8 @@ export const RAW_PRODUCTS = [
             "Niacinamide"
         ],
         "concerns": [
-            "Brightening"
+            "Brightening",
+            "Barrier Support"
         ],
         "features": [
             "Oil-Free",
@@ -5644,7 +5683,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Ceramides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
@@ -6406,7 +6447,10 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0627/9164/7477/files/glossier-skincare-afterbaume-carousel-01.png",
         "description": "A rich, multi-use balm-cream with shea butter and allantoin that soothes and repairs dry, depleted skin overnight.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
         "features": [
             "Fragrance-Free"
         ],
@@ -6548,7 +6592,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Oil-Free"
         ],
@@ -6614,9 +6660,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0543/8301/files/5_14_24_PDP_CLAIM_REFRESH_AVOCADO_CLEANSER-04_1.jpg",
         "description": "A creamy cleanser with avocado oil and ceramides that effectively removes impurities while reinforcing the skin moisture barrier.",
         "ingredients": [
-            "Ceramides"
+            "Ceramides",
+            "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -6651,7 +6700,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Ceramides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -6684,7 +6735,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://bk.shajgoj.com/storage/2024/06/Glow-Recipe-Guava-Vitamin-C-Dark-Spot-Serum.jpg",
         "description": "A potent vitamin C serum with guava extract and AHA that targets dark spots and hyperpigmentation for a brighter complexion.",
         "ingredients": [
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Hyperpigmentation"
@@ -6725,7 +6777,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/61I+kgACSDL._SL1500_.jpg",
         "description": "A brightening eye cream with vitamin C and guava that fades dark circles and firms the delicate skin under the eyes.",
         "ingredients": [
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [],
@@ -6755,7 +6808,9 @@ export const RAW_PRODUCTS = [
         "reviews": 0,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0543/8301/files/5_14_24_PDP_CLAIM_REFRESH_BB_CLEANSER-01.jpg",
         "description": "A bouncy gel cleanser with blueberry and PHA that removes impurities and makeup while brightening and balancing skin.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [],
         "skinTypes": [],
@@ -6789,10 +6844,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://www.glowrecipe.com/products/strawberry-smooth-bha-aha-salicylic-serum",
         "description": "An exfoliating serum with strawberry-derived AHA and BHA that smooths texture, minimizes pores, and fades dark spots.",
         "ingredients": [
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Hyaluronic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -6824,7 +6881,9 @@ export const RAW_PRODUCTS = [
         "reviews": 0,
         "imageUrl": "https://m.media-amazon.com/images/I/51EuwXM9B9L._SL1500_.jpg",
         "description": "An overnight sleeping mask with watermelon and AHA that exfoliates and replenishes skin for a glowing, refreshed complexion by morning.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [],
         "skinTypes": [],
@@ -7818,7 +7877,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/6199s0sg4sL._SL1500_.jpg",
         "description": "A unique jelly-oil cleanser with grape seed and marula oils that melts away makeup and sunscreen without stripping the skin.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Fragrance-Free",
             "Mineral Sunscreen"
@@ -8089,7 +8150,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://milkmakeup.com/cdn/shop/files/1200x1500-MMU-COOLINGWATER-JELLYICE-OPEN-CAP-L_162eebc3-ee00-44f1-af2d-8f8b46569dd6_1500x.jpg?v=1773976286",
         "description": "A refreshing serum stick with niacinamide and watermelon extract that controls oil and minimizes pores in a convenient format.",
         "ingredients": [
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Acne"
@@ -8372,7 +8434,9 @@ export const RAW_PRODUCTS = [
             "Hyaluronic Acid",
             "Ceramides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -8992,7 +9056,10 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Hyaluronic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Acne",
+            "Barrier Support"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
@@ -9506,7 +9573,8 @@ export const RAW_PRODUCTS = [
         "description": "An EWG-verified barrier recovery cream with ceramides, panthenol, and squalane that soothes and restores compromised, reactive skin.",
         "ingredients": [
             "Ceramides",
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Sensitive Skin"
@@ -10006,7 +10074,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://versedskin.com/cdn/shop/files/DRSVISITHERO.jpg?v=1735580320&width=1440",
         "description": "A clinical-grade resurfacing mask with AHAs and enzymes that delivers an at-home facial-level exfoliation in minutes.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
@@ -10118,7 +10188,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Ceramides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Fragrance-Free"
         ],
@@ -12303,7 +12375,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/51RXjikIX9L._SL1500_.jpg",
         "description": "A maximum strength spot treatment with 10% benzoyl peroxide that quickly reduces blemishes and prevents new breakouts.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
@@ -12931,7 +13005,9 @@ export const RAW_PRODUCTS = [
         "reviews": 0,
         "imageUrl": "https://m.media-amazon.com/images/I/51cjReVZuSL._SL1500_.jpg",
         "description": "A watermelon-infused facial mist that delivers a refreshing burst of hydration and brightens skin with a dewy glow.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Oil-Free"
@@ -13511,7 +13587,8 @@ export const RAW_PRODUCTS = [
             "Niacinamide"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -13717,7 +13794,10 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://www.herbivorebotanicals.com/cdn/shop/files/Lapis_FacialOil_4x5_Carousel_1.png?v=1766001174&width=1200",
         "description": "A calming and balancing facial oil with blue tansy and hemp seed that soothes blemish-prone and acne-prone skin.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Acne",
+            "Barrier Support"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -14146,7 +14226,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Dry Skin",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -14269,7 +14350,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Dry Skin",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -14400,7 +14482,8 @@ export const RAW_PRODUCTS = [
             "Peptides"
         ],
         "concerns": [
-            "Dry Skin"
+            "Dry Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -14483,7 +14566,8 @@ export const RAW_PRODUCTS = [
         "description": "A brightening eye cream with vitamin C and peptides that reduces dark circles, puffiness, and fine lines for a more awake and luminous look.",
         "ingredients": [
             "Vitamin C",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Brightening",
@@ -14525,7 +14609,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://summerfridays.com/cdn/shop/files/Main_PDP_1-13.jpg",
         "description": "A night-time retinol renewal serum that smooths fine lines, improves skin texture, and visibly renews skin overnight.",
         "ingredients": [
-            "Retinol"
+            "Retinol",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Brightening",
@@ -14572,7 +14657,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Dry Skin",
-            "Brightening"
+            "Brightening",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -14611,7 +14697,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://summerfridays.com/cdn/shop/files/Main_PDP_1-12.jpg",
         "description": "A lightweight mineral milk sunscreen with SPF 30 that blends seamlessly for a natural finish. Broad spectrum protection with no white cast.",
         "ingredients": [
-            "Zinc Oxide"
+            "Zinc Oxide",
+            "SPF"
         ],
         "concerns": [
             "Sensitive Skin"
@@ -14736,7 +14823,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Colloidal Oatmeal",
             "Madecassoside",
-            "Turmeric"
+            "Turmeric",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Sensitive Skin",
@@ -15012,7 +15100,8 @@ export const RAW_PRODUCTS = [
             "Brightening",
             "Anti-Aging",
             "Sensitive Skin",
-            "Oily Skin"
+            "Oily Skin",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [
@@ -15059,7 +15148,8 @@ export const RAW_PRODUCTS = [
             "Hyperpigmentation",
             "Brightening",
             "Sensitive Skin",
-            "Acne"
+            "Acne",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [
@@ -15151,7 +15241,8 @@ export const RAW_PRODUCTS = [
             "Brightening",
             "Hyperpigmentation",
             "Anti-Aging",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Fragrance-Free"
@@ -15503,7 +15594,8 @@ export const RAW_PRODUCTS = [
             "Peptides",
             "Niacinamide",
             "Squalane",
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Anti-Aging",
@@ -15541,11 +15633,13 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATRM_Ecomm_Niacinamide-Cleansing-Gelee_Front.webp?v=1774289601",
         "description": "Essence-like gel cleanser with 3% niacinamide that dissolves makeup and oil without stripping. Clinically shown to provide all-day oil control.",
         "ingredients": [
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Oily Skin",
-            "Acne"
+            "Acne",
+            "Hyperpigmentation"
         ],
         "features": [
             "Oil-Free",
@@ -15711,7 +15805,8 @@ export const RAW_PRODUCTS = [
         "description": "5% tranexamic acid serum with kojic acid, niacinamide, and licorice root, clinically shown to fade dark spots and brighten in 8 weeks. Vegan and fragrance-free.",
         "ingredients": [
             "Tranexamic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Hyperpigmentation",
@@ -15796,12 +15891,14 @@ export const RAW_PRODUCTS = [
             "SPF",
             "Niacinamide",
             "Squalane",
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Sun Protection",
             "Brightening",
-            "Dry Skin"
+            "Dry Skin",
+            "Hyperpigmentation"
         ],
         "features": [
             "Fragrance-Free"
@@ -16112,7 +16209,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-DNS_PDP_LIFESTYLE_1600x2000_8e7e9735-56f3-4156-a0f0-53f392344cda.jpg?v=1769725787",
         "description": "Overnight wrinkle serum with algae-derived bio-retinol and two firming peptides that mimics retinol without irritation. Clinically shown to smooth crow’s feet and deeper lines.",
         "ingredients": [
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Anti-Aging"
@@ -16148,7 +16246,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/1368/9993/files/2-SWC_PDP_LIFESYLE_1600x2000_7d8e7762-51e7-41c7-a6e0-757000c8d6af.jpg?v=1769203785",
         "description": "Nutrient-rich water cream with seaweed, squalane, and pre/probiotics, clinically shown to boost hydration 173% and last 72+ hours. Fragrance- and essential-oil-free.",
         "ingredients": [
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Dry Skin",
@@ -16501,7 +16600,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_b2cd4a26-704e-4cf6-b057-7baf98ee6c9c.jpg?v=1762282103",
         "description": "Featherlight Korean essence with adenosine, lotus extract, and niacinamide that drenches skin in hydration and evens tone. 100ml treatment size.",
         "ingredients": [
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Dry Skin",
@@ -16544,7 +16644,8 @@ export const RAW_PRODUCTS = [
         "description": "0.1% encapsulated retinal serum paired with ectoin and ceramides for clinical anti-aging results with virtually no barrier disruption. Safe for sensitive skin.",
         "ingredients": [
             "Retinol",
-            "Ceramides"
+            "Ceramides",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Anti-Aging",
@@ -16631,7 +16732,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Retinol",
             "Bakuchiol",
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Anti-Aging",
@@ -16672,7 +16774,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0791/2083/files/Beam_Blocker_PDP_ea44061a-72da-4ca5-84fa-64d9fbe47b89.jpg?v=1781037247",
         "description": "Weightless Korean SPF 30 PA+++ sunscreen with a dewy glass-skin finish and no white cast. Dermatologist approved, ophthalmologist tested, non-comedogenic, and hypoallergenic.",
         "ingredients": [
-            "SPF"
+            "SPF",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Sun Protection"
@@ -16875,7 +16978,8 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Brightening",
             "Hyperpigmentation",
-            "Anti-Aging"
+            "Anti-Aging",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [],
@@ -17374,7 +17478,9 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Anti-Aging",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Dry Skin",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [],
@@ -17413,7 +17519,8 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Anti-Aging",
             "Dry Skin",
-            "Brightening"
+            "Brightening",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [],
@@ -17564,7 +17671,8 @@ export const RAW_PRODUCTS = [
         "description": "A clinical marine treatment shown to visibly tighten and firm jawline, neck, and cheek contours. Peptides and ceramides support a lifted, smoother look.",
         "ingredients": [
             "Peptides",
-            "Ceramides"
+            "Ceramides",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Anti-Aging"
