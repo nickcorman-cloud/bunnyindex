@@ -15,7 +15,8 @@ export async function generateMetadata({ params }) {
   const ingredientList = product.ingredients?.join(', ');
   const description = product.description || `${product.brand} ${product.name} — cruelty-free ${product.type?.toLowerCase() || 'skincare'}${ingredientList ? ` with ${ingredientList}` : ''}. Verified cruelty-free, independently owned, never sold in markets that require animal testing.`;
   return {
-    title: `${product.brand} ${product.name} — BunnyIndex`,
+    title: `${product.name} by ${product.brand} — Cruelty-Free | BunnyIndex`,
+    alternates: { canonical: `https://www.bunnyindex.com/products/${params.slug}` },
     description,
     openGraph: {
       title: `${product.brand} ${product.name}`,
