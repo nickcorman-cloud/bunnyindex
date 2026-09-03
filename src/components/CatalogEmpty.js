@@ -22,6 +22,10 @@ export const EMPTY = {
     title: 'No products listed for this ingredient yet.',
     body: null,
   },
+  concern: {
+    title: 'No products listed for this concern yet.',
+    body: null,
+  },
 };
 
 export default function CatalogEmpty({ tone = 'filters', onClear = null }) {
