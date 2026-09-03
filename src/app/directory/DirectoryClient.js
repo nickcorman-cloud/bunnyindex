@@ -166,7 +166,6 @@ export default function DirectoryClient() {
     <>
       <div className="dir-header">
         <div className="dir-header-inner">
-          <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,fontWeight:600,color:'var(--ink)'}}>Browse Products</div>
           <span className="result-count">{filtered.length} of {products.length}</span>
         </div>
       </div>
