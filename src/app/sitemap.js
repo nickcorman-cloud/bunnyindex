@@ -1,4 +1,5 @@
 import { products, slugify } from '@/lib/constants';
+import { WAVE1_SLUGS } from '@/data/determinations-wave1';
 
 const SITE = 'https://www.bunnyindex.com';
 
@@ -30,5 +31,9 @@ export default function sitemap() {
     url: `${SITE}/products/${slugify(p.brand, p.name)}`,
     lastModified,
   }));
-  return [...staticEntries, ...productEntries];
+  const determinationEntries = WAVE1_SLUGS.map((slug) => ({
+    url: `${SITE}/is-${slug}-cruelty-free`,
+    lastModified,
+  }));
+  return [...staticEntries, ...productEntries, ...determinationEntries];
 }
