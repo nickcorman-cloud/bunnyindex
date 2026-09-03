@@ -17,11 +17,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Glossier meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Glossier is independently owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Glossier is independently owned. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Glossier",
-    directoryIntro: "Glossier in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Glossier in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -53,11 +53,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "e.l.f. Cosmetics meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "e.l.f. Cosmetics is independently owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "e.l.f. Cosmetics is independently owned. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "e.l.f. Cosmetics",
-    directoryIntro: "e.l.f. Cosmetics in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See e.l.f. Cosmetics in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -309,11 +309,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Glow Recipe meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Glow Recipe is founder-majority owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Glow Recipe is founder-majority owned. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Glow Recipe",
-    directoryIntro: "Glow Recipe in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Glow Recipe in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -345,11 +345,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Good Molecules meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Good Molecules is founder-controlled. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton."
+      "Good Molecules is founder-controlled. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Good Molecules",
-    directoryIntro: "Good Molecules in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Good Molecules in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -381,11 +381,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Pacifica meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Pacifica is founder-majority owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a vegan claim on the carton."
+      "Pacifica is founder-majority owned. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Pacifica",
-    directoryIntro: "Pacifica in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Pacifica in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -417,11 +417,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Naturium meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Naturium is owned by e.l.f. Beauty. A parent that does not test is not a fail. Brand Standard’s call is a pass on all three rules — not a certification, and not a filing close-read."
+      "Naturium is owned by e.l.f. Beauty. A parent that does not test is not a fail. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Naturium",
-    directoryIntro: "Naturium in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Naturium in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -453,11 +453,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Sunday Riley meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Sunday Riley is independently owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Sunday Riley is independently owned. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Sunday Riley",
-    directoryIntro: "Sunday Riley in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Sunday Riley in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -489,11 +489,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Summer Fridays meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Summer Fridays is not owned by a parent that tests. Brand Standard’s call is a pass on all three rules. A majority owner is not automatically a fail."
+      "Summer Fridays is not owned by a parent that tests. A majority owner is not automatically a fail. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Summer Fridays",
-    directoryIntro: "Summer Fridays in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Summer Fridays in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -525,11 +525,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "100% Pure meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "100% Pure meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "100% Pure meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "100% Pure",
-    directoryIntro: "100% Pure in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See 100% Pure in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -561,11 +561,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Acure meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Acure meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Acure meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Acure",
-    directoryIntro: "Acure in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Acure in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -597,11 +597,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Alpyn Beauty meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Alpyn Beauty meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Alpyn Beauty meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Alpyn Beauty",
-    directoryIntro: "Alpyn Beauty in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Alpyn Beauty in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -633,11 +633,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Biossance meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Biossance meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Biossance meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Biossance",
-    directoryIntro: "Biossance in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Biossance in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -669,11 +669,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Byoma meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Byoma meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Byoma meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Byoma",
-    directoryIntro: "Byoma in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Byoma in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -705,11 +705,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Cocokind meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Cocokind meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Cocokind meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Cocokind",
-    directoryIntro: "Cocokind in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Cocokind in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -741,11 +741,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Herbivore Botanicals meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Herbivore Botanicals meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Herbivore Botanicals meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Herbivore Botanicals",
-    directoryIntro: "Herbivore Botanicals in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Herbivore Botanicals in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -777,11 +777,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Kinship meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Kinship is owned by Kindred Brands. Rule 3 fails a controlling parent that tests — it is not a ban on having a parent. Kindred Brands is not a testing conglomerate. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton."
+      "Kinship is owned by Kindred Brands. Rule 3 fails a controlling parent that tests — it is not a ban on having a parent. Kindred Brands is not a testing conglomerate. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Kinship",
-    directoryIntro: "Kinship in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Kinship in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -813,11 +813,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Krave Beauty meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Krave Beauty meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Krave Beauty meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Krave Beauty",
-    directoryIntro: "Krave Beauty in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Krave Beauty in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -849,11 +849,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Merit Beauty meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Merit Beauty meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Merit Beauty meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Merit Beauty",
-    directoryIntro: "Merit Beauty in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Merit Beauty in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -885,11 +885,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Milk Makeup meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Milk Makeup meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Milk Makeup meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Milk Makeup",
-    directoryIntro: "Milk Makeup in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Milk Makeup in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -921,11 +921,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "OSEA Malibu meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "OSEA Malibu meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "OSEA Malibu meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "OSEA Malibu",
-    directoryIntro: "OSEA Malibu in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See OSEA Malibu in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -957,11 +957,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Peach & Lily meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Peach & Lily meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Peach & Lily meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Peach & Lily",
-    directoryIntro: "Peach & Lily in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Peach & Lily in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -993,11 +993,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Saie meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Saie is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton."
+      "Saie is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Saie",
-    directoryIntro: "Saie in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Saie in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -1029,11 +1029,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Thrive Causemetics meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Thrive Causemetics meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Thrive Causemetics meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Thrive Causemetics",
-    directoryIntro: "Thrive Causemetics in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Thrive Causemetics in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -1065,11 +1065,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Topicals meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Topicals meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Topicals meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Topicals",
-    directoryIntro: "Topicals in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Topicals in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -1101,11 +1101,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Tower 28 meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Tower 28 meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Tower 28 meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Tower 28",
-    directoryIntro: "Tower 28 in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Tower 28 in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -1137,11 +1137,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "True Botanicals meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "True Botanicals is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton."
+      "True Botanicals is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "True Botanicals",
-    directoryIntro: "True Botanicals in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See True Botanicals in the directory →",
     failLine: null,
     insteadIntro: null,
@@ -1173,11 +1173,11 @@ export const DETERMINATIONS = [
     answerLead: "Yes.",
     answerRest: "Versed meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Versed meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
+      "Versed meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
     ],
     rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Versed",
-    directoryIntro: "Versed in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
     directoryCta: "See Versed in the directory →",
     failLine: null,
     insteadIntro: null,

@@ -55,7 +55,7 @@ export default function Home() {
           <PageHeader
             eyebrow="The Bunny Index Standard"
             title="If they test on animals anywhere, they're out."
-            dek="A directory of skincare that passes three rules — no testing at any stage, not sold where testing is required, not owned by a testing parent. Search brands, products, and ingredients. Miss one rule, and it is not here."
+            dek="Skincare that passes three rules: no testing at any stage, not sold where testing is required, not owned by a testing parent. Miss one, and it is not here."
             actions={
               <>
                 <Link href="/directory" style={ctaPrimary}>

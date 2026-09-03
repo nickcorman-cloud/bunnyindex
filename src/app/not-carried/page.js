@@ -91,7 +91,7 @@ export default function NotCarriedPage() {
       />
         <p style={p}>This is the other half of the directory.</p>
         <p style={p}>
-          If you only see who passed, BunnyIndex still looks like a listicle: a row of names, a warm feeling, no cost. The cost is the brands that don’t make it. They are often the ones with the widest shelves.
+          If you only see who passed, there is no cost. The cost is the brands that don’t make it — often the ones with the widest shelves.
         </p>
         <p style={p}>
           A brand is not listed because it failed one of the three rules — testing at some stage, selling where testing is required, or a controlling parent that tests. This is not a judgment of the formula. It is the standard, applied.

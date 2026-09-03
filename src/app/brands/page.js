@@ -26,15 +26,8 @@ export default function BrandsPage() {
         <PageHeader
           eyebrow="The directory"
           title="Which skincare brands are actually cruelty-free?"
-          dek="This is just the beginning."
+          dek="Brands that pass all three rules. If one is missing, contact us."
         />
-        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 12px'}}>
-          Below is a curated sample of brands that meet the Bunny Index Standard. There are many more out there — and I'm continually researching and expanding the list.
-        </p>
-        <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 56px'}}>
-          If you know of a brand that belongs here, please{' '}
-          <a href="/contact" style={{color:'var(--terra)',textDecoration:'none'}}>contact me</a>.
-        </p>
       </div>
         <div className="brands-grid" style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(400px,1fr))',gap:32}}>
           {sorted.map(brand => {
