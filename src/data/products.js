@@ -22,14 +22,20 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Hyaluronic Acid",
             "Ceramides",
-            "Peptides"
+            "Peptides",
+            "Squalane",
+            "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -61,7 +67,9 @@ export const RAW_PRODUCTS = [
         "description": "Lightweight SPF 30 sunscreen that doubles as a glowy makeup primer, infused with hyaluronic acid for a radiant, skin-like finish. Broad-spectrum protection with zero white cast.",
         "ingredients": [
             "Hyaluronic Acid",
-            "SPF"
+            "SPF",
+            "Squalane",
+            "Niacinamide"
         ],
         "concerns": [
             "Sun Protection"
@@ -97,12 +105,17 @@ export const RAW_PRODUCTS = [
         "reviews": 21000,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0661/2251/4520/files/83566_OpenA_R_33a73a2a-a30e-4a6f-acf5-4bb7fd90bc35.png?v=1780430104",
         "description": "Complexion-boosting serum-meets-filter that blurs, brightens, and adds a luminous glow in seconds. Can be worn alone, mixed into foundation, or layered under or over makeup.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Squalane"
+        ],
         "concerns": [
             "Hyperpigmentation"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -216,7 +229,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -287,7 +302,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Oil-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -319,12 +336,16 @@ export const RAW_PRODUCTS = [
         "description": "Antioxidant-rich cleansing gel with pomegranate, blackberry, and acai that washes away dirt and makeup while infusing skin with brightening nutrients. Lathers into a luxurious foam.",
         "ingredients": [],
         "concerns": [
-            "Brightening"
+            "Brightening",
+            "Oily Skin"
         ],
         "features": [
             "Oil-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Oily",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -395,7 +416,9 @@ export const RAW_PRODUCTS = [
             "Rosacea"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -459,10 +482,14 @@ export const RAW_PRODUCTS = [
         "ingredients": [],
         "concerns": [
             "Hyperpigmentation",
-            "Dry Skin"
+            "Dry Skin",
+            "Sensitive Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -572,7 +599,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Oil-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -715,7 +744,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -754,7 +785,9 @@ export const RAW_PRODUCTS = [
             "Sensitive Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -827,7 +860,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -865,7 +900,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -902,7 +939,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Combination"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -1105,7 +1144,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://versedskin.com/cdn/shop/files/DEWPOINTHERO.jpg?v=1738867907&width=1440",
         "description": "Lightweight gel-cream moisturizer with hyaluronic acid and aloe vera that delivers lasting hydration without greasiness. Perfect for oily to normal skin types.",
         "ingredients": [
-            "Hyaluronic Acid"
+            "Hyaluronic Acid",
+            "Squalane"
         ],
         "concerns": [],
         "features": [
@@ -1219,16 +1259,21 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Squalane",
             "Retinol",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid",
+            "Bakuchiol"
         ],
         "concerns": [
-            "Anti-Aging"
+            "Anti-Aging",
+            "Sensitive Skin"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -1428,7 +1473,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -1569,7 +1616,8 @@ export const RAW_PRODUCTS = [
             "SPF"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Hyperpigmentation"
         ],
         "features": [
             "Fragrance-Free",
@@ -1910,7 +1958,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://static.thcdn.com/productimg/original/15065082-1915143164043665.jpg",
         "description": "Lightweight gel moisturizer with squalane, probiotics, and prebiotic inulin that balances the skin microbiome and provides 72-hour hydration. Great for oily and combination skin.",
         "ingredients": [
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Oily Skin"
@@ -1996,17 +2045,22 @@ export const RAW_PRODUCTS = [
         "description": "Ultra-rich repair cream with squalane, omega fatty acids, and ceramides that deeply nourishes very dry skin and restores the moisture barrier. Best-seller for dry and eczema-prone skin.",
         "ingredients": [
             "Ceramides",
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Eczema",
             "Dry Skin",
-            "Barrier Support"
+            "Barrier Support",
+            "Sensitive Skin"
         ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -2072,15 +2126,20 @@ export const RAW_PRODUCTS = [
         "description": "Firming eye cream with squalane, marine algae, and peptides that reduces puffiness, firms the under-eye area, and visibly improves the look of fine lines and dark circles.",
         "ingredients": [
             "Squalane",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [
-            "Anti-Aging"
+            "Anti-Aging",
+            "Sensitive Skin"
         ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -2188,7 +2247,9 @@ export const RAW_PRODUCTS = [
             "Oily Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -2340,7 +2401,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -2584,18 +2647,23 @@ export const RAW_PRODUCTS = [
         "description": "Gentle foaming cleanser with niacinamide and salicylic acid that thoroughly cleanses pores, controls oil, and prevents breakouts without over-drying sensitive skin.",
         "ingredients": [
             "Salicylic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid",
+            "Ceramides"
         ],
         "concerns": [
             "Acne",
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Sensitive Skin"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -3058,7 +3126,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -3089,12 +3159,18 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/617S+Ymt41L._SL1500_.jpg",
         "description": "Gentle gel cleanser with green tea water, hemp seed oil, and glycerin that cleans thoroughly without stripping. Leaves skin clean, soft, and perfectly balanced—never tight or dry.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin",
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -3133,7 +3209,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -3167,9 +3245,15 @@ export const RAW_PRODUCTS = [
             "Hyaluronic Acid",
             "Glycolic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -3210,7 +3294,9 @@ export const RAW_PRODUCTS = [
             "Non-Comedogenic",
             "Oil-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -4056,7 +4142,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://acure.com/cdn/shop/files/dualphasesquare_640x.jpg?v=1762457353",
         "description": "A concentrated retinol serum with plant stem cells that visibly reduces fine lines and improves skin texture.",
         "ingredients": [
-            "Retinol"
+            "Retinol",
+            "Bakuchiol"
         ],
         "concerns": [],
         "features": [
@@ -4690,13 +4777,16 @@ export const RAW_PRODUCTS = [
         "description": "A powerhouse serum with squalane and copper peptides that rapidly plumps skin and visibly reduces wrinkle depth.",
         "ingredients": [
             "Squalane",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -4728,7 +4818,8 @@ export const RAW_PRODUCTS = [
         "description": "A clarifying toner with squalane and salicylic acid that unclogs pores and refines skin texture without stripping moisture.",
         "ingredients": [
             "Squalane",
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Seborrheic Dermatitis"
@@ -4810,13 +4901,20 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Squalane",
             "Vitamin C",
-            "Retinol"
+            "Retinol",
+            "Hyaluronic Acid",
+            "Peptides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -4844,7 +4942,8 @@ export const RAW_PRODUCTS = [
         "description": "A luxurious vegan cream with squalane, niacinamide, and rose extract that brightens skin tone and deeply moisturizes.",
         "ingredients": [
             "Squalane",
-            "Niacinamide"
+            "Niacinamide",
+            "Vitamin C"
         ],
         "concerns": [],
         "features": [],
@@ -4876,7 +4975,9 @@ export const RAW_PRODUCTS = [
         "description": "A lightweight mineral sunscreen with squalane that provides broad-spectrum SPF 45 protection with a sheer, weightless finish.",
         "ingredients": [
             "Squalane",
-            "SPF"
+            "SPF",
+            "Hyaluronic Acid",
+            "Niacinamide"
         ],
         "concerns": [
             "Sun Protection"
@@ -4885,7 +4986,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Mineral Sunscreen"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -4913,7 +5016,10 @@ export const RAW_PRODUCTS = [
         "description": "A nourishing SPF 30 lip balm with squalane and plant oils that protects and softens lips all day long.",
         "ingredients": [
             "Squalane",
-            "SPF"
+            "SPF",
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Vitamin C"
         ],
         "concerns": [
             "Sun Protection"
@@ -5021,7 +5127,10 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://www.biossance.com/images?url=https://static.thcdn.com/productimg/original/13222551-4795143164258513.jpg&format=webp&auto=avif&width=650&height=650&fit=cover",
         "description": "A soothing vegan lip balm with squalane and rose extract that conditions and plumps lips with lasting moisture.",
         "ingredients": [
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Vitamin C"
         ],
         "concerns": [],
         "features": [],
@@ -5053,13 +5162,20 @@ export const RAW_PRODUCTS = [
         "description": "A brightening eye cream with squalane and vitamin C that targets dark circles and minimizes fine lines under the eyes.",
         "ingredients": [
             "Squalane",
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid",
+            "Peptides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -5534,7 +5650,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -5699,7 +5817,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
@@ -5979,7 +6099,8 @@ export const RAW_PRODUCTS = [
             "SPF"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Hyperpigmentation"
         ],
         "features": [
             "Oil-Free",
@@ -6120,7 +6241,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -6154,7 +6277,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -6183,12 +6308,16 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -6346,14 +6475,17 @@ export const RAW_PRODUCTS = [
             "Salicylic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Hyperpigmentation"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -6554,11 +6686,15 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Oil-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -7649,7 +7785,8 @@ export const RAW_PRODUCTS = [
             "Vitamin C"
         ],
         "concerns": [
-            "Brightening"
+            "Brightening",
+            "Hyperpigmentation"
         ],
         "features": [
             "Oil-Free"
@@ -7954,12 +8091,16 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -8167,7 +8308,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Oil-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -8846,13 +8989,17 @@ export const RAW_PRODUCTS = [
         "reviews": 0,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0582/2885/files/CL_3_e591e78a-b086-454c-80b7-ed76c716a546.jpg?w=768&width=768&auto=format&fm=avif",
         "description": "A refreshing gel cleanser that removes impurities and excess oil while balancing skin and leaving it soft and hydrated.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -8892,7 +9039,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Mineral Sunscreen"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -8931,7 +9080,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -8965,7 +9116,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -9119,7 +9272,9 @@ export const RAW_PRODUCTS = [
             "Fragrance-Free",
             "Mineral Sunscreen"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -9353,12 +9508,16 @@ export const RAW_PRODUCTS = [
             "Ceramides",
             "Squalane"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -9598,12 +9757,16 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Ceramides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -9669,13 +9832,17 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Caffeine"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10201,7 +10368,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10303,7 +10472,10 @@ export const RAW_PRODUCTS = [
         "description": "A clarifying toner with niacinamide and salicylic acid that minimizes pores, controls oil, and refines skin texture.",
         "ingredients": [
             "Salicylic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Glycolic Acid"
         ],
         "concerns": [
             "Seborrheic Dermatitis"
@@ -10341,17 +10513,22 @@ export const RAW_PRODUCTS = [
         "description": "A pore-clarifying gel cleanser with niacinamide and salicylic acid that removes excess oil and impurities for clearer skin.",
         "ingredients": [
             "Salicylic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Hyaluronic Acid",
+            "Ceramides"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Sensitive Skin"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10379,7 +10556,8 @@ export const RAW_PRODUCTS = [
         "description": "An acne-fighting serum with salicylic acid and niacinamide that targets breakouts, minimizes pores, and prevents future blemishes.",
         "ingredients": [
             "Salicylic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Tranexamic Acid"
         ],
         "concerns": [
             "Seborrheic Dermatitis"
@@ -10423,7 +10601,8 @@ export const RAW_PRODUCTS = [
             "Salicylic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -10495,14 +10674,17 @@ export const RAW_PRODUCTS = [
             "SPF"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Mineral Sunscreen"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Combination"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10531,12 +10713,16 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10605,15 +10791,20 @@ export const RAW_PRODUCTS = [
         "description": "A lightweight, oil-free moisturizer with niacinamide and hyaluronic acid that hydrates and minimizes pores without clogging them.",
         "ingredients": [
             "Hyaluronic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Ceramides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10641,7 +10832,8 @@ export const RAW_PRODUCTS = [
         "description": "Concentrated hydrating drops with ceramides and hyaluronic acid that can be added to any moisturizer for an extra hydration boost.",
         "ingredients": [
             "Hyaluronic Acid",
-            "Ceramides"
+            "Ceramides",
+            "Niacinamide"
         ],
         "concerns": [],
         "features": [
@@ -10680,14 +10872,22 @@ export const RAW_PRODUCTS = [
         "description": "A bouncy, jelly-like serum with triple ceramide complex and hyaluronic acid that deeply plumps and hydrates all skin types.",
         "ingredients": [
             "Hyaluronic Acid",
-            "Ceramides"
+            "Ceramides",
+            "Squalane",
+            "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry",
+            "Combination",
+            "Oily"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10719,10 +10919,12 @@ export const RAW_PRODUCTS = [
         "description": "An oil-free moisturizer with salicylic acid and niacinamide designed to prevent breakouts while providing lightweight hydration.",
         "ingredients": [
             "Salicylic Acid",
-            "Niacinamide"
+            "Niacinamide",
+            "Tranexamic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -10759,7 +10961,9 @@ export const RAW_PRODUCTS = [
         "reviews": 0,
         "imageUrl": "https://cdn.shopify.com/s/files/1/0661/2251/4520/files/82260_EYBRW_OpenA_R_f27bec37-c342-4f68-819c-151934711455.png?v=1778006928",
         "description": "A hydrating serum designed for brows that conditions, nourishes, and defines while promoting healthier-looking brow hairs.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Oil-Free",
@@ -10793,16 +10997,24 @@ export const RAW_PRODUCTS = [
         "description": "The fan-favorite Holy Hydration! moisturizer with ceramides and SPF 30 that hydrates and protects skin in one step.",
         "ingredients": [
             "Ceramides",
-            "SPF"
+            "SPF",
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide",
+            "Peptides"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Dry Skin"
         ],
         "features": [
             "Fragrance-Free",
             "Mineral Sunscreen"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -10939,7 +11151,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://acure.com/cdn/shop/files/dualphasesquare_640x.jpg?v=1762457353",
         "description": "An anti-aging serum with peptides, CoQ10, and plant stem cells that visibly reduces wrinkles and firms skin.",
         "ingredients": [
-            "Peptides"
+            "Peptides",
+            "Bakuchiol"
         ],
         "concerns": [],
         "features": [
@@ -11072,7 +11285,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://acure.com/cdn/shop/files/dualphasesquare_640x.jpg?v=1762457353",
         "description": "A plumping serum with hyaluronic acid and marine collagen that instantly volumizes and smooths the appearance of fine lines.",
         "ingredients": [
-            "Hyaluronic Acid"
+            "Hyaluronic Acid",
+            "Bakuchiol"
         ],
         "concerns": [],
         "features": [
@@ -11108,12 +11322,16 @@ export const RAW_PRODUCTS = [
             "SPF"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Dry Skin",
+            "Sensitive Skin"
         ],
         "features": [
             "Mineral Sunscreen"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -11807,14 +12025,22 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0661/2251/4520/files/57167_CLOSED_R.png?v=1776967306",
         "description": "A ceramide-powered supercharge serum that provides long-lasting hydration and supports healthy skin barrier function.",
         "ingredients": [
-            "Ceramides"
+            "Ceramides",
+            "Hyaluronic Acid",
+            "Squalane",
+            "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry",
+            "Combination"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -11841,17 +12067,22 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/61MxpRudOQL._SL1500_.jpg",
         "description": "A daily acne-fighting cleanser with 0.5% salicylic acid that clears pores and prevents breakouts without over-drying skin.",
         "ingredients": [
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Niacinamide",
+            "Tranexamic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Oily Skin"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Oily"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -11915,13 +12146,20 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Hyaluronic Acid",
             "Ceramides",
-            "Peptides"
+            "Peptides",
+            "Squalane",
+            "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry",
+            "Combination"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -11988,13 +12226,19 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Ceramides",
             "Squalane",
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid",
+            "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Dry"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -12092,7 +12336,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0661/2251/4520/files/57162_Closed_R.png?v=1776967288",
         "description": "A ceramide-infused overnight lip mask that deeply hydrates and repairs dry, chapped lips while you sleep for softer lips.",
         "ingredients": [
-            "Ceramides"
+            "Ceramides",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
@@ -12159,7 +12404,9 @@ export const RAW_PRODUCTS = [
         "reviews": 0,
         "imageUrl": "https://m.media-amazon.com/images/I/511poG6OcWL._SL1500_.jpg",
         "description": "A hydrating toner with witch hazel and aloe vera that balances skin's pH and refreshes complexion after cleansing.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Oil-Free",
@@ -12194,11 +12441,15 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -12226,7 +12477,8 @@ export const RAW_PRODUCTS = [
         "description": "A hydrating sheet mask with ceramides and hyaluronic acid that intensely moisturizes and plumps skin in just 10-15 minutes.",
         "ingredients": [
             "Hyaluronic Acid",
-            "Ceramides"
+            "Ceramides",
+            "Peptides"
         ],
         "concerns": [],
         "features": [
@@ -12260,17 +12512,23 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/51nCcUuwzqL._SL1500_.jpg",
         "description": "An acne-fighting face wash with 1% salicylic acid that clears excess oil and prevents breakouts while maintaining hydration.",
         "ingredients": [
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Niacinamide",
+            "Tranexamic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne",
+            "Oily Skin"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Oily"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -12475,7 +12733,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -12775,14 +13035,21 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://static.thcdn.com/productimg/original/12766627-2015184099732237.jpg",
         "description": "A cooling eye gel with squalane and marine algae that reduces puffiness and provides intense hydration to the eye area.",
         "ingredients": [
-            "Squalane"
+            "Squalane",
+            "Hyaluronic Acid",
+            "Peptides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -12846,13 +13113,20 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Squalane",
             "Retinol",
-            "Bakuchiol"
+            "Bakuchiol",
+            "Hyaluronic Acid",
+            "Peptides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14685,12 +14959,20 @@ export const RAW_PRODUCTS = [
             "Dry Skin",
             "Sensitive Skin",
             "Eczema",
-            "Barrier Support"
+            "Barrier Support",
+            "Acne",
+            "Oily Skin"
         ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "Dry",
+            "Oily",
+            "Combination",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14729,10 +15011,13 @@ export const RAW_PRODUCTS = [
             "Hyperpigmentation",
             "Brightening",
             "Anti-Aging",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Oily Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Oily"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14773,10 +15058,14 @@ export const RAW_PRODUCTS = [
             "Anti-Aging",
             "Hyperpigmentation",
             "Brightening",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14814,12 +15103,18 @@ export const RAW_PRODUCTS = [
             "Dry Skin",
             "Anti-Aging",
             "Barrier Support",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne",
+            "Oily Skin"
         ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "Oily",
+            "Combination"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14861,7 +15156,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14898,12 +15195,18 @@ export const RAW_PRODUCTS = [
             "Sun Protection",
             "Sensitive Skin",
             "Eczema",
-            "Barrier Support"
+            "Barrier Support",
+            "Acne",
+            "Oily Skin"
         ],
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "Oily",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14939,10 +15242,16 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Sensitive Skin",
             "Dry Skin",
-            "Barrier Support"
+            "Barrier Support",
+            "Acne",
+            "Oily Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "Oily",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -14984,7 +15293,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15027,7 +15338,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15066,7 +15379,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15104,7 +15419,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15150,7 +15467,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15193,7 +15512,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15230,7 +15551,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15273,7 +15596,9 @@ export const RAW_PRODUCTS = [
             "Oil-Free",
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -15395,7 +15720,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -16227,7 +16554,9 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -16589,7 +16918,10 @@ export const RAW_PRODUCTS = [
             "Anti-Aging"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "Combination",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -16776,7 +17108,10 @@ export const RAW_PRODUCTS = [
         "features": [
             "Fragrance-Free"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "Sensitive",
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -17430,7 +17765,9 @@ export const RAW_PRODUCTS = [
             "Dry Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -17623,7 +17960,9 @@ export const RAW_PRODUCTS = [
             "Dry Skin"
         ],
         "features": [],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
@@ -17853,14 +18192,17 @@ export const RAW_PRODUCTS = [
             "Dry Skin",
             "Hyperpigmentation",
             "Anti-Aging",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
             "Fragrance-Free",
             "Non-Comedogenic"
         ],
-        "skinTypes": [],
+        "skinTypes": [
+            "All"
+        ],
         "buyLinks": [
             {
                 "store": "Brand Website",
