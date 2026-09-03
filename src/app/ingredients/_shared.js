@@ -46,10 +46,14 @@ const INGREDIENT_STILLS = {
 };
 
 export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing, kind = 'ingredient' }) {
-  const field = kind === 'concern' ? 'concerns' : 'ingredients';
-  const matches = products
-    .filter((p) => Array.isArray(p[field]) && p[field].includes(tag))
-    .sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
+  const matches = (
+    kind === 'type'
+      ? products.filter((p) => p.type === tag)
+      : products.filter((p) => {
+          const field = kind === 'concern' ? 'concerns' : 'ingredients';
+          return Array.isArray(p[field]) && p[field].includes(tag);
+        })
+  ).sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
 
   const still = INGREDIENT_STILLS[tag];
 
@@ -92,17 +96,19 @@ export function IngredientPage({ tag, eyebrow, h1, dek, sections, closing, kind 
           <p style={{ ...pStyle, color: 'var(--muted)', margin: 0 }}>
             {kind === 'concern'
               ? 'No products listed for this concern yet.'
-              : 'No products listed for this ingredient yet.'}
+              : kind === 'type'
+                ? 'No products listed for this type yet.'
+                : 'No products listed for this ingredient yet.'}
           </p>
         )}
         <p style={{ ...pStyle, margin: '12px 0 0' }}>
-          <Link href={catalogHref(kind === 'concern' ? { concerns: [tag] } : { ingredients: [tag] })} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
+          <Link href={catalogHref(kind === 'type' ? { types: [tag] } : kind === 'concern' ? { concerns: [tag] } : { ingredients: [tag] })} style={{ color: 'var(--terra)', textDecoration: 'none', fontWeight: 600 }}>
             See all {tag} in the directory →
           </Link>
         </p>
       </EditorialBreak>
 
-      {matches.length === 0 ? <CatalogEmpty tone={kind === 'concern' ? 'concern' : 'ingredient'} /> : null}
+      {matches.length === 0 ? <CatalogEmpty tone={kind === 'concern' ? 'concern' : kind === 'type' ? 'type' : 'ingredient'} /> : null}
 
       <div
         style={{
