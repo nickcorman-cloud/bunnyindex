@@ -4,9 +4,15 @@ import PageHeader from '@/components/PageHeader';
 import { products, BRAND_PROFILES } from '@/lib/constants';
 import { YES_BRAND_PATHS } from '@/data/determinations-wave1';
 
+const brandCount = [...new Set(products.map((p) => p.brand))].length;
+const brandsTitle = 'Which Skincare Brands Are Actually Cruelty-Free? — BunnyIndex';
+const brandsDesc = `Brands that meet the Bunny Index Standard: no animal testing at any stage, no sales in markets that require it, no ownership by testing parents. ${brandCount} brands listed.`;
+
 export const metadata = {
-  title: 'Our Brands — BunnyIndex',
-  description: 'Meet the independently cruelty-free brands featured on BunnyIndex. No parent company exceptions, no markets that require animal testing.',
+  title: brandsTitle,
+  description: brandsDesc,
+  alternates: { canonical: 'https://www.bunnyindex.com/brands' },
+  openGraph: { title: brandsTitle, description: brandsDesc },
 };
 
 export default function BrandsPage() {
@@ -19,7 +25,7 @@ export default function BrandsPage() {
       <div className="editorial-measure">
         <PageHeader
           eyebrow="The directory"
-          title="Our Brands"
+          title="Which skincare brands are actually cruelty-free?"
           dek="This is just the beginning."
         />
         <p style={{fontFamily:"'DM Sans',sans-serif",fontSize:16,color:'var(--muted)',maxWidth:580,lineHeight:1.7,margin:'0 0 12px'}}>
