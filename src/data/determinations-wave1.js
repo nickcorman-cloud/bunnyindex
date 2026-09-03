@@ -513,7 +513,6 @@ export const DETERMINATIONS = [
       }
     ]
   },
-,
   {
     slug: "100-pure",
     brand: "100% Pure",
