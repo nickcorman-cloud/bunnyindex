@@ -1,4 +1,4 @@
-/** Wave 1 determination records. Copy lock: /workspace/seo-is-cf-wave1/.
+/** Wave 1 determination records. Copy lock: Creative /workspace/is-cf-polish/ (2026-09-02).
  * No Tata Harper page or ownership example. No ILIA page or spotlight.
  * No remaining GT-hold YES. Do not name required-testing-market countries.
  * YES directoryBrandParam is the exact catalog string (encodeURIComponent, do not slugify).
@@ -10,25 +10,25 @@ export const DETERMINATIONS = [
     determination: "yes",
     parentName: null,
     title: "Is Glossier cruelty-free? — BunnyIndex",
-    description: "Yes. Glossier meets the Bunny Index Standard: no testing at any stage, not sold where testing is required, not owned by a parent that tests. See it in the directory.",
+    description: "Yes. Glossier meets the Bunny Index Standard. It is in the directory.",
     eyebrow: "The Bunny Index Standard",
     h1: "Is Glossier cruelty-free?",
     answerLead: "Yes.",
     answerRest: "Glossier meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "Glossier is independently owned. Brand Standard’s call is a pass: no animal testing at any stage, not sold where testing is required, not owned by a parent that tests. A bunny on the carton is not what this page is measuring. The three rules are."
+      "Glossier is independently owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
     ],
-    rulesAfter: "Miss one, and the brand is not here. There is no partial listing, and no asterisk for a famous name.\n\nThe full bar: [The Standard](/standard). How the claim usually stops: [The label](/the-label).",
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "Glossier",
-    directoryIntro: "Glossier products that are in the catalog live in the directory, filtered to the brand. The count is the live catalog, not a number on this page.",
+    directoryIntro: "Glossier in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
     directoryCta: "See Glossier in the directory →",
     failLine: null,
     insteadIntro: null,
     insteadLinks: [],
     faqs: [
       {
-        q: "Does “cruelty-free” on Glossier’s site count?",
-        a: "Only if the brand passes all three rules. The sentence on the box can be true as far as it goes. We care how far it goes. That is [The label](/the-label)."
+        q: "Does Glossier saying cruelty-free count?",
+        a: "Only if the brand passes all three rules. The sentence on the box can be true as far as it goes. We care how far it goes. [The label](/the-label)."
       },
       {
         q: "Is this a certification?",
@@ -46,25 +46,25 @@ export const DETERMINATIONS = [
     determination: "yes",
     parentName: null,
     title: "Is e.l.f. cruelty-free? — BunnyIndex",
-    description: "Yes. e.l.f. Cosmetics meets the Bunny Index Standard: no testing at any stage, not sold where testing is required, not owned by a parent that tests. See it in the directory.",
+    description: "Yes. e.l.f. Cosmetics meets the Bunny Index Standard. It is in the directory.",
     eyebrow: "The Bunny Index Standard",
     h1: "Is e.l.f. cruelty-free?",
     answerLead: "Yes.",
     answerRest: "e.l.f. Cosmetics meets the Bunny Index Standard. It is in the directory.",
     lede: [
-      "e.l.f. is independently owned. Brand Standard’s call is a pass on the three rules. This page is that call — not a certification badge, and not a filing close-read."
+      "e.l.f. Cosmetics is independently owned. Brand Standard’s call is a pass on all three rules — not a certification, and not a reading of the carton. A mark on the box is not what gets a brand listed."
     ],
-    rulesAfter: "Miss one, and the brand is not here. There is no partial listing, and no asterisk for a famous name.\n\nThe full bar: [The Standard](/standard). How the claim usually stops: [The label](/the-label).",
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
     directoryBrandParam: "e.l.f. Cosmetics",
-    directoryIntro: "e.l.f. Cosmetics products that are in the catalog live in the directory, filtered to the brand. The count is the live catalog, not a number on this page.",
+    directoryIntro: "e.l.f. Cosmetics in the catalog is filtered on the brand. The count is live. It does not belong in this sentence.",
     directoryCta: "See e.l.f. Cosmetics in the directory →",
     failLine: null,
     insteadIntro: null,
     insteadLinks: [],
     faqs: [
       {
-        q: "Does a leaping bunny or a PETA logo replace this?",
-        a: "No. A mark is not a pass. A brand can hold a well-known certification and still fail a rule. e.l.f. is here because it passes all three, not because of a sticker. [The Standard](/standard)."
+        q: "Does a mark or e.l.f. saying cruelty-free count?",
+        a: "Only if the brand passes all three rules. A sticker is not a listing. [The label](/the-label)."
       },
       {
         q: "Is this a certification?",
@@ -82,14 +82,13 @@ export const DETERMINATIONS = [
     determination: "no",
     parentName: "L’Oréal",
     title: "Is CeraVe cruelty-free? — BunnyIndex",
-    description: "No — not by this standard. CeraVe isn’t in the directory. The Bunny Index Standard includes the controlling parent, not just the carton.",
+    description: "No — not by this standard. CeraVe is not in the directory.",
     eyebrow: "Not carried",
     h1: "Is CeraVe cruelty-free?",
     answerLead: "No — not by this standard.",
     answerRest: "CeraVe is not in the directory.",
     lede: [
-      "CeraVe is owned by L’Oréal. A controlling parent that tests is a fail under rule 3, even when the bottle still says cruelty-free. That is the fail people miss. Ownership is in the standard.",
-      "We are not grading the moisturizer. We are grading the company."
+      "CeraVe is owned by L’Oréal. A testing parent is a fail under rule 3. We are not grading the formula."
     ],
     rulesAfter: null,
     directoryBrandParam: null,
@@ -138,13 +137,13 @@ export const DETERMINATIONS = [
     determination: "no",
     parentName: "Estée Lauder",
     title: "Is The Ordinary cruelty-free? — BunnyIndex",
-    description: "No — not by this standard. The Ordinary isn’t in the directory. The Bunny Index Standard includes the controlling parent, not just the carton.",
+    description: "No — not by this standard. The Ordinary is not in the directory.",
     eyebrow: "Not carried",
     h1: "Is The Ordinary cruelty-free?",
     answerLead: "No — not by this standard.",
     answerRest: "The Ordinary is not in the directory.",
     lede: [
-      "The Ordinary sits under DECIEM. DECIEM is owned by Estée Lauder. A controlling parent that tests fails rule 3. Actives on the INCI list do not override the org chart."
+      "The Ordinary is owned by Estée Lauder. A testing parent is a fail under rule 3. We are not grading the formula."
     ],
     rulesAfter: null,
     directoryBrandParam: null,
@@ -196,13 +195,13 @@ export const DETERMINATIONS = [
     determination: "no",
     parentName: "Shiseido",
     title: "Is Drunk Elephant cruelty-free? — BunnyIndex",
-    description: "No — not by this standard. Drunk Elephant isn’t in the directory. The Bunny Index Standard includes the controlling parent, not just the carton.",
+    description: "No — not by this standard. Drunk Elephant is not in the directory.",
     eyebrow: "Not carried",
     h1: "Is Drunk Elephant cruelty-free?",
     answerLead: "No — not by this standard.",
     answerRest: "Drunk Elephant is not in the directory.",
     lede: [
-      "Drunk Elephant is owned by Shiseido. A controlling parent that tests fails rule 3. Prestige texture does not change the parent."
+      "Drunk Elephant is owned by Shiseido. A testing parent is a fail under rule 3. We are not grading the formula."
     ],
     rulesAfter: null,
     directoryBrandParam: null,
@@ -250,13 +249,13 @@ export const DETERMINATIONS = [
     determination: "no",
     parentName: "Unilever",
     title: "Is Paula’s Choice cruelty-free? — BunnyIndex",
-    description: "No — not by this standard. Paula’s Choice isn’t in the directory. The Bunny Index Standard includes the controlling parent, not just the carton.",
+    description: "No — not by this standard. Paula’s Choice is not in the directory.",
     eyebrow: "Not carried",
     h1: "Is Paula’s Choice cruelty-free?",
     answerLead: "No — not by this standard.",
     answerRest: "Paula’s Choice is not in the directory.",
     lede: [
-      "Paula’s Choice is owned by Unilever. A controlling parent that tests fails rule 3. A BHA reputation is not a pass."
+      "Paula’s Choice is owned by Unilever. A testing parent is a fail under rule 3. We are not grading the formula."
     ],
     rulesAfter: null,
     directoryBrandParam: null,
@@ -324,3 +323,4 @@ export const YES_BRAND_PATHS = Object.fromEntries(
     `/is-${d.slug}-cruelty-free`
   ]),
 );
+
