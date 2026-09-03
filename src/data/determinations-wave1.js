@@ -546,7 +546,7 @@ export const DETERMINATIONS = [
       },
       {
         q: "Where do I go next?",
-        a: "[100% Pure in the directory](/directory?brand=100% Pure). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+        a: "[100% Pure in the directory](/directory?brand=100%25%20Pure). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
       }
     ]
   },
@@ -978,7 +978,7 @@ export const DETERMINATIONS = [
       },
       {
         q: "Where do I go next?",
-        a: "[Peach & Lily in the directory](/directory?brand=Peach & Lily). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+        a: "[Peach & Lily in the directory](/directory?brand=Peach%20%26%20Lily). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
       }
     ]
   },
