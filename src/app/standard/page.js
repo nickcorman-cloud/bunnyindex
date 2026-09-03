@@ -34,7 +34,7 @@ export default function StandardPage() {
         <RuleStack />
 
         <p style={p}>
-          The first is the whole chain — finished product, ingredients, suppliers, anyone asked to test. The second is where the brand is sold: if tests are required there, selling there is a test. We do not publish a running map of those markets on this page. The third is who can set policy. A testing parent is a fail. A parent that does not test is not the same thing; this rule is not a ban on having a parent at all, and it is not a prize for staying founder-owned forever.
+          A testing parent is a fail. A parent that does not test is not a fail, and this is not a prize for staying founder-owned.
         </p>
         <p style={p}>
           A brand can police its own supply chain and still fail if a controlling parent tests — L’Oréal, Unilever, Estée Lauder, P&amp;G, Shiseido, and companies like them.
@@ -43,7 +43,7 @@ export default function StandardPage() {
 
         <h2 style={h2}>Where the carton usually stops</h2>
         <p style={p}>
-          Most claims stop at the finished product. BunnyIndex goes to the controlling parent. The stack lives here so you do not have to leave this page to see it. How each layer works is on{' '}
+          Most claims stop at the finished product. BunnyIndex goes to the controlling parent. How each layer works is on{' '}
           <Link href="/the-label" style={linkStyle}>The label</Link>.
         </p>
         <ClaimLayers />
@@ -54,7 +54,7 @@ export default function StandardPage() {
           The bottle still says cruelty-free. The brand site can still read like an independent studio. The controlling parent still tests on animals when legally required, or as policy. That brand does not get a listing here. It fails rule 3.
         </p>
         <p style={p}>
-          Who we don’t carry — and when a listing changes — lives on <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link>.
+          Who we don’t carry is on <Link href="/not-carried" style={linkStyle}>Who isn’t here</Link>.
         </p>
 
         <EditorialBreak
@@ -85,7 +85,7 @@ export default function StandardPage() {
           A badge is a program. Programs have applications, scopes, fees, and cutoff dates. Some of that work is real. It is not this list.
         </p>
         <p style={p}>
-          We do not treat a mark as a pass. A brand can hold a well-known certification and still fail rule 3. A brand can pass all three rules and never have paid for a sticker. BunnyIndex does not certify. We keep a directory. The bunny in the corner of this site is a reminder of the bar — not a logo a brand can apply for.
+          We do not treat a mark as a pass. A brand can hold a well-known certification and still fail rule 3. A brand can pass all three rules and never have paid for a sticker. BunnyIndex does not certify. We keep a directory, not a logo a brand can apply for.
         </p>
 
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 22, fontStyle: 'italic', color: 'var(--terra)', margin: '0 0 40px', lineHeight: 1.3 }}>
