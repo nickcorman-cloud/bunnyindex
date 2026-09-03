@@ -7,7 +7,7 @@ import EditorialBreak from '@/components/EditorialBreak';
 
 export const metadata = {
   title: 'The label is not the company. — BunnyIndex',
-  description: 'Most cruelty-free claims stop at the finished product. Some stop at the factory. Almost none include the parent. We do.',
+  description: 'Most claims stop at the finished product. Almost none include the parent. We do.',
 };
 
 const linkStyle = { color: 'var(--terra)', textDecoration: 'none' };
@@ -20,7 +20,7 @@ export default function TheLabelPage() {
       <PageHeader
         eyebrow="The claim"
         title="The label is not the company."
-        dek="Most cruelty-free claims stop at the finished product. Some stop at the factory. Almost none include the parent. We do."
+        dek="Most claims stop at the finished product. Almost none include the parent. We do."
       />
 
         <EditorialBreak variant="figure">
@@ -44,7 +44,7 @@ export default function TheLabelPage() {
         <h2 style={h2}>The finished product</h2>
         <p style={p}>This is the easiest claim, and the one you can read without turning the box over.</p>
         <p style={p}>
-          “We don’t test this product on animals.” Maybe they don’t. The finished formula is the last step. It is also the smallest part of the chain. A claim that ends here has not said anything yet about the ingredients, the people who made those ingredients, or the company that owns the brand.
+          “We don’t test this product on animals.” Maybe they don’t. The finished formula is the last step. It is also the smallest part of the chain. A claim that ends here has not said anything about the ingredients, the suppliers, or the parent.
         </p>
         <p style={p}>Most labels stop here.</p>
 
