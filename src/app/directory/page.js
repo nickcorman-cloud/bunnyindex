@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import DirectoryClient from './DirectoryClient';
 import { products } from '@/lib/constants';
+import HubDoor from '@/components/HubDoor';
 
 export async function generateMetadata() {
   const n = products.length;
@@ -37,6 +38,11 @@ export default function DirectoryPage() {
       >
         Products that meet the Bunny Index Standard. Filter by niacinamide, hyaluronic acid, retinol, vitamin C, and brand.
       </p>
+      <section style={{ background: 'var(--cream)', padding: '16px 32px 8px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <HubDoor />
+        </div>
+      </section>
       <Suspense fallback={<div style={{ padding: 64, textAlign: 'center', color: 'var(--muted)' }}>Loading directory...</div>}>
         <DirectoryClient />
       </Suspense>
