@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/types/cleanser' },
   title: "Cleanser, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Cleansers from brands that meet the Bunny Index Standard. Not a double-cleanse plan.',
+  description: "Cruelty-free cleansers. Brands that meet the Bunny Index Standard — not a double-cleanse plan.",
 };
 
 export default function HubPage() {
