@@ -95,7 +95,6 @@ export default function ProductPage({ params }) {
             {product.imageUrl
               ? <img src={product.imageUrl} alt={`${product.brand} ${product.name}`} style={{width:'100%',height:'100%',objectFit:'cover'}} />
               : <div style={{textAlign:'center',padding:40}}>
-                  <div style={{fontSize:64,marginBottom:16}}>🐰</div>
                   <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:18,color:'var(--muted)'}}>{product.brand}</div>
                 </div>
             }
