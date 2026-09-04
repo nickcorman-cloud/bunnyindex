@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/types/serum' },
   title: "Serum, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Serums from brands that meet the Bunny Index Standard. Not an actives ranking.',
+  description: "Cruelty-free serums. Brands that meet the Bunny Index Standard — not an actives ranking.",
 };
 
 export default function HubPage() {
