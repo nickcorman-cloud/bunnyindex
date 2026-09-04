@@ -2,6 +2,9 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { products, slugify, findProductBySlug, buyLabel, BRAND_PROFILES } from '@/lib/constants';
 import CatalogCard from '@/components/CatalogCard';
+import { YES_BRAND_PATHS } from '@/data/determinations-wave1';
+import StandardCite from '@/components/StandardCite';
+import { ingredientHref, concernHref, typeHref } from '@/lib/hubPaths';
 
 // Pre-generate all product pages at build time
 export async function generateStaticParams() {
@@ -13,7 +16,11 @@ export async function generateMetadata({ params }) {
   const product = findProductBySlug(params.slug);
   if (!product) return { title: 'Product not found — BunnyIndex' };
   const ingredientList = product.ingredients?.join(', ');
-  const description = product.description || `${product.brand} ${product.name} — cruelty-free ${product.type?.toLowerCase() || 'skincare'}${ingredientList ? ` with ${ingredientList}` : ''}. Verified cruelty-free, independently owned, never sold in markets that require animal testing.`;
+  const description =
+    product.description ||
+    `${product.brand} ${product.name} — cruelty-free ${product.type?.toLowerCase() || 'skincare'}${
+      ingredientList ? ` with ${ingredientList}` : ''
+    }. Listed because the brand passes the Bunny Index Standard.`;
   return {
     title: `${product.name} by ${product.brand} — Cruelty-Free | BunnyIndex`,
     alternates: { canonical: `https://www.bunnyindex.com/products/${params.slug}` },
@@ -99,11 +106,20 @@ export default function ProductPage({ params }) {
         <div>
           {/* Brand + type */}
           <div style={{display:'flex',gap:8,alignItems:'center',marginBottom:8}}>
-            <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`} style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--terra)',textDecoration:'none'}}>
+            <Link
+              href={YES_BRAND_PATHS[product.brand] || `/directory?brand=${encodeURIComponent(product.brand)}`}
+              style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--terra)',textDecoration:'none'}}
+            >
               {product.brand}
             </Link>
             <span style={{color:'var(--border)'}}>·</span>
-            <span style={{fontSize:11,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'0.08em'}}>{product.type}</span>
+            {typeHref(product.type) ? (
+              <Link href={typeHref(product.type)} style={{fontSize:11,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'0.08em',textDecoration:'none'}}>
+                {product.type}
+              </Link>
+            ) : (
+              <span style={{fontSize:11,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'0.08em'}}>{product.type}</span>
+            )}
           </div>
           <h1 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:40,fontWeight:600,color:'var(--ink)',lineHeight:1.08,margin:'0 0 8px'}}>{product.name}</h1>
           <div style={{fontSize:24,fontWeight:500,color:'var(--ink)',margin:'0 0 20px'}}>${product.price}</div>
@@ -131,7 +147,7 @@ export default function ProductPage({ params }) {
               <div style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--ink)',marginBottom:8}}>Key Ingredients</div>
               <div style={{display:'flex',flexWrap:'wrap',gap:6}}>
                 {product.ingredients.map(i => (
-                  <Link key={i} href={`/directory?ingredient=${encodeURIComponent(i)}`} style={{background:'var(--terra-light)',color:'var(--terra)',borderRadius:20,padding:'4px 12px',fontSize:13,fontWeight:500,textDecoration:'none'}}>
+                  <Link key={i} href={ingredientHref(i)} style={{background:'var(--terra-light)',color:'var(--terra)',borderRadius:20,padding:'4px 12px',fontSize:13,fontWeight:500,textDecoration:'none'}}>
                     {i}
                   </Link>
                 ))}
@@ -144,9 +160,15 @@ export default function ProductPage({ params }) {
             <div style={{margin:'0 0 20px'}}>
               <div style={{fontSize:11,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--ink)',marginBottom:8}}>Good For</div>
               <div style={{display:'flex',flexWrap:'wrap',gap:6}}>
-                {product.concerns.map(c => (
-                  <span key={c} style={{background:'#EEF4EE',color:'#4A7A50',borderRadius:20,padding:'4px 12px',fontSize:13,fontWeight:500}}>{c}</span>
-                ))}
+                {product.concerns.map(c => {
+                  const href = concernHref(c);
+                  const style = {background:'#EEF4EE',color:'#4A7A50',borderRadius:20,padding:'4px 12px',fontSize:13,fontWeight:500,textDecoration:'none'};
+                  return href ? (
+                    <Link key={c} href={href} style={style}>{c}</Link>
+                  ) : (
+                    <span key={c} style={style}>{c}</span>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -171,14 +193,27 @@ export default function ProductPage({ params }) {
           </div>
           <p style={{fontSize:11,color:'var(--muted)',margin:'0 0 12px'}}>Affiliate links — we may earn a small commission at no extra cost to you.</p>
 
-          {/* Cruelty-free badge */}
-          <div style={{marginTop:28,padding:'16px 20px',background:'var(--parchment)',borderRadius:'var(--r-sm)',border:'1px solid var(--border)',display:'flex',gap:12,alignItems:'flex-start'}}>
-            <span style={{fontSize:20}}>🐰</span>
-            <div>
-              <div style={{fontSize:13,fontWeight:700,color:'var(--ink)',marginBottom:2}}>Verified cruelty-free</div>
-              <div style={{fontSize:12,color:'var(--muted)',lineHeight:1.5}}>No animal testing. Not sold in markets that require it. Independently owned — not a subsidiary of a company that tests.</div>
-            </div>
-          </div>
+          <StandardCite />
+          {YES_BRAND_PATHS[product.brand] ? (
+            <p style={{ margin: '16px 0 0' }}>
+              <Link href={YES_BRAND_PATHS[product.brand]} style={{ fontSize: 14, fontWeight: 600, color: 'var(--terra)', textDecoration: 'none' }}>
+                Is {product.brand} cruelty-free? →
+              </Link>
+              <span style={{ color: 'var(--border)', margin: '0 8px' }}>·</span>
+              <Link
+                href={`/directory?brand=${encodeURIComponent(product.brand)}`}
+                style={{ color: 'var(--muted)', fontSize: 14, textDecoration: 'underline', textUnderlineOffset: 2 }}
+              >
+                See {product.brand} in the directory →
+              </Link>
+            </p>
+          ) : (
+            <p style={{ margin: '16px 0 0' }}>
+              <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`} style={{ color: 'var(--muted)', fontSize: 14, textDecoration: 'underline', textUnderlineOffset: 2 }}>
+                See {product.brand} in the directory →
+              </Link>
+            </p>
+          )}
         </div>
       </div>
 
@@ -190,7 +225,7 @@ export default function ProductPage({ params }) {
             <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:26,fontWeight:600,color:'var(--ink)',marginBottom:12}}>{brandProfile.name}</div>
             <p style={{fontSize:15,color:'var(--muted)',lineHeight:1.7,maxWidth:700,margin:'0 0 16px'}}>{brandProfile.blurb}</p>
             <Link href={`/directory?brand=${encodeURIComponent(product.brand)}`} style={{fontSize:13,color:'var(--terra)',fontWeight:600,textDecoration:'none'}}>
-              See all {sameBrand.length + 1} {product.brand} products →
+              See {product.brand} in the directory →
             </Link>
           </div>
         </div>
