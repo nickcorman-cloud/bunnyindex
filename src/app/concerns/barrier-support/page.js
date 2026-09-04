@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/concerns/barrier-support' },
   title: "Barrier Support, from brands that actually pass. \u2014 BunnyIndex",
-  description: "Barrier-support products from brands that meet the Bunny Index Standard. Not a damaged-barrier diagnosis.",
+  description: "Cruelty-free barrier support. Brands that meet the Bunny Index Standard — not a diagnosis.",
 };
 
 export default function HubPage() {
