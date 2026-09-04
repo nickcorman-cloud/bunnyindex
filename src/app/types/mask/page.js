@@ -5,7 +5,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/mask" },
   title: "Mask, from brands that actually pass. — BunnyIndex",
-  description: "Masks from brands that meet the Bunny Index Standard. Not a sheet-mask ranking.",
+  description: "Cruelty-free masks. Brands that meet the Bunny Index Standard — not a sheet-mask ranking.",
 };
 
 export default function HubPage() {
