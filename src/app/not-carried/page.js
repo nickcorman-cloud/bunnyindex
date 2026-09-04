@@ -53,8 +53,8 @@ const ALSO_NOT_CARRIED = [
   {
     name: 'Farmacy Beauty',
     year: 2021,
-    acquiredBy: 'Unilever',
-    reason: 'Rule 3 — Unilever is a testing parent.',
+    acquiredBy: 'Procter & Gamble',
+    reason: 'Rule 3 — Procter & Gamble is a testing parent.',
   },
   {
     name: 'First Aid Beauty',
