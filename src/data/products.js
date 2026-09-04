@@ -18565,7 +18565,8 @@ export const RAW_PRODUCTS = [
             "Peptides"
         ],
         "concerns": [
-            "Anti-Aging"
+            "Anti-Aging",
+            "Acne"
         ],
         "features": [
             "Fragrance-Free",
@@ -18879,7 +18880,8 @@ export const RAW_PRODUCTS = [
             "Peptides"
         ],
         "concerns": [
-            "Dry Skin"
+            "Dry Skin",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [],
@@ -19009,7 +19011,8 @@ export const RAW_PRODUCTS = [
             "Ceramides"
         ],
         "concerns": [
-            "Eczema"
+            "Eczema",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [
@@ -19047,7 +19050,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Barrier Support",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Dry Skin"
         ],
         "features": [],
         "skinTypes": [],
@@ -19289,7 +19293,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [],
         "skinTypes": [
             "All"
@@ -19452,7 +19458,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Sun Protection",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Non-Comedogenic"
@@ -19552,7 +19559,9 @@ export const RAW_PRODUCTS = [
             "Vitamin C",
             "Peptides"
         ],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -19583,7 +19592,9 @@ export const RAW_PRODUCTS = [
             "Peptides"
         ],
         "concerns": [
-            "Eczema"
+            "Eczema",
+            "Dry Skin",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [],
@@ -19757,7 +19768,8 @@ export const RAW_PRODUCTS = [
             "Peptides"
         ],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Dry Skin"
         ],
         "features": [],
         "skinTypes": [
@@ -20506,7 +20518,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/DIOIC_HERO_US.png?v=1755619509",
         "description": "WHAT YOU GET: A high-performance, daily anti-blemish serum that targets all 3 stages of breakouts in one step . F rom excess shine to active breakouts and post-blemish pigmentation – it works like 3 products in 1 bottle.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Acne",
             "Oily Skin"
@@ -20542,7 +20556,8 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Dry Skin",
             "Sensitive Skin",
-            "Eczema"
+            "Eczema",
+            "Barrier Support"
         ],
         "features": [],
         "skinTypes": [
@@ -20598,7 +20613,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0428/8498/9091/files/EXOSOME-GLOBALS_PACKSHOT.png?v=1741787806",
         "description": "Resurface, rejuvenate, and hydrate your skin with Exosome Hydro-Glow Complex. Powered by 3-million plant-derived Exosomes, this powerhouse collagen- boosting serum delivers clinic-worthy results without the price tag.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [],
         "skinTypes": [],
@@ -20696,7 +20713,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Barrier Support",
-            "Anti-Aging"
+            "Anti-Aging",
+            "Dry Skin"
         ],
         "features": [
             "Fragrance-Free"
@@ -20791,7 +20809,8 @@ export const RAW_PRODUCTS = [
         ],
         "concerns": [
             "Dry Skin",
-            "Oily Skin"
+            "Oily Skin",
+            "Barrier Support"
         ],
         "features": [
             "Oil-Free",
@@ -21352,7 +21371,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/fa_no_badge.jpg?v=1764906278",
         "description": "Dermatologist-approved serum for hyperpigmentation and dark spots! Ideal for: fading dark spots, evening out skin tone, preventing future pigmentation A powerful yet gentle discoloration correcting serum to help treat and prevent hyperpigmentation and stubborn dark spots, without the need for hydroquinone.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Hyperpigmentation",
             "Sensitive Skin",
@@ -21388,7 +21409,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/sheer_silk_carousel_1.jpg?v=1728357850",
         "description": "This luxurious cream cleanser combines gentle cleansing with high-performance moisturizing ingredients to pamper skin without stripping it. Powered by gentle coconut-derived cleansing agents, this hydrating cleanser thoroughly removes makeup, dirt, and sunscreen while leaving skin calm and balanced.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Barrier Support",
             "Sensitive Skin"
@@ -21424,7 +21447,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/plush_carousel_1.jpg?v=1728357699",
         "description": "An ultra lightweight, gentle moisturizer that locks in hydration for nourished skin without a heavy feel. We combined these powerful hydrators alongside anti-aging and calming ingredients like niacinamide, panthenol, algae extract, and aloe.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Barrier Support",
             "Sensitive Skin",
@@ -21461,7 +21486,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/super_smooth_carousel_1.jpg?v=1728357982",
         "description": "A gentle AHA & BHA blend for sensitive-skin friendly exfoliation, enhanced with peptide technology and skin-soothing ingredients for a smoother, radiant complexion.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Acne",
             "Hyperpigmentation",
@@ -21499,11 +21526,14 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/stargaze_carousel_1_8f2f2a6a-97e2-4488-8634-8a77f96ce91a.jpg?v=1770177426",
         "description": "Stargaze features a proprietary time-released 0.25% retinol system that gently disperses the anti-aging benefits over time for minimal irritation, making it ideal for those who are new to retinoids or with extra sensitive skin.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Hyperpigmentation",
             "Sensitive Skin",
-            "Anti-Aging"
+            "Anti-Aging",
+            "Acne"
         ],
         "features": [
             "Non-Comedogenic",
@@ -21535,7 +21565,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/ml_no_badge.jpg?v=1765582395",
         "description": "Winner -- The Best Retinol Serum in The Zoe Report's 2021 Beauty Awards Ideal for: fine lines and wrinkles, loss of skin firmness and elasticity, aging skin, and overall dullness Meet Moonlight Retinal Super Serum, a multifunctional night serum that’s 10x more effective than retinol.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Acne",
             "Dry Skin",
@@ -21761,7 +21793,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/eye_enhancer_carousel_1.jpg?v=1728357210",
         "description": "Revitalize the delicate skin around the eyes with our lightweight gel cream, designed to improve texture, tone, and radiance, so you can always look your freshest.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Sensitive Skin",
             "Anti-Aging"
@@ -21796,7 +21830,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/nr_no_badge.jpg?v=1765582395",
         "description": "Winner — Best Anti-Aging Cream in Prevention's 2024 Healthy Skin Awards Key Benefits: Improves skin texture, reduces dark spots, softens wrinkles, refines the look of pores Wake up to smooth, radiant skin after using this 2-in-1 glycolic acid treatment and hydrating night cream, best described as an “overnight facial.” Night Renewer uses 10% glycolic acid, an AHA exfoliant that improves skin texture, fades dark.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Hyperpigmentation",
             "Sensitive Skin",
@@ -21872,7 +21908,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/1919/1971/files/gm_no_badge.jpg?v=1767122615",
         "description": "Winner — the Strategist Beauty 100 Award The Glow Maker uses an expertly stabilized antioxidant blend of 15% l-ascorbic acid (the most effective form of vitamin C), vitamin E, and ferulic acid.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Hyperpigmentation",
             "Sensitive Skin",
@@ -21947,7 +21985,8 @@ export const RAW_PRODUCTS = [
             "Niacinamide"
         ],
         "concerns": [
-            "Brightening"
+            "Brightening",
+            "Acne"
         ],
         "features": [
             "Oil-Free"
@@ -22018,7 +22057,9 @@ export const RAW_PRODUCTS = [
             "Squalane",
             "Salicylic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -22050,7 +22091,9 @@ export const RAW_PRODUCTS = [
             "Vitamin C",
             "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -22431,7 +22474,9 @@ export const RAW_PRODUCTS = [
             "Hyaluronic Acid",
             "Vitamin C"
         ],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [],
         "skinTypes": [],
         "buyLinks": [
@@ -22888,7 +22933,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Lactic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Oil-Free",
             "Vegan"
@@ -22956,7 +23003,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0699/2786/2551/files/StressLess-new-front.jpg?v=1715589127",
         "description": "A light & silky gel formula with high amounts of Beta-Glucan from Oat and Madecassoside from Centella Asiatica to soothe and repair the skin. (30 ml) Skin type: all skin types, especially sensitive Skin concern: sensitivity, irritation, weakened barrier, dehydration Cruelty-free | Vegan | Fragrance & Essential oil free | Gluten-free | Malassezia-safe | Pregnancy-safe",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Oil-Free",
             "Vegan"
