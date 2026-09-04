@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/concerns/dry-skin' },
   title: "Dry Skin, from brands that actually pass. \u2014 BunnyIndex",
-  description: "Dry-skin products from brands that meet the Bunny Index Standard. Not a diagnosis.",
+  description: "Cruelty-free dry-skin products. Brands that meet the Bunny Index Standard — not a diagnosis.",
 };
 
 export default function HubPage() {
