@@ -41,6 +41,10 @@ const STATIC_PATHS = [
   '/types/sunscreen',
   '/types/cleanser',
   '/types/serum',
+  '/types/eye-cream',
+  '/types/mask',
+  '/types/toner',
+  '/types/face-oil',
 ];
 
 export default function sitemap() {
