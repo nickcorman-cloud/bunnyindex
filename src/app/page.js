@@ -5,6 +5,7 @@ import CatalogCard from '@/components/CatalogCard';
 import CatalogEmpty from '@/components/CatalogEmpty';
 import RuleStack from '@/components/RuleStack';
 import PageHeader from '@/components/PageHeader';
+import HubDoor from '@/components/HubDoor';
 
 export const metadata = {
   title: 'BunnyIndex — The Cruelty-Free Ingredient Directory',
@@ -95,6 +96,12 @@ export default function Home() {
               Who isn’t here →
             </Link>
           </p>
+        </div>
+      </section>
+
+      <section style={{ background: 'var(--cream)', padding: '8px 32px 0' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <HubDoor />
         </div>
       </section>
 

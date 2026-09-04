@@ -1539,13 +1539,12 @@ export const DETERMINATIONS = [
     directoryBrandParam: null,
     directoryIntro: null,
     directoryCta: null,
-    failLine: "Aesop fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
-    insteadIntro: "The job is botanical cleanser / face care — not a prestige review.",
+    failLine: "Aesop fails rule 3. [The Standard](/standard) · [Who isn’t here](/not-carried)",
+    insteadIntro: "Botanical cleanser and face care.",
     insteadLinks: [
       {
         href: "/directory",
-        label: "Browse the directory",
-        note: "live catalog, already filtered to brands that pass."
+        label: "Browse the directory"
       },
       {
         href: "/types/cleanser",
@@ -1594,13 +1593,12 @@ export const DETERMINATIONS = [
     directoryBrandParam: null,
     directoryIntro: null,
     directoryCta: null,
-    failLine: "Farmacy Beauty fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
-    insteadIntro: "The job is botanical actives — not a honey essay.",
+    failLine: "Farmacy Beauty fails rule 3. [The Standard](/standard) · [Who isn’t here](/not-carried)",
+    insteadIntro: "Botanical actives.",
     insteadLinks: [
       {
         href: "/directory",
-        label: "Browse the directory",
-        note: "live catalog, already filtered to brands that pass."
+        label: "Browse the directory"
       },
       {
         href: "/ingredients/vitamin-c",
@@ -1649,13 +1647,12 @@ export const DETERMINATIONS = [
     directoryBrandParam: null,
     directoryIntro: null,
     directoryCta: null,
-    failLine: "First Aid Beauty fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
-    insteadIntro: "The job is sensitive / barrier repair — not a dupe list.",
+    failLine: "First Aid Beauty fails rule 3. [The Standard](/standard) · [Who isn’t here](/not-carried)",
+    insteadIntro: "Sensitive and barrier repair.",
     insteadLinks: [
       {
         href: "/directory",
-        label: "Browse the directory",
-        note: "live catalog, already filtered to brands that pass."
+        label: "Browse the directory"
       },
       {
         href: "/concerns/barrier-support",
@@ -1704,13 +1701,12 @@ export const DETERMINATIONS = [
     directoryBrandParam: null,
     directoryIntro: null,
     directoryCta: null,
-    failLine: "Tatcha fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
-    insteadIntro: "The job is prestige moisturizer / rice ritual — not a travel-size review.",
+    failLine: "Tatcha fails rule 3. [The Standard](/standard) · [Who isn’t here](/not-carried)",
+    insteadIntro: "Moisturizer.",
     insteadLinks: [
       {
         href: "/directory",
-        label: "Browse the directory",
-        note: "live catalog, already filtered to brands that pass."
+        label: "Browse the directory"
       },
       {
         href: "/types/moisturizer",
@@ -1759,13 +1755,12 @@ export const DETERMINATIONS = [
     directoryBrandParam: null,
     directoryIntro: null,
     directoryCta: null,
-    failLine: "Youth to the People fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
-    insteadIntro: "The job is greens cleanser / daily serum — not a Superfood review.",
+    failLine: "Youth to the People fails rule 3. [The Standard](/standard) · [Who isn’t here](/not-carried)",
+    insteadIntro: "Cleanser and serum.",
     insteadLinks: [
       {
         href: "/directory",
-        label: "Browse the directory",
-        note: "live catalog, already filtered to brands that pass."
+        label: "Browse the directory"
       },
       {
         href: "/types/cleanser",

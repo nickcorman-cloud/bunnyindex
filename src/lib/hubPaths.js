@@ -35,6 +35,10 @@ export const TYPE_HUBS = {
   Sunscreen: '/types/sunscreen',
   Cleanser: '/types/cleanser',
   Serum: '/types/serum',
+  'Eye Cream': '/types/eye-cream',
+  Mask: '/types/mask',
+  Toner: '/types/toner',
+  'Face Oil': '/types/face-oil',
 };
 
 export function ingredientHref(tag) {
