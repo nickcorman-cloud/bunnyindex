@@ -5,7 +5,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/face-oil" },
   title: "Face Oil, from brands that actually pass. — BunnyIndex",
-  description: "Face Oils from brands that meet the Bunny Index Standard. Not an oil ranking.",
+  description: "Cruelty-free face oil. Brands that meet the Bunny Index Standard — not an oil ranking.",
 };
 
 export default function HubPage() {
