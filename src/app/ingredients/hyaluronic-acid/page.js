@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/hyaluronic-acid' },
   title: "Hyaluronic Acid, from brands that actually pass. \u2014 BunnyIndex",
-  description: "Hyaluronic acid from brands that meet the Bunny Index Standard. Not a hydration routine.",
+  description: "Cruelty-free hyaluronic acid. Brands that meet the Bunny Index Standard — not a hydration routine.",
 };
 
 export default function HubPage() {

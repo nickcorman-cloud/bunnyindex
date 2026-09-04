@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/azelaic-acid' },
   title: "Azelaic Acid, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Azelaic acid from brands that meet the Bunny Index Standard. Not a diagnosis.',
+  description: "Cruelty-free azelaic acid. Brands that meet the Bunny Index Standard — not a diagnosis.",
 };
 
 export default function HubPage() {

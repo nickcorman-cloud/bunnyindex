@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/peptides' },
   title: "Peptides, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Peptides from brands that meet the Bunny Index Standard. Not a collagen promise.',
+  description: "Cruelty-free peptides. Brands that meet the Bunny Index Standard — not a collagen promise.",
 };
 
 export default function HubPage() {

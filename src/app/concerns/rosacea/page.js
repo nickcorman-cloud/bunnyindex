@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/concerns/rosacea' },
   title: "Rosacea, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Rosacea-tagged products from brands that meet the Bunny Index Standard. Not a diagnosis.',
+  description: "Cruelty-free rosacea products. Brands that meet the Bunny Index Standard — not a diagnosis.",
 };
 
 export default function HubPage() {

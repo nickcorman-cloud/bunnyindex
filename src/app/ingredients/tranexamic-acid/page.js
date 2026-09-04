@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/tranexamic-acid' },
   title: "Tranexamic Acid, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Tranexamic acid from brands that meet the Bunny Index Standard. Not a brightening ranking.',
+  description: "Cruelty-free tranexamic acid. Brands that meet the Bunny Index Standard — not a brightening ranking.",
 };
 
 export default function HubPage() {

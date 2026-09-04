@@ -5,6 +5,7 @@ import PageHeader from '@/components/PageHeader';
 export const metadata = {
   title: 'Not carried — BunnyIndex',
   description: 'The other half of the directory. Brands that failed one of the three rules, and why they are not listed.',
+  alternates: { canonical: 'https://www.bunnyindex.com/not-carried' },
 };
 
 const ALSO_NOT_CARRIED = [

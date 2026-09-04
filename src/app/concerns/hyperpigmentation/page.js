@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/concerns/hyperpigmentation' },
   title: "Hyperpigmentation, from brands that actually pass. \u2014 BunnyIndex",
-  description: "Hyperpigmentation products from brands that meet the Bunny Index Standard. Not a brightening ranking.",
+  description: "Cruelty-free hyperpigmentation products. Brands that meet the Bunny Index Standard — not a brightening ranking.",
 };
 
 export default function HubPage() {

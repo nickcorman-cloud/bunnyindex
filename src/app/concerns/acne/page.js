@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/concerns/acne' },
   title: "Acne, from brands that actually pass. \u2014 BunnyIndex",
-  description: "Acne products from brands that meet the Bunny Index Standard. Not a treatment plan.",
+  description: "Cruelty-free acne products. Brands that meet the Bunny Index Standard — not a treatment plan.",
 };
 
 export default function HubPage() {

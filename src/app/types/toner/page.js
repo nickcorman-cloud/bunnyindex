@@ -5,7 +5,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/toner" },
   title: "Toner, from brands that actually pass. — BunnyIndex",
-  description: "Toners from brands that meet the Bunny Index Standard. Not a pH or essence ranking.",
+  description: "Cruelty-free toners. Brands that meet the Bunny Index Standard — not a pH or essence ranking.",
 };
 
 export default function HubPage() {

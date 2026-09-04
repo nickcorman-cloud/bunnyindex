@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/types/sunscreen' },
   title: "Sunscreen, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Sunscreens from brands that meet the Bunny Index Standard. Not a mineral-vs-chemical ranking.',
+  description: "Cruelty-free sunscreens. Brands that meet the Bunny Index Standard — not a mineral-vs-chemical ranking.",
 };
 
 export default function HubPage() {

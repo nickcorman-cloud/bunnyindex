@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/types/moisturizer' },
   title: "Moisturizer, from brands that actually pass. \u2014 BunnyIndex",
-  description: 'Moisturizers from brands that meet the Bunny Index Standard. Not a hydration ranking.',
+  description: "Cruelty-free moisturizers. Brands that meet the Bunny Index Standard — not a hydration ranking.",
 };
 
 export default function HubPage() {

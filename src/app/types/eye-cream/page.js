@@ -5,7 +5,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/eye-cream" },
   title: "Eye Cream, from brands that actually pass. — BunnyIndex",
-  description: "Eye Creams from brands that meet the Bunny Index Standard. Not an under-eye ranking.",
+  description: "Cruelty-free eye cream. Brands that meet the Bunny Index Standard — not an under-eye ranking.",
 };
 
 export default function HubPage() {

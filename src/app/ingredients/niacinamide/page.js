@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/niacinamide' },
   title: "Niacinamide, from brands that actually pass. — BunnyIndex",
-  description: "Vitamin B3, from brands that meet all three rules — not from a label that stops at the bottle.",
+  description: "Cruelty-free niacinamide. Brands that meet all three rules — not a label that stops at the bottle.",
 };
 
 export default function NiacinamidePage() {

@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../_shared';
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/spf' },
   title: "SPF, from brands that actually pass. \u2014 BunnyIndex",
-  description: "SPF products from brands that meet the Bunny Index Standard. Not a mineral-vs-chemical ranking.",
+  description: "Cruelty-free SPF. Brands that meet the Bunny Index Standard — not a mineral-vs-chemical ranking.",
 };
 
 export default function HubPage() {
