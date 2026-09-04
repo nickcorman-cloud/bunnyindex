@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import DirectoryClient from './DirectoryClient';
-import { products } from '@/lib/constants';
 import HubDoor from '@/components/HubDoor';
+import { products } from '@/lib/constants';
 
 export async function generateMetadata() {
   const n = products.length;
@@ -15,6 +15,7 @@ export async function generateMetadata() {
   };
 }
 
+/** Pass A2 — SSR HubDoor above filters. Do not edit DirectoryClient. */
 export default function DirectoryPage() {
   return (
     <>
@@ -25,24 +26,9 @@ export default function DirectoryPage() {
           </h1>
         </div>
       </div>
-      <p
-        style={{
-          fontFamily: "'DM Sans',sans-serif",
-          fontSize: 14,
-          color: 'var(--muted)',
-          lineHeight: 1.6,
-          maxWidth: 720,
-          margin: '0 auto',
-          padding: '0 32px 16px',
-        }}
-      >
-        Products that meet the Bunny Index Standard. Filter by niacinamide, hyaluronic acid, retinol, vitamin C, and brand.
-      </p>
-      <section style={{ background: 'var(--cream)', padding: '16px 32px 8px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <HubDoor />
-        </div>
-      </section>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 32px 8px' }}>
+        <HubDoor />
+      </div>
       <Suspense fallback={<div style={{ padding: 64, textAlign: 'center', color: 'var(--muted)' }}>Loading directory...</div>}>
         <DirectoryClient />
       </Suspense>
