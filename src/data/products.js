@@ -18468,6 +18468,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.dieuxskin.com/products/ethereal-facial-cleansing-oil"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0G3BLJMV8?tag=bunnyindex-20"
             }
         ]
     },
@@ -18502,6 +18506,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.dieuxskin.com/products/baptism-fragranced"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DP1JCP6S?tag=bunnyindex-20"
             }
         ]
     },
@@ -18538,6 +18546,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.dieuxskin.com/products/baptism-fragrance-free"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DP18NTVB?tag=bunnyindex-20"
             }
         ]
     },
@@ -18614,6 +18626,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.dieuxskin.com/products/auracle"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DP17ZKGX?tag=bunnyindex-20"
             }
         ]
     },
@@ -18755,6 +18771,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/clean-landing"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0H2FLYC5N?tag=bunnyindex-20"
             }
         ]
     },
@@ -18819,6 +18839,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/knock-out"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CQ7MQ3GS?tag=bunnyindex-20"
             }
         ]
     },
@@ -18853,6 +18877,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/sunrise-mineral-sunscreen-stick-spf40"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0H2FM6Q9G?tag=bunnyindex-20"
             }
         ]
     },
@@ -18889,6 +18917,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/soft-swerve"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GGLLFGXL?tag=bunnyindex-20"
             }
         ]
     },
@@ -18923,6 +18955,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/secret-agent"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GGLT8NTV?tag=bunnyindex-20"
             }
         ]
     },
@@ -18987,6 +19023,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/all-clear"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FPMH1W4H?tag=bunnyindex-20"
             }
         ]
     },
@@ -19023,6 +19063,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/cosmic-silk"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FN221JNN?tag=bunnyindex-20"
             }
         ]
     },
@@ -19059,6 +19103,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/power-wave"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0F6M3FHP4?tag=bunnyindex-20"
             }
         ]
     },
@@ -19096,6 +19144,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/star-dew"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0F8W37RW7?tag=bunnyindex-20"
             }
         ]
     },
@@ -19129,6 +19181,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/magic-melt"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DB2CPMPN?tag=bunnyindex-20"
             }
         ]
     },
@@ -19198,6 +19254,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/first-class"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DFN1R9SG?tag=bunnyindex-20"
             }
         ]
     },
@@ -19234,6 +19294,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/water-slide"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CYHH7C8D?tag=bunnyindex-20"
             }
         ]
     },
@@ -19271,6 +19335,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/moon-walk"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CYHJ3XR9?tag=bunnyindex-20"
             }
         ]
     },
@@ -19304,6 +19372,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/bounce-back-spray-toner"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSYX57T2?tag=bunnyindex-20"
             }
         ]
     },
@@ -19340,6 +19412,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/day-dream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSYX9DFG?tag=bunnyindex-20"
             }
         ]
     },
@@ -19371,6 +19447,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/come-clean-clay-mask"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSYPD4NV?tag=bunnyindex-20"
             }
         ]
     },
@@ -19405,6 +19485,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/morning-rays"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CY9XZ3RV?tag=bunnyindex-20"
             }
         ]
     },
@@ -19471,6 +19555,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/solar-mate"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D3ZDB583?tag=bunnyindex-20"
             }
         ]
     },
@@ -19506,6 +19594,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/over-night"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D3ZFXHSL?tag=bunnyindex-20"
             }
         ]
     },
@@ -19535,6 +19627,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/float-on-oil"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSYRGCRT?tag=bunnyindex-20"
             }
         ]
     },
@@ -19568,6 +19664,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/fresh-start-gel-cleanser-1"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSYNNP86?tag=bunnyindex-20"
             }
         ]
     },
@@ -19637,6 +19737,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://hellobubble.com/products/level-up-balancing-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSYJYQY2?tag=bunnyindex-20"
             }
         ]
     },
@@ -19671,6 +19775,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/total-clarity-dark-spot-serum-vitamin-c-alternative"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GD844FZP?tag=bunnyindex-20"
             }
         ]
     },
@@ -19711,6 +19819,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/hydrasheer-mineral-sunscreen-spf-30"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D4NFS7XP?tag=bunnyindex-20"
             }
         ]
     },
@@ -19744,6 +19856,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/cool-cream-smoothing-mask-with-electric-daisy"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DCWBYWK2?tag=bunnyindex-20"
             }
         ]
     },
@@ -19779,6 +19895,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/botanical-barrier-rescue-balm"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CVD7GLQ7?tag=bunnyindex-20"
             }
         ]
     },
@@ -19817,6 +19937,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/purifying-blue-clay-mask"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CVD2HPX1?tag=bunnyindex-20"
             }
         ]
     },
@@ -19849,6 +19973,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/ultralight-moisture-boosting-oil"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CBT1CM55?tag=bunnyindex-20"
             }
         ]
     },
@@ -19876,6 +20004,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/exfoliating-caffeine-micro-polish"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CBSZL97X?tag=bunnyindex-20"
             }
         ]
     },
@@ -19910,6 +20042,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/smoothing-vitamin-c-eye-expression-lines-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CBT2R864?tag=bunnyindex-20"
             }
         ]
     },
@@ -19950,6 +20086,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/restorative-niacinamide-night-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BNNN3FN5?tag=bunnyindex-20"
             }
         ]
     },
@@ -19987,6 +20127,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BNNLDVP1?tag=bunnyindex-20"
             }
         ]
     },
@@ -20026,6 +20170,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/firming-vegan-collagen-prep-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BNNN4XKG?tag=bunnyindex-20"
             }
         ]
     },
@@ -20060,6 +20208,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BNNMZDK9?tag=bunnyindex-20"
             }
         ]
     },
@@ -20087,6 +20239,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/glazing-mist"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0HFD6M3W5?tag=bunnyindex-20"
             }
         ]
     },
@@ -20119,6 +20275,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/glazing-milk"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CGMD4JDM?tag=bunnyindex-20"
             }
         ]
     },
@@ -20179,6 +20339,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/peptide-eye-prep-rhode-logo"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FXPGTJWR?tag=bunnyindex-20"
             }
         ]
     },
@@ -20212,6 +20376,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/barrier-butter"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GM14Q5ZD?tag=bunnyindex-20"
             }
         ]
     },
@@ -20241,6 +20409,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/pineapple-refresh-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GTHWKPYK?tag=bunnyindex-20"
             }
         ]
     },
@@ -20275,6 +20447,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/peptide-glazing-fluid"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D5KC6LYS?tag=bunnyindex-20"
             }
         ]
     },
@@ -20311,6 +20487,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.rhodeskin.com/products/barrier-restore-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0G5KGGFR1?tag=bunnyindex-20"
             }
         ]
     },
@@ -20342,6 +20522,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/bio-active-ceramide-eye-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0HB4K25NL?tag=bunnyindex-20"
             }
         ]
     },
@@ -20375,6 +20559,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/oat-cleansing-balm-150ml"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0H1MW47YJ?tag=bunnyindex-20"
             }
         ]
     },
@@ -20405,6 +20593,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/advanced-retinal"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0G7KX2NZN?tag=bunnyindex-20"
             }
         ]
     },
@@ -20441,6 +20633,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/starter-retinol"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0G66Y9HZ4?tag=bunnyindex-20"
             }
         ]
     },
@@ -20594,6 +20790,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/hydro-surge-dewy-face-mist"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FBHM6VLY?tag=bunnyindex-20"
             }
         ]
     },
@@ -20623,6 +20823,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/exosome-hydro-glow-complex"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0F195J88Z?tag=bunnyindex-20"
             }
         ]
     },
@@ -20659,6 +20863,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/ectoin-hydro-barrier-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DQLJQ5DV?tag=bunnyindex-20"
             }
         ]
     },
@@ -20689,6 +20897,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/hydrocolloid-invisible-pimple-patches"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D45V99ML?tag=bunnyindex-20"
             }
         ]
     },
@@ -20724,6 +20936,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/bio-active-ceramide-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CNTKZN7F?tag=bunnyindex-20"
             }
         ]
     },
@@ -20755,6 +20971,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/dry-and-rough-skin-solution"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BJ4MY6HL?tag=bunnyindex-20"
             }
         ]
     },
@@ -20785,6 +21005,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/redness-relief-solution"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BJ7JKRWY?tag=bunnyindex-20"
             }
         ]
     },
@@ -20823,6 +21047,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/omega-water-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09TZDXTRT?tag=bunnyindex-20"
             }
         ]
     },
@@ -20856,6 +21084,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/salicylic-acid-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B07X4G39YM?tag=bunnyindex-20"
             }
         ]
     },
@@ -20886,6 +21118,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/fulvic-acid-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09235WDY6?tag=bunnyindex-20"
             }
         ]
     },
@@ -20916,6 +21152,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/succinic-acid"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08SR359H3?tag=bunnyindex-20"
             }
         ]
     },
@@ -20980,6 +21220,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/niacinamide-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09N9Z7NBS?tag=bunnyindex-20"
             }
         ]
     },
@@ -21012,6 +21256,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/retinol-eye-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CBT1K3L6?tag=bunnyindex-20"
             }
         ]
     },
@@ -21044,6 +21292,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/peptide-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09MRGXSHL?tag=bunnyindex-20"
             }
         ]
     },
@@ -21075,6 +21327,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/glycolic-acid-toner"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B07GLHC5J9?tag=bunnyindex-20"
             }
         ]
     },
@@ -21170,6 +21426,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/pha-toner"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09NB35HJB?tag=bunnyindex-20"
             }
         ]
     },
@@ -21202,6 +21462,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/15-vitamin-c-egf-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09N9XS8DF?tag=bunnyindex-20"
             }
         ]
     },
@@ -21235,6 +21499,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/vitamin-b-c-e-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0C2JNQ679?tag=bunnyindex-20"
             }
         ]
     },
@@ -21273,6 +21541,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://www.theinkeylist.com/products/hyaluronic-acid-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09N9XS8DN?tag=bunnyindex-20"
             }
         ]
     },
@@ -21352,6 +21624,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/peptide-squad-collagen-renewal-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DCZTW7PF?tag=bunnyindex-20"
             }
         ]
     },
@@ -21390,6 +21666,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/fade-away-brightening-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0G61FKB7S?tag=bunnyindex-20"
             }
         ]
     },
@@ -21467,6 +21747,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/plush-cream-featherweight-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CWMV7WM5?tag=bunnyindex-20"
             }
         ]
     },
@@ -21546,6 +21830,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/stargaze-retinol-hyaluronic-night-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D45F481M?tag=bunnyindex-20"
             }
         ]
     },
@@ -21586,6 +21874,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/moonlight-retinaldehyde-retinal-night-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CZL757BC?tag=bunnyindex-20"
             }
         ]
     },
@@ -21660,6 +21952,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/hydrator-hyaluronic-acid-b5-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CVS9HDKM?tag=bunnyindex-20"
             }
         ]
     },
@@ -21736,6 +22032,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/nia-10-calming-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D45D1N7B?tag=bunnyindex-20"
             }
         ]
     },
@@ -21850,6 +22150,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/night-renewer-glycolic-acid-night-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CVZ65LG4?tag=bunnyindex-20"
             }
         ]
     },
@@ -21928,6 +22232,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://maelove.com/products/glow-maker-vitamin-c-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CWN226NC?tag=bunnyindex-20"
             }
         ]
     },
@@ -21996,6 +22304,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/brightening-gel-moisturizer"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FP3PTGTM?tag=bunnyindex-20"
             }
         ]
     },
@@ -22033,6 +22345,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/aha-bha-milk-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FP384C4Z?tag=bunnyindex-20"
             }
         ]
     },
@@ -22066,6 +22382,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/blemish-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BSLSNSPW?tag=bunnyindex-20"
             }
         ]
     },
@@ -22100,6 +22420,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/ultra-rich-barrier-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DSY9XHC5?tag=bunnyindex-20"
             }
         ]
     },
@@ -22134,6 +22458,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/luminizing-facial-spf"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09RHYB72J?tag=bunnyindex-20"
             }
         ]
     },
@@ -22168,6 +22496,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/hydrating-facial-spf"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09C2W5TZJ?tag=bunnyindex-20"
             }
         ]
     },
@@ -22202,6 +22534,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/daily-protective-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09RHYZMMJ?tag=bunnyindex-20"
             }
         ]
     },
@@ -22232,6 +22568,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/jelly-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09BGGSYMC?tag=bunnyindex-20"
             }
         ]
     },
@@ -22266,6 +22606,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/corrective-peptide-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0B994Q4MS?tag=bunnyindex-20"
             }
         ]
     },
@@ -22298,6 +22642,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/microdermabrasion-facial"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08P4N7ZYK?tag=bunnyindex-20"
             }
         ]
     },
@@ -22332,6 +22680,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/triple-c-night-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0848L7KHV?tag=bunnyindex-20"
             }
         ]
     },
@@ -22363,6 +22715,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/cleansing-oil"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B07NR78FVQ?tag=bunnyindex-20"
             }
         ]
     },
@@ -22394,6 +22750,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/hydrating-nutrient-mist"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B071W28X5N?tag=bunnyindex-20"
             }
         ]
     },
@@ -22421,6 +22781,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/antioxidant-facial-oil"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B00CQBOJRQ?tag=bunnyindex-20"
             }
         ]
     },
@@ -22451,6 +22815,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/face-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B00B7V273E?tag=bunnyindex-20"
             }
         ]
     },
@@ -22483,6 +22851,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/vitamin-c-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B005IXQLDE?tag=bunnyindex-20"
             }
         ]
     },
@@ -22512,6 +22884,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/cream-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B00CZETY06?tag=bunnyindex-20"
             }
         ]
     },
@@ -22546,6 +22922,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/eye-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B00CQ7R8N2?tag=bunnyindex-20"
             }
         ]
     },
@@ -22581,6 +22961,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://madhippie.com/products/vitamin-a-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B00S8Q2O2A?tag=bunnyindex-20"
             }
         ]
     },
@@ -22654,6 +23038,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/power-peptides"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0D2Y8C74H?tag=bunnyindex-20"
             }
         ]
     },
@@ -22687,6 +23075,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/mighty-melt"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BY9JDW36?tag=bunnyindex-20"
             }
         ]
     },
@@ -22726,6 +23118,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/smooth-out"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09HZCT987?tag=bunnyindex-20"
             }
         ]
     },
@@ -22764,6 +23160,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/cheer-up"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08TSZ73Y1?tag=bunnyindex-20"
             }
         ]
     },
@@ -22801,6 +23201,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/ha5-light"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08NW2TMKF?tag=bunnyindex-20"
             }
         ]
     },
@@ -22838,6 +23242,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/gg-101-apad"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08NV6P58J?tag=bunnyindex-20"
             }
         ]
     },
@@ -22874,6 +23282,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/c-glow"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08NVZ4T3B?tag=bunnyindex-20"
             }
         ]
     },
@@ -22911,6 +23323,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/b-bomb"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B08NW4189G?tag=bunnyindex-20"
             }
         ]
     },
@@ -22948,6 +23364,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/liquid-hydration"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09HG9HV71?tag=bunnyindex-20"
             }
         ]
     },
@@ -22983,6 +23403,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/jelly-joker"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09H6NKF9R?tag=bunnyindex-20"
             }
         ]
     },
@@ -23017,6 +23441,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/stress-less"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09JZ3HPMK?tag=bunnyindex-20"
             }
         ]
     },
@@ -23055,6 +23483,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/porefectly-clear"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09JYP33GV?tag=bunnyindex-20"
             }
         ]
     },
@@ -23092,6 +23524,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://geekandgorgeous.us/products/happier-barrier"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BRKXMZ97?tag=bunnyindex-20"
             }
         ]
     },
@@ -23124,6 +23560,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/hypochlorous-daily-mist"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0H4HS4J8V?tag=bunnyindex-20"
             }
         ]
     },
@@ -23155,6 +23595,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/balancing-soft-foam-clay-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GD87HKYW?tag=bunnyindex-20"
             }
         ]
     },
@@ -23184,6 +23628,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/lipid-hyaluronate-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BGG6YQWB?tag=bunnyindex-20"
             }
         ]
     },
@@ -23221,6 +23669,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/ceramide-prime-whipped-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0GD8JTFJW?tag=bunnyindex-20"
             }
         ]
     },
@@ -23258,6 +23710,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/vitamin-c-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DVHYNBJF?tag=bunnyindex-20"
             }
         ]
     },
@@ -23293,6 +23749,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/barrier-balancing-water-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DVJ32V2Q?tag=bunnyindex-20"
             }
         ]
     },
@@ -23328,6 +23788,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/barrier-exo-ectoin-baume"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DVJ7LLY6?tag=bunnyindex-20"
             }
         ]
     },
@@ -23363,6 +23827,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/eczema-pre-biotic-face-body-foaming-oil-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0FQK4P8QK?tag=bunnyindex-20"
             }
         ]
     },
@@ -23398,6 +23866,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/aha-bha-niacinamide-exfoliating-pads"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09JZY5YYY?tag=bunnyindex-20"
             }
         ]
     },
@@ -23431,6 +23903,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/barrier-ectoin-ceramide-gentle-gel-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0DVHTG6FL?tag=bunnyindex-20"
             }
         ]
     },
@@ -23501,6 +23977,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/acne-adapinoid-gel"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CFWM5FQG?tag=bunnyindex-20"
             }
         ]
     },
@@ -23535,6 +24015,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/triple-lipid-eye-treatment"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0CBSYYYDD?tag=bunnyindex-20"
             }
         ]
     },
@@ -23570,6 +24054,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/barrier-niacinamide-serum"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0BW14DMYC?tag=bunnyindex-20"
             }
         ]
     },
@@ -23607,6 +24095,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/restoring-gel-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09YQ2S2T7?tag=bunnyindex-20"
             }
         ]
     },
@@ -23641,6 +24133,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/acne-bha-spot-treatment"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09S3CC2JY?tag=bunnyindex-20"
             }
         ]
     },
@@ -23676,6 +24172,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/acne-bha-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B09S38CVSN?tag=bunnyindex-20"
             }
         ]
     },
@@ -23707,6 +24207,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/foaming-oil-cleanser"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0935CD4P6?tag=bunnyindex-20"
             }
         ]
     },
@@ -23741,6 +24245,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/lipid-peptide-cream"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0935MHZ1K?tag=bunnyindex-20"
             }
         ]
     },
@@ -23772,6 +24280,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://skinfix.com/products/lipid-boost-360-eye"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0935PJSZX?tag=bunnyindex-20"
             }
         ]
     }
