@@ -1520,8 +1520,282 @@ export const DETERMINATIONS = [
         a: "[Skinfix in the directory](/directory?brand=Skinfix). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
       }
     ]
+  },
+  {
+    slug: "aesop",
+    brand: "Aesop",
+    determination: "no",
+    parentName: "L’Oréal",
+    title: "Is Aesop cruelty-free? — BunnyIndex",
+    description: "No — not by this standard. Aesop is not in the directory.",
+    eyebrow: "Not carried",
+    h1: "Is Aesop cruelty-free?",
+    answerLead: "No — not by this standard.",
+    answerRest: "Aesop is not in the directory.",
+    lede: [
+      "Aesop is owned by L’Oréal. A testing parent is a fail under rule 3. We are not grading the formula."
+    ],
+    rulesAfter: null,
+    directoryBrandParam: null,
+    directoryIntro: null,
+    directoryCta: null,
+    failLine: "Aesop fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
+    insteadIntro: "The job is botanical cleanser / face care — not a prestige review.",
+    insteadLinks: [
+      {
+        href: "/directory",
+        label: "Browse the directory",
+        note: "live catalog, already filtered to brands that pass."
+      },
+      {
+        href: "/types/cleanser",
+        label: "Cleanser, from brands that actually pass"
+      },
+      {
+        href: "/directory?brand=Glossier",
+        label: "Glossier in the directory",
+        note: "Brand Standard PASS."
+      },
+      {
+        href: "/concerns/sensitive-skin",
+        label: "Sensitive Skin, from brands that actually pass"
+      }
+    ],
+    faqs: [
+      {
+        q: "They say they’re cruelty-free.",
+        a: "The carton is not the company. Rule 3 is the controlling parent. [The label](/the-label)."
+      },
+      {
+        q: "Is this about quality?",
+        a: "No. [Who isn’t here](/not-carried) is a line we draw, not a review."
+      },
+      {
+        q: "Where do I go?",
+        a: "[The directory](/directory). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "farmacy-beauty",
+    brand: "Farmacy Beauty",
+    determination: "no",
+    parentName: "Procter & Gamble",
+    title: "Is Farmacy Beauty cruelty-free? — BunnyIndex",
+    description: "No — not by this standard. Farmacy Beauty is not in the directory.",
+    eyebrow: "Not carried",
+    h1: "Is Farmacy Beauty cruelty-free?",
+    answerLead: "No — not by this standard.",
+    answerRest: "Farmacy Beauty is not in the directory.",
+    lede: [
+      "Farmacy Beauty is owned by Procter & Gamble. A testing parent is a fail under rule 3. We are not grading the formula."
+    ],
+    rulesAfter: null,
+    directoryBrandParam: null,
+    directoryIntro: null,
+    directoryCta: null,
+    failLine: "Farmacy Beauty fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
+    insteadIntro: "The job is botanical actives — not a honey essay.",
+    insteadLinks: [
+      {
+        href: "/directory",
+        label: "Browse the directory",
+        note: "live catalog, already filtered to brands that pass."
+      },
+      {
+        href: "/ingredients/vitamin-c",
+        label: "Vitamin C, from brands that actually pass"
+      },
+      {
+        href: "/ingredients/niacinamide",
+        label: "Niacinamide, from brands that actually pass"
+      },
+      {
+        href: "/directory?brand=Glow Recipe",
+        label: "Glow Recipe in the directory",
+        note: "Brand Standard PASS."
+      }
+    ],
+    faqs: [
+      {
+        q: "They say they’re cruelty-free.",
+        a: "The carton is not the company. Rule 3 is the controlling parent. [The label](/the-label)."
+      },
+      {
+        q: "Is this about quality?",
+        a: "No. [Who isn’t here](/not-carried) is a line we draw, not a review."
+      },
+      {
+        q: "Where do I go?",
+        a: "[The directory](/directory). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "first-aid-beauty",
+    brand: "First Aid Beauty",
+    determination: "no",
+    parentName: "Procter & Gamble",
+    title: "Is First Aid Beauty cruelty-free? — BunnyIndex",
+    description: "No — not by this standard. First Aid Beauty is not in the directory.",
+    eyebrow: "Not carried",
+    h1: "Is First Aid Beauty cruelty-free?",
+    answerLead: "No — not by this standard.",
+    answerRest: "First Aid Beauty is not in the directory.",
+    lede: [
+      "First Aid Beauty is owned by Procter & Gamble. A testing parent is a fail under rule 3. We are not grading the formula."
+    ],
+    rulesAfter: null,
+    directoryBrandParam: null,
+    directoryIntro: null,
+    directoryCta: null,
+    failLine: "First Aid Beauty fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
+    insteadIntro: "The job is sensitive / barrier repair — not a dupe list.",
+    insteadLinks: [
+      {
+        href: "/directory",
+        label: "Browse the directory",
+        note: "live catalog, already filtered to brands that pass."
+      },
+      {
+        href: "/concerns/barrier-support",
+        label: "Barrier Support, from brands that actually pass"
+      },
+      {
+        href: "/concerns/sensitive-skin",
+        label: "Sensitive Skin, from brands that actually pass"
+      },
+      {
+        href: "/directory?brand=Cocokind",
+        label: "Cocokind in the directory",
+        note: "Brand Standard PASS."
+      }
+    ],
+    faqs: [
+      {
+        q: "They say they’re cruelty-free.",
+        a: "The carton is not the company. Rule 3 is the controlling parent. [The label](/the-label)."
+      },
+      {
+        q: "Is this about quality?",
+        a: "No. [Who isn’t here](/not-carried) is a line we draw, not a review."
+      },
+      {
+        q: "Where do I go?",
+        a: "[The directory](/directory). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "tatcha",
+    brand: "Tatcha",
+    determination: "no",
+    parentName: "Unilever",
+    title: "Is Tatcha cruelty-free? — BunnyIndex",
+    description: "No — not by this standard. Tatcha is not in the directory.",
+    eyebrow: "Not carried",
+    h1: "Is Tatcha cruelty-free?",
+    answerLead: "No — not by this standard.",
+    answerRest: "Tatcha is not in the directory.",
+    lede: [
+      "Tatcha is owned by Unilever. A testing parent is a fail under rule 3. We are not grading the formula."
+    ],
+    rulesAfter: null,
+    directoryBrandParam: null,
+    directoryIntro: null,
+    directoryCta: null,
+    failLine: "Tatcha fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
+    insteadIntro: "The job is prestige moisturizer / rice ritual — not a travel-size review.",
+    insteadLinks: [
+      {
+        href: "/directory",
+        label: "Browse the directory",
+        note: "live catalog, already filtered to brands that pass."
+      },
+      {
+        href: "/types/moisturizer",
+        label: "Moisturizer, from brands that actually pass"
+      },
+      {
+        href: "/ingredients/hyaluronic-acid",
+        label: "Hyaluronic Acid, from brands that actually pass"
+      },
+      {
+        href: "/directory?brand=Glossier",
+        label: "Glossier in the directory",
+        note: "Brand Standard PASS."
+      }
+    ],
+    faqs: [
+      {
+        q: "They say they’re cruelty-free.",
+        a: "The carton is not the company. Rule 3 is the controlling parent. [The label](/the-label)."
+      },
+      {
+        q: "Is this about quality?",
+        a: "No. [Who isn’t here](/not-carried) is a line we draw, not a review."
+      },
+      {
+        q: "Where do I go?",
+        a: "[The directory](/directory). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "youth-to-the-people",
+    brand: "Youth to the People",
+    determination: "no",
+    parentName: "L’Oréal",
+    title: "Is Youth to the People cruelty-free? — BunnyIndex",
+    description: "No — not by this standard. Youth to the People is not in the directory.",
+    eyebrow: "Not carried",
+    h1: "Is Youth to the People cruelty-free?",
+    answerLead: "No — not by this standard.",
+    answerRest: "Youth to the People is not in the directory.",
+    lede: [
+      "Youth to the People is owned by L’Oréal. A testing parent is a fail under rule 3. We are not grading the formula."
+    ],
+    rulesAfter: null,
+    directoryBrandParam: null,
+    directoryIntro: null,
+    directoryCta: null,
+    failLine: "Youth to the People fails rule 3. The full bar: [The Standard](/standard). The list: [Who isn’t here](/not-carried).",
+    insteadIntro: "The job is greens cleanser / daily serum — not a Superfood review.",
+    insteadLinks: [
+      {
+        href: "/directory",
+        label: "Browse the directory",
+        note: "live catalog, already filtered to brands that pass."
+      },
+      {
+        href: "/types/cleanser",
+        label: "Cleanser, from brands that actually pass"
+      },
+      {
+        href: "/types/serum",
+        label: "Serum, from brands that actually pass"
+      },
+      {
+        href: "/directory?brand=Bubble",
+        label: "Bubble in the directory",
+        note: "Brand Standard PASS."
+      }
+    ],
+    faqs: [
+      {
+        q: "They say they’re cruelty-free.",
+        a: "The carton is not the company. Rule 3 is the controlling parent. [The label](/the-label)."
+      },
+      {
+        q: "Is this about quality?",
+        a: "No. [Who isn’t here](/not-carried) is a line we draw, not a review."
+      },
+      {
+        q: "Where do I go?",
+        a: "[The directory](/directory). The rules: [The Standard](/standard)."
+      }
+    ]
   }
-
 ];
 
 export function getDetermination(slug) {
@@ -1575,7 +1849,12 @@ export const WAVE1_SLUGS = [
   'maelove',
   'mad-hippie',
   'geek-gorgeous',
-  'skinfix'
+  'skinfix',
+  'aesop',
+  'farmacy-beauty',
+  'first-aid-beauty',
+  'tatcha',
+  'youth-to-the-people'
 ];
 
 export const YES_BRAND_PATHS = Object.fromEntries(
