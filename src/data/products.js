@@ -8152,7 +8152,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Retinol",
             "Peptides",
-            "Bakuchiol"
+            "Bakuchiol",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [],
@@ -8295,7 +8296,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://www.pacificabeauty.com/cdn/shop/files/1_35125f88-fed2-48d1-8a2e-486a41a03775_700x.jpg?v=1745556943",
         "description": "A vitamin C serum with sea kelp extract that brightens dark spots and evens complexion for a luminous, healthy-looking glow.",
         "ingredients": [
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [
             "Brightening"
@@ -8425,7 +8427,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Retinol",
             "Peptides",
-            "Bakuchiol"
+            "Bakuchiol",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [],
@@ -8592,7 +8595,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://www.pacificabeauty.com/cdn/shop/files/1_16f4678f-37ad-4a82-8a6a-c70f4e826fb9_700x.jpg?v=1745522062",
         "description": "A vegan collagen serum with ceramides and plant stem cells that plumps skin and strengthens the moisture barrier.",
         "ingredients": [
-            "Ceramides"
+            "Ceramides",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
@@ -8735,7 +8739,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0582/2885/files/CB1_-_Pack_Shot___Swatch.jpg?w=768&width=768&auto=format&fm=avif",
         "description": "A firming eye serum with peptides and plant stem cells that lifts, firms, and smooths the appearance of the eye area.",
         "ingredients": [
-            "Peptides"
+            "Peptides",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
@@ -10350,7 +10355,8 @@ export const RAW_PRODUCTS = [
             "Tranexamic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -12655,7 +12661,8 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://m.media-amazon.com/images/I/61I+kgACSDL._SL1500_.jpg",
         "description": "An eye serum with vitamin C and guava extract that brightens dark circles and reduces fine lines around the eyes.",
         "ingredients": [
-            "Vitamin C"
+            "Vitamin C",
+            "Hyaluronic Acid"
         ],
         "concerns": [],
         "features": [
@@ -12688,10 +12695,12 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://www.glowrecipe.com/products/strawberry-smooth-bha-aha-salicylic-serum",
         "description": "A multi-acid serum with strawberry enzymes that deeply exfoliates and minimizes pores for a smoother, clearer complexion.",
         "ingredients": [
-            "Salicylic Acid"
+            "Salicylic Acid",
+            "Hyaluronic Acid"
         ],
         "concerns": [
-            "Seborrheic Dermatitis"
+            "Seborrheic Dermatitis",
+            "Acne"
         ],
         "features": [
             "Oil-Free",
@@ -23550,7 +23559,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [],
         "concerns": [
             "Sensitive Skin",
-            "Eczema"
+            "Eczema",
+            "Acne"
         ],
         "features": [],
         "skinTypes": [
