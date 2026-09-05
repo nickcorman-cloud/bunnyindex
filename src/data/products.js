@@ -24576,7 +24576,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Glycolic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Vegan"
         ],
@@ -24774,7 +24776,10 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Salicylic Acid"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
         "features": [
             "Vegan"
         ],
@@ -24806,7 +24811,8 @@ export const RAW_PRODUCTS = [
             "SPF"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -24840,7 +24846,8 @@ export const RAW_PRODUCTS = [
             "Peptides"
         ],
         "concerns": [
-            "Barrier Support"
+            "Barrier Support",
+            "Dry Skin"
         ],
         "features": [
             "Vegan"
@@ -25040,7 +25047,9 @@ export const RAW_PRODUCTS = [
         "ingredients": [
             "Niacinamide"
         ],
-        "concerns": [],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Vegan"
         ],
@@ -25106,7 +25115,9 @@ export const RAW_PRODUCTS = [
         "description": "CLINICALLY TESTED 24 HOUR MOISTURE A non-stripping glycerin cleanser for the face and body formulated with 50% glycerin, inulin, and a unique aquaporin-stimulating active to boost skin suppleness. This skin-softening, humectant-rich glycerin cleanser effectively removes makeup, excess oil, and impurities while maintaining skin's natural moisture barrier and pH. Added arginine, oat extract, and aloe soothe and comfort. Designed for all skin types and suitable for dry or easily sensitized skin. CLINICAL RESULTS ON ROSACEA-PRONE SKIN*: After 1 week twice daily use of Gleanser, participants with diagnosed rosacea saw statistically significant improvement in rosacea signs including: -27% reduction in flushing severity *Based on a 5-week clinical study on 30 subjects with dermatologist-diagnosed rosacea.",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Dry Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -25137,7 +25148,8 @@ export const RAW_PRODUCTS = [
         "description": "Your daily defense to reduce visible redness and future breakouts.",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -25202,7 +25214,8 @@ export const RAW_PRODUCTS = [
             "SPF"
         ],
         "concerns": [
-            "Sun Protection"
+            "Sun Protection",
+            "Hyperpigmentation"
         ],
         "features": [
             "Vegan"
@@ -25326,7 +25339,8 @@ export const RAW_PRODUCTS = [
         "description": "Complete Daily Cleanser",
         "ingredients": [],
         "concerns": [
-            "Hyperpigmentation"
+            "Hyperpigmentation",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -25518,7 +25532,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Slushy_-_35_ml_travel_size_hero_01.jpg?v=1772734612",
         "description": "For hydrated, Smooth & Poreless looking skin. A unique texture with all the benefits of a serum & moisturizer, in one. This moisturizer/ serum hybrid instantly hydrates skin like a tall glass of water. Bakuchiol (plant based retinol) is spun at high speeds into a hyaluronic acid serum creating a slushy-like texture. This texture provides skin with the benefits of a serum and a moisturizer, in one. The hyaluronic acid quickly hydrates while bakuchiol helps smooth & clarify the look of skin. while keeping breakouts at bay and smoothing the look of lines and wrinkles. SUSTAINABLE PACK! This is the world's first fully curb-side recyclable pump bottle. It has no metal spring, which means you can toss it in the recycling bin when you're done. Bakuchiol Known as a plant-based retinol alternative helps refine pores, smooth the look of fine lines, uneven texture & calms the look of breakout prone skin. Hyaluronic Acid a super hydrator, holds 1000x it’s weight in water. Plumps skin for a dewy, gorgeous bounce. Yuzu high in vitamin C & anti-oxidant properties, brightens the look of skin. Apply 2-3 pumps on clean skin, after toning. Massage and let absorb into the skin. SLUSHY can be used as a",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Acne",
             "Dry Skin",
@@ -25709,7 +25725,8 @@ export const RAW_PRODUCTS = [
         "description": "Calm The Red Down Dual Chamber Redness Treatment Serum Coming Soon! The first high performance redness treatment on the market that addresses redness, blotchiness and atopic skin from six perspectives; providing immediate relief and long term results. 1 Product, 2 Formulas - customizable to any AM or PM routine for instant redness relief and targeted long-term repair. Join the waitlist to be the first to try this breakthrough innovation.",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -25904,7 +25921,8 @@ export const RAW_PRODUCTS = [
             "Tranexamic Acid"
         ],
         "concerns": [
-            "Barrier Support"
+            "Barrier Support",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -25974,7 +25992,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [],
         "concerns": [
             "Acne",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -26011,7 +26030,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [],
         "concerns": [
             "Dry Skin",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -26153,7 +26173,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/150ml_11e70ee9-f850-4fe7-8e7e-a960590e938d.jpg?v=1751443548",
         "description": "Details Size : 30ml A light, hydrating, and refreshing toner packed with nourishing ingredients. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology — made to deliver active ingredients deep within the skin. Vegan, Cruelty Free, 95% Natural ingredients, EWG-Green The benefits of this product Helps condition the skin and prepare for optimal absorption of products along with instant moisturizing. Fermented 100% Korean-produced black rice extracts restore elasticity to the skin with anti-inflammatory and brightening effect. Gives a boost of hydration and alleviated tightness in the inner layer. : Betaine, amino acid and beta-glucan provide hydration and nourishment deep into the skin enabling the skin to maintain its best condition. Benefits • 95% Naturally Derived INgredients • Korean-produced Black Rice Extracts • Ultra-Deep Technology(U.D.T) Targets • When your skin is flaky • When your skin feels dry and has increased tension • When your skin gets sensitive and needs soothing and intensive hydratin Eco Friendly Pack",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Hyperpigmentation",
@@ -26189,7 +26211,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/BLACK_RICE_hyaluronic_toner_free_of_alcohol_fragrance_150ml_5e323adf-be3b-4390-97d4-f09aa862098d.jpg?v=1751443658",
         "description": "Details Size : 30ml A light, hydrating, and refreshing toner packed with nourishing ingredients. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology — made to deliver active ingredients deep within the skin. Vegan, Cruelty Free, 95% Natural ingredients, EWG-Green The benefits of this product Helps condition the skin and prepare for optimal absorption of products along with instant moisturizing. Fermented 100% Korean-produced black rice extracts restore elasticity to the skin with anti-inflammatory and brightening effect. Gives a boost of hydration and alleviated tightness in the inner layer. : Betaine, amino acid and beta-glucan provide hydration and nourishment deep into the skin enabling the skin to maintain its best condition. Benefits • Hypoallergenic toner even safe for sensitive skin • Fermented 100% Korean-produced Black Rice Extracts restore elasticity to the skin • Gives a boost of hydration and alleviates tightness in the inner layer Targets • When your skin is flaky • When your skin feels dry and has incre",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Hyperpigmentation",
@@ -26227,7 +26251,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_10_hyaluronic_cream_50ml_42a7acc7-b901-4139-a6f6-5015f9a93f69.jpg?v=1751422143",
         "description": "Details Size : 90ml A powerful moisturizing cream that delivers intensive hydration and nourishment deeply to skin and rejuvenates aging skin with 95% naturally derived ingredients. Contains Korean black rice extract(10,000ppm) as well as hyaluronic acid and evening primrose oil, the formula firms and hydrates skin, while promoting skin cell regeneration. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. Texture is mild cream type. Spreads smoothly and moistens. Soft and fresh finishing without stickiness. Vegan, Cruelty-Free, 7 types of parabens-Free, 11 harmful substances-Free, Skin irritation test completed, EWG Green for all ingredients. The benefits of this product • More Hydrated, Plumper, and Smoother Skin - 10 types of multi-molecular weight hyaluronic acid offers ater-based hydration and helps the skin surface look plump, elastic, and uniform. • For Better and More Powerful Nourishment to the Skin - 10,000ppm increase in both nourishing oils to strengthen the skin barrier and maintain your natural skin elasticity. • New and Improved Texture - Fast absorption leaves the skin feeling cool, comfortable, and r",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Barrier Support"
@@ -26261,7 +26287,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/CENTELLA_phyto_5_peptide_concentrate_cream_30ml_15973552-70cc-46d4-b0be-1180cb18eef3.jpg?v=1751439590",
         "description": "Details Pamper your skin with this multifunctional face cream providing anti-aging, moisturizing, soothing and brightening care all in one go. 5 Peptide Complex restores firmness in saggy skin, while squalane and ceramide NP saturate skin with moisture. Caffeine in the mix brightens dull skin. The vegan formula is infused with 150ppm of cica extract to keep skin calm and hydrated. The benefits of this product An all-in-one vegan cream enriched with 5 Peptide Complex to offer care for signs of aging, improving skin firmness and appearance of fine lines and wrinkles, while strengthening skin barrier. Formulated with Hydrolyzed Soy Protein and Adenosine to moisturize skin and promote skin elasticity. Contains Squalene and Caffeine to brighten dull skin and help depuff, while preventing moisture loss. Free of potentially harmful ingredients such as Silicones, drying alcohol and artificial fragrance. Skin irritation test completed, suitable for sensitive skin. The benefits of this product An all-in-one vegan cream enriched with 5 Peptide Complex to offer care for signs of aging, improving skin firmness and appearance of fine lines and wrinkles, while strengthening skin barrier. Formulat",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Hyperpigmentation",
             "Barrier Support",
@@ -26412,7 +26440,8 @@ export const RAW_PRODUCTS = [
             "Dry Skin",
             "Hyperpigmentation",
             "Barrier Support",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan",
@@ -26518,7 +26547,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_hyaluronic_anti-wrinkle_serum_50ml.jpg?v=1728322619",
         "description": "Details Size : 50ml A thin, watery cream that can be used as a spot treatment for wrinkles or the beginning signs of wrinkles. Cruelty Free, 95% Natural ingredients Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology ??made to deliver active ingredients deep within the skin. The benefits of this product Renews skin elasticity and tightens skin with multiple key skin-renewing ingredients. Benefits ??95% Naturally Derived Ingredients ??Fermented Korean-produced Black Rice Extracts ??Fermented bamboo shoot bark extracts??Support skin's natural moisture barrier Targets ??safe for all skin types ??Flaky skin that lost rosy glow ??Skin that feels fry inside Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use Shake thoroughly before use. Apply an appropriate amount to skin that has been prepared with toner, spread it over areas that show si",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Vegan"
@@ -26580,11 +26611,14 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/centella_3_PHA_gentle_liquid_exfoliating_serum_120ml.jpg?v=1728322342",
         "description": "Details Size : 120ml The Natural, Vegan, Blackhead solution for sensitive skin Suitable for all skin types, gentle on sensitive skin Hypoallergenic next-generation PHA ingredients exfoliate and clean pores, with calming centella to reduce skin irritation and soothe. Orange water from fresh oranges recharges your skin with vitamin C to maintain a bright and glowing complexion, while patented Anti-Sebum P provides pore care and oil control. The benefits of this product Gently exfoliates the skin and cleans pores without being irritating BENEFITS • Recharging your skin with vitamin-C • Providing pore care and oil control TARGETS • Suitable for all skin types, gentle on sensitive skin eco friendly packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use HOW TO USE Apply Centella 3% PHA Gentle Liquid Exfoliating Serum to clean, dry skin up to 3x weekly. You can also spot-treat problem areas (like your T-zone) or use all over your face. Suggested Tip Phase 1: Use 2-3x weekly to clear out blackheads. Phase 2: Use 1-2x week",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Hyperpigmentation",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan",
@@ -26656,7 +26690,8 @@ export const RAW_PRODUCTS = [
         "concerns": [
             "Dry Skin",
             "Hyperpigmentation",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Barrier Support"
         ],
         "features": [
             "Vegan",
@@ -26808,7 +26843,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_hyaluronic_botanical_2GF_wonderful_ampoule_30ml.jpg?v=1728322396",
         "description": "Details How to use Ingredients",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Hyperpigmentation",
             "Barrier Support",
@@ -26877,7 +26914,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_10_hyaluronic_cream_unscented_50ml.jpg?v=1728322753",
         "description": "Details Fermented 100% Korean-produced black rice extract and bamboo shoot bark extract provide hydration and nourishment deep into the skin enabling the skin to maintain its best condition. By increasing 10,000ppm more in Safflower Seed Oil & Evening Primrose Oil, experience more hydrated, plumper, and smoother skin. Safflower seed oil contains high levels of antioxidant vitamin E, which helps maintain skin elasticity, and reduces inflammation. Evening primrose oil contains linoleic acid which helps to smooth and revitalize the skin, and promote moisture retention. New and improved texture helps fast absorption and makes skin feel cool, comfortable, and refreshed with a highly moisturizing, but lightweight formula. The benefits of this product This lightweight, nutrient-rich, moisturizing smoothing cream improves skin tone, texture, and firmness while providing all-day hydration, like superfood for your skin. Its wonderful formula features powerful antioxidants from fermented black rice and bamboo shoot barks, skin-friendly Safflower oil, and evening promrose oil that nourish skin. In doing so, it also helps to minimize the appearance of uneven skin tone, control pH balance, thus ",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Barrier Support",
@@ -26983,9 +27022,12 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-hydro-star-microdart-pimple-patches-salicylic-acid.png?v=1783610863",
         "description": "hydro-star® microdarts + salicylic acid are clear hydrocolloid patches with tiny, self-dissolving microdarts that dive deep into skin to reach early-stage pimples with key ingredients. calming niacinamide and salicylic acid, a powerful exfoliant, work together to reduce redness, soothe irritation, and shrink spots before they come to the surface. when you feel a spot brewing, put a star on your pimple to send powerful ingredients directly to the source and keep it protected all day long. an invisible finish and rounded edges blend into skin for subtle coverage anytime, anywhere. quantity: 12 stars",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27045,7 +27087,8 @@ export const RAW_PRODUCTS = [
         "description": "star treatment ™ is a powerful 2% salicylic acid acne spot treatment that visibly shrinks pimples in 8 hours and prevents new breakouts from forming. a calming combo of niacinamide and aloe vera soothes irritation and reduces redness . this max strength spot treatment is best for blackheads, whiteheads, clogged pores, and acne-prone skin. made with a cute blue tint that quickly dries clear, star treatment is perfect for layering under any 100% hydrocolloid stars or with the rest of your skincare routine. just wait for it to dry completely before sticking on a hydro-star® to lock in effective ingredients and provide extra protection . for best results, build up to 1-3x daily use or whatever feels best for your skin. pair it with your fav invisible pimple patches and save 15% .",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27076,7 +27119,8 @@ export const RAW_PRODUCTS = [
         "description": "have fun shrinking spots and feeling cute with 32 hydro-star® pimple patches in four pink shades: jelly bean , bubblegum , cotton candy , and fruit snack . made to be stored inside of your big pink compact for easy access. hydro-stars are clinically proven to shrink pimples in just six hours.* made with 100% hydrocolloid, these bestselling patches help absorb gunk and reduce redness for happy skin. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. have fun hanging out with all of your pink favs with the perfect pink bundle ! quantity: 32 stars *based on a 23-subject clinical study over 5 days",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27105,9 +27149,12 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-salicylic-acid-facial-cleanser.png?v=1766152875",
         "description": "star wash® + salicylic acid is an oil-free face wash that helps minimize breakouts and unclog pores as you cleanse. an extra powerful combo of salicylic acid, hyaluronic acid, and glycerin work together to reduce excess oil and hydrate skin . with a foaming gel lather that feels light and airy, star wash gently removes makeup, oil, and buildup. star wash adds a lil sparkle to your day with the sweetest shimmer that disappears with water. it's mica based and microplastic free. have fun trying the sal acid skincare duo for a full routine formulated for breakout-prone and sensitive skin!",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27138,10 +27185,13 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-salicylic-acid-moisturizer-soothe-skin.png?v=1766152875",
         "description": "star cream® + salicylic acid is an oil-free moisturizer that helps minimize breakouts and repair dryness for happy skin. the dreamiest combo of salicylic acid, hyaluronic acid, and niacinamide work together to unclog pores while locking in moisture . it's like a hug for your face, twice a day. star cream absorbs into skin like a cloud with a lightweight, silky feel. cool and comforting, star cream leaves skin with a fresh, dewy sheen. have fun trying the sal acid skincare duo for a full routine formulated for breakout-prone and sensitive skin!",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27172,8 +27222,12 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/RECOVERY_PLP.png?v=1723045193",
         "description": "hydro-star® recovery is a hydrocolloid patch that helps soothe and protect skin that’s dry, flaky, or freshly picked . made with vitamin a, aloe vera, and licorice root to help comfort and restore skin while minimizing the look of scars . when picking, popping, or flaking happens, put a star on your spot to keep the area protected and support skin recovery while looking cute. repeat as needed for soft and happy skin through the recovery process. keep your stars safe in a refillable, mirrored compact for easy access. quantity: 32 stars",
-        "ingredients": [],
-        "concerns": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Dry Skin"
+        ],
         "features": [
             "Vegan"
         ],
@@ -27203,7 +27257,8 @@ export const RAW_PRODUCTS = [
         "description": "hydro-star® clear is here, whether you can see them or not! have fun shrinking spots and feeling cute with 32 invisible hydro-star pimple patches in two sizes: 16 classic [14mm] and 16 big [18mm]. hydro-stars are clinically proven to shrink pimples in just six hours.* made with 100% hydrocolloid, these bestselling patches help absorb gunk and reduce redness for happy skin. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. these flexible stars blend seamlessly into skin thanks to undetectable, rounded edges. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. keep your stars safe in a refillable, mirrored compact for easy access. quantity: 32 stars *based on a 23-subject clinical study over 5 days",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27234,7 +27289,8 @@ export const RAW_PRODUCTS = [
         "description": "have fun shrinking spots and feeling cute with a pack of 32 hydrocolloid patches with tea tree oil . hydro-star® + tea tree helps naturally balance and soothe skin while minimizing the appearance of redness. perfect for spots that need a lil extra love, these naturally cute stars help unclog pores by reducing excess oil and buildup without irritating skin . when combined with hydrocolloid, hydro-stars + tea tre e help absorb fluid, protect skin, and visibly shrink spots. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. keep your stars safe in a refillable, mirrored compact for easy access. quantity: 32 stars",
         "ingredients": [],
         "concerns": [
-            "Sensitive Skin"
+            "Sensitive Skin",
+            "Acne"
         ],
         "features": [
             "Vegan"
@@ -27264,7 +27320,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/salacid_1.png?v=1763817630",
         "description": "have fun shrinking spots and feeling cute with 32 hydro-star® + salicylic acid patches, made to be stored inside of your big blue compact for easy access. these pore-clearing cuties are made with hydrocolloid and salicylic acid: a beta hydroxy acid known to dissolve dead skin cells. when combined with hydrocolloid, a material that's clinically proven to absorb fluid, hydro-stars + salicylic acid help shrink and soothe spots that need extra care. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. quantity: 32 stars",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [
             "Vegan"
         ],
@@ -27293,7 +27351,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/rainbow.png?v=1711568266",
         "description": "have fun shrinking spots and feeling cute with 32 hydro-star® pimple patches, made with 100% hydrocolloid, in full color . all net proceeds from rainbow stars are allocated to: the black-led movement fund in the u.s. the hetrick-martin institute for lgbtq+ youth in the u.s. black thrive in the u.k. black women in motion in canada rainbow stars are a commitment to protecting and uplifting black lives and lgbtq+ lives, now and forever. quantity: 32 stars",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Acne"
+        ],
         "features": [
             "Vegan"
         ],
@@ -27321,7 +27381,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_Restorative-Eye-Cream-15ml_Hero_W.jpg?v=1741129918",
         "description": "Ideal for: Fine Lines & Wrinkles · Dark Circles · Loss of Firmness Skin type: All Skin Types · Sensitive Skin Clinically proven results* A powerhouse eye cream for immediate results. Tiger Grass and Apple Stem Cells pair with Paracress extract to reduce the appearance of fine lines and diminish visible signs of aging. Conditioning Seaweed extract and Licorice Root promote brighter, plumper, more youthful looking skin. 15ml/0.5 fl oz COSMOS NATURAL",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Sensitive Skin"
@@ -27355,7 +27417,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_Retinol-Alternative-Cream-45ml_Hero_W.jpg?v=1741129934",
         "description": "Ideal for: Fine Lines & Wrinkles · Loss of Firmness · Uneven Texture Skin type: All Skin Types · Sensitive Skin Clinically proven results* Say hello to Retinol-like benefits without the drawbacks. This high-performance cream is formulated with Natural Retinol Alternative Rambutan for improved appearance of elasticity, firmness, fine lines and wrinkles. Paracress extract reduces the visible signs of aging while Squalane and Orange Milk Tree extract plump skin and boost moisture retention. 45ml/1.5 fl oz COSMOS NATURAL",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Sensitive Skin"
@@ -27389,7 +27453,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_CoQ-10-Toner-125ml_Hero_W_9b864deb-b8d6-4896-bfae-c75ad0502cac.jpg?v=1769810586",
         "description": "Ideal for: Dehydration · Dullness · Environmental Stressors Skin type: Normal · Dry · Combination · Sensitive Why You'll Love It: 💧 Instant hydration ✨ Soft, radiant-looking skin 🌿 Antioxidant-rich CoQ-10 + botanicals 🫧 Alcohol-free & suitable for sensitive skin 125ml/4.2 fl oz",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [
             "Dry Skin",
             "Sensitive Skin"
@@ -27427,7 +27493,8 @@ export const RAW_PRODUCTS = [
         "ingredients": [],
         "concerns": [
             "Dry Skin",
-            "Hyperpigmentation"
+            "Hyperpigmentation",
+            "Barrier Support"
         ],
         "features": [
             "Vegan"
@@ -27524,7 +27591,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_17_4c7175bb-20e9-4123-badb-10a8f80b5709.png?v=1762278870",
         "description": "A fresh twist on cleansing. This innovative balm features a twist-up grinder that dispenses fresh, mess-free ribbons of product for a hygienic cleanse every time. Powered by skin-loving ceramides to support the barrier and lock in long-lasting moisture, it effortlessly melts away long-wear makeup, waterproof mascara, and SPF - without ever stripping the skin. Antioxidant-rich sea buckthorn oil and vitamin E help nourish and protect, leaving skin soft, hydrated, and never tight or dry. The gentle formula is safe for all skin types and is lightly scented with a refreshing hint of melon.",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Vegan"
         ],
@@ -27614,8 +27683,12 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/MWCC_NoHover.png?v=1759361566",
         "description": "Quench thirsty skin with our lightweight Moisture Whipped Ceramide Cream. Comprised of barrier-protecting ceramides, hyaluronic acid & nourishing vegan desert milk to restore skin’s barrier and lock in moisture. Skin is left feeling smoother, more supple and moisture-balanced for up to 72-hours of clinically-proven hydration.",
-        "ingredients": [],
-        "concerns": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
         "features": [
             "Vegan"
         ],
@@ -27707,7 +27780,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/1222_Kopari_0727Artboard1_15.jpg?v=1762200859",
         "description": "A lightweight, moisturizing cream that effortlessly melts into your skin, providing a surge of hydration. Crafted to match your skin's natural structure, it enhances absorption and efficacy for maximum results. Brighten, restore, and protect with the power of Vitamin C, starfruit, and soothing actives.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Vegan"
@@ -27737,7 +27812,9 @@ export const RAW_PRODUCTS = [
         "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/LycheeFaceMask.png?v=1762199363",
         "description": "Mask that beautiful face with cleaner than clean ingredients for bright, glowing skin. Jam-packed with Vitamin C from Lychee Extract, AHA’s and Willow Bark that all work together to exfoliate and brighten complexion, revealing your radiance. Shea butter and coconut milk combine to deeply moisturize. Clarify, brighten, smooth and hydrate your skin!",
         "ingredients": [],
-        "concerns": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
         "features": [
             "Vegan"
         ],
@@ -27765,7 +27842,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_16_0c05e8f8-e69a-46cf-ad49-c1b49206c5e7.png?v=1762278761",
         "description": "Dive into deeply cleansed yet nourished skin with Kopari's Marine Clean Purifying Gel Cleanser that combines the strength of a gel with the gentleness of a foam. Effortlessly melts away makeup without stripping or drying skin.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Vegan"
@@ -27827,7 +27906,9 @@ export const RAW_PRODUCTS = [
         "retailer": "Brand Website",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/EyeBrightCream.png?v=1762199658",
         "description": "A lightweight and refreshing eye cream packed with clinically-backed active ingredients including niacinamide and caffeine to reduce the appearance of dark circles and puffiness, while simultaneously soothing and hydrating the skin.",
-        "ingredients": [],
+        "ingredients": [
+            "Hyaluronic Acid"
+        ],
         "concerns": [],
         "features": [
             "Vegan"
