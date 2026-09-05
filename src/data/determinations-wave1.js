@@ -1790,6 +1790,258 @@ export const DETERMINATIONS = [
         a: "[The directory](/directory). The rules: [The Standard](/standard)."
       }
     ]
+  },
+  {
+    slug: "prequel",
+    brand: "Prequel",
+    determination: "yes",
+    parentName: null,
+    title: "Is Prequel cruelty-free? — BunnyIndex",
+    description: "Yes. Prequel meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is Prequel cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "Prequel meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "Prequel is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "Prequel",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See Prequel in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does a minority stake fail rule 3?",
+        a: "No. Rule 3 is a controlling parent that tests, not every investor. If control is unclear, the brand stays off the list until it isn’t. Prequel is a pass. [The Standard](/standard)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[Prequel in the directory](/directory?brand=Prequel). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "dr-idriss",
+    brand: "Dr. Idriss",
+    determination: "yes",
+    parentName: null,
+    title: "Is Dr. Idriss cruelty-free? — BunnyIndex",
+    description: "Yes. Dr. Idriss meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is Dr. Idriss cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "Dr. Idriss meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "Dr. Idriss is independently owned. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "Dr. Idriss",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See Dr. Idriss in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does Dr. Idriss saying cruelty-free count?",
+        a: "Only if the brand passes all three rules. The sentence on the box can be true as far as it goes. We care how far it goes. [The label](/the-label)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[Dr. Idriss in the directory](/directory?brand=Dr. Idriss). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "innbeauty-project",
+    brand: "iNNBEAUTY PROJECT",
+    determination: "yes",
+    parentName: null,
+    title: "Is iNNBEAUTY PROJECT cruelty-free? — BunnyIndex",
+    description: "Yes. iNNBEAUTY PROJECT meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is iNNBEAUTY PROJECT cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "iNNBEAUTY PROJECT meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "iNNBEAUTY PROJECT is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "iNNBEAUTY PROJECT",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See iNNBEAUTY PROJECT in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does a minority stake fail rule 3?",
+        a: "No. Rule 3 is a controlling parent that tests, not every investor. If control is unclear, the brand stays off the list until it isn’t. iNNBEAUTY PROJECT is a pass. [The Standard](/standard)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[iNNBEAUTY PROJECT in the directory](/directory?brand=iNNBEAUTY PROJECT). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "haruharu-wonder",
+    brand: "Haruharu Wonder",
+    determination: "yes",
+    parentName: null,
+    title: "Is Haruharu Wonder cruelty-free? — BunnyIndex",
+    description: "Yes. Haruharu Wonder meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is Haruharu Wonder cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "Haruharu Wonder meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "Haruharu Wonder meets the Bunny Index Standard. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "Haruharu Wonder",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See Haruharu Wonder in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does Haruharu Wonder saying cruelty-free count?",
+        a: "Only if the brand passes all three rules. The sentence on the box can be true as far as it goes. We care how far it goes. [The label](/the-label)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[Haruharu Wonder in the directory](/directory?brand=Haruharu Wonder). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "starface",
+    brand: "Starface",
+    determination: "yes",
+    parentName: null,
+    title: "Is Starface cruelty-free? — BunnyIndex",
+    description: "Yes. Starface meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is Starface cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "Starface meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "Starface is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "Starface",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See Starface in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does a minority stake fail rule 3?",
+        a: "No. Rule 3 is a controlling parent that tests, not every investor. If control is unclear, the brand stays off the list until it isn’t. Starface is a pass. [The Standard](/standard)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[Starface in the directory](/directory?brand=Starface). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "indie-lee",
+    brand: "Indie Lee",
+    determination: "yes",
+    parentName: null,
+    title: "Is Indie Lee cruelty-free? — BunnyIndex",
+    description: "Yes. Indie Lee meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is Indie Lee cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "Indie Lee meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "Indie Lee is owned by American Exchange Group (AXNY). Rule 3 fails a controlling parent that tests — it is not a ban on having a parent. American Exchange Group is not a testing conglomerate. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "Indie Lee",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See Indie Lee in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does being owned fail rule 3?",
+        a: "Only if the controlling parent tests. A parent that does not test is not the same thing. [The Standard](/standard)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[Indie Lee in the directory](/directory?brand=Indie Lee). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
+  },
+  {
+    slug: "kopari",
+    brand: "Kopari",
+    determination: "yes",
+    parentName: null,
+    title: "Is Kopari cruelty-free? — BunnyIndex",
+    description: "Yes. Kopari meets the Bunny Index Standard. It is in the directory.",
+    eyebrow: "The Bunny Index Standard",
+    h1: "Is Kopari cruelty-free?",
+    answerLead: "Yes.",
+    answerRest: "Kopari meets the Bunny Index Standard. It is in the directory.",
+    lede: [
+      "Kopari is not owned by a parent that tests. A minority investor is not a controlling parent. Brand Standard’s call is a pass on all three rules. A mark on the box is not a listing."
+    ],
+    rulesAfter: "The full bar is on [The Standard](/standard). Where most claims stop: [The label](/the-label).",
+    directoryBrandParam: "Kopari",
+    directoryIntro: "Products in the catalog, filtered to this brand.",
+    directoryCta: "See Kopari in the directory →",
+    failLine: null,
+    insteadIntro: null,
+    insteadLinks: [],
+    faqs: [
+      {
+        q: "Does a minority stake fail rule 3?",
+        a: "No. Rule 3 is a controlling parent that tests, not every investor. If control is unclear, the brand stays off the list until it isn’t. Kopari is a pass. [The Standard](/standard)."
+      },
+      {
+        q: "Is this a certification?",
+        a: "No. BunnyIndex is a directory. We do not sell a mark."
+      },
+      {
+        q: "Where do I go next?",
+        a: "[Kopari in the directory](/directory?brand=Kopari). Listed brands: [Our Brands](/brands). The rules: [The Standard](/standard)."
+      }
+    ]
   }
 ];
 
@@ -1849,7 +2101,14 @@ export const WAVE1_SLUGS = [
   'farmacy-beauty',
   'first-aid-beauty',
   'tatcha',
-  'youth-to-the-people'
+  'youth-to-the-people',
+  'prequel',
+  'dr-idriss',
+  'innbeauty-project',
+  'haruharu-wonder',
+  'starface',
+  'indie-lee',
+  'kopari'
 ];
 
 export const YES_BRAND_PATHS = Object.fromEntries(
