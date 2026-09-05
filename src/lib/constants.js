@@ -200,6 +200,34 @@ export const BRAND_PROFILES = [
     blurb: "Versed makes dermatologist-developed formulas; packaging is at least 50% recycled material.",
   },
   {
+    name: "Dr. Idriss",
+    blurb: "Dr. Idriss makes dermatologist-built skincare for texture and tone.",
+  },
+  {
+    name: "Haruharu Wonder",
+    blurb: "Haruharu Wonder makes Korean skincare with black rice and gentle actives.",
+  },
+  {
+    name: "Indie Lee",
+    blurb: "Indie Lee makes botanical skincare with a closed cruelty-free bar.",
+  },
+  {
+    name: "iNNBEAUTY PROJECT",
+    blurb: "iNNBEAUTY PROJECT makes clinical actives for everyday skin.",
+  },
+  {
+    name: "Kopari",
+    blurb: "Kopari makes coconut-forward face care.",
+  },
+  {
+    name: "Prequel",
+    blurb: "Prequel makes barrier and hydration formulas for everyday skin.",
+  },
+  {
+    name: "Starface",
+    blurb: "Starface makes hydrocolloid patches and simple acne care.",
+  },
+  {
     name: "e.l.f. Cosmetics",
     blurb: "e.l.f. Cosmetics is a low-price line, vegan, publicly traded. It passes all three rules.",
   },
