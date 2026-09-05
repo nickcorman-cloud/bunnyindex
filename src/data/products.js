@@ -24296,5 +24296,3579 @@ export const RAW_PRODUCTS = [
                 "url": "https://www.amazon.com/dp/B0935PJSZX?tag=bunnyindex-20"
             }
         ]
+    },
+    {
+        "id": 781,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "MULTI-QUENCH GEL CREAM",
+        "type": "Moisturizer",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/multi-quench-gel-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Multi-QuenchGelCream_CapOn_2.jpg?v=1788459238",
+        "description": "A lightweight, humectant-rich gel cream formulated with dual-weight polyglutamic acid, glycerin, minerals and osmolytes that provide ample hydration and leave skin visibly plump, refreshed and radiant.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/multi-quench-gel-cream"
+            }
+        ]
+    },
+    {
+        "id": 782,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "PRE-GLEANSE CLEANSING BALM",
+        "type": "Cleanser",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/pre-gleanse-cleansing-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_FormulaSwatch_PreGleanseBalm.jpg?v=1781825560",
+        "description": "A cleansing balm formulated with bisabolol, ectoin, linoleic acid, linolenic acid, and modern surfactants to melt away makeup, excess sebum, sunscreen and impurities while rinsing clean. Suitable for all skin types.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/pre-gleanse-cleansing-balm"
+            }
+        ]
+    },
+    {
+        "id": 783,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "HALF & HALF",
+        "type": "Skincare",
+        "price": 26,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/half-and-half-lightweight-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Half-HalfEmulsion_CapOn_SOA-NEA-NPF.jpg?v=1772492387",
+        "description": "A lightweight liquid emulsion that moisturizes and boosts barrier function. Formulated with a ceramide complex, peptide complex and amino acids, this fluid moisturizer hydrates the skin for dewy, plump and radiant looking skin.",
+        "ingredients": [
+            "Ceramides",
+            "Squalane",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/half-and-half-lightweight-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 784,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "ANTI-ITCH SOLUTION",
+        "type": "Skincare",
+        "price": 25,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/anti-itch-lotion",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Anti-ItchCalmingLotion.jpg?v=1779819833",
+        "description": "A steroid-free moisturizing lotion that alleviates itching associated with minor burns and cuts, sunburn, scrapes, and insect bites. Formulated with pramoxine hydrochloride for essential relief, this lightweight, silky solution absorbs easily to soothe while allantoin, shea, avenanthramides, and a multi-ceramide blend hydrate and nourish.",
+        "ingredients": [
+            "Ceramides",
+            "Vitamin C"
+        ],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/anti-itch-lotion"
+            }
+        ]
+    },
+    {
+        "id": 785,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "REDNESS REFORM SULFUR CLEANSER",
+        "type": "Cleanser",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/redness-reform-sulfur-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_RednessReformSulfurCleanser_SOA-NRS_c5ff3ce9-d4df-43fd-903a-4b8ec6d1a761.jpg?v=1770944571",
+        "description": "A plush foaming cleanser that optically reduces redness and soothes sensitive, reactive skin. Formulated with 2.5% colloidal sulfur, azelaic acid, cica, bisabolol, panthenol and aloe to support a calmer, clearer, more even-looking complexion while maintaining a healthy skin barrier. Dr. Sam's tip: To use the cleanser as a flash mask, let it sit on your skin for 2-3 minutes before rinsing thoroughly.",
+        "ingredients": [
+            "Azelaic Acid"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/redness-reform-sulfur-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 786,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "BARRIER THERAPY RICH",
+        "type": "Skincare",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/barrier-therapy-rich",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_BarrierTherapyRichCream_SOA-NEA.jpg?v=1771458643",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A rich skin protectant cream for the face and body that alleviates minor irritation and itchiness due to dryness and eczema flare-ups. Formulated with a nourishing blend of 1% colloidal oatmeal, ceramides, allantoin and adenosine, this intensely moisturizing cream absorbs easily and provides relief to dry, irritated skin. Developed for skin prone to eczema.",
+        "ingredients": [
+            "Ceramides",
+            "Lactic Acid",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Eczema"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/barrier-therapy-rich"
+            }
+        ]
+    },
+    {
+        "id": 787,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "MULTI-QUENCH MIST",
+        "type": "Serum",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/multi-quench-polyglutamic-acid-mist",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Multi-QuenchSpray_CapOn.jpg?v=1773448794",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A humectant-rich spray that provides a weightless moisturizing veil for a more radiant complexion. Dual-weight polyglutamic acid, glycerin, osmolytes, niacinamide, babassu esters, and aloe leave skin hydrated, plumped, and soothed.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/multi-quench-polyglutamic-acid-mist"
+            }
+        ]
+    },
+    {
+        "id": 788,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "RETINAL RENEW",
+        "type": "Skincare",
+        "price": 35,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/retinaldehyde-gel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_RetinalRenew_1_7cd1d021-0ab6-4c80-853c-3022c82fc2d9.jpg?v=1763084638",
+        "description": "An advanced retinaldehyde gel that supports skin renewal and firmness while maintaining the skin barrier. Formulated with a highly stabilized retinaldehyde to visibly reduce fine lines and wrinkles, smooth texture, and even tone. Skin-soothing ectoin and bio-enhanced cica work together to refine skin texture and deliver optimal results with minimal irritation.",
+        "ingredients": [
+            "Retinol"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/retinaldehyde-gel"
+            }
+        ]
+    },
+    {
+        "id": 789,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "GLEANSER + GLYCOLIC",
+        "type": "Cleanser",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/gleanser-glycerin-and-glycolic-acid-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_GleanserGlycolic.jpg?v=1758657758",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A non-stripping face and body cleanser formulated with 50% glycerin and 5% glycolic acid that resurfaces for brighter, firmer looking skin. This skin-softening, humectant-rich cleanser effectively removes makeup, excess oil and impurities while maintaining the skin's natural moisture barrier. Designed for most skin types.",
+        "ingredients": [
+            "Glycolic Acid"
+        ],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/gleanser-glycerin-and-glycolic-acid-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 790,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "AM/PM MOISTURIZER",
+        "type": "Moisturizer",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/am-pm-face-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_AM-PM_SOA-NEA-NRS-NPF_1.jpg?v=1770254666",
+        "description": "An essential moisturizer formulated with a synergistic blend of our ferment-peptide complex, ceramides and skin hydrators including glycerin, polyglycerides and vitamin F that replenish moisture, strengthen the skin barrier and lock in hydration. Ideal for day and night and developed for all skin types, this mid-weight moisturizer is fast-absorbing and non-greasy while creating a supple, natural finish.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Squalane",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/am-pm-face-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 791,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "REACTIVE SKIN SOLUTIONS CREAM",
+        "type": "Moisturizer",
+        "price": 25,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/ectoin-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_ReactiveSkinSolutions_SOA-NPF_c5825de6-96a6-45db-8940-a1b0f47cfa48.jpg?v=1757963142",
+        "description": "A steroid-free, soothing solution that renews the skin's surface while restoring compromised skin barrier. Formulated with a potent blend of 5% ectoin, urea, hydroxyethyl urea and allantoin, this cream helps alleviate scaling, roughness, visual redness and sensitivities while moisturizing the skin.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/ectoin-cream"
+            }
+        ]
+    },
+    {
+        "id": 792,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "SCAR SOLUTIONS STICK",
+        "type": "Skincare",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/scar-solutions-silicone-scar-stick",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_ScarSoultions_CapOn.jpg?v=1762270305",
+        "description": "A targeted formula that reduces the look of red and healing scars, stretch marks and post blemish marks. Formulated with 60% silicone, onion bulb ferment, centella asiatica triterpenoids and bisabolol that improve the appearance of discoloration. Stick applicator allows for convenient, frequent massage and moisturization to aid in uniform skin recovery. Get over 3x & save 15% with our new Jumbo size.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/scar-solutions-silicone-scar-stick"
+            }
+        ]
+    },
+    {
+        "id": 793,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "MULTI-ACID MILK PEEL",
+        "type": "Exfoliant",
+        "price": 23,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/multi-acid-milk-aha-peel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_Multi-AcidMilk_072025_CapOn.jpg?v=1773448794",
+        "description": "A milky solution that exfoliates, smooths and brightens, without compromising the skin barrier. Formulated with our multi-acid complex including 15% glycolic, phytic, malic, mandelic and lactic acids along with enzymes, to boost surface renewal, smooth the look of fine lines and wrinkles and brighten the look of discoloration. Added squalane softens and hydrates for skin that is soft and supple. CLINICALLY PROVEN RESULTS* After 4 weeks of twice weekly use, clinical image analysis showed: +78% of subjects showed improvement in skin radiance/brightness +100% of subjects showed improvement in the appearance of pores After 8 weeks of twice weekly use, clinical image analysis showed: +69% of subjects showed improvement in skin texture DISCLAIMER: Based on a clinical study of 32 subjects after 8 weeks of use. Results were measured by image analysis.* This product contains a high potency acid blend and is not designed for sensitive skin. Patch test is strongly advised.**",
+        "ingredients": [
+            "Squalane",
+            "Glycolic Acid",
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/multi-acid-milk-aha-peel"
+            }
+        ]
+    },
+    {
+        "id": 794,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "PRE-GLEANSE",
+        "type": "Cleanser",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/pre-gleanse-first-cleanse",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Pre-Gleanse_SOA-NEA.jpg?v=1773448794",
+        "description": "An oil-based first cleanse formulated with cica oil, linoleic acid, linolenic acid, rice bran oil and gentle surfactants that dissolve makeup, excess sebum, sunscreen and other impurities without clogging pores or stripping the skin. This formula rinses clean and is suitable for all skin types, even those with blemish-prone skin.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/pre-gleanse-first-cleanse"
+            }
+        ]
+    },
+    {
+        "id": 795,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "GLEANSER + SA",
+        "type": "Cleanser",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/gleanser-glycerin-and-salicylic-acid-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_GleanserSA_SOA-NEA-NPF.jpg?v=1762546849",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A non-stripping face and body cleanser formulated with 50% glycerin and 1% salicylic acid that gently exfoliates to soften and renew. This skin-softening, humectant-rich glycerin and salicylic acid cleanser effectively removes makeup, excess oil and impurities while maintaining the skin's natural moisture barrier. Designed for all skin types and suitable for dry or easily sensitized skin.",
+        "ingredients": [
+            "Salicylic Acid"
+        ],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/gleanser-glycerin-and-salicylic-acid-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 796,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "SOLAR SHADE",
+        "type": "Sunscreen",
+        "price": 25,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/solar-shade-chemical-sunscreen",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_SolarShade-ChemicalSPF.jpg?v=1762268980",
+        "description": "A lightweight, sunscreen fluid that provides optimal protection while supporting the skin’s moisture barrier. Formulated with organic UV filters, rice phytomolecules, ethyl ferulate, and microalgae to boost antioxidant protection. Developed for all skin tones with a moisturizing finish.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/solar-shade-chemical-sunscreen"
+            }
+        ]
+    },
+    {
+        "id": 797,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "MULTI-QUENCH SERUM",
+        "type": "Serum",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/multi-quench-polyglutamic-acid-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Multi-QuenchSerum-CapOff-NEA.jpg?v=1762268954",
+        "description": "CLINICALLY TESTED 48 HOUR HYDRATION A multi-level, rehydrating serum formulated with dual weight polyglutamic acid, glycerin, osmolytes and ectoin that provide excellent skin moisturization, improve the skin barrier, and support skin's Natural Moisturizing Factor. CLINICALLY PROVEN RESULTS: After week of daily use: +94% agreed skin felt hydrated immediately after applying the serum +85% agreed it gave them a glowy look +85% agreed it made their skin appear more youthful +82% agreed it made their skin more plump +91% agreed their skin looked more radiant immediately after applying the serum DISCLAIMER: Based on self-assessments from an independent clinical trial on 33 subjects after 1 week of use.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Peptides"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/multi-quench-polyglutamic-acid-serum"
+            }
+        ]
+    },
+    {
+        "id": 798,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "SKIN UTILITY BALM",
+        "type": "Moisturizer",
+        "price": 20,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/skin-utility-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_SkinUtility-Balm_SOA-NEA-NPF.jpg?v=1762198044",
+        "description": "A multi-purpose, occlusive skin protectant balm that relieves dehydrated, sensitized and compromised skin. Formulated with dimethicone, shea butter, cica and our lipid complex, this rich balm locks in moisture while reinforcing a healthier skin barrier for long-lasting comfort.",
+        "ingredients": [
+            "Ceramides",
+            "Lactic Acid"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/skin-utility-balm"
+            }
+        ]
+    },
+    {
+        "id": 799,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "SKIN UTILITY GEL",
+        "type": "Moisturizer",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/skin-utility-gel",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_SkinUtility-Gel_SOA-NEA-NRS-NPF.jpg?v=1762198044",
+        "description": "An invisible skin protectant gel that moisturizes and protects while skin is recovering. Formulated with 20% glycerin and our bioactive soothing complex, this multi-purpose gel alleviates discomfort, irritation and dryness to reestablish a healthier skin barrier.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/skin-utility-gel"
+            }
+        ]
+    },
+    {
+        "id": 800,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "SUN BARRIER",
+        "type": "Sunscreen",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/sun-barrier-mineral-sunscreen",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_SunBarrier-MineralSPF_SOA-NEA-NRS-NPS.jpg?v=1762198028",
+        "description": "WATER RESISTANT (40 MINUTES) A lightweight, semi-transparent mineral sunscreen that provides optimal physical protection while boosting the skin’s moisture barrier. Formulated with zinc oxide, bioactive antioxidant compounds and bisabolol, this product absorbs easily while soothing and protecting the skin from environmental stressors. Peachy hue blends into skin for a natural, radiant finish.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/sun-barrier-mineral-sunscreen"
+            }
+        ]
+    },
+    {
+        "id": 801,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "LUCENT-C",
+        "type": "Skincare",
+        "price": 23,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/lucent-c-vitamin-c-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_LucentCSerum-CAPOFF.jpg?v=1762198027",
+        "description": "A radiance boosting vitamin C serum formulated with a potent blend of L-ascorbic acid, ferulic acid, ergothioneine, niacinamide and inulin that brightens, firms and provides ample antioxidant benefits for a glowing complexion. CLINICALLY PROVEN RESULTS After 4 weeks of once daily use: +Clinically proven to increase radiance and luminance +90% subjects agreed that their skin looked less dull After 8 weeks of once daily use: +Clinically proven to increase skin firmness +83% subjects reported improvement in skin texture DISCLAIMER: This product contains a high potency active and is not designed for sensitive skin. Patch test is strongly advised.**",
+        "ingredients": [
+            "Niacinamide",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/lucent-c-vitamin-c-serum"
+            }
+        ]
+    },
+    {
+        "id": 802,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "UNIVERSAL SKIN SOLUTION",
+        "type": "Skincare",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/universal-skin-solution-hypochlorous-acid-spray",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_DermalSpray-CAPOFF_SOA-NEA-NRS-NPF.jpg?v=1762546742",
+        "description": "Universal Skin Solution spray is a superoxidized stable hypochlorous solution processed from pure electrolyzed water and a soothing mineral concentrate that purifies, calms and alleviates reactive, sensitized and/or compromised skin. Formulated for use on the face and body. Get 2x & save 15% with our Jumbo size.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/universal-skin-solution-hypochlorous-acid-spray"
+            }
+        ]
+    },
+    {
+        "id": 803,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "UREA ADVANCED RELIEF",
+        "type": "Skincare",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/urea-advanced-relief-moisturizing-milk",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_Urea-MoisturizingMilk-Matte_SOA-NEA-NPF.jpg?v=1762546775",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A restoring face and body lotion that reestablishes optimal levels of hydration. Formulated with 10% pure urea, this moisturizer nourishes skin to soothe extremely dry, rough, itchy and flaky skin. Added shea butter, glycerin and niacinamide smooth and tone for healthier looking skin.",
+        "ingredients": [
+            "Niacinamide"
+        ],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/urea-advanced-relief-moisturizing-milk"
+            }
+        ]
+    },
+    {
+        "id": 804,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "BARRIER THERAPY",
+        "type": "Skincare",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/barrier-therapy",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_BarrierTherapyCream_SOA-NEA-NPF_1.jpg?v=1771458621",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A skin protectant cream for the face and body that alleviates minor irritation and itchiness due to dryness and eczema flare-ups. Formulated with a potent blend of colloidal oatmeal, multi-ceramide blend, allantoin and adenosine, this soothing cream absorbs easily and provides relief to dry, distressed skin.",
+        "ingredients": [
+            "Ceramides",
+            "Vitamin C"
+        ],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Eczema"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/barrier-therapy"
+            }
+        ]
+    },
+    {
+        "id": 805,
+        "brand": "Prequel",
+        "brandColor": "#2E2E2E",
+        "name": "GLEANSER",
+        "type": "Cleanser",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://prequelskin.com/products/gleanser-non-drying-glycerin-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0556/1388/2680/files/1-PRQL_PDP_Product_Gleanser_SOA-NEA-NRS_ffefaf69-2132-4406-873d-2e189ac46402.jpg?v=1776312386",
+        "description": "CLINICALLY TESTED 24 HOUR MOISTURE A non-stripping glycerin cleanser for the face and body formulated with 50% glycerin, inulin, and a unique aquaporin-stimulating active to boost skin suppleness. This skin-softening, humectant-rich glycerin cleanser effectively removes makeup, excess oil, and impurities while maintaining skin's natural moisture barrier and pH. Added arginine, oat extract, and aloe soothe and comfort. Designed for all skin types and suitable for dry or easily sensitized skin. CLINICAL RESULTS ON ROSACEA-PRONE SKIN*: After 1 week twice daily use of Gleanser, participants with diagnosed rosacea saw statistically significant improvement in rosacea signs including: -27% reduction in flushing severity *Based on a 5-week clinical study on 30 subjects with dermatologist-diagnosed rosacea.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://prequelskin.com/products/gleanser-non-drying-glycerin-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 806,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Left Un-Red Reducer Serum™",
+        "type": "Serum",
+        "price": 68,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/left-un-red-reducer-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/ReducerSerum1_3338b75b-7149-480d-a75c-d60b9d352deb.png?v=1778175614",
+        "description": "Your daily defense to reduce visible redness and future breakouts.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/left-un-red-reducer-serum"
+            }
+        ]
+    },
+    {
+        "id": 807,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Left Un-Red CalmBack Cream™",
+        "type": "Moisturizer",
+        "price": 58,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/left-un-red-calmback-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/CalmbackCream1_61ee192a-2547-43f3-a94b-6821239f4452.png?v=1778175895",
+        "description": "Soothe, cushion, and calm the skin barrier down when redness hits.",
+        "ingredients": [],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/left-un-red-calmback-cream"
+            }
+        ]
+    },
+    {
+        "id": 808,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Major Fade Disco Block SPF 50™",
+        "type": "Sunscreen",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/major-fade-disco-block-spf-50",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/DiscoBlock1.png?v=1778174410",
+        "description": "Brightening, Whipped Facial Sunscreen",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/major-fade-disco-block-spf-50"
+            }
+        ]
+    },
+    {
+        "id": 809,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Patch It Rescue Pimple Patches 3-Pack™",
+        "type": "Spot Treatment",
+        "price": 46,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/patch-it-rescue-pimple-patches-3-pack",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/PDPDOTCOM2.png?v=1762446580",
+        "description": "Hydrocolloid Pimple Patches with Azaleic Acid - 72 Count",
+        "ingredients": [],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/patch-it-rescue-pimple-patches-3-pack"
+            }
+        ]
+    },
+    {
+        "id": 810,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Patch It Rescue Pimple Patches 2-Pack™",
+        "type": "Spot Treatment",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/patch-it-rescue-pimple-patches-2-pack",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/PDPDOTCOM3_97cffe71-4022-4227-92d6-fdbe77ef91cf.png?v=1762446579",
+        "description": "Hydrocolloid Pimple Patches with Azaleic Acid - 48 Count",
+        "ingredients": [],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/patch-it-rescue-pimple-patches-2-pack"
+            }
+        ]
+    },
+    {
+        "id": 811,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Patch It Rescue Pimple Patches™",
+        "type": "Spot Treatment",
+        "price": 18,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/patch-it-rescue-pimple-patches",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/PDPDOTCOM.png?v=1762446406",
+        "description": "Hydrocolloid Pimple Patches with Azaleic Acid - 24 Count",
+        "ingredients": [],
+        "concerns": [
+            "Acne"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/patch-it-rescue-pimple-patches"
+            }
+        ]
+    },
+    {
+        "id": 812,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Soft Wash™",
+        "type": "Cleanser",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/soft-wash",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/SoftWash1.png?v=1778176732",
+        "description": "Complete Daily Cleanser",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/soft-wash"
+            }
+        ]
+    },
+    {
+        "id": 813,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Major Fade Active Seal™",
+        "type": "Skincare",
+        "price": 58,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/major-fade-active-seal-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/major-fade-active-seal-1.png?v=1785443290",
+        "description": "Vitamin C + Glutathione Moisturizer for Dark Spots & Hyperpigmentation",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/major-fade-active-seal-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 814,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "The Depuffer™",
+        "type": "Serum",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/the-depuffer-arnica-roll-on-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/Depuffer1.png?v=1778174746",
+        "description": "Redness Reducing Roll-On Serum",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/the-depuffer-arnica-roll-on-serum"
+            }
+        ]
+    },
+    {
+        "id": 815,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Major Fade Hyper Serum™",
+        "type": "Serum",
+        "price": 68,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/major-fade-hyper-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/HyperSerum1.png?v=1778176438",
+        "description": "Dark Spot Treatment Serum",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/major-fade-hyper-serum"
+            }
+        ]
+    },
+    {
+        "id": 816,
+        "brand": "Dr. Idriss",
+        "brandColor": "#2E2E2E",
+        "name": "Major Fade Flash Mask™",
+        "type": "Mask",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://dridriss.com/products/major-fade-flash-mask",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0512/4476/1263/files/FlashMask1.png?v=1778176093",
+        "description": "Exfoliating AHA Mask",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://dridriss.com/products/major-fade-flash-mask"
+            }
+        ]
+    },
+    {
+        "id": 817,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Extreme Cleanse",
+        "type": "Skincare",
+        "price": 14,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/extreme-cleanse",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Extreme_cleanse_hero_01.jpg?v=1784747646",
+        "description": "",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/extreme-cleanse"
+            }
+        ]
+    },
+    {
+        "id": 818,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Slushy",
+        "type": "Skincare",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/slushy-serum-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Slushy_-_35_ml_travel_size_hero_01.jpg?v=1772734612",
+        "description": "For hydrated, Smooth & Poreless looking skin. A unique texture with all the benefits of a serum & moisturizer, in one. This moisturizer/ serum hybrid instantly hydrates skin like a tall glass of water. Bakuchiol (plant based retinol) is spun at high speeds into a hyaluronic acid serum creating a slushy-like texture. This texture provides skin with the benefits of a serum and a moisturizer, in one. The hyaluronic acid quickly hydrates while bakuchiol helps smooth & clarify the look of skin. while keeping breakouts at bay and smoothing the look of lines and wrinkles. SUSTAINABLE PACK! This is the world's first fully curb-side recyclable pump bottle. It has no metal spring, which means you can toss it in the recycling bin when you're done. Bakuchiol Known as a plant-based retinol alternative helps refine pores, smooth the look of fine lines, uneven texture & calms the look of breakout prone skin. Hyaluronic Acid a super hydrator, holds 1000x it’s weight in water. Plumps skin for a dewy, gorgeous bounce. Yuzu high in vitamin C & anti-oxidant properties, brightens the look of skin. Apply 2-3 pumps on clean skin, after toning. Massage and let absorb into the skin. SLUSHY can be used as a",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/slushy-serum-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 819,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "10+10 Daily Moisturizer",
+        "type": "Moisturizer",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/10-10-daily-moisturizer-vitamin-c-peptides",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/10_10_daily_moisture_hero_01_41fe27a6-e82a-43b3-8b43-3d9e0be1e474.jpg?v=1779456554",
+        "description": "YOU DESERVE MORE FROM YOUR MOISTURIZER! 10+10 goes above and beyond a typical moisturizer. This pH balanced formula is jam-packed with science-backed, skin transforming ingredients including two types of Vitamin C, Peptides, Ceramides, & Vegan Squalane that deliver the appearance of a brighter, firmer, more bouncy complexion. In an independent consumer testing panel with 35 users after 2 weeks: 100% agree their skin felt more hydrated, more radiant, & smoother 100% agree their skin felt nourished & replenished 97% agree their skin looks brighter After 4 weeks: 100% agree that their skin feels smoother, hydrated, nourished & replenished 97% of users would switch to this moisturizer 97% agree that their skin looks brighter & has a healthy glow 94% agree their skin looks firmer, healthier, & more radiant after 4 weeks 94% agree their complexion looks clearer 94% agree that this moisturizer outperforms a typical moisturizer 94% agree that the texture of this moisturizer is a dream 91% agree that their skin looks younger, more plump, & less dull 10% Vitamin C Complex Two forms of stable, oil-soluble Vitamin C combine to visibly brighten & even skin tone. 10% Peptide Complex Visibly firm",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/10-10-daily-moisturizer-vitamin-c-peptides"
+            }
+        ]
+    },
+    {
+        "id": 820,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Skin Prep Exfoliating Pads",
+        "type": "Exfoliant",
+        "price": 56,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/skin-prep-exfoliating-pads",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Skinprepexfoliatingpads_hero_01.jpg?v=1764073639",
+        "description": "Discover Skin Prep Exfoliating Pads, clinically proven to brighten, resurface, and smooth skin without irritation. These potent pads reduce dark spots, uneven tone, and wrinkles with precise chemical and physical exfoliation.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/skin-prep-exfoliating-pads"
+            }
+        ]
+    },
+    {
+        "id": 821,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Recharge Gel Cream",
+        "type": "Moisturizer",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/recharge-gel-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Rechargegelcream01_7cd3aad9-f9c0-4d0a-bb71-19dddc2e9bda.jpg?v=1779888374",
+        "description": "The most high performance gel cream on the market, going above and beyond the basics to deliver clinically proven results. Targets dull, dry, dehydrated skin for healthy, youthful more radiant skin Weightless waterburst texture instantly refreshes for juicy, plump skin bursting with hydration Powered by patented barrier repair technology and high performance hydrators - 100% of users had a stronger skin barrier after just one application Instantly ultra-hydrating & deeply penetrates for lasting hydration",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/recharge-gel-cream"
+            }
+        ]
+    },
+    {
+        "id": 822,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Extreme Cream Eye",
+        "type": "Eye Cream",
+        "price": 52,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/extreme-cream-eye",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Extreme_cream_eye_hero_image_01.jpg?v=1757953335",
+        "description": "The most clinically effective, high performance eye cream on the market. This potent eye treatment goes above and beyond to target loss of firmness, drooping & sagging, puffiness, deep wrinkles and more. Eyes are visibly lifted, firmer and contoured while a luxe reverse emulsion texture deeply moisturizes and leaves a flawless base for concealer and makeup. Hypoallergenic, Fragrance-Free, Opthamologist tested safe for use around the eyes & contact lens wearers, Dermatologist tested.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free",
+            "Hypoallergenic"
+        ],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/extreme-cream-eye"
+            }
+        ]
+    },
+    {
+        "id": 823,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Calm The Red Down",
+        "type": "Serum",
+        "price": 56,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/calm-the-red-down",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Calmthereddown01_cd043384-95af-4d9e-a38c-4b281947cecb.jpg?v=1779887461",
+        "description": "Calm The Red Down Dual Chamber Redness Treatment Serum Coming Soon! The first high performance redness treatment on the market that addresses redness, blotchiness and atopic skin from six perspectives; providing immediate relief and long term results. 1 Product, 2 Formulas - customizable to any AM or PM routine for instant redness relief and targeted long-term repair. Join the waitlist to be the first to try this breakthrough innovation.",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/calm-the-red-down"
+            }
+        ]
+    },
+    {
+        "id": 824,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Elastic Skin",
+        "type": "Serum",
+        "price": 52,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://innbeautyproject.com/products/elastic-skin",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Elasticskin01.jpg?v=1762198046",
+        "description": "Clinically proven to increase skin's elasticity, wrinkles & hydration in just 1 week! Finally, a vegan snail serum for skin that feels elastic . Elastic Skin combines the satisfying, bouncy texture of a traditional \"snail\" serum with clinically proven anti-aging ingredients to visibly firm, plump and deeply hydrate, revealing firmer, plumper, more youthful looking skin. No snails were harmed in the making of this serum. Elastic Skin goes above & beyond your traditional \"snail\" serum. This potent vegan formula with over 19% clinically active ingredients includes copper peptides, encapsulated vegan growth factors, ceramides and vegan collagen amino acids to visibly plump, firm and hydrate while reducing the appearance of fine lines and wrinkles. Non-comedogenic. Hypoallergenic. Fragrance free. 100% Vegan & cruelty free.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free",
+            "Non-Comedogenic",
+            "Hypoallergenic"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/elastic-skin"
+            }
+        ]
+    },
+    {
+        "id": 825,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Mineral Sun Glow SPF",
+        "type": "Sunscreen",
+        "price": 36,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": true,
+        "buyUrl": "https://innbeautyproject.com/products/mineral-sun-glow-spf",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Mineralsunglow-group_withswatches_01.jpg?v=1754599818",
+        "description": "A first of its kind, non-comedogenic & hypoallergenic mineral SPF formula that works to increase skin’s hydration for 24 hours, unlike traditional drying mineral SPFs, and provides additional protection against damaging antioxidants, blue light, & infrared rays. Three flexible shades instantly blend into skin to deliver a natural, radiant finish with no white cast.",
+        "ingredients": [
+            "Lactic Acid",
+            "Niacinamide",
+            "Peptides",
+            "SPF",
+            "Squalane"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Acne",
+            "Dry Skin",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan",
+            "Non-Comedogenic",
+            "Hypoallergenic"
+        ],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/mineral-sun-glow-spf"
+            }
+        ]
+    },
+    {
+        "id": 826,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Pore Refine",
+        "type": "Skincare",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/refine-pore-texture-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Porerefine01.jpg?v=1762197980",
+        "description": "Large pores & rough texture? Improve the look of large pores and rough, bumpy texture with this treatment serum. Clean + Clinical formula will visibly refine texture, improve pore size and skin clarity - overnight. 10% AHA + BHA + PHA blend: exfoliates skin, smooths rough & uneven texture, and de-gunks pores. 7% Pore-Refining Complex: Peptides, Bio-Retinol & clinically proven botanical extracts visibly reduce enlarged pores over time. Rice starch + Mushroom extract: visibly tighten the look of pores within 5 minutes of application.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/refine-pore-texture-serum"
+            }
+        ]
+    },
+    {
+        "id": 827,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Extreme Cream",
+        "type": "Moisturizer",
+        "price": 50,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/extreme-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Extreme_cream_hero_01.jpg?v=1779468965",
+        "description": "This luxe, rich cream moisturizer leaves skin with a gorgeous glossy glow while potent, clinically proven anti-aging ingredients firm, sculpt & contour the skin. A clinically advanced formula of 3% Lifting Peptides, 2% Bio-Retinol, and three different types of ceramides boost collagen and elastin production for plumper, firmer, more youthful looking skin.",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/extreme-cream"
+            }
+        ]
+    },
+    {
+        "id": 828,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Acne Serum",
+        "type": "Serum",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/acne-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Acneserum01_9e7601fd-020e-4aaa-bc60-0dbbc74570c9.jpg?v=1779456637",
+        "description": "This first-of-its-kind non-gel formula combines ceramides & emollients with over 23% clinically proven ingredients to repair the skin barrier while healing & preventing different types of acne fast. Whether your acne is comedonal, cystic, hormonal, or fungal, get ready for visibly clearer skin without sacrificing moisture & hydration.",
+        "ingredients": [
+            "Hyaluronic Acid",
+            "Ceramides",
+            "Niacinamide",
+            "Salicylic Acid",
+            "Bakuchiol",
+            "Tranexamic Acid"
+        ],
+        "concerns": [
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Oily",
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/acne-serum"
+            }
+        ]
+    },
+    {
+        "id": 829,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Drying Paste",
+        "type": "Spot Treatment",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/pimple-paste-2",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/PIMPLE_PASTE_PDP.jpg?v=1765807712",
+        "description": "A fast acting, alcohol-free, overnight drying paste that fades the look of spots. Ever heard the old wives' tale telling you to put toothpaste on your pimple? We love the idea, but toothpaste contains harsh ingredients & sulfates that can damage the skin so we created a skin-friendly paste that works quickly to zap those pesky spots! Pimple Paste is an alcohol-free, fast-acting drying paste powered by natural ingredients. Formulated with natural miracle workers including: Willow Bark, Sulfur, Tea Tree Oil, Azelaic Acid, Clay, Zinc, Oregano, & Thyme that work overnight. This unique naturally blue paste dries down quickly and is transfer-proof so will not rub off on your sheets or pillows! Willow Bark A well known natural alternative to sal acid. Sulfur & Clay Helps dry spots & absorb excess oil. Thyme & Oregano Clinically proven to be more effective than popular acne treatments & visibly less irritating. Azelaic Acid Helps decrease the look of any marks left behind by past blemishes. Tea Tree Oil Reduces look of swelling & redness. Zinc Sulfate Calms the look of redness Magnesium Sulfate Helps exfoliate skin & sooth the look of irritation. Aloe Botanical skin & hydrator. Helps to al",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Oily",
+            "Combination"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/pimple-paste-2"
+            }
+        ]
+    },
+    {
+        "id": 830,
+        "brand": "iNNBEAUTY PROJECT",
+        "brandColor": "#2E2E2E",
+        "name": "Keep It Clean",
+        "type": "Cleanser",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://innbeautyproject.com/products/keep-it-clean-gel-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Keep_it_clean_hero_01.jpg?v=1786554000",
+        "description": "A hydrating & softening gel cleanser that removes makeup, dirt & excess oil without stripping the skin. Amino acids, ceramides & vegan collagen soften & hydrate. Finally a gel to cream cleanser that removes makeup and makes double-cleansing optional! Amino acid based cleansing agent combined with ceramides & vegan collagen supports the skin's natural moisture barrier and softens the skin as you cleanse. Skin is left feeling clean, soft & fresh, never tight or dry! pH balanced to keep skin happy. 10 Amino Acid Blend: Helps maintain skin's hydration, resilience & overall healthy appearance. Ceramides: Help strengthen skin's natural moisture barrier. Vegan Collagen: Hydrates & visibly smooth skin. 100% Vegan & cruelty free Free from: phenoxyethanol , synthetic fragrance, artificial colorant, PEGs, parabens, sulfates. 2 ways to cleanse: To remove makeup: Apply 3-5 pumps onto dry face using dry hands. Massage into face concentrating on areas with hard to remove makeup. Add water & continue to massage off as you rinse with warm water. For regular cleansing: Apply to wet skin. Massage thoroughly & rinse with warm water.",
+        "ingredients": [],
+        "concerns": [
+            "Acne",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Oily",
+            "Combination",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://innbeautyproject.com/products/keep-it-clean-gel-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 831,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Firming Serum (with Retinal 0.1%)",
+        "type": "Serum",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-rose-pdrn-firming-serum-30ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/PDRN_Firming_Serum.jpg?v=1783408453",
+        "description": "Details Key Features Multi-benefit formula: a gentle powerhouse serum to soothe, hydrate and renew your skin Vegan PDRN: extracted from the stem cells of the Damascus rose, it aids skin renewal and rejuvenation Acne-fighting: Azelaic acid targets acne-producing bacteria to soothe redness and calm skin irritation Hydration trio: Sodium PCA, Panthenol and Squalene deliver deep hydration and long-lasting comfort. Sensitive skin friendly: Clinically tested to suit all skin types Results Instantly: - Experience the non-sticky, non-greasy, lightweight texture - Boost your glow with the hydrating and calming formula After one use clinically proven to: - Improve skin moisture by 88.93% - Improve skin texture by 11.02% - Reduce redness by 21.84% - Clinical tests completed for sensitive skin Certifications: Certified vegan by The Vegan Society Certified cruelty-free by PETA How to use 1. Evenly apply an appropriate amount to cleansed and dry skin after toner. 2. Gently massage into the skin, avoiding the eye and mouth area, and then pat to absorb. Pro tips For soothing barrier care: Follow up with the haruharu wonder Black Rice 5 Ceramide Barrier Moisturizing Cream—a luxe cream with ceramide",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-rose-pdrn-firming-serum-30ml"
+            }
+        ]
+    },
+    {
+        "id": 832,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Probiotics Barrier 2% NAD + Serum Mist",
+        "type": "Serum",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-probiotics-barrier-2-nad-serum-mist-80ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/1764636079430_69e787c087644b08ad4a6fbe97b4c58a.jpg?v=1764636185",
+        "description": "Details Key Features Replenish and Renew: Restore what your body loses with age—NAD+—to maintain a youthful appearance. High-performance ingredients: Fermented Black Rice + Probiotics to repair and strengthen from within Barrier reinforcement: A 5-Ceramide Complex = the essential building blocks for a strong, healthy skin barrier. Sensitive skin friendly: Fragrance-free and tested to be suitable for all skin types. Grab & Go: Travel-friendly convenience so you can top up your glow on the go. Results Instantly: - Experience the refreshing and ultra-fine mist hydration - Shield your skin from the elements With consistent use: - Notice a boost in skin hydration - Enjoy increased radiance and a stronger skin barrier - Clinical tests completed for sensitive skin Certifications: Certified vegan by The Vegan Society Certified cruelty-free by PETA How to use 1. Shake well before application. 2. Close eyes and spritz evenly over the face and neck. 3. Pack it in your bag and reapply throughout the day for that extra recharge. Pro tips For the ultimate barrier repair and reinforcement routine pair this with our Black Rice Barrier Line: - Black Rice Probiotics Barrier Essence - Black Rice Nigh",
+        "ingredients": [
+            "Ceramides",
+            "Niacinamide",
+            "Retinol"
+        ],
+        "concerns": [
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-probiotics-barrier-2-nad-serum-mist-80ml"
+            }
+        ]
+    },
+    {
+        "id": 833,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Soothing Serum",
+        "type": "Serum",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-rose-pdrn-soothing-serum-30ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/PDRN_Soothing_Serum.jpg?v=1783408403",
+        "description": "Details Key Features - Multi-benefit formula: a gentle powerhouse serum to soothe, hydrate and renew your skin - Vegan PDRN: extracted from the stem cells of the Damascus rose, it aids skin renewal and rejuvenation - Acne-fighting: Azelaic acid targets acne-producing bacteria to soothe redness and calm skin irritation - Hydration trio: Sodium PCA, Panthenol and Squalene deliver deep hydration and long-lasting comfort. - Sensitive skin friendly: Clinically tested to suit all skin types Results Instantly: - Experience the non-sticky, non-greasy, lightweight texture - Boost your glow with the hydrating and calming formula After one use clinically proven to: - Improve skin moisture by 88.93% - Improve skin texture by 11.02% - Reduce redness by 21.84% - Clinical tests completed for sensitive skin Certifications: Certified vegan by The Vegan Society Certified cruelty-free by PETA How to use 1. Evenly apply an appropriate amount to cleansed and dry skin after toner. 2. Gently massage into the skin, avoiding the eye and mouth area, and then pat to absorb. Pro tips - For soothing barrier care: Follow up with the haruharu wonder Black Rice 5 Ceramide Barrier Moisturizing Cream—a luxe cream w",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-rose-pdrn-soothing-serum-30ml"
+            }
+        ]
+    },
+    {
+        "id": 834,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Facial Oil",
+        "type": "Face Oil",
+        "price": 27,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-facial-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/30ml_94897b4f-836d-4210-98ac-465fc5150383.jpg?v=1757409398",
+        "description": "Details Size : 10ml Achieves a healthy glow while targeting multiple skin concerns The benefits of this product A lightweight, perfectly blended oil that’s amazingly fast-absorbing. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology — made to deliver active ingredients deep within the skin. Benefits • 99% Natural Ingredients • Korean-produced Oryza Sativa(Rice) Bran Oil 45% • Lightweight oil for all-year-around use Targets • For all skin Types • Sensitive skin Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use Ingredients Details Size : 30ml Achieves a healthy glow while targeting multiple skin concerns The benefits of this product A lightweight, perfectly blended oil that’s amazingly fast-absorbing. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have develop",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-facial-oil"
+            }
+        ]
+    },
+    {
+        "id": 835,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Black Rice Hyaluronic Toner",
+        "type": "Toner",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/150ml_11e70ee9-f850-4fe7-8e7e-a960590e938d.jpg?v=1751443548",
+        "description": "Details Size : 30ml A light, hydrating, and refreshing toner packed with nourishing ingredients. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology — made to deliver active ingredients deep within the skin. Vegan, Cruelty Free, 95% Natural ingredients, EWG-Green The benefits of this product Helps condition the skin and prepare for optimal absorption of products along with instant moisturizing. Fermented 100% Korean-produced black rice extracts restore elasticity to the skin with anti-inflammatory and brightening effect. Gives a boost of hydration and alleviated tightness in the inner layer. : Betaine, amino acid and beta-glucan provide hydration and nourishment deep into the skin enabling the skin to maintain its best condition. Benefits • 95% Naturally Derived INgredients • Korean-produced Black Rice Extracts • Ultra-Deep Technology(U.D.T) Targets • When your skin is flaky • When your skin feels dry and has increased tension • When your skin gets sensitive and needs soothing and intensive hydratin Eco Friendly Pack",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner"
+            }
+        ]
+    },
+    {
+        "id": 836,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Black Rice Hyaluronic Toner / / Free of Alcohol & Fragrance",
+        "type": "Toner",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner-for-sensitive-skin",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/BLACK_RICE_hyaluronic_toner_free_of_alcohol_fragrance_150ml_5e323adf-be3b-4390-97d4-f09aa862098d.jpg?v=1751443658",
+        "description": "Details Size : 30ml A light, hydrating, and refreshing toner packed with nourishing ingredients. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology — made to deliver active ingredients deep within the skin. Vegan, Cruelty Free, 95% Natural ingredients, EWG-Green The benefits of this product Helps condition the skin and prepare for optimal absorption of products along with instant moisturizing. Fermented 100% Korean-produced black rice extracts restore elasticity to the skin with anti-inflammatory and brightening effect. Gives a boost of hydration and alleviated tightness in the inner layer. : Betaine, amino acid and beta-glucan provide hydration and nourishment deep into the skin enabling the skin to maintain its best condition. Benefits • Hypoallergenic toner even safe for sensitive skin • Fermented 100% Korean-produced Black Rice Extracts restore elasticity to the skin • Gives a boost of hydration and alleviates tightness in the inner layer Targets • When your skin is flaky • When your skin feels dry and has incre",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Hypoallergenic"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner-for-sensitive-skin"
+            }
+        ]
+    },
+    {
+        "id": 837,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "10 Hyaluronic Cream",
+        "type": "Moisturizer",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-10-hyaluronic-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_10_hyaluronic_cream_50ml_42a7acc7-b901-4139-a6f6-5015f9a93f69.jpg?v=1751422143",
+        "description": "Details Size : 90ml A powerful moisturizing cream that delivers intensive hydration and nourishment deeply to skin and rejuvenates aging skin with 95% naturally derived ingredients. Contains Korean black rice extract(10,000ppm) as well as hyaluronic acid and evening primrose oil, the formula firms and hydrates skin, while promoting skin cell regeneration. Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. Texture is mild cream type. Spreads smoothly and moistens. Soft and fresh finishing without stickiness. Vegan, Cruelty-Free, 7 types of parabens-Free, 11 harmful substances-Free, Skin irritation test completed, EWG Green for all ingredients. The benefits of this product • More Hydrated, Plumper, and Smoother Skin - 10 types of multi-molecular weight hyaluronic acid offers ater-based hydration and helps the skin surface look plump, elastic, and uniform. • For Better and More Powerful Nourishment to the Skin - 10,000ppm increase in both nourishing oils to strengthen the skin barrier and maintain your natural skin elasticity. • New and Improved Texture - Fast absorption leaves the skin feeling cool, comfortable, and r",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-10-hyaluronic-cream"
+            }
+        ]
+    },
+    {
+        "id": 838,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Phyto & 5 Peptide Concentrate Cream",
+        "type": "Moisturizer",
+        "price": 24,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-centella-phyto-5-peptide-concentrate-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/CENTELLA_phyto_5_peptide_concentrate_cream_30ml_15973552-70cc-46d4-b0be-1180cb18eef3.jpg?v=1751439590",
+        "description": "Details Pamper your skin with this multifunctional face cream providing anti-aging, moisturizing, soothing and brightening care all in one go. 5 Peptide Complex restores firmness in saggy skin, while squalane and ceramide NP saturate skin with moisture. Caffeine in the mix brightens dull skin. The vegan formula is infused with 150ppm of cica extract to keep skin calm and hydrated. The benefits of this product An all-in-one vegan cream enriched with 5 Peptide Complex to offer care for signs of aging, improving skin firmness and appearance of fine lines and wrinkles, while strengthening skin barrier. Formulated with Hydrolyzed Soy Protein and Adenosine to moisturize skin and promote skin elasticity. Contains Squalene and Caffeine to brighten dull skin and help depuff, while preventing moisture loss. Free of potentially harmful ingredients such as Silicones, drying alcohol and artificial fragrance. Skin irritation test completed, suitable for sensitive skin. The benefits of this product An all-in-one vegan cream enriched with 5 Peptide Complex to offer care for signs of aging, improving skin firmness and appearance of fine lines and wrinkles, while strengthening skin barrier. Formulat",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-centella-phyto-5-peptide-concentrate-cream"
+            }
+        ]
+    },
+    {
+        "id": 839,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "5% Niacinamide Radiance Gel Cream / Unscented",
+        "type": "Moisturizer",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-centella-5-niacinamide-radiance-gel-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/1730378976696_454457d599df4ded90762416649b407f_f026024c-d66b-4dfa-baf6-ef8eeeff62c5.jpg?v=1750051253",
+        "description": "Details - It is Non-greasy and fast-absorbing, and a hydrating and lightweight gel cream packed with sustainable ingredients that not only just hydrate, but also even the skin tone, minimize hyperpigmentation, and protect your skin barrier. - Niacinamide(Vitamin B3) and Vitamin C which effectively evens the skin tone and gives a healthy glow. They also help to prevent new hyperpigmentation from appearing, and improves fine lines, wrinkles and dark marks. - Contains a blend of skin-replenishing ingreidents such as ECOCERT & USDA Certified Squalane, Panthenol, COSMOS Certified Xylitol, Centella Asiatica Leaf Water, Madecassoside which effectively lock-in the moisture and keeping the skin moisturized. - Soft, supple and moisturizing finish, leaving skin radiant, smooth looking, and comfortable How to use 1. Apply an appropriate amount to the face and neck. 2. Gently massage into the skin, and then pat to absorb. *The product is designed for all skin types including sensitive skin, but we recommend doing a patch test first when using the cream with other products that contain active ingredidents. pro tips: Use our cream after the haruharu wonder Centella 4% TXA Dark Spot Go Away Serum ",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-centella-5-niacinamide-radiance-gel-cream"
+            }
+        ]
+    },
+    {
+        "id": 840,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Moisture Cleansing Oil / Unscented",
+        "type": "Cleansing Oil",
+        "price": 25,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-cleansing-oil",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/cleansing_oil_main_cosmo.jpg?v=1783472591",
+        "description": "Details Size : 30ml An unscented, moisturizing and gently deep cleansing oil for every day use. A non-irritating oil for the eye and skin made with 100% natural oils and 9 essential ingredients. Leaves the skin moisturized without the feeling of oiliness. Vegan, Cruelty Free, 95% Natural ingredients, EWG Green Ingredients The benefits of this product Cleanses make-up and dirt Benefits • 95% natural ingredients for safe cleansing without any irritation of eyes • Only 9 ingredients that are gentle and mild for the skin • Contains black rice bran oil grown locally Targets • all skin types Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. IMPORTANT The product must be ordered 1ea in an order. if you order the product more than 1ea. which will be changed 1ea or canceled. Details Notice: The name is changed to Black Rice Moisture Cleansing Oil. The word \"Deep\" has been removed. The ingredients are the same. Size : 150ml An unscented, moisturizing and gently deep cleansing oil for every day use. A non-irritating o",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-cleansing-oil"
+            }
+        ]
+    },
+    {
+        "id": 841,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Probiotics Barrier Essence / Unscented",
+        "type": "Skincare",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-probiotics-barrier-essence",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/blackrice_barrieressence_non_comedogenic_main_202606.jpg?v=1781666276",
+        "description": "Details IMPORTANT The product must be ordered 1ea in an order. if you order the product more than 1ea. which will be changed 1ea or canceled. - Contains 3 essential lipid components, ceramides & cholesterol & fatty acids in a 3:1:1 ratio for a firm skin barrier - Combination of black rice and probiotics (galactomyces fermented filtrate, bifida fermented filtrate) and creamy formulation reminiscent of rice wine (shake well before use to mix contents) - Patented process that creates uniform micro particles of active ingredients, reducing particle size to deliver active ingredients to skin quickly and effectively - Fragrance-free and dermatologically tested for all skin types (vegan and other certifications are in progress) How to use 1. Shake well 2. Apply an appropriate amount to hands 3. Gently massage into the face and neck, and then pat to absorb Ingredients Water, Butylene Glycol, Helianthus Annuus (Sunflower) Seed Oil, Caprylic/Capric Triglyceride, Hydrogen-ated Polyisobutene, Limnanthes Alba (Meadowfoam) Seed Oil, Butylene Glycol Dicaprylate/Dicaprate, 1,2-Hexanediol, Potassium Cetyl Phosphate, Cetearyl Alcohol, Hydroxyacetophenone, Glycerin, Glyceryl Stearate, Oryza Sativa (R",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-probiotics-barrier-essence"
+            }
+        ]
+    },
+    {
+        "id": 842,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Night Knight Retinol Serum / Unscented",
+        "type": "Serum",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-night-knight-retinol-serum-20ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/1736390194962_6d8a5fbdc1e642bbb91a1e6854a3fe9e.jpg?v=1736401971",
+        "description": "Details Notification: This product is available for ship after Apr. 14 -formulated for sensitive skin, the Black Rice Night Knight Retinol Serum is a highly effective, but gentle, retinol serum that renews and protects the skin. -With microencapsulated retinol (0.08%) and non-irritating retinol alternative bakuchiol (1%), it refines skin texture, softens fine lines and wrinkles, and evens out the skin tone, all while supporting healthy skin function and keeping pores clear. -Moisturizing and soothing ingredients such as ceramides, sunflower seed oil, and antioxidant rich fermented black rice ensure the skin is kept soft, hydrated and soothed. How to use In the PM, massage a pea size amount onto cleansed and toned skin, avoiding eyes and mouth. *Important - Usage frequency should be gradually increased from 1-2times per week to daily, not suitable during pregnancy or breastfeeding, must use SPF during the day when using this product Ingredients Key Ingredient Retinol (0.08%) - Clincically proven to increase cell tunrover and collagen production, soften wrinkles, increase skin firmness & elasticity, and minimize clogged pores and breakouts. Patented Bakuchiol (1%) - Bakuchiol, derive",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-night-knight-retinol-serum-20ml"
+            }
+        ]
+    },
+    {
+        "id": 843,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "5 Ceramide Barrier Moisturizing Cream / Unscented",
+        "type": "Moisturizer",
+        "price": 24,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-5-ceramide-barrier-moisturizing-cream-50ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/1743404349188_df579c8d68aa4417bca398c890a834e6.jpg?v=1743404828",
+        "description": "Details This luxurious cream combines ceramide capsules and barrier-boosting ingredients for deep hydration, strengthened skin barrier, and lasting protection. With antioxidant-rich black rice, it soothes, brightens, and improves skin texture. Clinical Results / Benefits - Deep moisture with a supple finish. - Strengthens and protects the skin barrier. - Glowing and hydrated skin. - Clinical tests completed for sensitive skin - Clinical tests showing skin moisture improvement by %, barrier improvement by % (PUT NUMBERS) How to use 1. After toner and essence/serum, apply an appropriate amount to face and neck 2. Gently massage the cream into the skin and pat to ensure full absorption. 3. Use morning and evening to deeply moisturize and protect the skin, paying special attention to dry areas Tips Press into the skin to allow the visible ceramide capsules to melt Ingredients Key Ingredients - 5 Ceramide Complex Capsules (NP, NS, AP, EOS, EOP): Skin barrier care / Nourishing / Moisturizing / Soothing - Fermented Black Rice Extract (Patent: 10-2239470): Anti-oxidant / Moisturizing / Nourishing - Upcycled Black Rice Jigemi (Lees) Extract: Antioxidant / Soothing / Evens skin tone - Tocoph",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-5-ceramide-barrier-moisturizing-cream-50ml"
+            }
+        ]
+    },
+    {
+        "id": 844,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "5% Niacinamide Radiance Gel Cream / Unscented 40g",
+        "type": "Moisturizer",
+        "price": 15,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-centella-5-niacinamide-radiance-gel-cream-40g",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/1738763093372_958a7afa54424e55841bcb0466e7e76a.jpg?v=1738763354",
+        "description": "Details - It is Non-greasy and fast-absorbing, and a hydrating and lightweight gel cream packed with sustainable ingredients that not only just hydrate, but also even the skin tone, minimize hyperpigmentation, and protect your skin barrier. - Niacinamide(Vitamin B3) and Vitamin C which effectively evens the skin tone and gives a healthy glow. They also help to prevent new hyperpigmentation from appearing, and improves fine lines, wrinkles and dark marks. - Contains a blend of skin-replenishing ingreidents such as ECOCERT & USDA Certified Squalane, Panthenol, COSMOS Certified Xylitol, Centella Asiatica Leaf Water, Madecassoside which effectively lock-in the moisture and keeping the skin moisturized. - Soft, supple and moisturizing finish, leaving skin radiant, smooth looking, and comfortable How to use 1. Apply an appropriate amount to the face and neck. 2. Gently massage into the skin, and then pat to absorb. *The product is designed for all skin types including sensitive skin, but we recommend doing a patch test first when using the cream with other products that contain active ingredidents. pro tips: Use our cream after the haruharu wonder Centella 4% TXA Dark Spot Go Away Serum ",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-centella-5-niacinamide-radiance-gel-cream-40g"
+            }
+        ]
+    },
+    {
+        "id": 845,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Hyaluronic Anti-wrinkle Serum",
+        "type": "Serum",
+        "price": 27,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-anti-wrinkle-serum-50ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_hyaluronic_anti-wrinkle_serum_50ml.jpg?v=1728322619",
+        "description": "Details Size : 50ml A thin, watery cream that can be used as a spot treatment for wrinkles or the beginning signs of wrinkles. Cruelty Free, 95% Natural ingredients Our unique fermentation formula transforms raw ingredients into a more flexible configuration for the skin to absorb. We have developed a formula targeting powerful absorption by utilizing patented Ultra Deep Technology ??made to deliver active ingredients deep within the skin. The benefits of this product Renews skin elasticity and tightens skin with multiple key skin-renewing ingredients. Benefits ??95% Naturally Derived Ingredients ??Fermented Korean-produced Black Rice Extracts ??Fermented bamboo shoot bark extracts??Support skin's natural moisture barrier Targets ??safe for all skin types ??Flaky skin that lost rosy glow ??Skin that feels fry inside Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use Shake thoroughly before use. Apply an appropriate amount to skin that has been prepared with toner, spread it over areas that show si",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-anti-wrinkle-serum-50ml"
+            }
+        ]
+    },
+    {
+        "id": 846,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "4% TXA Gel Serum / Unscented",
+        "type": "Serum",
+        "price": 25,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-centella-4-txa-gel-serum-30ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/centella_4_TXA_gel_serum_30ml.jpg?v=1749021824",
+        "description": "Details Size : 30ml Potent 4% tranexamic acid and antioxidant-rich n.Pearin diminishes existing dark spots and prevents new ones from forming deep within the skin. Vitamin C and its derivative team up to halt excess melanin production. Niacinamide regulates melanin and evening skin tone for a smoother look. Calming centella complex soothes and pacifies the skin. Say goodbye to hyperpigmentation and dark spots, and hello to a confident glow with this serum's powerful blend of skin-loving ingredients.Orange water from fresh oranges recharges your skin with vitamin C to maintain a bright and glowing complexion, while patented Anti-Sebum P provides pore care and oil control. The benefits of this product A potent anti-hyperpigmentation vegan serum formulated with Tranexamic Acid and Niacinamide to help with hyperpigmentation and dark spots, while brightening and refining uneven skin tone and texture. Infused with Centella Complex and Ascorbic Acid to soothe irritated skin and brighten dull skin. A bouncy gel that can be absorbed quickly by skin, leaving skin with a hydrated and non-sticky finish. Skin irritation test completed, suitable for all skin types. Free of potentially harmful in",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-centella-4-txa-gel-serum-30ml"
+            }
+        ]
+    },
+    {
+        "id": 847,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "3% PHA Gentle Liquid Exfoliating Serum",
+        "type": "Serum",
+        "price": 28,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharu-wonder-centella-3-pha-gentle-liquid-exfoliating-serum-120ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/centella_3_PHA_gentle_liquid_exfoliating_serum_120ml.jpg?v=1728322342",
+        "description": "Details Size : 120ml The Natural, Vegan, Blackhead solution for sensitive skin Suitable for all skin types, gentle on sensitive skin Hypoallergenic next-generation PHA ingredients exfoliate and clean pores, with calming centella to reduce skin irritation and soothe. Orange water from fresh oranges recharges your skin with vitamin C to maintain a bright and glowing complexion, while patented Anti-Sebum P provides pore care and oil control. The benefits of this product Gently exfoliates the skin and cleans pores without being irritating BENEFITS • Recharging your skin with vitamin-C • Providing pore care and oil control TARGETS • Suitable for all skin types, gentle on sensitive skin eco friendly packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use HOW TO USE Apply Centella 3% PHA Gentle Liquid Exfoliating Serum to clean, dry skin up to 3x weekly. You can also spot-treat problem areas (like your T-zone) or use all over your face. Suggested Tip Phase 1: Use 2-3x weekly to clear out blackheads. Phase 2: Use 1-2x week",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Hypoallergenic"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharu-wonder-centella-3-pha-gentle-liquid-exfoliating-serum-120ml"
+            }
+        ]
+    },
+    {
+        "id": 848,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Sunflower Makeup-Melting Cleansing Balm",
+        "type": "Cleanser",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-haruharu-wonder-centella-sunflower-makeup-melting-cleansing-balm-100g",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/centella_sunflower_makeup-melting_cleansing_balm_100g.jpg?v=1728321236",
+        "description": "Details Benefits: A fragrance-free cleansing balm formulated with Sunflower Seed Oil to nourish skin, while effectively melting makeup, sunscreen, blackhead and excess oil with a visibly smooth finish. Enriched with Jojoba Seed Oil and Centella Asiatica Extract to balance skin oil production, while soothing and replenishing moisture for fatigued skin. Further contains Squalane and Argan Kernel Oil to strengthen skin barrier and help improve uneven skin texture. A soft sorbet-textured balm that leaves skin without tightness or dryness. Comes with a spatula for a hygienic cleansing step. Free of potentially harmful ingredients such as Sulfates, Silicones and Drying Alcohol. Suitable for all skin types. How to use 1. Scoop a moderate amount out and apply on dry skin, then gently massage for at least 30 seconds. 2. Emulsify the oil by adding a small amount of water and continue massaging until the oil turns milky white. 3. Rinse off thoroughly with lukewarm water. Ingredients Cetyl Ethylhexanoate, PEG-20 Glyceryl Triisostearate, Synthetic Wax, Helianthus Annuus (Sunflower) Seed Oil Unsaponifiables(5,000ppm), Argania Spinosa Kernel Oil, Butyrospermum Parkii (Shea) Butter, Simmondsia Chi",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-haruharu-wonder-centella-sunflower-makeup-melting-cleansing-balm-100g"
+            }
+        ]
+    },
+    {
+        "id": 849,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Triple AHA Gentle Cleansing Gel / Unscented",
+        "type": "Cleanser",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-triple-aha-gentle-cleansing-gel-unscented-100ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_triple_AHA_gentle_cleansing_gel_100ml.jpg?v=1728321342",
+        "description": "Details Size : 100ml A gentle exfoliating cleansing gel suitable for all skin types, including sensitive skin. With a low pH and plant-derived surfactants from coconut oil, it forms a fine lather that effectively removes impurities. The Triple AHA blend ensures a delicate removal of dead skin cells, leaving your skin refreshed and hydrated. Deep cleansing with Triple AHA (Tartaric Acid + Mandelic Acid + Citric Acid) Tartaric Acid Exfoliates the skin's surface, stimulating collagen production for a firmer complexion. Dissolves dead flakey skin. Mandelic Acid Exfoliates and it is multitasking acids that softens fine lines, wrinkles and regulates oil Citric Acid Exfoliates the upper layer of dead skin cells to help clean pores, even skin tone and soften & smooth the skin. Also speeds up cell renewal and balances skin pH The benefits of this product Efficiently deep cleans and prevents buildup in pores, while maintaining the skin's pH balance to prevent dryness. Effectively removes blemish-inducing oils, dirt, and debris, promoting clear and healthy skin. Benefits ??Non-Toxic ??No Artificial Fragrance ??No GMO'S ??No Phthalates ??No Mineral Oil ??No Drying Alcohol Targets ??All skin ty",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-triple-aha-gentle-cleansing-gel-unscented-100ml"
+            }
+        ]
+    },
+    {
+        "id": 850,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Moisture Pure Mineral Relief Sunscreen SPF50+/PA++++ /Unscented",
+        "type": "Sunscreen",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-pure-mineral-relief-daily-sunscreen-unscented-spf50-50ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_pure_mineral_relief_daily_sunscreen_SPF50_PA_50ml.jpg?v=1728322996",
+        "description": "Details Size : 50ml A lightweight satin finished sunscreen with very high protection for sensitive skin. The benefits of this product Gentle sunscreen with a satin finish, enriched with Rice Bran Oil infused with antioxidant-rich Black Rice for skin moisturization. Enhanced with Heartleaf Extract to provide nourishment and soothing benefits, plus Niacinamide to enhance skin tone. This formulation hydrates without leaving behind a sticky or oily residue, making it an excellent option for those with sensitive skin. Benefits • Reef Safe• Non-Toxic • No Artificial Fragrance • No GMO'S • No Color • No Phthalates • No Mineral Oil • No Drying Alcohol • No Phenoxyethanol • No Triclosan • No SLA/SLES Targets All skin types Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use Apply generously and evenly as the last step in your skincare routine and before makeup. Ingredients KEY INGREDIENTS Rice Bran Oil infused with Black Rice - 100% locally grown Black Rice, rich in antioxidants for free-radical protection ",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-pure-mineral-relief-daily-sunscreen-unscented-spf50-50ml"
+            }
+        ]
+    },
+    {
+        "id": 851,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Moisture Airyfit Daily Sunscreen SPF50+/PA++++ / Unscented",
+        "type": "Sunscreen",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-airyfit-daily-sunscreen-unscented-spf50-50ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_moisture_airyfit_daily_sunscreen_SPF50_PA_50ml.jpg?v=1728323068",
+        "description": "Details Size : 50ml A velvet finished airyfit sunscreen with very high protection for daily life. The benefits of this product Non-greasy sunscreen with a velvety finish, enriched with black rice extract abundant in hyaluronic acid, forms a protective barrier to retain moisture effectively. This unscented sunscreen offers exceptional UV protection, making it ideal for daily use in your routine. Targets All skin types Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% recycled, Forest stewardship Council (FSC)-certified paper printed in eco-friendly soy ink. How to use Apply generously and evenly as the last step in your skincare routine and before makeup. Ingredients KEY INGREDIENTS Oryza Sativa (Rice) Bran Oil + Extract - 100% Korean black rice, rich in antioxidant vitamin E for free-radical protection and skin moisturization Ceramide NP & Heartleaf Extract - Nourishes and softens the skin while relieving irritation - Improves skin texture for a smooth, glowing complexion Adenosine - Has anti-wrinkle properties, and boosts elastin and collagen - It's amino acid protein components penetrate into th",
+        "ingredients": [
+            "Ceramides",
+            "Niacinamide",
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-airyfit-daily-sunscreen-unscented-spf50-50ml"
+            }
+        ]
+    },
+    {
+        "id": 852,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Moisture 5.5 Soft Cleansing Gel / Unscented",
+        "type": "Cleanser",
+        "price": 17,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-5-5-soft-cleansing-gel-100ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_moisture_5.5_soft_cleansing_gel_100ml.jpg?v=1728321297",
+        "description": "Details Size : 100ml Mild, light-acidic cleanser for every morning! An unscented and moisturizing cleansing gel with a healthy light-acidic formula for your daily morning routine! A healthy pH helps the skin maintain a good barrier and control its balance. Made with natural surfactants from the coconut that will reduce irritation. Cruelty Free, 95% Natural ingredients, EWG-Green The benefits of this product SOAP-FREE natural surfactants from coconuts. : Contains natural surfactants from the coconut instead of synthetic surfactants and leaves the skin moisturized after cleansing. Healthy light-acidic formula for healthy pH: The light-acidic formula keeps skin balance for sensitive skin. Smooth find lather for mild cleansing: The smooth, dense lather minimizes the irritation of skin and defends the skin's barriers. Benefits ??SOAP-FREE natural surfactants from the coconut ??Healthy light-acidic formula for healthy PH ??Smooth fine lather for mild cleansing??Fermented black rice extracts for both moisturization and soothing Targets ??All skin types Eco Friendly Packaging haruharu wonder is committed to reducing environmental footprint. all our packaging materials are made from 100% re",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-5-5-soft-cleansing-gel-100ml"
+            }
+        ]
+    },
+    {
+        "id": 853,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Botanical 2GF Wonderful Ampoule",
+        "type": "Serum",
+        "price": 55,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-botanical-2gf-wonderful-ampuole-30ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_hyaluronic_botanical_2GF_wonderful_ampoule_30ml.jpg?v=1728322396",
+        "description": "Details How to use Ingredients",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-botanical-2gf-wonderful-ampuole-30ml"
+            }
+        ]
+    },
+    {
+        "id": 854,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Bakuchiol Eye Cream / Unscented",
+        "type": "Eye Cream",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-bakuchiol-eye-cream-20ml",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_bakuchiol_eye_cream_20ml.jpg?v=1728322658",
+        "description": "Details How to use Ingredients",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-bakuchiol-eye-cream-20ml"
+            }
+        ]
+    },
+    {
+        "id": 855,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "10 Hyaluronic Cream (Unscented)",
+        "type": "Moisturizer",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": true,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-10-hyaluronic-cream-50ml-unscented",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_rice_10_hyaluronic_cream_unscented_50ml.jpg?v=1728322753",
+        "description": "Details Fermented 100% Korean-produced black rice extract and bamboo shoot bark extract provide hydration and nourishment deep into the skin enabling the skin to maintain its best condition. By increasing 10,000ppm more in Safflower Seed Oil & Evening Primrose Oil, experience more hydrated, plumper, and smoother skin. Safflower seed oil contains high levels of antioxidant vitamin E, which helps maintain skin elasticity, and reduces inflammation. Evening primrose oil contains linoleic acid which helps to smooth and revitalize the skin, and promote moisture retention. New and improved texture helps fast absorption and makes skin feel cool, comfortable, and refreshed with a highly moisturizing, but lightweight formula. The benefits of this product This lightweight, nutrient-rich, moisturizing smoothing cream improves skin tone, texture, and firmness while providing all-day hydration, like superfood for your skin. Its wonderful formula features powerful antioxidants from fermented black rice and bamboo shoot barks, skin-friendly Safflower oil, and evening promrose oil that nourish skin. In doing so, it also helps to minimize the appearance of uneven skin tone, control pH balance, thus ",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan",
+            "Fragrance-Free"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-10-hyaluronic-cream-50ml-unscented"
+            }
+        ]
+    },
+    {
+        "id": 856,
+        "brand": "Haruharu Wonder",
+        "brandColor": "#2E2E2E",
+        "name": "Daily Soothing Sun Shield SPF50+ PA++++",
+        "type": "Sunscreen",
+        "price": 22,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://haruharuwonder.com/products/haruharuwonder-black-bamboo-daily-soothing-sun-shield-spf50-pa-20g",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0707/0190/8217/files/black_bamboo_daily_soothing_sun_shield_SPF50_PA_20g.jpg?v=1728323103",
+        "description": "Details Benefits: A white-cast free vegan chemical sun stick with broad spectrum SPF50+ PA++++ to provide UVA and UVB protection to shield skin from sunburn, early aging and environmental stress. Formulated with patented fermented bamboo shoot extract and Ecotin to deliver nourishment and hydration to skin, while replenishing skin barrier. Further contains Niacinamide and Adenosine to lock moisture in skin, while giving a glowing complexion. A soft and powdery balm that gives a semi-matte and cooling finish without greasiness and dragging of skincare or makeup underneath. A reef-safe sunscreen that does not contain Oxybenzone and Octinoxate, known to be harmful to ocean. Skin irritation tested completed, suitable for sensitive skin. Free of potentially harmful ingredients such as GMO's, Sulfates and drying alcohol. How to use 1. At the last step of your skincare routine, twist the base to expose about 0.5cm of the stick and swipe it thoroughly across any exposed skin, like face, neck and shoulder. 2. Carry around this portable sun stick with you and reapply every 2 hours for optimal protection. Ingredients Water, Dibutyl Adipate, Synthetic Wax, Methyl Methacrylate Crosspolymer, But",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Dry Skin",
+            "Hyperpigmentation",
+            "Barrier Support",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://haruharuwonder.com/products/haruharuwonder-black-bamboo-daily-soothing-sun-shield-spf50-pa-20g"
+            }
+        ]
+    },
+    {
+        "id": 857,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "star strips™ + salicylic acid",
+        "type": "Spot Treatment",
+        "price": 7.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/star-strips-salicylic-acid",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-star-strips-salicylic-acid-pore-clearing-nose-strips.png?v=1785364604",
+        "description": "star strips™ + salicylic acid are extra strength nose strips that instantly remove blackheads and unclog pores by lifting away excess oil, dirt, and buildup for visibly smoother skin. avail in four blue designs so you can feel cute clearing pores. salicylic acid, a beta hydroxy acid, helps unclog pores and exfoliate skin by dissolving dead skin cells and oil. a soothing combo of aloe vera and witch hazel leaves skin feeling soft, happy, and fresh. for best results, use these cuties once a week to help visibly reduce the appearance of pores after use. have fun caring for skin with the new super sal acid bundle , avail for a limited time only!",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/star-strips-salicylic-acid"
+            }
+        ]
+    },
+    {
+        "id": 858,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "hydro-star® microdarts + salicylic acid",
+        "type": "Spot Treatment",
+        "price": 12.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/microdarts",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-hydro-star-microdart-pimple-patches-salicylic-acid.png?v=1783610863",
+        "description": "hydro-star® microdarts + salicylic acid are clear hydrocolloid patches with tiny, self-dissolving microdarts that dive deep into skin to reach early-stage pimples with key ingredients. calming niacinamide and salicylic acid, a powerful exfoliant, work together to reduce redness, soothe irritation, and shrink spots before they come to the surface. when you feel a spot brewing, put a star on your pimple to send powerful ingredients directly to the source and keep it protected all day long. an invisible finish and rounded edges blend into skin for subtle coverage anytime, anywhere. quantity: 12 stars",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/microdarts"
+            }
+        ]
+    },
+    {
+        "id": 859,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "star strips™",
+        "type": "Spot Treatment",
+        "price": 6.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/star-strips",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-star-strips-pore-clearing-nose-strips.png?v=1772635804",
+        "description": "your fav pore strips just got even cuter! star strips ™ have the same powerful formula you know and love, now with an extra bright look ft. four colorful designs. star strips instantly remove blackheads and unclog pores by gently lifting away excess oil, dirt, and buildup for visibly smoother skin. a soothing combo of aloe vera and witch hazel leaves skin feeling soft, happy, and fresh. for best results, use these cuties once a week to help visibly reduce the appearance of pores after use. have fun trying a lil bit of everything when you bundle star strips with hydro-stars® and star balm® for 15% off .",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/star-strips"
+            }
+        ]
+    },
+    {
+        "id": 860,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "star treatment™",
+        "type": "Spot Treatment",
+        "price": 11.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/star-treatment",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-star-treatment-acne-spot-treatment.png?v=1770910974",
+        "description": "star treatment ™ is a powerful 2% salicylic acid acne spot treatment that visibly shrinks pimples in 8 hours and prevents new breakouts from forming. a calming combo of niacinamide and aloe vera soothes irritation and reduces redness . this max strength spot treatment is best for blackheads, whiteheads, clogged pores, and acne-prone skin. made with a cute blue tint that quickly dries clear, star treatment is perfect for layering under any 100% hydrocolloid stars or with the rest of your skincare routine. just wait for it to dry completely before sticking on a hydro-star® to lock in effective ingredients and provide extra protection . for best results, build up to 1-3x daily use or whatever feels best for your skin. pair it with your fav invisible pimple patches and save 15% .",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/star-treatment"
+            }
+        ]
+    },
+    {
+        "id": 861,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "pink star",
+        "type": "Spot Treatment",
+        "price": 10.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/hydro-star-pink",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-pink-star-hydro-star-refill.png?v=1743780547",
+        "description": "have fun shrinking spots and feeling cute with 32 hydro-star® pimple patches in four pink shades: jelly bean , bubblegum , cotton candy , and fruit snack . made to be stored inside of your big pink compact for easy access. hydro-stars are clinically proven to shrink pimples in just six hours.* made with 100% hydrocolloid, these bestselling patches help absorb gunk and reduce redness for happy skin. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. have fun hanging out with all of your pink favs with the perfect pink bundle ! quantity: 32 stars *based on a 23-subject clinical study over 5 days",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/hydro-star-pink"
+            }
+        ]
+    },
+    {
+        "id": 862,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "star wash® + salicylic acid",
+        "type": "Cleanser",
+        "price": 15.99,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/star-wash-salicylic-acid",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-salicylic-acid-facial-cleanser.png?v=1766152875",
+        "description": "star wash® + salicylic acid is an oil-free face wash that helps minimize breakouts and unclog pores as you cleanse. an extra powerful combo of salicylic acid, hyaluronic acid, and glycerin work together to reduce excess oil and hydrate skin . with a foaming gel lather that feels light and airy, star wash gently removes makeup, oil, and buildup. star wash adds a lil sparkle to your day with the sweetest shimmer that disappears with water. it's mica based and microplastic free. have fun trying the sal acid skincare duo for a full routine formulated for breakout-prone and sensitive skin!",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/star-wash-salicylic-acid"
+            }
+        ]
+    },
+    {
+        "id": 863,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "star cream® + salicylic acid",
+        "type": "Moisturizer",
+        "price": 15.99,
+        "priceRange": "$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/star-cream-salicylic-acid",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/starface-salicylic-acid-moisturizer-soothe-skin.png?v=1766152875",
+        "description": "star cream® + salicylic acid is an oil-free moisturizer that helps minimize breakouts and repair dryness for happy skin. the dreamiest combo of salicylic acid, hyaluronic acid, and niacinamide work together to unclog pores while locking in moisture . it's like a hug for your face, twice a day. star cream absorbs into skin like a cloud with a lightweight, silky feel. cool and comforting, star cream leaves skin with a fresh, dewy sheen. have fun trying the sal acid skincare duo for a full routine formulated for breakout-prone and sensitive skin!",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/star-cream-salicylic-acid"
+            }
+        ]
+    },
+    {
+        "id": 864,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "hydro-star® recovery",
+        "type": "Spot Treatment",
+        "price": 12.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/hydro-star-recovery",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/RECOVERY_PLP.png?v=1723045193",
+        "description": "hydro-star® recovery is a hydrocolloid patch that helps soothe and protect skin that’s dry, flaky, or freshly picked . made with vitamin a, aloe vera, and licorice root to help comfort and restore skin while minimizing the look of scars . when picking, popping, or flaking happens, put a star on your spot to keep the area protected and support skin recovery while looking cute. repeat as needed for soft and happy skin through the recovery process. keep your stars safe in a refillable, mirrored compact for easy access. quantity: 32 stars",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/hydro-star-recovery"
+            }
+        ]
+    },
+    {
+        "id": 865,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "hydro-star® clear",
+        "type": "Spot Treatment",
+        "price": 12.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/hydro-star-clear",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/CLEAR_PLP.png?v=1721919389",
+        "description": "hydro-star® clear is here, whether you can see them or not! have fun shrinking spots and feeling cute with 32 invisible hydro-star pimple patches in two sizes: 16 classic [14mm] and 16 big [18mm]. hydro-stars are clinically proven to shrink pimples in just six hours.* made with 100% hydrocolloid, these bestselling patches help absorb gunk and reduce redness for happy skin. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. these flexible stars blend seamlessly into skin thanks to undetectable, rounded edges. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. keep your stars safe in a refillable, mirrored compact for easy access. quantity: 32 stars *based on a 23-subject clinical study over 5 days",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/hydro-star-clear"
+            }
+        ]
+    },
+    {
+        "id": 866,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "hydro-star® + tea tree",
+        "type": "Spot Treatment",
+        "price": 12.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/tea-tree-hydro-stars",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/teatree_2788ef1e-860d-4b08-8c1b-7489bdacb4d5.png?v=1711576788",
+        "description": "have fun shrinking spots and feeling cute with a pack of 32 hydrocolloid patches with tea tree oil . hydro-star® + tea tree helps naturally balance and soothe skin while minimizing the appearance of redness. perfect for spots that need a lil extra love, these naturally cute stars help unclog pores by reducing excess oil and buildup without irritating skin . when combined with hydrocolloid, hydro-stars + tea tre e help absorb fluid, protect skin, and visibly shrink spots. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. keep your stars safe in a refillable, mirrored compact for easy access. quantity: 32 stars",
+        "ingredients": [],
+        "concerns": [
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/tea-tree-hydro-stars"
+            }
+        ]
+    },
+    {
+        "id": 867,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "hydro-star® + salicylic acid",
+        "type": "Spot Treatment",
+        "price": 12.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/salicylic-acid-hydro-stars",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/salacid_1.png?v=1763817630",
+        "description": "have fun shrinking spots and feeling cute with 32 hydro-star® + salicylic acid patches, made to be stored inside of your big blue compact for easy access. these pore-clearing cuties are made with hydrocolloid and salicylic acid: a beta hydroxy acid known to dissolve dead skin cells. when combined with hydrocolloid, a material that's clinically proven to absorb fluid, hydro-stars + salicylic acid help shrink and soothe spots that need extra care. super sticky and long-lasting, hydro-stars stay put without lifting or peeling. they also shield spots from outside interference and serve as a gentle reminder to avoid skin picking. quantity: 32 stars",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/salicylic-acid-hydro-stars"
+            }
+        ]
+    },
+    {
+        "id": 868,
+        "brand": "Starface",
+        "brandColor": "#2E2E2E",
+        "name": "rainbow star",
+        "type": "Spot Treatment",
+        "price": 10.99,
+        "priceRange": "$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://starface.world/products/rainbow-hydro-stars",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0070/8388/4615/files/rainbow.png?v=1711568266",
+        "description": "have fun shrinking spots and feeling cute with 32 hydro-star® pimple patches, made with 100% hydrocolloid, in full color . all net proceeds from rainbow stars are allocated to: the black-led movement fund in the u.s. the hetrick-martin institute for lgbtq+ youth in the u.s. black thrive in the u.k. black women in motion in canada rainbow stars are a commitment to protecting and uplifting black lives and lgbtq+ lives, now and forever. quantity: 32 stars",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://starface.world/products/rainbow-hydro-stars"
+            }
+        ]
+    },
+    {
+        "id": 869,
+        "brand": "Indie Lee",
+        "brandColor": "#2E2E2E",
+        "name": "Restorative Eye Cream",
+        "type": "Eye Cream",
+        "price": 68,
+        "priceRange": "$$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://indielee.com/products/restorative-eye-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_Restorative-Eye-Cream-15ml_Hero_W.jpg?v=1741129918",
+        "description": "Ideal for: Fine Lines & Wrinkles · Dark Circles · Loss of Firmness Skin type: All Skin Types · Sensitive Skin Clinically proven results* A powerhouse eye cream for immediate results. Tiger Grass and Apple Stem Cells pair with Paracress extract to reduce the appearance of fine lines and diminish visible signs of aging. Conditioning Seaweed extract and Licorice Root promote brighter, plumper, more youthful looking skin. 15ml/0.5 fl oz COSMOS NATURAL",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://indielee.com/products/restorative-eye-cream"
+            }
+        ]
+    },
+    {
+        "id": 870,
+        "brand": "Indie Lee",
+        "brandColor": "#2E2E2E",
+        "name": "Retinol Alternative Cream",
+        "type": "Moisturizer",
+        "price": 72,
+        "priceRange": "$$$",
+        "oilFree": true,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://indielee.com/products/retinol-alternative-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_Retinol-Alternative-Cream-45ml_Hero_W.jpg?v=1741129934",
+        "description": "Ideal for: Fine Lines & Wrinkles · Loss of Firmness · Uneven Texture Skin type: All Skin Types · Sensitive Skin Clinically proven results* Say hello to Retinol-like benefits without the drawbacks. This high-performance cream is formulated with Natural Retinol Alternative Rambutan for improved appearance of elasticity, firmness, fine lines and wrinkles. Paracress extract reduces the visible signs of aging while Squalane and Orange Milk Tree extract plump skin and boost moisture retention. 45ml/1.5 fl oz COSMOS NATURAL",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://indielee.com/products/retinol-alternative-cream"
+            }
+        ]
+    },
+    {
+        "id": 871,
+        "brand": "Indie Lee",
+        "brandColor": "#2E2E2E",
+        "name": "CoQ-10 Toner",
+        "type": "Toner",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://indielee.com/products/coq-10-toner",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_CoQ-10-Toner-125ml_Hero_W_9b864deb-b8d6-4896-bfae-c75ad0502cac.jpg?v=1769810586",
+        "description": "Ideal for: Dehydration · Dullness · Environmental Stressors Skin type: Normal · Dry · Combination · Sensitive Why You'll Love It: 💧 Instant hydration ✨ Soft, radiant-looking skin 🌿 Antioxidant-rich CoQ-10 + botanicals 🫧 Alcohol-free & suitable for sensitive skin 125ml/4.2 fl oz",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Sensitive Skin"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [
+            "Dry",
+            "Sensitive"
+        ],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://indielee.com/products/coq-10-toner"
+            }
+        ]
+    },
+    {
+        "id": 872,
+        "brand": "Indie Lee",
+        "brandColor": "#2E2E2E",
+        "name": "Brightening Cleanser",
+        "type": "Cleanser",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://indielee.com/products/brightening-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0034/8759/6611/files/IL_Brightening-Cleanser-125ml_Hero_W.jpg?v=1741128618",
+        "description": "Ideal for: Dullness · Uneven Tone & Texture · Makeup Removal Skin type: Normal · Combination · Oily · Sensitive Why You'll Love It: 🍓 Brighter-looking skin with antioxidant-rich strawberry ✨ Gently exfoliates to smooth uneven tone + texture 🫧 Cleanses without stripping skin of essential moisture 💧 Multi-tasking formula that doubles as a 5-minute treatment mask 125ml/4.2 fl oz",
+        "ingredients": [],
+        "concerns": [
+            "Dry Skin",
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://indielee.com/products/brightening-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 873,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Sun Veil Illuminating Sunscreen SPF 30",
+        "type": "Sunscreen",
+        "price": 48,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/sun-veil-illuminating-sunscreen-spf-30",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/21_4ee81a8e-062d-4282-a76b-692b356a9153.png?v=1771551892",
+        "description": "Glow brighter with this ultra-radiant, 100% mineral sunscreen illuminator that makes applying and reapplying sun care feel effortless. This easy-to-use compact delivers a buildable, warm golden sheen powered by light-diffusing mica, giving skin a sun-kissed glow on both body and face. The talc-free formula glides on smoothly without feeling heavy or chalky, creating a transfer-proof, radiant finish perfect for quick touch-ups or on-the-go protection. Lightly scented with Kopari’s signature sweet coconut milk, it’s your new glow-anywhere, glow-everywhere SPF.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/sun-veil-illuminating-sunscreen-spf-30"
+            }
+        ]
+    },
+    {
+        "id": 874,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Sun Veil Illuminating Elixir Face Sunscreen SPF 38",
+        "type": "Sunscreen",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/sun-veil-illuminating-elixir-face-spf-38",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_92_569edfd5-1d3b-4f4f-8b9e-0ca8ce18549a.png?v=1763763738",
+        "description": "Glow and protect with this radiant, daily wear SPF 38 with a silky, serum-like texture that feels weightless on skin. This hybrid formula melts in instantly with no white cast, no stickiness, and no pilling, leaving a smooth, luminous finish that wears beautifully on its own or as the perfect base under makeup. Designed for effortless daily use, it hydrates, helps brightens the look of skin, and supports a healthy skin barrier while providing reliable UVA/UVB protection and a subtle, refreshing melon scent.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection",
+            "Barrier Support"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/sun-veil-illuminating-elixir-face-spf-38"
+            }
+        ]
+    },
+    {
+        "id": 875,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Ceramide Grinding Cleansing Balm",
+        "type": "Cleanser",
+        "price": 36,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/ceramide-cleansing-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_17_4c7175bb-20e9-4123-badb-10a8f80b5709.png?v=1762278870",
+        "description": "A fresh twist on cleansing. This innovative balm features a twist-up grinder that dispenses fresh, mess-free ribbons of product for a hygienic cleanse every time. Powered by skin-loving ceramides to support the barrier and lock in long-lasting moisture, it effortlessly melts away long-wear makeup, waterproof mascara, and SPF - without ever stripping the skin. Antioxidant-rich sea buckthorn oil and vitamin E help nourish and protect, leaving skin soft, hydrated, and never tight or dry. The gentle formula is safe for all skin types and is lightly scented with a refreshing hint of melon.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/ceramide-cleansing-balm"
+            }
+        ]
+    },
+    {
+        "id": 876,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Ceramide & Retinol Dual-Core Eye Balm",
+        "type": "Eye Cream",
+        "price": 42,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/ceramide-retinol-dual-core-eye-balm",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_53_2942be09-334b-46a0-94f7-1d5ae1b02b29.png?v=1762269524",
+        "description": "This dual-core eye balm delivers targeted treatment in one smooth glide. The encapsulated retinol core helps smooth fine lines and improve tone and texture, without irritation, and is gentle enough for both AM and PM use. On the outside, the ceramide-rich layer nourishes, moisturizes, and strengthens the delicate under-eye area. The glide-on balm format applies effortlessly, delivering powerful yet gentle results with no tugging or pulling.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/ceramide-retinol-dual-core-eye-balm"
+            }
+        ]
+    },
+    {
+        "id": 877,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Pure Protect Mineral Sunscreen Stick SPF 50+",
+        "type": "Sunscreen",
+        "price": 29,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/pure-protect-mineral-sunscreen-stick-spf-50",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_29_243ad66a-539e-4c64-a11c-5f34f744dca3.png?v=1762268845",
+        "description": "Soak up the sun with Pure Protect Mineral Sunscreen Stick SPF 50+. This 100% mineral sunscreen offers broad-spectrum protection for both face and body, gliding on sheer and seamless. Packed with nourishing actives and antioxidants, it hydrates, soothes, and makes reapplication a breeze—anytime, anywhere.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/pure-protect-mineral-sunscreen-stick-spf-50"
+            }
+        ]
+    },
+    {
+        "id": 878,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Moisture Whipped Ceramide Cream",
+        "type": "Moisturizer",
+        "price": 44,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/moisture-whipped-ceramide-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/MWCC_NoHover.png?v=1759361566",
+        "description": "Quench thirsty skin with our lightweight Moisture Whipped Ceramide Cream. Comprised of barrier-protecting ceramides, hyaluronic acid & nourishing vegan desert milk to restore skin’s barrier and lock in moisture. Skin is left feeling smoother, more supple and moisture-balanced for up to 72-hours of clinically-proven hydration.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/moisture-whipped-ceramide-cream"
+            }
+        ]
+    },
+    {
+        "id": 879,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Bright As Day Sheer Mineral Sunscreen SPF 50",
+        "type": "Sunscreen",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/bright-as-day-sheer-mineral-sunscreen-spf-50",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages-2026-08-04T104516.113.png?v=1785861927",
+        "description": "A 100% mineral facial sunscreen that not only shields against UVA/UVB rays but blends in for a sheer, glowy finish. Suitable for all skin tones, it's your daily defense for a brighter, more even, and protected complexion! Made with Vitamin C.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/bright-as-day-sheer-mineral-sunscreen-spf-50"
+            }
+        ]
+    },
+    {
+        "id": 880,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Star Bright Vitamin C Discoloration Correcting Serum",
+        "type": "Serum",
+        "price": 52,
+        "priceRange": "$$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/star-bright-vitamin-c-discoloration-correcting-serum",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/1222_Kopari_0704copy.jpg?v=1762200859",
+        "description": "A lightweight, gentle daily serum with encapsulated beads for slow release, featuring stabilized Vitamin C. Packed with potent actives such as tranexamic acid and kakadu plum to further help brighten, hydrate, and smooth for a radiant complexion.",
+        "ingredients": [],
+        "concerns": [
+            "Hyperpigmentation"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/star-bright-vitamin-c-discoloration-correcting-serum"
+            }
+        ]
+    },
+    {
+        "id": 881,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Star Bright Vitamin C Moisturizer",
+        "type": "Moisturizer",
+        "price": 46,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/star-bright-vitamin-c-moisturizer",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/1222_Kopari_0727Artboard1_15.jpg?v=1762200859",
+        "description": "A lightweight, moisturizing cream that effortlessly melts into your skin, providing a surge of hydration. Crafted to match your skin's natural structure, it enhances absorption and efficacy for maximum results. Brighten, restore, and protect with the power of Vitamin C, starfruit, and soothing actives.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/star-bright-vitamin-c-moisturizer"
+            }
+        ]
+    },
+    {
+        "id": 882,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Lychee Clean Vitamin C Face Mask",
+        "type": "Mask",
+        "price": 34,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/lychee-clean-vitamin-c-face-mask",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/LycheeFaceMask.png?v=1762199363",
+        "description": "Mask that beautiful face with cleaner than clean ingredients for bright, glowing skin. Jam-packed with Vitamin C from Lychee Extract, AHA’s and Willow Bark that all work together to exfoliate and brighten complexion, revealing your radiance. Shea butter and coconut milk combine to deeply moisturize. Clarify, brighten, smooth and hydrate your skin!",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/lychee-clean-vitamin-c-face-mask"
+            }
+        ]
+    },
+    {
+        "id": 883,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Marine Clean Purifying Gel Cleanser",
+        "type": "Cleanser",
+        "price": 32,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/marine-clean-purifying-gel-cleanser",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/PDPImages_16_0c05e8f8-e69a-46cf-ad49-c1b49206c5e7.png?v=1762278761",
+        "description": "Dive into deeply cleansed yet nourished skin with Kopari's Marine Clean Purifying Gel Cleanser that combines the strength of a gel with the gentleness of a foam. Effortlessly melts away makeup without stripping or drying skin.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/marine-clean-purifying-gel-cleanser"
+            }
+        ]
+    },
+    {
+        "id": 884,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Sun Shield Soft Glow Daily Face SPF 30 Sunscreen",
+        "type": "Sunscreen",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/sun-shield-soft-glow-daily-face-spf-30",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/SoftGlow.png?v=1762200006",
+        "description": "A sheer, weightless formula with a satin finish, this broad spectrum SPF 30 facial sunscreen glides on seamlessly to smooth skin's appearance. Vitamin E works to shield skin from free radical damage, while ethically-sourced pearlescent minerals illuminate in the sun, leaving skin protected with a subtle, radiant glow. Pro Tip: works wonders as a makeup primer for flawless application, no pilling.",
+        "ingredients": [
+            "SPF"
+        ],
+        "concerns": [
+            "Sun Protection"
+        ],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/sun-shield-soft-glow-daily-face-spf-30"
+            }
+        ]
+    },
+    {
+        "id": 885,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "Niacinamide & Caffeine Eye Bright Cream",
+        "type": "Eye Cream",
+        "price": 38,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/niacinamide-caffeine-eye-bright-cream",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/EyeBrightCream.png?v=1762199658",
+        "description": "A lightweight and refreshing eye cream packed with clinically-backed active ingredients including niacinamide and caffeine to reduce the appearance of dark circles and puffiness, while simultaneously soothing and hydrating the skin.",
+        "ingredients": [],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/niacinamide-caffeine-eye-bright-cream"
+            }
+        ]
+    },
+    {
+        "id": 886,
+        "brand": "Kopari",
+        "brandColor": "#2E2E2E",
+        "name": "California Glow Enzyme Face Scrub",
+        "type": "Exfoliant",
+        "price": 30,
+        "priceRange": "$$",
+        "oilFree": false,
+        "fragranceFree": false,
+        "vegan": true,
+        "nonComedogenic": false,
+        "buyUrl": "https://koparibeauty.com/products/california-glow-enzyme-face-scrub-with-pineapple-and-papaya-enzymes",
+        "retailer": "Brand Website",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0777/7633/files/EnzymeScrub.png?v=1762199135",
+        "description": "California Glow Dreamin’! Get that California Skin — radiant, glowy, clean and healthy — with our triple-powered exfoliant scrub. Infused with papaya and pineapple enzymes and a natural, biodegradable physical exfoliant, this balmy coconut milk scrub gently resurfaces skin for a smoother, more visibly-radiant glow.",
+        "ingredients": [
+            "Lactic Acid"
+        ],
+        "concerns": [],
+        "features": [
+            "Vegan"
+        ],
+        "skinTypes": [],
+        "buyLinks": [
+            {
+                "store": "Brand Website",
+                "url": "https://koparibeauty.com/products/california-glow-enzyme-face-scrub-with-pineapple-and-papaya-enzymes"
+            }
+        ]
     }
 ];
