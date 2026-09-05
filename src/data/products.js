@@ -26192,6 +26192,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B07THCMGFP?tag=bunnyindex-20"
             }
         ]
     },
@@ -26232,6 +26236,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner-for-sensitive-skin"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0971YC8W1?tag=bunnyindex-20"
             }
         ]
     },
@@ -27331,6 +27339,10 @@ export const RAW_PRODUCTS = [
             {
                 "store": "Brand Website",
                 "url": "https://starface.world/products/salicylic-acid-hydro-stars"
+            },
+            {
+                "store": "amazon",
+                "url": "https://www.amazon.com/dp/B0C62H1GDM?tag=bunnyindex-20"
             }
         ]
     },
