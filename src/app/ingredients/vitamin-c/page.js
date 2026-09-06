@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/vitamin-c' },
-  title: "Vitamin C, from brands that actually pass. — BunnyIndex",
+  title: "Cruelty-free Vitamin C, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free vitamin C. Brands that meet all three rules — not from a bright carton.",
 };
 
@@ -12,7 +12,7 @@ export default function VitaminCPage() {
     <IngredientPage
       tag="Vitamin C"
       eyebrow="Ingredient"
-      h1="Vitamin C, from brands that actually pass."
+      h1="Cruelty-free Vitamin C, from brands that actually pass."
       dek="Ascorbic acid and its cousins, from brands that meet all three rules — not from a bright carton."
       sections={[
         {
