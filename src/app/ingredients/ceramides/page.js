@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/ceramides' },
-  title: "Ceramides, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Ceramides, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free ceramides. Brands that meet the Bunny Index Standard — not a barrier routine.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Ceramides"
       eyebrow="Ingredient"
-      h1="Ceramides, from brands that actually pass."
+      h1="Cruelty-free Ceramides, from brands that actually pass."
       dek="Skin-similar lipids from brands that meet all three rules \u2014 not a repair story."
       sections={[
         {
