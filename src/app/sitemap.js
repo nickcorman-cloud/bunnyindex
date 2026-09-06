@@ -1,5 +1,6 @@
 import { products, slugify } from '@/lib/constants';
 import { WAVE1_SLUGS } from '@/data/determinations-wave1';
+import { ALTERNATIVES } from '@/data/alternatives';
 
 const SITE = 'https://www.bunnyindex.com';
 
@@ -100,5 +101,9 @@ export default function sitemap() {
     url: `${SITE}${path}`,
     lastModified,
   }));
-  return [...staticEntries, ...productEntries, ...determinationEntries, ...forEntries];
+  const alternativeEntries = ALTERNATIVES.map((a) => ({
+    url: `${SITE}/alternatives-to/${a.slug}`,
+    lastModified,
+  }));
+  return [...staticEntries, ...productEntries, ...determinationEntries, ...forEntries, ...alternativeEntries];
 }
