@@ -3,6 +3,28 @@ import { WAVE1_SLUGS } from '@/data/determinations-wave1';
 
 const SITE = 'https://www.bunnyindex.com';
 
+const CONCERN_SLUGS = {
+  Acne: 'acne',
+  'Dry Skin': 'dry-skin',
+  Hyperpigmentation: 'hyperpigmentation',
+  'Barrier Support': 'barrier-support',
+  'Oily Skin': 'oily-skin',
+  Rosacea: 'rosacea',
+  'Seborrheic Dermatitis': 'seborrheic-dermatitis',
+  'Sensitive Skin': 'sensitive-skin',
+};
+
+const TYPE_SLUGS = {
+  Moisturizer: 'moisturizer',
+  Sunscreen: 'sunscreen',
+  Cleanser: 'cleanser',
+  Serum: 'serum',
+  'Eye Cream': 'eye-cream',
+  Mask: 'mask',
+  Toner: 'toner',
+  'Face Oil': 'face-oil',
+};
+
 const STATIC_PATHS = [
   '/',
   '/directory',
@@ -47,6 +69,19 @@ const STATIC_PATHS = [
   '/types/face-oil',
 ];
 
+function forComboPaths() {
+  const paths = [];
+  for (const [concernTag, concernSlug] of Object.entries(CONCERN_SLUGS)) {
+    for (const [typeTag, typeSlug] of Object.entries(TYPE_SLUGS)) {
+      const n = products.filter(
+        (p) => p.type === typeTag && Array.isArray(p.concerns) && p.concerns.includes(concernTag)
+      ).length;
+      if (n >= 3) paths.push(`/for/${concernSlug}/${typeSlug}`);
+    }
+  }
+  return paths;
+}
+
 export default function sitemap() {
   const lastModified = new Date();
   const staticEntries = STATIC_PATHS.map((path) => ({
@@ -61,5 +96,9 @@ export default function sitemap() {
     url: `${SITE}/is-${slug}-cruelty-free`,
     lastModified,
   }));
-  return [...staticEntries, ...productEntries, ...determinationEntries];
+  const forEntries = forComboPaths().map((path) => ({
+    url: `${SITE}${path}`,
+    lastModified,
+  }));
+  return [...staticEntries, ...productEntries, ...determinationEntries, ...forEntries];
 }
