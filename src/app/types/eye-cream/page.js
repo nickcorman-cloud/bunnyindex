@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 /** Pass B — SEO: /workspace/seo-type-hubs-passb/types-eye-cream.md */
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/eye-cream" },
-  title: "Eye Cream, from brands that actually pass. — BunnyIndex",
+  title: "Cruelty-free Eye Cream, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free eye cream. Brands that meet the Bunny Index Standard — not an under-eye ranking.",
 };
 
@@ -13,7 +13,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Eye Cream"
       eyebrow="Type"
-      h1="Eye Cream, from brands that actually pass."
+      h1="Cruelty-free Eye Cream, from brands that actually pass."
       kind="type"
       dek="Eye Creams from brands that meet all three rules — not an under-eye ranking."
       sections={[
