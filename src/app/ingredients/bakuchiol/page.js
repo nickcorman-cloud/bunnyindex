@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/bakuchiol' },
-  title: "Bakuchiol, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Bakuchiol, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free bakuchiol. Brands that meet the Bunny Index Standard — not a retinol substitute ranking.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Bakuchiol"
       eyebrow="Ingredient"
-      h1="Bakuchiol, from brands that actually pass."
+      h1="Cruelty-free Bakuchiol, from brands that actually pass."
       dek="Bakuchiol from brands that meet all three rules \u2014 not a retinol stand-in we invented."
       sections={[
         {
