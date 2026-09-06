@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 /** Pass B — SEO: /workspace/seo-type-hubs-passb/types-face-oil.md */
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/face-oil" },
-  title: "Face Oil, from brands that actually pass. — BunnyIndex",
+  title: "Cruelty-free Face Oil, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free face oil. Brands that meet the Bunny Index Standard — not an oil ranking.",
 };
 
@@ -13,7 +13,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Face Oil"
       eyebrow="Type"
-      h1="Face Oil, from brands that actually pass."
+      h1="Cruelty-free Face Oil, from brands that actually pass."
       kind="type"
       dek="Face Oils from brands that meet all three rules — not an oil ranking."
       sections={[
