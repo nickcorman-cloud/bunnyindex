@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/types/cleanser' },
-  title: "Cleanser, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Cleanser, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free cleansers. Brands that meet the Bunny Index Standard — not a double-cleanse plan.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Cleanser"
       eyebrow="Type"
-      h1="Cleanser, from brands that actually pass."
+      h1="Cruelty-free Cleanser, from brands that actually pass."
       kind="type"
       dek="Cleansers from brands that meet all three rules \u2014 not a double-cleanse plan."
       sections={[

@@ -4,7 +4,7 @@ import { IngredientPage, pStyle } from '../../ingredients/_shared';
 /** Pass B — SEO: /workspace/seo-type-hubs-passb/types-mask.md */
 export const metadata = {
   alternates: { canonical: "https://www.bunnyindex.com/types/mask" },
-  title: "Mask, from brands that actually pass. — BunnyIndex",
+  title: "Cruelty-free Mask, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free masks. Brands that meet the Bunny Index Standard — not a sheet-mask ranking.",
 };
 
@@ -13,7 +13,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Mask"
       eyebrow="Type"
-      h1="Mask, from brands that actually pass."
+      h1="Cruelty-free Mask, from brands that actually pass."
       kind="type"
       dek="Masks from brands that meet all three rules — not a sheet-mask ranking."
       sections={[

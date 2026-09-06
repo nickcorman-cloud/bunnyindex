@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/peptides' },
-  title: "Peptides, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Peptides, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free peptides. Brands that meet the Bunny Index Standard — not a collagen promise.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Peptides"
       eyebrow="Ingredient"
-      h1="Peptides, from brands that actually pass."
+      h1="Cruelty-free Peptides, from brands that actually pass."
       dek="Peptide-tagged products from brands that meet all three rules \u2014 not a collagen claim."
       sections={[
         {

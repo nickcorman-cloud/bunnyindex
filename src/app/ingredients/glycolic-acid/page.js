@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/glycolic-acid' },
-  title: "Glycolic Acid, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Glycolic Acid, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free glycolic acid. Brands that meet the Bunny Index Standard — not an acid ranking.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Glycolic Acid"
       eyebrow="Ingredient"
-      h1="Glycolic Acid, from brands that actually pass."
+      h1="Cruelty-free Glycolic Acid, from brands that actually pass."
       dek="An AHA from brands that meet all three rules \u2014 not every acid on a label."
       sections={[
         {

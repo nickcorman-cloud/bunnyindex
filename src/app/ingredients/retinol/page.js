@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/retinol' },
-  title: "Retinol, from brands that actually pass. — BunnyIndex",
+  title: "Cruelty-free Retinol, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free retinol. Brands that meet all three rules — not a claim that ends at the finished product.",
 };
 
@@ -12,7 +12,7 @@ export default function RetinolPage() {
     <IngredientPage
       tag="Retinol"
       eyebrow="Ingredient"
-      h1="Retinol, from brands that actually pass."
+      h1="Cruelty-free Retinol, from brands that actually pass."
       dek="Vitamin A, from brands that meet all three rules — not from a claim that ends at the finished product."
       sections={[
         {

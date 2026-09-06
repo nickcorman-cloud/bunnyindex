@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/squalane' },
-  title: "Squalane, from brands that actually pass. — BunnyIndex",
+  title: "Cruelty-free Squalane, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free squalane. Brands that meet all three rules — not a “clean oil” story.",
 };
 
@@ -12,7 +12,7 @@ export default function SqualanePage() {
     <IngredientPage
       tag="Squalane"
       eyebrow="Ingredient"
-      h1="Squalane, from brands that actually pass."
+      h1="Cruelty-free Squalane, from brands that actually pass."
       dek="A skin-similar oil, from brands that meet all three rules — not from a “clean oil” story."
       sections={[
         {

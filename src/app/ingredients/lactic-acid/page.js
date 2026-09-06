@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/lactic-acid' },
-  title: "Lactic Acid, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Lactic Acid, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free lactic acid. Brands that meet the Bunny Index Standard — not an acid ranking.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Lactic Acid"
       eyebrow="Ingredient"
-      h1="Lactic Acid, from brands that actually pass."
+      h1="Cruelty-free Lactic Acid, from brands that actually pass."
       dek="An AHA from brands that meet all three rules \u2014 not a stand-in for glycolic."
       sections={[
         {

@@ -3,7 +3,7 @@ import { IngredientPage, pStyle } from '../_shared';
 
 export const metadata = {
   alternates: { canonical: 'https://www.bunnyindex.com/ingredients/salicylic-acid' },
-  title: "Salicylic Acid, from brands that actually pass. \u2014 BunnyIndex",
+  title: "Cruelty-free Salicylic Acid, from brands that actually pass. — BunnyIndex",
   description: "Cruelty-free salicylic acid. Brands that meet the Bunny Index Standard — not an acne plan.",
 };
 
@@ -12,7 +12,7 @@ export default function HubPage() {
     <IngredientPage
       tag="Salicylic Acid"
       eyebrow="Ingredient"
-      h1="Salicylic Acid, from brands that actually pass."
+      h1="Cruelty-free Salicylic Acid, from brands that actually pass."
       dek="A BHA from brands that meet all three rules \u2014 not a treatment plan."
       sections={[
         {
