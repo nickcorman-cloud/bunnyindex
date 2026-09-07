@@ -74,7 +74,7 @@ export async function generateMetadata({ params }) {
   const concernTag = CONCERN_SLUGS[params.concern];
   const ingredientTag = INGREDIENT_SLUGS[params.ingredient];
   if (!concernTag || !ingredientTag) return {};
-  const title = `Cruelty-free ${ingredientTag} for ${concernTag}, from brands that actually pass.`;
+  const title = `Cruelty-free ${ingredientTag} for ${concernTag}, from brands that actually pass. — BunnyIndex`;
   const description = `${ingredientTag} tagged for ${concernTag}, from brands that meet all three rules — not a treatment plan.`;
   return {
     title,
