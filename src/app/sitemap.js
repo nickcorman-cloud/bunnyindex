@@ -15,15 +15,32 @@ const CONCERN_SLUGS = {
   'Sensitive Skin': 'sensitive-skin',
 };
 
+const INGREDIENT_SLUGS = {
+  Niacinamide: "niacinamide",
+  Retinol: "retinol",
+  "Vitamin C": "vitamin-c",
+  Squalane: "squalane",
+  "Hyaluronic Acid": "hyaluronic-acid",
+  SPF: "spf",
+  Ceramides: "ceramides",
+  "Glycolic Acid": "glycolic-acid",
+  "Lactic Acid": "lactic-acid",
+  "Salicylic Acid": "salicylic-acid",
+  "Tranexamic Acid": "tranexamic-acid",
+  "Azelaic Acid": "azelaic-acid",
+  Peptides: "peptides",
+  Bakuchiol: "bakuchiol",
+};
+
 const TYPE_SLUGS = {
-  Moisturizer: 'moisturizer',
-  Sunscreen: 'sunscreen',
-  Cleanser: 'cleanser',
-  Serum: 'serum',
-  'Eye Cream': 'eye-cream',
-  Mask: 'mask',
-  Toner: 'toner',
-  'Face Oil': 'face-oil',
+  Moisturizer: "moisturizer",
+  Sunscreen: "sunscreen",
+  Cleanser: "cleanser",
+  Serum: "serum",
+  "Eye Cream": "eye-cream",
+  Mask: "mask",
+  Toner: "toner",
+  "Face Oil": "face-oil",
 };
 
 const STATIC_PATHS = [
@@ -82,6 +99,23 @@ function forComboPaths() {
   }
   return paths;
 }
+function ingredientForConcernPaths() {
+  const paths = [];
+  for (const [ingredientTag, ingredientSlug] of Object.entries(INGREDIENT_SLUGS)) {
+    for (const [concernTag, concernSlug] of Object.entries(CONCERN_SLUGS)) {
+      const n = products.filter(
+        (p) =>
+          Array.isArray(p.ingredients) &&
+          p.ingredients.includes(ingredientTag) &&
+          Array.isArray(p.concerns) &&
+          p.concerns.includes(concernTag)
+      ).length;
+      if (n >= 3) paths.push(`/ingredients/${ingredientSlug}/for/${concernSlug}`);
+    }
+  }
+  return paths;
+}
+
 
 export default function sitemap() {
   const lastModified = new Date();
@@ -101,9 +135,13 @@ export default function sitemap() {
     url: `${SITE}${path}`,
     lastModified,
   }));
+  const ingredientForConcernEntries = ingredientForConcernPaths().map((path) => ({
+    url: `${SITE}${path}`,
+    lastModified,
+  }));
   const alternativeEntries = ALTERNATIVES.map((a) => ({
     url: `${SITE}/alternatives-to/${a.slug}`,
     lastModified,
   }));
-  return [...staticEntries, ...productEntries, ...determinationEntries, ...forEntries, ...alternativeEntries];
+  return [...staticEntries, ...productEntries, ...determinationEntries, ...forEntries, ...ingredientForConcernEntries, ...alternativeEntries];
 }
