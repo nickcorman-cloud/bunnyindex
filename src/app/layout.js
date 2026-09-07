@@ -7,6 +7,14 @@ import FathomAnalytics from '@/components/FathomAnalytics';
 export const metadata = {
   title: 'BunnyIndex — The Cruelty-Free Ingredient Directory',
   description: 'A true cruelty-free skincare directory. No testing at any stage. No sales in markets that require it. No ownership by companies that do. Zero exceptions.',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+  },
   openGraph: {
     title: 'BunnyIndex — The Cruelty-Free Ingredient Directory',
     description: 'Discover cruelty-free skincare products from truly independent brands. Search by ingredient, skin concern, or product type.',
